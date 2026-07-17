@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USTECH Calibration Models — Pre-built and custom NIR calibration models for food, feed, dairy, and chemical applications. Ready-to-deploy PLS models for instant analysis.">
+    <title>Calibration Models | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- Calibration Models Hero Section -->
+        <section class="hero-cover" style="position: relative; padding: 7rem 2rem 5rem 2rem; background: url('images/calibration_header_bg.webp') no-repeat center center; background-size: cover; display: flex; align-items: center; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 11, 16, 0.6) 0%, rgba(10, 11, 16, 0.85) 100%); pointer-events: none; z-index: 1;"></div>
+            <div class="container" style="position: relative; z-index: 2; max-width: 800px;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-gold); font-weight: 700; display: block; margin-bottom: 1rem;">Analytical Models</span>
+                <h1 style="color: #fff; font-size: 3rem; letter-spacing: -1.5px; margin-bottom: 1rem;">Calibration Models</h1>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.75; max-width: 800px;">Pre-built and custom PLS calibration models for NIR spectroscopy — developed, validated, and optimized by our application scientists for immediate deployment on USTECH analyzers.</p>
+            </div>
+        </section>
+
+        <!-- Model Library -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" style="max-width: 850px;">
+                    <span class="section-subtitle">Model Library by Industry</span>
+                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">Our calibration model library covers the most critical analytes across food &amp; feed, dairy, and chemical industries. Each model is built from extensive spectral databases, rigorously validated against reference methods, and optimized for accuracy in real-world process conditions.</p>
+                </div>
+
+                <!-- Food & Feed Models -->
+                <div style="margin-top: 3rem; margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--border-color);">
+                        <span style="color: var(--accent-gold);">●</span> Food &amp; Feed
+                    </h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <h3>Grain &amp; Cereals</h3>
+                            <p>Moisture, Protein, Fat, Starch, Ash, Gluten, Fiber — for wheat, corn, barley, sorghum, rice, and oats.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Oilseeds &amp; Meals</h3>
+                            <p>Protein, Fat (oil), Moisture, Fiber, Urease Activity — for soybeans, rapeseed, sunflower, and their extracted meals.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Compound Feed</h3>
+                            <p>Moisture, Crude Protein, Crude Fat, Crude Fiber, Ash, NDF, ADF — for poultry, swine, ruminant, and aqua feeds.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Pet Food</h3>
+                            <p>Moisture, Protein, Fat, Fiber, Ash — for dry kibble, wet canned, and extruded treat formulations.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Flour &amp; Milling</h3>
+                            <p>Moisture, Protein, Ash, Starch Damage, Wet Gluten — for wheat flour, semolina, and specialty flours.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Meat &amp; Protein</h3>
+                            <p>Fat, Moisture, Protein, Collagen — for ground beef, poultry, pork, and processed meat products.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dairy Models -->
+                <div style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--border-color);">
+                        <span style="color: var(--accent-gold);">●</span> Dairy
+                    </h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <h3>Raw Milk</h3>
+                            <p>Butter Fat, Total Protein, Lactose, Total Solids, SNF — for incoming milk receiving and standardization.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Cheese &amp; Whey</h3>
+                            <p>Moisture, Fat, Protein, Salt, pH prediction — for cheddar, mozzarella, processed cheese, and whey concentrates.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Milk Powder</h3>
+                            <p>Moisture, Protein, Fat, Lactose — for whole milk powder, skim milk powder, and infant formula ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chemical & Pharma Models -->
+                <div style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--border-color);">
+                        <span style="color: var(--accent-gold);">●</span> Chemical &amp; Pharma
+                    </h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <h3>Polymers &amp; Resins</h3>
+                            <p>Hydroxyl Value, Acid Number, Moisture, Viscosity prediction — for polyols, alkyd resins, and polyurethane intermediates.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Solvents &amp; Chemicals</h3>
+                            <p>Purity, Moisture, Density correlation — for ethanol, methanol, IPA, acetone, and specialty solvents.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Pharma &amp; API</h3>
+                            <p>Blend Uniformity, Moisture, API Content, Raw Material Identification — for granulation, tablet, and capsule manufacturing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Model Development -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header" style="max-width: 850px;">
+                    <span class="section-subtitle">Custom Model Development</span>
+                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">Don't see your application listed? Our application scientists develop custom calibration models tailored to your specific products, process conditions, and accuracy requirements.</p>
+                </div>
+
+                <div class="grid grid-3" style="margin-top: 3rem;">
+                    <div class="card" style="text-align: center;">
+                        <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-gold);">1</div>
+                        <h3>Sample Collection</h3>
+                        <p>We guide you through collecting representative samples that capture your product's full compositional variability.</p>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-gold);">2</div>
+                        <h3>Model Development</h3>
+                        <p>Our chemometricians build, optimize, and validate PLS models using advanced preprocessing and variable selection techniques.</p>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-gold);">3</div>
+                        <h3>Deployment &amp; Support</h3>
+                        <p>Models are deployed to your analyzers with ongoing performance monitoring and periodic updates as your products evolve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background: var(--accent-black); text-align: center; padding: 5rem 2rem;">
+            <div class="container" style="max-width: 700px;">
+                <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 1rem; letter-spacing: -0.5px;">Need a Calibration Model?</h2>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.75; margin-bottom: 2rem;">Whether you need a ready-made model from our library or a custom solution for a unique application, our team is ready to help you achieve laboratory-grade accuracy inline.</p>
+                <a href="contact.html" class="btn btn-primary" style="background: #fff; color: var(--accent-black); font-weight: 700; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; display: inline-block; transition: all 0.3s ease;">Request Calibration Models</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0;">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

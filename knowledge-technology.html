@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USTECH Innovations technology page - Learn how FT-NIR spectroscopy works, our calibration methodology, and our integrated software and hardware ecosystem.">
+    <title>NIR Technology & Calibration Science | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="section hero-section" style="background: linear-gradient(to right, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.3) 100%), url('images/tech_hero_bg.webp') no-repeat center center; background-size: cover; min-height: 400px; display: flex; align-items: center; position: relative; padding: 6rem 0;">
+            <div class="container" style="padding: 0 2rem; position: relative; z-index: 2;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.65); font-weight: 700; display: block; margin-bottom: 1.25rem;">Knowledge / Technology</span>
+                <h1 style="font-size: 2.8rem; color: #ffffff; line-height: 1.15; letter-spacing: -1.5px; font-weight: 400; margin-bottom: 1.5rem; max-width: 750px;">NIR Technology & Calibration Science</h1>
+                <p style="font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.7; max-width: 680px; margin-bottom: 0;">Understand how near-infrared spectroscopy, advanced calibration models, and our integrated software ecosystem deliver real-time process intelligence.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 6rem;">
+                    <div>
+                        <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">The Science Behind NIR Spectroscopy</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">Near-Infrared (NIR) spectroscopy measures the light absorption of molecular chemical bonds (primarily C-H, O-H, and N-H). By projecting broad-spectrum NIR light onto a sample, the analyzer measures which wavelengths are absorbed and which are reflected back. This absorption pattern creates a unique spectral fingerprint that reveals the chemical composition of the material.</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">USTECH leverages FT-NIR (Fourier Transform Near-Infrared) technology in its analyzer portfolio, delivering high spectral resolution across a wide wavelength range (1,350&ndash;2,550 nm). Combined with our proprietary calibration models and software ecosystem, this technology enables real-time, non-destructive composition analysis directly on the production line &mdash; eliminating the delays and costs of traditional laboratory methods.</p>
+                    </div>
+                    <div style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.65) 0%, rgba(10, 11, 16, 0.9) 100%), url('images/tech_core_bg.webp') no-repeat center center; background-size: cover; border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 3rem; color: #ffffff;">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff;">Core Technology Advantages</h4>
+                        <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
+                            <div>
+                                <strong style="color: var(--accent-gold);">Industrial-Grade Design:</strong>
+                                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Rugged analyzers engineered for harsh factory environments &mdash; vibrations, dust, temperature, and CIP cleaning.</p>
+                            </div>
+                            <div>
+                                <strong style="color: var(--accent-gold);">Ultra-Wide Range:</strong>
+                                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Covers 1,350 to 2,550 nm, capturing both primary and combination chemical overtones.</p>
+                            </div>
+                            <div>
+                                <strong style="color: var(--accent-gold);">Calibration Portability:</strong>
+                                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">High unit-to-unit instrument similarity enables direct calibration transfer between devices without recalibration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Technology Workflow Infographic -->
+                <div style="margin-bottom: 6rem;">
+                    <div class="section-header" style="max-width: 800px; margin-bottom: 3rem;">
+                        <span class="section-subtitle">How It Works</span>
+                        <h2 class="section-title">From Light to Data: The Measurement Path</h2>
+                        <p class="section-desc">Trace the pathway from NIR light emission through spectral analysis to actionable process data &mdash; powered by USTECH calibration models and software.</p>
+                    </div>
+                    <div class="tech-workflow-grid">
+                        <!-- Step 1 -->
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">01</div>
+                            <h4>Broadband Emission</h4>
+                            <p>A stabilized, long-lifetime halogen light source projects a continuous spectrum of near-infrared light onto the sample material.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">02</div>
+                            <h4>Selective Absorption</h4>
+                            <p>Organic molecules in the sample (C-H, O-H, N-H bonds) absorb specific wavelengths depending on their concentration, reflecting the rest.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">03</div>
+                            <h4>FT-NIR Spectral Engine</h4>
+                            <p>The reflected light enters the FT-NIR interferometer inside the analyzer, which separates the wavelengths and generates a high-resolution spectral interferogram.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">04</div>
+                            <h4>cali<span class="calix-x">X</span> Calibration Models</h4>
+                            <p>The raw spectrum is processed through USTECH's cali<span class="calix-x">X</span> calibration models, which use advanced chemometric algorithms (PLS, AutoML) to predict chemical composition in milliseconds.</p>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">05</div>
+                            <h4>ProChem Process Output</h4>
+                            <p>Predicted values (protein, moisture, fat, etc.) are transmitted via ProChem to your PLC/SCADA system through OPC UA, Modbus, or analog outputs for real-time process control.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Competitive Differentiation (Why USTECH) -->
+                <div style="margin-bottom: 6rem;">
+                    <div class="section-header" style="max-width: 800px; margin-bottom: 3rem;">
+                        <span class="section-subtitle">Competitive Edge</span>
+                        <h2 class="section-title">Why USTECH Process Analyzers?</h2>
+                        <p class="section-desc">USTECH combines robust FT-NIR hardware with intelligent calibration software and seamless industrial integration to bring laboratory-grade accuracy to the factory floor.</p>
+                    </div>
+
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th class="ustech-highlight">USTECH FT-NIR Solution</th>
+                                    <th>Traditional FT-NIR</th>
+                                    <th>Diode Array (Dispersive)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="feature-name">Solution Architecture</td>
+                                    <td class="ustech-highlight">Integrated hardware + software ecosystem: FT-NIR analyzers, cali<span class="calix-x">X</span> calibration suite, and ProChem process automation.</td>
+                                    <td>Standalone spectrometer requiring third-party chemometrics and integration software.</td>
+                                    <td>Basic hardware with limited software support and manual data export.</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Industrial Readiness</td>
+                                    <td class="ustech-highlight"><strong>Production-Ready</strong>. Purpose-built for inline mounting on conveyors, mixers, pipelines, and reactors.</td>
+                                    <td><strong>Laboratory-Focused</strong>. Requires controlled environments; not designed for continuous process use.</td>
+                                    <td><strong>Limited</strong>. Some inline options available but with restricted spectral range and software support.</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Spectral Range & Resolution</td>
+                                    <td class="ustech-highlight"><strong>Full NIR Range</strong> (1350 &ndash; 2550 nm). Captured at high interferometric resolution.</td>
+                                    <td><strong>Excellent Range & Resolution</strong>, but overkill and fragile for field operations.</td>
+                                    <td><strong>Limited Range</strong> (usually 900 &ndash; 1700 nm). Lower resolution, missing critical absorption overtones.</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Calibration & Software</td>
+                                    <td class="ustech-highlight"><strong>Integrated</strong>. cali<span class="calix-x">X</span> AutoML builds models automatically; ProChem deploys them to all connected instruments with one click.</td>
+                                    <td><strong>Manual</strong>. Requires expensive third-party chemometrics software and manual calibration transfer.</td>
+                                    <td><strong>Basic</strong>. Limited built-in chemometrics; calibration transfer between units is difficult.</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Process Integration</td>
+                                    <td class="ustech-highlight"><strong>Native</strong>. ProChem connects directly to PLC/SCADA via OPC UA, Modbus, 4&ndash;20 mA, and REST API.</td>
+                                    <td><strong>Limited</strong>. Typically requires custom middleware or third-party OPC servers for PLC connectivity.</td>
+                                    <td><strong>Basic</strong>. Usually limited to analog output or proprietary protocols.</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Total Cost of Ownership</td>
+                                    <td class="ustech-highlight"><strong>Optimized</strong>. Competitive hardware pricing, included calibration software, and minimal ongoing service requirements.</td>
+                                    <td><strong>Very High</strong>. Expensive hardware plus annual licenses for third-party chemometrics and integration software.</td>
+                                    <td><strong>Moderate</strong>. Lower hardware cost, but limited capabilities require additional investments in software and support.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+        <!-- ============================================================
+             caliX Chemometrics Suite – Deep Dive
+             ============================================================ -->
+        <section class="section" style="border-top: 1px solid var(--border-color); padding: 6rem 0;">
+            <div class="container" style="padding: 0 2rem;">
+                <div class="section-header" style="max-width: 100%; margin-bottom: 3.5rem;">
+                    <span class="section-subtitle">Software / Chemometrics</span>
+                    <h2 class="section-title">cali<span class="calix-x">X</span> &mdash; Intelligent Calibration Suite</h2>
+                    <p class="section-desc">cali<span class="calix-x">X</span> is USTECH's proprietary chemometrics and calibration software that transforms raw spectral data into actionable chemical composition values. Designed for both expert spectroscopists and first-time users, it automates the entire calibration lifecycle.</p>
+                </div>
+
+                <div style="margin-bottom: 5rem;">
+                    <div style="margin-bottom: 3.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">What is cali<span class="calix-x">X</span>?</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">cali<span class="calix-x">X</span> is a desktop chemometrics application that manages the full pipeline from spectral data import through preprocessing, outlier detection, model building, and validation &mdash; all within a single unified workspace. It bridges the gap between laboratory reference analysis and real-time production measurement.</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">Unlike generic statistics software, cali<span class="calix-x">X</span> is purpose-built for NIR spectroscopy workflows. It understands spectral data natively, offering specialized tools like Savitzky-Golay smoothing, multiplicative scatter correction (MSC), standard normal variate (SNV), and first/second derivative preprocessing &mdash; all accessible through a visual, click-driven interface.</p>
+                        <p style="color: var(--text-secondary); line-height: 1.7;">cali<span class="calix-x">X</span> supports all USTECH hardware platforms (ProLine2550, ProLine17ES, USTECH MasterLine, USTECH StarchQC, USTECH SamplePrep, USTECH Tornado+) and manages calibration model deployment across your instrument fleet from a centralized workspace.</p>
+                    </div>
+
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">Core Capabilities</h3>
+                    <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_automl.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+                            <h4 style="color: #ffffff;">AutoML Engine</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Automated model building that tests hundreds of preprocessing &amp; regression combinations, ranking results by cross-validation performance (RMSECV, R&sup2;, RPD).</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_outlier.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line><circle cx="12" cy="12" r="4"></circle></svg></div>
+                            <h4 style="color: #ffffff;">Advanced Outlier Detection</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Mahalanobis distance, leverage/residual analysis, Hotelling's T&sup2;, and spectral residual methods to automatically flag and isolate anomalous samples.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_preprocessing.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+                            <h4 style="color: #ffffff;">Spectral Preprocessing</h4>
+                            <p style="color: rgba(255,255,255,0.85);">MSC, SNV, Savitzky-Golay derivatives (1st/2nd), Norris-Williams smoothing, detrending, and wavelength region selection (iPLS) &mdash; all visually configurable.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_regression.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
+                            <h4 style="color: #ffffff;">Regression Algorithms</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Partial Least Squares (PLS), Principal Component Regression (PCR), Multiple Linear Regression (MLR), and Support Vector Regression (SVR).</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_classification.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+                            <h4 style="color: #ffffff;">Classification Models</h4>
+                            <p style="color: rgba(255,255,255,0.85);">PCA-based classification, SIMCA, and discriminant analysis for raw material identification and authentication applications.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_transfer.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
+                            <h4 style="color: #ffffff;">Calibration Transfer</h4>
+                            <p style="color: rgba(255,255,255,0.85);">One-click model deployment across all units. USTECH's high unit-to-unit instrument similarity means zero slope/bias correction is needed.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- caliX Workflow Steps -->
+                <div style="margin-bottom: 5rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">cali<span class="calix-x">X</span> Calibration Workflow</h3>
+                    <div class="tech-workflow-grid">
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">01</div>
+                            <h4>Data Import</h4>
+                            <p>Import spectral scans (.xlsx, .csv) paired with laboratory reference values. cali<span class="calix-x">X</span> auto-detects wavelength columns and constituent parameters.</p>
+                        </div>
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">02</div>
+                            <h4>Data Cleaning</h4>
+                            <p>Identify and remove outliers using multivariate statistical methods. Thin redundant samples to build a balanced, representative calibration set.</p>
+                        </div>
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">03</div>
+                            <h4>Preprocessing</h4>
+                            <p>Apply spectral transformations (MSC, SNV, derivatives) to remove scatter effects and enhance chemical signal clarity.</p>
+                        </div>
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">04</div>
+                            <h4>Model Building</h4>
+                            <p>Use AutoML or manual regression to build and optimize calibration models. Cross-validation ensures robustness against overfitting.</p>
+                        </div>
+                        <div class="tech-step-card">
+                            <div class="tech-step-num">05</div>
+                            <h4>Deployment</h4>
+                            <p>Export validated models directly to ProChem for real-time inline prediction. Models can be pushed to all connected instruments simultaneously.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caliX Key Metrics -->
+                <div style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.85) 0%, rgba(10, 11, 16, 0.95) 100%), url('images/software_cover.webp') no-repeat center center; background-size: cover; border-radius: 12px; padding: 3.5rem; border: 1px solid rgba(255,255,255,0.12);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 2rem; color: #ffffff; text-align: center;">Why cali<span class="calix-x">X</span> Outperforms Traditional Chemometrics Software</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">500+</div>
+                            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Preprocessing combinations tested automatically by AutoML in minutes</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">Zero</div>
+                            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Programming knowledge required &mdash; fully visual, click-driven interface</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">1-Click</div>
+                            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Calibration transfer across entire instrument fleet without recalibration</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">&lt;5 min</div>
+                            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Complete AutoML calibration cycle from raw data to validated model</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="product-calix.html" class="btn btn-primary">Explore Full <span style="white-space: nowrap;">cali<span class="calix-x">X</span></span> Documentation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             ProChem Process Automation Platform – Deep Dive
+             ============================================================ -->
+        <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 6rem 0;">
+            <div class="container" style="padding: 0 2rem;">
+                <div class="section-header" style="max-width: 100%; margin-bottom: 3.5rem;">
+                    <span class="section-subtitle">Software / Process Automation</span>
+                    <h2 class="section-title">ProChem &mdash; Real-Time Process Integration Platform</h2>
+                    <p class="section-desc">ProChem is USTECH's industrial-grade process automation software that bridges NIR spectroscopy measurements with plant control systems. It is the operational backbone that transforms laboratory-calibrated models into live, actionable process data.</p>
+                </div>
+
+                <div style="margin-bottom: 5rem;">
+                    <div style="margin-bottom: 3.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">What is ProChem?</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is the edge-computing software platform that runs directly at the production line level. It receives calibration models built in cali<span class="calix-x">X</span> and applies them in real-time to incoming spectral scans from USTECH analyzers. The predicted chemical composition values are then communicated to factory PLC/SCADA systems through industrial communication protocols.</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is designed for 24/7 unattended operation in demanding industrial environments. It manages instrument health monitoring, automatic reference scanning, lamp failure detection with dual-lamp switchover, and spectral quality validation &mdash; all without requiring operator intervention.</p>
+                        <p style="color: var(--text-secondary); line-height: 1.7;">Whether your production facility uses Siemens, Allen-Bradley, Schneider, or ABB automation infrastructure, ProChem communicates natively through industry-standard protocols (OPC UA, Modbus TCP/RTU, 4&ndash;20 mA analog, REST API) to deliver measurement data exactly where your control logic needs it.</p>
+                    </div>
+
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem Core Features</h3>
+                    <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_multi_analyzer.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+                            <h4 style="color: #ffffff;">Multi-Analyzer Management</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Connect and manage multiple USTECH analyzers from a single ProChem instance. Monitor all measurement points across your facility from one dashboard.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_trending.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+                            <h4 style="color: #ffffff;">Real-Time Trending &amp; Visualization</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Live trend charts for all measured constituents with configurable alarm limits, moving averages, and SPC (Statistical Process Control) overlays.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_health.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+                            <h4 style="color: #ffffff;">Automatic Health Monitoring</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Continuous self-diagnostics including lamp intensity tracking, reference scan validation, spectral noise monitoring, and automatic dual-lamp failover.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_batch.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+                            <h4 style="color: #ffffff;">Batch &amp; Continuous Mode</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Configure measurement schedules for batch processes (blenders, reactors) or continuous flow (conveyors, pipelines) with adjustable scan averaging.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_access.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+                            <h4 style="color: #ffffff;">User Access Control</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Multi-level user management (Operator, Supervisor, Admin) with audit logging. 21 CFR Part 11 compliant electronic records for pharmaceutical applications.</p>
+                        </div>
+                        <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_remote.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                            <div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                            <h4 style="color: #ffffff;">Remote Access &amp; Monitoring</h4>
+                            <p style="color: rgba(255,255,255,0.85);">Secure remote dashboard access via web browser. Monitor instrument health, review trends, and receive alarm notifications from anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typical Use Case Banner -->
+                <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Typical Use Case</h4>
+                    <p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">A feed mill installs a ProLine2550 on the mixer discharge conveyor. ProChem receives spectral scans every 3 seconds, predicts protein, moisture, and fat using cali<span class="calix-x">X</span>-built models, and sends the values via OPC UA to the Siemens S7-1500 PLC. The PLC automatically adjusts raw material dosing gates to keep protein within &plusmn;0.15% of the target specification &mdash; eliminating expensive protein give-away and preventing out-of-spec batches.</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="product-prochem.html" class="btn btn-primary">Explore Full ProChem Documentation</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background: linear-gradient(180deg, rgba(18, 20, 29, 0.82) 0%, rgba(18, 20, 29, 0.85) 100%), url('images/autocal_bg.webp') no-repeat center center; background-size: cover; text-align: center; color: var(--bg-primary); padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+            <div class="container" style="max-width: 800px; padding: 0 2rem;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">Want to Optimize Your Production Lines?</h2>
+                <p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
+                    Learn how our custom calibration methods and FT-NIR process analyzers can fit into your facility. You can explore <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our product portfolio</a> to see our full line of devices and software, or browse <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our contact details</a> to reach our sales engineers.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">Browse Product Portfolio</a>
+                    <a href="contact.html" class="btn btn-secondary" style="border-color: var(--border-hover); color: var(--bg-primary);">View Contact Information</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+            <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+

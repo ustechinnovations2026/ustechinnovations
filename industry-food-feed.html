@@ -1,0 +1,360 @@
+?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USTECH Innovations - NIR spectroscopy solutions for the Food and Feed industry. Real-time composition analysis from raw material intake to finished product QA.">
+    <title>Food and Feed Solutions | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- ==============================================================
+             1. HERO SECTION
+             ============================================================== -->
+        <section class="section" style="background: linear-gradient(to right, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.3) 100%), url('images/food_feed_hero_bg.webp') no-repeat center center; background-size: cover; min-height: 550px; display: flex; align-items: center; position: relative; padding: 4rem 0;">
+            <div class="container" style="padding: 3rem 2rem; position: relative; z-index: 2;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.6); font-weight: 700; display: block; margin-bottom: 1.25rem;">Industries / Food &amp; Feed</span>
+                <h1 style="font-size: 2.8rem; color: #ffffff; line-height: 1.15; letter-spacing: -1.5px; font-weight: 400; margin-bottom: 1.5rem; max-width: 750px;">From Grain to Feed: Stop the Protein Giveaway with Real-Time NIR Intelligence</h1>
+                <p style="font-size: 1.05rem; color: rgba(255,255,255,0.75); line-height: 1.75; max-width: 680px; margin-bottom: 2.5rem;">Raw materials eat up to 70% of your production budget&mdash;yet most mills are still flying blind, relying on delayed laboratory cycles while giving away high-value protein and fat as a "safety buffer". USTECH's integrated FT-NIR spectroscopy platform puts laboratory-grade composition analysis directly on your production line. From the raw grain intake pit to the final pellet cooler, get millisecond-level data to formulate with surgical precision, eliminate waste, and secure your margins instantly.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary" style="background-color: #ffffff; color: #12141d; border-color: #ffffff;">Talk to an Application Specialist</a>
+                    <a href="#" class="btn btn-secondary" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">Download Industry Brochure</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             2. THE CHALLENGES SECTION
+             ============================================================== -->
+        <section class="section bg-light" style="background: linear-gradient(rgba(248, 249, 250, 0.93), rgba(248, 249, 250, 0.93)), url('images/food_feed_challenges_bg.webp') no-repeat center center; background-size: cover; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">The Challenges You Face</span>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; max-width: 900px; margin-bottom: 3rem;">Feed and food manufacturers operate in an environment of thin margins, volatile commodity prices, and intensifying regulatory pressure. Every percentage point of protein or moisture has a direct impact on profitability, animal performance, and label compliance. Yet traditional laboratory workflows create a fundamental problem: by the time results arrive, the batch is already produced.</p>
+
+                <div class="grid grid-3">
+                    <!-- Challenge Card 1 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.4) 0%, rgba(10, 11, 16, 0.8) 100%), url('images/formulation_waste_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <div class="card-icon" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1rem;">01</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Rising Input Costs &amp; Formulation Waste</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); margin-bottom: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Ingredient nutritional profiles deviate continuously. Lacking real-time analysis, manufacturers over-formulate high-cost constituents (e.g., soybean meal) as a safety buffeR&sup2;incurring over $150,000 in annual raw material giveaways.</p>
+                    </div>
+
+                    <!-- Challenge Card 2 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.4) 0%, rgba(10, 11, 16, 0.8) 100%), url('images/quality_decisions_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <div class="card-icon" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1rem;">02</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Delayed Quality Decisions</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); margin-bottom: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Conventional wet chemistry assays require 2&mdash;4 hours. During this latency window, mills operate blindly; any composition deviations force costly batch reworks, dilution blending, or complete product disposal.</p>
+                    </div>
+
+                    <!-- Challenge Card 3 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.4) 0%, rgba(10, 11, 16, 0.8) 100%), url('images/labeling_compliance_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <div class="card-icon" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1rem;">03</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Regulatory &amp; Labeling Exposure</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); margin-bottom: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Compliance frameworks (e.g., EU 767/2009, FDA 21 CFR 501) mandate declared nutritional profiles remain within tight tolerance bands. Off-spec shipments trigger client disputes, severe audit exposure, and steep contract penalties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             3. VALUE CHAIN SECTION
+             ============================================================== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" style="max-width: 850px;">
+                    <span class="section-subtitle">Solutions Across Your Entire Value Chain</span>
+                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">Quality doesn't start at the laboratory door &mdash; it starts the moment raw materials enter your facility. USTECH solutions are designed to integrate at every decision point in your production flow, replacing reactive testing with proactive process intelligence.</p>
+                </div>
+
+                <!-- &mdash;&mdash;&mdash; Stage 1: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+                    <div>
+                        <img src="images/food_feed_receiving.webp" alt="Grain truck unloading at receiving bay with silo" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">01 &mdash; Raw Material Intake &amp; Grading</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Know What You're Buying Before You Accept It.</h2>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem;">Deploy at-line NIR analysis directly at the receiving bay. Within 60 seconds of grain arrival, operators receive accurate readings for moisture, crude protein, fat, starch, and ash &mdash; enabling real-time accept/reject decisions and accurate supplier pricing based on actual quality, not historical averages.</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.5rem;">Stop paying premium prices for sub-specification deliveries. With instant compositional verification, procurement teams can renegotiate spot prices on the truck scale, recovering costs that would otherwise be absorbed silently into production budgets.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Moisture</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Crude Protein</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Crude Fat</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Ash</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Starch</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Gluten</span>
+                        </div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-feed.html" class="inline-product-link">USTECH MasterLine</a> &nbsp;|&nbsp; <a href="product-n-sens-tornado.html" class="inline-product-link">USTECH Tornado+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- &mdash;&mdash;&mdash; Stage 2: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">02 &mdash; Formulation &amp; Mixing Optimization</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Formulate to Target, Not to Worst-Case Assumptions.</h2>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem;">Traditional formulation relies on database averages or supplier certificates &mdash; both of which lag behind the actual quality of ingredients on your production floor today. By scanning each ingredient batch before it enters the mixer, your formulation software receives real-time nutritional profiles, enabling dynamic least-cost recipe adjustments.</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.5rem;">The result: you formulate closer to nutritional targets without safety margins built on uncertainty. For a typical 50 ton/hour feed mill, eliminating just 0.5% protein over-formulation translates to annual savings exceeding $120,000 in soybean meal costs alone.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Protein</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Fat</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Crude Fiber</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">NDF</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">ADF</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Moisture</span>
+                        </div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-feed.html" class="inline-product-link">USTECH MasterLine</a> &nbsp;|&nbsp; <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/food_feed_formulation_software.png" alt="Feed formulation and least-cost recipe software dashboard" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                </div>
+
+                <!-- &mdash;&mdash;&mdash; Stage 3: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+                    <div>
+                        <img src="images/cattle_feeding.webp" alt="Cattle feeding at trough" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">03 &mdash; Process Control &amp; Conditioning</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Close the Loop Between Measurement and Action.</h2>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem;">Mount inline NIR sensors at the mixer discharge or above the conditioning drum to continuously monitor feed composition in real time. When moisture deviates from the conditioning target &mdash; due to seasonal grain variability or ambient humidity changes &mdash; the system communicates directly with your PLC to adjust steam injection or water dosing rates automatically.</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.5rem;">This closed-loop control eliminates the guesswork from conditioning. Operators no longer rely on visual inspection or hourly grab samples. The result is consistent pellet durability, reduced energy consumption at the pellet die, and fewer fines in finished product.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Moisture</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Temperature compensation</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Fat coating verification</span>
+                        </div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES Analyzer</a> + <a href="product-prochem.html" class="inline-product-link">ProChem software</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- &mdash;&mdash;&mdash; Stage 4: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">04 &mdash; Finished Product QA &amp; Compliance</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Ship with Confidence. Document Everything.</h2>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem;">Before any batch leaves your facility, verify that moisture, protein, fat, fiber, and ash levels fall within declared label specifications. Every measurement is automatically timestamped and stored in an auditable digital quality log &mdash; replacing paper-based QC records with a searchable, tamper-proof compliance archive.</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.5rem;">When a customer or regulatory body requests proof of nutritional conformity, you retrieve a complete digital certificate for any production lot within seconds. This isn't just quality assurance &mdash; it's reputation insurance.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Moisture</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Crude Protein</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Crude Fat</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Crude Fiber</span>
+                            <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Ash</span>
+                        </div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-feed.html" class="inline-product-link">USTECH MasterLine</a> &nbsp;|&nbsp; <a href="product-calix.html" class="inline-product-link">Cali<span class="calix-x">X</span> Platform</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/food_feed_shipping_qa.webp" alt="Worker inspecting packaged products in warehouse" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             4. WHY USTECH SECTION
+             ============================================================== -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">The USTECH Advantage</span>
+                    <h2 class="section-title">Why Leading Feed Producers Choose USTECH</h2>
+                </div>
+
+                                <div class="grid grid-2" style="margin-bottom: 3rem; gap: 2rem;">
+                    <!-- Card 1 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/why_results_fast.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">60-Second Results, Zero Chemicals</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Replace 3-hour wet chemistry workflows with non-destructive NIR measurements that deliver lab-grade accuracy in under one minute. No reagents, no sample preparation waste, no waiting.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/why_calibrations.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Pre-Built Calibration Packages</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Our instruments ship with application-ready calibration databases built on thousands of global feed samples across multiple harvest seasons. Start measuring on day one &mdash; no chemometric expertise required.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/why_integration.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Seamless Factory Integration</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">OPC UA, Modbus TCP, Profinet, and 4&mdash;20 mA analog outputs ensure direct communication with any PLC, SCADA, or ERP system. Your spectroscopic data becomes actionable process intelligence, not another isolated silo.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/why_platform.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">One Platform, Every Instrument</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Whether you deploy one at-line analyzer or ten inline sensors across multiple plant sites, all devices connect to the Cali<span class="calix-x">X</span> cloud platform. Push calibration updates, compare site performance, and manage your entire analytical network from a single dashboard.</p>
+                    </div>
+                </div><!-- End-to-End Value Chain Section -->
+                <div style="margin-top: 4.5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+                    <div style="text-align: center; margin-bottom: 3rem;">
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.6rem;">End-to-End Process Control</span>
+                        <h3 style="font-size: 2rem; letter-spacing: -0.75px; margin-bottom: 0.75rem; font-family: var(--font-title); font-weight: 800; color: var(--text-primary);">Total Composition Control from Intake to Outlet</h3>
+                        <p style="color: var(--text-secondary); max-width: 800px; margin: 0 auto; font-size: 1rem; line-height: 1.65;">USTECH technology monitors and standardizes product quality across the entire agricultural feed cycle &mdash; optimizing parameters from raw material grading and milling to mixing, pelletizing, and final bagging.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 0; margin-top: 2.5rem; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="images/food_feed_val_01.webp" alt="Raw Material Intake Grains" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/food_feed_val_02.webp" alt="Milling and Grinding" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/food_feed_val_03.webp" alt="Ingredient Blending" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/food_feed_val_04.webp" alt="Pellet Mill Extruder" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/food_feed_val_05.webp" alt="Packaging Bagging warehouse" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             5. CTA SECTION
+             ============================================================== -->
+        <section class="section" style="background: linear-gradient(rgba(18, 20, 29, 0.88), rgba(18, 20, 29, 0.88)), url('images/food_feed_cta_bg.webp') no-repeat center center; background-size: cover; color: #ffffff; position: relative; padding: 6rem 0; text-align: center;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="font-size: 2.4rem; color: #ffffff; margin-bottom: 1.5rem; letter-spacing: -1px;">Ready to Transform Your Quality Workflow?</h2>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1.05rem; line-height: 1.75; margin-bottom: 2.5rem;">Every hour of production without real-time composition data is a risk to your margins, your compliance, and your customer relationships. Let our application specialists show you exactly where NIR spectroscopy fits into your specific process &mdash; and calculate the payback period for your operation.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary" style="background-color: #ffffff; color: #12141d; border-color: #ffffff;">Schedule a Consultation</a>
+                    <a href="#" class="btn btn-secondary" style="color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.3);">Download Feed Industry Application Note</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+            <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

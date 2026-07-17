@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USTECH Innovations - Premium inline FT-NIR spectroscopy and analytical measurement systems for food, feed, dairy, and chemical processing.">
+    <title>USTECH Innovations | Advanced FT-NIR Spectroscopy & Process Analytics</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" style="padding: 0; margin-top: 0;">
+        
+        <!-- Hero Section -->
+        <section class="hero laser-hero" style="min-height: 100vh; background: #070913; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 8rem 2rem 6rem 2rem;">
+            <!-- Animated Tech Grid Background (Premium Light Effects) -->
+            <div class="hero-bg-glows" style="position: absolute; inset: 0; pointer-events: none; z-index: 1;">
+                <div style="position: absolute; top: -10%; right: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(56, 182, 255, 0.15) 0%, transparent 70%); filter: blur(80px);"></div>
+                <div style="position: absolute; bottom: -10%; left: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%); filter: blur(80px);"></div>
+                <div class="grid-overlay" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;"></div>
+            </div>
+
+            <div class="container hero-container" style="max-width: 100%; padding: 0 4rem; position: relative; z-index: 2; width: 100%; text-align: center; margin: 0 auto;">
+                
+                <h1 id="hero-title" class="notranslate" style="font-size: 3.5rem; line-height: 1.15; margin-top: 2rem; margin-bottom: 2rem; text-align: center; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: none;">
+                    Real-Time Analysis, Flawless Decisions, Uninterrupted Production.
+                </h1>
+
+                <p id="hero-subtitle" style="font-size: 1.15rem; color: #94a3b8; margin: 0 auto; text-align: center; text-shadow: none; max-width: 900px; line-height: 1.7;">
+                    Make real-time production decisions and ensure uncompromised quality with our wide spectral range, automatic calibration, and powerful inline analysis capabilities.
+                </p>
+
+                <!-- Double-sized caliX Logo and Text Container placed below paragraph -->
+                <div class="calix-hero-brand" style="display: inline-flex; align-items: center; gap: 2.5rem; background: rgba(15, 23, 42, 0.45); border: 2px solid rgba(56, 182, 255, 0.25); border-radius: 100px; padding: 1.5rem 4.5rem 1.5rem 3rem; margin-top: 4.5rem; margin-bottom: 1rem; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 20px 60px rgba(56, 182, 255, 0.25); animation: float-card 6s ease-in-out infinite; margin-left: auto; margin-right: auto;">
+                    <img src="images/calix_logo.webp" alt="caliX Logo" style="width: 70px; height: 70px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(56, 182, 255, 0.3)); flex-shrink: 0;">
+                    <!-- Brand Name -->
+                    <div style="font-family: var(--font-title); font-size: 4.5rem; font-weight: 800; color: #ffffff; line-height: 1; letter-spacing: -2px;">
+                        cali<span style="color: #38b6ff; font-weight: 900;">X</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-down-indicator" onclick="document.getElementById('calix-home-showcase').scrollIntoView({behavior: 'smooth'})">
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Dedicated caliX Software Showcase Section -->
+        <section id="calix-home-showcase" class="calix-home-showcase">
+            <div class="container">
+                <div class="calix-home-grid">
+                    
+                    <!-- Left: Device Mockup -->
+                    <div class="calix-mockup-wrapper">
+                        <img src="images/calix_preprocessing_spectrum.webp" alt="caliX Chemometrics Preprocessing Results" class="calix-mockup-img">
+                    </div>
+                    
+                    <!-- Right: Info Panel -->
+                    <div>
+                        <div class="calix-tag-badge">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: #d4af37; display: inline-block;"></span>
+                            Chemometrics &amp; AutoML
+                        </div>
+                        
+                        <h2 class="section-title" style="font-size: 2.0rem; letter-spacing: -0.7px; margin-top: 0; margin-bottom: 1.25rem; font-family: var(--font-title); font-weight: 800;">cali<span class="calix-x">X</span>: Next-Generation Chemometrics Workspace</h2>
+                        
+                        <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.7; margin: 0;">
+                            Building high-accuracy calibration models shouldn't take weeks of manual trial-and-error. cali<span class="calix-x">X</span> automates your entire chemometrics workflow—from raw data import and preprocessing to AutoML selection and model transfer. Build robust, GxP-compliant calibrations in minutes.
+                        </p>
+                        
+                        <div class="calix-bullets">
+                            <!-- Bullet 1 -->
+                            <div class="calix-bullet-item">
+                                <div class="calix-bullet-icon">⚡</div>
+                                <div class="calix-bullet-text">
+                                    <h4>AutoML Grid Search</h4>
+                                    <p>Sweeps 95+ preprocessing and regression combinations in seconds, selecting the optimal elbow-point model to prevent overfitting.</p>
+                                </div>
+                            </div>
+                            <!-- Bullet 2 -->
+                            <div class="calix-bullet-item">
+                                <div class="calix-bullet-icon">📈</div>
+                                <div class="calix-bullet-text">
+                                    <h4>Spectral Preprocessing</h4>
+                                    <p>Apply mathematical filters (SNV, MSC, Savitzky-Golay derivative smoothing) to eliminate physical light scatter instantly.</p>
+                                </div>
+                            </div>
+                            <!-- Bullet 3 -->
+                            <div class="calix-bullet-item">
+                                <div class="calix-bullet-icon">🔄</div>
+                                <div class="calix-bullet-text">
+                                    <h4>Spectrometer Standardization</h4>
+                                    <p>Transfer master models to slave instruments effortlessly using Piecewise Direct Standardization (PDS) and SBC algorithms.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                            <a href="product-calix.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                                Explore <span style="white-space: nowrap;">cali<span class="calix-x">X</span></span> Suite
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- caliX 3-Step Workflow Section -->
+        <section class="calix-home-workflow">
+            <div class="container">
+                <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
+                    <span class="section-subtitle" style="color: #565e7a !important;">Integration</span>
+                    <h2 class="section-title" style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; color: #12141d !important;">From Scan to Control in 3 Simple Steps</h2>
+                    <p class="section-desc" style="color: #4b5563 !important;">cali<span class="calix-x">X</span> acts as the intelligence bridge, connecting raw laboratory scans directly to active factory automation.</p>
+                </div>
+                
+                <div class="calix-steps-grid">
+                    <!-- Step 1 -->
+                    <div class="calix-step-card">
+                        <div class="calix-step-num">01</div>
+                        <h3>Import &amp; Preprocess</h3>
+                        <p>Drag and drop spectral files from any instrument format. Instantly apply mathematical filters like SNV and Savitzky-Golay to remove physical light scatter and baseline drift.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="calix-step-card">
+                        <div class="calix-step-num">02</div>
+                        <h3>AutoML Optimization</h3>
+                        <p>Let AutoML sweep 95+ modeling pipelines. cali<span class="calix-x">X</span> analyzes PCA and PLS leverage metrics automatically, generating robust calibrations and preventing overfitting.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="calix-step-card">
+                        <div class="calix-step-num">03</div>
+                        <h3>One-Click Deployment</h3>
+                        <p>Export validated calibration models directly to ProChem Desktop or SCADA. Calibrations are immediately active, driving valves and pumps in real time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section id="industries" class="section bg-light" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container" style="max-width: 1720px; width: 96%;">
+                <div class="section-header" style="text-align: center; max-width: 1050px; margin: 0 auto 3rem auto;">
+                    <span class="section-subtitle">Industries We Serve</span>
+                    <h2 class="section-title">Tailored Solutions for Key Processing Sectors</h2>
+                    <p class="section-desc">Every production process has unique requirements and challenges. We develop tailored solutions designed to integrate seamlessly into existing operations, ensuring minimal disruption and maximum efficiency. By combining advanced technologies with application-specific expertise, we deliver reliable data, actionable insights, and measurable value that help our customers optimize processes, improve product quality, and enhance operational performance.</p>
+                </div>
+
+                <div class="home-industries-grid">
+                    <!-- Industry Card 1 -->
+                    <a href="industry-food-feed.html" class="home-industry-card" id="food-feed-card">
+                        <div class="card-bg-wrap">
+                            <video id="food-feed-video" class="card-bg" loop muted playsinline preload="auto">
+                                <source src="images/food_feed_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span class="card-subtitle">Precision Animal Nutrition</span>
+                            <h3 class="card-title">Food & Feed</h3>
+                            <p class="card-description">Optimize formulations, verify raw grains at receiving, and control moisture, protein, fat, ash, starch, and fiber in real-time under 60 seconds.</p>
+                            <span class="card-link-btn">
+                                Explore Industry
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Industry Card 2 -->
+                    <a href="industry-dairy.html" class="home-industry-card" id="dairy-card">
+                        <div class="card-bg-wrap">
+                            <video id="dairy-video" class="card-bg" poster="images/industries_dairy.webp" loop muted playsinline preload="metadata">
+                                <source src="images/dairy_video.mp4#t=2" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span class="card-subtitle">Standardization & Quality</span>
+                            <h3 class="card-title">Dairy</h3>
+                            <p class="card-description">Maximize cheese yields, standardize cream, and monitor butter fat, total protein, lactose, and total solids dynamically in raw milk, concentrates, and powders.</p>
+                            <span class="card-link-btn">
+                                Explore Industry
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Industry Card 3 -->
+                    <a href="industry-chemical-pharma.html" class="home-industry-card" id="chemical-pharma-card">
+                        <div class="card-bg-wrap">
+                            <video id="chemical-pharma-video" class="card-bg" poster="images/industries_chemical.webp" loop muted playsinline preload="metadata">
+                                <source src="images/8540619-uhd_2160_4096_25fps.mp4#t=7" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span class="card-subtitle">Reaction PAT & Blend Uniformity</span>
+                            <h3 class="card-title">Chemical & Pharma</h3>
+                            <p class="card-description">Monitor chemical syntheses, polymerizations, blend uniformity, and hydroxyl values directly in process lines with explosion-proof fiber-optic probes.</p>
+                            <span class="card-link-btn">
+                                Explore Industry
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why USTECH Section -->
+        <section id="why-ustech" class="section" style="position: relative; overflow: hidden;">
+            <!-- Wave background behind section header -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 380px; z-index: 1; pointer-events: none; opacity: 0.85;">
+                <canvas id="section-wave-canvas" style="width: 100%; height: 100%; display: block;"></canvas>
+            </div>
+            
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto; position: relative; z-index: 3;">
+                    <span class="section-subtitle">Sustainable Quality</span>
+                    <h2 class="section-title">USTECH Innovations is Here for Your Sustainable Production Processes!</h2>
+                    <p class="section-desc">With our precise measurements for solid and liquid products, we ensure the quality standards of your production processes at every stage. Leveraging our spectroscopy technology, we enhance your operational efficiency while contributing to your sustainability goals.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Card 1 (Span 8) -->
+                    <div class="bento-card bento-span-8" style="position: relative; overflow: hidden; background: none;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/bento_spectroscopy.webp') center/cover no-repeat; z-index: 0;"></div>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 1;"></div>
+                        <div style="position: relative; z-index: 2;">
+                            <h3 style="color: #ffffff;">Innovative Spectroscopy Solutions</h3>
+                            <p style="color: rgba(255,255,255,0.8);">Our innovative spectroscopy solutions are designed to revolutionize the way data is managed and utilized in various industries. We are committed to providing cutting-edge technology that benefits both businesses and the environment.</p>
+                        </div>
+                        <div class="bento-card-footer-viz">
+                            <span class="bento-pulse-dot" style="background-color: var(--accent-gold); box-shadow: 0 0 8px var(--accent-gold);"></span>
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">Precision Optical Engine</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (Span 4) -->
+                    <div class="bento-card bento-span-4" style="position: relative; overflow: hidden; background: none; padding: 1.5rem;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/bento_data.webp') center/cover no-repeat; z-index: 0;"></div>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 1;"></div>
+                        <div style="position: relative; z-index: 2;">
+                            <h3 style="color: #ffffff;">Data Management Excellence</h3>
+                            <p style="color: rgba(255,255,255,0.8);">At USTECH Innovations, we are driven by innovation to provide top-notch data management solutions. Our data-driven approach enables businesses to make informed decisions and achieve their desired outcomes.</p>
+                        </div>
+                        <div class="bento-card-footer-viz" style="margin-top: 1rem;">
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">cali<span class="calix-x">X</span> AutoML Suite Enabled</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Span 4) -->
+                    <div class="bento-card bento-span-4" style="position: relative; overflow: hidden; background: none; padding: 1.5rem;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/bento_integration.webp') center/cover no-repeat; z-index: 0;"></div>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 1;"></div>
+                        <div style="position: relative; z-index: 2;">
+                            <h3 style="color: #ffffff;">Technology Integration</h3>
+                            <p style="color: rgba(255,255,255,0.8);">We integrate next-generation technologies into our solutions to ensure that our clients stay ahead in their industries. We are committed to delivering high-performance and reliable technology solutions.</p>
+                        </div>
+                        <div class="bento-card-footer-viz" style="margin-top: 1rem;">
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">OPC UA &amp; Modbus Native</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Span 8) -->
+                    <div class="bento-card bento-span-8" style="position: relative; overflow: hidden; background: none; padding: 1.5rem;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/bento_performance.webp') center/cover no-repeat; z-index: 0;"></div>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 1;"></div>
+                        <div style="position: relative; z-index: 2;">
+                            <h3 style="color: #ffffff; margin-bottom: 0.5rem;">Live Performance Metrics</h3>
+                            <p style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">USTECH analytical devices operate worldwide, delivering reliable and instant results to optimize production lines. Our systems provide continuous monitoring with zero downtime, enabling real-time adjustments to your manufacturing process.</p>
+                            <div style="display: flex; gap: 1rem;">
+                                <div class="bento-metric-item" style="flex: 1; padding: 0.6rem 0.75rem;">
+                                    <div class="bento-metric-val" style="font-size: 1.4rem;">99.9<span>%</span></div>
+                                    <div class="bento-metric-lbl">Uptime</div>
+                                </div>
+                                <div class="bento-metric-item" style="flex: 1; padding: 0.6rem 0.75rem;">
+                                    <div class="bento-metric-val" style="font-size: 1.4rem;">50<span>+</span></div>
+                                    <div class="bento-metric-lbl">Global Plants</div>
+                                </div>
+                                <div class="bento-metric-item" style="flex: 1; padding: 0.6rem 0.75rem;">
+                                    <div class="bento-metric-val" style="font-size: 1.4rem;">&lt;60<span>s</span></div>
+                                    <div class="bento-metric-lbl">Analysis Speed</div>
+                                </div>
+                                <div class="bento-metric-item" style="flex: 1; padding: 0.6rem 0.75rem;">
+                                    <div class="bento-metric-val" style="font-size: 1.4rem;">100<span>%</span></div>
+                                    <div class="bento-metric-lbl">Automation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Product Showcase (Hardware & Software) Section -->
+        <section id="product-showcase" class="section">
+            <div class="container">
+                <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto 1.5rem auto; position: relative;">
+                    <span class="section-subtitle">Our Portfolio</span>
+                    <h2 class="section-title">Our Solutions</h2>
+                    <p class="section-desc">Discover our range of industrial FT-NIR spectrometers, analytical hardware, automation software, and chemometric calibration modeling workspaces.</p>
+                    
+                    <!-- Showcase Tabs Selector -->
+                    <div class="showcase-tabs-container">
+                        <button class="showcase-tab-btn active" onclick="switchShowcaseTab('hardware')">Hardware &amp; Devices</button>
+                        <button class="showcase-tab-btn" onclick="switchShowcaseTab('software')">Software &amp; Calibrations</button>
+                    </div>
+                </div>
+
+                <!-- Slider Wrapper with Side Navigation -->
+                <div style="position: relative;">
+                    <!-- Left Arrow -->
+                    <button id="showcase-slider-prev" class="blog-slider-nav-btn" aria-label="Previous Item" style="position: absolute; left: -24px; top: 50%; transform: translateY(-50%); z-index: 10;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <!-- Right Arrow -->
+                    <button id="showcase-slider-next" class="blog-slider-nav-btn" aria-label="Next Item" style="position: absolute; right: -24px; top: 50%; transform: translateY(-50%); z-index: 10;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+
+                    <!-- Hardware Slider Container -->
+                    <div id="showcase-hardware-container" class="home-blog-slider-container active-panel">
+                        <div class="blog-slider-track">
+
+                        <!-- Card 1: ProLine2550 -->
+                        <a href="product-proline-2550.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/proline_2550.webp" alt="ProLine2550 FT-NIR Analyzer" class="card-bg proline-fit">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">PROCESS SPECTROSCOPY</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">ProLine2550 FT-NIR</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Sanitary weld-in probe installation for continuous inline composition control.</p>
+                            </div>
+                        </a>
+                        <!-- Card 2: ProLine17ES -->
+                        <a href="product-n-sens-online.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/online.webp" alt="ProLine17ES Analyzer" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">INLINE PROCESS PAT</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">ProLine17ES</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Rugged composition analyzer for pipelines, chutes, and conveyor lines.</p>
+                            </div>
+                        </a>
+                        <!-- Card 3: USTECH MasterLine -->
+                        <a href="product-n-sens-feed.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/feed.webp" alt="USTECH MasterLine" class="card-bg feed-fit">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">AT-LINE QUALITY CONTROL</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">USTECH MasterLine</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Fast nutritional profiling for grains, feed ingredients, and finished forage.</p>
+                            </div>
+                        </a>
+                        <!-- Card 4: USTECH StarchQC Damaged Starch -->
+                        <a href="product-i-sens-starch.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/starch.webp" alt="USTECH StarchQC" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">FLOUR &amp; MILLING QUALITY</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">USTECH StarchQC Damaged Starch</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Enzymatic amperometric analyzer verifying damaged starch percentage in flour.</p>
+                            </div>
+                        </a>
+                        <!-- Card 5: USTECH SamplePrep -->
+                        <a href="product-n-sens-sampleprep.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/sampleprep.webp" alt="USTECH SamplePrep" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">LABORATORY PREPARATION</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">USTECH SamplePrep</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">High-technology bead-beating tissue homogenizer and extraction module.</p>
+                            </div>
+                        </a>
+                        <!-- Card 6: USTECH Tornado+ -->
+                        <a href="product-n-sens-tornado.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/tornado.webp" alt="USTECH Tornado+" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">LABORATORY MILLING</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">USTECH Tornado+</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Liquid water-cooled sample mill protecting fat and moisture integrity.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Software Slider Container -->
+                <div id="showcase-software-container" class="home-blog-slider-container">
+                    <div class="blog-slider-track">
+                        <!-- Card 1: caliX -->
+                        <a href="product-calix.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/calix_logo.webp" alt="caliX Calibration Suite Logo" class="card-bg contained-card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">CHEMOMETRICS &amp; AUTOML</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">cali<span class="calix-x">X</span> Calibration Suite</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Develop robust regression models, clean spectra, and build calibrations.</p>
+                            </div>
+                        </a>
+                        <!-- Card 2: ProChem Smart Manufacturing -->
+                        <a href="product-prochem.html" class="blog-slider-card">
+                            <div class="card-bg-wrap">
+                                <img src="images/prochem_desktop_logo.webp" alt="ProChem Smart Suite Logo" class="card-bg contained-card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">INDUSTRIAL INDUSTRY 4.0</span>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">ProChem Smart Suite</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Coordinate multi-spectrometer operations with cloud dashboard synchronization.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div> <!-- end slider wrapper -->
+            </div>
+        </section>
+
+        <!-- Inline Process Optimization Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                    <div>
+                        <span class="section-subtitle">Real-Time Control</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; letter-spacing: -0.7px;">Real-Time, Closed-Loop Optimization</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">Collect continuous flow data from production lines, pipelines, and mixers. Our <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES</a> and <a href="product-proline-2550.html" class="inline-product-link">ProLine2550</a> inline spectrometers continuously scan materials inside reactors or pipelines.</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7;">By obtaining real-time composition trends for moisture, fat, protein, and chemical content, facilities can automatically adjust valves, dosing pumps, and blenders to ensure every batch meets specs with zero product waste.</p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="knowledge-technology.html" class="btn btn-secondary">Learn the Tech</a>
+                        </div>
+                    </div>
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); height: 400px;">
+                        <img src="images/realtime-control.webp" alt="Engineering and Process Control" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Comparison Table Section -->
+        <section class="section" style="display: none !important; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/comparison-bg.webp') center/cover no-repeat; z-index: 0;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(18, 20, 29, 0.88); z-index: 1;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">
+                    <span class="section-subtitle" style="color: #60a5fa;">Why Inline FT-NIR</span>
+                    <h2 class="section-title" style="color: #ffffff;">Traditional Methods vs. USTECH Closed-Loop Control</h2>
+                    <p class="section-desc" style="color: rgba(255, 255, 255, 0.8);">See how real-time inline spectroscopy eliminates the delays, errors, and waste of conventional lab-based quality control.</p>
+                </div>
+
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="comparison-th-criteria">Criteria</th>
+                                <th class="comparison-th-traditional">Traditional Methods</th>
+                                <th class="comparison-th-ustech">USTECH</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="comparison-criteria">Measurement Speed</td>
+                                <td class="comparison-traditional">30–60 min per sample (lab turnaround)</td>
+                                <td class="comparison-ustech">&lt; 30 seconds (real-time inline)</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Sampling Frequency</td>
+                                <td class="comparison-traditional">2–4 samples per shift</td>
+                                <td class="comparison-ustech">Continuous (60 scans/min)</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Process Variance</td>
+                                <td class="comparison-traditional">&plusmn;2.5% deviation from target</td>
+                                <td class="comparison-ustech">&plusmn;0.2% deviation from target</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Waste &amp; Rework Rate</td>
+                                <td class="comparison-traditional">3–8% of total production</td>
+                                <td class="comparison-ustech">&lt; 0.5% of total production</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Labor Requirement</td>
+                                <td class="comparison-traditional">2–3 lab technicians per shift</td>
+                                <td class="comparison-ustech">Fully automated, zero manual sampling</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Calibration</td>
+                                <td class="comparison-traditional">Manual, requires frequent recalibration</td>
+                                <td class="comparison-ustech">AutoML-driven, self-optimizing models</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Data Availability</td>
+                                <td class="comparison-traditional">Delayed reports, periodic snapshots</td>
+                                <td class="comparison-ustech">Real-time dashboards, OPC UA / Modbus</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Multi-Parameter</td>
+                                <td class="comparison-traditional">One parameter per test</td>
+                                <td class="comparison-ustech">Simultaneous moisture, fat, protein, starch</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">Compliance</td>
+                                <td class="comparison-traditional">Retrospective batch documentation</td>
+                                <td class="comparison-ustech">Continuous traceability &amp; audit trail</td>
+                            </tr>
+                            <tr>
+                                <td class="comparison-criteria">ROI Payback</td>
+                                <td class="comparison-traditional">—</td>
+                                <td class="comparison-ustech">Typically &lt; 6 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Summary Stats -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <div class="bento-metric-item" style="border-left: 4px solid #ef4444; text-align: center;">
+                        <div class="bento-metric-val" style="color: #ef4444;">&plusmn;2.5<span>%</span></div>
+                        <div class="bento-metric-lbl">Traditional Variance</div>
+                    </div>
+                    <div class="bento-metric-item" style="border-left: 4px solid #60a5fa; text-align: center;">
+                        <div class="bento-metric-val" style="color: #60a5fa;">&plusmn;0.2<span>%</span></div>
+                        <div class="bento-metric-lbl">USTECH Variance</div>
+                    </div>
+                    <div class="bento-metric-item" style="border-left: 4px solid var(--accent-gold); text-align: center;">
+                        <div class="bento-metric-val" style="color: var(--accent-gold);">12x<span></span></div>
+                        <div class="bento-metric-lbl">Improvement Factor</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- B2B ROI Calculator Section -->
+        <section class="section roi-section">
+            <div class="container">
+                <div class="roi-container">
+                    <!-- Column 1: The Calculator UI -->
+                    <div class="roi-card-ui">
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem; text-align: center;">Calculate Your Annual Savings</h3>
+                        
+                        <!-- Input 1: Industry -->
+                        <div class="roi-form-group">
+                            <label for="roi-industry">Select Industry: <span>&nbsp;</span></label>
+                            <select id="roi-industry" class="roi-select">
+                                <option value="feed">Food & Feed (Soybean/Corn)</option>
+                                <option value="dairy">Dairy (Cheese Yield/Cream)</option>
+                                <option value="chemical">Chemical & Pharma (Batch Yield)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Input 2: Capacity -->
+                        <div class="roi-form-group">
+                            <label for="roi-capacity">Daily Production Capacity: <span id="roi-capacity-val">25 tons/hr</span></label>
+                            <input type="range" id="roi-capacity" class="roi-slider" min="5" max="100" value="25">
+                        </div>
+
+                        <!-- Input 3: Raw Material Cost -->
+                        <div class="roi-form-group">
+                            <label for="roi-cost">Raw Material Cost (per Ton): <span id="roi-cost-val">$450</span></label>
+                            <input type="range" id="roi-cost" class="roi-slider" min="100" max="2000" step="10" value="450">
+                        </div>
+
+                        <!-- Input 4: Overformulation margin -->
+                        <div class="roi-form-group" style="margin-bottom: 0;">
+                            <label for="roi-margin">Overformulation Margin Reduction: <span id="roi-margin-val">0.8%</span></label>
+                            <input type="range" id="roi-margin" class="roi-slider" min="0.2" max="3.0" step="0.1" value="0.8">
+                        </div>
+                    </div>
+
+                    <!-- Column 2: The Calculations Results -->
+                    <div>
+                        <span class="section-subtitle">Financial Return</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; letter-spacing: -0.7px;">Proven Financial Return on Investment</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7;">By reducing over-formulation safety margins and preventing product rejections, plants routinely recoup their total equipment investment within the first few months. Adjust the parameters on the left to see your estimated financial return.</p>
+                        
+                        <div class="roi-results">
+                            <!-- Main Result Card -->
+                            <div class="roi-result-main">
+                                <h4>Estimated Annual Savings</h4>
+                                <div class="roi-val" id="val-annual-savings">$156,000</div>
+                            </div>
+                            
+                            <!-- Sub Result Grid -->
+                            <div class="roi-result-grid">
+                                <div class="roi-result-sub">
+                                    <h5>Payback Period</h5>
+                                    <div class="roi-sub-val" id="val-payback">5.3 Months</div>
+                                </div>
+                                <div class="roi-result-sub">
+                                    <h5>Quality Yield Increase</h5>
+                                    <div class="roi-sub-val" id="val-yield-inc">1.4%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="home-blog-section" class="section">
+            <div class="container" style="position: relative; max-width: 100%; padding: 0;">
+                <div class="container" style="padding: 0 4%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
+                    <div>
+                        <span class="section-subtitle">Knowledge</span>
+                        <h2 class="section-title" style="margin-bottom: 0;">Latest from USTECH Blog</h2>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <button id="blog-slider-prev" class="blog-slider-nav-btn" aria-label="Previous Post">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </button>
+                        <button id="blog-slider-next" class="blog-slider-nav-btn" aria-label="Next Post">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="home-blog-slider-container" class="home-blog-slider-container">
+                    <div class="blog-slider-track">
+                        <!-- Blog Card 1 -->
+                        <a href="blog-moisture-milk-powder.html" class="blog-slider-card" data-date="2026-06-15" data-industry="dairy">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_milk_powder.webp" alt="Milk Powder Spray Drying" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">CASE STUDY • JUN 15, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Standardizing Moisture in Milk Powder Spray Drying</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Optimize yields and prevent sticky powder clogs on spray dryer discharges.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 2 -->
+                        <a href="blog-blend-uniformity-pharma.html" class="blog-slider-card" data-date="2026-05-20" data-industry="chemical-pharma">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_pharma_blending.webp" alt="Pharmaceutical Blending" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">CASE STUDY • MAY 20, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Blend Uniformity Verification in Active Pharmas</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Verify dry powder homogeneity dynamically inside bin blenders without stopping.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 3 -->
+                        <a href="blog-cattle-feed-waste.html" class="blog-slider-card" data-date="2026-03-15" data-industry="food-feed">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_cattle_feed.webp" alt="Cattle Feed Production" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">CASE STUDY • MAR 15, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Reducing Ingredient Waste in Cattle Feed</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Learn how inline NIR sensors over feed mixer exits improved yield by 1.2%.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 4 -->
+                        <a href="blog-pls-regression-calix.html" class="blog-slider-card" data-date="2026-04-05" data-industry="general-tech">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_pls_regression.webp" alt="PLS Regression caliX" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">GUIDE • APR 05, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Introduction to PLS Regression in cali<span class="calix-x">X</span> Suite</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">A step-by-step tutorial explaining how to compile calibration models from reference wet chemistry.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 5 -->
+                        <a href="blog-opc-ua-dosing-valves.html" class="blog-slider-card" data-date="2026-02-25" data-industry="general-tech">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_opc_ua_plc.webp" alt="OPC UA Integration" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">GUIDE • FEB 25, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Standardizing OPC UA Closed-Loop Integrations</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Industrial automation guide mapping spectrometer outputs into closed-loop PLC tag structures.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 6 -->
+                        <a href="blog-calibration-transfer.html" class="blog-slider-card" data-date="2026-01-20" data-industry="general-tech">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_mems_sensor.webp" alt="Calibration Transfer" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">WHITE PAPER • JAN 20, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Calibration Transfer Feasibility on MEMS</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">How MEMS optical tolerances enable unit-to-unit calibration transferability without adjustments.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 7 -->
+                        <a href="blog-savitzky-golay-filtering.html" class="blog-slider-card" data-date="2026-04-10" data-industry="general-tech">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_spectral_math.webp" alt="Savitzky-Golay Preprocessing" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">GUIDE • APR 10, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Understanding Savitzky-Golay Preprocessing</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">A mathematical breakdown of smoothing filters, parameters, and derivatives for NIR spectra.</p>
+                            </div>
+                        </a>
+
+                        <!-- Blog Card 8 -->
+                        <a href="blog-starch-extraction-milling.html" class="blog-slider-card" data-date="2026-06-02" data-industry="food-feed">
+                            <div class="card-bg-wrap">
+                                <img src="images/blog_starch_milling.webp" alt="Starch Extraction Milling" class="card-bg">
+                            </div>
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="card-subtitle">CASE STUDY • JUN 02, 2026</span>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Optimizing Starch Extraction in Wet Milling</h3>
+                                <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">How a processing plant used at-line NIR composition monitoring to maximize corn starch yield.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="padding: 0 4%; margin-top: 2.5rem;">
+                    <a href="knowledge-blogs.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Browse All Publications
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-dark-section" style="text-align: center; color: var(--bg-primary); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/facility-bg.webp') center/cover no-repeat; z-index: 0;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(18, 20, 29, 0.8); z-index: 1;"></div>
+            <div class="container" style="max-width: 800px; padding: 4rem 2rem; position: relative; z-index: 2;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">Optimize Your Production Facility</h2>
+                <p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
+                    Discover how our spectroscopic technology fits your process. Choose an option below to browse our devices, check software calibrations, or request a custom analysis from our chemometrics team.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">View Solutions</a>
+                    <a href="contact.html" class="btn btn-secondary" style="border-color: var(--border-hover); color: var(--bg-primary);">Request Consultation</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0;">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Bento Wave Canvas Animation
+            initBentoWave();
+
+            // 2. Before/After Comparison Chart
+            initBeforeAfterComparison();
+
+            // 3. Spectroscopy & PLC Simulator
+            initSpectroscopySimulator();
+
+            // 4. B2B ROI Calculator
+            initRoiCalculator();
+        });
+
+        // ==========================================
+        // 1. Bento Wave Canvas Animation
+        // ==========================================
+        function initBentoWave() {
+            const canvas = document.getElementById('section-wave-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let animationId;
+            
+            function resize() {
+                const rect = canvas.getBoundingClientRect();
+                canvas.width = rect.width * devicePixelRatio;
+                canvas.height = rect.height * devicePixelRatio;
+                ctx.scale(devicePixelRatio, devicePixelRatio);
+            }
+            
+            resize();
+            window.addEventListener('resize', resize);
+            
+            let offset = 0;
+            function animate() {
+                const width = canvas.width / devicePixelRatio;
+                const height = canvas.height / devicePixelRatio;
+                if (width === 0 || height === 0) {
+                    animationId = requestAnimationFrame(animate);
+                    return;
+                }
+                ctx.clearRect(0, 0, width, height);
+                
+                // Draw a soft grid background
+                ctx.strokeStyle = 'rgba(213, 178, 121, 0.05)';
+                ctx.lineWidth = 1;
+                for (let i = 0; i < width; i += 30) {
+                    ctx.beginPath();
+                    ctx.moveTo(i, 0);
+                    ctx.lineTo(i, height);
+                    ctx.stroke();
+                }
+                for (let j = 0; j < height; j += 30) {
+                    ctx.beginPath();
+                    ctx.moveTo(0, j);
+                    ctx.lineTo(width, j);
+                    ctx.stroke();
+                }
+
+                // Draw multiple light waves
+                drawWave(height / 2, 'rgba(213, 178, 121, 0.35)', 0.012, 18, offset);
+                drawWave(height / 2, 'rgba(18, 20, 29, 0.06)', 0.008, 12, offset + Math.PI / 4);
+                drawWave(height / 2, 'rgba(108, 117, 125, 0.2)', 0.015, 8, offset - Math.PI / 2);
+                
+                offset += 0.02;
+                animationId = requestAnimationFrame(animate);
+            }
+            
+            function drawWave(yCenter, color, frequency, amplitude, phase) {
+                const width = canvas.width / devicePixelRatio;
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                for (let x = 0; x < width; x++) {
+                    const y = yCenter + Math.sin(x * frequency + phase) * amplitude * Math.sin(x / width * Math.PI);
+                    if (x === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+            }
+            
+            animate();
+        }
+
+        // ==========================================
+        // 2. Before/After Comparison Chart
+        // ==========================================
+        function initBeforeAfterComparison() {
+            const slider = document.getElementById('comp-slider');
+            const afterPanel = document.getElementById('panel-comp-after');
+            const handle = document.getElementById('comp-handle');
+            const canvasBefore = document.getElementById('canvas-comp-before');
+            const canvasAfter = document.getElementById('canvas-comp-after');
+            
+            if (!slider || !afterPanel || !handle || !canvasBefore || !canvasAfter) return;
+            
+            slider.addEventListener('input', (e) => {
+                const val = e.target.value;
+                afterPanel.style.width = val + '%';
+                handle.style.left = val + '%';
+            });
+            
+            const ctxBefore = canvasBefore.getContext('2d');
+            const ctxAfter = canvasAfter.getContext('2d');
+            
+            function resize() {
+                [canvasBefore, canvasAfter].forEach(c => {
+                    const rect = c.parentElement.getBoundingClientRect();
+                    c.width = rect.width * devicePixelRatio;
+                    c.height = rect.height * devicePixelRatio;
+                    c.getContext('2d').scale(devicePixelRatio, devicePixelRatio);
+                });
+                drawCharts();
+            }
+            
+            function drawCharts() {
+                const w = canvasBefore.width / devicePixelRatio;
+                const h = canvasBefore.height / devicePixelRatio;
+                if (w === 0 || h === 0) return;
+                
+                // Draw before chart
+                drawChartBase(ctxBefore, w, h);
+                drawNoisyWave(ctxBefore, w, h);
+                
+                // Draw after chart
+                drawChartBase(ctxAfter, w, h);
+                drawStableWave(ctxAfter, w, h);
+            }
+            
+            function drawChartBase(ctx, w, h) {
+                ctx.clearRect(0, 0, w, h);
+                
+                // Draw background grid lines
+                ctx.strokeStyle = 'rgba(0, 0, 0, 0.02)';
+                ctx.lineWidth = 1;
+                for (let x = 0; x < w; x += 40) {
+                    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+                }
+                for (let y = 0; y < h; y += 30) {
+                    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+                }
+                
+                // Target line (center)
+                ctx.strokeStyle = '#6c757d';
+                ctx.lineWidth = 1.5;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                ctx.moveTo(0, h / 2);
+                ctx.lineTo(w, h / 2);
+                ctx.stroke();
+                ctx.setLineDash([]);
+                
+                // Upper and Lower Control Limits (UCL / LCL)
+                ctx.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+                ctx.lineWidth = 1;
+                ctx.setLineDash([3, 3]);
+                ctx.beginPath();
+                ctx.moveTo(0, h * 0.25);
+                ctx.lineTo(w, h * 0.25);
+                ctx.moveTo(0, h * 0.75);
+                ctx.lineTo(w, h * 0.75);
+                ctx.stroke();
+                ctx.setLineDash([]);
+                
+                ctx.font = '9px monospace';
+                ctx.fillStyle = '#ef4444';
+                ctx.fillText('UCL (+1.5%)', 10, h * 0.22);
+                ctx.fillText('LCL (-1.5%)', 10, h * 0.79);
+                
+                ctx.fillStyle = '#6c757d';
+                ctx.fillText('Target (0.0%)', 10, h / 2 - 6);
+            }
+            
+            function drawNoisyWave(ctx, w, h) {
+                ctx.strokeStyle = '#ef4444';
+                ctx.lineWidth = 2.5;
+                ctx.beginPath();
+                for (let x = 0; x < w; x++) {
+                    const swing = Math.sin(x * 0.015) * (h * 0.22) + Math.cos(x * 0.007) * (h * 0.12);
+                    const noise = (Math.sin(x * 0.2) + Math.cos(x * 0.35)) * 8;
+                    const y = h / 2 + swing + noise;
+                    if (x === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+            }
+            
+            function drawStableWave(ctx, w, h) {
+                ctx.strokeStyle = '#d5b279';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                for (let x = 0; x < w; x++) {
+                    const swing = Math.sin(x * 0.02) * (h * 0.05) + Math.cos(x * 0.01) * (h * 0.02);
+                    const noise = (Math.sin(x * 0.3) + Math.cos(x * 0.5)) * 1.5;
+                    const y = h / 2 + swing + noise;
+                    if (x === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+            }
+            
+            resize();
+            window.addEventListener('resize', resize);
+        }
+
+        // ==========================================
+        // 3. Spectroscopy & PLC Simulator
+        // ==========================================
+        function initSpectroscopySimulator() {
+            const sMoisture = document.getElementById('sim-moisture');
+            const sProtein = document.getElementById('sim-protein');
+            const vMoisture = document.getElementById('sim-moisture-val');
+            const vProtein = document.getElementById('sim-protein-val');
+            
+            const plcMoistureDev = document.getElementById('plc-moisture-dev');
+            const plcValvePos = document.getElementById('plc-valve-pos');
+            const plcState = document.getElementById('plc-state');
+            
+            const ledGreen = document.getElementById('led-green');
+            const ledYellow = document.getElementById('led-yellow');
+            const ledRed = document.getElementById('led-red');
+            
+            const canvas = document.getElementById('sim-spectrum-canvas');
+            if (!sMoisture || !sProtein || !canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            
+            function resize() {
+                const rect = canvas.getBoundingClientRect();
+                canvas.width = rect.width * devicePixelRatio;
+                canvas.height = rect.height * devicePixelRatio;
+                ctx.scale(devicePixelRatio, devicePixelRatio);
+                updateSimulation();
+            }
+            
+            window.addEventListener('resize', resize);
+            
+            [sMoisture, sProtein].forEach(slider => {
+                slider.addEventListener('input', updateSimulation);
+            });
+            
+            function updateSimulation() {
+                const moisture = parseFloat(sMoisture.value);
+                const protein = parseFloat(sProtein.value);
+                
+                vMoisture.textContent = moisture.toFixed(1) + '%';
+                vProtein.textContent = protein.toFixed(1) + '%';
+                
+                const targetMoisture = 12.5;
+                const dev = moisture - targetMoisture;
+                plcMoistureDev.textContent = (dev >= 0 ? '+' : '') + dev.toFixed(2) + '%';
+                
+                let valve = 45.0 - (dev * 15.0);
+                if (valve < 0) valve = 0;
+                if (valve > 100) valve = 100;
+                plcValvePos.textContent = valve.toFixed(1) + '%';
+                
+                const absDev = Math.abs(dev);
+                
+                ledGreen.className = 'sim-led';
+                ledYellow.className = 'sim-led';
+                ledRed.className = 'sim-led';
+                
+                if (absDev < 0.6) {
+                    plcState.textContent = 'OPTIMAL';
+                    plcState.style.color = '#10b981';
+                    ledGreen.className = 'sim-led active-green';
+                } else if (absDev < 1.6) {
+                    plcState.textContent = 'WARNING';
+                    plcState.style.color = '#f59e0b';
+                    ledYellow.className = 'sim-led active-yellow';
+                } else {
+                    plcState.textContent = 'CRITICAL';
+                    plcState.style.color = '#ef4444';
+                    ledRed.className = 'sim-led active-red';
+                }
+                
+                drawSpectrum(moisture, protein);
+            }
+            
+            function drawSpectrum(moisture, protein) {
+                const w = canvas.width / devicePixelRatio;
+                const h = canvas.height / devicePixelRatio;
+                if (w === 0 || h === 0) return;
+                ctx.clearRect(0, 0, w, h);
+                
+                ctx.strokeStyle = '#1f2335';
+                ctx.lineWidth = 0.5;
+                for (let x = 0; x < w; x += 30) {
+                    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+                }
+                for (let y = 0; y < h; y += 20) {
+                    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+                }
+                
+                ctx.strokeStyle = '#d5b279';
+                ctx.lineWidth = 2.5;
+                
+                ctx.shadowColor = '#d5b279';
+                ctx.shadowBlur = 8;
+                
+                ctx.beginPath();
+                
+                const baseH = h * 0.75;
+                
+                for (let x = 0; x < w; x++) {
+                    let absorb = 0;
+                    
+                    const dx1 = x - (w * 0.35);
+                    const mHeight1 = (moisture - 5) * 4;
+                    absorb += Math.exp(-(dx1 * dx1) / 400) * mHeight1;
+                    
+                    const dx2 = x - (w * 0.60);
+                    const mHeight2 = (moisture - 5) * 6;
+                    absorb += Math.exp(-(dx2 * dx2) / 600) * mHeight2;
+                    
+                    const dx3 = x - (w * 0.80);
+                    const pHeight = (protein - 30) * 3;
+                    absorb += Math.exp(-(dx3 * dx3) / 500) * pHeight;
+                    
+                    const baseline = Math.sin(x * 0.015) * 10 + 15;
+                    
+                    const y = baseH - baseline - absorb;
+                    if (x === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+                ctx.shadowBlur = 0;
+            }
+            
+            resize();
+        }
+
+        // ==========================================
+        // 4. B2B ROI Calculator
+        // ==========================================
+        function initRoiCalculator() {
+            const rIndustry = document.getElementById('roi-industry');
+            const rCapacity = document.getElementById('roi-capacity');
+            const rCost = document.getElementById('roi-cost');
+            const rMargin = document.getElementById('roi-margin');
+            
+            const lblCapacity = document.getElementById('roi-capacity-val');
+            const lblCost = document.getElementById('roi-cost-val');
+            const lblMargin = document.getElementById('roi-margin-val');
+            const lblCapacityDesc = document.querySelector('label[for="roi-capacity"]');
+            const lblCostDesc = document.querySelector('label[for="roi-cost"]');
+            
+            const valAnnual = document.getElementById('val-annual-savings');
+            const valPayback = document.getElementById('val-payback');
+            const valYield = document.getElementById('val-yield-inc');
+            
+            if (!rIndustry || !rCapacity || !rCost || !rMargin) return;
+            
+            rIndustry.addEventListener('change', () => {
+                const ind = rIndustry.value;
+                if (ind === 'feed') {
+                    rCapacity.min = 5; rCapacity.max = 100; rCapacity.value = 25;
+                    rCost.min = 100; rCost.max = 800; rCost.value = 450;
+                    lblCapacityDesc.firstChild.textContent = 'Daily Production Capacity: ';
+                    lblCostDesc.firstChild.textContent = 'Raw Material Cost (per Ton): ';
+                } else if (ind === 'dairy') {
+                    rCapacity.min = 10; rCapacity.max = 200; rCapacity.value = 50;
+                    rCost.min = 200; rCost.max = 1000; rCost.value = 400;
+                    lblCapacityDesc.firstChild.textContent = 'Daily Processing Capacity: ';
+                    lblCostDesc.firstChild.textContent = 'Milk Value (per 1,000 Liters): ';
+                } else if (ind === 'chemical') {
+                    rCapacity.min = 2; rCapacity.max = 50; rCapacity.value = 10;
+                    rCost.min = 500; rCost.max = 5000; rCost.value = 1500;
+                    lblCapacityDesc.firstChild.textContent = 'Daily Processing Capacity: ';
+                    lblCostDesc.firstChild.textContent = 'Material Cost (per m³): ';
+                }
+                updateRoi();
+            });
+            
+            [rCapacity, rCost, rMargin].forEach(slider => {
+                slider.addEventListener('input', updateRoi);
+            });
+            
+            function updateRoi() {
+                const ind = rIndustry.value;
+                const capacity = parseFloat(rCapacity.value);
+                const cost = parseFloat(rCost.value);
+                const margin = parseFloat(rMargin.value);
+                
+                let capUnit = ' tons/hr';
+                let costPrefix = '$';
+                
+                if (ind === 'feed') {
+                    capUnit = ' tons/hr';
+                    lblCapacity.textContent = capacity + capUnit;
+                    lblCost.textContent = costPrefix + cost;
+                } else if (ind === 'dairy') {
+                    capUnit = 'k Liters/hr';
+                    lblCapacity.textContent = capacity + ' ' + capUnit;
+                    lblCost.textContent = costPrefix + cost;
+                } else if (ind === 'chemical') {
+                    capUnit = ' m³/hr';
+                    lblCapacity.textContent = capacity + capUnit;
+                    lblCost.textContent = costPrefix + cost;
+                }
+                
+                lblMargin.textContent = margin.toFixed(1) + '%';
+                
+                let annualSavings = 0;
+                let qualityYield = 0;
+                let equipmentCost = 95000;
+                
+                const operatingHoursPerYear = 20 * 300;
+                
+                if (ind === 'feed') {
+                    annualSavings = capacity * operatingHoursPerYear * cost * (margin / 100) * 0.75;
+                    qualityYield = margin * 1.5;
+                } else if (ind === 'dairy') {
+                    annualSavings = (capacity * 1000) * operatingHoursPerYear * (cost / 1000) * (margin / 100) * 0.95;
+                    qualityYield = margin * 1.2;
+                } else if (ind === 'chemical') {
+                    annualSavings = capacity * operatingHoursPerYear * cost * (margin / 100) * 1.1;
+                    qualityYield = margin * 1.8;
+                    equipmentCost = 135000;
+                }
+                
+                valAnnual.textContent = costPrefix + Math.round(annualSavings).toLocaleString();
+                
+                let paybackMonths = (equipmentCost / annualSavings) * 12;
+                if (paybackMonths < 1.0) paybackMonths = 1.0;
+                valPayback.textContent = paybackMonths.toFixed(1) + ' Months';
+                
+                valYield.textContent = qualityYield.toFixed(1) + '%';
+            }
+            
+            updateRoi();
+        }
+    </script>
+</body>
+</html>

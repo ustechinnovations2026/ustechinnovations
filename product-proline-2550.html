@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ProLine2550 Process FT-NIR Analyzer - Rugged industrial inline process spectrometer for blenders, reactors, and pipelines.">
+    <title>ProLine2550 Process FT-NIR Analyzer | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Breadcrumb -->
+        <section style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 0.75rem 2rem;">
+            <div class="container" style="font-size: 0.85rem; color: var(--text-muted);">
+                <a href="index.html">Home</a> &gt; <a href="products-devices.html">Devices</a> &gt; ProLine2550 Process FT-NIR Analyzer
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <div class="product-img-container">
+                        <img src="images/proline_2550.webp" alt="ProLine2550 Process FT-NIR Analyzer" class="product-svg-mockup" style="border-radius: 8px; width: 100%; height: auto;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-grey);">Industrial Process Spectroscopy</span>
+                        <h1 style="font-size: 2.5rem; margin-top: 0.5rem; margin-bottom: 1rem; letter-spacing: -1px;">ProLine2550 FT-NIR Analyzer</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+                            The ProLine2550 is USTECH's flagship inline FT-NIR analyzer platform, available in two configurations to match your process complexity and budget. Both models share the same robust industrial design, IP65-rated enclosure, and CE certification &mdash; differing in analytical depth and automation capabilities.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                            <a href="#advanced" class="btn btn-primary">Advanced Model</a>
+                            <a href="#essential" class="btn btn-secondary">Essential Model</a>
+                            <a href="#comparison" class="btn btn-secondary">Compare Models</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ProLine2550 Advanced Section -->
+        <section id="advanced" class="section" style="border-top: 1px solid var(--border-color); background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-gold); letter-spacing: 1.5px;">Flagship Model</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">ProLine2550 Advanced</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+                            Engineered for high-volume bulk production, the Advanced model takes real-time process control to the next level by delivering comprehensive, multi-parameter analysis simultaneously. It integrates seamlessly into key transfer points to provide split-second measurements for challenging materials like powders, granules, pellets, and pastes &mdash; capturing all critical constituents at once.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            This heavy-duty system features full automation with integrated temperature control and IP65-certified protection, ensuring uninterrupted precision in harsh environments. By delivering complete, real-time data on multiple parameters, the ProLine2550 Advanced allows for immediate process adjustments &mdash; maximizing yield, guaranteeing product consistency, and eliminating costly reprocessing.
+                        </p>
+
+
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="contact.html?product=proline-2550-advanced" class="btn btn-primary">Request a Quote</a>
+                        </div>
+                    </div>
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+                        <img src="images/proline_detail_2.webp" alt="ProLine2550 Advanced Installation" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ProLine2550 Essential Section -->
+        <section id="essential" class="section" style="border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+                        <img src="images/proline_detail_4.webp" alt="ProLine2550 Essential Installation" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: #60a5fa; letter-spacing: 1.5px;">Cost-Effective Model</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">ProLine2550 Essential</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+                            Designed for straightforward and cost-effective process monitoring, the Essential model delivers real-time, precise measurement for operations with focused analytical needs. It eliminates unnecessary data clutter by customizing its configuration to track up to two key parameters tailored specifically to your production requirements.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            Housed in a rugged, industrial-grade enclosure with an IP65 rating, CE certification, and integrated temperature control, the Essential model guarantees stable and long-lasting performance in any production environment. By delivering accurate, actionable data within seconds, it empowers operators to maintain consistent product quality, enhance daily process efficiency, and achieve targeted production standards without complexity.
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="contact.html?product=proline-2550-essential" class="btn btn-primary">Request a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Comparison Table -->
+        <section id="comparison" class="section bg-light" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+                    <span class="section-subtitle">Side-by-Side</span>
+                    <h2 class="section-title">Essential vs. Advanced Comparison</h2>
+                    <p class="section-desc">Compare the capabilities, features, and target applications of both ProLine2550 models to find the right fit for your production line.</p>
+                </div>
+
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-name">Feature / Specification</th>
+                                <th>ProLine2550 Essential</th>
+                                <th class="ustech-highlight">ProLine2550 Advanced</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">Primary Application</td>
+                                <td>Focused monitoring of 1&ndash;2 key parameters</td>
+                                <td class="ustech-highlight">Simultaneous multi-parameter composition analysis</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Parameters</td>
+                                <td>Up to 2 (e.g., moisture + protein)</td>
+                                <td class="ustech-highlight">Unlimited (moisture, fat, protein, starch, fiber, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Target Materials</td>
+                                <td>Standard liquids, slurries, simple solid flows</td>
+                                <td class="ustech-highlight">Complex bulk materials (powders, granules, pellets, pastes)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Enclosure &amp; Rating</td>
+                                <td>IP65 industrial-grade enclosure</td>
+                                <td class="ustech-highlight">316L Stainless Steel, electro-polished (IP65 / IP69K)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Installation Interface</td>
+                                <td>Flange mounting for flat chutes</td>
+                                <td class="ustech-highlight">Sanitary weld-in probes for pipes, chutes, conveyors</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Temperature Control</td>
+                                <td>Integrated temperature control</td>
+                                <td class="ustech-highlight">Advanced active temperature regulation</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Calibration &amp; Reference</td>
+                                <td>Manual calibration via ProChem</td>
+                                <td class="ustech-highlight">Automatic calibration with internal wavelength reference</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Connectivity</td>
+                                <td>Modbus TCP, Analog 4&ndash;20 mA</td>
+                                <td class="ustech-highlight">OPC UA, Modbus TCP, Analog 4&ndash;20 mA, Profinet</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Ideal For</td>
+                                <td>Cost-conscious operations with focused QC needs</td>
+                                <td class="ustech-highlight">High-throughput facilities requiring full composition control</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software & Automation Section -->
+        <section class="section" style="border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: start;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-gold); letter-spacing: 1.5px;">Software &amp; Automation</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">ProChem Software &amp; Edge Integration</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+                            The ProLine 2550 series is powered by ProChem, our proprietary desktop software and automation interface designed to transform complex spectroscopic data into actionable process insights. Connecting seamlessly via Ethernet, ProChem acts as the central command for both data management and plant automation.
+                        </p>
+                    </div>
+                    <div>
+                        <ul style="list-style: none; padding-left: 0; display: grid; gap: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-top: 2.5rem;">
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Advanced Data Management:</strong> ProChem Desktop offers a user-friendly interface to view, organize, and analyze spectral data in one place.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Chemometric Flexibility:</strong> Fully supports material configurations with advanced calibration models created in Eigenvector Solo and PLS, allowing easy adaptation to diverse material types.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Automated &amp; Continuous Scanning:</strong> Features an automatic scanning model that drives continuous measurements without requiring manual operator intervention.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Flexible Analytics &amp; Export:</strong> Enables deep-dive analytics categorized by specific material or sensor, with seamless data exporting directly to CSV files for easy sharing.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>ProChem Automation (PLC Link):</strong> Seamlessly bridges the instrument with the plant's PLC through a robust HTTP interface over Ethernet. Product and method names are mapped directly within the interface, enabling efficient remote operation and delivering real-time analytical results back to the PLC for instant process adjustments.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardware Architecture Section -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: start;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-gold); letter-spacing: 1.5px;">Engineering Details</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">Hardware Architecture</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+                            Built for trouble-free, continuous operation in industrial environments, the ProLine 2550 features premium hardware components engineered for maximum optical sensitivity and physical durability.
+                        </p>
+                    </div>
+                    <div>
+                        <ul style="list-style: none; padding-left: 0; display: grid; gap: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-top: 2.5rem;">
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>High-End FT-NIR Sensor Technology:</strong> Powered by an advanced core sensor renowned for its exceptionally wide spectral range at the higher end of the FT-NIR spectrum. This expanded range significantly enhances sensitivity and precision, allowing for the accurate quantification of multiple key parameters in a single scan.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Premium Sapphire Window:</strong> Equipped with a 2.5 mm thick sapphire window that provides exceptional mechanical durability against abrasion and harsh process conditions.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Flexible Sample Interface:</strong> Features a round sampling head with an adaptable interface designed for easy mounting onto chutes, pipes, or containers.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; line-height: 1.4;">&#9654;</span>
+                                <span><strong>Industrial Connectivity:</strong> Outfitted with a standard 24V DC power connection and reliable Ethernet TCP/IP connectivity, ensuring stable power and rapid data transmission in any plant setup.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continuous Process Optimization Section -->
+        <section class="section" style="border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: start;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-gold); letter-spacing: 1.5px;">Process Intelligence</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">Continuous Process Optimization</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+                            Traditional laboratory grab sampling introduces critical delays and retrospective data, often leading to out-of-specification batches. The ProLine 2550 eliminates these limitations by bringing laboratory-grade FT-NIR accuracy directly into the active production flow. Engineered for continuous inline measurement, it delivers rapid, non-destructive analysis without sampling delays &mdash; empowering operators with faster process control and significantly improved product consistency.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7;">
+                            Backed by a robust optical design and exceptional measurement stability, the ProLine 2550 ensures reliable performance even in the most demanding industrial environments. Advanced calibration and mathematical transfer capabilities ensure that proprietary prediction models can be efficiently standardized and deployed across different instrument profiles, securing long-term analytical performance.
+                        </p>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-gold); letter-spacing: 1.5px;">Why ProLine 2550</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">Key Value Drivers</h2>
+                        <ul style="list-style: none; padding-left: 0; display: grid; gap: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1rem; line-height: 1.5;">✓</span>
+                                <span><strong>Real-Time Inline Analysis:</strong> Eliminates sampling delays and laboratory preparation by delivering rapid, non-destructive measurement directly within the production line.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1rem; line-height: 1.5;">✓</span>
+                                <span><strong>Reliable Calibration Transfer:</strong> Supports efficient model standardization and transfer across different instrument profiles using advanced chemometric and software tools.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1rem; line-height: 1.5;">✓</span>
+                                <span><strong>Industrial-Grade Stability:</strong> Built with a robust optical design that ensures reliable performance and long-term measurement stability in challenging environments.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1rem; line-height: 1.5;">✓</span>
+                                <span><strong>Seamless Automation Integration:</strong> Equipped for fully connected process monitoring with direct integration into plant automation systems and PLCs via OPC UA and Modbus communication.</span>
+                            </li>
+                            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                                <span style="color: var(--accent-gold); font-weight: bold; font-size: 1rem; line-height: 1.5;">✓</span>
+                                <span><strong>Automatic Calibration:</strong> Features automated calibration routines to eliminate manual operator interventions and guarantee long-term measurement stability.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Image Gallery -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+                    <span class="section-subtitle">Visual Showcase</span>
+                    <h2 class="section-title">ProLine2550 in Detail</h2>
+                    <p class="section-desc">Explore the design, build quality, and real-world application of the ProLine2550 FT-NIR analyzer across different material types and installation scenarios.</p>
+                </div>
+
+                <div id="proline-gallery" style="position: relative; overflow: hidden; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg);">
+                    <!-- Gallery Track -->
+                    <div id="proline-gallery-track" style="display: flex; transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); will-change: transform;">
+                        <div style="min-width: 100%; flex-shrink: 0;">
+                            <img src="images/proline_gallery_1.webp" alt="ProLine2550 Sapphire Window with Soybeans" style="width: 100%; height: 700px; object-fit: cover; display: block;">
+                        </div>
+                        <div style="min-width: 100%; flex-shrink: 0;">
+                            <img src="images/proline_gallery_2.webp" alt="ProLine2550 Dual Unit Setup" style="width: 100%; height: 700px; object-fit: cover; display: block;">
+                        </div>
+                        <div style="min-width: 100%; flex-shrink: 0;">
+                            <img src="images/proline_gallery_3.webp" alt="ProLine2550 Industrial Design" style="width: 100%; height: 700px; object-fit: cover; display: block;">
+                        </div>
+                        <div style="min-width: 100%; flex-shrink: 0;">
+                            <img src="images/proline_gallery_4.webp" alt="ProLine2550 with Corn Kernels" style="width: 100%; height: 700px; object-fit: cover; display: block;">
+                        </div>
+                    </div>
+
+                    <!-- Left Arrow -->
+                    <button id="proline-gallery-prev" style="position: absolute; left: 1.25rem; top: 50%; transform: translateY(-50%); z-index: 10; width: 48px; height: 48px; border-radius: 50%; background: rgba(0,0,0,0.55); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s;" aria-label="Previous image">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+
+                    <!-- Right Arrow -->
+                    <button id="proline-gallery-next" style="position: absolute; right: 1.25rem; top: 50%; transform: translateY(-50%); z-index: 10; width: 48px; height: 48px; border-radius: 50%; background: rgba(0,0,0,0.55); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s;" aria-label="Next image">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+
+                    <!-- Dots Indicator -->
+                    <div id="proline-gallery-dots" style="position: absolute; bottom: 1.25rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.5rem; z-index: 10;">
+                        <span class="gallery-dot active" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: #fff; opacity: 1; cursor: pointer; transition: opacity 0.3s, transform 0.3s; border: 1px solid rgba(255,255,255,0.3);"></span>
+                        <span class="gallery-dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: #fff; opacity: 0.4; cursor: pointer; transition: opacity 0.3s, transform 0.3s; border: 1px solid rgba(255,255,255,0.3);"></span>
+                        <span class="gallery-dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: #fff; opacity: 0.4; cursor: pointer; transition: opacity 0.3s, transform 0.3s; border: 1px solid rgba(255,255,255,0.3);"></span>
+                        <span class="gallery-dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: #fff; opacity: 0.4; cursor: pointer; transition: opacity 0.3s, transform 0.3s; border: 1px solid rgba(255,255,255,0.3);"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+        (function() {
+            const track = document.getElementById('proline-gallery-track');
+            const prevBtn = document.getElementById('proline-gallery-prev');
+            const nextBtn = document.getElementById('proline-gallery-next');
+            const dots = document.querySelectorAll('#proline-gallery-dots .gallery-dot');
+            if (!track || !prevBtn || !nextBtn) return;
+
+            let current = 0;
+            const total = track.children.length;
+
+            function goTo(index) {
+                if (index < 0) index = total - 1;
+                if (index >= total) index = 0;
+                current = index;
+                track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                dots.forEach((dot, i) => {
+                    dot.style.opacity = i === current ? '1' : '0.4';
+                    dot.style.transform = i === current ? 'scale(1.2)' : 'scale(1)';
+                });
+            }
+
+            prevBtn.addEventListener('click', () => goTo(current - 1));
+            nextBtn.addEventListener('click', () => goTo(current + 1));
+            dots.forEach(dot => dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index))));
+
+            // Hover effects
+            [prevBtn, nextBtn].forEach(btn => {
+                btn.addEventListener('mouseenter', () => btn.style.background = 'rgba(213,178,121,0.8)');
+                btn.addEventListener('mouseleave', () => btn.style.background = 'rgba(0,0,0,0.55)');
+            });
+        })();
+        </script>
+
+        <!-- Product Kit Section -->
+        <section class="section" style="border-top: 1px solid var(--border-color); background: var(--bg-secondary);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center;" class="kit-main-layout">
+                    <!-- Left Column: Kit Image -->
+                    <div style="position: relative; overflow: hidden; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: #fff; padding: 1rem; transition: var(--transition-smooth);" class="kit-image-card">
+                        <img src="images/proline_kit.webp" alt="ProLine2550 Analyzer Kit Contents" style="width: 100%; height: auto; border-radius: 8px; display: block; transition: transform 0.5s ease;" class="kit-img">
+                    </div>
+                    
+                    <!-- Right Column: Kit List -->
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-gold); letter-spacing: 1.5px;">Standard Package</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem; letter-spacing: -0.7px;">Complete Ready-to-Ship Kit</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+                            The ProLine 2550 FT-NIR Analyzer is delivered as a comprehensive, ready-to-deploy kit in a rugged transit case, packed with all essential components and accessories required for instant industrial setup and calibration.
+                        </p>
+                        
+                        <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;" class="kit-grid">
+                            <!-- 1. Analyzer -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">ProLine2550 FT-NIR Analyzer</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">The core spectroscopic analyzer unit with an integrated 2.5 mm sapphire window.</p>
+                                </div>
+                            </li>
+
+                            <!-- 2. Power Adapter -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+                                        <path d="M7 12h10"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">100-240 V 10.0 A Power Adapter</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Heavy-duty universal AC/DC power supply brick for stable operation.</p>
+                                </div>
+                            </li>
+
+                            <!-- 3. Power Cable -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22v-5"></path>
+                                        <path d="M9 8V2"></path>
+                                        <path d="M15 8V2"></path>
+                                        <path d="M18 8v3a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8h12z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">US &amp; Euro Power Cables</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Both US and European standard power cables are included in the package.</p>
+                                </div>
+                            </li>
+
+                            <!-- 4. Calibration Tile -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="22" y1="12" x2="18" y2="12"></line>
+                                        <line x1="6" y1="12" x2="2" y2="12"></line>
+                                        <line x1="12" y1="6" x2="12" y2="2"></line>
+                                        <line x1="12" y1="22" x2="12" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">Calibration Tile</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">High-grade reference standard material for reliable device calibration.</p>
+                                </div>
+                            </li>
+
+                            <!-- 5. Centering Tool -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">Centering Tool</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Custom alignment guide for positioning the calibration tile onto the window.</p>
+                                </div>
+                            </li>
+
+                            <!-- 6. Integration Parts -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">Integration Parts</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Mechanical flanges, gaskets, and mounting brackets for line deployment.</p>
+                                </div>
+                            </li>
+
+                            <!-- 7. RJ45 Coupler -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="4"></rect>
+                                        <rect x="8" y="10" width="8" height="8" rx="1"></rect>
+                                        <path d="M10 6h4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">Waterproof RJ45 Coupler</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">IP67-rated waterproof inline connector for shielded Ethernet connections.</p>
+                                </div>
+                            </li>
+
+                            <!-- 8. Allen Key -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 6v12h10"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">2.5 mm Allen Key</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Dedicated hex tool for opening the device cover and making mounting adjustments.</p>
+                                </div>
+                            </li>
+
+                            <!-- 9. USB Drive -->
+                            <li style="display: flex; gap: 1rem; align-items: flex-start; background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition-smooth);" class="kit-item">
+                                <div style="background: rgba(213, 178, 121, 0.1); color: var(--accent-gold); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                        <polyline points="7 3 7 8 15 8"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; font-family: var(--font-sans); font-weight: 600; color: var(--accent-black);">USB Drive</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Preloaded with ProChem software installation files, device manuals, and test reports.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hover animations styling -->
+        <style>
+            .kit-image-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 30px 60px rgba(0,0,0,0.12) !important;
+            }
+            .kit-image-card:hover .kit-img {
+                transform: scale(1.02);
+            }
+            .kit-item:hover {
+                transform: translateY(-3px);
+                border-color: var(--border-hover) !important;
+                box-shadow: var(--shadow-md) !important;
+            }
+            @media (min-width: 992px) {
+                .kit-main-layout {
+                    grid-template-columns: 5fr 7fr !important;
+                    gap: 3rem !important;
+                }
+                .kit-grid {
+                    grid-template-columns: repeat(3, 1fr) !important;
+                    gap: 1rem !important;
+                }
+            }
+            @media (min-width: 1200px) {
+                .kit-main-layout {
+                    grid-template-columns: 5.2fr 6.8fr !important;
+                    gap: 4rem !important;
+                }
+                .kit-grid {
+                    grid-template-columns: repeat(3, 1fr) !important;
+                    gap: 1.25rem !important;
+                }
+            }
+        </style>
+
+        <!-- Product Action Section -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color); padding: 4rem 2rem; text-align: center;">
+            <div class="container" style="max-width: 800px; margin: 0 auto;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-grey); letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">Next Steps</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem; letter-spacing: -0.7px;">Accelerate Your Quality Workflows</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2.5rem; line-height: 1.6;">
+                    Discover how our spectroscopic technology fits your process. Choose an option below to download documentation, request a sample demo, or consult with our automation team.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+                    <a href="#" id="download-appnote-proline" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        Download Product Brochure
+                    </a>
+                    <a href="contact.html?intent=demo&amp;product=proline-2550" id="demo-btn-proline" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        Request Sample Analysis / Demo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+            <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

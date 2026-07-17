@@ -1,0 +1,642 @@
+?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USTECH Innovations FAQ - Frequently asked questions about our FT-NIR analyzers, mills, and software calibrations.">
+    <title>Frequently Asked Questions | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Sidebar Nav Styling */
+        .faq-nav-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        .faq-nav-link:hover {
+            color: var(--text-primary);
+            background-color: var(--bg-secondary);
+        }
+        .faq-nav-link.active {
+            color: var(--text-primary) !important;
+            font-weight: 600 !important;
+            border-left: 3px solid var(--accent-gold) !important;
+            background-color: var(--bg-secondary) !important;
+        }
+
+        /* Category Sections */
+        .faq-category-section {
+            margin-bottom: 4.5rem;
+            scroll-margin-top: 120px; /* offset for sticky header */
+        }
+        .faq-category-header {
+            font-size: 1.6rem;
+            font-family: var(--font-title);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+        }
+
+        /* Responsive FAQ layout */
+        @media (max-width: 991px) {
+            .faq-layout {
+                grid-template-columns: 1fr !important;
+                gap: 2.5rem !important;
+            }
+            .faq-sidebar {
+                position: static !important;
+                top: auto !important;
+                margin-bottom: 1rem;
+            }
+            .faq-sidebar ul {
+                flex-direction: row !important;
+                flex-wrap: wrap;
+            }
+            .faq-nav-link {
+                border-left: none !important;
+                border-bottom: 3px solid transparent;
+                padding: 0.5rem 1rem !important;
+            }
+            .faq-nav-link.active {
+                border-bottom: 3px solid var(--accent-gold) !important;
+                border-left: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="section" style="padding-bottom: 2rem; background: linear-gradient(180deg, rgba(10, 11, 16, 0.65) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/faq_header_bg.webp') no-repeat center center; background-size: cover; padding-top: 6rem; padding-bottom: 4rem;">
+            <div class="container" style="text-align: center;">
+                <span class="section-subtitle" style="color: rgba(255,255,255,0.7);">Common Queries</span>
+                <h1 class="section-title" style="color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">Frequently Asked Questions</h1>
+                <p class="section-desc" style="max-width: 800px; color: rgba(255,255,255,0.85); margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.3);">Have questions about our FT-NIR optical technology, calibration model transferring, or hardware specifications? Find instant answers below.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="faq-layout" style="display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: start;">
+                    
+                    <!-- Sidebar Navigation -->
+                    <aside class="faq-sidebar" style="position: sticky; top: 120px;">
+                        <h3 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 700;">Categories</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li><a href="#category-tech" class="faq-nav-link active">Technology &amp; Precision</a></li>
+                            <li><a href="#category-hardware" class="faq-nav-link">Devices &amp; Hardware</a></li>
+                            <li><a href="#category-software" class="faq-nav-link">Software &amp; Integration</a></li>
+                            <li><a href="#category-calibration" class="faq-nav-link">Calibrations &amp; Models</a></li>
+                            <li><a href="#category-support" class="faq-nav-link">Services &amp; Maintenance</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- FAQ Content Column -->
+                    <div class="faq-content">
+
+                        <!-- SECTION 1: Technology & Precision -->
+                        <div id="category-tech" class="faq-category-section">
+                            <h2 class="faq-category-header">Technology &amp; Precision</h2>
+                            <div class="faq-list">
+                                <!-- FAQ 1 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Does FT-NIR spectroscopy require chemical preparation?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>No. Near-infrared spectroscopy is a completely non-destructive physical measurement. Light is projected onto the sample surface and its reflection is analyzed. There is absolutely no chemical usage, no waste disposal cost, and no sample destruction.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 2 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How does FT-NIR accuracy compare to traditional wet chemistry methods?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>FT-NIR is a secondary analytical method, meaning it is calibrated against primary laboratory reference methods (such as wet chemistry). Once calibrated, it achieves repeatability and accuracy extremely close to the reference methods, with the benefit of being infinitely faster (seconds vs. hours), eliminating human operator error, and requiring no consumables or hazardous reagents.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 3 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is the difference between filter-based NIR, Diode Array NIR, and FT-NIR?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Filter-based systems measure only a few specific wavelengths, limiting their flexibility. Diode Array systems measure multiple wavelengths but have lower spectral resolution. FT-NIR uses an interferometer to scan the entire near-infrared spectrum continuously at extremely high resolution, providing superior accuracy, better calibration stability, and the ability to detect trace constituents.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 4 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How do MEMS-based spectrometers differ from traditional scanning grating spectrometers?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Scanning grating spectrometers rely on delicate moving mirrors and gratings that are highly sensitive to vibration, temperature changes, and wear. MEMS-based spectrometers (like USTECH's optical engines) use solid-state micro-electromechanical systems etched directly onto silicon. They contain no macro-scale moving parts, making them extremely rugged, shock-resistant, and thermally stable for harsh production floors.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 5 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is the waveband range of USTECH FT-NIR instruments?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>USTECH FT-NIR instruments operate in the 800 nm to 2600 nm waveband (12,500 to 3,850 cm&sup1;). This broad range covers the key absorption bands for C-H, O-H, and N-H molecular bonds, allowing for comprehensive analysis of moisture, protein, fat, starch, fiber, and ash.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 6 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Can FT-NIR analyze trace components below 0.1% concentration?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>NIR spectroscopy is highly sensitive, but its practical detection limit is typically around 0.1% (1000 ppm) for organic constituents under standard conditions. For concentrations below this threshold, accuracy depends heavily on the sample matrix and the precision of the primary reference method used to train the calibration model.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 2: Devices & Hardware -->
+                        <div id="category-hardware" class="faq-category-section">
+                            <h2 class="faq-category-header">Devices &amp; Hardware</h2>
+                            <div class="faq-list">
+                                <!-- FAQ 7 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How does the USTECH Tornado+ mill avoid heating samples?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>The USTECH Tornado+ mill features a double-walled grinding chamber connected to a continuous liquid water-cooling loop. When grinding grain or high-fat feed samples, the cooling liquid rapidly dissipates motor friction heat, keeping the chamber cold and preventing moisture evaporation or fat melting.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 8 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How long does the light source in the ProLine17ES analyzer last?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Our online analyzers use long-life halogen lamps rated for over 20,000 operating hours. In addition, the systems are equipped with dual-lamp redundancy: if the primary lamp fails, the analyzer automatically rotates the backup lamp into place and triggers an alert, ensuring zero process downtime.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 9 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What types of physical samples can be analyzed using USTECH systems?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Our FT-NIR systems can analyze a wide variety of sample forms. Solids, grains, and powders are measured using vials, vials rotators, or petri dish scanners. Liquids, slurries, and pastes are measured using transmission accessories, transflection fiber probes, or inline flow cells mounted directly on pipelines.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 10 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How does the USTECH StarchQC Damaged Starch analyzer work?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>The USTECH StarchQC Damaged Starch analyzer utilizes an amperometric technique to measure starch degradation kinetics. By exposing a small flour sample to specific enzymes, the analyzer measures the electrochemical reaction rate as damaged starch is broken down, giving a highly accurate damaged starch percentage in minutes.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 11 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Do the inline sensors require a protective window, and how is it kept clean?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes, inline sensors use a high-durability sapphire optical window to separate the sensor optics from the product flow. Sapphire is extremely scratch-resistant (9 on Mohs scale). To prevent product buildup, we offer automatic air-purge collars or mechanical wipers that sweep the window clean at defined intervals without stopping the production line.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ 13 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is the optical path length required for liquid analysis?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>The optimal path length depends on the chemical composition and absorption strength of the liquid. For water-based liquids or solvents in the transmission NIR region, path lengths typically range from 1 mm to 8 mm. We offer adjustable transflection and transmission probes to easily tune this path length for your specific fluid matrix.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 14 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is the standard warranty on USTECH optical hardware?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>All USTECH FT-NIR instruments and sensors come with a standard 12-month comprehensive warranty. We also offer extended warranty programs and annual service contracts that cover preventive maintenance, optical alignment checks, and light source replacements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 3: Software & PLC Integration -->
+                        <div id="category-software" class="faq-category-section">
+                            <h2 class="faq-category-header">Software &amp; PLC Integration</h2>
+                            <div class="faq-list">
+                                <!-- FAQ 15 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Can USTECH spectrometers be integrated with our plant's PLC or SCADA systems?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes, absolutely. Our ProChem software suite is designed with industrial communication protocols in mind. It natively supports OPC UA, Modbus TCP, and direct analog/digital outputs (4-20 mA) to communicate results directly to PLC systems (such as Siemens, Allen-Bradley) or SCADA platforms within 1530 seconds.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 16 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How does ProChem handle closed-loop control of process parameters?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>ProChem calculates real-time chemical concentration values and sends them to the plant SCADA/PLC. The PLC compares these values against the setpoints (e.g., target moisture) and modulates control valves (e.g., steam or water spray) using PID loops. ProChem also includes built-in safety boundaries to ignore readings during process start/stop phases.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 17 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Is the Cali<span class="calix-x">X</span> software suite compliant with FDA 21 CFR Part 11?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes. The Cali<span class="calix-x">X</span> Suite supports full electronic signature tracking, secure multi-user role permission levels, complete audit trail logging of all calibration modifications, and raw data export validation. It fully complies with the strict documentation and integrity standards mandated by 21 CFR Part 11 and GMP Annex 11.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 18 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Can USTECH software run offline if our plant network drops?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes. While the Cali<span class="calix-x">X</span> cloud dashboard manages calibrations and fleet diagnostics centrally, all local measurement logic, optical calculations, and PLC communication interfaces run locally on the instrument's dedicated PC. If the internet or internal network drops, the system continues running offline without any data loss or process interruption.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 19 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How is cybersecurity handled for cloud-connected Cali<span class="calix-x">X</span> devices?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>All data communication between the local instrument PC and the Cali<span class="calix-x">X</span> Cloud is fully encrypted using TLS 1.3. The local client agent only establishes outbound connections; no inbound ports are ever opened on the plant network. Furthermore, the local PC can be completely air-gapped from the internet if corporate security policies prohibit cloud connectivity.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 20 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Can I create custom dashboards and PDF quality reports automatically?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes. ProChem features a flexible reporting template engine. You can configure the software to generate automated PDF certificates of analysis (COAs) at the end of each production lot. These reports can include statistical summaries, outlier warnings, and charts, and can be automatically emailed to QA managers or stored on a local network drive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 4: Calibration & Chemometrics -->
+                        <div id="category-calibration" class="faq-category-section">
+                            <h2 class="faq-category-header">Calibrations &amp; Models</h2>
+                            <div class="faq-list">
+                                <!-- FAQ 21 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Can calibrations be shared between different N-Sens devices?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes. Because our optical engines are built using MEMS silicon chips rather than handcrafted glass and mirror components, unit-to-unit variation is practically non-existent. A calibration model built in the Cali<span class="calix-x">X</span> software suite can be deployed instantly to multiple devices without the need for manual model matching.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 22 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How does USTECH support calibration model maintenance and updates?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>USTECH offers comprehensive support. Through the cali<span class="calix-x">X</span> Suite, users can upload new reference data to automatically update regression models. We also offer remote chemometric support, where our expert specialists connect securely to review model performance, run validation tests, and optimize calibrations remotely.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 23 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is an "outlier" and how does the system handle it during analysis?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>An outlier is a sample whose spectral signature deviates significantly from the calibration dataset (due to foreign materials, extreme density changes, or parameters outside the model's range). Our software calculates the Mahalanobis Distance for every scan. If a sample is flagged as an outlier, the system alerts the operator and ignores the reading to prevent false data from affecting PLC control loops.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 24 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How many physical reference samples are needed to build a custom calibration?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>To build a robust custom PLS (Partial Least Squares) calibration model from scratch, we generally recommend a minimum of 50 to 100 sample points spanning the entire expected range of values. However, USTECH provides pre-installed global calibration databases for most feed, grain, dairy, and polymer applications, meaning you can start analyzing on day one with only a few verification points.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 25 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Can calibrations developed on older third-party spectrometers be transferred to USTECH?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes. Our chemometricians have extensive experience transferring calibration databases from older scanning monochromators or photodiode-array instruments (e.g., FOSS, Bruker, Thermo) to USTECH FT-NIR devices. We utilize mathematical standardization algorithms to match the spectral profile and save years of reference analysis work.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 26 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What modeling algorithms does the cali<span class="calix-x">X</span> Suite support?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>The cali<span class="calix-x">X</span> Suite supports a wide range of chemometric modeling tools. For quantitative analysis, it supports PLS (Partial Least Squares), MLR (Multiple Linear Regression), and advanced Machine Learning models. For qualitative classification, it supports PCA (Principal Component Analysis), SIMCA (Soft Independent Modeling of Class Analogy), and SVM (Support Vector Machines).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 5: Services & Maintenance -->
+                        <div id="category-support" class="faq-category-section">
+                            <h2 class="faq-category-header">Services, Maintenance &amp; ROI</h2>
+                            <div class="faq-list">
+                                <!-- FAQ 27 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is the typical Return on Investment (ROI) period for USTECH inline systems?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Most industrial processing plants achieve a full Return on Investment within 6 to 12 months. Savings are realized through reduced raw material giveaway (closed-loop tolerance management), elimination of out-of-specification batches, lower laboratory labor costs, and reduced energy usage from optimized drying and mixing processes.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 28 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>How often do USTECH FT-NIR instruments require optical re-alignment?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Never. Unlike traditional laboratory FT-NIR spectrometers that use rotating mirrors and laser-guided interferometers which require periodic realignment, our MEMS interferometers are solid-state and permanent. The optical paths are fixed at the factory, ensuring permanent wavelength calibration stability.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 29 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What routine maintenance is required for USTECH analyzers and sensors?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Routine maintenance is minimal. For benchtop systems, operators should clean the sample window weekly and run a standard reference scan using the built-in gold reference plate. For online sensors, the main maintenance task is replacing the light bulb every 23 years and verifying the window wiper seals during annual plant shutdowns.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 30 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Does USTECH offer training for plant operators and laboratory staff?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes. Every instrument installation includes comprehensive on-site training. We cover basic system operation, sample preparation, software interface navigation, and routine maintenance troubleshooting. We also offer advanced chemometrics training for QA managers who want to develop and maintain their own calibrations.</p>
+                                    </div>
+                                </div>
+                                <!-- FAQ 31 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>What is the typical installation time for an online pipeline sensor?</span>
+                                        <span class="faq-icon">+</span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>A typical pipeline sensor installation takes 1 to 2 days of physical fitting and sensor configuration. We coordinate with your engineering teams to mount the sensor flange during scheduled maintenance windows, followed by electrical connections, PLC communication validation, and calibration verification.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Contact Section -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color); padding: 5rem 2rem; text-align: center;">
+            <div class="container" style="max-width: 900px;">
+                <div style="background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; box-shadow: var(--shadow-md);">
+                    <div style="margin-bottom: 1.5rem;">
+                        <img src="images/support_avatar.webp" alt="Customer Support" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-sm); border: 3px solid var(--accent-gold);">
+                    </div>
+                    <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Still Have Questions?</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1rem; line-height: 1.6;">If you didn't find the answer you were looking for, or if you need customized advice for your plant's specific application, our support team is ready to assist you. You can browse <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our product portfolio</a> to see our full line of devices and software, or review <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our contact details</a> to reach our sales engineers.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary">View Our Contact Details</a>
+                        <a href="mailto:info@ustechinnovations.com" class="btn btn-secondary">Email Our Experts</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+            <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <!-- Scroll-Spy and Navigation JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.faq-category-section');
+            const navLinks = document.querySelectorAll('.faq-nav-link');
+
+            // Smooth scroll for nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        const offset = 120; // sticky header compensation
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementRect = targetSection.getBoundingClientRect().top;
+                        const elementPosition = elementRect - bodyRect;
+                        const offsetPosition = elementPosition - offset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Scroll spy logic using IntersectionObserver
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+

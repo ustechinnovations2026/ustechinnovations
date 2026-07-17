@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact USTECH Innovations for quotes, consultation, and calculate your B2B process savings using our interactive ROI Calculator.">
+    <title>Contact Us & ROI Calculator | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Header Section -->
+        <section class="section" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.65) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/contact_header_bg.webp') no-repeat center center; background-size: cover; padding-top: 6rem; padding-bottom: 4rem;">
+            <div class="container" style="text-align: left;">
+                <span class="section-subtitle" style="color: rgba(255,255,255,0.7); margin-left: 0;">Get in Touch</span>
+                <h1 class="section-title" style="color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.4); margin-left: 0;">Contact & Consultation</h1>
+                <p class="section-desc" style="max-width: 800px; color: rgba(255,255,255,0.85); margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.3); text-align: left;">Connect with our technical application specialists, request a quote, or calculate your potential factory savings using our ROI tool below.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: start; gap: 4rem;">
+                    
+                    <!-- Lead Gen Form -->
+                    <div id="contact-form-container">
+                        <h2 style="font-size: 1.8rem; margin-bottom: 1rem; letter-spacing: -0.5px;">Contact Form</h2>
+                        
+                        <!-- Form Tabs -->
+                        <div class="contact-tabs" style="display: flex; gap: 0.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                            <button type="button" class="contact-tab-btn active" data-tab="sales" style="padding: 0.6rem 1rem; background: none; border: none; font-family: var(--font-title); font-weight: 600; cursor: pointer; color: var(--accent-black); border-bottom: 2px solid var(--accent-black); font-size: 0.9rem; transition: var(--transition-fast);">Sales & Quote</button>
+                            <button type="button" class="contact-tab-btn" data-tab="support" style="padding: 0.6rem 1rem; background: none; border: none; font-family: var(--font-title); font-weight: 500; cursor: pointer; color: var(--text-secondary); border-bottom: 2px solid transparent; font-size: 0.9rem; transition: var(--transition-fast);">Technical Support</button>
+                            <button type="button" class="contact-tab-btn" data-tab="general" style="padding: 0.6rem 1rem; background: none; border: none; font-family: var(--font-title); font-weight: 500; cursor: pointer; color: var(--text-secondary); border-bottom: 2px solid transparent; font-size: 0.9rem; transition: var(--transition-fast);">General / Partner</button>
+                        </div>
+
+                        <form id="lead-form" style="display: grid; gap: 1.25rem;">
+                            <!-- Hidden input to track inquiry type -->
+                            <input type="hidden" id="form-type" name="inquiry_type" value="sales">
+
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" name="name" class="form-input" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Work Email</label>
+                                <input type="email" id="form-email" name="email" class="form-input" placeholder="john@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-company">Company Name</label>
+                                <input type="text" id="form-company" name="company" class="form-input" placeholder="Acme Processing" required>
+                            </div>
+                            
+                            <!-- Sales Only Fields -->
+                            <div class="form-group sales-field">
+                                <label for="form-industry">Industry Sector</label>
+                                <select id="form-industry" name="industry" class="form-input">
+                                    <option value="feed">Food and Feed</option>
+                                    <option value="dairy">Dairy Processing</option>
+                                    <option value="chemical">Chemical and Pharma</option>
+                                    <option value="other">Other / Custom</option>
+                                </select>
+                            </div>
+                            <div class="form-group sales-field">
+                                <label for="form-product">Product Interest</label>
+                                <select id="form-product" name="product" class="form-input">
+                                    <option value="feed-analyzer">USTECH MasterLine</option>
+                                    <option value="starch-analyzer">USTECH StarchQC</option>
+                                    <option value="prep">USTECH SamplePrep</option>
+                                    <option value="tornado">USTECH Tornado+</option>
+                                    <option value="online-nir">ProLine17ES</option>
+                                    <option value="software">ProChem / Cali<span class="calix-x">X</span> Software</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Support Only Fields -->
+                            <div class="form-group support-field" style="display: none;">
+                                <label for="form-serial">Instrument Serial Number</label>
+                                <input type="text" id="form-serial" name="serial_number" class="form-input" placeholder="US-2550-XXXX">
+                            </div>
+                            <div class="form-group support-field" style="display: none;">
+                                <label for="form-support-category">Issue Category</label>
+                                <select id="form-support-category" name="support_category" class="form-input">
+                                    <option value="hardware">Hardware Malfunction</option>
+                                    <option value="software">Software / cali<span class="calix-x">X</span> Assistance</option>
+                                    <option value="calibration">Calibration Drift / Model Tune</option>
+                                    <option value="maintenance">Annual Maintenance Request</option>
+                                    <option value="other">Other Technical Issue</option>
+                                </select>
+                            </div>
+
+                            <!-- General/Partner Only Fields -->
+                            <div class="form-group general-field" style="display: none;">
+                                <label for="form-partner-type">Inquiry Type</label>
+                                <select id="form-partner-type" name="partner_inquiry_type" class="form-input">
+                                    <option value="distributor">Distributorship / Partnership Inquiry</option>
+                                    <option value="careers">Careers / Job Openings</option>
+                                    <option value="pr">Media / PR Inquiries</option>
+                                    <option value="other">Other General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" id="message-label">Application Details / Message</label>
+                                <textarea id="form-message" name="message" class="form-input" rows="4" placeholder="Briefly describe your measurement challenge (e.g. moisture control in corn feed)..." style="resize: vertical;"></textarea>
+                            </div>
+
+                            <!-- Consent Section -->
+                            <div class="form-group consent-block" style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
+                                <p style="margin-bottom: 1rem; color: var(--text-muted);">
+                                    We would like to send you other relevant information in the future e.g. application notes, guidebooks, webinar and seminar invites, which might be of interest to you. Therefore, we would like to request your consent to stay in touch. You can find out about your rights and how we use and process your personal information in our <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; document.body.style.overflow='hidden'; return false;" style="text-decoration: underline; color: var(--text-primary); font-weight: 500;">Privacy Policy</a>.
+                                </p>
+                                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;">
+                                    <input type="checkbox" id="consent-privacy" name="consent_privacy" required style="margin-top: 4px; cursor: pointer; width: auto; height: auto; flex-shrink: 0;">
+                                    <label for="consent-privacy" style="cursor: pointer; font-weight: normal; margin-bottom: 0; color: var(--text-secondary); line-height: 1.4;">I confirm that I have read and agree to the Privacy Policy of USTECH Innovations</label>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                                    <input type="checkbox" id="consent-marketing" name="consent_marketing" style="margin-top: 4px; cursor: pointer; width: auto; height: auto; flex-shrink: 0;">
+                                    <label for="consent-marketing" style="cursor: pointer; font-weight: normal; margin-bottom: 0; color: var(--text-secondary); line-height: 1.4;">I allow USTECH Innovations to send me marketing materials.</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="margin-top: 1.5rem;">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Headquarters Details -->
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem;">
+                        
+                        <div style="display: grid; gap: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 2rem; justify-content: center;">
+                                <img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 95px; width: auto; flex-shrink: 0;">
+                                <div>
+                                    <h4 style="font-size: 1rem; margin-bottom: 0.25rem; color: var(--accent-grey);">USTECH INNOVATIONS LLC</h4>
+                                    <p style="font-size: 1.1rem; color: var(--text-primary); font-weight: 500;">30 N Gould St Ste 34301<br>Sheridan, WY 82801<br>United States</p>
+                                </div>
+                            </div>
+                            <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); line-height: 0; box-shadow: var(--shadow-sm);">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.3312015822363!2d-106.9562725844837!3d44.796791279099885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc51c4a03b%3A0x2a1ecf94e9f7cc9!2s30%20N%20Gould%20St%2C%20Sheridan%2C%20WY%2082801!5e0!3m2!1sen!2sus!4v1655000000000!5m2!1sen!2sus" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            
+                            <div style="margin-top: 1rem;">
+                                <h4 style="font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--accent-grey);">TELEPHONE</h4>
+                                <p style="font-size: 1.1rem; color: var(--text-primary); font-weight: 500;">+1 307 527 0072</p>
+                            </div>
+
+                            <div>
+                                <h4 style="font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--accent-grey);">EMAIL ADDRESS</h4>
+                                <p style="font-size: 1.1rem; color: var(--text-primary); font-weight: 500;">info@ustechinnovations.com</p>
+                            </div>
+                        </div>
+
+                        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1.25rem; background: #0A66C2; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; flex: 1; justify-content: center;" onmouseover="this.style.background='#004182'" onmouseout="this.style.background='#0A66C2'">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                Follow us on LinkedIn
+                            </a>
+                        </div>
+
+                        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Looking for a Local Distributor?</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">We partner with global scientific instrument distributors. Let us know your location, and we will connect you with a certified distributor in your country.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- B2B ROI Calculator Section -->
+        <section class="section roi-section" style="border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="roi-container">
+                    <!-- Column 1: The Calculator UI -->
+                    <div class="roi-card-ui">
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem; text-align: center;">Calculate Your Annual Savings</h3>
+                        
+                        <!-- Input 1: Industry -->
+                        <div class="roi-form-group">
+                            <label for="c-roi-industry">Select Industry: <span>&nbsp;</span></label>
+                            <select id="c-roi-industry" class="roi-select">
+                                <option value="feed">Food & Feed (Soybean/Corn)</option>
+                                <option value="dairy">Dairy (Cheese Yield/Cream)</option>
+                                <option value="chemical">Chemical & Pharma (Batch Yield)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Input 2: Capacity -->
+                        <div class="roi-form-group">
+                            <label for="c-roi-capacity">Daily Production Capacity: <span id="c-roi-capacity-val">25 tons/hr</span></label>
+                            <input type="range" id="c-roi-capacity" class="roi-slider" min="5" max="100" value="25">
+                        </div>
+
+                        <!-- Input 3: Raw Material Cost -->
+                        <div class="roi-form-group">
+                            <label for="c-roi-cost">Raw Material Cost (per Ton): <span id="c-roi-cost-val">$450</span></label>
+                            <input type="range" id="c-roi-cost" class="roi-slider" min="100" max="2000" step="10" value="450">
+                        </div>
+
+                        <!-- Input 4: Overformulation margin -->
+                        <div class="roi-form-group" style="margin-bottom: 0;">
+                            <label for="c-roi-margin">Overformulation Margin Reduction: <span id="c-roi-margin-val">0.8%</span></label>
+                            <input type="range" id="c-roi-margin" class="roi-slider" min="0.2" max="3.0" step="0.1" value="0.8">
+                        </div>
+                    </div>
+
+                    <!-- Column 2: The Calculations Results -->
+                    <div>
+                        <span class="section-subtitle">Financial Return</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; letter-spacing: -0.7px;">Proven Financial Return on Investment</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7;">By reducing over-formulation safety margins and preventing product rejections, plants routinely recoup their total equipment investment within the first few months. Adjust the parameters on the left to see your estimated financial return.</p>
+                        
+                        <div class="roi-results">
+                            <!-- Main Result Card -->
+                            <div class="roi-result-main">
+                                <h4>Estimated Annual Savings</h4>
+                                <div class="roi-val" id="c-val-annual-savings">$156,000</div>
+                            </div>
+                            
+                            <!-- Sub Result Grid -->
+                            <div class="roi-result-grid">
+                                <div class="roi-result-sub">
+                                    <h5>Payback Period</h5>
+                                    <div class="roi-sub-val" id="c-val-payback">5.3 Months</div>
+                                </div>
+                                <div class="roi-result-sub">
+                                    <h5>Quality Yield Increase</h5>
+                                    <div class="roi-sub-val" id="c-val-yield-inc">1.4%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" style="display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,0.7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; padding: 2rem;">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 16px; max-width: 850px; width: 100%; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 24px 80px rgba(0,0,0,0.5); text-align: left; font-family: var(--font-body); color: var(--text-primary);">
+            <!-- Modal Header -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1.75rem 2rem; border-bottom: 1px solid var(--border-color); flex-shrink: 0;">
+                <div>
+                    <h2 style="font-size: 1.5rem; font-family: var(--font-title); font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px; margin: 0;">Privacy Policy & Data Protection Clarification Text</h2>
+                    <p style="margin: 0.25rem 0 0 0; font-size: 0.75rem; color: var(--text-muted);">Compliance Status: KVKK (No. 6698) | GDPR (EU 2016/679) | CCPA/CPRA</p>
+                </div>
+                <button onclick="document.getElementById('privacy-modal').style.display='none'; document.body.style.overflow='';" style="background: none; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 6px; transition: all 0.2s ease; line-height: 1;" onmouseover="this.style.color='var(--text-primary)'; this.style.background='var(--bg-secondary)';" onmouseout="this.style.color='var(--text-secondary)'; this.style.background='none';">&times;</button>
+            </div>
+            <!-- Modal Body -->
+            <div style="padding: 2rem; overflow-y: auto; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">
+                <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;"><strong>Document Reference:</strong> PP-KVKK-2026-V3 | <strong>Last Updated:</strong> June 30, 2026</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem; margin-top: 0;">1. Data Controller Identification</h3>
+                <p style="margin-bottom: 1.25rem;">This Privacy Policy and Clarification Text has been prepared by <strong>USTECH Innovations LLC</strong> ("USTECH", "Company", "we", "us", or "our"), headquartered at 30 N Gould St Ste 34301, Sheridan, WY 82801, USA, in our capacity as the <strong>Data Controller</strong> under the Turkish Personal Data Protection Law No. 6698 ("KVKK"), the EU General Data Protection Regulation ("GDPR"), and the California Consumer Privacy Act ("CCPA/CPRA"). This document governs the processing of personal data collected through our B2B website, online service portals, contact channels, and marketing platforms.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">2. Categorization of Processed Personal Data</h3>
+                <p style="margin-bottom: 0.75rem;">In alignment with national and international data protection laws, we categorize the personal data we process as follows:</p>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-type: disc;">
+                    <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Identity Information:</strong> First name, last name.</li>
+                    <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Contact Information:</strong> Corporate email address, direct business telephone/mobile number, physical business address, and country of operation.</li>
+                    <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Professional & Employment Information:</strong> Job title, department, company name, industry sector, and technical areas of interest.</li>
+                    <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Transaction Security & Technical Information:</strong> IP address, device type and operating system, browser specifications, system activity logs, cookie IDs, and detailed website navigation paths.</li>
+                    <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Customer Transaction Information:</strong> Quotation requests, details of analytical challenges submitted via forms, interest in specific spectrometer systems, and communication history.</li>
+                </ul>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">3. Legal Bases and Purposes of Processing</h3>
+                <p style="margin-bottom: 0.75rem;">Your personal data is collected and processed through automatic or semi-automatic means based on the legal grounds set forth in Article 5 of the KVKK and Article 6 of the GDPR:</p>
+                
+                <div style="margin-left: 1rem; margin-bottom: 1.25rem; border-left: 3px solid var(--border-color); padding-left: 1rem;">
+                    <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">A. Performance and Execution of Contracts (KVKK Art. 5/2/c, GDPR Art. 6/1/b):</strong></p>
+                    <p style="margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">To evaluate B2B inquiries, formulate commercial quotations, deliver analytical hardware (such as ProLine or MasterLine spectrometers), manage licenses for cali<span class="calix-x">X</span>/ProChem software suites, and deliver post-sale calibration tune-ups and customer support services.</p>
+
+                    <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">B. Data Controller's Legitimate Interests (KVKK Art. 5/2/f, GDPR Art. 6/1/f):</strong></p>
+                    <p style="margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">To maintain network security, perform diagnostics and debugging, analyze traffic trends to optimize website user experience, detect and prevent malicious activities, and protect our proprietary rights and intellectual assets.</p>
+
+                    <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">C. Explicit Consent of the Data Subject (KVKK Art. 5/1, GDPR Art. 6/1/a):</strong></p>
+                    <p style="margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">To distribute technical whitepapers, send industry-specific newsletters, invite you to scientific webinars, and share promotional updates. You have the right to withdraw this consent instantly via subscription links in our emails.</p>
+
+                    <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">D. Compliance with Legal Obligations (KVKK Art. 5/2/a, GDPR Art. 6/1/c):</strong></p>
+                    <p style="margin-bottom: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">To adhere to tax regulations, commercial accounting standards, international trade laws, export controls on dual-use analytical equipment, and binding requests from courts or judicial authorities.</p>
+                </div>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">4. Cross-Border Data Transfers</h3>
+                <p style="margin-bottom: 1.25rem;">To operate our B2B services, USTECH utilizes secured cloud infrastructure located in the United States. Consequently, personal data collected from users in Turkey, the European Union, and other global regions is transferred internationally to the US. We secure these transfers in compliance with GDPR (Chapter V) using Standard Contractual Clauses (SCCs) and seek your explicit consent when you submit web forms in compliance with KVKK Article 9 regulations.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">5. Data Sharing & Sharing Categories</h3>
+                <p style="margin-bottom: 1.25rem;">We enforce a strict policy against selling, sharing, or leasing personal data to third parties. We may disclose data only to: (a) local authorized USTECH sales and service partners in your jurisdiction to process regional requests directly; (b) cloud hosting, CRM (such as HubSpot/Salesforce), and security service providers bound by strict Data Processing Agreements (DPAs); (c) legally authorized public institutions when necessary to comply with legal mandates.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">6. Data Retention and Deletion</h3>
+                <p style="margin-bottom: 1.25rem;">We store your personal data only as long as necessary for the processing purposes detailed herein, or as mandated by applicable statutory limitation periods. Information submitted via contact or RFQ forms is retained for a maximum of 36 months following the last communication, unless it converts into a customer contract. Marketing consent data is stored until consent is explicitly withdrawn, after which it is securely destroyed or anonymized.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">7. Technical and Organizational Security Measures</h3>
+                <p style="margin-bottom: 0.75rem;">To protect personal data from unauthorized access, alteration, loss, or leakage, USTECH implements industry-standard controls:</p>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-type: disc;">
+                    <li style="margin-bottom: 0.3rem;">All data transit is encrypted using Secure Sockets Layer (SSL) / TLS 1.3 protocols.</li>
+                    <li style="margin-bottom: 0.3rem;">Access to database systems is restricted through zero-trust access controls and multi-factor authentication (MFA).</li>
+                    <li style="margin-bottom: 0.3rem;">Periodic vulnerability scanning, firewalls, and server-side threat detection systems are active.</li>
+                    <li style="margin-bottom: 0.3rem;">All staff handling client data undergo periodic data security and privacy training.</li>
+                </ul>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">8. Global Privacy Rights</h3>
+                <p style="margin-bottom: 0.75rem;">Depending on your legal residence, you are entitled to several specific rights regarding your personal data:</p>
+
+                <p style="margin-bottom: 0.5rem; font-weight: 700; color: var(--text-primary); font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">A. Data Subject Rights Under Turkey's KVKK (Article 11):</p>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem; list-style-type: disc;">
+                    <li style="margin-bottom: 0.3rem;">To learn whether your personal data is being processed,</li>
+                    <li style="margin-bottom: 0.3rem;">To request information if your personal data has been processed,</li>
+                    <li style="margin-bottom: 0.3rem;">To learn the purpose of the processing and whether the data is used in line with this purpose,</li>
+                    <li style="margin-bottom: 0.3rem;">To know the third parties to whom your personal data has been transferred domestically or internationally,</li>
+                    <li style="margin-bottom: 0.3rem;">To request the rectification of personal data if it has been processed incompletely or inaccurately,</li>
+                    <li style="margin-bottom: 0.3rem;">To request the erasure or destruction of your personal data under the conditions laid down in Article 7 of the KVKK,</li>
+                    <li style="margin-bottom: 0.3rem;">To request that the third parties to whom your personal data was transferred be notified of the rectification, erasure, or destruction operations,</li>
+                    <li style="margin-bottom: 0.3rem;">To object to any outcome detrimental to you resulting from the analysis of your processed data exclusively through automated systems,</li>
+                    <li style="margin-bottom: 0.3rem;">To demand compensation for damages incurred due to the unlawful processing of your personal data.</li>
+                </ul>
+
+                <p style="margin-bottom: 0.5rem; font-weight: 700; color: var(--text-primary); font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">B. EU GDPR Rights:</p>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem; list-style-type: disc;">
+                    <li style="margin-bottom: 0.3rem;">Right to access, correct, update, or request deletion of your personal data.</li>
+                    <li style="margin-bottom: 0.3rem;">Right to object to processing, restrict processing, or request data portability.</li>
+                    <li style="margin-bottom: 0.3rem;">Right to withdraw consent at any time without affecting the lawfulness of prior processing.</li>
+                </ul>
+
+                <p style="margin-bottom: 0.5rem; font-weight: 700; color: var(--text-primary); font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">C. California CCPA/CPRA Rights:</p>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-type: disc;">
+                    <li style="margin-bottom: 0.3rem;">Right to know what categories of personal information we collect and disclose.</li>
+                    <li style="margin-bottom: 0.3rem;">Right to request deletion and correction of personal information.</li>
+                    <li style="margin-bottom: 0.3rem;">Right to opt out of the sale or sharing of your personal information (Do Not Sell/Share).</li>
+                    <li style="margin-bottom: 0.3rem;">Right to non-discrimination for exercising your privacy rights.</li>
+                </ul>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">9. Application and Contact Procedure</h3>
+                <p style="margin-bottom: 1.25rem;">You may submit requests to exercise your rights by emailing <strong style="color: var(--text-primary);">privacy@ustechinnovations.com</strong>. For applications originating from Turkey under the KVKK, requests must comply with the "Communiqué on Application Procedures and Principles to the Data Controller". Applications must contain: Name, Surname, wet signature (if written), Turkish ID number (or Passport Number/nationality for foreign nationals), physical address for response, contact email, and clear details of the request. Requests will be processed within 30 days free of charge.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">10. Cookies</h3>
+                <p style="margin-bottom: 1.25rem;">We use cookies to enable core website services and to collect anonymized telemetry. Essential cookies are loaded automatically. Functional and analytical cookies (such as tracking site usage) are disabled by default and will only run if you provide consent via our Cookie Banner. You can manage, alter, or reject these cookies at any time.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">11. Corporate Contact Details</h3>
+                <p style="margin-bottom: 0;"><strong style="color: var(--text-primary);">USTECH Innovations LLC</strong><br>30 N Gould St Ste 34301, Sheridan, WY 82801, USA<br>Email: privacy@ustechinnovations.com<br>Phone: +1 307 527 0072</p>
+            </div>
+            <!-- Modal Footer -->
+            <div style="padding: 1.25rem 2rem; border-top: 1px solid var(--border-color); flex-shrink: 0; text-align: right; display: flex; justify-content: flex-end; gap: 1rem;">
+                <button onclick="document.getElementById('privacy-modal').style.display='none'; document.body.style.overflow='';" class="btn btn-secondary" style="padding: 0.6rem 2rem; font-size: 0.9rem; border-radius: 4px; cursor: pointer;">Cancel</button>
+                <button onclick="document.getElementById('privacy-modal').style.display='none'; document.body.style.overflow='';" class="btn btn-primary" style="padding: 0.6rem 2rem; font-size: 0.9rem; border-radius: 4px; cursor: pointer; color: white;">I Agree & Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+        <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Contact Page ROI Calculator (mirrors homepage logic with c- prefixed IDs)
+        (function() {
+            const rIndustry = document.getElementById('c-roi-industry');
+            const rCapacity = document.getElementById('c-roi-capacity');
+            const rCost = document.getElementById('c-roi-cost');
+            const rMargin = document.getElementById('c-roi-margin');
+            
+            const lblCapacity = document.getElementById('c-roi-capacity-val');
+            const lblCost = document.getElementById('c-roi-cost-val');
+            const lblMargin = document.getElementById('c-roi-margin-val');
+            const lblCapacityDesc = document.querySelector('label[for="c-roi-capacity"]');
+            const lblCostDesc = document.querySelector('label[for="c-roi-cost"]');
+            
+            const valAnnual = document.getElementById('c-val-annual-savings');
+            const valPayback = document.getElementById('c-val-payback');
+            const valYield = document.getElementById('c-val-yield-inc');
+            
+            if (!rIndustry || !rCapacity || !rCost || !rMargin) return;
+            
+            rIndustry.addEventListener('change', () => {
+                const ind = rIndustry.value;
+                if (ind === 'feed') {
+                    rCapacity.min = 5; rCapacity.max = 100; rCapacity.value = 25;
+                    rCost.min = 100; rCost.max = 800; rCost.value = 450;
+                    lblCapacityDesc.firstChild.textContent = 'Daily Production Capacity: ';
+                    lblCostDesc.firstChild.textContent = 'Raw Material Cost (per Ton): ';
+                } else if (ind === 'dairy') {
+                    rCapacity.min = 10; rCapacity.max = 200; rCapacity.value = 50;
+                    rCost.min = 200; rCost.max = 1000; rCost.value = 400;
+                    lblCapacityDesc.firstChild.textContent = 'Daily Processing Capacity: ';
+                    lblCostDesc.firstChild.textContent = 'Milk Value (per 1,000 Liters): ';
+                } else if (ind === 'chemical') {
+                    rCapacity.min = 2; rCapacity.max = 50; rCapacity.value = 10;
+                    rCost.min = 500; rCost.max = 5000; rCost.value = 1500;
+                    lblCapacityDesc.firstChild.textContent = 'Daily Processing Capacity: ';
+                    lblCostDesc.firstChild.textContent = 'Material Cost (per m&mdash;): ';
+                }
+                updateRoi();
+            });
+            
+            [rCapacity, rCost, rMargin].forEach(slider => {
+                slider.addEventListener('input', updateRoi);
+            });
+            
+            function updateRoi() {
+                const ind = rIndustry.value;
+                const capacity = parseFloat(rCapacity.value);
+                const cost = parseFloat(rCost.value);
+                const margin = parseFloat(rMargin.value);
+                
+                let capUnit = ' tons/hr';
+                let costPrefix = '$';
+                
+                if (ind === 'feed') {
+                    capUnit = ' tons/hr';
+                    lblCapacity.textContent = capacity + capUnit;
+                    lblCost.textContent = costPrefix + cost;
+                } else if (ind === 'dairy') {
+                    capUnit = 'k Liters/hr';
+                    lblCapacity.textContent = capacity + ' ' + capUnit;
+                    lblCost.textContent = costPrefix + cost;
+                } else if (ind === 'chemical') {
+                    capUnit = ' m&mdash;/hr';
+                    lblCapacity.textContent = capacity + capUnit;
+                    lblCost.textContent = costPrefix + cost;
+                }
+                
+                lblMargin.textContent = margin.toFixed(1) + '%';
+                
+                let annualSavings = 0;
+                let qualityYield = 0;
+                let equipmentCost = 95000;
+                
+                const operatingHoursPerYear = 20 * 300;
+                
+                if (ind === 'feed') {
+                    annualSavings = capacity * operatingHoursPerYear * cost * (margin / 100) * 0.75;
+                    qualityYield = margin * 1.5;
+                } else if (ind === 'dairy') {
+                    annualSavings = (capacity * 1000) * operatingHoursPerYear * (cost / 1000) * (margin / 100) * 0.95;
+                    qualityYield = margin * 1.2;
+                } else if (ind === 'chemical') {
+                    annualSavings = capacity * operatingHoursPerYear * cost * (margin / 100) * 1.1;
+                    qualityYield = margin * 1.8;
+                    equipmentCost = 135000;
+                }
+                
+                valAnnual.textContent = costPrefix + Math.round(annualSavings).toLocaleString();
+                
+                let paybackMonths = (equipmentCost / annualSavings) * 12;
+                if (paybackMonths < 1.0) paybackMonths = 1.0;
+                valPayback.textContent = paybackMonths.toFixed(1) + ' Months';
+                
+                valYield.textContent = qualityYield.toFixed(1) + '%';
+            updateRoi();
+        })();
+
+        // Automatically open Privacy Policy Modal if query parameter showPrivacy=1 is present
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('showPrivacy') === '1') {
+                const modal = document.getElementById('privacy-modal');
+                if (modal) {
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+        });
+    </script>
+
+    <!-- Success Modal -->
+    <div id="contact-success-modal" style="display: none; position: fixed; inset: 0; background: rgba(7, 9, 19, 0.8); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); z-index: 10000; align-items: center; justify-content: center; padding: 2rem;">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 16px; padding: 3rem 2.5rem; max-width: 480px; width: 100%; text-align: center; box-shadow: var(--shadow-xl); position: relative; animation: float-card 0.6s ease;">
+            <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(56, 182, 255, 0.1); border: 2px solid var(--accent-blue); display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem auto;">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--accent-black); margin-bottom: 1rem; letter-spacing: -0.5px;">Message Sent!</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+                Thank you for contacting USTECH Innovations. Your inquiry has been forwarded to our team, and we will get back to you within 24 hours.
+            </p>
+            <button onclick="document.getElementById('contact-success-modal').style.display='none'; document.body.style.overflow='auto';" class="btn btn-primary" style="width: 100%;">Close Window</button>
+        </div>
+    </div>
+</body>
+</html>
+

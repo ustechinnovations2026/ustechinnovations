@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="caliX Spectral Intelligence System - Professional chemometrics desktop workspace for quantitative and qualitative calibration modeling.">
+    <title>cali<span class="calix-x">X</span> Suite | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "caliX",
+      "alternativeName": "caliX Spectral Intelligence System",
+      "description": "An advanced chemometrics and machine learning suite for developing high-precision NIR calibration models, performing spectral preprocessing, and executing automated regression analyses (PLS, PCA).",
+      "operatingSystem": "Windows 10, Windows 11, Linux (Ubuntu/Debian)",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Chemometrics & Analytical Spectroscopy Software",
+      "publisher": {
+        "@type": "Organization",
+        "name": "USTECH Innovations LLC",
+        "url": "https://ustechinnovations.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Custom B2B licensing. Contact for pricing.",
+        "url": "https://ustechinnovations.com/contact.html"
+      }
+    }
+    </script>
+    <style>
+        /* Premium Software-Specific CSS */
+        :root {
+            --pc-dark-bg: var(--bg-primary);
+            --pc-card-bg: var(--bg-secondary);
+            --pc-border: var(--border-color);
+            --pc-glow: rgba(0, 0, 0, 0.02);
+            --pc-accent: var(--text-primary);
+            --pc-text-mute: var(--text-secondary);
+        }
+
+        /* Hero Layout Redesign */
+        .software-hero {
+            background: radial-gradient(circle at 50% 30%, var(--bg-secondary) 0%, var(--bg-primary) 70%);
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .software-hero::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(18, 20, 29, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .software-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .software-title {
+            font-size: 3.5rem;
+            font-family: var(--font-title);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .software-desc {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            line-height: 1.75;
+            max-width: 750px;
+            margin: 0 auto 3rem auto;
+        }
+
+        /* MacOS Window Showcase */
+        .app-showcase-window {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            z-index: 2;
+            position: relative;
+        }
+
+        .app-window-header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.75rem 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .window-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .window-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot-red { background-color: #ff5f56; }
+        .dot-yellow { background-color: #ffbd2e; }
+        .dot-green { background-color: #27c93f; }
+
+        .window-address-bar {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            padding: 0.25rem 3rem;
+            width: 50%;
+            max-width: 400px;
+            text-align: center;
+            font-family: var(--font-sans);
+            letter-spacing: 0.5px;
+        }
+
+        .window-action-indicators {
+            width: 48px; /* Offset spacing */
+        }
+
+        /* HD Placeholder Screen Layout */
+        .app-screen-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: var(--bg-tertiary);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .app-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transform: scale(0.98);
+            transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .app-slide.active {
+            opacity: 1;
+            transform: scale(1);
+            pointer-events: auto;
+            position: relative;
+        }
+
+        /* HD Placeholder Styling */
+        .hd-placeholder-card {
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            border: 2px dashed var(--border-hover);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            box-sizing: border-box;
+        }
+
+        .hd-placeholder-card:hover {
+            border-color: var(--text-primary);
+            background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+        }
+
+        .placeholder-tag {
+            font-family: var(--font-title);
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .placeholder-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            max-width: 500px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .placeholder-specs {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            background: var(--bg-primary);
+        }
+        /* Bento Grid Redesign */
+        .bento-section {
+            background-color: var(--bg-secondary);
+            padding: 7rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .bento-card {
+            background: rgba(30, 33, 48, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-left: 4px solid rgba(212, 175, 55, 0.25);
+            border-radius: 12px;
+            padding: 2.25rem 2rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .bento-card:hover {
+            background: rgba(35, 38, 56, 0.75);
+            border-color: rgba(255, 255, 255, 0.08);
+            border-left-color: #d4af37;
+            transform: translateX(6px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .bento-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.03) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .bento-icon-container {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 0.75rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #d4af37;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .bento-card:hover .bento-icon-container {
+            background: rgba(212, 175, 55, 0.18);
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: scale(1.08) rotate(3deg);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+        }
+
+        .bento-card h3 {
+            font-size: 1.25rem;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+            font-family: var(--font-title);
+            font-weight: 700;
+            transition: color 0.3s ease;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
+        }
+
+        .bento-card:hover h3 {
+            color: #d4af37;
+        }
+
+        .bento-card p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin: 0;
+            text-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.95);
+        }
+
+        /* Animated Pipeline Flowchart */
+        .pipeline-section {
+            background-color: var(--bg-primary);
+            padding: 7rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pipeline-wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .pipeline-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .pipeline-flow::before {
+            content: '';
+            position: absolute;
+            top: 45px;
+            left: 5%;
+            right: 5%;
+            height: 2px;
+            background: linear-gradient(to right, var(--border-color) 0%, var(--text-muted) 50%, var(--border-color) 100%);
+            z-index: 0;
+        }
+
+        .pipeline-node {
+            flex: 1;
+            background: linear-gradient(145deg, var(--bg-secondary) 0%, rgba(20, 22, 32, 0.95) 100%);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid rgba(212, 175, 55, 0.25);
+            padding: 2.25rem 1.75rem;
+            border-radius: 12px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .pipeline-node:hover {
+            background: linear-gradient(145deg, rgba(25, 27, 39, 0.95) 0%, rgba(18, 20, 29, 0.98) 100%);
+            border-color: rgba(212, 175, 55, 0.4);
+            border-top-color: rgba(212, 175, 55, 1);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.1), 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .pipeline-badge {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(18, 20, 29, 0.8);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            color: #d4af37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-title);
+            font-weight: 800;
+            font-size: 1rem;
+            margin: 0 auto 1.5rem auto;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .pipeline-node:hover .pipeline-badge {
+            border-color: #d4af37;
+            background: #d4af37;
+            color: #12141d;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            transform: scale(1.05);
+        }
+
+        .pipeline-node h4 {
+            font-size: 1.15rem;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
+        }
+
+        .pipeline-node:hover h4 {
+            color: #d4af37;
+        }
+
+        .pipeline-node p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Tech Spec Grid Dashboard */
+        .specs-section {
+            background-color: var(--bg-secondary);
+            padding: 7rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-dashboard {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .spec-group-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .spec-group-card h3 {
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            letter-spacing: -0.3px;
+        }
+
+        .spec-table-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .spec-table-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.92rem;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 0.75rem;
+        }
+
+        .spec-table-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .spec-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .spec-val {
+            color: var(--text-primary);
+            text-align: right;
+            font-weight: 600;
+            max-width: 65%;
+        }
+
+        /* CTA Section Override */
+        .software-cta-section {
+            background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding: 8rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .software-cta-title {
+            font-size: 2.8rem;
+            font-family: var(--font-title);
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -1px;
+            margin-bottom: 1.25rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .software-cta-desc {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+        }
+
+        /* Responsive overrides */
+        @media (max-width: 992px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            .bento-card-large {
+                grid-column: span 1;
+                grid-template-columns: 1fr;
+            }
+            .pipeline-flow {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .pipeline-flow::before {
+                display: none;
+            }
+            .specs-dashboard {
+                grid-template-columns: 1fr;
+            }
+            .pillars-section .grid-3 {
+                grid-template-columns: 1fr !important;
+            }
+            .modules-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .software-title {
+                font-size: 2.5rem;
+            }
+            .software-cta-title {
+                font-size: 2.2rem;
+            }
+            .app-window-header {
+                padding: 0.5rem 1rem;
+            }
+            .window-address-bar {
+                display: none;
+            }
+            .app-carousel-slide {
+                padding: 0 !important;
+            }
+            .app-carousel-slide img {
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: contain !important;
+            }
+            .carousel-arrow {
+                width: 32px !important;
+                height: 32px !important;
+                font-size: 0.9rem !important;
+            }
+            .prev-arrow {
+                left: 0.5rem !important;
+            }
+            .next-arrow {
+                right: 0.5rem !important;
+            }
+        }
+        .app-screen-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Extra styles for copy integration */
+        .benefit-card, .business-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .benefit-card:hover, .business-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-gold) !important;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+        }
+        @media (max-width: 991px) {
+            .why-prochem-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .why-prochem-grid {
+                grid-template-columns: 1fr !important;
+            }
+            .container > div {
+                grid-template-columns: 1fr !important;
+                gap: 2.5rem !important;
+            }
+            .business-card-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        /* Carousel Navigation Arrows */
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(18, 20, 29, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 0;
+            line-height: 1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .carousel-arrow:hover {
+            background: rgba(18, 20, 29, 0.95);
+            border-color: #d4af37;
+            color: #d4af37;
+            transform: translateY(-50%) scale(1.1);
+        }
+        .carousel-arrow:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+        .prev-arrow {
+            left: 1rem;
+        }
+        .next-arrow {
+            right: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            Türkçe
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Español
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Breadcrumb -->
+        <section style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 0.75rem 2rem;">
+            <div class="container" style="font-size: 0.85rem; color: var(--text-muted);">
+                <a href="index.html">Home</a> &gt; <a href="products-software.html">Software</a> &gt; cali<span class="calix-x">X</span> Suite
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             1. CINEMATIC HERO & SHOWCASE CAROUSEL
+             ============================================================== -->
+        <section class="software-hero">
+            <div class="software-hero-content">
+                <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; color: var(--text-secondary); display: block; margin-bottom: 1rem;">AI-POWERED CALIBRATION PLATFORM</span>
+                <h1 class="software-title">cali<span class="calix-x">X</span> Spectral Suite</h1>
+                <p class="software-desc">
+                    Build your calibration models in minutes, not weeks. cali<span class="calix-x">X</span> is an advanced chemometrics and machine learning suite for developing high-precision NIR calibration models, performing spectral preprocessing, and executing automated regression analyses.
+                </p>
+                
+                <div style="display: flex; gap: 1.25rem; justify-content: center; margin-bottom: 5rem; flex-wrap: wrap;">
+                    <a href="contact.html?product=calix" class="btn btn-primary">Request Live Demo</a>
+                </div>
+
+                <!-- macOS App Mockup Shell -->
+                <div class="app-showcase-window">
+                    <div class="app-window-header">
+                        <div class="window-dots">
+                            <span class="window-dot dot-red"></span>
+                            <span class="window-dot dot-yellow"></span>
+                            <span class="window-dot dot-green"></span>
+                        </div>
+                        <div class="window-address-bar">
+                            cali<span class="calix-x">X</span>-desktop.ustech.local/workspace
+                        </div>
+                        <div class="window-action-indicators"></div>
+                    </div>
+                    
+                    <div class="app-screen-container">
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-arrow prev-arrow" aria-label="Previous Slide" style="background: rgba(18, 20, 29, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); color: #ffffff;">&#8592;</button>
+                        <button class="carousel-arrow next-arrow" aria-label="Next Slide" style="background: rgba(18, 20, 29, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); color: #ffffff;">&#8594;</button>
+
+                        <div class="app-screen-carousel" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; width: 100%; height: 100%; cursor: grab; user-select: none; scrollbar-width: none;">
+                            <!-- Slide 1 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss1.png" alt="caliX Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss2.png" alt="caliX Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss3.png" alt="caliX Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss4.png" alt="caliX Screenshot 4" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss5.png" alt="caliX Screenshot 5" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss6.png" alt="caliX Screenshot 6" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss7.png" alt="caliX Screenshot 7" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 8 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss8.png" alt="caliX Screenshot 8" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 9 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss9.png" alt="caliX Screenshot 9" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 10 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss10.png" alt="caliX Screenshot 10" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 11 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss11.png" alt="caliX Screenshot 11" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 12 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss12.png" alt="caliX Screenshot 12" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 13 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss13.png" alt="caliX Screenshot 13" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 14 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss14.png" alt="caliX Screenshot 14" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                            <!-- Slide 15 -->
+                            <div class="app-carousel-slide" style="flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; align-items: center; justify-content: center; background-color: var(--bg-secondary); padding: 2.5rem 2rem;">
+                                <img src="images/calix_ss15.png" alt="caliX Screenshot 15" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: var(--shadow-md);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation Dots -->
+                <div class="carousel-dots" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <span class="carousel-dot active" data-slide="0" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--text-primary); cursor: pointer; opacity: 1; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="1" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="2" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="3" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="4" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="5" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="6" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="7" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="8" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="9" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="10" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="11" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="12" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="13" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                    <span class="carousel-dot" data-slide="14" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-hover); cursor: pointer; opacity: 0.5; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;"></span>
+                </div>
+
+                <!-- Dynamic Slide Text Container -->
+                <div id="carousel-slide-text" style="max-width: 850px; margin: 1.5rem auto 0 auto; text-align: center; min-height: 90px; transition: opacity 0.2s ease;">
+                    <h3 id="slide-text-title" style="font-size: 1.3rem; font-family: var(--font-title); font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: -0.3px;">Data Import Workspace</h3>
+                    <p id="slide-text-desc" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin: 0;">Import raw spectral scans and laboratory reference values from Excel worksheets or CSV files.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             2. PRODUCT OVERVIEW & STATS
+             ============================================================== -->
+        <section class="section" style="background-color: var(--bg-primary); padding: 7rem 2rem; border-bottom: 1px solid var(--border-color);">
+            <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--accent-grey); display: block; margin-bottom: 0.75rem;">Workspace</span>
+                <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; margin-top: 0; color: var(--text-primary);">Professional Chemometrics Workspace</h2>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.08rem; margin-bottom: 2rem;">
+                    cali<span class="calix-x">X</span> is designed to build highly accurate quantitative prediction models and qualitative classifiers from raw spectral data. Regardless of whether you work with Near-Infrared (NIR), Fourier Transform Infrared (FTIR), or Raman spectrometers, cali<span class="calix-x">X</span> converts complex, high-dimensional light reflectance/absorbance spectra into directly usable chemical parameters such as protein, moisture, fat, fiber, or active pharmaceutical ingredient (API) content.
+                </p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.08rem; margin: 0;">
+                    Rather than forcing the user to manually run thousands of trial-and-error regressions, cali<span class="calix-x">X</span> coordinates advanced machine learning and statistical models to automatically discover the mathematical relationship between raw spectra and reference values. The platform unifies the entire calibration workflow within a single premium interface.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             3. PIPELINE FLOWCHART (8-Module Calibration Workflow)
+             ============================================================== -->
+        <section class="pipeline-section">
+            <div class="pipeline-wrapper">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
+                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--accent-grey); display: block; margin-bottom: 0.75rem;">Calibration Workflow</span>
+                    <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; margin-top: 0; color: var(--text-primary);">Eight-Module Workflow</h2>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-top: 1rem; font-size: 1.05rem;">
+                        cali<span class="calix-x">X</span> unifies the entire chemometrics process into a sequential, module-based pipeline from raw spectra to production-ready models.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;" class="pipeline-grid">
+                    <!-- Node 1 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">01</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Data Import</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Import raw spectral & lab reference data from structured Excel (.xlsx) or CSV files.</p>
+                    </div>
+                    <!-- Node 2 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">02</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Data Engine</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Perform outlier detection, sample thinning, and wavelength variable selection.</p>
+                    </div>
+                    <!-- Node 3 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">03</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Manual Reg</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Define custom regression parameters for PLS, PCR, Ridge, Lasso, and Huber models.</p>
+                    </div>
+                    <!-- Node 4 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">04</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">AutoML Engine</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Automatically scan hundreds of preprocessing and algorithm combinations in seconds.</p>
+                    </div>
+                    <!-- Node 5 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">05</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Classification</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Develop qualitative groupings and raw material verification models using PCA and PLS-DA.</p>
+                    </div>
+                    <!-- Node 6 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">06</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Prediction</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Validate models against blind test datasets with real-time GH/NH outlier diagnostics.</p>
+                    </div>
+                    <!-- Node 7 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">07</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Data Transfer</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Standardize and migrate master calibration models to slave spectrometers using PDS.</p>
+                    </div>
+                    <!-- Node 8 -->
+                    <div class="pipeline-node">
+                        <div class="pipeline-badge">08</div>
+                        <h4 style="font-family: var(--font-title); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.05rem;">Model Converter</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Convert and export compiled calibrations to industry-standard XML format for third-party systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             4. CORE CAPABILITIES (Bento Grid Redesign)
+             ============================================================== -->
+        <section class="bento-section">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 5rem auto;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--accent-grey); display: block; margin-bottom: 0.75rem;">Capabilities</span>
+                <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; margin-top: 0; color: var(--text-primary);">Core Calibration Capabilities</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Card 1: Data Engine -->
+                <div class="bento-card" style="background-image: linear-gradient(145deg, rgba(12, 14, 21, 0.5) 0%, rgba(18, 20, 29, 0.75) 100%), url('images/cap_outlier.webp'); background-size: cover; background-position: center;">
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3>Data Engine &amp; Thinning</h3>
+                        <p>Clean raw datasets automatically using PCA and PLS leverage metrics. Reduce identical inline scan load using smart Data Thinning algorithms while preserving variance.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Preprocessing -->
+                <div class="bento-card" style="background-image: linear-gradient(145deg, rgba(12, 14, 21, 0.5) 0%, rgba(18, 20, 29, 0.75) 100%), url('images/cap_preprocessing.webp'); background-size: cover; background-position: center;">
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 10c3-3 3-3 6 0s3 3 6 0 3-3 6 0"></path>
+                            <path d="M2 14c3-3 3-3 6 0s3 3 6 0 3-3 6 0" opacity="0.5"></path>
+                            <path d="M2 18c3-3 3-3 6 0s3 3 6 0 3-3 6 0" opacity="0.25"></path>
+                            <line x1="2" y1="6" x2="22" y2="6" stroke-dasharray="2,2"></line>
+                        </svg>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3>Spectral Preprocessing</h3>
+                        <p>Apply mathematical filters to eliminate light scatter and baseline drift. Supports SNV, MSC, Detrending, Autoscaling, and Savitzky-Golay derivative smoothing.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: AutoML -->
+                <div class="bento-card" style="background-image: linear-gradient(145deg, rgba(12, 14, 21, 0.5) 0%, rgba(18, 20, 29, 0.75) 100%), url('images/cap_automl.webp'); background-size: cover; background-position: center;">
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3>AutoML Grid Search</h3>
+                        <p>Automate trial-and-error model development. AutoML sweeps up to 95 unique pipeline combinations in seconds, highlighting the star-marked elbow point to prevent overfitting.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Regression -->
+                <div class="bento-card" style="background-image: linear-gradient(145deg, rgba(12, 14, 21, 0.5) 0%, rgba(18, 20, 29, 0.75) 100%), url('images/cap_regression.webp'); background-size: cover; background-position: center;">
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 2v7.31L3.89 19.3a2 2 0 0 0 1.7 2.7h12.82a2 2 0 0 0 1.7-2.7L14 9.31V2"></path>
+                            <line x1="8" y1="2" x2="16" y2="2"></line>
+                            <line x1="6" y1="16" x2="18" y2="16"></line>
+                        </svg>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3>Multivariate Algorithms</h3>
+                        <p>Build quantitative calibrations with PLS, Robust PLS, Principal Component Regression (PCR), and L1/L2 regularized methods like Ridge, Lasso, and ElasticNet.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Classification -->
+                <div class="bento-card" style="background-image: linear-gradient(145deg, rgba(12, 14, 21, 0.5) 0%, rgba(18, 20, 29, 0.75) 100%), url('images/cap_classification.webp'); background-size: cover; background-position: center;">
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3>Qualitative Grouping</h3>
+                        <p>Develop qualitative classifiers to verify product origin and authenticity. Utilize PCA for unsupervised cluster visualization and PLS-DA for category separation.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Model Transfer -->
+                <div class="bento-card" style="background-image: linear-gradient(145deg, rgba(12, 14, 21, 0.5) 0%, rgba(18, 20, 29, 0.75) 100%), url('images/cap_transfer.webp'); background-size: cover; background-position: center;">
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l.73-.73"></path>
+                        </svg>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3>Spectrometer Standardization</h3>
+                        <p>Transfer master models to slave instruments effortlessly. cali<span class="calix-x">X</span> adjusts for hardware variance using Piecewise Direct Standardization (PDS) and Slope/Bias correction (SBC).</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ==============================================================
+             5. DETAILED SPECIFICATIONS (Specs Dashboard Grid)
+             ============================================================== -->
+        <section class="specs-section">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 5rem auto;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--accent-grey); display: block; margin-bottom: 0.75rem;">Technical Specs</span>
+                <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; margin-top: 0; color: var(--text-primary);">Algorithms &amp; Methods Directory</h2>
+            </div>
+
+            <div class="specs-dashboard">
+                <!-- Group 1: Outlier Detection -->
+                <div class="spec-group-card">
+                    <h3 style="font-family: var(--font-title); font-weight: 700;">Outlier Detection</h3>
+                    <ul class="spec-table-list">
+                        <li class="spec-table-row">
+                            <span class="spec-label">PCA Influence</span>
+                            <span class="spec-val">Hotelling T² &amp; Q-Residuals</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">PLS Leverage</span>
+                            <span class="spec-val">High-influence sample tracking</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Mahalanobis Distance</span>
+                            <span class="spec-val">Multivariate covariance check</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Isolation Forest</span>
+                            <span class="spec-val">Tree-based anomaly forest</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">KNN Distance</span>
+                            <span class="spec-val">Nearest neighbor isolation detection</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 2: Preprocessing Filters -->
+                <div class="spec-group-card">
+                    <h3 style="font-family: var(--font-title); font-weight: 700;">Spectral Preprocessing</h3>
+                    <ul class="spec-table-list">
+                        <li class="spec-table-row">
+                            <span class="spec-label">SNV &amp; MSC</span>
+                            <span class="spec-val">Scatter corrections for solid grains</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Derivatives</span>
+                            <span class="spec-val">1st &amp; 2nd order SG derivatives</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Detrend</span>
+                            <span class="spec-val">Fits &amp; subtracts polynomial sloped curve</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Centering &amp; Scaling</span>
+                            <span class="spec-val">Mean Center, Autoscale, SNVD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 3: Regression Algorithms -->
+                <div class="spec-group-card">
+                    <h3 style="font-family: var(--font-title); font-weight: 700;">Regression Algorithms</h3>
+                    <ul class="spec-table-list">
+                        <li class="spec-table-row">
+                            <span class="spec-label">Partial Least Squares (PLS)</span>
+                            <span class="spec-val">Standard &amp; Robust outlier-resistant PLS</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">PCR &amp; Ridge</span>
+                            <span class="spec-val">Principal Component &amp; L2 regularized</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Lasso &amp; ElasticNet</span>
+                            <span class="spec-val">L1 penalty &amp; combined sparse regressions</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Robust Huber</span>
+                            <span class="spec-val">Algorithm resistant to extreme data errors</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 4: AutoML Modes & Stats -->
+                <div class="spec-group-card">
+                    <h3 style="font-family: var(--font-title); font-weight: 700;">AutoML Search &amp; Stats</h3>
+                    <ul class="spec-table-list">
+                        <li class="spec-table-row">
+                            <span class="spec-label">Fast Search</span>
+                            <span class="spec-val">~20 basic preprocessing pipelines</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Standard &amp; Robust</span>
+                            <span class="spec-val">50+ derivative &amp; robust scans</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Full Grid Search</span>
+                            <span class="spec-val">~95 brute-force pipelines (final models)</span>
+                        </li>
+                        <li class="spec-table-row">
+                            <span class="spec-label">Key Metrics</span>
+                            <span class="spec-val">RMSEC, RMSECV, R², RPD, Latent Variables</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience & Use Cases Section (ProChem Style) -->
+        <section class="audience-section" style="position: relative; background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/calix_audience_bg.webp') center/cover no-repeat; padding: 6rem 2rem; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+            <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
+                
+                <!-- Who It's For -->
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
+                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; color: #4b5563; display: block; margin-bottom: 0.75rem;">Audience</span>
+                    <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; color: #0f172a; margin: 0;">Who is cali<span class="calix-x">X</span> For?</h2>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 6rem;" class="why-prochem-grid">
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease; box-shadow: var(--shadow-sm);" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🧪</div>
+                        <h5 style="font-size: 1.15rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.75rem; font-family: var(--font-title); font-weight: 700;">QC Labs</h5>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">Quality control laboratories needing rapid, high-throughput sample validation.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease; box-shadow: var(--shadow-sm);" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🔬</div>
+                        <h5 style="font-size: 1.15rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.75rem; font-family: var(--font-title); font-weight: 700;">R&amp;D Teams</h5>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">Product developers building new formulations and custom ingredient profiles.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease; box-shadow: var(--shadow-sm);" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">⚙️</div>
+                        <h5 style="font-size: 1.15rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.75rem; font-family: var(--font-title); font-weight: 700;">Process Engineers</h5>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">Automation specialists deploying models directly to manufacturing and dosing lines.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease; box-shadow: var(--shadow-sm);" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">📊</div>
+                        <h5 style="font-size: 1.15rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.75rem; font-family: var(--font-title); font-weight: 700;">Chemometricians</h5>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">Data scientists developing and optimizing multivariate PLS/PCR calibrations.</p>
+                    </div>
+                </div>
+
+                <!-- Use Cases -->
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
+                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; color: #4b5563; display: block; margin-bottom: 0.75rem;">Real World</span>
+                    <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; color: #0f172a; margin: 0;">Use Case Examples</h2>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem;" class="why-prochem-grid">
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🌾</div>
+                        <h6 style="font-size: 1rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.5rem; font-family: var(--font-title); font-weight: 700;">Milling</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.5; margin: 0;">Building a protein and moisture calibration in a flour mill in a single day.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🥛</div>
+                        <h6 style="font-size: 1rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.5rem; font-family: var(--font-title); font-weight: 700;">Dairy QC</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.5; margin: 0;">Deploying fat/protein models across multiple lines consistently via PDS.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">💊</div>
+                        <h6 style="font-size: 1rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.5rem; font-family: var(--font-title); font-weight: 700;">Pharma Raw</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.5; margin: 0;">Rapidly verifying active ingredients and raw material identity with PLS-DA.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🐔</div>
+                        <h6 style="font-size: 1rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.5rem; font-family: var(--font-title); font-weight: 700;">Feed Optimize</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.5; margin: 0;">Building final-release calibrations with high accuracy using AutoML.</p>
+                    </div>
+                    <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🔄</div>
+                        <h6 style="font-size: 1rem; color: var(--text-primary); margin-top: 0; margin-bottom: 0.5rem; font-family: var(--font-title); font-weight: 700;">Multi-Site</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.5; margin: 0;">Transferring models from master instrument across slave units without loss.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==============================================================
+             SOFTWARE PORTAL — Download Section
+             ============================================================== -->
+        <section id="software-portal" style="background-color: var(--bg-primary); padding: 6rem 2rem; border-bottom: 1px solid var(--border-color); position: relative; overflow: hidden;">
+            <!-- Subtle background decoration -->
+            <div style="position: absolute; top: -150px; right: -150px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(213,178,121,0.06) 0%, transparent 70%); pointer-events: none;"></div>
+
+            <div class="container" style="max-width: 800px; margin: 0 auto; position: relative; z-index: 1;">
+                <!-- Section Header -->
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--accent-grey); display: block; margin-bottom: 0.75rem;">Software Portal</span>
+                    <h2 style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; margin-top: 0; margin-bottom: 1rem; color: var(--text-primary);">Download Cali<span class="calix-x">X</span> Installer</h2>
+                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">Download the latest Cali<span class="calix-x">X</span> chemometrics software package. Includes the full calibration development suite with PLS regression, PCA classification, and model validation tools.</p>
+                </div>
+
+                <!-- Single Download Card -->
+                <a href="downloads/CaliXSetup.exe" download style="text-decoration: none; display: block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 2rem; transition: all 0.3s ease; position: relative; overflow: hidden; cursor: pointer;" onmouseenter="this.style.borderColor='var(--accent-gold)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 40px rgba(213,178,121,0.12)'" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <!-- Icon -->
+                        <div style="width: 60px; height: 60px; min-width: 60px; background: rgba(213,178,121,0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        </div>
+                        <!-- Content -->
+                        <div style="flex: 1;">
+                            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; flex-wrap: wrap;">
+                                <h3 style="color: var(--text-primary); font-size: 1.2rem; font-weight: 700; margin: 0; font-family: var(--font-title);">Cali<span class="calix-x">X</span> Setup</h3>
+                                <span style="background: rgba(213,178,121,0.12); color: var(--accent-gold); font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Latest Version</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; margin: 0 0 0.85rem 0;">Complete chemometrics platform with automated PLS regression, spectral preprocessing (SNV, MSC, Savitzky-Golay), outlier detection, and model transfer capabilities.</p>
+                            <div style="display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+                                <span style="color: var(--text-muted); font-size: 0.8rem; display: flex; align-items: center; gap: 0.35rem;">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    Windows 10/11
+                                </span>
+                                <span style="color: var(--text-muted); font-size: 0.8rem; display: flex; align-items: center; gap: 0.35rem;">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+                                    ~96 MB
+                                </span>
+                                <span style="color: var(--text-muted); font-size: 0.8rem;">.exe</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Disclaimer -->
+                <div style="text-align: center; margin-top: 2rem; padding: 1.25rem 2rem; background: rgba(213,178,121,0.04); border: 1px solid rgba(213,178,121,0.1); border-radius: 10px;">
+                    <p style="color: var(--text-muted); font-size: 0.82rem; line-height: 1.6; margin: 0;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 0.3rem;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        Cali<span class="calix-x">X</span> requires a valid USTECH license key. Contact <a href="mailto:info@ustechinnovations.com" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">info@ustechinnovations.com</a> for activation support.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Target Sectors</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Core Software</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Carousel Script for caliX Screenshots
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.app-screen-carousel');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const textTitle = document.getElementById('slide-text-title');
+            const textDesc = document.getElementById('slide-text-desc');
+
+            if (!carousel || dots.length === 0) return;
+
+            const slideData = [
+                {
+                    title: "Data Import Workspace",
+                    desc: "Import raw spectral scans and laboratory reference values from Excel worksheets or CSV files."
+                },
+                {
+                    title: "Data Visualizer & Plotter",
+                    desc: "View and overlay raw absorbance/reflectance spectra with interactive wavelength scanning."
+                },
+                {
+                    title: "Outlier Detection Dashboard",
+                    desc: "Identify and flag atypical samples using PCA influence (Hotelling T² & Q-residuals) and PLS leverage metrics."
+                },
+                {
+                    title: "Spectral Preprocessing Filters",
+                    desc: "Apply MSC, SNV, and Detrending math to eliminate physical light-scattering differences."
+                },
+                {
+                    title: "Savitzky-Golay Derivative Smoothing",
+                    desc: "Clean up flat baseline drift and sharpen overlapping spectral peaks."
+                },
+                {
+                    title: "AutoML Search Engine Configuration",
+                    desc: "Initiate automated grid searches scanning up to 95 calibration pipeline combinations in seconds."
+                },
+                {
+                    title: "Model Calibration Results Panel",
+                    desc: "Review RMSEC, RMSECV, R², and RPD evaluation metrics for active prediction parameters."
+                },
+                {
+                    title: "Predicted vs. Reference Plots",
+                    desc: "Assess quantitative model accuracy with interactive 45-degree scatter plots."
+                },
+                {
+                    title: "Latent Variables (LV) Diagnostics",
+                    desc: "Determine the optimal number of LVs using cross-validation elbow curves to prevent overfitting."
+                },
+                {
+                    title: "Qualitative Classification (PCA)",
+                    desc: "Unsupervised clustering of sample groups (e.g. origins, grain varieties, raw materials)."
+                },
+                {
+                    title: "Supervised Classification (PLS-DA)",
+                    desc: "Train classification models to verify product authenticity with full Confusion Matrix validation."
+                },
+                {
+                    title: "Model Standardization Settings",
+                    desc: "Sync master calibrations to slave spectrometers mathematically to correct for hardware variations."
+                },
+                {
+                    title: "Piecewise Direct Standardization (PDS)",
+                    desc: "Execute advanced cross-instrument model transfer using standardized reference scans."
+                },
+                {
+                    title: "Model Converter Utility",
+                    desc: "Export compiled caliX models (.ihb) as industry-standard XML files compatible with third-party software."
+                },
+                {
+                    title: "Project Management Workspace",
+                    desc: "Save and manage entire active calibration workspace sessions (.clx) and compiled prediction files."
+                }
+            ];
+
+            // Slide text update function
+            const updateSlideText = (index) => {
+                if (slideData[index]) {
+                    textTitle.textContent = slideData[index].title;
+                    textDesc.textContent = slideData[index].desc;
+                }
+            };
+
+            const prevArrow = document.querySelector('.prev-arrow');
+            const nextArrow = document.querySelector('.next-arrow');
+
+            // Dot navigation click
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    const width = carousel.offsetWidth;
+                    carousel.scrollTo({
+                        left: width * index,
+                        behavior: 'smooth'
+                    });
+                    setActiveDot(index);
+                });
+            });
+
+            // Arrow navigation click
+            if (prevArrow && nextArrow) {
+                prevArrow.addEventListener('click', () => {
+                    const width = carousel.offsetWidth;
+                    const index = Math.round(carousel.scrollLeft / width);
+                    const prevIndex = (index - 1 + slideData.length) % slideData.length;
+                    carousel.scrollTo({
+                        left: width * prevIndex,
+                        behavior: 'smooth'
+                    });
+                    setActiveDot(prevIndex);
+                });
+
+                nextArrow.addEventListener('click', () => {
+                    const width = carousel.offsetWidth;
+                    const index = Math.round(carousel.scrollLeft / width);
+                    const nextIndex = (index + 1) % slideData.length;
+                    carousel.scrollTo({
+                        left: width * nextIndex,
+                        behavior: 'smooth'
+                    });
+                    setActiveDot(nextIndex);
+                });
+            }
+
+            // Set active dot class
+            const setActiveDot = (index) => {
+                dots.forEach(d => {
+                    d.classList.remove('active');
+                    d.style.backgroundColor = 'var(--border-hover)';
+                    d.style.opacity = '0.5';
+                });
+                if (dots[index]) {
+                    dots[index].classList.add('active');
+                    dots[index].style.backgroundColor = 'var(--text-primary)';
+                    dots[index].style.opacity = '1';
+                    updateSlideText(index);
+                }
+            };
+
+            // Scroll listener to update dots on drag/swipe
+            let scrollTimeout;
+            carousel.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    const width = carousel.offsetWidth;
+                    const index = Math.round(carousel.scrollLeft / width);
+                    setActiveDot(index);
+                }, 100);
+            });
+
+            // Touch drag support
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            carousel.addEventListener('mousedown', (e) => {
+                isDown = true;
+                carousel.style.cursor = 'grabbing';
+                carousel.style.scrollBehavior = 'auto';
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+            });
+
+            carousel.addEventListener('mouseleave', () => {
+                isDown = false;
+                carousel.style.cursor = 'grab';
+                carousel.style.scrollBehavior = 'smooth';
+            });
+
+            carousel.addEventListener('mouseup', () => {
+                isDown = false;
+                carousel.style.cursor = 'grab';
+                carousel.style.scrollBehavior = 'smooth';
+            });
+
+            carousel.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 1.5;
+                carousel.scrollLeft = scrollLeft - walk;
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

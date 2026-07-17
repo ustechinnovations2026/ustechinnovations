@@ -1,0 +1,394 @@
+?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USTECH Innovations - Hygienic inline NIR solutions for the Dairy industry. Real-time fat, protein, and moisture measurement for milk standardization, cheese yield optimization, and powder quality control.">
+    <title>Dairy Solutions | USTECH Innovations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-dark.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+                        <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">Chemical and Pharma</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">Products <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">Devices</a>
+                        <a href="products-software.html" class="dropdown-item">Software</a>
+                        <a href="products-portal.html" class="dropdown-item">Portal</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">Calibration Models</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">Knowledge <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">Technology</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0;">
+                        <span class="lang-flag-circle" data-lang="en" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s ease; overflow: hidden;">
+                            <svg viewBox="0 0 60 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item lang-option" data-lang="en" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 60 30" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="tr" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            T&#252;rk&#231;e
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="de" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 5 3" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item lang-option" data-lang="es" onclick="selectLang(this); return false;" style="display: flex; align-items: center; gap: 0.6rem;">
+                            <svg viewBox="0 0 30 20" width="22" height="15" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Espa&#241;ol
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- ============================================================ -->
+        <!-- 1. HERO SECTION                                              -->
+        <!-- ============================================================ -->
+        <section class="section" style="background: linear-gradient(to right, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.3) 100%), url('images/dairy_hero_bg.webp') no-repeat center center; background-size: cover; min-height: 550px; display: flex; align-items: center; position: relative; padding: 4rem 0;">
+            <div class="container" style="padding: 3rem 2rem; position: relative; z-index: 2;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.6); font-weight: 700; display: block; margin-bottom: 1.25rem;">Industries / Dairy</span>
+                <h1 style="font-size: 2.8rem; color: #ffffff; line-height: 1.15; letter-spacing: -1.5px; font-weight: 400; margin-bottom: 1.5rem; max-width: 750px;">Precision Composition Control for Every Dairy Process</h1>
+                <p style="font-size: 1.05rem; color: rgba(255,255,255,0.75); line-height: 1.7; max-width: 680px; margin-bottom: 2.5rem;">In dairy processing, fractions of a percent determine profitability. A 0.1% deviation in milk fat standardization can mean thousands of dollars lost per day in butter fat giveaway. USTECH's hygienic inline NIR systems deliver continuous, real-time fat, protein, and moisture measurements throughout your production line &mdash; enabling closed-loop standardization that turns compositional variability into a controlled, optimized process.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary" style="background-color: #ffffff; color: #12141d; border-color: #ffffff;">Talk to a Dairy Application Specialist</a>
+                    <a href="#" class="btn btn-secondary" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">Download Dairy Solutions Guide</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. THE CHALLENGES SECTION                                    -->
+        <!-- ============================================================ -->
+        <section class="section bg-light" style="background: linear-gradient(rgba(248, 249, 250, 0.92), rgba(248, 249, 250, 0.92)), url('images/challenges_bg.webp') no-repeat center center; background-size: cover; border-bottom: 1px solid var(--border-color); position: relative;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 1.5rem;">
+                    <span class="section-subtitle">The Challenges You Face</span>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; max-width: 900px; margin-bottom: 3rem;">Dairy processors operate in a uniquely demanding environment: raw milk composition fluctuates hourly, hygiene requirements are absolute, and the difference between profit and loss often hides inside a fraction of a percent. Yet many plants still rely on periodic grab samples and 30-minute lab turnaround cycles to make standardization decisions &mdash; creating a gap between what's happening in the pipe and what the operator knows.</p>
+
+                <div class="grid grid-3">
+                    <!-- Challenge 1 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.4) 0%, rgba(10, 11, 16, 0.8) 100%), url('images/butter_loss.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <div class="card-icon" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1rem;">01</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Butter Fat Giveaway &amp; Yield Loss</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); margin-bottom: 1.5rem; font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Without inline composition data, operators over-standardize by adding excess cream to guarantee fat targets. This invisible giveaway of high-value butter fat costs mid-size plants $200,000&mdash;$500,000 annually in preventable yield loss.
+                        </p>
+                    </div>
+
+                    <!-- Challenge 2 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.4) 0%, rgba(10, 11, 16, 0.8) 100%), url('images/cip_hygiene.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <div class="card-icon" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1rem;">02</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Hygiene, CIP Compatibility &amp; Downtime</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); margin-bottom: 1.5rem; font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Daily Clean-in-Place (CIP) cycles use caustic chemicals and 140&mdash;C steam. Inline sensors must survive these conditions without removal, recalibration, or degradation &mdash; disqualifying most conventional instrumentation.
+                        </p>
+                    </div>
+
+                    <!-- Challenge 3 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.4) 0%, rgba(10, 11, 16, 0.8) 100%), url('images/compliance_audit.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <div class="card-icon" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1rem;">03</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Compliance &amp; Traceability Pressure</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); margin-bottom: 1.5rem; font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Food safety regulations and audits increasingly demand continuous process documentation over lab spot-checks. The expectation is shifting from testing isolated samples to monitoring the entire production run.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. VALUE CHAIN SECTION                                       -->
+        <!-- ============================================================ -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" style="max-width: 850px;">
+                    <span class="section-subtitle">Solutions Across Your Entire Dairy Value Chain</span>
+                    <p class="section-desc">From the moment raw milk enters your facility to the final moisture check on spray-dried powder, every process stage presents an opportunity to capture value through real-time composition intelligence. USTECH solutions are engineered to operate inside your hygienic flow lines &mdash; not beside them.</p>
+                </div>
+
+                <!-- Stage 1 &mdash; Image LEFT, Text RIGHT -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+                    <div>
+                        <img src="images/dairy_receiving.webp" alt="Milk reception silos" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">01 &mdash; Milk Reception &amp; Incoming Quality</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Grade Every Tanker. Price Every Load Accurately.</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                            Raw milk composition varies significantly between farms, seasons, and breeds. By deploying inline NIR measurement at the receiving dock, you verify fat, protein, lactose, and total solids content of every incoming tanker &mdash; enabling accurate payment calculations based on actual composition rather than estimated averages.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            Identify adulteration, dilution, or off-specification loads before they contaminate your processing silo. Real-time screening replaces the 30-minute wait for laboratory Milkoscan results, accelerating tanker turnaround and reducing dock congestion.
+                        </p>
+                        <!-- Parameters & Device pills -->
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Butter Fat</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Total Protein</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Lactose</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Total Solids</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Freezing Point</span>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES Analyzer</a> (inline flow cell)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2 &mdash; Text LEFT, Image RIGHT -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">02 &mdash; Cream Separation &amp; Fat Standardization</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Eliminate Fat Giveaway with Closed-Loop Control</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                            Mount inline NIR sensors immediately downstream of the cream separator. The system continuously measures fat and protein content in both the skim and cream streams, feeding real-time data directly to your standardization PLC. Dosing valves adjust automatically to maintain fat levels within &mdash;0.05% of target &mdash; a precision level that manual sampling simply cannot achieve.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            The financial impact is immediate and measurable: every 0.05% reduction in fat giveaway across a plant processing 500,000 liters per day recovers approximately $1,200 in daily butter fat value.
+                        </p>
+                        <!-- Parameters & Device pills -->
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Butter Fat</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Protein</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Total Solids</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">SNF</span>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES Analyzer</a> (sanitary tri-clamp) + <a href="product-prochem.html" class="inline-product-link">ProChem</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/cheese_showcase.webp" alt="Cheese refrigerated showcase" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                </div>
+
+                <!-- Stage 3 &mdash; Image LEFT, Text RIGHT -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+                    <div>
+                        <img src="images/cow_milking.webp" alt="Cow milking machine" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">03 &mdash; Cheese, Yogurt &amp; Whey Processing</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Maximize Curd Yield. Minimize Fat Losses in Whey.</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                            In cheese production, every gram of fat lost to the whey stream is profit leaving your plant. Inline reflectance sensors mounted on whey discharge lines detect residual fat levels continuously, alerting operators when curd cutting parameters need adjustment.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            For yogurt and fermented product lines, continuous protein and total solids monitoring ensures consistent texture and mouthfeel across production runs, reducing batch-to-batch variability that leads to consumer complaints or product downgrades.
+                        </p>
+                        <!-- Parameters & Device pills -->
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Residual Fat in Whey</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Moisture in Curd</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Total Solids</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Protein</span>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES Analyzer</a> (reflectance mode)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4 &mdash; Text LEFT, Image RIGHT -->
+                <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">04 &mdash; Spray Drying &amp; Powder Quality</span>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Maximize Powder Weight Without Exceeding Moisture Limits</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                            Milk powder is sold by weight, but moisture content is legally capped (typically 3.5&mdash;4.0% for SMP). Every tenth of a percent below the legal limit represents sellable weight you're evaporating away as wasted energy. Conversely, exceeding the limit risks regulatory rejection and microbial growth.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            USTECH inline NIR sensors mounted at the spray dryer outlet or fluid bed exit provide continuous moisture tracking, enabling operators to target the optimal moisture level with precision &mdash; maximizing saleable weight per ton while maintaining full regulatory compliance.
+                        </p>
+                        <!-- Parameters & Device pills -->
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Moisture in Powder</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Total Protein</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Fat</span>
+                            <span style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Ash</span>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+                            <strong style="color: var(--text-primary);">Recommended Devices:</strong> <a href="product-n-sens-online.html" class="inline-product-link">ProLine17ES Analyzer</a> (powder probe) + <a href="product-calix.html" class="inline-product-link">Cali<span class="calix-x">X</span> Platform</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/pasture_cows.webp" alt="Pasture cows" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. WHY USTECH SECTION                                        -->
+        <!-- ============================================================ -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Why USTECH</span>
+                    <h2 class="section-title">Engineered for Dairy.</h2>
+                </div>
+
+                <div class="grid grid-2" style="margin-bottom: 3rem;">
+                    <!-- Card 1 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/cip_compatibility_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Full CIP Compatibility &mdash; No Removal Required</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Our sensors are manufactured from 316L food-grade stainless steel with sapphire optical windows. They withstand daily high-pressure steam cleaning at 140&mdash;C, caustic and acid rinses, and IP69K washdowns &mdash; without disassembly, recalibration, or drift.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/sanitary_standards_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Sanitary Design Standards</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Optical interfaces follow 3-A and EHEDG hygienic design guidelines with crevice-free construction and EPDM food-safe seals, ensuring zero product accumulation or bacterial harbor points inside active milk flow lines.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/autocal_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">AutoCal &mdash; Self-Adjusting Calibrations</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Seasonal variations in raw milk composition can degrade calibration accuracy over time. USTECH's Cali<span class="calix-x">X</span> platform features AutoCal technology: by linking your laboratory reference results with the corresponding spectral database, calibration curves adjust automatically &mdash; maintaining measurement accuracy without manual intervention.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.45) 0%, rgba(10, 11, 16, 0.85) 100%), url('images/plc_integration_bg.webp') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.65);">Direct PLC Integration for Closed-Loop Control</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.92); font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+                            Measurement without action is just data. USTECH sensors communicate directly with your process control systems via OPC UA, Modbus TCP, or 4&mdash;20 mA analog outputs, enabling real-time automated adjustments to separation, standardization, and drying parameters.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- End-to-End Value Chain Section (IMG-DA-06) -->
+                <div style="margin-top: 4.5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+                    <div style="text-align: center; margin-bottom: 3rem;">
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.6rem;">End-to-End Process Control</span>
+                        <h3 style="font-size: 2rem; letter-spacing: -0.75px; margin-bottom: 0.75rem; font-family: var(--font-title); font-weight: 800; color: var(--text-primary);">Total Composition Control from Farm to Table</h3>
+                        <p style="color: var(--text-secondary); max-width: 800px; margin: 0 auto; font-size: 1rem; line-height: 1.65;">USTECH technology monitors and standardizes raw milk quality across the entire dairy cycle &mdash; optimizing parameters from animal nutrition and milking to processing, distribution, and consumer product manufacturing.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 0; margin-top: 2.5rem; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                        <img src="images/process_03_processing.webp" alt="Industrial Processing Silos" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/process_02_milking.webp" alt="Milking Parlor" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/process_04_distribution.webp" alt="Packaging and Distribution" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/process_01_feed.webp" alt="Cow eating grass" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                        <img src="images/process_05_consumption.webp" alt="Final Consumer Products" style="width: 20%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: none; display: block; padding: 0; margin: 0;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. CTA SECTION                                               -->
+        <!-- ============================================================ -->
+        <section class="section" style="background: linear-gradient(rgba(18, 20, 29, 0.88), rgba(18, 20, 29, 0.88)), url('images/dairy_cta_bg.webp') no-repeat center center; background-size: cover; color: #ffffff; position: relative; padding: 6rem 0;">
+            <div class="container" style="text-align: center; max-width: 950px;">
+                <h2 style="font-size: 2.2rem; color: #ffffff; margin-bottom: 1.25rem; letter-spacing: -1px;">See What Closed-Loop Dairy Intelligence Looks&nbsp;Like</h2>
+                <p style="font-size: 1.05rem; color: var(--accent-silver); line-height: 1.7; margin-bottom: 2.5rem;">
+                    Whether you're standardizing liquid milk, optimizing cheese yield, or controlling spray dryer moisture, our dairy application specialists can map USTECH technology to your specific process flow &mdash; and quantify the ROI before you invest.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary" style="background-color: #ffffff; color: #12141d; border-color: #ffffff;">Schedule a Dairy Consultation</a>
+                    <a href="#" class="btn btn-secondary" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">Download Dairy Application Note</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+            <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">Food and Feed</a></li>
+                        <li><a href="industry-dairy.html">Dairy</a></li>
+                        <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">Devices</a></li>
+                        <li><a href="products-software.html">Software</a></li>
+                        <li><a href="products-portal.html">Portal</a></li>
+                        <li><a href="products-calibration-models.html">Calibration Models</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="images/logo-light.webp" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+                <p>Providing high-precision analytical spectroscopy devices and software solutions since 2023.</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+            <p>Designed for scientific and industrial precision.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
