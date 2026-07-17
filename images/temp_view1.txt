@@ -1,0 +1,80 @@
+﻿Created At: 2026-06-10T06:34:54Z
+Completed At: 2026-06-10T06:34:55Z
+File Path: `file:///C:/Users/user/.gemini/antigravity/scratch/ustech-redesign/product-prochem.html`
+Total Lines: 231
+Total Bytes: 17673
+Showing lines 1 to 231
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: <!DOCTYPE html>
+2: <html lang="en">
+3: <head>
+4:     <meta charset="UTF-8">
+5:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6:     <meta name="description" content="ProChem and ProChem Viewer Software - Centralized process monitoring, real-time data visualization, and industrial PLC integration.">
+7:     <title>ProChem &amp; ProChem Viewer Software | USTECH Innovations</title>
+8:     <link rel="stylesheet" href="index.css">
+9: </head>
+10: <body>
+11: 
+12:     <!-- Header / Navigation -->
+13:     <header>
+14:         <div class="nav-container">
+15:             <a href="index.html" class="logo"><img src="images/logo-light.svg" alt="USTECH Innovations Logo" style="height: 72px; width: auto;"></a>
+16:             <button class="nav-toggle" aria-label="Toggle Navigation">
+17:                 <span></span>
+18:                 <span></span>
+19:                 <span></span>
+20:             </button>
+21:             <ul class="nav-links">
+22:                 <li><a href="index.html" class="nav-link">Home</a></li>
+23:                 <li class="nav-item has-dropdown">
+24:                     <a href="industries.html" class="nav-link">Industries <span style="font-size: 0.7rem; margin-left: 2px;">â–¼</span></a>
+25:                     <div class="dropdown-menu">
+26:                         <a href="industry-food-feed.html" class="dropdown-item">Food and Feed</a>
+27:                         <a href="industry-dairy.html" class="dropdown-item">Dairy</a>
+28:                         <a href="industry-chemical-p
+<truncated 15176 bytes>
+      <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+191:                         </svg>
+192:                     </a>
+193:                 </div>
+194:             </div>
+195:             <div class="footer-links-col">
+196:                 <h4>Industries</h4>
+197:                 <ul class="footer-links">
+198:                     <li><a href="industry-food-feed.html">Food and Feed</a></li>
+199:                     <li><a href="industry-dairy.html">Dairy</a></li>
+200:                     <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+201:                 </ul>
+202:             </div>
+203:             <div class="footer-links-col">
+204:                 <h4>Products</h4>
+205:                 <ul class="footer-links">
+206:                     <li><a href="products-devices.html">Devices</a></li>
+207:                     <li><a href="products-software.html">Software</a></li>
+208:                     <li><a href="knowledge-technology.html">FT-NIR Technology</a></li>
+209:                 </ul>
+210:             </div>
+211:             <div class="footer-links-col">
+212:                 <h4>Contact Us</h4>
+213:                 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+214:                 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+215:                 <p style="color: var(--text-muted); font-size: 0.9rem;">Email: info@ustechinnovations.com</p>
+216:             </div>
+217:         </div>
+218:         <div class="footer-bottom">
+219:             <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+220:             <p>Designed for scientific and industrial precision.</p>
+221:         </div>
+222:     </footer>
+223: 
+224:     <script src="app.js"></script>
+225: </body>
+226: </html>
+227: 
+228: 
+229: 
+230: 
+231: 
+The above content shows the entire, complete file contents of the requested file.
+

@@ -1,0 +1,66 @@
+﻿Created At: 2026-06-10T06:57:45Z
+Completed At: 2026-06-10T06:57:45Z
+File Path: `file:///C:/Users/user/.gemini/antigravity/scratch/ustech-redesign/product-prochem.html`
+Total Lines: 327
+Total Bytes: 28031
+Showing lines 210 to 327
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+210:                         <h2 style="font-size: 2rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">Industry 4.0 Specifications</h2>
+211:                         <ul class="product-specs" style="margin-top: 0;">
+212:                             <li><span>Supported Protocols</span> <span>OPC UA (Server/Client), Modbus TCP, Profinet, Ethernet/IP</span></li>
+213:                             <li><span>Cloud Streaming</span> <span>Encrypted MQTT/HTTPS data sync to AWS &amp; Azure endpoints</span></li>
+214:                             <li><span>ERP Connectivity</span> <span>Direct REST API endpoints and database link protocols (e.g. for SAP)</span></li>
+215:                             <li><span>Database Engine</span> <span>Local SQLite cache with secure Cloud SQL replication</span></li>
+216:                             <li><span>Predictive Maintenance</span> <span>Automated halogen source wear analysis and diagnostic drift warnings</span></li>
+217:                             <li><span>Multi-Sensor Sync</span> <span>Central deployment of calibrations across up to 32 slave sensors</span></li>
+218:                         </ul>
+219:                     </div>
+220:                     <div>
+221:                         <span class="section-subtitle">Real-time Visualization</span>
+222:                         <h2 style="font-size: 2rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">HMI &amp; Analytical Control</h2>
+223:                         <ul class="product-specs" style="margin-top: 0;">
+224:                             <li><span>Stan
+<truncated 6583 bytes>
+
+288:                     </a>
+289:                 </div>
+290:             </div>
+291:             <div class="footer-links-col">
+292:                 <h4>Industries</h4>
+293:                 <ul class="footer-links">
+294:                     <li><a href="industry-food-feed.html">Food and Feed</a></li>
+295:                     <li><a href="industry-dairy.html">Dairy</a></li>
+296:                     <li><a href="industry-chemical-pharma.html">Chemical and Pharma</a></li>
+297:                 </ul>
+298:             </div>
+299:             <div class="footer-links-col">
+300:                 <h4>Products</h4>
+301:                 <ul class="footer-links">
+302:                     <li><a href="products-devices.html">Devices</a></li>
+303:                     <li><a href="products-software.html">Software</a></li>
+304:                     <li><a href="knowledge-technology.html">FT-NIR Technology</a></li>
+305:                 </ul>
+306:             </div>
+307:             <div class="footer-links-col">
+308:                 <h4>Contact Us</h4>
+309:                 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+310:                 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Phone: +1 307 527 0072</p>
+311:                 <p style="color: var(--text-muted); font-size: 0.9rem;">Email: info@ustechinnovations.com</p>
+312:             </div>
+313:         </div>
+314:         <div class="footer-bottom">
+315:             <p>&copy; 2026 USTECH Innovations LLC. All rights reserved.</p>
+316:             <p>Designed for scientific and industrial precision.</p>
+317:         </div>
+318:     </footer>
+319: 
+320:     <script src="app.js"></script>
+321: </body>
+322: </html>
+323: 
+324: 
+325: 
+326: 
+327: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
