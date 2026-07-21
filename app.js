@@ -1,3 +1,9 @@
+// Clean index.html from URL for clean address bar
+if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
+    const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/');
+    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+}
+
 // =====================================================================
 //  TEMPORARILY HIDDEN ELEMENTS — Remove this block to re-enable all
 //  To restore: simply delete or comment out this entire IIFE block.
@@ -1634,14 +1640,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 id: 'sarah',
                 name: 'USTECH Support',
                 role: 'Sales & General Inquiries',
-                avatar: 'images/support_avatar_generic.png',
+                avatar: 'images/support_avatar_generic.webp',
                 greeting: 'Hello! I am your USTECH Support Assistant. How can I help you today with quotes, product trials, or general inquiries?'
             },
             marcus: {
                 id: 'marcus',
                 name: 'USTECH Support',
                 role: 'Technical & Scientific Support',
-                avatar: 'images/support_avatar_generic.png',
+                avatar: 'images/support_avatar_generic.webp',
                 greeting: 'Hello! I am here to assist with your scientific and technical questions, including chemometrics, calibrations, and spectroscopy technology. What can I answer for you?'
             }
         };

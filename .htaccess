@@ -1,0 +1,9 @@
+# =====================================================================
+# USTECH Innovations Apache URL Redirection Settings
+# =====================================================================
+
+RewriteEngine On
+
+# Permanent Redirect (301) from /index.html to domain root
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://www.ustechinnovations.com/ [R=301,L]
