@@ -1,0 +1,18 @@
+# https://www.ustechinnovations.com/robots.txt
+User-agent: *
+Allow: /
+
+# AI arama botlarina acik izin (GEO/AI gorunurlugu icin)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.ustechinnovations.com/sitemap.xml

@@ -106,7 +106,7 @@ header.scrolled {
 }
 
 header.scrolled .logo img {
-    height: 54px !important;
+    height: 58px !important;
 }
 
 
@@ -2292,45 +2292,31 @@ input:checked + .slider:before {
 .live-support-header {
     background-color: var(--accent-black);
     color: var(--bg-primary);
-    padding: 1rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.live-support-title {
+.live-support-agent-profile {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-
-.live-support-title h4 {
-    color: var(--bg-primary);
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-.live-support-status-dot {
-    width: 8px;
-    height: 8px;
-    background-color: #4caf50;
-    border-radius: 50%;
-    display: inline-block;
+    gap: 0.75rem;
 }
 
 .live-support-close-btn {
     border: none;
     background: none;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     cursor: pointer;
     line-height: 1;
     transition: var(--transition-fast);
 }
 
 .live-support-close-btn:hover {
-    color: var(--bg-primary);
+    color: var(--accent-gold);
 }
 
 /* Chat Logs Area */
@@ -4925,7 +4911,7 @@ input:checked + .slider:before {
 
     /* Mobile scaling optimizations for logos, images and paddings */
     .logo img {
-        height: 48px !important;
+        height: 58px !important;
     }
     
     .section {
@@ -5019,7 +5005,7 @@ input:checked + .slider:before {
     /* FIX: Floating buttons too large on mobile (72px / 66px) — shrink to 48-52px */
     .cookie-settings-btn {
         width: 48px !important;
-        height: 48px !important;
+        height: 58px !important;
         bottom: 14px;
         left: 14px;
     }
@@ -5030,7 +5016,7 @@ input:checked + .slider:before {
 
     .live-support-btn {
         width: 52px !important;
-        height: 52px !important;
+        height: 58px !important;
         bottom: 14px;
         right: 14px;
     }
@@ -6012,7 +5998,7 @@ img {
     }
     .calix-hero-brand img {
         width: 45px !important;
-        height: 45px !important;
+        height: 58px !important;
     }
     .calix-hero-brand div {
         font-size: 2.3rem !important;
@@ -6038,7 +6024,7 @@ img {
     }
     .calix-hero-brand img {
         width: 36px !important;
-        height: 36px !important;
+        height: 58px !important;
     }
     .calix-hero-brand div {
         font-size: 1.8rem !important;

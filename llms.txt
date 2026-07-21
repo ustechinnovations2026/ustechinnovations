@@ -1,0 +1,30 @@
+# USTECH Innovations
+
+> Manufacturer of inline FT-NIR spectroscopy systems, chemometrics
+> software (caliX) and process automation (ProChem) for food, feed,
+> dairy, chemical and pharmaceutical processing. Founded 2023,
+> headquartered in Sheridan, Wyoming, USA.
+
+## Products
+- [ProLine2550](https://www.ustechinnovations.com/product-proline-2550.html): Inline FT-NIR process analyzer, IP69K, OPC UA/Profinet
+- [ProLine17ES](https://www.ustechinnovations.com/product-proline.html): Compact inline FT-NIR analyzer
+- [caliX](https://www.ustechinnovations.com/product-calix.html): AutoML chemometrics and calibration software
+- [ProChem](https://www.ustechinnovations.com/product-prochem.html): Real-time PAT and closed-loop control platform
+- [N-Sens Online](https://www.ustechinnovations.com/product-n-sens-online.html): Compact online NIR sensor
+- [N-Sens Feed](https://www.ustechinnovations.com/product-n-sens-feed.html): At-line feed analyzer
+- [StarchQC](https://www.ustechinnovations.com/product-i-sens-starch.html): Damaged starch analyzer
+- [SamplePrep](https://www.ustechinnovations.com/product-n-sens-sampleprep.html): Sample preparation station
+- [Tornado+](https://www.ustechinnovations.com/product-n-sens-tornado.html): Water-cooled sample mill
+
+## Industries
+- [Food & Feed](https://www.ustechinnovations.com/industry-food-feed.html): Inline NIR for feed mills and food processing
+- [Dairy](https://www.ustechinnovations.com/industry-dairy.html): Fat standardization and yield optimization
+- [Chemical & Pharma](https://www.ustechinnovations.com/industry-chemical-pharma.html): FDA 21 CFR Part 11 compliant PAT
+
+## Knowledge
+- [Technology](https://www.ustechinnovations.com/knowledge-technology.html): How FT-NIR spectroscopy and calibration science work
+- [FAQ](https://www.ustechinnovations.com/faq.html): 30 technical answers
+- [Blog](https://www.ustechinnovations.com/knowledge-blogs.html): 52 articles and whitepapers on NIR, PLS and process control
+
+## Contact
+- Email: info@ustechinnovations.com | Phone: +1 307 527 0072

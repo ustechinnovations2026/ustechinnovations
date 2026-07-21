@@ -1628,12 +1628,224 @@ document.addEventListener('DOMContentLoaded', () => {
     injectLiveSupport();
 
     function injectLiveSupport() {
+        // Representative Agents definitions
+        const AGENTS = {
+            sarah: {
+                id: 'sarah',
+                name: 'USTECH Support',
+                role: 'Sales & General Inquiries',
+                avatar: 'images/support_avatar_generic.png',
+                greeting: 'Hello! I am your USTECH Support Assistant. How can I help you today with quotes, product trials, or general inquiries?'
+            },
+            marcus: {
+                id: 'marcus',
+                name: 'USTECH Support',
+                role: 'Technical & Scientific Support',
+                avatar: 'images/support_avatar_generic.png',
+                greeting: 'Hello! I am here to assist with your scientific and technical questions, including chemometrics, calibrations, and spectroscopy technology. What can I answer for you?'
+            }
+        };
+
+        // Default agent assigned on load
+        let currentAgent = AGENTS.sarah;
+
+        // Knowledge Base for Semantic Keyword Matching
+        const KNOWLEDGE_BASE = [
+            // Q1
+            {
+                keywords: ['chemical preparation', 'preparation', 'chemical usage', 'non-destructive', 'sample destruction'],
+                agent: 'marcus',
+                reply: 'No. Near-infrared spectroscopy is a completely non-destructive physical measurement. Light is projected onto the sample surface and its reflection is analyzed. There is absolutely no chemical usage, no waste disposal cost, and no sample destruction.'
+            },
+            // Q2
+            {
+                keywords: ['accuracy', 'wet chemistry', 'repeatability', 'precision', 'reference methods', 'traditional lab'],
+                agent: 'marcus',
+                reply: 'FT-NIR is a secondary analytical method, meaning it is calibrated against primary laboratory reference methods (such as wet chemistry). Once calibrated, it achieves repeatability and accuracy extremely close to the reference methods, with the benefit of being infinitely faster (seconds vs. hours), eliminating human operator error, and requiring no consumables or hazardous reagents.'
+            },
+            // Q3
+            {
+                keywords: ['difference', 'filter-based', 'diode array', 'resolution', 'spectral resolution'],
+                agent: 'marcus',
+                reply: 'Filter-based systems measure only a few specific wavelengths, limiting their flexibility. Diode Array systems measure multiple wavelengths but have lower spectral resolution. FT-NIR uses an interferometer to scan the entire near-infrared spectrum continuously at extremely high resolution, providing superior accuracy, better calibration stability, and the ability to detect trace constituents.'
+            },
+            // Q4
+            {
+                keywords: ['mems', 'scanning grating', 'interferometer', 'solid-state', 'vibration', 'rugged', 'moving parts'],
+                agent: 'marcus',
+                reply: 'Scanning grating spectrometers rely on delicate moving mirrors and gratings that are highly sensitive to vibration, temperature changes, and wear. MEMS-based spectrometers (like USTECH\'s optical engines) use solid-state micro-electromechanical systems etched directly onto silicon. They contain no macro-scale moving parts, making them extremely rugged, shock-resistant, and thermally stable for harsh production floors.'
+            },
+            // Q5
+            {
+                keywords: ['waveband', 'range', 'wavelength', 'nanometer', 'nm', '800', '2600', '12500', '3850', 'absorption bands'],
+                agent: 'marcus',
+                reply: 'USTECH FT-NIR instruments operate in the 800 nm to 2600 nm waveband (12,500 to 3,850 cm¹). This broad range covers the key absorption bands for C-H, O-H, and N-H molecular bonds, allowing for comprehensive analysis of moisture, protein, fat, starch, fiber, and ash.'
+            },
+            // Q6
+            {
+                keywords: ['trace', 'below 0.1%', 'ppm', 'lowest concentration', 'detection limit'],
+                agent: 'marcus',
+                reply: 'NIR spectroscopy is highly sensitive, but its practical detection limit is typically around 0.1% (1000 ppm) for organic constituents under standard conditions. For concentrations below this threshold, accuracy depends heavily on the sample matrix and the precision of the primary reference method used to train the calibration model.'
+            },
+            // Q7
+            {
+                keywords: ['tornado', 'mill', 'heating', 'cooling', 'water loop', 'grinding', 'evaporation', 'fat melting'],
+                agent: 'marcus',
+                reply: 'The USTECH Tornado+ mill features a double-walled grinding chamber connected to a continuous liquid water-cooling loop. When grinding grain or high-fat feed samples, the cooling liquid rapidly dissipates motor friction heat, keeping the chamber cold and preventing moisture evaporation or fat melting.'
+            },
+            // Q8
+            {
+                keywords: ['light source', 'bulb', 'lamp', 'halogen', '20000', 'hours', 'redundancy', 'backup lamp', 'proline17es'],
+                agent: 'marcus',
+                reply: 'Our online analyzers use long-life halogen lamps rated for over 20,000 operating hours. In addition, the systems are equipped with dual-lamp redundancy: if the primary lamp fails, the analyzer automatically rotates the backup lamp into place and triggers an alert, ensuring zero process downtime.'
+            },
+            // Q9
+            {
+                keywords: ['physical samples', 'solids', 'grains', 'powders', 'liquids', 'slurries', 'pastes', 'vials', 'vial rotator', 'flow cell'],
+                agent: 'marcus',
+                reply: 'Our FT-NIR systems can analyze a wide variety of sample forms. Solids, grains, and powders are measured using vials, vials rotators, or petri dish scanners. Liquids, slurries, and pastes are measured using transmission accessories, transflection fiber probes, or inline flow cells mounted directly on pipelines.'
+            },
+            // Q10
+            {
+                keywords: ['starchqc', 'damaged starch', 'amperometric', 'degradation', 'enzymes', 'kinetics'],
+                agent: 'marcus',
+                reply: 'The USTECH StarchQC Damaged Starch analyzer utilizes an amperometric technique to measure starch degradation kinetics. By exposing a small flour sample to specific enzymes, the analyzer measures the electrochemical reaction rate as damaged starch is broken down, giving a highly accurate damaged starch percentage in minutes.'
+            },
+            // Q11
+            {
+                keywords: ['protective window', 'window', 'sapphire', 'wiper', 'clean', 'purge', 'buildup'],
+                agent: 'marcus',
+                reply: 'Yes, inline sensors require a protective window, and how is it kept clean? Yes, inline sensors use a high-durability sapphire optical window to separate the sensor optics from the product flow. Sapphire is extremely scratch-resistant (9 on Mohs scale). To prevent product buildup, we offer automatic air-purge collars or mechanical wipers that sweep the window clean at defined intervals without stopping the production line.'
+            },
+            // Q12
+            {
+                keywords: ['path length', 'pathlength', 'transmission', 'liquid analysis', 'transflection'],
+                agent: 'marcus',
+                reply: 'The optimal path length depends on the chemical composition and absorption strength of the liquid. For water-based liquids or solvents in the transmission NIR region, path lengths typically range from 1 mm to 8 mm. We offer adjustable transflection and transmission probes to easily tune this path length for your specific fluid matrix.'
+            },
+            // Q13
+            {
+                keywords: ['warranty', 'guarantee', 'service contract', 'maintenance', 'support plan'],
+                agent: 'sarah',
+                reply: 'All USTECH FT-NIR instruments and sensors come with a standard 12-month comprehensive warranty. We also offer extended warranty programs and annual service contracts that cover preventive maintenance, optical alignment checks, and light source replacements.'
+            },
+            // Q14
+            {
+                keywords: ['plc', 'scada', 'integration', 'integrate', 'modbus', 'opc ua', 'siemens', 'allen-bradley', 'prochem'],
+                agent: 'marcus',
+                reply: 'Yes, absolutely. Our ProChem software suite is designed with industrial communication protocols in mind. It natively supports OPC UA, Modbus TCP, and direct analog/digital outputs (4-20 mA) to communicate results directly to PLC systems (such as Siemens, Allen-Bradley) or SCADA platforms within 15-30 seconds.'
+            },
+            // Q15
+            {
+                keywords: ['closed loop', 'control', 'pid', 'valves', 'setpoint', 'parameters'],
+                agent: 'marcus',
+                reply: 'ProChem calculates real-time chemical concentration values and sends them to the plant SCADA/PLC. The PLC compares these values against the setpoints (e.g., target moisture) and modulates control valves (e.g., steam or water spray) using PID loops. ProChem also includes built-in safety boundaries to ignore readings during process start/stop phases.'
+            },
+            // Q16
+            {
+                keywords: ['calix', 'fda', '21 cfr', 'cfr', 'part 11', 'compliance', 'signature', 'audit trail'],
+                agent: 'marcus',
+                reply: 'Yes. The caliX Suite supports full electronic signature tracking, secure multi-user role permission levels, complete audit trail logging of all calibration modifications, and raw data export validation. It fully complies with the strict documentation and integrity standards mandated by 21 CFR Part 11 and GMP Annex 11.'
+            },
+            // Q17
+            {
+                keywords: ['offline', 'network drop', 'connection lost', 'air gap'],
+                agent: 'marcus',
+                reply: 'Yes. While the caliX cloud dashboard manages calibrations and fleet diagnostics centrally, all local measurement logic, optical calculations, and PLC communication interfaces run locally on the instrument\'s dedicated PC. If the internet or internal network drops, the system continues running offline without any data loss or process interruption.'
+            },
+            // Q18
+            {
+                keywords: ['cybersecurity', 'encryption', 'tls', 'outbound', 'network security'],
+                agent: 'marcus',
+                reply: 'All data communication between the local instrument PC and the caliX Cloud is fully encrypted using TLS 1.3. The local client agent only establishes outbound connections; no inbound ports are ever opened on the plant network. Furthermore, the local PC can be completely air-gapped from the internet if corporate security policies prohibit cloud connectivity.'
+            },
+            // Q19
+            {
+                keywords: ['custom dashboards', 'pdf', 'quality reports', 'report', 'certificate of analysis', 'coa'],
+                agent: 'sarah',
+                reply: 'Yes. ProChem features a flexible reporting template engine. You can configure the software to generate automated PDF certificates of analysis (COAs) at the end of each production lot. These reports can include statistical summaries, outlier warnings, and charts, and can be automatically emailed to QA managers or stored on a local network drive.'
+            },
+            // Q20
+            {
+                keywords: ['share calibrations', 'unit-to-unit', 'n-sens', 'mems silicon', 'calibration model'],
+                agent: 'marcus',
+                reply: 'Yes. Because our optical engines are built using MEMS silicon chips rather than handcrafted glass and mirror components, unit-to-unit variation is practically non-existent. A calibration model built in the caliX software suite can be deployed instantly to multiple devices without the need for manual model matching.'
+            },
+            // Q21
+            {
+                keywords: ['maintenance', 'update', 'chemometric support', 'validation', 'optimize'],
+                agent: 'marcus',
+                reply: 'USTECH offers comprehensive support. Through the caliX Suite, users can upload new reference data to automatically update regression models. We also offer remote chemometric support, where our expert specialists connect securely to review model performance, run validation tests, and optimize calibrations remotely.'
+            },
+            // Q22
+            {
+                keywords: ['outlier', 'mahalanobis', 'distance', 't2', 'hotelling', 'alarm'],
+                agent: 'marcus',
+                reply: 'An outlier is a sample whose spectral signature deviates significantly from the calibration dataset (due to foreign materials, extreme density changes, or parameters outside the model\'s range). Our software calculates the Mahalanobis Distance for every scan. If a sample is flagged as an outlier, the system alerts the operator and ignores the reading to prevent false data from affecting PLC control loops.'
+            },
+            // Q23
+            {
+                keywords: ['samples', 'custom calibration', 'reference samples', 'pls model', '50', '100'],
+                agent: 'marcus',
+                reply: 'To build a robust custom PLS (Partial Least Squares) calibration model from scratch, we generally recommend a minimum of 50 to 100 sample points spanning the entire expected range of values. However, USTECH provides pre-installed global calibration databases for most feed, grain, dairy, and polymer applications, meaning you can start analyzing on day one with only a few verification points.'
+            },
+            // Q24
+            {
+                keywords: ['calibration transfer', 'foss', 'bruker', 'thermo', 'transfer model', 'older device'],
+                agent: 'marcus',
+                reply: 'Yes. Our chemometricians have extensive experience transferring calibration databases from older scanning monochromators or photodiode-array instruments (e.g., FOSS, Bruker, Thermo) to USTECH FT-NIR devices. We utilize mathematical standardization algorithms to match the spectral profile and save years of reference analysis work.'
+            },
+            // Q25
+            {
+                keywords: ['modeling algorithms', 'pls', 'pca', 'mlr', 'svm', 'regression', 'pre-processing', 'math'],
+                agent: 'marcus',
+                reply: 'The caliX Suite supports a wide range of chemometric modeling tools. For quantitative analysis, it supports PLS (Partial Least Squares), MLR (Multiple Linear Regression), and advanced Machine Learning models. For qualitative classification, it supports PCA (Principal Component Analysis), SIMCA (Soft Independent Modeling of Class Analogy), and SVM (Support Vector Machines).'
+            },
+            // Q26
+            {
+                keywords: ['roi', 'return on investment', 'saving', 'payback', 'cost reduction'],
+                agent: 'sarah',
+                reply: 'Most industrial processing plants achieve a full Return on Investment within 6 to 12 months. Savings are realized through reduced raw material giveaway (closed-loop tolerance management), elimination of out-of-specification batches, lower laboratory labor costs, and reduced energy usage from optimized drying and mixing processes.'
+            },
+            // Q27
+            {
+                keywords: ['optical re-alignment', 'realignment', 'alignment', 'factory calibration'],
+                agent: 'marcus',
+                reply: 'Never. Unlike traditional laboratory FT-NIR spectrometers that use rotating mirrors and laser-guided interferometers which require periodic realignment, our MEMS interferometers are solid-state and permanent. The optical paths are fixed at the factory, ensuring permanent wavelength calibration stability.'
+            },
+            // Q28
+            {
+                keywords: ['routine maintenance', 'clean window', 'weekly', 'bulb', 'wiper seals'],
+                agent: 'sarah',
+                reply: 'Routine maintenance is minimal. For benchtop systems, operators should clean the sample window weekly and run a standard reference scan using the built-in gold reference plate. For online sensors, the main maintenance task is replacing the light bulb every 2-3 years and verifying the window wiper seals during annual plant shutdowns.'
+            },
+            // Q29
+            {
+                keywords: ['training', 'operator training', 'class', 'workshop'],
+                agent: 'sarah',
+                reply: 'Yes. Every instrument installation includes comprehensive on-site training. We cover basic system operation, sample preparation, software interface navigation, and routine maintenance troubleshooting. We also offer advanced chemometrics training for QA managers who want to develop and maintain their own calibrations.'
+            },
+            // Q30
+            {
+                keywords: ['installation time', 'install', 'commissioning', 'setup time', 'pipeline sensor fitting'],
+                agent: 'sarah',
+                reply: 'A typical pipeline sensor installation takes 1 to 2 days of physical fitting and sensor configuration. We coordinate with your engineering teams to mount the sensor flange during scheduled maintenance windows, followed by electrical connections, PLC communication validation, and calibration verification.'
+            },
+            // Extra: Quote request shortcut
+            {
+                keywords: ['request a quote', 'request quote', 'get quote', 'sales contact'],
+                agent: 'sarah',
+                reply: 'I would be happy to help you get a quote! Please let me know your contact details or email, or visit our <a href="contact.html" style="color:var(--accent-gold);text-decoration:underline;">Contact</a> page to submit your details directly to our sales department.'
+            }
+        ];
+
+        // Create elements
         const supportBtn = document.createElement('button');
         supportBtn.className = 'live-support-btn';
         supportBtn.id = 'live-support-btn';
         supportBtn.setAttribute('aria-label', 'Live Support');
         supportBtn.innerHTML = `
-            <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
             </svg>
             <div class="live-support-badge" id="live-support-badge">1</div>
@@ -1644,23 +1856,29 @@ document.addEventListener('DOMContentLoaded', () => {
         supportPanel.id = 'live-support-panel';
         supportPanel.innerHTML = `
             <div class="live-support-header">
-                <div class="live-support-title">
-                    <span class="live-support-status-dot"></span>
-                    <h4>USTECH Live Support</h4>
+                <div class="live-support-agent-profile">
+                    <div style="position: relative; width: 44px; height: 44px;">
+                        <img id="live-support-avatar" src="${currentAgent.avatar}" alt="${currentAgent.name}" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-gold);">
+                        <span class="live-support-status-dot" style="position: absolute; bottom: 0; right: 0; width: 10px; height: 10px; background-color: #4caf50; border-radius: 50%; border: 2px solid var(--bg-primary);"></span>
+                    </div>
+                    <div class="live-support-agent-info" style="display: flex; flex-direction: column;">
+                        <h4 id="live-support-agent-name" style="margin: 0; color: #ffffff; font-size: 0.95rem; font-weight: 700; font-family: var(--font-title);">${currentAgent.name}</h4>
+                        <span id="live-support-agent-role" style="font-size: 0.75rem; color: rgba(255,255,255,0.7);">${currentAgent.role}</span>
+                    </div>
                 </div>
                 <button class="live-support-close-btn" id="live-support-close-btn" aria-label="Close Chat">&times;</button>
             </div>
             <div class="live-support-chat-log" id="live-support-chat-log"></div>
-            <div class="chat-suggestions" id="chat-suggestions">
-                <button class="chat-suggestion-chip" data-msg="Request Quote">Request Quote</button>
-                <button class="chat-suggestion-chip" data-msg="caliX Software Demo">caliX Software Demo</button>
-                <button class="chat-suggestion-chip" data-msg="FT-NIR Hardware FAQ">FT-NIR Hardware FAQ</button>
-                <button class="chat-suggestion-chip" data-msg="Speak to Sales">Speak to Sales</button>
+            <div class="chat-suggestions" id="chat-suggestions" style="display: flex; gap: 0.5rem; padding: 0.75rem 1rem; background-color: var(--bg-primary); border-top: 1px solid var(--border-color); overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none;">
+                <button class="chat-suggestion-chip" data-msg="Request a Quote">Request Quote</button>
+                <button class="chat-suggestion-chip" data-msg="How does caliX AutoML work?">caliX AutoML</button>
+                <button class="chat-suggestion-chip" data-msg="How does calibration transfer work?">Calibration Transfer</button>
+                <button class="chat-suggestion-chip" data-msg="Connect analyzer to PLC">PLC SCADA Link</button>
             </div>
             <div class="live-support-footer">
                 <input type="text" id="live-support-input" placeholder="Type your message..." autocomplete="off">
                 <button class="live-support-send-btn" id="live-support-send-btn" aria-label="Send Message">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="22" y1="2" x2="11" y2="13"></line>
                         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                     </svg>
@@ -1677,16 +1895,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const sendBtn = document.getElementById('live-support-send-btn');
         const closeBtn = document.getElementById('live-support-close-btn');
         const suggestionChips = document.querySelectorAll('.chat-suggestion-chip');
+        const avatarImg = document.getElementById('live-support-avatar');
+        const agentName = document.getElementById('live-support-agent-name');
+        const agentRole = document.getElementById('live-support-agent-role');
 
         let isOpened = false;
+        let transferPending = false; // State to track offline form input
 
         // Toggle panel open
         supportBtn.addEventListener('click', () => {
             supportPanel.classList.add('open');
             if (badge) badge.style.display = 'none'; // hide badge on open
             if (!isOpened) {
-                // Add initial greeting on first load
-                addMessage("agent", "Hello! Welcome to USTECH Innovations Live Support. I am your live assistant. How can I help you today with our products, spectroscopy devices, or caliX software?");
+                // Initialize default greeting
+                addMessage("agent", currentAgent.greeting);
                 isOpened = true;
             }
             chatLog.scrollTop = chatLog.scrollHeight;
@@ -1731,6 +1953,25 @@ document.addEventListener('DOMContentLoaded', () => {
             triggerAgentReply(val);
         }
 
+        function switchAgent(targetAgentId) {
+            const nextAgent = AGENTS[targetAgentId];
+            if (nextAgent && currentAgent.id !== nextAgent.id) {
+                currentAgent = nextAgent;
+                // Update header UI
+                avatarImg.src = currentAgent.avatar;
+                avatarImg.alt = currentAgent.name;
+                agentName.textContent = currentAgent.name;
+                agentRole.textContent = currentAgent.role;
+
+                // Add system message to log
+                const sysMsg = document.createElement('div');
+                sysMsg.className = 'chat-system-message';
+                sysMsg.style.cssText = 'text-align: center; font-size: 0.75rem; color: var(--text-muted); margin: 0.5rem 0; font-style: italic;';
+                sysMsg.textContent = `Session routed to: ${currentAgent.role}`;
+                chatLog.appendChild(sysMsg);
+            }
+        }
+
         function addMessage(sender, text) {
             const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             const bubble = document.createElement('div');
@@ -1756,28 +1997,135 @@ document.addEventListener('DOMContentLoaded', () => {
                 const typing = document.getElementById('support-typing');
                 if (typing) typing.remove();
 
-                const response = getSimulatedReply(userMsg);
-                addMessage("agent", response);
+                // If user is filling offline lead email form
+                if (transferPending) {
+                    handleOfflineFormSubmit(userMsg);
+                    return;
+                }
+
+                const result = getSmartReply(userMsg);
+                
+                // Perform agent auto-switch if response suggests another agent
+                if (result.suggestedAgent && result.suggestedAgent !== currentAgent.id) {
+                    switchAgent(result.suggestedAgent);
+                }
+
+                addMessage("agent", result.reply);
+                chatLog.scrollTop = chatLog.scrollHeight;
+
+                if (result.triggerHandoff) {
+                    transferPending = true;
+                }
             }, 1000);
         }
 
-        function getSimulatedReply(msg) {
-            const text = msg.toLowerCase();
+        function handleOfflineFormSubmit(emailText) {
+            // Simple email validation regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailRegex.test(emailText)) {
+                // Show sending message
+                addMessage("agent", "Sending your support request directly to our team... Please wait.");
+                chatLog.scrollTop = chatLog.scrollHeight;
 
-            if (text.includes('demo') || text.includes('calix') || text.includes('software')) {
-                return "We can provide a demo version for you to test the full features of our caliX Spectral Intelligence software. Please send your request via our contact form or at info@ustechinnovations.com. Our sales engineers will get in touch with you within 24 hours.";
+                // Compile chat history for the support team
+                const messageElements = chatLog.querySelectorAll('.chat-message');
+                let conversationSummary = "";
+                messageElements.forEach(msgEl => {
+                    const isUser = msgEl.classList.contains('user');
+                    const sender = isUser ? "User" : "Agent/Bot";
+                    const text = msgEl.innerText || msgEl.textContent;
+                    conversationSummary += `[${sender}]: ${text}\n\n`;
+                });
+
+                // Web3Forms payload
+                const payload = {
+                    access_key: "2791c5d7-ecdd-4b3e-90fa-f6e33964a84d",
+                    from_name: "USTECH Live Support",
+                    subject: `Live Support Inquiry from ${emailText}`,
+                    email: emailText,
+                    message: `User Work Email: ${emailText}\n\n--- Chat Conversation Log ---\n\n${conversationSummary}`
+                };
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(response => {
+                    if (response.status === 200) {
+                        addMessage("agent", `Thank you! Your inquiry has been successfully sent to our support team. We will contact you at <strong>${emailText}</strong> within 24 hours. <br><br>If you need to send files or immediate attachments, feel free to use our backup mail link: <a href="mailto:info@ustechinnovations.com?subject=Live Support Request&body=Hi USTECH Team, please follow up with me at ${emailText} regarding my query." style="color:var(--accent-gold);text-decoration:underline;">Send Email Directly</a>.`);
+                    } else {
+                        addMessage("agent", `Your request was logged locally, but the auto-send encountered a network issue. Please click this backup link to submit your request directly: <a href="mailto:info@ustechinnovations.com?subject=Live Support Request&body=Hi USTECH Team, please follow up with me at ${emailText} regarding my query." style="color:var(--accent-gold);text-decoration:underline;">Send Email Directly</a>.`);
+                    }
+                    chatLog.scrollTop = chatLog.scrollHeight;
+                })
+                .catch(error => {
+                    console.error("Web3Forms submission error:", error);
+                    addMessage("agent", `Your request was logged locally, but the auto-send encountered a network issue. Please click this backup link to submit your request directly: <a href="mailto:info@ustechinnovations.com?subject=Live Support Request&body=Hi USTECH Team, please follow up with me at ${emailText} regarding my query." style="color:var(--accent-gold);text-decoration:underline;">Send Email Directly</a>.`);
+                    chatLog.scrollTop = chatLog.scrollHeight;
+                });
+
+                transferPending = false;
+            } else {
+                addMessage("agent", "That email address doesn't seem valid. Please enter a valid company email address so we can route your ticket correctly, or mail us at info@ustechinnovations.com.");
             }
-            if (text.includes('quote') || text.includes('price') || text.includes('sales')) {
-                return "If you would like to receive a custom quote for your project regarding our devices (ProLine2550 and n-Sens series), please fill out the form on our [Contact Us](contact.html) page or send your requirements to info@ustechinnovations.com.";
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
+
+        function getSmartReply(msg) {
+            const cleanMsg = msg.toLowerCase().replace(/[^\w\s]/g, ' ');
+            const userWords = cleanMsg.split(/\s+/).filter(w => w.length > 2);
+
+            if (userWords.length === 0) {
+                return {
+                    reply: "I'm not sure I understood. Could you please specify your question, or ask about our devices (ProLine2550), caliX software, or request a quote?",
+                    suggestedAgent: currentAgent.id
+                };
             }
-            if (text.includes('device') || text.includes('proline') || text.includes('hardware')) {
-                return "USTECH FT-NIR devices (inline and at-line models) perform continuous, high-accuracy analysis directly on industrial process lines (conveyor belts, pipes, etc.). You can find detailed technical specifications in our [Analytical Devices](products-devices.html) catalog.";
+
+            let bestMatch = null;
+            let highestScore = 0;
+
+            for (const item of KNOWLEDGE_BASE) {
+                let score = 0;
+                for (const keyword of item.keywords) {
+                    // Direct contains or word matching
+                    if (cleanMsg.includes(keyword)) {
+                        score += 1.0;
+                    }
+                    // Part of keyword matching
+                    for (const word of userWords) {
+                        if (keyword.includes(word) && word.length > 3) {
+                            score += 0.4;
+                        }
+                    }
+                }
+                // Normalize by keywords length to prevent longer keyword lists from dominating unfairly
+                score = score / Math.sqrt(item.keywords.length);
+
+                if (score > highestScore) {
+                    highestScore = score;
+                    bestMatch = item;
+                }
             }
-            if (text.includes('faq') || text.includes('question') || text.includes('support')) {
-                return "For answers regarding FT-NIR technology, calibration transfers, and maintenance/service, you can visit our [Frequently Asked Questions (FAQ)](faq.html) page.";
+
+            // Score threshold check
+            if (highestScore >= 0.25 && bestMatch) {
+                return {
+                    reply: bestMatch.reply,
+                    suggestedAgent: bestMatch.agent
+                };
             }
-            
-            return "We have received your message! As USTECH Innovations, we are happy to support you with B2B process spectroscopy. If you have a more specific question, I can arrange for our sales or support team to contact you directly. You can send your contact details to info@ustechinnovations.com.";
+
+            // Fallback to offline handoff form
+            return {
+                reply: "I couldn't find a direct answer in our technical databases. Would you like to transfer your query directly to our support team? <br><br><strong>Please type your email address below</strong> and we'll contact you shortly.",
+                suggestedAgent: 'sarah',
+                triggerHandoff: true
+            };
         }
     }
 
