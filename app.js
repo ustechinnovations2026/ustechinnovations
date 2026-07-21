@@ -1,7 +1,11 @@
-// Clean index.html from URL for clean address bar
-if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
-    const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/');
-    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+// Clean index.html from URL for clean address bar (wrapped in try-catch to prevent file:// protocol security errors)
+try {
+    if (window.location.protocol.startsWith('http') && (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html')) {
+        const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/');
+        window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+} catch (e) {
+    console.warn("Could not clean URL path:", e);
 }
 
 // =====================================================================
