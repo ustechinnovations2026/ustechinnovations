@@ -934,6 +934,24 @@ footer {
     text-align: center;
 }
 
+.footer-logo-center .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-logo-center .logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.08), 0 8px 25px rgba(0, 0, 0, 0.5);
+    background: #ffffff;
+}
+
+
 .footer-logo-center p {
     color: var(--text-muted);
     font-size: 0.95rem;
