@@ -7,3 +7,11 @@ RewriteEngine On
 # Permanent Redirect (301) from /index.html to domain root
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ https://www.ustechinnovations.com/ [R=301,L]
+
+# Redirect legacy/indexed URLs to prevent 404 errors
+Redirect 301 /about-us https://www.ustechinnovations.com/about
+Redirect 301 /about-us.html https://www.ustechinnovations.com/about
+Redirect 301 /technology https://www.ustechinnovations.com/knowledge-technology
+Redirect 301 /technology.html https://www.ustechinnovations.com/knowledge-technology
+Redirect 301 /our-technology https://www.ustechinnovations.com/knowledge-technology
+Redirect 301 /our-technology.html https://www.ustechinnovations.com/knowledge-technology
