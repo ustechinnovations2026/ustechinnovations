@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="USTECH Innovations Guide - Introduction to PLS Regression in caliX Suite.">
     <meta name="keywords" content="PLS regression NIR, caliX Suite calibration, partial least squares spectroscopy, chemometric model building">
-    <title>Introduction to PLS Regression in Cali<span class="calix-x">X</span> Suite | USTECH Innovations</title>
+    <title>Introduction to PLS Regression in cali<span class="calix-x">X</span> Suite | USTECH Innovations</title>
     <link rel="stylesheet" href="index.css">
     <link rel="canonical" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
 
@@ -208,7 +208,7 @@
             
             <div class="blog-post-header">
                 <span class="blog-post-meta">Technical Guide &mdash; May 12, 2026 &mdash; 4 min read</span>
-                <h1 class="blog-post-title">Introduction to PLS Regression in Cali<span class="calix-x">X</span> Suite</h1>
+                <h1 class="blog-post-title">Introduction to PLS Regression in cali<span class="calix-x">X</span> Suite</h1>
                 <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">A step-by-step guide to developing, preprocessing, and validating qualitative calibration models using USTECH's AutoML engine.</p>
             </div>
 
@@ -223,21 +223,21 @@
                 ---
 
                 <h2>Step 1: Data Alignment and Import</h2>
-                <p>First, prepare a calibration spreadsheet (CSV or Excel) matching your spectral file names to their wet chemistry laboratory results. Cali<span class="calix-x">X</span> supports direct import of raw spectrometer database formats and standard spectroscopic exchange formats like JCAMP-DX.</p>
+                <p>First, prepare a calibration spreadsheet (CSV or Excel) matching your spectral file names to their wet chemistry laboratory results. cali<span class="calix-x">X</span> supports direct import of raw spectrometer database formats and standard spectroscopic exchange formats like JCAMP-DX.</p>
                 
-                <p>Once imported, Cali<span class="calix-x">X</span> splits your dataset automatically: <strong>75% for Calibration & Cross-Validation</strong> (to train the model) and <strong>25% as an Independent Validation Set</strong> (kept completely separate to test final predictive performance).</p>
+                <p>Once imported, cali<span class="calix-x">X</span> splits your dataset automatically: <strong>75% for Calibration & Cross-Validation</strong> (to train the model) and <strong>25% as an Independent Validation Set</strong> (kept completely separate to test final predictive performance).</p>
 
                 <h2>Step 2: Choosing Spectral Preprocessing</h2>
                 <p>Raw NIR light signals contain physical scatter noise caused by particle size variations, sample packing density, or probe distance. Spectral preprocessing mathematically eliminates these physical baselines so the PLS model focuses purely on chemical absorption.</p>
 
-                <p>In the Cali<span class="calix-x">X</span> pipeline, you can apply and chain standard preprocessing steps:</p>
+                <p>In the cali<span class="calix-x">X</span> pipeline, you can apply and chain standard preprocessing steps:</p>
                 <ul>
                     <li><strong>Standard Normal Variate (SNV):</strong> Centering and scaling each individual spectrum to remove multiplicative scaling and offset variations.</li>
                     <li><strong>Multiplicative Scatter Correction (MSC):</strong> Regresses each spectrum against the average spectrum to isolate and remove scatter slopes.</li>
                     <li><strong>Savitzky-Golay Derivatives (1st or 2nd):</strong> Computes local polynomial fits to take derivatives, resolving overlapping bands and removing baseline shifts.</li>
                 </ul>
 
-                <p><em>Tip: Cali<span class="calix-x">X</span>'s AutoML engine will automatically run a grid search over dozens of preprocessing combinations to suggest the optimal sequence for your matrix.</em></p>
+                <p><em>Tip: cali<span class="calix-x">X</span>'s AutoML engine will automatically run a grid search over dozens of preprocessing combinations to suggest the optimal sequence for your matrix.</em></p>
 
                 <h2>Step 3: Selecting Latent Variables (LVs)</h2>
                 <p>Selecting the correct number of Latent Variables is critical to prevent **overfitting**. If you select too few LVs, your model is underfitted and misses chemical correlations. If you select too many LVs, your model begins fitting random spectral noise, which will fail when scanning new samples.</p>
@@ -245,7 +245,7 @@
                 <p>Look at the <strong>Root Mean Square Error of Cross-Validation (RMSECV)</strong> curve. Select the number of LVs at the "elbow" of the curve, where the error stops dropping significantly. Adding more components beyond this point only fits noise.</p>
 
                 <pre>
-# Sample Model Statistics Output in Cali<span class="calix-x">X</span>
+# Sample Model Statistics Output in cali<span class="calix-x">X</span>
 ---------------------------------------------
 Target Parameter: Crude Protein
 Preprocessing: SNV + S-G 1st Derivative (15pt)
