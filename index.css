@@ -27,6 +27,15 @@
     --font-title: 'Outfit', sans-serif;
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s ease;
+
+    /* Global Typography Hierarchy Scale Tokens (Desktop Standard) */
+    --h1-size: 3.25rem;       /* Hero Main Title (~52px) */
+    --h2-size: 2.25rem;       /* Section Titles (~36px) */
+    --h3-size: 1.35rem;       /* Card & Component Headings (~21.5px) */
+    --h4-size: 1.05rem;       /* Sub-card & Bullet Titles (~17px) */
+    --subtitle-size: 0.85rem; /* Kicker Badges & Tag Labels (~13.5px) */
+    --body-size: 0.98rem;     /* Primary Body Paragraphs (~15.6px) */
+    --small-size: 0.85rem;    /* Captions & Small Descriptions (~13.5px) */
 }
 
 /* Base Styles */
@@ -93,6 +102,8 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    padding: 5px 0;
     transition: var(--transition-smooth);
 }
 
@@ -102,6 +113,7 @@ header.scrolled {
 }
 
 .logo img {
+    height: 58px !important;
     transition: var(--transition-smooth);
 }
 
@@ -240,8 +252,8 @@ header.scrolled .logo img {
 
 /* Page Layouts & Containers */
 .main-content {
-    margin-top: 124px; /* Offset header height */
-    min-height: calc(100vh - 124px - 300px);
+    margin-top: 80px; /* Offset compact header height */
+    min-height: calc(100vh - 80px - 300px);
 }
 
 .section {
@@ -1395,8 +1407,8 @@ footer {
     background-color: var(--accent-black);
     color: var(--bg-primary);
     border: 1px solid var(--border-color);
-    width: 72px;
-    height: 72px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: var(--shadow-sm);
@@ -1404,6 +1416,11 @@ footer {
     align-items: center;
     justify-content: center;
     transition: var(--transition-smooth);
+}
+
+.cookie-settings-btn svg {
+    width: 20px;
+    height: 20px;
 }
 
 .cookie-settings-btn:hover {
@@ -1571,11 +1588,11 @@ input:checked + .slider:before {
 /* Back to Top button styling */
 .back-to-top-btn {
     position: fixed;
-    bottom: 104px;
+    bottom: 78px;
     right: 20px;
     z-index: 9999;
-    width: 66px;
-    height: 66px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: var(--accent-black);
     color: var(--bg-primary);
@@ -1584,7 +1601,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
     cursor: pointer;
     opacity: 0;
@@ -1609,11 +1626,74 @@ input:checked + .slider:before {
    Header Search & Autocomplete
    ========================================================================== */
 
-.header-search-container {
+/* Search Toggle Button (magnifying glass icon) */
+.search-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-secondary);
+    flex-shrink: 0;
     position: relative;
-    flex: 0 1 320px;
-    margin: 0 3rem;
-    transition: var(--transition-smooth);
+    z-index: 1002;
+}
+
+.search-toggle-btn:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--accent-black);
+    border-color: var(--accent-black);
+    transform: scale(1.05);
+}
+
+.search-toggle-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.search-toggle-btn:hover svg {
+    transform: scale(1.1);
+}
+
+/* Search Overlay (fullwidth expanding panel) */
+.header-search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.3s ease,
+                padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-search-container.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 1rem 0;
+    overflow: visible;
+}
+
+.search-inner-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    position: relative;
 }
 
 .search-input-wrapper {
@@ -1625,40 +1705,70 @@ input:checked + .slider:before {
 
 .search-input-wrapper input {
     width: 100%;
-    padding: 0.5rem 2.2rem 0.5rem 2.2rem;
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
+    padding: 0.75rem 2.8rem 0.75rem 2.8rem;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
     background-color: var(--bg-secondary);
     color: var(--text-primary);
     font-family: var(--font-sans);
-    font-size: 0.85rem;
+    font-size: 1rem;
     outline: none;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
+}
+
+.search-input-wrapper input::placeholder {
+    color: var(--text-muted);
+    font-weight: 400;
 }
 
 .search-input-wrapper input:focus {
-    background-color: var(--bg-primary);
+    background-color: #fff;
     border-color: var(--accent-black);
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06);
 }
 
 .search-input-wrapper .search-icon {
     position: absolute;
-    left: 0.8rem;
+    left: 0.9rem;
     top: 50%;
     transform: translateY(-50%);
     color: var(--text-muted);
     pointer-events: none;
-    transition: var(--transition-fast);
+    transition: color 0.2s ease;
 }
 
 .search-input-wrapper input:focus + .search-icon {
     color: var(--accent-black);
 }
 
+.search-close-btn {
+    position: absolute;
+    right: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: var(--bg-tertiary);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.search-close-btn:hover {
+    color: #fff;
+    background-color: var(--accent-black);
+}
+
 .search-clear-btn {
     position: absolute;
-    right: 0.8rem;
+    right: 2.8rem;
     top: 50%;
     transform: translateY(-50%);
     border: none;
@@ -1690,17 +1800,23 @@ input:checked + .slider:before {
     min-width: 320px;
     max-height: 380px;
     overflow-y: auto;
-    background-color: var(--bg-primary);
+    background-color: #fff;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: var(--shadow-lg);
-    z-index: 1001;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    z-index: 1003;
     display: none;
     padding: 0.5rem 0;
 }
 
 .search-results-dropdown.open {
     display: block;
+    animation: searchDropdownIn 0.25s ease forwards;
+}
+
+@keyframes searchDropdownIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .search-result-group-title {
@@ -1714,9 +1830,9 @@ input:checked + .slider:before {
 
 .search-result-item {
     display: block;
-    padding: 0.5rem 1rem;
-    transition: var(--transition-fast);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+    padding: 0.55rem 1rem;
+    transition: background-color 0.15s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .search-result-item:last-child {
@@ -1747,6 +1863,22 @@ input:checked + .slider:before {
     text-align: center;
     color: var(--text-muted);
     font-size: 0.8rem;
+}
+
+/* Search Overlay Backdrop */
+.search-overlay-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.search-overlay-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Mobile search styles in links menu */
@@ -1784,15 +1916,18 @@ input:checked + .slider:before {
     max-height: 250px;
 }
 
-@media (max-width: 992px) {
-    .header-search-container {
-        flex: 0 1 220px;
-        margin: 0 1rem;
-    }
+.mobile-search-item .search-close-btn {
+    display: none;
 }
 
 @media (max-width: 768px) {
+    .search-toggle-btn {
+        display: none;
+    }
     .header-search-container {
+        display: none;
+    }
+    .search-overlay-backdrop {
         display: none;
     }
     .mobile-search-item {
@@ -2237,8 +2372,8 @@ input:checked + .slider:before {
     bottom: 20px;
     right: 20px;
     z-index: 9999;
-    width: 72px;
-    height: 72px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: var(--accent-black);
     color: var(--bg-primary);
@@ -2249,6 +2384,11 @@ input:checked + .slider:before {
     align-items: center;
     cursor: pointer;
     transition: var(--transition-smooth);
+}
+
+.live-support-btn svg {
+    width: 22px;
+    height: 22px;
 }
 
 .live-support-btn:hover {
@@ -2281,7 +2421,7 @@ input:checked + .slider:before {
 /* Support Chat Panel */
 .live-support-panel {
     position: fixed;
-    bottom: 80px;
+    bottom: 78px;
     right: 20px;
     width: 360px;
     height: 500px;
@@ -3116,8 +3256,8 @@ input:checked + .slider:before {
     overflow-x: auto;
     margin-top: 3rem;
     border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+    border: 2px solid #cbd5e1;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
 }
 
 .comparison-table {
@@ -3129,23 +3269,33 @@ input:checked + .slider:before {
 }
 
 .comparison-table th {
-    background-color: #f8fafc;
-    color: #334155;
+    background-color: #f1f5f9;
+    color: #1e293b;
     font-weight: 700;
     padding: 1.25rem 1.5rem;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid #cbd5e1;
+    border-right: 1px solid #cbd5e1;
     font-family: var(--font-title);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
+.comparison-table th:last-child {
+    border-right: none;
+}
+
 .comparison-table td {
     padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid #f1f5f9;
-    color: #475569;
+    border-bottom: 1px solid #cbd5e1;
+    border-right: 1px solid #e2e8f0;
+    color: #334155;
     vertical-align: middle;
     line-height: 1.6;
+}
+
+.comparison-table td:last-child {
+    border-right: none;
 }
 
 .comparison-table tr:last-child td {
@@ -3161,15 +3311,15 @@ input:checked + .slider:before {
     color: #0f172a;
     background-color: #f8fafc;
     width: 22%;
-    border-right: 1px solid #e2e8f0;
+    border-right: 2px solid #cbd5e1;
 }
 
 .comparison-table .ustech-highlight {
     background-color: #f0f9ff;
     font-weight: 500;
     color: #0f172a;
-    border-left: 1px solid #e0f2fe;
-    border-right: 1px solid #e0f2fe;
+    border-left: 2px solid #38b6ff;
+    border-right: 2px solid #38b6ff;
 }
 
 .comparison-table th.ustech-highlight {
@@ -3177,6 +3327,8 @@ input:checked + .slider:before {
     color: #38b6ff;
     font-weight: 800;
     border-bottom: 2px solid #38b6ff;
+    border-left: 2px solid #38b6ff;
+    border-right: 2px solid #38b6ff;
 }
 
 .comparison-table td.ustech-highlight strong {
@@ -4409,6 +4561,49 @@ input:checked + .slider:before {
     transform: scale(1.1);
 }
 
+/* ProChem Capability Expandable Cards & 5-Col Grid */
+.prochem-capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start; /* Prevents unopened cards from stretching vertically */
+    gap: 0.85rem;
+}
+
+.capability-expandable-card {
+    transition: all 0.3s ease;
+    align-self: start;
+}
+.capability-expandable-card:hover {
+    border-color: rgba(213, 178, 121, 0.45) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md) !important;
+}
+.capability-expandable-card[open] {
+    background: #ffffff !important;
+    border-color: var(--accent-gold) !important;
+    box-shadow: 0 8px 25px rgba(213, 178, 121, 0.12) !important;
+}
+.capability-expandable-card[open] .chevron-icon {
+    transform: rotate(180deg);
+    color: var(--accent-gold) !important;
+}
+.capability-expandable-card summary::-webkit-details-marker,
+.capability-expandable-card summary::marker {
+    display: none;
+    content: "";
+}
+
+@media (max-width: 1024px) {
+    .prochem-capabilities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 640px) {
+    .prochem-capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .comparison-overlay-input {
     position: absolute;
     top: 0;
@@ -4962,12 +5157,29 @@ input:checked + .slider:before {
        MOBILE RESPONSIVENESS FIXES (768px and below)
        ==================================================================== */
 
+    /* Mobile Standard Typography Scaling Tokens */
+    :root {
+        --h1-size: 1.85rem;       /* Mobile Hero Title (~30px) */
+        --h2-size: 1.45rem;       /* Mobile Section Title (~23px) */
+        --h3-size: 1.15rem;       /* Mobile Card Title (~18.5px) */
+        --h4-size: 0.95rem;       /* Mobile Sub-title (~15px) */
+        --subtitle-size: 0.78rem; /* Mobile Subtitle Kicker (~12.5px) */
+        --body-size: 0.88rem;     /* Mobile Paragraphs (~14px) */
+        --small-size: 0.8rem;     /* Mobile Small Labels (~12.8px) */
+    }
+
+    /* Global Mobile Typography Standard Overrides */
+    h1, .hero-title, .hero h1 { font-size: var(--h1-size) !important; line-height: 1.2 !important; }
+    h2, .section-title { font-size: var(--h2-size) !important; line-height: 1.25 !important; }
+    h3, .card-title { font-size: var(--h3-size) !important; line-height: 1.3 !important; }
+    h4 { font-size: var(--h4-size) !important; line-height: 1.35 !important; }
+    .section-subtitle, .card-subtitle, .calix-tag-badge { font-size: var(--subtitle-size) !important; }
+    p, .section-desc, .card-description { font-size: var(--body-size) !important; line-height: 1.55 !important; }
+
     /* FIX: Hero h1 white-space: nowrap causes horizontal overflow on mobile */
     .hero h1 {
         white-space: normal !important;
-        font-size: 2rem !important;
         letter-spacing: -1px;
-        line-height: 1.15;
     }
 
     /* FIX: .device element (380x380px fixed) overflows on mobile screens */
@@ -4980,7 +5192,7 @@ input:checked + .slider:before {
         padding: 1rem !important;
     }
     .card h3 {
-        font-size: 1rem !important;
+        font-size: var(--h3-size) !important;
         margin-bottom: 0.25rem !important;
     }
     .card .card-icon,
@@ -5007,48 +5219,191 @@ input:checked + .slider:before {
         margin-bottom: 1.5rem;
     }
 
-    /* FIX: .bento-card padding compact */
+    /* FIX: .bento-card & site cards padding compact & shrink-wrap on mobile (No empty gaps) */
+    .bento-grid {
+        gap: 1rem !important;
+    }
     .bento-card {
-        padding: 1.25rem !important;
+        padding: 1.15rem 1rem !important;
+        border-radius: 14px !important;
+        justify-content: flex-start !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+    .bento-card h3 {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+    .bento-card p {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 0 !important;
+    }
+    .bento-card-footer-viz {
+        margin-top: 0.85rem !important;
+        padding-top: 0.65rem !important;
+    }
+    .bento-metric-item {
+        padding: 0.45rem 0.5rem !important;
+    }
+    .bento-metric-val {
+        font-size: 1.15rem !important;
+    }
+    .bento-metric-lbl {
+        font-size: 0.7rem !important;
     }
 
-    /* FIX: Calculator form/results excessive padding on mobile */
-    .calculator-form {
-        padding: 1.5rem !important;
+    /* Industry Cards on Mobile - Tight fit with no blank bottom space */
+    .home-industry-card {
+        min-height: auto !important;
+        height: auto !important;
+        border-radius: 16px !important;
     }
+    .home-industry-card .card-content {
+        padding: 1.15rem 1rem !important;
+        justify-content: flex-start !important;
+    }
+    .home-industry-card .card-title {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+    .home-industry-card .card-description {
+        font-size: 0.82rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    /* ROI & Calculator Form Cards on Mobile */
+    .roi-card-ui,
+    .roi-results,
+    .calculator-form,
     .calculator-results {
-        padding: 1.5rem !important;
+        padding: 1.15rem 1rem !important;
+        border-radius: 14px !important;
+    }
+    .roi-form-group {
+        margin-bottom: 0.85rem !important;
+    }
+    .roi-form-group label {
+        font-size: 0.82rem !important;
+    }
+    .roi-val {
+        font-size: 1.75rem !important;
+    }
+    .roi-sub-val {
+        font-size: 1.15rem !important;
     }
 
-    /* FIX: Floating buttons too large on mobile (72px / 66px) — shrink to 48-52px */
+    /* caliX Bullet & Feature Cards on Mobile */
+    .calix-bullet-item {
+        padding: 0.75rem 0.85rem !important;
+        gap: 0.75rem !important;
+        border-radius: 12px !important;
+    }
+    .calix-bullet-icon {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 1.1rem !important;
+    }
+    .calix-bullet-text h4 {
+        font-size: 0.95rem !important;
+        margin-bottom: 0.15rem !important;
+    }
+    .calix-bullet-text p {
+        font-size: 0.82rem !important;
+        line-height: 1.45 !important;
+    }
+
+    /* Blog Slider Cards on Mobile */
+    .blog-slider-card {
+        min-width: 250px !important;
+        border-radius: 14px !important;
+    }
+    .blog-slider-card .card-content {
+        padding: 1rem 0.85rem !important;
+    }
+    .blog-slider-card .card-title {
+        font-size: 1.1rem !important;
+    }
+
+    /* CTA Section Container on Mobile */
+    .bg-dark-section .container {
+        padding: 2.25rem 1.25rem !important;
+    }
+    .bg-dark-section h2 {
+        font-size: 1.6rem !important;
+    }
+    .bg-dark-section p {
+        font-size: 0.9rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .hero-metrics-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.5rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
+        padding: 0 !important;
+    }
+    .hero-metric-card {
+        padding: 0.75rem 0.35rem !important;
+        border-radius: 12px !important;
+    }
+    .hero-metric-card > div:first-child {
+        font-size: 1.35rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    .hero-metric-card > div:last-child {
+        font-size: 0.72rem !important;
+        line-height: 1.25 !important;
+        letter-spacing: -0.3px !important;
+    }
+
+    @media (max-width: 420px) {
+        .hero-metrics-grid {
+            grid-template-columns: 1fr !important;
+            gap: 0.6rem !important;
+        }
+        .hero-metric-card {
+            padding: 0.65rem 0.85rem !important;
+        }
+        .hero-metric-card > div:first-child {
+            font-size: 1.5rem !important;
+        }
+        .hero-metric-card > div:last-child {
+            font-size: 0.8rem !important;
+        }
+    }
+
+    /* FIX: Floating buttons too large on mobile — shrink to 44-48px */
     .cookie-settings-btn {
-        width: 48px !important;
-        height: 58px !important;
+        width: 44px !important;
+        height: 44px !important;
         bottom: 14px;
         left: 14px;
     }
     .cookie-settings-btn svg {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 
     .live-support-btn {
-        width: 52px !important;
-        height: 58px !important;
+        width: 44px !important;
+        height: 44px !important;
         bottom: 14px;
         right: 14px;
     }
     .live-support-btn svg {
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
     }
 
     .back-to-top-btn {
-        width: 44px !important;
-        height: 44px !important;
-        bottom: 76px;
+        width: 40px !important;
+        height: 40px !important;
+        bottom: 66px;
         right: 14px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     /* FIX: Product nav tabs overflow — add flex-wrap */
@@ -6235,6 +6590,83 @@ img {
     [style*="font-size: 2.2rem"] {
         font-size: 1.45rem !important;
         letter-spacing: -0.3px !important;
+    }
+}
+
+/* ====================================================================
+   LAPTOP & SMALL-SCREEN COMPUTER OPTIMIZATIONS (1024px - 1280px)
+   Prevents text horizontal overflow, box blowout, and awkward wraps
+   ==================================================================== */
+@media (max-width: 1280px) {
+    /* 1. Global Box-Sizing & Overflow Defenses */
+    *, *::before, *::after {
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+    
+    .grid, .grid-2, .grid-3, .grid-4, .bento-grid, .hero-metrics-grid, .footer-grid, .calculator-grid, .roi-container {
+        min-width: 0;
+    }
+    .grid > *, .bento-grid > *, .hero-metrics-grid > *, .footer-grid > * {
+        min-width: 0;
+    }
+
+    /* 2. Fluid Responsive Heading Scale for Small Monitors/Laptops */
+    h1, .hero h1 {
+        font-size: clamp(2.2rem, 3.2vw, 3.25rem) !important;
+        line-height: 1.18 !important;
+        white-space: normal !important;
+    }
+
+    h2, .section-title {
+        font-size: clamp(1.65rem, 2.4vw, 2.25rem) !important;
+        line-height: 1.25 !important;
+    }
+
+    h3, .card-title {
+        font-size: clamp(1.15rem, 1.6vw, 1.35rem) !important;
+        line-height: 1.3 !important;
+    }
+
+    /* 3. Bento & Feature Card Padding Adaptation for 13" & 14" Laptops */
+    .bento-card {
+        padding: 1.6rem 1.35rem !important;
+    }
+    .bento-grid {
+        gap: 1.25rem !important;
+    }
+
+    /* 4. Container & Layout Safe Widths */
+    .container {
+        width: 94% !important;
+        max-width: 1200px !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* 5. ROI & Calculator Form Fits */
+    .roi-card-ui, .roi-results, .calculator-form, .calculator-results {
+        padding: 1.5rem 1.25rem !important;
+    }
+    .roi-val {
+        font-size: clamp(1.8rem, 2.5vw, 2.5rem) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Refine Bento Spans on 1024px displays */
+    .bento-span-8 { grid-column: span 12; }
+    .bento-span-4 { grid-column: span 12; }
+    .bento-span-6 { grid-column: span 12; }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .footer-logo-center {
+        grid-column: span 2;
+        order: -1;
+        text-align: center;
     }
 }
 

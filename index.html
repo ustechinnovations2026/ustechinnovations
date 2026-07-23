@@ -68,7 +68,7 @@
     <!-- Header / Navigation -->
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="images/logo.svg?v=1.0.2" alt="USTECH Innovations Logo" style="height: 108px; width: auto;"></a>
+            <a href="index.html" class="logo"><img src="images/logo.svg?v=1.0.2" alt="USTECH Innovations Logo" style="width: auto;"></a>
             <button class="nav-toggle" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
@@ -137,29 +137,43 @@
         
         <!-- Hero Section -->
         <section class="hero laser-hero" style="min-height: 100vh; background: #070913; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 8rem 2rem 6rem 2rem;">
-            <!-- Animated Tech Grid Background (Premium Light Effects) -->
+            <!-- Industrial Aerial Image Background (High Visibility, Crisp Lines & Automation Vibe) -->
             <div class="hero-bg-glows" style="position: absolute; inset: 0; pointer-events: none; z-index: 1;">
-                <div style="position: absolute; top: -10%; right: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(56, 182, 255, 0.15) 0%, transparent 70%); filter: blur(80px);"></div>
-                <div style="position: absolute; bottom: -10%; left: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%); filter: blur(80px);"></div>
-                <div class="grid-overlay" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;"></div>
+                <!-- Industrial Aerial Photo Layer - High Opacity (0.85), Vivid Details -->
+                <div style="position: absolute; inset: 0; background-image: url('images/hero_bg_logistics.jpg?v=1.0.3'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 0.85; filter: contrast(1.12) brightness(0.92);"></div>
+                <!-- Very Light Vignette Overlay for maximum photo clarity -->
+                <div style="position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(7, 9, 19, 0.3) 0%, rgba(7, 9, 19, 0.6) 75%, rgba(7, 9, 19, 0.82) 100%);"></div>
+                <!-- Subtle Blue Tech Glow Accents -->
+                <div style="position: absolute; top: -10%; right: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(56, 182, 255, 0.2) 0%, transparent 70%); filter: blur(90px);"></div>
+                <div style="position: absolute; bottom: -10%; left: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(56, 182, 255, 0.15) 0%, transparent 70%); filter: blur(90px);"></div>
             </div>
 
             <div class="container hero-container" style="max-width: 100%; padding: 0 4rem; position: relative; z-index: 2; width: 100%; text-align: center; margin: 0 auto;">
                 
-                <h1 id="hero-title" class="notranslate" style="font-size: 3.5rem; line-height: 1.15; margin-top: 2rem; margin-bottom: 2rem; text-align: center; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: none;">
-                    Real-Time Analysis. Flawless Decisions. Uninterrupted Production.
+                <h1 id="hero-title" class="notranslate" style="font-size: 3.5rem; line-height: 1.15; margin-top: 2rem; margin-bottom: 2rem; text-align: center; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 4px 25px rgba(0,0,0,0.95)) drop-shadow(0 2px 5px rgba(0,0,0,0.9));">
+                    Transform Process Uncertainty into Real-Time Quality Control
                 </h1>
 
-                <p id="hero-subtitle" style="font-size: 1.15rem; color: #94a3b8; margin: 0 auto; text-align: center; text-shadow: none; max-width: 900px; line-height: 1.7;">
-                    Make real-time production decisions and ensure uncompromised quality with our wide spectral range, automatic calibration, and powerful inline analysis capabilities.
+                <p id="hero-subtitle" style="font-size: 1.15rem; color: #ffffff; margin: 0 auto; text-align: center; text-shadow: 0 2px 14px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.9); max-width: 900px; line-height: 1.7; font-weight: 600;">
+                    We help continuous and batch processors eliminate over-formulation, reduce rework, and automate compliance with inline FT-NIR spectroscopy.
                 </p>
 
-                <!-- Double-sized caliX Logo and Text Container placed below paragraph -->
-                <div class="calix-hero-brand" style="display: inline-flex; align-items: center; gap: 2.5rem; background: rgba(15, 23, 42, 0.45); border: 2px solid rgba(56, 182, 255, 0.25); border-radius: 100px; padding: 1.5rem 4.5rem 1.5rem 3rem; margin-top: 4.5rem; margin-bottom: 1rem; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 20px 60px rgba(56, 182, 255, 0.25); animation: float-card 6s ease-in-out infinite; margin-left: auto; margin-right: auto;">
-                    <img src="images/calix_logo.webp?v=1.0.2" alt="caliX Logo" style="width: 70px; height: 70px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(56, 182, 255, 0.3)); flex-shrink: 0;">
-                    <!-- Brand Name -->
-                    <div style="font-family: var(--font-title); font-size: 4.5rem; font-weight: 800; color: #ffffff; line-height: 1; letter-spacing: -2px;">
-                        cali<span style="color: #38b6ff; font-weight: 900;">X</span>
+                <!-- Key ROI & Performance Metric Cards -->
+                <div class="hero-metrics-grid" style="display: grid; grid-template-columns: repeat(3, minmax(220px, 1fr)); gap: 1.5rem; max-width: 920px; margin: 3.5rem auto 1.5rem auto; width: 100%;">
+                    <!-- Metric Card 1 -->
+                    <div class="hero-metric-card" style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 1.35rem 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; text-align: center;">
+                        <div style="font-family: var(--font-title); font-size: 2.3rem; font-weight: 800; background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1; margin-bottom: 0.4rem; filter: drop-shadow(0 2px 10px rgba(37, 99, 235, 0.35));">&lt;30s</div>
+                        <div style="color: #e2e8f0; font-size: 0.9rem; font-weight: 600; letter-spacing: -0.2px;">Real-Time Inline Measurement</div>
+                    </div>
+                    <!-- Metric Card 2 -->
+                    <div class="hero-metric-card" style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 1.35rem 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; text-align: center;">
+                        <div style="font-family: var(--font-title); font-size: 2.3rem; font-weight: 800; background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1; margin-bottom: 0.4rem; filter: drop-shadow(0 2px 10px rgba(37, 99, 235, 0.35));">&plusmn;0.2%</div>
+                        <div style="color: #e2e8f0; font-size: 0.9rem; font-weight: 600; letter-spacing: -0.2px;">Precision for Zero Waste</div>
+                    </div>
+                    <!-- Metric Card 3 -->
+                    <div class="hero-metric-card" style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 1.35rem 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; text-align: center;">
+                        <div style="font-family: var(--font-title); font-size: 2.3rem; font-weight: 800; background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1; margin-bottom: 0.4rem; filter: drop-shadow(0 2px 10px rgba(37, 99, 235, 0.35));">100%</div>
+                        <div style="color: #e2e8f0; font-size: 0.9rem; font-weight: 600; letter-spacing: -0.2px;">Automated PLC Integration</div>
                     </div>
                 </div>
             </div>
@@ -189,10 +203,10 @@
                             Chemometrics &amp; AutoML
                         </div>
                         
-                        <h2 class="section-title" style="font-size: 2.0rem; letter-spacing: -0.7px; margin-top: 0; margin-bottom: 1.25rem; font-family: var(--font-title); font-weight: 800;">cali<span class="calix-x">X</span>: Next-Generation Chemometrics Workspace</h2>
+                        <h2 class="section-title" style="font-size: 2.0rem; letter-spacing: -0.7px; margin-top: 0; margin-bottom: 1.25rem; font-family: var(--font-title); font-weight: 800;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>: Next-Generation Chemometrics Workspace</h2>
                         
                         <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.7; margin: 0;">
-                            Building high-accuracy calibration models shouldn't take weeks of manual trial-and-error. cali<span class="calix-x">X</span> automates your entire chemometrics workflow—from raw data import and preprocessing to AutoML selection and model transfer. Build robust, GxP-compliant calibrations in minutes.
+                            Building high-accuracy calibration models shouldn't take weeks of manual trial-and-error. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> automates your entire chemometrics workflow—from raw data import and preprocessing to AutoML selection and model transfer. Build robust, GxP-compliant calibrations in minutes.
                         </p>
                         
                         <div class="calix-bullets">
@@ -224,7 +238,7 @@
                         
                         <div style="display: flex; gap: 1rem; margin-top: 2rem;">
                             <a href="product-calix.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
-                                Explore <span style="white-space: nowrap;">cali<span class="calix-x">X</span></span> Suite
+                                Explore <span style="white-space: nowrap;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></span> Suite
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -243,7 +257,7 @@
                 <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
                     <span class="section-subtitle" style="color: #565e7a !important;">Integration</span>
                     <h2 class="section-title" style="font-size: 2.2rem; letter-spacing: -0.7px; font-family: var(--font-title); font-weight: 800; color: #12141d !important;">From Scan to Control in 3 Simple Steps</h2>
-                    <p class="section-desc" style="color: #4b5563 !important;">cali<span class="calix-x">X</span> acts as the intelligence bridge, connecting raw laboratory scans directly to active factory automation.</p>
+                    <p class="section-desc" style="color: #4b5563 !important;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> acts as the intelligence bridge, connecting raw laboratory scans directly to active factory automation.</p>
                 </div>
                 
                 <div class="calix-steps-grid">
@@ -257,7 +271,7 @@
                     <div class="calix-step-card">
                         <div class="calix-step-num">02</div>
                         <h3>AutoML Optimization</h3>
-                        <p>Let AutoML sweep 95+ modeling pipelines. cali<span class="calix-x">X</span> analyzes PCA and PLS leverage metrics automatically, generating robust calibrations and preventing overfitting.</p>
+                        <p>Let AutoML sweep 95+ modeling pipelines. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> analyzes PCA and PLS leverage metrics automatically, generating robust calibrations and preventing overfitting.</p>
                     </div>
                     <!-- Step 3 -->
                     <div class="calix-step-card">
@@ -282,9 +296,7 @@
                     <!-- Industry Card 1 -->
                     <a href="industry-food-feed.html" class="home-industry-card" id="food-feed-card">
                         <div class="card-bg-wrap">
-                            <video id="food-feed-video" class="card-bg" poster="images/industries_feed.webp?v=1.0.2" loop muted playsinline preload="metadata">
-                                <source src="images/food_feed_video.mp4?v=1.0.2" type="video/mp4">
-                            </video>
+                            <img src="images/home_card_feed.webp?v=1.0.4" alt="Food and Feed Processing Quality Control" class="card-bg" fetchpriority="high" decoding="async">
                         </div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
@@ -304,9 +316,7 @@
                     <!-- Industry Card 2 -->
                     <a href="industry-dairy.html" class="home-industry-card" id="dairy-card">
                         <div class="card-bg-wrap">
-                            <video id="dairy-video" class="card-bg" poster="images/industries_dairy.webp?v=1.0.2" loop muted playsinline preload="metadata">
-                                <source src="images/dairy_video.mp4#t=2" type="video/mp4">
-                            </video>
+                            <img src="images/home_card_dairy.webp?v=1.0.4" alt="Dairy Processing Standardization" class="card-bg" fetchpriority="high" decoding="async">
                         </div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
@@ -326,9 +336,7 @@
                     <!-- Industry Card 3 -->
                     <a href="industry-chemical-pharma.html" class="home-industry-card" id="chemical-pharma-card">
                         <div class="card-bg-wrap">
-                            <video id="chemical-pharma-video" class="card-bg" poster="images/industries_chemical.webp?v=1.0.2" loop muted playsinline preload="metadata">
-                                <source src="images/8540619-uhd_2160_4096_25fps.mp4#t=7" type="video/mp4">
-                            </video>
+                            <img src="images/home_card_pharma.webp?v=1.0.5" alt="Chemical and Pharma Process Analytics" class="card-bg" fetchpriority="high" decoding="async">
                         </div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
@@ -386,7 +394,7 @@
                             <p style="color: rgba(255,255,255,0.8);">At USTECH Innovations, we are driven by innovation to provide top-notch data management solutions. Our data-driven approach enables businesses to make informed decisions and achieve their desired outcomes.</p>
                         </div>
                         <div class="bento-card-footer-viz" style="margin-top: 1rem;">
-                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">cali<span class="calix-x">X</span> AutoML Suite Enabled</span>
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML Suite Enabled</span>
                         </div>
                     </div>
 
@@ -558,7 +566,7 @@
                             <div class="card-overlay"></div>
                             <div class="card-content">
                                 <span class="card-subtitle">CHEMOMETRICS &amp; AUTOML</span>
-                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">cali<span class="calix-x">X</span> Calibration Suite</h3>
+                                <h3 class="card-title" style="font-size: 1.35rem; color: #ffffff;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Calibration Suite</h3>
                                 <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">Develop robust regression models, clean spectra, and build calibrations.</p>
                             </div>
                         </a>
@@ -836,7 +844,7 @@
                             <div class="card-overlay"></div>
                             <div class="card-content">
                                 <span class="card-subtitle">GUIDE • APR 05, 2026</span>
-                                <h3 class="card-title" style="font-size: 1.35rem;">Introduction to PLS Regression in cali<span class="calix-x">X</span> Suite</h3>
+                                <h3 class="card-title" style="font-size: 1.35rem;">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</h3>
                                 <p class="card-description" style="font-size: 0.85rem; margin-bottom: 0;">A step-by-step tutorial explaining how to compile calibration models from reference wet chemistry.</p>
                             </div>
                         </a>

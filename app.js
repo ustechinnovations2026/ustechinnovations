@@ -156,13 +156,13 @@ function selectLang(el) {
     var heroTitle = document.getElementById('hero-title');
     if (heroTitle) {
         if (lang === 'tr') {
-            heroTitle.textContent = 'Anlık Analiz, Kusursuz Karar, Kesintisiz Üretim.';
+            heroTitle.textContent = 'Proses Belirsizliğini Gerçek Zamanlı Kalite Kontrole Dönüştürün';
         } else if (lang === 'es') {
-            heroTitle.textContent = 'Análisis en Tiempo Real, Decisiones Impecables, Producción Ininterrumpida.';
+            heroTitle.textContent = 'Transforme la Incertidumbre del Proceso en Control de Calidad en Tiempo Real';
         } else if (lang === 'de') {
-            heroTitle.textContent = 'Echtzeitanalyse, Makellose Entscheidungen, Kontinuierliche Produktion.';
+            heroTitle.textContent = 'Verwandeln Sie Prozessunsicherheit in Qualitätskontrolle in Echtzeit';
         } else {
-            heroTitle.textContent = 'Real-Time Analysis, Flawless Decisions, Uninterrupted Production.';
+            heroTitle.textContent = 'Transform Process Uncertainty into Real-Time Quality Control';
         }
     }
 
@@ -1015,7 +1015,7 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "Read this commercial case study showing how inline NIR sensors optimized animal feed mixing and protein margins."
             },
             {
-            title: "Introduction to PLS Regression in Calix Suite",
+            title: "Introduction to PLS Regression in caliX Suite",
             url: "blog-pls-regression-calix.html",
             category: "Knowledge",
             keywords: "introduction PLS regression calix suite chemometrics modeling preprocessing AutoML",
@@ -1282,25 +1282,96 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ];
 
-        // 1. Inject Search Box into Desktop Navigation
+
+        // 1. Inject Search Toggle Button + Search Overlay Panel
         const navContainer = document.querySelector('.nav-container');
-        const logoLink = navContainer ? navContainer.querySelector('.logo') : null;
-        if (navContainer && logoLink) {
+        const navLinksUl = document.querySelector('.nav-links');
+        if (navContainer && navLinksUl) {
+            // Create the small search toggle button (magnifying glass)
+            const searchToggle = document.createElement('button');
+            searchToggle.className = 'search-toggle-btn';
+            searchToggle.id = 'search-toggle-btn';
+            searchToggle.setAttribute('aria-label', 'Open Search');
+            searchToggle.innerHTML = `
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            `;
+            // Insert after the nav-links (right side, next to lang selector)
+            navLinksUl.parentNode.insertBefore(searchToggle, navLinksUl.nextSibling);
+
+            // Create the search overlay backdrop
+            const backdrop = document.createElement('div');
+            backdrop.className = 'search-overlay-backdrop';
+            backdrop.id = 'search-overlay-backdrop';
+            document.body.appendChild(backdrop);
+
+            // Create the search overlay panel
             const searchContainer = document.createElement('div');
             searchContainer.className = 'header-search-container';
+            searchContainer.id = 'header-search-overlay';
             searchContainer.innerHTML = `
-                <div class="search-input-wrapper">
-                    <input type="text" id="header-search-input" placeholder="Search website..." autocomplete="off">
-                    <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <button id="search-clear-btn" class="search-clear-btn" type="button">&times;</button>
+                <div class="search-inner-wrapper">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="header-search-input" placeholder="Search pages, products, blogs..." autocomplete="off">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <button id="search-clear-btn" class="search-clear-btn" type="button">&times;</button>
+                        <button id="search-close-btn" class="search-close-btn" type="button" aria-label="Close Search">&times;</button>
+                    </div>
+                    <div id="search-results-dropdown" class="search-results-dropdown"></div>
                 </div>
-                <div id="search-results-dropdown" class="search-results-dropdown"></div>
             `;
-            // Insert it immediately after the logo link
-            logoLink.after(searchContainer);
+            document.body.appendChild(searchContainer);
+
+            // Toggle search open/close
+            function openSearch() {
+                searchContainer.classList.add('open');
+                backdrop.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => {
+                    const input = document.getElementById('header-search-input');
+                    if (input) input.focus();
+                }, 350);
+            }
+            function closeSearch() {
+                searchContainer.classList.remove('open');
+                backdrop.classList.remove('active');
+                document.body.style.overflow = '';
+                const input = document.getElementById('header-search-input');
+                if (input) { input.value = ''; }
+                const dropdown = document.getElementById('search-results-dropdown');
+                if (dropdown) { dropdown.classList.remove('open'); dropdown.innerHTML = ''; }
+                const clearBtn = document.getElementById('search-clear-btn');
+                if (clearBtn) clearBtn.style.display = 'none';
+            }
+
+            searchToggle.addEventListener('click', openSearch);
+            backdrop.addEventListener('click', closeSearch);
+            const closeBtn = document.getElementById('search-close-btn');
+            if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+
+            // Close with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && searchContainer.classList.contains('open')) {
+                    closeSearch();
+                }
+            });
+
+            // Ctrl+K / Cmd+K shortcut to open search
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    if (searchContainer.classList.contains('open')) {
+                        closeSearch();
+                    } else {
+                        openSearch();
+                    }
+                }
+            });
         }
 
         // 2. Inject Mobile Search at the top of the mobile menu
@@ -1336,7 +1407,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdown.appendChild(groupTitle);
 
             const suggestions = [
-                { title: "caliX AutoML Suite", url: "product-calix.html" },
+                { title: "cali<span class=\"calix-x\">X</span> AutoML Suite", url: "product-calix.html" },
                 { title: "ProLine17ES Sensor", url: "product-n-sens-online.html" },
                 { title: "Food & Feed Solutions", url: "industry-food-feed.html" },
                 { title: "B2B ROI Calculator", url: "contact.html#roi" },
@@ -1383,9 +1454,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     { title: "USTECH Tornado+ (Product)", url: "product-n-sens-tornado.html" }
                 ],
                 "calix": [
-                    { title: "caliX AutoML Suite (Product)", url: "product-calix.html" },
+                    { title: "cali<span class=\"calix-x\">X</span> AutoML Suite (Product)", url: "product-calix.html" },
                     { title: "Products Overview", url: "products.html" },
-                    { title: "Blog: PLS Regression in caliX", url: "blog-pls-regression-calix.html" },
+                    { title: "Blog: PLS Regression in cali<span class=\"calix-x\">X</span>", url: "blog-pls-regression-calix.html" },
                     { title: "Blog: Outlier Detection Methods", url: "blog-outlier-detection-mahalanobis.html" }
                 ],
                 "pharma": [
@@ -1881,7 +1952,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="live-support-chat-log" id="live-support-chat-log"></div>
             <div class="chat-suggestions" id="chat-suggestions" style="display: flex; gap: 0.5rem; padding: 0.75rem 1rem; background-color: var(--bg-primary); border-top: 1px solid var(--border-color); overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none;">
                 <button class="chat-suggestion-chip" data-msg="Request a Quote">Request Quote</button>
-                <button class="chat-suggestion-chip" data-msg="How does caliX AutoML work?">caliX AutoML</button>
+                <button class="chat-suggestion-chip" data-msg="How does caliX AutoML work?">cali<span class="calix-x">X</span> AutoML</button>
                 <button class="chat-suggestion-chip" data-msg="How does calibration transfer work?">Calibration Transfer</button>
                 <button class="chat-suggestion-chip" data-msg="Connect analyzer to PLC">PLC SCADA Link</button>
             </div>
