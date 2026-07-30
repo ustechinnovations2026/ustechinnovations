@@ -6094,7 +6094,7 @@ img {
 /* Homepage caliX Showcase Section */
 .calix-home-showcase {
     background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.05) 0%, var(--bg-primary) 75%);
-    padding: 7rem 2rem;
+    padding: 3rem 2rem;
     border-bottom: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;

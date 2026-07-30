@@ -767,6 +767,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const acceptAllBtn = document.getElementById('accept-all-cookies-btn');
         const backToTopBtn = document.getElementById('back-to-top-btn');
 
+        // Check if user has already given cookie consent
+        const hasCookieConsent = localStorage.getItem('ustech_cookie_consent');
+        if (hasCookieConsent) {
+            if (cookieBtn) cookieBtn.style.display = 'none';
+        } else {
+            // Show modal automatically on first visit after brief delay
+            setTimeout(() => {
+                if (!localStorage.getItem('ustech_cookie_consent') && cookieModal) {
+                    cookieModal.classList.add('open');
+                }
+            }, 1200);
+        }
+
         if (cookieBtn && cookieModal) {
             cookieBtn.addEventListener('click', () => {
                 cookieModal.classList.add('open');
@@ -781,7 +794,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (saveBtn && cookieModal) {
             saveBtn.addEventListener('click', () => {
+                localStorage.setItem('ustech_cookie_consent', 'saved');
                 cookieModal.classList.remove('open');
+                if (cookieBtn) cookieBtn.style.display = 'none';
                 showNotification("Cookie preferences saved successfully.");
             });
         }
@@ -792,7 +807,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const marketing = document.getElementById('cookie-marketing');
                 if (analytical) analytical.checked = true;
                 if (marketing) marketing.checked = true;
+                localStorage.setItem('ustech_cookie_consent', 'accepted_all');
                 cookieModal.classList.remove('open');
+                if (cookieBtn) cookieBtn.style.display = 'none';
                 showNotification("All cookies accepted.");
             });
         }
