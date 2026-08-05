@@ -1588,8 +1588,8 @@ input:checked + .slider:before {
 /* Back to Top button styling */
 .back-to-top-btn {
     position: fixed;
-    bottom: 78px;
-    right: 20px;
+    bottom: 24px;
+    right: 24px;
     z-index: 9999;
     width: 44px;
     height: 44px;
@@ -5401,8 +5401,8 @@ input:checked + .slider:before {
     .back-to-top-btn {
         width: 40px !important;
         height: 40px !important;
-        bottom: 66px;
-        right: 14px;
+        bottom: 18px;
+        right: 18px;
         font-size: 1.2rem;
     }
 
