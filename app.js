@@ -1722,8 +1722,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 11. Live Support System
-    injectLiveSupport();
+    // 11. Live Support System (Disabled for development - uncomment to re-enable)
+    // injectLiveSupport();
 
     function injectLiveSupport() {
         // Representative Agents definitions
