@@ -7060,38 +7060,51 @@ div.hero-metrics-grid,
         padding-top: 0.5rem !important;
     }
 
-    /* --- 2. Footer Spacing, Word-Wrap & Social Icon Centering Fix --- */
+    /* --- 2. Option A: Ultra-Compact Minimalist Mobile Footer --- */
     footer {
-        padding: 2rem 1.25rem 1.25rem 1.25rem !important;
+        padding: 1.5rem 1rem 1rem 1rem !important;
     }
 
     .footer-grid {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 1.25rem !important;
+        gap: 1rem !important;
         text-align: center !important;
-        margin-bottom: 1rem !important;
+        margin-bottom: 0.75rem !important;
     }
 
     .footer-logo-center {
         order: -1 !important;
-        margin-bottom: 0.25rem !important;
+        margin-bottom: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-logo-center .logo img,
+    footer .logo img {
+        height: 38px !important;
+        width: auto !important;
     }
 
     .footer-logo-center p {
-        font-size: 0.82rem !important;
-        line-height: 1.4 !important;
-        max-width: 280px !important;
-        margin-top: 0.4rem !important;
+        font-size: 0.76rem !important;
+        line-height: 1.35 !important;
+        max-width: 250px !important;
+        margin-top: 0.3rem !important;
+        margin-bottom: 0.5rem !important;
+        color: var(--text-muted) !important;
     }
 
     .footer-left {
         width: 100% !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-around !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
         gap: 1rem !important;
+        text-align: center !important;
+        padding-top: 0.5rem !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
     }
 
     .footer-links-col {
@@ -7099,17 +7112,22 @@ div.hero-metrics-grid,
     }
 
     .footer-links-col h4 {
-        font-size: 0.95rem !important;
-        margin-bottom: 0.4rem !important;
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0.35rem !important;
+        color: #ffffff !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
     }
 
     .footer-links {
-        gap: 0.3rem !important;
+        gap: 0.25rem !important;
         align-items: center !important;
     }
 
     .footer-links a {
-        font-size: 0.82rem !important;
+        font-size: 0.78rem !important;
+        color: var(--text-muted) !important;
         white-space: nowrap !important;
     }
 
@@ -7118,21 +7136,72 @@ div.hero-metrics-grid,
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        padding-top: 0.65rem !important;
         margin-top: 0.25rem !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    .footer-grid > .footer-links-col:last-child h4 {
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0.3rem !important;
+        color: #ffffff !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
     }
 
     .footer-grid > .footer-links-col:last-child p {
-        font-size: 0.82rem !important;
-        line-height: 1.4 !important;
-        margin-bottom: 0.25rem !important;
+        font-size: 0.78rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 0.15rem !important;
         text-align: center !important;
+        color: var(--text-muted) !important;
     }
 
     .footer-socials {
         display: flex !important;
         justify-content: center !important;
         width: 100% !important;
+        gap: 0.5rem !important;
         margin: 0.35rem auto 0 auto !important;
+    }
+
+    .social-link {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .footer-bottom {
+        padding-top: 0.65rem !important;
+        font-size: 0.72rem !important;
+        line-height: 1.35 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.25rem !important;
+        text-align: center !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    /* --- 3. ProChem & Product Pages Benefit / Business Cards Shrink-Wrap Fix --- */
+    .benefit-card,
+    .business-card {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 1.25rem 1.15rem !important;
+    }
+
+    .benefit-card h4,
+    .business-card h4 {
+        margin-bottom: 0.4rem !important;
+        font-size: 1.1rem !important;
+    }
+
+    .benefit-card p,
+    .business-card p {
+        font-size: 0.85rem !important;
+        line-height: 1.45 !important;
+        margin-bottom: 0 !important;
     }
 }
 
