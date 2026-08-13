@@ -935,7 +935,7 @@ input[type="range"] {
 footer {
     background-color: var(--accent-black);
     color: var(--bg-primary);
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 2.75rem 2rem 1.25rem 2rem;
     border-top: 1px solid #292929;
 }
 
@@ -951,40 +951,40 @@ footer {
     align-items: center;
     justify-content: center;
     background: #ffffff;
-    padding: 10px 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo-center .logo:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.08), 0 8px 25px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08), 0 6px 20px rgba(0, 0, 0, 0.4);
     background: #ffffff;
 }
 
-
 .footer-logo-center p {
     color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-top: 1rem;
-    max-width: 300px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    margin-top: 0.6rem;
+    max-width: 280px;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1.2fr;
-    gap: 4rem;
-    max-width: 1440px;
+    grid-template-columns: 1.3fr 1fr 1.2fr;
+    gap: 2.25rem;
+    max-width: 1120px;
     width: 100%;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 1.5rem auto;
     align-items: start;
 }
 
 .footer-left {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .footer-grid > .footer-links-col:last-child {
@@ -993,9 +993,10 @@ footer {
 
 .footer-info p {
     color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-top: 1rem;
-    max-width: 300px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    margin-top: 0.6rem;
+    max-width: 280px;
 }
 
 .footer-links-col {
@@ -1004,20 +1005,26 @@ footer {
 
 .footer-links-col h4 {
     color: var(--bg-primary);
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-links-col p {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.35rem !important;
 }
 
 .footer-links {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.4rem;
 }
 
 .footer-links a {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .footer-links a:hover {
@@ -1029,8 +1036,8 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     border: 1px solid #333;
     color: var(--text-muted);
@@ -1042,20 +1049,20 @@ footer {
     color: var(--accent-black);
     background-color: var(--bg-primary);
     border-color: var(--bg-primary);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 }
 
 .footer-bottom {
     border-top: 1px solid #222;
-    padding-top: 2rem;
+    padding-top: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1120px;
     width: 100%;
     margin: 0 auto;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 
@@ -6208,7 +6215,7 @@ img {
 .calix-home-workflow {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.90) 100%), url('images/calix_pls_diagnostics.webp') no-repeat center center;
     background-size: cover;
-    padding: 6rem 2rem;
+    padding: 3.25rem 1.5rem;
     border-bottom: 1px solid var(--border-color);
     position: relative;
 }
@@ -6216,72 +6223,72 @@ img {
 .calix-steps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
+    gap: 1.25rem;
+    max-width: 980px;
     margin: 0 auto;
     position: relative;
 }
 
-.calix-step-card {
+.calix-steps-grid .calix-step-card {
     background: #111420; /* Opaque solid background so inside of box is not affected by image */
     border: 1px solid rgba(212, 175, 55, 0.25);
     border-top: 3px solid rgba(212, 175, 55, 0.2);
     border-radius: 12px;
-    padding: 3rem 2.25rem;
+    padding: 1.5rem 1.25rem;
     text-align: center;
     position: relative;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-.calix-step-card:hover {
-    transform: translateY(-6px);
+.calix-steps-grid .calix-step-card:hover {
+    transform: translateY(-4px);
     border-color: rgba(212, 175, 55, 0.35);
     border-top-color: rgba(212, 175, 55, 1);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35), 0 0 25px rgba(212, 175, 55, 0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(212, 175, 55, 0.08);
 }
 
 .calix-step-num {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     background: rgba(212, 175, 55, 0.08);
     border: 1.5px solid rgba(212, 175, 55, 0.3);
     color: #d4af37;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 800;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem auto;
-    transition: all 0.4s ease;
+    margin: 0 auto 0.75rem auto;
+    transition: all 0.35s ease;
 }
 
 .calix-step-card:hover .calix-step-num {
     background: #d4af37;
     color: #12141d;
-    transform: scale(1.08);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
 }
 
-.calix-step-card h3 {
-    font-size: 1.25rem;
+.calix-steps-grid .calix-step-card h3 {
+    font-size: 1.15rem;
     color: #ffffff;
     margin-top: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     font-family: var(--font-title);
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
-.calix-step-card:hover h3 {
+.calix-steps-grid .calix-step-card:hover h3 {
     color: #d4af37;
 }
 
-.calix-step-card p {
-    font-size: 0.88rem;
-    color: #ffffff;
-    line-height: 1.6;
+.calix-steps-grid .calix-step-card p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.55;
     margin: 0;
 }
 
@@ -6669,4 +6676,319 @@ img {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS OVERRIDES & OPTIMIZATIONS
+   ========================================================================== */
+
+/* Global Responsive Media & Container Defaults */
+img, video, canvas, iframe, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    /* FAQ Page 2-Column Sidebar Layout Fix */
+    .faq-layout {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    .faq-sidebar {
+        position: static !important;
+        width: 100% !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Footer Grid Layout on Tablets */
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        text-align: center !important;
+    }
+    .footer-logo-center {
+        grid-column: span 1 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header Logo Sizing on Mobile */
+    header .logo img,
+    header img[style*="height: 108px"],
+    header img[style*="height:108px"],
+    header img[style*="height: 108px;"],
+    .nav-container .logo img {
+        height: 50px !important;
+        width: auto !important;
+    }
+
+    .nav-container {
+        padding: 0.5rem 1rem !important;
+    }
+
+    /* Fluid Headings & Title Wrapping */
+    h1, .hero-title, .hero h1 {
+        font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.5px !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    h2, .section-title {
+        font-size: clamp(1.35rem, 5vw, 1.85rem) !important;
+        line-height: 1.25 !important;
+    }
+
+    h3, .card-title {
+        font-size: clamp(1.1rem, 4vw, 1.35rem) !important;
+    }
+
+    /* Multi-Column Grid Collapsing (Overrides Inline HTML Grid Styles) */
+    [style*="grid-template-columns: repeat(3,"],
+    [style*="grid-template-columns: repeat(4,"],
+    [style*="grid-template-columns: repeat(5,"],
+    [style*="grid-template-columns:repeat(3,"],
+    [style*="grid-template-columns:repeat(4,"],
+    [style*="grid-template-columns:repeat(5,"],
+    .why-prochem-grid,
+    .pipeline-grid,
+    .about-stats-grid,
+    .tech-workflow-grid,
+    .business-card-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.25rem !important;
+    }
+
+    /* ProChem Product Table Rows (28% 36% 36%) Mobile Layout */
+    [style*="28% 36% 36%"] {
+        grid-template-columns: 1fr !important;
+        gap: 0.5rem !important;
+        padding: 1rem !important;
+        border: 1px solid var(--border-color, #e2e8f0) !important;
+        border-radius: 8px !important;
+        margin-bottom: 0.75rem !important;
+        background: var(--bg-primary, #ffffff) !important;
+    }
+
+    /* Table Responsiveness Wrapper */
+    table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .comparison-table, .doc-table, .spec-table {
+        min-width: 500px !important;
+        width: 100% !important;
+    }
+
+    /* Container Padding on Mobile */
+    .container {
+        width: 100% !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Hero Buttons Collapsing */
+    .hero-buttons, .buttons {
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: stretch !important;
+    }
+
+    .hero-buttons .btn, .buttons .btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Single-Column Grid Collapse for Extra Small Phones */
+    [style*="grid-template-columns: repeat("],
+    [style*="grid-template-columns: 1fr 1fr"],
+    .why-prochem-grid,
+    .pipeline-grid,
+    .about-stats-grid,
+    .tech-workflow-grid,
+    .business-card-grid,
+    .hero-metrics-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    /* Floating Widgets Positioning (No Overlaps) */
+    .live-support-btn {
+        bottom: 85px !important;
+        right: 12px !important;
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .back-to-top-btn {
+        bottom: 25px !important;
+        right: 12px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .cookie-settings-btn {
+        bottom: 25px !important;
+        left: 12px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    /* Search Modal on Mobile Phones */
+    .search-inner-wrapper {
+        padding: 0.5rem 1rem !important;
+        width: 100% !important;
+    }
+}
+
+/* Calix Workflow Steps & Cards Responsiveness Fixes */
+.calix-step-card {
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+}
+.calix-step-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: var(--accent-gold) !important;
+    box-shadow: 0 12px 30px rgba(213, 178, 121, 0.15) !important;
+}
+.calix-step-card .calix-step-desc {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    margin-top: 0 !important;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, margin-top 0.3s ease !important;
+}
+.calix-step-card:hover .calix-step-desc,
+.calix-step-card.active .calix-step-desc {
+    max-height: 300px !important;
+    opacity: 1 !important;
+    margin-top: 0.65rem !important;
+}
+.calix-step-desc p {
+    font-size: 0.85rem !important;
+    line-height: 1.55 !important;
+    color: var(--text-secondary) !important;
+}
+
+@media (max-width: 768px) {
+    /* Keep 3 cards compact side-by-side on mobile without wasting vertical space */
+    .calix-workflow-container {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        gap: 0.35rem !important;
+        width: 100% !important;
+    }
+    
+    .calix-workflow-container .calix-step-card {
+        padding: 0.85rem 0.4rem !important;
+        border-radius: 12px !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+    }
+
+    .calix-step-icon {
+        width: 34px !important;
+        height: 34px !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .calix-step-icon svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .calix-step-card h3 {
+        font-size: 0.88rem !important;
+    }
+
+    .calix-step-card .calix-step-desc p {
+        font-size: 0.78rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .calix-workflow-arrow {
+        width: 12px !important;
+        padding-top: 1.5rem !important;
+    }
+
+    .calix-workflow-arrow svg {
+        width: 12px !important;
+    }
+}
+
+/* Hero Metrics Grid - Always 3 Columns Side-by-Side in 1 Row on All Devices */
+.hero-metrics-grid,
+div.hero-metrics-grid,
+[class*="hero-metrics-grid"] {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.35rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.hero-metric-card {
+    padding: 0.55rem 0.25rem !important;
+    text-align: center !important;
+    min-width: 0 !important;
+    border-radius: 10px !important;
+}
+
+.hero-metric-card > div:first-child {
+    font-size: clamp(1rem, 3.8vw, 1.35rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+}
+
+.hero-metric-card > div:last-child {
+    font-size: clamp(0.58rem, 2.1vw, 0.75rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.2px !important;
+}
+
+/* Sustainable Quality (Bento Grid) Padding & Empty Space Optimizations */
+#why-ustech {
+    padding: 3.5rem 0 !important;
+}
+
+.bento-grid {
+    gap: 1.15rem !important;
+    margin-top: 1.5rem !important;
+}
+
+.bento-card {
+    padding: 1.5rem 1.35rem !important;
+    min-height: auto !important;
+}
+
+.bento-card h3 {
+    margin-bottom: 0.4rem !important;
+    font-size: 1.25rem !important;
+}
+
+.bento-card p {
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 0 !important;
+}
+
+.bento-card-footer-viz {
+    margin-top: 1rem !important;
+    padding-top: 0.75rem !important;
+}
+
+
+
+
+
 
