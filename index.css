@@ -6987,6 +6987,158 @@ div.hero-metrics-grid,
     padding-top: 0.75rem !important;
 }
 
+/* Download Cards: Make full-width centered cards also full-width on mobile */
+@media (max-width: 768px) {
+    .grid-2 > a[style*="grid-column"] {
+        max-width: 100% !important;
+        grid-column: auto !important;
+    }
+}
+
+/* Contact Page: Headquarters Logo & Info Card Mobile Fix */
+@media (max-width: 768px) {
+    /* Shrink the HQ card logo on mobile */
+    div[style*="display: flex"][style*="gap: 2rem"][style*="justify-content: center"] > img[alt*="Logo"] {
+        height: 55px !important;
+    }
+
+    /* Reduce gap between logo and text */
+    div[style*="display: flex"][style*="gap: 2rem"][style*="justify-content: center"] {
+        gap: 1rem !important;
+    }
+
+    /* Reduce HQ card container padding on mobile */
+    div[style*="background-color: var(--bg-secondary)"][style*="padding: 3rem"] {
+        padding: 1.5rem !important;
+    }
+
+    /* Scale down company name and address text */
+    div[style*="display: flex"][style*="gap: 2rem"][style*="justify-content: center"] h4 {
+        font-size: 0.88rem !important;
+    }
+
+    div[style*="display: flex"][style*="gap: 2rem"][style*="justify-content: center"] p {
+        font-size: 0.92rem !important;
+    }
+}
+
+/* ==========================================================================
+   MOBILE FOOTER & BENTO CARDS SPACING OPTIMIZATIONS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* --- 1. Bento Cards Shrink-Wrap Height & Padding Fix --- */
+    .bento-grid {
+        gap: 1rem !important;
+        margin-top: 1.25rem !important;
+    }
+
+    .bento-card {
+        padding: 1.15rem 1.15rem !important;
+        min-height: 0 !important;
+        height: auto !important;
+        justify-content: flex-start !important;
+    }
+
+    .bento-card > div[style*="z-index: 2"] {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .bento-card h3 {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+
+    .bento-card p {
+        font-size: 0.85rem !important;
+        line-height: 1.45 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .bento-card-footer-viz {
+        margin-top: 0.65rem !important;
+        padding-top: 0.5rem !important;
+    }
+
+    /* --- 2. Footer Spacing, Word-Wrap & Social Icon Centering Fix --- */
+    footer {
+        padding: 2rem 1.25rem 1.25rem 1.25rem !important;
+    }
+
+    .footer-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.25rem !important;
+        text-align: center !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-logo-center {
+        order: -1 !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .footer-logo-center p {
+        font-size: 0.82rem !important;
+        line-height: 1.4 !important;
+        max-width: 280px !important;
+        margin-top: 0.4rem !important;
+    }
+
+    .footer-left {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        gap: 1rem !important;
+    }
+
+    .footer-links-col {
+        text-align: center !important;
+    }
+
+    .footer-links-col h4 {
+        font-size: 0.95rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .footer-links {
+        gap: 0.3rem !important;
+        align-items: center !important;
+    }
+
+    .footer-links a {
+        font-size: 0.82rem !important;
+        white-space: nowrap !important;
+    }
+
+    .footer-grid > .footer-links-col:last-child {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 0.25rem !important;
+    }
+
+    .footer-grid > .footer-links-col:last-child p {
+        font-size: 0.82rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.25rem !important;
+        text-align: center !important;
+    }
+
+    .footer-socials {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0.35rem auto 0 auto !important;
+    }
+}
+
+
+
+
 
 
 

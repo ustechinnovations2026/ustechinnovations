@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore USTECH Innovations' advanced spectroscopy solutions: robust inline FT-NIR devices and intelligent chemometrics software.">
-    <title>FT-NIR Analyzers, Software & Calibrations | USTECH</title>
-
-    <meta name="description" content="Explore USTECH's product family: ProLine inline FT-NIR analyzers, caliX chemometrics software, ProChem automation and ready-made calibration models.">
+    <meta name="description" content="USTECH StarchQC - Amperometric enzymatic measurement for bakery and mill quality control.">
+    <title>USTECH StarchQC | USTECH Innovations</title>
     <link rel="stylesheet" href="index.css?v=1.0.6">
-    <link rel="canonical" href="https://www.ustechinnovations.com/products.html" />
+    <link rel="canonical" href="https://www.ustechinnovations.com/product-starchqc.html" />
 
 
 
@@ -61,6 +59,30 @@
 
 
 
+    <!-- Product Schema: product-starchqc.html -->
+
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "StarchQC Damaged Starch Analyzer",
+  "brand": {
+    "@type": "Brand",
+    "name": "USTECH Innovations"
+  },
+  "manufacturer": {
+    "@id": "https://www.ustechinnovations.com/#org"
+  },
+  "description": "Amperometric damaged starch analyzer for flour mills. Fast, accurate measurement of starch degradation for milling optimization.",
+  "url": "https://www.ustechinnovations.com/product-starchqc.html",
+  "category": "Analytical Instruments"
+}
+
+    </script>
+
+
+
     <!-- BreadcrumbList Schema -->
 
     <script type="application/ld+json">
@@ -78,7 +100,19 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Products"
+      "name": "Products",
+      "item": "https://www.ustechinnovations.com/products.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Devices",
+      "item": "https://www.ustechinnovations.com/products-devices.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "StarchQC"
     }
   ]
 }
@@ -160,98 +194,106 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content" style="padding: 0; margin-top: 80px;">
-        <h1 class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">FT-NIR Analyzers, Software & Calibration Models</h1>
-           <div class="products-split-container">
-            
-            <!-- Column 1: Devices -->
-            <div class="product-column-panel devices" style="cursor: pointer;">
-                <a href="products-devices.html" class="panel-link-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 3;" aria-label="View Devices"></a>
-                <div class="product-column-bg"></div>
-                <div class="product-column-overlay"></div>
-                <div class="product-column-content" style="position: relative; z-index: 4; pointer-events: none;">
-                    <span class="product-column-subtitle">FT-NIR Spectrometers & Sensors</span>
-                    <h2 class="product-column-title">Devices</h2>
-                    <div class="product-column-desc">
-                        <p>Explore USTECH's advanced FT-NIR devices, designed for precise analysis, real-time monitoring and reliable quality control across laboratory and industrial applications.</p>
-                        <div style="font-size: 0.75rem; margin-top: 0.75rem; color: var(--accent-silver); text-transform: uppercase; letter-spacing: 1px;">
-                            <strong>Hardware:</strong> <a href="product-proline-2550.html" style="color: inherit; text-decoration: underline; pointer-events: auto; position: relative; z-index: 5;">ProLine2550</a>, <a href="product-proline-17es.html" style="color: inherit; text-decoration: underline; pointer-events: auto; position: relative; z-index: 5;">ProLine17ES</a>, <a href="product-masterline.html" style="color: inherit; text-decoration: underline; pointer-events: auto; position: relative; z-index: 5;">USTECH MasterLine</a>
+    <main class="main-content">
+        
+        <!-- Breadcrumb -->
+        <section style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 0.75rem 2rem;">
+            <div class="container" style="font-size: 0.85rem; color: var(--text-muted);">
+                <a href="index.html">Home</a> &gt; <a href="products-devices.html">Devices</a> &gt; USTECH StarchQC
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <div class="product-img-container">
+                        <img src="images/starch.webp?v=1.0.5" alt="USTECH StarchQC" class="product-svg-mockup" style="border-radius: 8px;" loading="lazy" decoding="async">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-grey);">Flour & Milling Quality</span>
+                        <h1 style="font-size: 2.5rem; margin-top: 0.5rem; margin-bottom: 1rem; letter-spacing: -1px;">USTECH StarchQC</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                            Rapid, amperometric enzymatic analyzer optimized for industrial bakeries and wheat flour millers. Evaluate starch granule damage caused during milling to predict dough water absorption, fermentation rates, and bread volumes.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                            <a href="#specifications" class="btn btn-primary">View Specifications</a>
+                            <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
                         </div>
                     </div>
-                    <div class="product-column-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Description & Benefits -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem;">
+                    <div>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">Master Flour Performance and Consistency</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                            Starch damage directly impacts the bread-making quality of wheat flour. Milled grains with high starch damage absorb significantly more water, but too much damage leads to sticky doughs, poor gas retention, and low-volume loaves. The USTECH StarchQC utilizes an advanced amperometric enzymatic sensor to measure the precise level of damaged starch grains in milled wheat flour.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            Designed for high-throughput laboratory and at-line milling quality control, it provides millers with feedback within 60 seconds. Operators load a small 1 gram sample of flour, run the automated protocol, and obtain high-precision metrics that correlate directly with standardized chemical assays, avoiding lengthy wet chemistry waiting times.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">Key Value Drivers</h2>
+                        <ul style="list-style: none; padding-left: 0; display: grid; gap: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                            <li>? <strong>Water Absorption Control:</strong> Predict exact water absorption capacity before flour enters industrial mixers.</li>
+                            <li>? <strong>Dough proofing optimization:</strong> Improve yeast gas production and dough stickiness parameters during fermentation.</li>
+                            <li>? <strong>Milling Diagnostics:</strong> Check roll wear and pressure alignment in mills by monitoring real-time starch damage index.</li>
+                            <li>? <strong>Rapid & Clean Assay:</strong> No hazardous chemical cleanup required. One-button calibration checks make maintenance effortless.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Column 2: Software -->
-            <div class="product-column-panel software" style="cursor: pointer;">
-                <a href="products-software.html" class="panel-link-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 3;" aria-label="View Software"></a>
-                <div class="product-column-bg"></div>
-                <div class="product-column-overlay"></div>
-                <div class="product-column-content" style="position: relative; z-index: 4; pointer-events: none;">
-                    <span class="product-column-subtitle">Chemometrics & Process Automation</span>
-                    <h2 class="product-column-title">Software</h2>
-                    <div class="product-column-desc">
-                        <p>Discover USTECH's intelligent software ecosystem, designed to simplify FT-NIR data management, enhance analysis performance and support data-driven decisions.</p>
-                        <div style="font-size: 0.75rem; margin-top: 0.75rem; color: var(--accent-silver); text-transform: uppercase; letter-spacing: 1px;">
-                            <strong>Software:</strong> cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, ProChem Desktop, ProChem Viewer, Solo
-                        </div>
-                    </div>
-                    <div class="product-column-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </div>
+        <!-- Technical Specifications Table -->
+        <section id="specifications" class="section">
+            <div class="container">
+                <span class="section-subtitle">Technical Data</span>
+                <h2 style="font-size: 2rem; margin-bottom: 2rem; letter-spacing: -0.5px;">Specifications</h2>
+                
+                <div style="max-width: 800px;">
+                    <ul class="product-specs" style="margin-top: 0;">
+                        <li><span>Methodology</span> <span>Amperometric enzymatic detection / calibration model</span></li>
+                        <li><span>Target Analytes</span> <span>Damaged starch content (%)</span></li>
+                        <li><span>Analysis Time</span> <span>&lt; 60 seconds</span></li>
+                        <li><span>Sample Requirements</span> <span>1.0 gram of flour</span></li>
+                        <li><span>Temperature Control</span> <span>Automatic built-in tempering block</span></li>
+                        <li><span>Calibration Database</span> <span>Pre-calibrated database for wheat flour (adaptable for other grains)</span></li>
+                        <li><span>User Interface</span> <span>Integrated touchscreen display with built-in printer option</span></li>
+                        <li><span>Connectivity</span> <span>USB, Ethernet, LIMS export compatible</span></li>
+                        <li><span>Power Requirements</span> <span>100-240 V AC, 50/60 Hz</span></li>
+                        <li><span>Dimensions &amp; Weight</span> <span>300 x 280 x 350 mm | 10 kg</span></li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-            <!-- Column 3: Portal -->
-            <div class="product-column-panel portal" style="cursor: pointer;">
-                <a href="products-portal.html" class="panel-link-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 3;" aria-label="View Portal"></a>
-                <div class="product-column-bg"></div>
-                <div class="product-column-overlay"></div>
-                <div class="product-column-content" style="position: relative; z-index: 4; pointer-events: none;">
-                    <span class="product-column-subtitle">Cloud Platform</span>
-                    <h2 class="product-column-title">Portal</h2>
-                    <div class="product-column-desc">
-                        <p>Remote device monitoring, calibration management, and data analytics — all from a single unified cloud dashboard accessible anywhere.</p>
-                    </div>
-                    <div class="product-column-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </div>
+        <!-- Product Action Section -->
+        <section class="section bg-light" style="border-top: 1px solid var(--border-color); padding: 4rem 2rem; text-align: center;">
+            <div class="container" style="max-width: 800px; margin: 0 auto;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: bold; color: var(--accent-grey); letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">Next Steps</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem; letter-spacing: -0.7px;">Accelerate Your Quality Workflows</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2.5rem; line-height: 1.6;">
+                    Discover how our spectroscopic technology fits your process. Choose an option below to download documentation, request a sample demo, or consult with our automation team.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+                    <a href="https://files.cdn-files-a.com/uploads/2258173/normal_5f8832671e148.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        Download Product Brochure
+                    </a>
+                    <a href="contact.html?intent=demo" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        Request Sample Analysis / Demo
+                    </a>
                 </div>
             </div>
-
-            <!-- Column 4: Calibration Models -->
-            <div class="product-column-panel calibration" style="cursor: pointer;">
-                <a href="products-calibration-models.html" class="panel-link-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 3;" aria-label="View Calibration Models"></a>
-                <div class="product-column-bg"></div>
-                <div class="product-column-overlay"></div>
-                <div class="product-column-content" style="position: relative; z-index: 4; pointer-events: none;">
-                    <span class="product-column-subtitle">Analytical Models</span>
-                    <h2 class="product-column-title">Calibration Models</h2>
-                    <div class="product-column-desc">
-                        <p>Pre-built and custom PLS calibration models for NIR spectroscopy, ready to deploy across food, feed, dairy, and chemical applications.</p>
-                    </div>
-                    <div class="product-column-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </section>
 
     </main>
 
@@ -310,4 +352,8 @@
     <script src="app.js?v=1.0.2"></script>
 </body>
 </html>
+
+
+
+
 
