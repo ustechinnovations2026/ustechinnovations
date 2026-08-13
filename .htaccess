@@ -15,3 +15,10 @@ Redirect 301 /technology https://www.ustechinnovations.com/knowledge-technology
 Redirect 301 /technology.html https://www.ustechinnovations.com/knowledge-technology
 Redirect 301 /our-technology https://www.ustechinnovations.com/knowledge-technology
 Redirect 301 /our-technology.html https://www.ustechinnovations.com/knowledge-technology
+
+# 301 Redirects: Old product URLs to new product URLs
+Redirect 301 /product-n-sens-feed.html /product-masterline.html
+Redirect 301 /product-n-sens-online.html /product-proline-17es.html
+Redirect 301 /product-n-sens-sampleprep.html /product-sampleprep.html
+Redirect 301 /product-n-sens-tornado.html /product-tornado.html
+Redirect 301 /product-i-sens-starch.html /product-starchqc.html
