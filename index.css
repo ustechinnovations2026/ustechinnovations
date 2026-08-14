@@ -916,19 +916,33 @@ input[type="range"] {
     font-weight: 600;
 }
 
-.form-input {
+.form-input,
+.form-textarea,
+textarea.form-input {
     padding: 0.8rem 1rem;
     border: 1px solid var(--accent-silver);
     border-radius: 6px;
     background-color: var(--bg-primary);
     font-family: var(--font-sans);
     font-size: 1rem;
+    color: var(--text-primary);
     transition: var(--transition-fast);
+    width: 100%;
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-textarea:focus,
+textarea.form-input:focus {
     outline: none;
     border-color: var(--accent-black);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-textarea,
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
 }
 
 /* Footer */

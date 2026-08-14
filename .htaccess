@@ -22,3 +22,34 @@ Redirect 301 /product-n-sens-online.html /product-proline-17es.html
 Redirect 301 /product-n-sens-sampleprep.html /product-sampleprep.html
 Redirect 301 /product-n-sens-tornado.html /product-tornado.html
 Redirect 301 /product-i-sens-starch.html /product-starchqc.html
+
+# =====================================================================
+# MULTILINGUAL SUPPORT — Browser Language Auto-Detection
+# Redirects first-time visitors to their browser language subdirectory.
+# Only applies to root homepage requests (not direct page visits).
+# Uses 302 (Temporary) to allow Google to index all versions equally.
+# =====================================================================
+
+# Turkish browser → /tr/
+RewriteCond %{HTTP:Accept-Language} ^tr [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP_COOKIE} !ustech-lang [NC]
+RewriteRule ^$ /tr/ [R=302,L]
+
+# French browser → /fr/
+RewriteCond %{HTTP:Accept-Language} ^fr [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP_COOKIE} !ustech-lang [NC]
+RewriteRule ^$ /fr/ [R=302,L]
+
+# German browser → /de/
+RewriteCond %{HTTP:Accept-Language} ^de [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP_COOKIE} !ustech-lang [NC]
+RewriteRule ^$ /de/ [R=302,L]
+
+# Spanish browser → /es/
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP_COOKIE} !ustech-lang [NC]
+RewriteRule ^$ /es/ [R=302,L]

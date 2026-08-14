@@ -91,13 +91,7 @@ try {
             }
         }
 
-        // 8. Hide Language Switcher dropdown
-        document.querySelectorAll('.lang-toggle').forEach(function(toggle) {
-            var parentLi = toggle.closest('li');
-            if (parentLi) {
-                parentLi.style.display = 'none';
-            }
-        });
+        // 8. Language Switcher — now visible (subdirectory-based i18n)
 
         // 9. Hide Blogs section globally (dropdown menu, homepage slider, split panel)
         document.querySelectorAll('a[href="knowledge-blogs.html"]').forEach(function(el) {
@@ -119,98 +113,121 @@ try {
     });
 })();
 
-// Dynamic translation function that triggers Google Translate programmatically
-function translatePageTo(lang) {
-    var select = document.querySelector('select.goog-te-combo');
-    if (select) {
-        select.value = lang;
-        var event = new Event('change', { bubbles: true });
-        select.dispatchEvent(event);
+// =====================================================================
+// LANGUAGE SWITCHER — Robust Relative Path & Subdirectory i18n
+// Works identically on file:// (local test), localhost, and production.
+// =====================================================================
+
+var SUPPORTED_LANGS = ['en', 'tr', 'fr', 'de', 'es'];
+
+// Detect current language from pathname (supports file:// and http/https://)
+function detectCurrentLang() {
+    var path = (window.location.pathname || '').replace(/\\/g, '/');
+    var match = path.match(/\/(tr|fr|de|es)(\/|$)/i);
+    return match ? match[1].toLowerCase() : 'en';
+}
+
+// Detect current page filename
+function detectCurrentPage() {
+    var path = (window.location.pathname || '').replace(/\\/g, '/');
+    var filename = path.split('/').pop();
+    if (!filename || filename === '' || filename.indexOf('.html') === -1) {
+        filename = 'index.html';
+    }
+    return filename;
+}
+
+// Build relative URL for any target language
+function getLangUrl(targetLang) {
+    var currentPage = detectCurrentPage();
+    var currentLang = detectCurrentLang();
+    
+    // Target is same as current language
+    if (targetLang === currentLang) {
+        return currentPage;
+    }
+    
+    // Currently in English root
+    if (currentLang === 'en') {
+        if (targetLang === 'en') {
+            return currentPage;
+        } else {
+            return targetLang + '/' + currentPage;
+        }
+    }
+    
+    // Currently in a language subfolder (tr, fr, de, es)
+    if (targetLang === 'en') {
+        return '../' + currentPage;
     } else {
-        // If Google Translate dropdown is not ready, wait and try again
-        setTimeout(function() {
-            translatePageTo(lang);
-        }, 150);
+        return '../' + targetLang + '/' + currentPage;
     }
 }
 
-// Language Switcher — updates flag icons and triggers dynamic translation
+// Language switcher click handler
 function selectLang(el) {
     var lang = el.getAttribute('data-lang');
-    var svg = el.querySelector('svg');
-    if (!svg) return;
-    var clone = svg.cloneNode(true);
-    clone.setAttribute('width', '100%');
-    clone.setAttribute('height', '100%');
-    clone.setAttribute('preserveAspectRatio', 'xMidYMid slice');
-    clone.removeAttribute('style');
-    document.querySelectorAll('.lang-flag-circle').forEach(function(circle) {
-        circle.setAttribute('data-lang', lang);
-        circle.innerHTML = '';
-        circle.appendChild(clone.cloneNode(true));
-    });
-
-    localStorage.setItem('ustech-lang', lang);
-
-    // Update dynamic hero title override to keep professional marketing slogans in all languages
-    var heroTitle = document.getElementById('hero-title');
-    if (heroTitle) {
-        if (lang === 'tr') {
-            heroTitle.textContent = 'Proses Belirsizliğini Gerçek Zamanlı Kalite Kontrole Dönüştürün';
-        } else if (lang === 'es') {
-            heroTitle.textContent = 'Transforme la Incertidumbre del Proceso en Control de Calidad en Tiempo Real';
-        } else if (lang === 'de') {
-            heroTitle.textContent = 'Verwandeln Sie Prozessunsicherheit in Qualitätskontrolle in Echtzeit';
-        } else {
-            heroTitle.textContent = 'Transform Process Uncertainty into Real-Time Quality Control';
-        }
-    }
-
-    translatePageTo(lang);
+    if (!lang) return;
+    try {
+        localStorage.setItem('ustech-lang', lang);
+    } catch(e) {}
+    var url = getLangUrl(lang);
+    window.location.href = url;
 }
 
-// Restore saved language and initialize Google Translate client on all page loads
+// On page load: update the flag circle and ensure option hrefs are correct
 (function() {
-    // Add style rules to hide Google Translate banner and UI artifacts
-    var style = document.createElement('style');
-    style.innerHTML = `
-        body { top: 0 !important; }
-        .goog-te-banner-frame, .goog-te-banner, .skiptranslate, #goog-gt-tt { display: none !important; }
-        .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
-    `;
-    document.head.appendChild(style);
-
-    // Set up Google Translate init function
-    window.googleTranslateElementInit = function() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,tr,de,es',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-        }, 'google_translate_element');
-    };
-
-    // Dynamically load Google Translate API script
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    document.head.appendChild(script);
-
-    // Create target container for Translate API if not present
     document.addEventListener('DOMContentLoaded', function() {
-        if (!document.getElementById('google_translate_element')) {
-            var el = document.createElement('div');
-            el.id = 'google_translate_element';
-            el.style.display = 'none';
-            document.body.appendChild(el);
+        var currentLang = detectCurrentLang();
+        var currentPage = detectCurrentPage();
+        
+        // Update the flag circle to show current language flag
+        var currentOption = document.querySelector('.lang-option[data-lang="' + currentLang + '"]');
+        if (currentOption) {
+            var svg = currentOption.querySelector('svg');
+            if (svg) {
+                var clone = svg.cloneNode(true);
+                clone.setAttribute('width', '100%');
+                clone.setAttribute('height', '100%');
+                clone.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+                clone.removeAttribute('style');
+                document.querySelectorAll('.lang-flag-circle').forEach(function(circle) {
+                    circle.setAttribute('data-lang', currentLang);
+                    circle.innerHTML = '';
+                    circle.appendChild(clone.cloneNode(true));
+                });
+            }
         }
-
-        // Apply saved language after loading
-        var saved = localStorage.getItem('ustech-lang');
-        if (saved) {
-            var option = document.querySelector('.lang-option[data-lang="' + saved + '"]');
-            if (option) {
-                selectLang(option);
+        
+        // Set dynamic relative hrefs on all language options
+        document.querySelectorAll('.lang-option').forEach(function(opt) {
+            var lang = opt.getAttribute('data-lang');
+            if (lang) {
+                var targetUrl = getLangUrl(lang);
+                opt.setAttribute('href', targetUrl);
+                opt.addEventListener('click', function(e) {
+                    try {
+                        localStorage.setItem('ustech-lang', lang);
+                    } catch(err) {}
+                });
+            }
+        });
+        
+        // Auto-detect browser language on first visit (only on live web server, not file://)
+        if (window.location.protocol.indexOf('http') === 0) {
+            var savedLang = null;
+            try {
+                savedLang = localStorage.getItem('ustech-lang');
+            } catch(e) {}
+            
+            if (!savedLang && currentLang === 'en' && currentPage === 'index.html') {
+                var browserLang = (navigator.language || navigator.userLanguage || 'en').substring(0, 2).toLowerCase();
+                if (SUPPORTED_LANGS.indexOf(browserLang) !== -1 && browserLang !== 'en') {
+                    try {
+                        localStorage.setItem('ustech-lang', browserLang);
+                    } catch(e) {}
+                    window.location.href = getLangUrl(browserLang);
+                }
             }
         }
     });
