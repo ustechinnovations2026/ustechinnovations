@@ -353,8 +353,9 @@ header.scrolled .logo img {
 
 /* Sections Styling */
 .section-header {
-    max-width: 650px;
-    margin-bottom: 4rem;
+    max-width: 850px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
 }
 
 .section-subtitle {

@@ -7,14 +7,13 @@
 
 ## Products
 - [ProLine2550](https://www.ustechinnovations.com/product-proline-2550.html): Inline FT-NIR process analyzer, IP69K, OPC UA/Profinet
-- [ProLine17ES](https://www.ustechinnovations.com/product-proline.html): Compact inline FT-NIR analyzer
+- [ProLine17ES](https://www.ustechinnovations.com/product-proline-17es.html): Compact inline FT-NIR analyzer
 - [caliX](https://www.ustechinnovations.com/product-calix.html): AutoML chemometrics and calibration software
 - [ProChem](https://www.ustechinnovations.com/product-prochem.html): Real-time PAT and closed-loop control platform
-- [N-Sens Online](https://www.ustechinnovations.com/product-n-sens-online.html): Compact online NIR sensor
-- [N-Sens Feed](https://www.ustechinnovations.com/product-n-sens-feed.html): At-line feed analyzer
+- [MasterLine](https://www.ustechinnovations.com/product-masterline.html): At-line benchtop FT-NIR analyzer for grains, feed and forage
+- [Tornado+](https://www.ustechinnovations.com/product-tornado.html): Water-cooled sample mill
 - [StarchQC](https://www.ustechinnovations.com/product-i-sens-starch.html): Damaged starch analyzer
 - [SamplePrep](https://www.ustechinnovations.com/product-n-sens-sampleprep.html): Sample preparation station
-- [Tornado+](https://www.ustechinnovations.com/product-n-sens-tornado.html): Water-cooled sample mill
 
 ## Industries
 - [Food & Feed](https://www.ustechinnovations.com/industry-food-feed.html): Inline NIR for feed mills and food processing
@@ -25,6 +24,15 @@
 - [Technology](https://www.ustechinnovations.com/knowledge-technology.html): How FT-NIR spectroscopy and calibration science work
 - [FAQ](https://www.ustechinnovations.com/faq.html): 30 technical answers
 - [Blog](https://www.ustechinnovations.com/knowledge-blogs.html): 52 articles and whitepapers on NIR, PLS and process control
+
+## Languages
+English is the source language at the domain root. Translated versions of the
+25 main pages live under language subdirectories, linked via hreflang:
+- Turkish: https://www.ustechinnovations.com/tr/
+- French: https://www.ustechinnovations.com/fr/
+- German: https://www.ustechinnovations.com/de/
+- Spanish: https://www.ustechinnovations.com/es/
+Blog articles are currently available in English only.
 
 ## Contact
 - Email: info@ustechinnovations.com | Phone: +1 307 527 0072
