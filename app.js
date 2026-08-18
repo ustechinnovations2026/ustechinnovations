@@ -120,6 +120,589 @@ try {
 
 var SUPPORTED_LANGS = ['en', 'tr', 'fr', 'de', 'es'];
 
+// =====================================================================
+// UI I18N (USTECH_UI_I18N_v1) -- app.js tek dosya 5 dile servis edilir; icindeki
+// sabit metinler bu sozlukten gelir. Sayfa dili <html lang> / URL'den.
+// (18.08.2026 denetimi O2/Y3/Y4. Uretici/yama: i18n/duzelt_faz2_appjs.py)
+// =====================================================================
+var UI_I18N = {
+  en: {
+    search_ph: 'Search pages, products, blogs...', search_ph_short: 'Search website...',
+    close_search: 'Close Search', popular: 'Popular Searches', popular_badge: 'Popular',
+    suggested_for: 'Suggested Results for', suggested_badge: 'Suggested',
+    no_suggestions: 'No suggestions found for', no_results: 'No results found matching your query.',
+    cat_Products: 'Products', cat_Industries: 'Industries', cat_Knowledge: 'Knowledge', cat_General: 'General',
+    cookie_settings: 'Cookie Settings', cookie_title: 'Cookie Preferences',
+    cookie_text: 'We use cookies to optimize your experience, analyze site usage, and support our marketing efforts. Customize your settings below.',
+    cookie_ess: 'Essential Cookies', cookie_ess_d: 'Necessary for the website to function properly. Cannot be disabled.',
+    cookie_ana: 'Analytical Cookies', cookie_ana_d: 'Help us measure traffic and analyze user behavior to improve site features.',
+    cookie_mkt: 'Marketing Cookies', cookie_mkt_d: 'Used to deliver targeted content and monitor advertising performance.',
+    cookie_save: 'Save Settings', cookie_accept: 'Accept All', back_top: 'Back to Top',
+    spec_tab: 'Talk to a Specialist', spec_close: 'Close',
+    spec_text: 'Our NIR spectroscopy experts are ready to help you find the right solution for your process. Reach out through any channel below.',
+    spec_call: 'Call Us', spec_email: 'Email', spec_cta: 'Request a Consultation'
+  },
+  tr: {
+    search_ph: 'Sayfa, ürün, blog ara...', search_ph_short: 'Sitede ara...',
+    close_search: 'Aramayı kapat', popular: 'Popüler Aramalar', popular_badge: 'Popüler',
+    suggested_for: 'Önerilen sonuçlar:', suggested_badge: 'Önerilen',
+    no_suggestions: 'Öneri bulunamadı:', no_results: 'Aramanızla eşleşen sonuç bulunamadı.',
+    cat_Products: 'Ürünler', cat_Industries: 'Sektörler', cat_Knowledge: 'Bilgi Bankası', cat_General: 'Genel',
+    cookie_settings: 'Çerez Ayarları', cookie_title: 'Çerez Tercihleri',
+    cookie_text: 'Deneyiminizi iyileştirmek, site kullanımını analiz etmek ve pazarlama çalışmalarımızı desteklemek için çerezler kullanıyoruz. Tercihlerinizi aşağıdan belirleyin.',
+    cookie_ess: 'Zorunlu Çerezler', cookie_ess_d: 'Sitenin düzgün çalışması için gereklidir. Kapatılamaz.',
+    cookie_ana: 'Analitik Çerezler', cookie_ana_d: 'Trafiği ölçmemize ve site özelliklerini iyileştirmek için kullanıcı davranışını analiz etmemize yardımcı olur.',
+    cookie_mkt: 'Pazarlama Çerezleri', cookie_mkt_d: 'Hedefli içerik sunmak ve reklam performansını izlemek için kullanılır.',
+    cookie_save: 'Ayarları Kaydet', cookie_accept: 'Tümünü Kabul Et', back_top: 'Başa Dön',
+    spec_tab: 'Bir Uzmanla Görüşün', spec_close: 'Kapat',
+    spec_text: 'NIR spektroskopi uzmanlarımız prosesiniz için doğru çözümü bulmanıza yardımcı olmaya hazır. Aşağıdaki kanallardan bize ulaşın.',
+    spec_call: 'Bizi Arayın', spec_email: 'E-posta', spec_cta: 'Danışmanlık Talep Edin'
+  },
+  fr: {
+    search_ph: 'Rechercher pages, produits, blogs...', search_ph_short: 'Rechercher sur le site...',
+    close_search: 'Fermer la recherche', popular: 'Recherches populaires', popular_badge: 'Populaire',
+    suggested_for: 'Résultats suggérés pour', suggested_badge: 'Suggéré',
+    no_suggestions: 'Aucune suggestion pour', no_results: 'Aucun résultat ne correspond à votre recherche.',
+    cat_Products: 'Produits', cat_Industries: 'Secteurs', cat_Knowledge: 'Connaissances', cat_General: 'Général',
+    cookie_settings: 'Paramètres des cookies', cookie_title: 'Préférences de cookies',
+    cookie_text: "Nous utilisons des cookies pour optimiser votre expérience, analyser l'utilisation du site et soutenir nos actions marketing. Personnalisez vos paramètres ci-dessous.",
+    cookie_ess: 'Cookies essentiels', cookie_ess_d: 'Nécessaires au bon fonctionnement du site. Ne peuvent pas être désactivés.',
+    cookie_ana: 'Cookies analytiques', cookie_ana_d: "Nous aident à mesurer le trafic et à analyser le comportement des utilisateurs pour améliorer le site.",
+    cookie_mkt: 'Cookies marketing', cookie_mkt_d: 'Utilisés pour diffuser du contenu ciblé et mesurer les performances publicitaires.',
+    cookie_save: 'Enregistrer', cookie_accept: 'Tout accepter', back_top: 'Retour en haut',
+    spec_tab: 'Parler à un spécialiste', spec_close: 'Fermer',
+    spec_text: 'Nos experts en spectroscopie NIR sont prêts à vous aider à trouver la solution adaptée à votre procédé. Contactez-nous par le canal de votre choix.',
+    spec_call: 'Appelez-nous', spec_email: 'E-mail', spec_cta: 'Demander une consultation'
+  },
+  de: {
+    search_ph: 'Seiten, Produkte, Blogs durchsuchen...', search_ph_short: 'Website durchsuchen...',
+    close_search: 'Suche schließen', popular: 'Beliebte Suchanfragen', popular_badge: 'Beliebt',
+    suggested_for: 'Vorgeschlagene Ergebnisse für', suggested_badge: 'Vorschlag',
+    no_suggestions: 'Keine Vorschläge für', no_results: 'Keine Ergebnisse für Ihre Suche gefunden.',
+    cat_Products: 'Produkte', cat_Industries: 'Branchen', cat_Knowledge: 'Wissen', cat_General: 'Allgemein',
+    cookie_settings: 'Cookie-Einstellungen', cookie_title: 'Cookie-Einstellungen',
+    cookie_text: 'Wir verwenden Cookies, um Ihr Erlebnis zu optimieren, die Nutzung der Website zu analysieren und unser Marketing zu unterstützen. Passen Sie Ihre Einstellungen unten an.',
+    cookie_ess: 'Notwendige Cookies', cookie_ess_d: 'Für die Funktion der Website erforderlich. Können nicht deaktiviert werden.',
+    cookie_ana: 'Analyse-Cookies', cookie_ana_d: 'Helfen uns, den Traffic zu messen und das Nutzerverhalten zu analysieren, um die Website zu verbessern.',
+    cookie_mkt: 'Marketing-Cookies', cookie_mkt_d: 'Dienen der Bereitstellung zielgerichteter Inhalte und der Messung der Werbeleistung.',
+    cookie_save: 'Einstellungen speichern', cookie_accept: 'Alle akzeptieren', back_top: 'Nach oben',
+    spec_tab: 'Mit einem Experten sprechen', spec_close: 'Schließen',
+    spec_text: 'Unsere NIR-Spektroskopie-Experten helfen Ihnen gern, die passende Lösung für Ihren Prozess zu finden. Kontaktieren Sie uns über einen der folgenden Kanäle.',
+    spec_call: 'Rufen Sie uns an', spec_email: 'E-Mail', spec_cta: 'Beratung anfordern'
+  },
+  es: {
+    search_ph: 'Buscar páginas, productos, blogs...', search_ph_short: 'Buscar en el sitio...',
+    close_search: 'Cerrar búsqueda', popular: 'Búsquedas populares', popular_badge: 'Popular',
+    suggested_for: 'Resultados sugeridos para', suggested_badge: 'Sugerido',
+    no_suggestions: 'No hay sugerencias para', no_results: 'No se encontraron resultados para su búsqueda.',
+    cat_Products: 'Productos', cat_Industries: 'Sectores', cat_Knowledge: 'Conocimiento', cat_General: 'General',
+    cookie_settings: 'Configuración de cookies', cookie_title: 'Preferencias de cookies',
+    cookie_text: 'Utilizamos cookies para optimizar su experiencia, analizar el uso del sitio y apoyar nuestras acciones de marketing. Personalice su configuración a continuación.',
+    cookie_ess: 'Cookies esenciales', cookie_ess_d: 'Necesarias para el funcionamiento del sitio. No se pueden desactivar.',
+    cookie_ana: 'Cookies analíticas', cookie_ana_d: 'Nos ayudan a medir el tráfico y analizar el comportamiento de los usuarios para mejorar el sitio.',
+    cookie_mkt: 'Cookies de marketing', cookie_mkt_d: 'Se utilizan para ofrecer contenido dirigido y medir el rendimiento publicitario.',
+    cookie_save: 'Guardar configuración', cookie_accept: 'Aceptar todo', back_top: 'Volver arriba',
+    spec_tab: 'Hable con un especialista', spec_close: 'Cerrar',
+    spec_text: 'Nuestros expertos en espectroscopía NIR están listos para ayudarle a encontrar la solución adecuada para su proceso. Contáctenos por cualquiera de estos canales.',
+    spec_call: 'Llámenos', spec_email: 'Correo', spec_cta: 'Solicitar consulta'
+  }
+};
+function ui(key) {
+    var lang = (typeof detectCurrentLang === 'function') ? detectCurrentLang() : 'en';
+    var d = UI_I18N[lang] || UI_I18N.en;
+    return (d[key] !== undefined) ? d[key] : (UI_I18N.en[key] !== undefined ? UI_I18N.en[key] : key);
+}
+// Aksan / Turkce harf katlamali kucuk harf: "İlaç"->"ilac", "gıda"->"gida", "étalonnage"->"etalonnage"
+function fold(str) {
+    return String(str || '').replace(/<[^>]+>/g, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/ı/g, 'i').replace(/I/g, 'i').toLowerCase();
+}
+
+// Dil klasorlerinde (tr/ fr/ de/ es/) karsiligi OLAN sayfalar. Bunlarin disindaki
+// hedefler (bloglar, eski urun URL'leri, dogrulama dosyalari) yalnizca kokte var.
+// StarchQC/SamplePrep yayinlanirsa buraya eklenmeli (product-starchqc.html, product-sampleprep.html).
+var TRANSLATED_PAGES = {};
+['index.html','about.html','contact.html','faq.html','privacy-policy.html','terms-of-service.html',
+ 'industries.html','industry-dairy.html','industry-food-feed.html','industry-chemical-pharma.html',
+ 'products.html','products-devices.html','products-software.html','products-portal.html',
+ 'products-calibration-models.html','product-calix.html','product-masterline.html','product-prochem.html',
+ 'product-proline.html','product-proline-17es.html','product-proline-2550.html','product-tornado.html',
+ 'knowledge.html','knowledge-technology.html','knowledge-blogs.html'
+].forEach(function(p) { TRANSLATED_PAGES[p] = true; });
+
+// Eski URL -> guncel sayfa (eski .htaccess yonlendirmeleri; GitHub Pages .htaccess okumaz)
+var LEGACY_PAGE_MAP = {
+    'product-n-sens-feed.html': 'product-masterline.html',
+    'product-n-sens-online.html': 'product-proline-17es.html',
+    'product-n-sens-tornado.html': 'product-tornado.html',
+    'product-n-sens-sampleprep.html': 'products-devices.html',   // SamplePrep bekletiliyor
+    'product-i-sens-starch.html': 'products-devices.html',        // StarchQC bekletiliyor
+    'about-us.html': 'about.html',
+    'technology.html': 'knowledge-technology.html',
+    'our-technology.html': 'knowledge-technology.html'
+};
+
+// Sayfa ici goreli bir hedefi (searchDb, oneriler) mevcut sayfanin diline gore cozer:
+// dil sayfasinda cevirisi olmayan hedef koke ("../") gider.
+function resolveSiteUrl(url) {
+    if (!url || /^(https?:|mailto:|tel:|#|\/)/.test(url)) return url;
+    var base = url.split('#')[0].split('?')[0];
+    if (detectCurrentLang() !== 'en' && !TRANSLATED_PAGES[base]) return '../' + url;
+    return url;
+}
+// SEARCH_I18N: arama_dizini_uret.py doldurur (sayfa -> dil -> {t: baslik, s: aciklama, k: anahtar})
+/* SEARCH_I18N_BEGIN */
+// Uretici: i18n/arama_dizini_uret.py -- ELLE DUZENLEME, ceviri JSON'larini duzelt.
+var SEARCH_I18N = {
+ "about.html": {
+  "de": {
+   "k": "über uns unternehmen team",
+   "s": "Das Team hinter USTECH: Chemometriker und Automatisierer, die seit 2023 FT-NIR-Analysatoren, caliX-Software und portable Kalibrierungen entwickeln.",
+   "t": "Über USTECH Innovations: FT-NIR- und Chemometrie-Experten"
+  },
+  "es": {
+   "k": "sobre nosotros empresa equipo",
+   "s": "El equipo de USTECH: quimiometristas e ingenieros de automatización que desarrollan analizadores FT-NIR, software caliX y calibraciones portátiles desde 2023.",
+   "t": "Acerca de USTECH Innovations: FT-NIR y expertos en quimiometría"
+  },
+  "fr": {
+   "k": "à propos entreprise équipe",
+   "s": "L'équipe USTECH : chimiométriciens et automaticiens développant depuis 2023 des analyseurs FT-NIR, le logiciel caliX et des étalonnages portables.",
+   "t": "À propos de USTECH Innovations : FT-NIR et experts en chimiométrie"
+  },
+  "tr": {
+   "k": "hakkımızda hakkinda şirket ekip misyon",
+   "s": "USTECH'in arkasındaki ekip: 2023'ten bu yana FT-NIR analizörleri, caliX yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri.",
+   "t": "USTECH Innovations Hakkında: FT-NIR ve Kemometri Uzmanları"
+  }
+ },
+ "contact.html": {
+  "de": {
+   "k": "kontakt angebot preis demo support",
+   "s": "Sprechen Sie mit einem USTECH-Anwendungstechniker: Angebot, Demo oder kostenlose Musteranalyse und ROI-Rechner für Ihre jährlichen Einsparungen.",
+   "t": "Kontaktieren Sie USTECH | Fordern Sie eine Demo oder eine NIR-Probenanalyse an"
+  },
+  "es": {
+   "k": "contacto cotización precio demo soporte",
+   "s": "Hable con un ingeniero de aplicaciones USTECH: cotización, demostración o análisis de muestra gratuito y calculadora de ROI para sus ahorros anuales.",
+   "t": "Contacto USTECH | Solicite una demostración o un análisis de muestra NIR"
+  },
+  "fr": {
+   "k": "contact devis prix démo support",
+   "s": "Parlez à un ingénieur d'application USTECH : devis, démonstration ou analyse d'échantillon gratuite, et calculateur de ROI pour vos économies annuelles.",
+   "t": "Contacter USTECH | Demander une démo ou une analyse d'échantillon NIR"
+  },
+  "tr": {
+   "k": "iletişim iletisim teklif fiyat demo destek adres telefon",
+   "s": "USTECH uygulama mühendisiyle görüşün: teklif isteyin, demo veya ücretsiz numune analizi ayırtın, ROI hesaplayıcıyla yıllık tasarrufunuzu görün.",
+   "t": "USTECH İle İletişime Geçin | Demo veya NIR Numune Analizi Talep Edin"
+  }
+ },
+ "faq.html": {
+  "de": {
+   "k": "faq häufige fragen garantie wartung",
+   "s": "30 Antworten zu FT-NIR-Genauigkeit, MEMS-Spektrometern, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI – vom Anwendungsteam von USTECH.",
+   "t": "FT-NIR Spektroskopie FAQ: Geräte, Software, Modelle"
+  },
+  "es": {
+   "k": "preguntas frecuentes garantía mantenimiento",
+   "s": "30 respuestas sobre precisión FT-NIR, espectrómetros MEMS, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
+   "t": "Preguntas frecuentes sobre espectroscopía FT-NIR: dispositivos, software y modelos"
+  },
+  "fr": {
+   "k": "faq questions fréquentes garantie entretien",
+   "s": "30 réponses sur la précision FT-NIR, les spectromètres MEMS, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
+   "t": "FAQ sur la spectroscopie FT-NIR : appareils, logiciels, modèles"
+  },
+  "tr": {
+   "k": "sss sık sorulan sorular soru cevap garanti bakım",
+   "s": "USTECH uygulama ekibinden FT-NIR doğruluğu, MEMS spektrometreleri, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve ROI hakkında 30 yanıt.",
+   "t": "FT-NIR Spektroskopisi SSS: Cihazlar, Yazılım, Modeller"
+  }
+ },
+ "index.html": {
+  "de": {
+   "k": "startseite",
+   "s": "Echtzeit-Inline-FT-NIR-Analyse für Lebensmittel-, Futtermittel-, Molkerei- und Chemiebetriebe. Weniger Überdosierung, Spezifikation in jeder Charge.",
+   "t": "Inline-FT-NIR-Prozessanalysatoren und Chemometrie"
+  },
+  "es": {
+   "k": "inicio",
+   "s": "Análisis FT-NIR en línea en tiempo real para plantas de alimentos, piensos, lácteos y química. Menos exceso de dosificación y especificación en cada lote.",
+   "t": "Analizadores de procesos y quimiometría en línea FT-NIR"
+  },
+  "fr": {
+   "k": "accueil",
+   "s": "Analyse FT-NIR en ligne en temps réel pour l'agroalimentaire, l'alimentation animale, le lait et la chimie. Moins de surdosage, spécifications tenues.",
+   "t": "Analyseurs de processus et chimiométrie en ligne FT-NIR"
+  },
+  "tr": {
+   "k": "ana sayfa anasayfa ustech",
+   "s": "Gıda, yem, süt ve kimya tesisleri için gerçek zamanlı hat içi FT-NIR analizi. İsrafı azaltın, her partide spesifikasyonu tutturun, döngüyü kapatın.",
+   "t": "Hat İçi FT-NIR Proses Analizörleri ve Kemometri"
+  }
+ },
+ "industries.html": {
+  "de": {
+   "k": "branchen industrien anwendungen",
+   "s": "Wie sich Inline-FT-NIR-Analyse in Lebensmittel- und Futtermittelverarbeitung, Molkerei sowie Chemie- und Pharmaproduktion auszahlt. USTECH-Lösungen.",
+   "t": "FT-NIR Lösungen nach Branche: Lebensmittel, Milchprodukte, Chemie"
+  },
+  "es": {
+   "k": "sectores industrias aplicaciones",
+   "s": "Cómo el análisis FT-NIR en línea resulta rentable en molienda, piensos, lácteos y producción química o farmacéutica. Soluciones USTECH por sector.",
+   "t": "FT-NIR Soluciones por industria: alimentaria, láctea, química"
+  },
+  "fr": {
+   "k": "secteurs industries applications",
+   "s": "Comment l'analyse FT-NIR en ligne devient rentable en meunerie, alimentation animale, produits laitiers et production chimique ou pharmaceutique.",
+   "t": "Solutions FT-NIR par secteur : alimentation, produits laitiers, produits chimiques"
+  },
+  "tr": {
+   "k": "sektörler sektor endüstri uygulama",
+   "s": "Gıda ve yem öğütme, süt işleme ve kimya veya ilaç üretiminde hat içi FT-NIR analizinin nasıl kazanç sağladığını görün. Sektöre özel USTECH çözümleri.",
+   "t": "Sektörlere Göre FT-NIR Çözümleri: Gıda, Süt, Kimya"
+  }
+ },
+ "industry-chemical-pharma.html": {
+  "de": {
+   "k": "chemie pharma polymer harz",
+   "s": "Bereit für FDA 21 CFR Part 11 FT-NIR für Pharma- und Chemieanlagen: Echtzeit-PAT für Rohstoff-ID, Mischungsgleichmäßigkeit, Trocknungsendpunkt und Reaktionen.",
+   "t": "Chemische und pharmazeutische Prozessanalytik (PAT)"
+  },
+  "es": {
+   "k": "química farmacéutica farma polímero resina",
+   "s": "FT-NIR listo para FDA 21 CFR Part 11 en plantas químicas y farmacéuticas: PAT en tiempo real para materias primas, uniformidad de mezcla y secado.",
+   "t": "Analítica de Procesos (PAT) para Química y Farma"
+  },
+  "fr": {
+   "k": "chimie pharmacie pharma polymère résine",
+   "s": "FT-NIR conforme FDA 21 CFR Part 11 pour la pharma et la chimie : identification des matières premières, uniformité de mélange, point final de séchage.",
+   "t": "Analyse des processus chimiques et pharmaceutiques (PAT)"
+  },
+  "tr": {
+   "k": "kimya ilaç ilac farma polimer reçine hidroksil karışım",
+   "s": "İlaç ve kimya tesisleri için FDA 21 CFR Part 11'e hazır FT-NIR: hammadde kimliği, karışım tekdüzeliği, kurutma uç noktası ve reaksiyon izleme.",
+   "t": "Kimya ve İlaç Proses Analitiği (PAT)"
+  }
+ },
+ "industry-dairy.html": {
+  "de": {
+   "k": "molkerei milch käse butter sahne joghurt",
+   "s": "Jeden Tankwagen bewerten, Butterfett-Überdosierung beenden und Pulverfeuchte regeln – mit CIP-fähigem Inline-FT-NIR für Molkereibetriebe.",
+   "t": "Inline-NIR für die Milchwirtschaft: Fettstandardisierung & Ausbeute"
+  },
+  "es": {
+   "k": "lácteos leche queso mantequilla crema yogur",
+   "s": "Clasifique cada cisterna, elimine el exceso de materia grasa y controle la humedad del polvo con FT-NIR en línea compatible con CIP. Descubra USTECH.",
+   "t": "NIR en Línea para Lácteos: Grasa y Rendimiento"
+  },
+  "fr": {
+   "k": "produits laitiers lait fromage beurre crème yaourt",
+   "s": "Classez chaque camion-citerne, supprimez les pertes de matière grasse et maîtrisez l'humidité des poudres avec le FT-NIR en ligne compatible CIP.",
+   "t": "NIR en ligne pour les produits laitiers : standardisation et rendement des matières grasses"
+  },
+  "tr": {
+   "k": "süt sut peynir tereyağı krema yoğurt süt tozu yağ protein",
+   "s": "Her tankeri derecelendirin, tereyağı yağı israfını bitirin ve süt tesisleri için CIP uyumlu hat içi FT-NIR ile toz nemini kontrol edin.",
+   "t": "Süt Endüstrisi için Hat İçi NIR: Yağ Standardizasyonu ve Verim"
+  }
+ },
+ "industry-food-feed.html": {
+  "de": {
+   "k": "lebensmittel futtermittel getreide mehl protein feuchte",
+   "s": "Echtzeit-NIR-Analyse von Protein, Feuchte und Fett von der Annahme bis zum Fertigfutter. Weniger Rezeptur-Überdosierung, jede Charge dokumentiert.",
+   "t": "Inline-NIR für Mischfutterwerke: Protein-Überdosierung stoppen"
+  },
+  "es": {
+   "k": "alimentos piensos granos harina proteína humedad",
+   "s": "Análisis NIR en tiempo real de proteína, humedad y grasa desde la recepción hasta el pienso terminado. Evite el exceso de formulación con USTECH.",
+   "t": "NIR en Línea para Piensos: Evite Ceder Proteína"
+  },
+  "fr": {
+   "k": "alimentation aliments animaux céréales farine protéine humidité",
+   "s": "Analyse NIR en temps réel des protéines, de l'humidité et des matières grasses, de la réception à l'aliment fini. Chaque lot documenté avec USTECH.",
+   "t": "NIR en ligne pour les usines d'aliments : stop au surdosage de protéines"
+  },
+  "tr": {
+   "k": "gıda gida yem tahıl un protein nem yağ kül lif nişasta değirmen",
+   "s": "Alımdan bitmiş yeme kadar gerçek zamanlı NIR protein, nem ve yağ analizi. Formülasyon israfını durdurun ve USTECH ile her partiyi belgeleyin.",
+   "t": "Yem Fabrikaları İçin Hat İçi NIR: Protein İsrafını Durdurun"
+  }
+ },
+ "knowledge-blogs.html": {
+  "de": {
+   "k": "blog artikel anwendungshinweise",
+   "s": "52 Artikel, Whitepaper und Leitfäden zu NIR-Kalibrierung, PLS-Modellierung, Inline-Prozesskontrolle und ROI – praxisnahe Lektüre für QC- und Prozessingenieure.",
+   "t": "NIR-Spektroskopie-Blog & Whitepaper"
+  },
+  "es": {
+   "k": "blog artículos notas de aplicación",
+   "s": "52 artículos, whitepapers y guías sobre calibración NIR, modelado PLS, control de procesos en línea y ROI: lectura práctica para ingenieros de procesos y control de calidad.",
+   "t": "Blog de Espectroscopía NIR y Artículos Técnicos"
+  },
+  "fr": {
+   "k": "blog articles notes d'application",
+   "s": "52 articles, livres blancs et guides sur l'étalonnage NIR, la modélisation PLS, le contrôle de processus en ligne et le retour sur investissement - lecture pratique pour les ingénieurs de contrôle qualité et de procédés.",
+   "t": "Blog et livres blancs sur la spectroscopie NIR"
+  },
+  "tr": {
+   "k": "blog makale uygulama notu teknik yazı",
+   "s": "Analitik cihazlar için endüstriyel kullanımlar hakkında bilgi edinin. USTECH uzmanlarından vaka çalışmaları, makaleler ve beyaz kitaplar okuyun.",
+   "t": "NIR Spektroskopisi Blogu ve Teknik İncelemeler"
+  }
+ },
+ "knowledge-technology.html": {
+  "de": {
+   "k": "technologie spektroskopie theorie",
+   "s": "FT-NIR-Spektroskopie erklärt, von Photonen bis zur Vorhersage: Messpfad, Kalibrierwissenschaft und das caliX-ProChem-Ökosystem von USTECH.",
+   "t": "NIR-Technologie & Kalibrierwissenschaft"
+  },
+  "es": {
+   "k": "tecnología espectroscopía teoría",
+   "s": "La espectroscopía FT-NIR explicada, de fotones a predicciones: trayectoria de medición, ciencia de calibración y ecosistema caliX + ProChem.",
+   "t": "Tecnología NIR y Ciencia de Calibración"
+  },
+  "fr": {
+   "k": "technologie spectroscopie théorie",
+   "s": "Le FT-NIR expliqué, des photons aux prédictions : chemin de mesure, science de l'étalonnage et écosystème caliX + ProChem, par USTECH.",
+   "t": "Technologie NIR et science de l'étalonnage"
+  },
+  "tr": {
+   "k": "teknoloji ft-nir nir spektroskopi mems teori kalibrasyon bilimi",
+   "s": "ProChem, caliX, AutoML ve MEMS FT-NIR cihazlarının üretim tesislerinde gerçek zamanlı kalite kontrolü için nasıl çalıştığını öğrenin.",
+   "t": "NIR Teknoloji ve Kalibrasyon Bilimi"
+  }
+ },
+ "knowledge.html": {
+  "de": {
+   "k": "wissen technologie leitfäden",
+   "s": "NIR-Spektroskopie von Grund auf: Technologie-Erklärungen, Kalibrierwissenschaft und technische Fachbeiträge der USTECH-Ingenieure.",
+   "t": "NIR-Wissenszentrum: Technologie & Leitfäden"
+  },
+  "es": {
+   "k": "conocimiento tecnología guías",
+   "s": "Aprenda espectroscopía NIR desde los fundamentos: explicaciones tecnológicas, ciencia de calibración y artículos técnicos de los ingenieros USTECH.",
+   "t": "Centro de Conocimiento NIR: Tecnología y Guías"
+  },
+  "fr": {
+   "k": "connaissances technologie guides",
+   "s": "Apprenez la spectroscopie NIR de A à Z : explications technologiques, science de l'étalonnage et publications techniques des ingénieurs USTECH.",
+   "t": "Centre de connaissances NIR : technologie et guides"
+  },
+  "tr": {
+   "k": "bilgi bankası bilgi teknoloji rehber",
+   "s": "NIR spektroskopisini temelden öğrenin: teknoloji açıklamaları, kalibrasyon bilimi ve USTECH mühendislerinin yazdığı teknik incelemeler.",
+   "t": "NIR Bilgi Merkezi: Teknoloji ve Kılavuzlar"
+  }
+ },
+ "product-calix.html": {
+  "de": {
+   "k": "calix kalibrierung chemometrie maschinelles lernen",
+   "s": "NIR-Kalibriermodelle in Minuten erstellen, validieren und ausrollen. caliX vereint PLS, PCA und AutoML in einem Arbeitsbereich mit acht Modulen.",
+   "t": "caliX: AutoML Chemometrie- & Kalibrierungssoftware"
+  },
+  "es": {
+   "k": "calix calibración quimiometría aprendizaje automático",
+   "s": "Cree, valide e implemente modelos de calibración NIR en minutos. caliX reúne PLS, PCA y AutoML en un espacio de trabajo de ocho módulos.",
+   "t": "caliX: Software de Quimiometría y Calibración AutoML"
+  },
+  "fr": {
+   "k": "calix étalonnage chimiométrie apprentissage automatique",
+   "s": "Créez, validez et déployez des modèles d'étalonnage NIR en quelques minutes. caliX réunit PLS, PCA et AutoML dans un espace de travail à huit modules.",
+   "t": "caliX : AutoML Logiciel de chimiométrie et d'étalonnage"
+  },
+  "tr": {
+   "k": "calix kalibrasyon modeli kemometri makine öğrenimi pls pca automl",
+   "s": "Dakikalar içinde NIR kalibrasyon modeli oluşturun ve dağıtın. caliX; PLS, PCA ve AutoML'i sekiz modüllü tek çalışma alanında birleştirir.",
+   "t": "caliX: AutoML Kemometri ve Kalibrasyon Yazılımı"
+  }
+ },
+ "product-masterline.html": {
+  "de": {
+   "k": "masterline tischgerät analysator getreide",
+   "s": "USTECH MasterLine - Tisch-FT-NIR-Analysator für die schnelle, zerstörungsfreie Qualitätskontrolle von Getreide, Futterzutaten und Raufutter.",
+   "t": "MasterLine Tisch-FT-NIR-Analysator für Getreide- und Futtermittel-QC"
+  },
+  "es": {
+   "k": "masterline sobremesa analizador granos",
+   "s": "MasterLine: analizador FT-NIR de sobremesa para control de calidad rápido y no destructivo de granos, piensos y forrajes en menos de 30 segundos.",
+   "t": "Analizador FT-NIR de Sobremesa MasterLine"
+  },
+  "fr": {
+   "k": "masterline paillasse analyseur céréales",
+   "s": "USTECH MasterLine - Analyseur de paillasse FT-NIR pour le contrôle qualité des céréales, des ingrédients alimentaires et du fourrage.",
+   "t": "Analyseur FT-NIR de paillasse MasterLine pour céréales et aliments"
+  },
+  "tr": {
+   "k": "masterline masaüstü analizör tahıl yem laboratuvar",
+   "s": "USTECH MasterLine - Tahıl, yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü FT-NIR analizörü.",
+   "t": "MasterLine Masaüstü FT-NIR Analizörü: Tahıl ve Yem Kalite Kontrolü"
+  }
+ },
+ "product-prochem.html": {
+  "de": {
+   "k": "prochem prozesssteuerung sps scada echtzeit",
+   "s": "ProChem verbindet USTECH-Analysatoren mit SPS und SCADA: Live-Dashboards, Alarme und automatische Sollwertregelung in Echtzeit.",
+   "t": "ProChem: Echtzeit-PAT & Closed-Loop-Regelung"
+  },
+  "es": {
+   "k": "prochem control de procesos plc scada tiempo real",
+   "s": "ProChem conecta los analizadores USTECH con su PLC y SCADA: paneles en vivo, alarmas y control automático de consigna en tiempo real.",
+   "t": "ProChem: PAT en Tiempo Real y Control en Circuito Cerrado"
+  },
+  "fr": {
+   "k": "prochem contrôle de processus plc scada temps réel",
+   "s": "ProChem relie les analyseurs USTECH à votre automate et SCADA : tableaux de bord, alarmes et régulation automatique des consignes en temps réel.",
+   "t": "ProChem : PAT en temps réel et contrôle en boucle fermée"
+  },
+  "tr": {
+   "k": "prochem proses kontrol plc scada gerçek zamanlı pat",
+   "s": "ProChem, USTECH analizörlerini PLC ve SCADA'ya bağlar: canlı paneller, alarmlar ve NIR sonucunu anında eyleme çeviren otomatik ayar noktası kontrolü.",
+   "t": "ProChem: Gerçek Zamanlı PAT ve Kapalı Döngü Kontrol"
+  }
+ },
+ "product-proline-17es.html": {
+  "de": {
+   "k": "proline 17es sensor förderband",
+   "s": "ProLine17ES Analysator – Industrielles Inline-Spektrometer für Prozessanalysentechnik (PAT) für Rohrleitungen und Rutschen.",
+   "t": "ProLine17ES Analysator"
+  },
+  "es": {
+   "k": "proline 17es sensor cinta transportadora",
+   "s": "Analizador ProLine17ES: espectrómetro industrial en línea de Tecnología Analítica de Procesos (PAT) para tuberías y conductos.",
+   "t": "Analizador ProLine17ES"
+  },
+  "fr": {
+   "k": "proline 17es capteur convoyeur",
+   "s": "Analyseur ProLine17ES - Spectromètre industriel de technologie d'analyse de processus en ligne (PAT) pour pipelines et goulottes.",
+   "t": "Analyseur ProLine17ES"
+  },
+  "tr": {
+   "k": "proline 17es sensör konveyör bant hat içi",
+   "s": "ProLine17ES Analizörü - Boru hatları ve oluklar için endüstriyel hat içi Proses Analitik Teknolojisi (PAT) spektrometresi.",
+   "t": "ProLine17ES Analizörü"
+  }
+ },
+ "product-proline-2550.html": {
+  "de": {
+   "k": "proline 2550 rohr reaktor flüssigkeit",
+   "s": "IP69K-Inline-FT-NIR-Analysator für Rohre, Mischer und Reaktoren. Unbegrenzte Parameter, OPC UA und PROFINET, Regelkreis über ProChem.",
+   "t": "ProLine2550 Inline-FT-NIR-Prozessanalysator"
+  },
+  "es": {
+   "k": "proline 2550 tubería reactor líquido",
+   "s": "Analizador FT-NIR en línea IP69K para tuberías, mezcladores y reactores. Parámetros ilimitados, OPC UA y PROFINET, lazo cerrado con ProChem.",
+   "t": "Analizador de Procesos FT-NIR en Línea ProLine2550"
+  },
+  "fr": {
+   "k": "proline 2550 conduite réacteur liquide",
+   "s": "Analyseur FT-NIR en ligne IP69K pour tuyauteries, mélangeurs et réacteurs. Paramètres illimités, OPC UA et PROFINET, boucle fermée via ProChem.",
+   "t": "ProLine2550 Analyseur de processus en ligne FT-NIR"
+  },
+  "tr": {
+   "k": "proline 2550 boru reaktör sıvı toz hat içi analizör",
+   "s": "Boru, karıştırıcı ve reaktörler için IP69K sınıfı hat içi FT-NIR analizörü. Sınırsız parametre, OPC UA ve PROFINET, ProChem ile kapalı döngü kontrol.",
+   "t": "ProLine2550 Hat İçi FT-NIR Proses Analizörü"
+  }
+ },
+ "product-tornado.html": {
+  "de": {
+   "k": "tornado mühle mahlen probenvorbereitung",
+   "s": "USTECH Tornado+ Hochleistungs-Labormühle – Wassergekühlte Probenaufbereitungsmühle für Getreide, Saatgut und Futtermittel.",
+   "t": "USTECH Tornado+ Labormühle"
+  },
+  "es": {
+   "k": "tornado molino molienda preparación de muestras",
+   "s": "Molino de laboratorio de alto rendimiento USTECH Tornado+: molino de preparación de muestras refrigerado por agua para granos, semillas y piensos.",
+   "t": "Molino de Laboratorio USTECH Tornado+"
+  },
+  "fr": {
+   "k": "tornado broyeur broyage préparation échantillon",
+   "s": "USTECH Tornado+ : broyeur de laboratoire haute performance refroidi à l'eau pour la préparation d'échantillons de céréales, graines et aliments du bétail.",
+   "t": "USTECH Tornado+ Broyeur de laboratoire"
+  },
+  "tr": {
+   "k": "tornado değirmen öğütme numune hazırlama su soğutmalı",
+   "s": "USTECH Tornado+ Yüksek Performanslı Laboratuvar Değirmeni - Tahıllar, tohumlar ve yemler için su soğutmalı numune hazırlama değirmeni.",
+   "t": "USTECH Tornado+ Laboratuvar Değirmeni"
+  }
+ },
+ "products-devices.html": {
+  "de": {
+   "k": "geräte analysator spektrometer sensor hardware",
+   "s": "Vergleichen Sie USTECH FT-NIR-Hardware: ProLine2550 und ProLine17ES Inline-Analysatoren, MasterLine At-Line-QC, SamplePrep und Tornado+ Probenmühlen.",
+   "t": "FT-NIR-Analysegeräte für Inline- & At-Line-QC"
+  },
+  "es": {
+   "k": "dispositivos analizador espectrómetro sensor hardware",
+   "s": "Compare el hardware FT-NIR de USTECH: analizadores en línea ProLine2550 y ProLine17ES, MasterLine at-line, SamplePrep y molinos Tornado+.",
+   "t": "Analizadores FT-NIR para Control en Línea y At-Line"
+  },
+  "fr": {
+   "k": "appareils analyseur spectromètre capteur matériel",
+   "s": "Comparez le matériel FT-NIR USTECH : analyseurs en ligne ProLine2550 et ProLine17ES, contrôle at-line MasterLine, broyeurs SamplePrep et Tornado+.",
+   "t": "Appareils d'analyse FT-NIR pour le contrôle qualité en ligne et at-line"
+  },
+  "tr": {
+   "k": "cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı",
+   "s": "USTECH FT-NIR donanımını karşılaştırın: ProLine2550 ve ProLine17ES hat içi analizörler, MasterLine hat başı QC, SamplePrep ve Tornado+ değirmenleri.",
+   "t": "Hat İçi ve Hat Başı Kalite Kontrolü için FT-NIR Analizör Cihazları"
+  }
+ },
+ "products-software.html": {
+  "de": {
+   "k": "software chemometrie automatisierung",
+   "s": "Erstellen Sie NIR-Kalibrierungen in Minuten mit caliX AutoML und übertragen Sie Ergebnisse mit ProChem an SPS/SCADA für echte Closed-Loop-Prozesssteuerung.",
+   "t": "caliX & ProChem: Chemometrie- und PAT-Software"
+  },
+  "es": {
+   "k": "software quimiometría automatización",
+   "s": "Cree calibraciones NIR en minutos con caliX AutoML y conecte los resultados al PLC/SCADA con ProChem para un control de proceso en lazo cerrado real.",
+   "t": "caliX y ProChem: Software de Quimiometría y PAT"
+  },
+  "fr": {
+   "k": "logiciels chimiométrie automatisation",
+   "s": "Créez des étalonnages NIR en quelques minutes avec caliX AutoML et reliez les résultats au PLC/SCADA via ProChem pour un contrôle en boucle fermée.",
+   "t": "caliX & ProChem : Logiciels de chimiométrie et PAT"
+  },
+  "tr": {
+   "k": "yazılım yazilim kemometri otomasyon",
+   "s": "caliX AutoML ile dakikalar içinde NIR kalibrasyonları oluşturun ve gerçek kapalı döngü proses kontrolü için sonuçları ProChem ile PLC/SCADA'ya bağlayın.",
+   "t": "caliX ve ProChem: Kemometri ve PAT Yazılımı"
+  }
+ },
+ "products.html": {
+  "de": {
+   "k": "produkte geräte software kalibrierung",
+   "s": "Die USTECH-Produktfamilie: ProLine Inline-FT-NIR-Analysatoren, caliX Chemometrie-Software, ProChem-Automatisierung und fertige Kalibriermodelle.",
+   "t": "FT-NIR-Analysatoren, Software & Kalibrierungen"
+  },
+  "es": {
+   "k": "productos dispositivos software calibración",
+   "s": "Familia de productos USTECH: analizadores FT-NIR en línea ProLine, software de quimiometría caliX, automatización ProChem y modelos de calibración listos.",
+   "t": "Analizadores FT-NIR, Software y Calibraciones"
+  },
+  "fr": {
+   "k": "produits appareils logiciels étalonnage",
+   "s": "La gamme USTECH : analyseurs en ligne FT-NIR ProLine, logiciel de chimiométrie caliX, automatisation ProChem et modèles d'étalonnage prêts à l'emploi.",
+   "t": "Analyseurs FT-NIR, logiciels et étalonnages"
+  },
+  "tr": {
+   "k": "ürünler urunler cihaz yazılım kalibrasyon",
+   "s": "USTECH ürün ailesini keşfedin: ProLine hat içi FT-NIR analizörleri, caliX kemometri yazılımı, ProChem otomasyonu ve kullanıma hazır kalibrasyon modelleri.",
+   "t": "FT-NIR Analizörleri, Yazılım ve Kalibrasyonlar"
+  }
+ }
+};
+/* SEARCH_I18N_END */
+function searchLoc(item) {
+    var lang = detectCurrentLang();
+    if (lang === 'en' || !item || !item.url) return null;
+    var base = item.url.split('#')[0];
+    return (SEARCH_I18N[base] && SEARCH_I18N[base][lang]) || null;
+}
+
 // Detect current language from pathname (supports file:// and http/https://)
 function detectCurrentLang() {
     var path = (window.location.pathname || '').replace(/\\/g, '/');
@@ -141,27 +724,29 @@ function detectCurrentPage() {
 function getLangUrl(targetLang) {
     var currentPage = detectCurrentPage();
     var currentLang = detectCurrentLang();
-    
+
     // Target is same as current language
     if (targetLang === currentLang) {
         return currentPage;
     }
-    
+
+    // 18.08.2026 (Y4): cevirisi olmayan sayfada (blog, eski urun URL'si) hedef dilde
+    // 404 yerine en yakin mevcut sayfa: eski URL -> guncel sayfa; blog -> bilgi bankasi.
+    var targetPage = LEGACY_PAGE_MAP[currentPage] || currentPage;
+    if (targetLang !== 'en' && !TRANSLATED_PAGES[targetPage]) {
+        targetPage = /^blog-/.test(targetPage) ? 'knowledge.html' : 'index.html';
+    }
+
     // Currently in English root
     if (currentLang === 'en') {
-        if (targetLang === 'en') {
-            return currentPage;
-        } else {
-            return targetLang + '/' + currentPage;
-        }
+        return targetLang + '/' + targetPage;
     }
-    
+
     // Currently in a language subfolder (tr, fr, de, es)
     if (targetLang === 'en') {
-        return '../' + currentPage;
-    } else {
-        return '../' + targetLang + '/' + currentPage;
+        return '../' + targetPage;
     }
+    return '../' + targetLang + '/' + targetPage;
 }
 
 // Language switcher click handler
@@ -722,20 +1307,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.innerHTML = `
             <!-- Cookie Preferences Floating Button -->
-            <button id="cookie-settings-btn" class="cookie-settings-btn" aria-label="Cookie Settings">
+            <button id="cookie-settings-btn" class="cookie-settings-btn" aria-label="${ui('cookie_settings')}">
                 ${cookieSvg}
             </button>
 
             <!-- Cookie Preferences Modal -->
             <div id="cookie-modal" class="cookie-modal">
                 <div class="cookie-modal-content">
-                    <h3 class="cookie-modal-title">Cookie Preferences</h3>
-                    <p class="cookie-modal-text">We use cookies to optimize your experience, analyze site usage, and support our marketing efforts. Customize your settings below.</p>
+                    <h3 class="cookie-modal-title">${ui('cookie_title')}</h3>
+                    <p class="cookie-modal-text">${ui('cookie_text')}</p>
                     <div class="cookie-options">
                         <div class="cookie-option">
                             <div class="cookie-option-info">
-                                <strong>Essential Cookies</strong>
-                                <span>Necessary for the website to function properly. Cannot be disabled.</span>
+                                <strong>${ui('cookie_ess')}</strong>
+                                <span>${ui('cookie_ess_d')}</span>
                             </div>
                             <label class="switch">
                                 <input type="checkbox" checked disabled>
@@ -744,8 +1329,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="cookie-option">
                             <div class="cookie-option-info">
-                                <strong>Analytical Cookies</strong>
-                                <span>Help us measure traffic and analyze user behavior to improve site features.</span>
+                                <strong>${ui('cookie_ana')}</strong>
+                                <span>${ui('cookie_ana_d')}</span>
                             </div>
                             <label class="switch">
                                 <input type="checkbox" id="cookie-analytical" checked>
@@ -754,8 +1339,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="cookie-option">
                             <div class="cookie-option-info">
-                                <strong>Marketing Cookies</strong>
-                                <span>Used to deliver targeted content and monitor advertising performance.</span>
+                                <strong>${ui('cookie_mkt')}</strong>
+                                <span>${ui('cookie_mkt_d')}</span>
                             </div>
                             <label class="switch">
                                 <input type="checkbox" id="cookie-marketing">
@@ -764,14 +1349,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                     <div class="cookie-modal-buttons">
-                        <button id="save-cookies-btn" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Save Settings</button>
-                        <button id="accept-all-cookies-btn" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Accept All</button>
+                        <button id="save-cookies-btn" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">${ui('cookie_save')}</button>
+                        <button id="accept-all-cookies-btn" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">${ui('cookie_accept')}</button>
                     </div>
                 </div>
             </div>
 
             <!-- Back to Top Button -->
-            <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Back to Top">
+            <button id="back-to-top-btn" class="back-to-top-btn" aria-label="${ui('back_top')}">
                 ↑
             </button>
         `;
@@ -971,40 +1556,35 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: "calix automl machine learning calibration classification prediction data engine",
             snippet: "Advanced chemometric modeling software featuring automated calibration (AutoML) and data engineering."
             },
-            {
-            title: "USTECH StarchQC",
-            url: "product-i-sens-starch.html",
-            category: "Products",
-            keywords: "i-sens starch modified starch wet milling extraction centrifuge at-line",
-            snippet: "Specialized at-line analyzer for rapid measurement of starch content and quality in wet milling processes."
-            },
+            /* StarchQC: HOLD_LOCAL -- kullanici karari, yayinlanana kadar arama dizininde yok (18.08.2026) */
             {
             title: "USTECH MasterLine",
-            url: "product-n-sens-feed.html",
+            url: "product-masterline.html",
             category: "Products",
             keywords: "USTECH MasterLine grain animal feed moisture protein fat ash fiber at-line cup",
             snippet: "Robust at-line analyzer designed for quality control of grains, meals, and finished animal feeds."
             },
             {
             title: "ProLine17ES Analyzer",
-            url: "product-n-sens-online.html",
+            url: "product-proline-17es.html",
             category: "Products",
-            keywords: "ProLine17ES conveyor belt pipe chute continuous inline measurement",
+            keywords: "ProLine17ES conveyor belt pipe chute continuous inline measurement sensor",
             snippet: "Continuous inline analyzer for real-time monitoring of raw materials on conveyor belts, chutes, and pipes."
             },
             {
-            title: "USTECH SamplePrep Module",
-            url: "product-n-sens-sampleprep.html",
+            title: "ProLine2550 Inline Process Analyzer",
+            url: "product-proline-2550.html",
             category: "Products",
-            keywords: "n-sens sample prep presentation packer uniform scanning density",
-            snippet: "Automated sample preparation accessory ensuring uniform density and surface for high-accuracy scans."
+            keywords: "ProLine2550 inline process analyzer pipeline reactor liquid slurry powder FT-NIR",
+            snippet: "Inline FT-NIR process analyzer for pipes, reactors and powder streams with closed-loop PLC integration."
             },
+            /* SamplePrep: HOLD_LOCAL -- kullanici karari, yayinlanana kadar arama dizininde yok (18.08.2026) */
             {
-            title: "USTECH Tornado+ Rotating Scanner",
-            url: "product-n-sens-tornado.html",
+            title: "USTECH Tornado+ Laboratory Mill",
+            url: "product-tornado.html",
             category: "Products",
-            keywords: "n-sens tornado rotating cup heterogeneous sample scanning average",
-            snippet: "High-throughput rotating sample scanner designed for precise analysis of highly heterogeneous materials."
+            keywords: "tornado mill grinder grinding water-cooled sample preparation grain feed seed laboratory",
+            snippet: "Water-cooled high-performance laboratory mill for fast, uniform grinding of grain, seed and feed samples."
             },
             {
             title: "ProChem Process Control Software",
@@ -1348,13 +1928,13 @@ document.addEventListener('DOMContentLoaded', () => {
             searchContainer.innerHTML = `
                 <div class="search-inner-wrapper">
                     <div class="search-input-wrapper">
-                        <input type="text" id="header-search-input" placeholder="Search pages, products, blogs..." autocomplete="off">
+                        <input type="text" id="header-search-input" placeholder="${ui('search_ph')}" autocomplete="off">
                         <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                         <button id="search-clear-btn" class="search-clear-btn" type="button">&times;</button>
-                        <button id="search-close-btn" class="search-close-btn" type="button" aria-label="Close Search">&times;</button>
+                        <button id="search-close-btn" class="search-close-btn" type="button" aria-label="${ui('close_search')}">&times;</button>
                     </div>
                     <div id="search-results-dropdown" class="search-results-dropdown"></div>
                 </div>
@@ -1415,7 +1995,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileSearchItem.className = 'mobile-search-item';
             mobileSearchItem.innerHTML = `
                 <div class="search-input-wrapper">
-                    <input type="text" id="mobile-search-input" placeholder="Search website..." autocomplete="off">
+                    <input type="text" id="mobile-search-input" placeholder="${ui('search_ph_short')}" autocomplete="off">
                     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -1432,20 +2012,25 @@ document.addEventListener('DOMContentLoaded', () => {
         bindSearchInput('header-search-input', 'search-results-dropdown', 'search-clear-btn');
         bindSearchInput('mobile-search-input', 'mobile-search-dropdown', 'mobile-search-clear-btn');
 
+        function locTitle(item) {
+            const loc = searchLoc(item);
+            return (loc && loc.t) || item.title;
+        }
+
         function renderPopularSuggestions(dropdown) {
             dropdown.innerHTML = '';
             
             const groupTitle = document.createElement('div');
             groupTitle.className = 'search-result-group-title';
-            groupTitle.innerHTML = `⚡ Popular Searches`;
+            groupTitle.innerHTML = `⚡ ${ui('popular')}`;
             dropdown.appendChild(groupTitle);
 
             const suggestions = [
                 { title: "cali<span class=\"calix-x\">X</span> AutoML Suite", url: "product-calix.html" },
-                { title: "ProLine17ES Sensor", url: "product-n-sens-online.html" },
+                { title: "ProLine17ES Sensor", url: "product-proline-17es.html" },
                 { title: "Food & Feed Solutions", url: "industry-food-feed.html" },
                 { title: "B2B ROI Calculator", url: "contact.html#roi" },
-                { title: "USTECH MasterLine", url: "product-n-sens-feed.html" }
+                { title: "USTECH MasterLine", url: "product-masterline.html" }
             ];
 
             const container = document.createElement('div');
@@ -1455,12 +2040,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             suggestions.forEach(item => {
                 const link = document.createElement('a');
-                link.href = item.url;
+                link.href = resolveSiteUrl(item.url);
                 link.className = 'search-result-item';
                 link.innerHTML = `
                     <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
-                        <span class="search-result-title">🔍 ${item.title}</span>
-                        <span style="font-size:0.65rem; color:var(--text-muted); background:var(--bg-tertiary); padding: 2px 6px; border-radius: 10px;">Popular</span>
+                        <span class="search-result-title">🔍 ${locTitle(item)}</span>
+                        <span style="font-size:0.65rem; color:var(--text-muted); background:var(--bg-tertiary); padding: 2px 6px; border-radius: 10px;">${ui('popular_badge')}</span>
                     </div>
                 `;
                 container.appendChild(link);
@@ -1481,11 +2066,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const curatedSuggestions = {
                 "feed": [
-                    { title: "USTECH MasterLine (Product)", url: "product-n-sens-feed.html" },
+                    { title: "USTECH MasterLine (Product)", url: "product-masterline.html" },
                     { title: "Food & Feed Industry Solutions", url: "industry-food-feed.html" },
                     { title: "Blog: Cattle Feed Waste Optimization", url: "blog-cattle-feed-waste.html" },
                     { title: "Blog: NIR Feed Fiber & Ash Analysis", url: "blog-feed-fiber-ash.html" },
-                    { title: "USTECH Tornado+ (Product)", url: "product-n-sens-tornado.html" }
+                    { title: "USTECH Tornado+ (Product)", url: "product-tornado.html" }
                 ],
                 "calix": [
                     { title: "cali<span class=\"calix-x\">X</span> AutoML Suite (Product)", url: "product-calix.html" },
@@ -1524,7 +2109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const groupTitle = document.createElement('div');
                 groupTitle.className = 'search-result-group-title';
-                groupTitle.innerHTML = `💡 Suggested Results for "${query}"`;
+                groupTitle.innerHTML = `💡 ${ui('suggested_for')} "${query}"`;
                 dropdown.appendChild(groupTitle);
 
                 let list = [];
@@ -1541,7 +2126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 if (list.length === 0) {
-                    dropdown.innerHTML = `<div class="search-no-results">No suggestions found for "${query}"</div>`;
+                    dropdown.innerHTML = `<div class="search-no-results">${ui('no_suggestions')} "${query}"</div>`;
                     dropdownSelectedIndex = -1;
                     return;
                 }
@@ -1553,12 +2138,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 list.forEach(item => {
                     const link = document.createElement('a');
-                    link.href = item.url;
+                    link.href = resolveSiteUrl(item.url);
                     link.className = 'search-result-item';
                     link.innerHTML = `
                         <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
-                            <span class="search-result-title">🔍 ${item.title}</span>
-                            <span style="font-size:0.65rem; color:var(--accent-gold); background:rgba(213, 178, 121, 0.1); border: 1px solid rgba(213, 178, 121, 0.2); padding: 2px 6px; border-radius: 10px;">Suggested</span>
+                            <span class="search-result-title">🔍 ${locTitle(item)}</span>
+                            <span style="font-size:0.65rem; color:var(--accent-gold); background:rgba(213, 178, 121, 0.1); border: 1px solid rgba(213, 178, 121, 0.2); padding: 2px 6px; border-radius: 10px;">${ui('suggested_badge')}</span>
                         </div>
                     `;
                     container.appendChild(link);
@@ -1668,15 +2253,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function performSearch(query) {
-            const searchTerms = query.split(/\s+/).filter(t => t.length > 0);
+            const searchTerms = fold(query).split(/\s+/).filter(t => t.length > 0);
             if (searchTerms.length === 0) return [];
 
             return searchDb.map(item => {
                 let score = 0;
-                const titleLower = item.title.toLowerCase();
-                const keywordsLower = item.keywords.toLowerCase();
-                const snippetLower = item.snippet.toLowerCase();
-                const categoryLower = item.category.toLowerCase();
+                // 18.08.2026 (Y3): sayfa dilindeki baslik/aciklama/anahtarlar da aranir;
+                // fold() aksan ve Turkce harf farkini kaldirir ("İlaç" ~ "ilac").
+                const loc = searchLoc(item);
+                const titleLower = fold((loc && loc.t) || item.title);
+                const keywordsLower = fold(item.keywords + ' ' + (loc ? (loc.k || '') + ' ' + (loc.t || '') + ' ' + (loc.s || '') : ''));
+                const snippetLower = fold((loc && loc.s) || item.snippet);
+                const categoryLower = fold(item.category + ' ' + ui('cat_' + item.category));
 
                 searchTerms.forEach(term => {
                     if (titleLower.includes(term)) {
@@ -1699,7 +2287,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdown.innerHTML = '';
 
             if (results.length === 0) {
-                dropdown.innerHTML = '<div class="search-no-results">No results found matching your query.</div>';
+                dropdown.innerHTML = '<div class="search-no-results">' + ui('no_results') + '</div>';
                 dropdown.classList.add('open');
                 return;
             }
@@ -1719,16 +2307,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (grouped[cat] && grouped[cat].length > 0) {
                     const groupTitle = document.createElement('div');
                     groupTitle.className = 'search-result-group-title';
-                    groupTitle.textContent = cat;
+                    groupTitle.textContent = ui('cat_' + cat);
                     dropdown.appendChild(groupTitle);
 
                     grouped[cat].forEach(item => {
                         const link = document.createElement('a');
-                        link.href = item.url;
+                        link.href = resolveSiteUrl(item.url);
                         link.className = 'search-result-item';
+                        const loc = searchLoc(item);
                         link.innerHTML = `
-                            <div class="search-result-title">${item.title}</div>
-                            <div class="search-result-snippet">${item.snippet}</div>
+                            <div class="search-result-title">${(loc && loc.t) || item.title}</div>
+                            <div class="search-result-snippet">${(loc && loc.s) || item.snippet}</div>
                         `;
                         dropdown.appendChild(link);
                     });
@@ -3397,8 +3986,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create side tab
     const tab = document.createElement('button');
     tab.className = 'specialist-tab';
-    tab.setAttribute('aria-label', 'Talk to a Specialist');
-    tab.innerHTML = tabIconSVG + ' Talk to a Specialist';
+    tab.setAttribute('aria-label', ui('spec_tab'));
+    tab.innerHTML = tabIconSVG + ' ' + ui('spec_tab');
     document.body.appendChild(tab);
 
     // Create panel
@@ -3406,16 +3995,16 @@ document.addEventListener('DOMContentLoaded', () => {
     panel.className = 'specialist-panel';
     panel.innerHTML = `
         <div class="specialist-panel-header">
-            <h4>Talk to a Specialist</h4>
-            <button class="specialist-panel-close" aria-label="Close">${closeSVG}</button>
+            <h4>${ui('spec_tab')}</h4>
+            <button class="specialist-panel-close" aria-label="${ui('spec_close')}">${closeSVG}</button>
         </div>
         <div class="specialist-panel-body">
-            <p>Our NIR spectroscopy experts are ready to help you find the right solution for your process. Reach out through any channel below.</p>
+            <p>${ui('spec_text')}</p>
 
             <a href="tel:+13075270072" class="specialist-contact-item">
                 <span class="specialist-contact-icon">${phoneSVG}</span>
                 <span>
-                    <span class="specialist-contact-label">Call Us</span>
+                    <span class="specialist-contact-label">${ui('spec_call')}</span>
                     <span class="specialist-contact-value">+1 307 527 0072</span>
                 </span>
             </a>
@@ -3423,7 +4012,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="mailto:info@ustechinnovations.com" class="specialist-contact-item">
                 <span class="specialist-contact-icon">${emailSVG}</span>
                 <span>
-                    <span class="specialist-contact-label">Email</span>
+                    <span class="specialist-contact-label">${ui('spec_email')}</span>
                     <span class="specialist-contact-value">info@ustechinnovations.com</span>
                 </span>
             </a>
@@ -3443,7 +4032,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </a>
 
             <a href="contact.html" class="specialist-panel-cta">
-                ${headsetSVG}&nbsp;&nbsp;Request a Consultation
+                ${headsetSVG}&nbsp;&nbsp;${ui('spec_cta')}
             </a>
         </div>
     `;

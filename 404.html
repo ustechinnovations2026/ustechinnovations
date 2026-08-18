@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Page Not Found | USTECH Innovations</title>
+<!--
+  GitHub Pages bu dosyayi HER 404 icin servis eder (/tr/... dahil), URL degismez.
+  Bu yuzden butun baglantilar MUTLAK (/...) yazildi; goreli yol /tr/ altinda kirilir.
+  Once eski URL'ler (eski .htaccess yonlendirmeleri; Pages .htaccess okumaz) tarayicida
+  yeni adrese yonlendirilir; dil klasorunden istenen blog koke tasinir; kalanlar icin
+  ziyaretcinin dilinde mesaj gosterilir. (18.08.2026 denetimi, bulgu O7)
+-->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/index.css?v=1.0.6">
+<style>
+  .nf-wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 3rem 1.25rem; background: var(--bg-primary, #fff); color: var(--text-primary, #111); }
+  .nf-logo { height: 44px; margin-bottom: 2.5rem; }
+  .nf-code { font-family: var(--font-title, sans-serif); font-size: clamp(3.5rem, 12vw, 6.5rem); line-height: 1; letter-spacing: -0.04em; margin: 0 0 0.75rem; color: var(--text-primary, #111); }
+  .nf-title { font-family: var(--font-title, sans-serif); font-size: clamp(1.4rem, 3.5vw, 2rem); margin: 0 0 0.75rem; }
+  .nf-text { max-width: 34rem; color: var(--text-secondary, #555); margin: 0 auto 2rem; line-height: 1.6; }
+  .nf-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+  .nf-actions a { text-decoration: none; }
+  .nf-lang { margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; font-size: 0.85rem; }
+  .nf-lang a { color: var(--text-muted, #777); text-decoration: none; }
+  .nf-lang a:hover, .nf-lang a[aria-current] { color: var(--text-primary, #111); text-decoration: underline; }
+  .nf-msg { display: none; }
+  .nf-msg[data-active] { display: block; }
+  .nf-path { font-family: monospace; font-size: 0.85rem; color: var(--text-muted, #777); word-break: break-all; margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+<main class="nf-wrap">
+  <img class="nf-logo" src="/images/logo.svg" alt="USTECH Innovations">
+  <p class="nf-code">404</p>
+
+  <div class="nf-msg" data-lang="en" data-active>
+    <h1 class="nf-title">Page not found</h1>
+    <p class="nf-text">The page you requested doesn't exist or has moved. Use the links below to continue, or search from any page.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/">Home</a>
+      <a class="btn btn-secondary" href="/products.html">Products</a>
+      <a class="btn btn-secondary" href="/contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="nf-msg" data-lang="tr">
+    <h1 class="nf-title">Sayfa bulunamadı</h1>
+    <p class="nf-text">Aradığınız sayfa yok ya da taşınmış. Aşağıdaki bağlantılarla devam edebilir veya herhangi bir sayfadan arama yapabilirsiniz.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/tr/">Ana Sayfa</a>
+      <a class="btn btn-secondary" href="/tr/products.html">Ürünler</a>
+      <a class="btn btn-secondary" href="/tr/contact.html">İletişim</a>
+    </div>
+  </div>
+  <div class="nf-msg" data-lang="fr">
+    <h1 class="nf-title">Page introuvable</h1>
+    <p class="nf-text">La page demandée n'existe pas ou a été déplacée. Utilisez les liens ci-dessous pour continuer, ou lancez une recherche depuis n'importe quelle page.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/fr/">Accueil</a>
+      <a class="btn btn-secondary" href="/fr/products.html">Produits</a>
+      <a class="btn btn-secondary" href="/fr/contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="nf-msg" data-lang="de">
+    <h1 class="nf-title">Seite nicht gefunden</h1>
+    <p class="nf-text">Die angeforderte Seite existiert nicht oder wurde verschoben. Nutzen Sie die Links unten oder die Suche auf jeder Seite.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/de/">Startseite</a>
+      <a class="btn btn-secondary" href="/de/products.html">Produkte</a>
+      <a class="btn btn-secondary" href="/de/contact.html">Kontakt</a>
+    </div>
+  </div>
+  <div class="nf-msg" data-lang="es">
+    <h1 class="nf-title">Página no encontrada</h1>
+    <p class="nf-text">La página solicitada no existe o se ha movido. Use los enlaces siguientes para continuar o busque desde cualquier página.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/es/">Inicio</a>
+      <a class="btn btn-secondary" href="/es/products.html">Productos</a>
+      <a class="btn btn-secondary" href="/es/contact.html">Contacto</a>
+    </div>
+  </div>
+
+  <p class="nf-path" id="nf-path"></p>
+
+  <nav class="nf-lang" aria-label="Language">
+    <a href="#" data-pick="en">English</a>
+    <a href="#" data-pick="tr">Türkçe</a>
+    <a href="#" data-pick="fr">Français</a>
+    <a href="#" data-pick="de">Deutsch</a>
+    <a href="#" data-pick="es">Español</a>
+  </nav>
+</main>
+
+<script>
+(function () {
+  var path = (location.pathname || '/').replace(/\/+/g, '/');
+  var m = path.match(/^\/(tr|fr|de|es)(\/|$)/i);
+  var lang = m ? m[1].toLowerCase() : null;
+  var rest = m ? path.slice(m[0].length) : path.replace(/^\//, '');   // dil oneki atilmis dosya adi
+
+  // 1) Eski URL -> yeni URL (eski .htaccess kurallari). Anahtar: uzantisiz ad.
+  var LEGACY = {
+    'about-us': 'about.html',
+    'technology': 'knowledge-technology.html',
+    'our-technology': 'knowledge-technology.html',
+    'product-n-sens-feed': 'product-masterline.html',
+    'product-n-sens-online': 'product-proline-17es.html',
+    'product-n-sens-tornado': 'product-tornado.html'
+  };
+  var stem = rest.replace(/\.html?$/i, '').replace(/\/$/, '');
+  if (LEGACY[stem]) {
+    location.replace('/' + (lang ? lang + '/' : '') + LEGACY[stem]);
+    return;
+  }
+
+  // 2) Dil klasorunden istenen blog (bloglar yalnizca kokte) -> koke tasi (varsa)
+  if (lang && /^blog-[\w-]+\.html$/i.test(rest)) {
+    var target = '/' + rest;
+    try {
+      fetch(target, { method: 'HEAD' }).then(function (r) {
+        if (r.ok) location.replace(target);
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  // 3) Mesaj dili: URL oneki > kayitli tercih > tarayici dili > en
+  var pick = lang;
+  if (!pick) { try { pick = localStorage.getItem('ustech-lang'); } catch (e) {} }
+  if (!pick) { pick = ((navigator.language || 'en').slice(0, 2)).toLowerCase(); }
+  if (['en', 'tr', 'fr', 'de', 'es'].indexOf(pick) === -1) pick = 'en';
+
+  function show(l) {
+    document.documentElement.lang = l;
+    var titles = { en: 'Page Not Found', tr: 'Sayfa Bulunamadı', fr: 'Page introuvable', de: 'Seite nicht gefunden', es: 'Página no encontrada' };
+    document.title = titles[l] + ' | USTECH Innovations';
+    var msgs = document.querySelectorAll('.nf-msg');
+    for (var i = 0; i < msgs.length; i++) {
+      if (msgs[i].getAttribute('data-lang') === l) msgs[i].setAttribute('data-active', ''); else msgs[i].removeAttribute('data-active');
+    }
+    var links = document.querySelectorAll('.nf-lang a');
+    for (var j = 0; j < links.length; j++) {
+      if (links[j].getAttribute('data-pick') === l) links[j].setAttribute('aria-current', 'true'); else links[j].removeAttribute('aria-current');
+    }
+  }
+  show(pick);
+  document.getElementById('nf-path').textContent = path;
+  var picks = document.querySelectorAll('.nf-lang a');
+  for (var k = 0; k < picks.length; k++) {
+    picks[k].addEventListener('click', function (e) { e.preventDefault(); show(this.getAttribute('data-pick')); });
+  }
+})();
+</script>
+</body>
+</html>
