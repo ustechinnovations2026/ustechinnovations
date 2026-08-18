@@ -744,7 +744,7 @@ right: 1rem;
 <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; color: var(--text-secondary); display: block; margin-bottom: 1rem;">KI-GESTÜTZTE KALIBRIERUNGSPLATTFORM</span>
 <h1 class="software-title">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Spektral-Suite</h1>
 <p class="software-desc">
-Erstellen Sie Ihre Kalibriermodelle in Minuten statt Wochen. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ist eine moderne Chemometrie- und Machine-Learning-Suite zur Entwicklung hochpräziser NIR-Kalibriermodelle, zur Durchführung von Spektralvorverarbeitungen und zur Ausführung automatisierter Rückschrittsanalysen.
+Erstellen Sie Ihre Kalibriermodelle in Minuten statt Wochen. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ist eine moderne Chemometrie- und Machine-Learning-Suite zur Entwicklung hochpräziser NIR-Kalibriermodelle, zur Durchführung von Spektralvorverarbeitungen und zur Ausführung automatisierter Regressionsanalysen.
 </p>
 <div style="display: flex; gap: 1.25rem; justify-content: center; margin-bottom: 5rem; flex-wrap: wrap;">
 <a href="contact.html?product=calix" class="btn btn-primary">Live-Demo Anfordern</a>
@@ -972,7 +972,7 @@ Rückschritt<br><span style="color: var(--accent-blue); font-size: 0.9rem; font-
 </div>
 <div style="flex-grow: 1;">
 <h3>Spektrale Vorverarbeitung</h3>
-<p>Wenden Sie mathematische Filter an, um Lichtstreuung und Basislinien-Drift zu eliminieren. Unterstützt SNV, MSC, Detrendinging, Autoskalierung und Savitzky-Golay-Ableitungsglättung.</p>
+<p>Wenden Sie mathematische Filter an, um Lichtstreuung und Basislinien-Drift zu eliminieren. Unterstützt SNV, MSC, Detrending, Autoskalierung und Savitzky-Golay-Ableitungsglättung.</p>
 </div>
 </div>
 <!-- Card 3: AutoML -->
@@ -1091,7 +1091,7 @@ Rückschritt<br><span style="color: var(--accent-blue); font-size: 0.9rem; font-
 </div>
 <!-- Group 3: Regression Algorithms -->
 <div class="spec-group-card">
-<h3 style="font-family: var(--font-title); font-weight: 700;">Rückschrittsalgorithmen</h3>
+<h3 style="font-family: var(--font-title); font-weight: 700;">Regressionsalgorithmen</h3>
 <ul class="spec-table-list">
 <li class="spec-table-row">
 <span class="spec-label">Partielle kleinste Quadrate (PLS)</span>
@@ -1103,7 +1103,7 @@ Rückschritt<br><span style="color: var(--accent-blue); font-size: 0.9rem; font-
 </li>
 <li class="spec-table-row">
 <span class="spec-label">Lasso &amp; ElasticNet</span>
-<span class="spec-val">L1-Penalty & kombinierte Sparse-Rückschritten</span>
+<span class="spec-val">L1-Penalty & kombinierte Sparse-Regressionen</span>
 </li>
 <li class="spec-table-row">
 <span class="spec-label">Robuster Huber</span>
@@ -1309,7 +1309,7 @@ const dots = document.querySelectorAll('.carousel-dot');
 const textTitle = document.getElementById('slide-text-title');
 const textDesc = document.getElementById('slide-text-desc');
 if (!carousel || dots.length === 0) return;
-const slideDaten = [
+const slideData = [
 {
 title: "Datenimport-Arbeitsbereich",
 desc: "Importieren Sie Rohspektren und Labor-Referenzwerte aus Excel-Arbeitsblättern oder CSV-Dateien."
@@ -1324,7 +1324,7 @@ desc: "Identify and flag atypical samples using PCA influence (Hotelling T² & Q
 },
 {
 title: "Spektrale Vorverarbeitung Filters",
-desc: "Apply MSC, SNV, and Detrendinging math to eliminate physical light-scattering differences."
+desc: "Apply MSC, SNV, and Detrending math to eliminate physical light-scattering differences."
 },
 {
 title: "Savitzky-Golay Derivative Smoothing",
@@ -1373,9 +1373,9 @@ desc: "Save and manage entire active calibration workspace sessions (.clx) and c
 ];
 // Slide text update function
 const updateSlideText = (index) => {
-if (slideDaten[index]) {
-textTitle.textContent = slideDaten[index].title;
-textDesc.textContent = slideDaten[index].desc;
+if (slideData[index]) {
+textTitle.textContent = slideData[index].title;
+textDesc.textContent = slideData[index].desc;
 }
 };
 const prevArrow = document.querySelector('.prev-arrow');
@@ -1396,7 +1396,7 @@ if (prevArrow && nextArrow) {
 prevArrow.addEventListener('click', () => {
 const width = carousel.offsetWidth;
 const index = Math.round(carousel.scrollLeft / width);
-const prevIndex = (index - 1 + slideDaten.length) % slideDaten.length;
+const prevIndex = (index - 1 + slideData.length) % slideData.length;
 carousel.scrollTo({
 left: width * prevIndex,
 behavior: 'smooth'
@@ -1406,7 +1406,7 @@ setActiveDot(prevIndex);
 nextArrow.addEventListener('click', () => {
 const width = carousel.offsetWidth;
 const index = Math.round(carousel.scrollLeft / width);
-const nextIndex = (index + 1) % slideDaten.length;
+const nextIndex = (index + 1) % slideData.length;
 carousel.scrollTo({
 left: width * nextIndex,
 behavior: 'smooth'

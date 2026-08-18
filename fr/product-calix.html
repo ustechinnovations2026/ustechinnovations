@@ -972,7 +972,7 @@ Régression<br><span style="color: var(--accent-blue); font-size: 0.9rem; font-w
 </div>
 <div style="flex-grow: 1;">
 <h3>Prétraitement spectral</h3>
-<p>Appliquez des filtres mathématiques pour éliminer la diffusion de la lumière et la dérive de la ligne de base. Prend en charge le lissage dérivé SNV , MSC , Détendanceing, Autoscaling et Savitzky-Golay.</p>
+<p>Appliquez des filtres mathématiques pour éliminer la diffusion de la lumière et la dérive de la ligne de base. Prend en charge le lissage dérivé SNV , MSC , Detrending, Autoscaling et Savitzky-Golay.</p>
 </div>
 </div>
 <!-- Card 3: AutoML -->
@@ -1309,7 +1309,7 @@ const dots = document.querySelectorAll('.carousel-dot');
 const textTitle = document.getElementById('slide-text-title');
 const textDesc = document.getElementById('slide-text-desc');
 if (!carousel || dots.length === 0) return;
-const slideDonnées = [
+const slideData = [
 {
 title: "Espace de travail d'importation de données",
 desc: "Importez des analyses spectrales brutes et des valeurs de référence de laboratoire à partir de feuilles de calcul Excel ou de fichiers CSV."
@@ -1324,7 +1324,7 @@ desc: "Identify and flag atypical samples using PCA influence (Hotelling T² & Q
 },
 {
 title: "Prétraitement spectral Filters",
-desc: "Apply MSC, SNV, and Détendanceing math to eliminate physical light-scattering differences."
+desc: "Apply MSC, SNV, and Detrending math to eliminate physical light-scattering differences."
 },
 {
 title: "Savitzky-Golay Derivative Smoothing",
@@ -1373,9 +1373,9 @@ desc: "Save and manage entire active calibration workspace sessions (.clx) and c
 ];
 // Slide text update function
 const updateSlideText = (index) => {
-if (slideDonnées[index]) {
-textTitle.textContent = slideDonnées[index].title;
-textDesc.textContent = slideDonnées[index].desc;
+if (slideData[index]) {
+textTitle.textContent = slideData[index].title;
+textDesc.textContent = slideData[index].desc;
 }
 };
 const prevArrow = document.querySelector('.prev-arrow');
@@ -1396,7 +1396,7 @@ if (prevArrow && nextArrow) {
 prevArrow.addEventListener('click', () => {
 const width = carousel.offsetWidth;
 const index = Math.round(carousel.scrollLeft / width);
-const prevIndex = (index - 1 + slideDonnées.length) % slideDonnées.length;
+const prevIndex = (index - 1 + slideData.length) % slideData.length;
 carousel.scrollTo({
 left: width * prevIndex,
 behavior: 'smooth'
@@ -1406,7 +1406,7 @@ setActiveDot(prevIndex);
 nextArrow.addEventListener('click', () => {
 const width = carousel.offsetWidth;
 const index = Math.round(carousel.scrollLeft / width);
-const nextIndex = (index + 1) % slideDonnées.length;
+const nextIndex = (index + 1) % slideData.length;
 carousel.scrollTo({
 left: width * nextIndex,
 behavior: 'smooth'

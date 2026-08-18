@@ -877,7 +877,7 @@ item.classList.add('active');
 activeType = item.dataset.filter;
 typeTrigger.querySelector('span').textContent = `Type: ${typeLabels[activeType]}`;
 typeMenu.style.display = 'none';
-filterAndSortBlogues();
+filterAndSortBlogs();
 });
 });
 industryItems.forEach(item => {
@@ -887,7 +887,7 @@ item.classList.add('active');
 activeIndustry = item.dataset.industry;
 industryTrigger.querySelector('span').textContent = `Industry: ${industryLabels[activeIndustry]}`;
 industryMenu.style.display = 'none';
-filterAndSortBlogues();
+filterAndSortBlogs();
 });
 });
 sortToggleBtn.addEventListener('click', () => {
@@ -902,9 +902,9 @@ sortIconDesc.style.display = 'block';
 sortIconAsc.style.display = 'none';
 sortLabelText.textContent = 'Trier : Les plus récents';
 }
-filterAndSortBlogues();
+filterAndSortBlogs();
 });
-function filterAndSortBlogues() {
+function filterAndSortBlogs() {
 let visibleCount = 0;
 blogCards.forEach(card => {
 const typeMatch = (activeType === 'all' || card.dataset.category === activeType);
@@ -944,7 +944,7 @@ sortedCards.forEach(card => {
 blogGrid.appendChild(card);
 });
 }
-filterAndSortBlogues();
+filterAndSortBlogs();
 });
 </script>
 </main>
