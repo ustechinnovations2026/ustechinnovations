@@ -140,7 +140,8 @@ var UI_I18N = {
     cookie_save: 'Save Settings', cookie_accept: 'Accept All', back_top: 'Back to Top',
     spec_tab: 'Talk to a Specialist', spec_close: 'Close',
     spec_text: 'Our NIR spectroscopy experts are ready to help you find the right solution for your process. Reach out through any channel below.',
-    spec_call: 'Call Us', spec_email: 'Email', spec_cta: 'Request a Consultation'
+    spec_call: 'Call Us', spec_email: 'Email', spec_cta: 'Request a Consultation',
+    cookie_saved: 'Cookie preferences saved.', cookie_all: 'All cookies accepted.'
   },
   tr: {
     search_ph: 'Sayfa, ürün, blog ara...', search_ph_short: 'Sitede ara...',
@@ -156,7 +157,8 @@ var UI_I18N = {
     cookie_save: 'Ayarları Kaydet', cookie_accept: 'Tümünü Kabul Et', back_top: 'Başa Dön',
     spec_tab: 'Bir Uzmanla Görüşün', spec_close: 'Kapat',
     spec_text: 'NIR spektroskopi uzmanlarımız prosesiniz için doğru çözümü bulmanıza yardımcı olmaya hazır. Aşağıdaki kanallardan bize ulaşın.',
-    spec_call: 'Bizi Arayın', spec_email: 'E-posta', spec_cta: 'Danışmanlık Talep Edin'
+    spec_call: 'Bizi Arayın', spec_email: 'E-posta', spec_cta: 'Danışmanlık Talep Edin',
+    cookie_saved: 'Çerez tercihleri kaydedildi.', cookie_all: 'Tüm çerezler kabul edildi.'
   },
   fr: {
     search_ph: 'Rechercher pages, produits, blogs...', search_ph_short: 'Rechercher sur le site...',
@@ -172,7 +174,8 @@ var UI_I18N = {
     cookie_save: 'Enregistrer', cookie_accept: 'Tout accepter', back_top: 'Retour en haut',
     spec_tab: 'Parler à un spécialiste', spec_close: 'Fermer',
     spec_text: 'Nos experts en spectroscopie NIR sont prêts à vous aider à trouver la solution adaptée à votre procédé. Contactez-nous par le canal de votre choix.',
-    spec_call: 'Appelez-nous', spec_email: 'E-mail', spec_cta: 'Demander une consultation'
+    spec_call: 'Appelez-nous', spec_email: 'E-mail', spec_cta: 'Demander une consultation',
+    cookie_saved: 'Préférences de cookies enregistrées.', cookie_all: 'Tous les cookies acceptés.'
   },
   de: {
     search_ph: 'Seiten, Produkte, Blogs durchsuchen...', search_ph_short: 'Website durchsuchen...',
@@ -188,7 +191,8 @@ var UI_I18N = {
     cookie_save: 'Einstellungen speichern', cookie_accept: 'Alle akzeptieren', back_top: 'Nach oben',
     spec_tab: 'Mit einem Experten sprechen', spec_close: 'Schließen',
     spec_text: 'Unsere NIR-Spektroskopie-Experten helfen Ihnen gern, die passende Lösung für Ihren Prozess zu finden. Kontaktieren Sie uns über einen der folgenden Kanäle.',
-    spec_call: 'Rufen Sie uns an', spec_email: 'E-Mail', spec_cta: 'Beratung anfordern'
+    spec_call: 'Rufen Sie uns an', spec_email: 'E-Mail', spec_cta: 'Beratung anfordern',
+    cookie_saved: 'Cookie-Einstellungen gespeichert.', cookie_all: 'Alle Cookies akzeptiert.'
   },
   es: {
     search_ph: 'Buscar páginas, productos, blogs...', search_ph_short: 'Buscar en el sitio...',
@@ -204,7 +208,8 @@ var UI_I18N = {
     cookie_save: 'Guardar configuración', cookie_accept: 'Aceptar todo', back_top: 'Volver arriba',
     spec_tab: 'Hable con un especialista', spec_close: 'Cerrar',
     spec_text: 'Nuestros expertos en espectroscopía NIR están listos para ayudarle a encontrar la solución adecuada para su proceso. Contáctenos por cualquiera de estos canales.',
-    spec_call: 'Llámenos', spec_email: 'Correo', spec_cta: 'Solicitar consulta'
+    spec_call: 'Llámenos', spec_email: 'Correo', spec_cta: 'Solicitar consulta',
+    cookie_saved: 'Preferencias de cookies guardadas.', cookie_all: 'Todas las cookies aceptadas.'
   }
 };
 function ui(key) {
@@ -696,6 +701,45 @@ var SEARCH_I18N = {
  }
 };
 /* SEARCH_I18N_END */
+
+// =====================================================================
+// ANALYTICS -- onaya bagli (18.08.2026 denetimi O5).
+// ANALYTICS.ga4 bos oldugu surece HICBIR olcum kodu yuklenmez. GA4 kimligi
+// ('G-XXXXXXXXXX') girildiginde bile yukleme yalnizca ziyaretci "Analitik
+// Cerezler"e onay verdikten sonra olur; onay oncesi disariya istek yok.
+// =====================================================================
+var ANALYTICS = { ga4: '' };
+
+function getCookiePrefs() {
+    try {
+        var raw = localStorage.getItem('ustech_cookie_prefs');
+        if (raw) return JSON.parse(raw);
+        // eski format: 'accepted_all' -> hepsi acik; 'saved' -> bilinmiyor (kapali say)
+        var legacy = localStorage.getItem('ustech_cookie_consent');
+        if (legacy === 'accepted_all') return { analytical: true, marketing: true };
+    } catch (e) {}
+    return null;
+}
+function setCookiePrefs(prefs) {
+    try { localStorage.setItem('ustech_cookie_prefs', JSON.stringify(prefs)); } catch (e) {}
+    if (prefs && prefs.analytical) loadAnalytics();
+}
+function loadAnalytics() {
+    if (!ANALYTICS.ga4 || window.__ustechGaLoaded) return;
+    window.__ustechGaLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', ANALYTICS.ga4, { anonymize_ip: true, page_language: detectCurrentLang() });
+    var sc = document.createElement('script');
+    sc.async = true;
+    sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ANALYTICS.ga4);
+    document.head.appendChild(sc);
+}
+document.addEventListener('DOMContentLoaded', function () {
+    var p = getCookiePrefs();
+    if (p && p.analytical) loadAnalytics();
+});
 function searchLoc(item) {
     var lang = detectCurrentLang();
     if (lang === 'en' || !item || !item.url) return null;
@@ -1371,6 +1415,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Check if user has already given cookie consent
         const hasCookieConsent = localStorage.getItem('ustech_cookie_consent');
+        (function () {
+            const p = getCookiePrefs();
+            if (!p) return;
+            const a = document.getElementById('cookie-analytical');
+            const m = document.getElementById('cookie-marketing');
+            if (a) a.checked = !!p.analytical;
+            if (m) m.checked = !!p.marketing;
+        })();
         if (hasCookieConsent) {
             if (cookieBtn) cookieBtn.style.display = 'none';
         } else {
@@ -1397,9 +1449,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saveBtn && cookieModal) {
             saveBtn.addEventListener('click', () => {
                 localStorage.setItem('ustech_cookie_consent', 'saved');
+                setCookiePrefs({
+                    analytical: !!(document.getElementById('cookie-analytical') || {}).checked,
+                    marketing: !!(document.getElementById('cookie-marketing') || {}).checked
+                });
                 cookieModal.classList.remove('open');
                 if (cookieBtn) cookieBtn.style.display = 'none';
-                showNotification("Cookie preferences saved successfully.");
+                showNotification(ui('cookie_saved'));
             });
         }
 
@@ -1410,9 +1466,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (analytical) analytical.checked = true;
                 if (marketing) marketing.checked = true;
                 localStorage.setItem('ustech_cookie_consent', 'accepted_all');
+                setCookiePrefs({ analytical: true, marketing: true });
                 cookieModal.classList.remove('open');
                 if (cookieBtn) cookieBtn.style.display = 'none';
-                showNotification("All cookies accepted.");
+                showNotification(ui('cookie_all'));
             });
         }
 
