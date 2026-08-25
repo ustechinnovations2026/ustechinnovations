@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;">
-    <meta name="robots" content="noindex, follow">
+<meta name="description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&mdash;">
 <meta name="keywords" content="outlier detection chemometrics, Mahalanobis distance NIR, Hotelling T-squared, spectral outlier analysis">
 <title>Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2; | USTECH Innovations</title>
 <link rel="stylesheet" href="index.css?v=1.0.6">
@@ -113,7 +112,7 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2; | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;">
+    <meta property="og:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&mdash;">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg">
     <meta property="og:image:width" content="1200">
@@ -122,7 +121,7 @@
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2; | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;">
+    <meta name="twitter:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&mdash;">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -202,7 +201,7 @@ Espa&#241;ol
 <a href="knowledge-blogs.html" class="blog-back-link">
 &mdash; Back to Blogs & Publications
 </a>
-<img src="images/blog_outlier_detection.webp?v=1.0.5" alt="Outlier detection statistical plot on screen" class="blog-post-banner" fetchpriority="high" decoding="async" width="900" height="900">
+<img src="images/blog_outlier_detection.webp?v=1.0.5" alt="Outlier detection statistical plot on screen" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide &mdash; June 11, 2026 &mdash; 4 min read</span>
 <h1 class="blog-post-title">Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;</h1>
@@ -218,8 +217,8 @@ Espa&#241;ol
 <h2>Mahalanobis Distance: Measuring Covariance</h2>
 <p>Simple Euclidean distance measures the straight-line distance between a sample spectrum and the calibration mean. However, Euclidean distance fails in chemometrics because it ignores the strong correlation (covariance) between adjacent wavelengths in NIR spectra. </p>
 <p>**Mahalanobis Distance (MD)** resolves this by scaling the distance by the covariance matrix of the calibration dataset. Effectively, MD accounts for the direction of variance, assigning less weight to variations in directions of high normal calibration variance, and high weight to deviations in directions where the calibration data is tightly bound.</p>
-<h2>Hotelling's T&sup2;: Confidence Thresholds</h2>
-<p>While Mahalanobis Distance provides a raw distance value, we need a statistically sound threshold to flag outliers. **Hotelling's T&sup2;** normalizes the Mahalanobis Distance in a Principal Component (PC) projection space, calculating a multivariate score. Because T&sup2; follows an F-distribution, we can establish formal statistical confidence limits (typically 95% or 99%):</p>
+<h2>Hotelling's T&mdash;: Confidence Thresholds</h2>
+<p>While Mahalanobis Distance provides a raw distance value, we need a statistically sound threshold to flag outliers. **Hotelling's T&mdash;** normalizes the Mahalanobis Distance in a Principal Component (PC) projection space, calculating a multivariate score. Because T&sup2; follows an F-distribution, we can establish formal statistical confidence limits (typically 95% or 99%):</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -255,7 +254,7 @@ Espa&#241;ol
 <p>To implement outlier limits in your calibrations, follow these steps in **cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite**:</p>
 <ol>
 <li><strong>Compile PCA/PLS scores:</strong> Open your calibration file and calculate the principal component loading vectors.</li>
-<li><strong>Set Confidence Interval:</strong> Navigate to the Outliers tab and select `Hotelling T&sup2;`. Choose a 99% confidence threshold ($\alpha = 0.01$) for critical control points, or 95% ($\alpha = 0.05$) for routine monitoring.</li>
+<li><strong>Set Confidence Interval:</strong> Navigate to the Outliers tab and select `Hotelling T&mdash;`. Choose a 99% confidence threshold ($\alpha = 0.01$) for critical control points, or 95% ($\alpha = 0.05$) for routine monitoring.</li>
 <li><strong>Enable ProChem Alarms:</strong> Sync the model to the process spectrometer. In **ProChem**, map the outlier flag output to your PLC register to hold the last valid prediction when an outlier is triggered.</li>
 </ol>
 <h2>Conclusion</h2>
@@ -292,7 +291,7 @@ Access the complete, unedited technical paper with mathematical derivations of M
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img src="images/blog_pls_regression.webp?v=1.0.5" alt="Introduction to PLS Regression in caliX Suite" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async" width="900" height="900">
+<img src="images/blog_pls_regression.webp?v=1.0.5" alt="Introduction to PLS Regression in caliX Suite" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</a></h4>
@@ -302,7 +301,7 @@ Access the complete, unedited technical paper with mathematical derivations of M
 </div>
 <!-- PCA Classification Card -->
 <div class="card" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img src="images/blog_pca_chemometrics.webp?v=1.0.5" alt="Developing Robust Chemometric Classification Models via PCA" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async" width="900" height="900">
+<img src="images/blog_pca_chemometrics.webp?v=1.0.5" alt="Developing Robust Chemometric Classification Models via PCA" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pca-classification-models.html" style="color: var(--accent-black); text-decoration: none;">Developing Robust Chemometric Classification Models via PCA</a></h4>
@@ -365,6 +364,6 @@ Access the complete, unedited technical paper with mathematical derivations of M
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.5"></script>
+<script src="app.js?v=1.0.2"></script>
 </body>
 </html>

@@ -136,12 +136,15 @@ var UI_I18N = {
     cookie_text: 'We use cookies to optimize your experience, analyze site usage, and support our marketing efforts. Customize your settings below.',
     cookie_ess: 'Essential Cookies', cookie_ess_d: 'Necessary for the website to function properly. Cannot be disabled.',
     cookie_ana: 'Analytical Cookies', cookie_ana_d: 'Help us measure traffic and analyze user behavior to improve site features.',
-    cookie_mkt: 'Marketing Cookies', cookie_mkt_d: 'Used to deliver targeted content and monitor advertising performance.',
     cookie_save: 'Save Settings', cookie_accept: 'Accept All', back_top: 'Back to Top',
     spec_tab: 'Talk to a Specialist', spec_close: 'Close',
     spec_text: 'Our NIR spectroscopy experts are ready to help you find the right solution for your process. Reach out through any channel below.',
     spec_call: 'Call Us', spec_email: 'Email', spec_cta: 'Request a Consultation',
-    cookie_saved: 'Cookie preferences saved.', cookie_all: 'All cookies accepted.'
+    cookie_saved: 'Cookie preferences saved.', cookie_all: 'All cookies accepted.',
+    cta_badge: 'Live Demo & Feasibility',
+    cta_title: 'Optimize Your Process with Real-Time NIR',
+    cta_desc: 'Schedule a tailored live demo or send your raw samples for complimentary feasibility testing.',
+    cta_btn: 'Request Live Demo'
   },
   tr: {
     search_ph: 'Sayfa, ürün, blog ara...', search_ph_short: 'Sitede ara...',
@@ -158,7 +161,11 @@ var UI_I18N = {
     spec_tab: 'Bir Uzmanla Görüşün', spec_close: 'Kapat',
     spec_text: 'NIR spektroskopi uzmanlarımız prosesiniz için doğru çözümü bulmanıza yardımcı olmaya hazır. Aşağıdaki kanallardan bize ulaşın.',
     spec_call: 'Bizi Arayın', spec_email: 'E-posta', spec_cta: 'Danışmanlık Talep Edin',
-    cookie_saved: 'Çerez tercihleri kaydedildi.', cookie_all: 'Tüm çerezler kabul edildi.'
+    cookie_saved: 'Çerez tercihleri kaydedildi.', cookie_all: 'Tüm çerezler kabul edildi.',
+    cta_badge: 'Canlı Demo & Numune Analizi',
+    cta_title: 'Üretiminizi Gerçek Zamanlı NIR ile Güçlendirin',
+    cta_desc: 'Tesisinize özel canlı demo planlayın veya numunelerinizi ücretsiz laboratuvar fizibilite analizi için iletin.',
+    cta_btn: 'Canlı Demo Talep Edin'
   },
   fr: {
     search_ph: 'Rechercher pages, produits, blogs...', search_ph_short: 'Rechercher sur le site...',
@@ -175,7 +182,11 @@ var UI_I18N = {
     spec_tab: 'Parler à un spécialiste', spec_close: 'Fermer',
     spec_text: 'Nos experts en spectroscopie NIR sont prêts à vous aider à trouver la solution adaptée à votre procédé. Contactez-nous par le canal de votre choix.',
     spec_call: 'Appelez-nous', spec_email: 'E-mail', spec_cta: 'Demander une consultation',
-    cookie_saved: 'Préférences de cookies enregistrées.', cookie_all: 'Tous les cookies acceptés.'
+    cookie_saved: 'Préférences de cookies enregistrées.', cookie_all: 'Tous les cookies acceptés.',
+    cta_badge: 'Démo en direct & Essais',
+    cta_title: 'Optimisez votre production avec le NIR',
+    cta_desc: 'Planifiez une démo personnalisée ou envoyez vos échantillons pour un essai de faisabilité gratuit.',
+    cta_btn: 'Demander une démo'
   },
   de: {
     search_ph: 'Seiten, Produkte, Blogs durchsuchen...', search_ph_short: 'Website durchsuchen...',
@@ -192,7 +203,11 @@ var UI_I18N = {
     spec_tab: 'Mit einem Experten sprechen', spec_close: 'Schließen',
     spec_text: 'Unsere NIR-Spektroskopie-Experten helfen Ihnen gern, die passende Lösung für Ihren Prozess zu finden. Kontaktieren Sie uns über einen der folgenden Kanäle.',
     spec_call: 'Rufen Sie uns an', spec_email: 'E-Mail', spec_cta: 'Beratung anfordern',
-    cookie_saved: 'Cookie-Einstellungen gespeichert.', cookie_all: 'Alle Cookies akzeptiert.'
+    cookie_saved: 'Cookie-Einstellungen gespeichert.', cookie_all: 'Alle Cookies akzeptiert.',
+    cta_badge: 'Live-Demo & Machbarkeit',
+    cta_title: 'Optimieren Sie Ihre Produktion mit NIR',
+    cta_desc: 'Vereinbaren Sie eine Live-Demo oder senden Sie Ihre Rohstoffe für einen kostenlosen Machbarkeitstest ein.',
+    cta_btn: 'Live-Demo anfordern'
   },
   es: {
     search_ph: 'Buscar páginas, productos, blogs...', search_ph_short: 'Buscar en el sitio...',
@@ -209,7 +224,11 @@ var UI_I18N = {
     spec_tab: 'Hable con un especialista', spec_close: 'Cerrar',
     spec_text: 'Nuestros expertos en espectroscopía NIR están listos para ayudarle a encontrar la solución adecuada para su proceso. Contáctenos por cualquiera de estos canales.',
     spec_call: 'Llámenos', spec_email: 'Correo', spec_cta: 'Solicitar consulta',
-    cookie_saved: 'Preferencias de cookies guardadas.', cookie_all: 'Todas las cookies aceptadas.'
+    cookie_saved: 'Preferencias de cookies guardadas.', cookie_all: 'Todas las cookies aceptadas.',
+    cta_badge: 'Demo en Vivo y Factibilidad',
+    cta_title: 'Optimice su producción con NIR',
+    cta_desc: 'Programe una demo personalizada o envíe sus muestras para un ensayo de factibilidad gratuito.',
+    cta_btn: 'Solicitar Demostración'
   }
 };
 function ui(key) {
@@ -3576,11 +3595,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" target="_blank" rel="noopener noreferrer" class="specialist-contact-item">
                 <span class="specialist-contact-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63 1.63-.73 1.63-1.63-.73-1.63-1.63-1.63Z"/></svg>
                 </span>
                 <span>
                     <span class="specialist-contact-label">LinkedIn</span>
@@ -3619,4 +3634,80 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 })();
+
+// =====================================================================
+//  Global Scroll-Triggered CTA Slide-in Widget (auto-injected)
+// =====================================================================
+(function() {
+    function initScrollCTA() {
+        // Don't show on contact page or if user dismissed in this session
+        if (window.location.pathname.indexOf('contact.html') !== -1) return;
+        if (sessionStorage.getItem('ustech_scroll_cta_closed') === '1') return;
+        if (document.querySelector('.ustech-scroll-cta')) return;
+
+        var lang = (typeof detectCurrentLang === 'function') ? detectCurrentLang() : 'en';
+        var contactHref = 'contact.html';
+        if (lang !== 'en' && window.location.pathname.indexOf('/' + lang + '/') === -1) {
+            contactHref = lang + '/contact.html';
+        }
+
+        var ctaEl = document.createElement('div');
+        ctaEl.className = 'ustech-scroll-cta';
+        ctaEl.setAttribute('role', 'complementary');
+        ctaEl.setAttribute('aria-label', ui('cta_title'));
+
+        ctaEl.innerHTML = `
+            <button class="ustech-scroll-cta-close" aria-label="${ui('spec_close')}">&times;</button>
+            <div class="ustech-scroll-cta-badge">
+                <span class="ustech-scroll-cta-badge-dot"></span>
+                <span>${ui('cta_badge')}</span>
+            </div>
+            <h4 class="ustech-scroll-cta-title">${ui('cta_title')}</h4>
+            <p class="ustech-scroll-cta-desc">${ui('cta_desc')}</p>
+            <a href="${contactHref}" class="ustech-scroll-cta-btn">
+                <span>${ui('cta_btn')}</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        `;
+
+        document.body.appendChild(ctaEl);
+
+        var closeBtn = ctaEl.querySelector('.ustech-scroll-cta-close');
+        var isShown = false;
+
+        function handleScroll() {
+            if (isShown || sessionStorage.getItem('ustech_scroll_cta_closed') === '1') return;
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            if (docHeight <= 0) return;
+            var scrollPct = scrollTop / docHeight;
+
+            // Trigger only when visitor reaches 1/3 (35%) of the page depth
+            if (scrollPct >= 0.35 && scrollTop >= 650) {
+                isShown = true;
+                ctaEl.classList.add('is-visible');
+                window.removeEventListener('scroll', handleScroll);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        // Initial check after 600ms in case user is already scrolled
+        setTimeout(handleScroll, 600);
+
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            ctaEl.classList.remove('is-visible');
+            ctaEl.classList.add('is-dismissed');
+            sessionStorage.setItem('ustech_scroll_cta_closed', '1');
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initScrollCTA);
+    } else {
+        initScrollCTA();
+    }
+})();
+
 
