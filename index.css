@@ -3211,47 +3211,88 @@ input:checked + .slider:before {
 .tech-workflow-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
 }
 
 .tech-step-card {
     background-color: var(--bg-primary);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    padding: 1.4rem 1.25rem;
     position: relative;
     transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
 }
 
 .tech-step-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-md);
     border-color: var(--border-hover);
 }
 
+.tech-step-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+}
+
 .tech-step-num {
     font-family: var(--font-title);
-    font-size: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Number style for light cards (Original clean typography) */
+.tech-step-card:not([style*="background: linear-gradient"]) .tech-step-num {
+    font-family: var(--font-title);
+    font-size: 1.85rem;
     font-weight: 800;
     color: var(--border-hover);
     line-height: 1;
-    margin-bottom: 1rem;
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    transition: color var(--transition-fast);
 }
 
-.tech-step-card:hover .tech-step-num {
+.tech-step-card:not([style*="background: linear-gradient"]):hover .tech-step-num {
     color: var(--accent-black);
 }
 
+/* Icon style for dark capability cards */
+.tech-step-card[style*="background: linear-gradient"] .tech-step-num {
+    color: var(--accent-gold);
+    background: rgba(213, 178, 121, 0.12);
+    border: 1px solid rgba(213, 178, 121, 0.25);
+    border-radius: 6px;
+    padding: 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tech-step-card h4 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-weight: 700;
 }
 
 .tech-step-card p {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     color: var(--text-secondary);
-    line-height: 1.5;
+    line-height: 1.55;
+    margin-bottom: 0;
 }
 
 /* Stepper responsive layout */
@@ -3271,6 +3312,184 @@ input:checked + .slider:before {
     .tech-workflow-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* caliX Key Metrics Banner */
+.calix-metrics-banner {
+    background: linear-gradient(180deg, rgba(10, 11, 16, 0.85) 0%, rgba(10, 11, 16, 0.95) 100%), url('images/software_cover.webp?v=1.0.5') no-repeat center center;
+    background-size: cover;
+    border-radius: 12px;
+    padding: 3.5rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.calix-metrics-banner h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2.25rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.calix-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.calix-metric-item {
+    text-align: center;
+}
+
+.calix-metric-val {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    font-family: var(--font-title);
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+.calix-metric-lbl {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+    .calix-metrics-banner {
+        padding: 1.75rem 1rem !important;
+        border-radius: 10px !important;
+    }
+
+    .calix-metrics-banner h3 {
+        font-size: 1.05rem !important;
+        margin-bottom: 1.25rem !important;
+        line-height: 1.35 !important;
+    }
+
+    .calix-metrics-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.25rem 0.75rem !important;
+    }
+
+    .calix-metric-val {
+        font-size: 1.65rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .calix-metric-lbl {
+        font-size: 0.75rem !important;
+        line-height: 1.35 !important;
+    }
+}
+
+/* Software Hero CTA & Brochure Buttons */
+.software-hero-cta {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.btn-brochure {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff !important;
+    background: #1e40af !important;
+    border: 1px solid #1e3a8a !important;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: all var(--transition-fast);
+    box-sizing: border-box;
+    min-height: 48px;
+}
+
+.btn-brochure:hover {
+    background: #1d4ed8 !important;
+    border-color: #1e40af !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+}
+
+.software-hero-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 48px;
+}
+
+.software-hero-cta .btn-primary {
+    background: var(--accent-black, #12141d);
+    color: #ffffff;
+    border: 1px solid var(--accent-black, #12141d);
+}
+
+.software-hero-cta .btn-primary:hover {
+    background: #252837;
+    border-color: #252837;
+    transform: translateY(-2px);
+}
+
+
+
+/* Product Action CTA (Bottom Section) */
+.product-action-cta {
+    display: flex !important;
+    gap: 1.25rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin-top: 1.5rem !important;
+    width: 100% !important;
+}
+
+.product-action-cta .btn,
+.product-action-cta .btn-primary,
+.product-action-cta .btn-secondary,
+.product-action-cta .btn-brochure {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.85rem 2rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+    min-height: 48px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.product-action-cta .btn-primary {
+    background-color: #12141d !important;
+    color: #ffffff !important;
+    border: 1px solid #12141d !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-action-cta .btn-primary:hover {
+    background-color: #252837 !important;
+    border-color: #252837 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
 }
 
 /* Comparison Table */
@@ -6817,6 +7036,83 @@ img, video, canvas, iframe, svg {
         width: 100% !important;
         max-width: 100% !important;
         text-align: center !important;
+    }
+
+    /* Software Hero CTA & Product Action CTA Side-by-Side Mobile Layout */
+    .software-hero-cta,
+    .product-action-cta {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: stretch !important;
+        gap: 0.6rem !important;
+        width: 100% !important;
+        max-width: 440px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .software-hero-cta a.btn,
+    .software-hero-cta a.btn-primary,
+    .software-hero-cta a.btn-brochure,
+    .product-action-cta a.btn,
+    .product-action-cta a.btn-primary,
+    .product-action-cta a.btn-secondary,
+    .product-action-cta a.btn-brochure {
+        flex: 1 1 0 !important;
+        width: 0 !important;
+        min-width: 0 !important;
+        max-width: 50% !important;
+        height: 44px !important;
+        min-height: 44px !important;
+        max-height: 44px !important;
+        padding: 0 0.5rem !important;
+        font-size: 0.82rem !important;
+        font-weight: 700 !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.35rem !important;
+        border-radius: 8px !important;
+        box-sizing: border-box !important;
+    }
+
+    .software-hero-cta a.btn-brochure svg,
+    .product-action-cta a.btn-brochure svg,
+    .product-action-cta a.btn svg {
+        width: 15px !important;
+        height: 15px !important;
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .software-hero-cta a.btn,
+    .software-hero-cta a.btn-primary,
+    .software-hero-cta a.btn-brochure,
+    .product-action-cta a.btn,
+    .product-action-cta a.btn-primary,
+    .product-action-cta a.btn-secondary,
+    .product-action-cta a.btn-brochure {
+        font-size: 0.75rem !important;
+        padding: 0 0.25rem !important;
+        gap: 0.25rem !important;
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+    }
+
+    .software-hero-cta a.btn-brochure svg,
+    .product-action-cta a.btn-brochure svg,
+    .product-action-cta a.btn svg {
+        width: 13px !important;
+        height: 13px !important;
     }
 }
 

@@ -222,32 +222,42 @@
 <div class="tech-workflow-grid">
 <!-- Step 1 -->
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">01</div>
 <h4>Émission à large bande</h4>
+</div>
 <p>Une source de lumière halogène stabilisée à longue durée de vie projette un spectre continu de lumière proche infrarouge sur le matériau de l'échantillon.</p>
 </div>
 <!-- Step 2 -->
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">02</div>
 <h4>Absorption sélective</h4>
+</div>
 <p>Les molécules organiques de l'échantillon (liaisons C-H, O-H, N-H) absorbent des longueurs d'onde spécifiques en fonction de leur concentration, reflétant le reste.</p>
 </div>
 <!-- Step 3 -->
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">03</div>
 <h4>Moteur spectral FT-NIR</h4>
+</div>
 <p>La lumière réfléchie pénètre dans l'interféromètre FT-NIR à l'intérieur de l'analyseur, qui sépare les longueurs d'onde et génère un interférogramme spectral haute résolution.</p>
 </div>
 <!-- Step 4 -->
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">04</div>
 <h4>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Modèles d'étalonnage</h4>
+</div>
 <p>Le spectre brut est traité via le caliX de USTECH modèles d'étalonnage, qui utilisent des algorithmes chimiométriques avancés ( PLS , AutoML ) pour prédire la composition chimique en millisecondes.</p>
 </div>
 <!-- Step 5 -->
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">05</div>
 <h4>Sortie de processus ProChem</h4>
+</div>
 <p>Les valeurs prédites (protéines, humidité, graisses, etc.) sont transmises via ProChem à votre système PLC/SCADA via OPC UA, Modbus ou des sorties analogiques pour un contrôle de processus en temps réel.</p>
 </div>
 </div>
@@ -333,33 +343,45 @@ caliX Chemometrics Suite – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">Capacités de base</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_automl.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
 <h4 style="color: #ffffff;">Moteur AutoML</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Création de modèles automatisés qui teste des centaines de combinaisons de prétraitement et de régression, classant les résultats en fonction des performances de validation croisée ( RMSECV , R², RPD ).</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_outlier.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line><circle cx="12" cy="12" r="4"></circle></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line><circle cx="12" cy="12" r="4"></circle></svg></div>
 <h4 style="color: #ffffff;">Détection avancée des valeurs aberrantes</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Distance de Mahalanobis, analyse de levier/résiduel, T² de Hotelling et méthodes de résidus spectraux pour signaler et isoler automatiquement les échantillons anormaux.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_preprocessing.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Prétraitement spectral</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">MSC , SNV , dérivés de Savitzky-Golay (1er/2e), lissage de Norris-Williams, suppression de tendance et sélection de région de longueur d'onde (iPLS) — tous configurables visuellement.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_regression.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
 <h4 style="color: #ffffff;">Algorithmes de régression</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Moindres carrés partiels ( PLS ), régression en composantes principales (PCR), régression linéaire multiple (MLR) et régression des vecteurs de support (SVR).</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_classification.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
 <h4 style="color: #ffffff;">Modèles de classification</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Classification basée sur PCA, SIMCA et analyse discriminante pour les applications d'identification et d'authentification des matières premières.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_transfer.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
 <h4 style="color: #ffffff;">Transfert d'étalonnage</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Déploiement du modèle en un clic dans toutes les unités.  La grande similarité des instruments d'une unité à l'autre du USTECH signifie qu'une correction de pente/biais nul est nécessaire.</p>
 </div>
 </div>
@@ -369,51 +391,61 @@ caliX Chemometrics Suite – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Flux de travail d'étalonnage</h3>
 <div class="tech-workflow-grid">
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">01</div>
 <h4>Importation de données</h4>
+</div>
 <p>Importez des analyses spectrales (.xlsx, .csv) associées à des valeurs de référence de laboratoire. caliX détecte automatiquement les colonnes de longueur d'onde et les paramètres constitutifs.</p>
 </div>
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">02</div>
 <h4>Nettoyage des données</h4>
+</div>
 <p>Identifiez et supprimez les valeurs aberrantes à l’aide de méthodes statistiques multivariées. Échantillons redondants fins pour créer un ensemble d’étalonnage équilibré et représentatif.</p>
 </div>
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">03</div>
 <h4>Prétraitement</h4>
+</div>
 <p>Appliquez des transformations spectrales ( MSC , SNV , dérivés) pour supprimer les effets de diffusion et améliorer la clarté du signal chimique.</p>
 </div>
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">04</div>
 <h4>Construction de modèles</h4>
+</div>
 <p>Utilisez AutoML ou la régression manuelle pour créer et optimiser des modèles d'étalonnage. La validation croisée garantit la robustesse contre le surapprentissage.</p>
 </div>
 <div class="tech-step-card">
+<div class="tech-step-header">
 <div class="tech-step-num">05</div>
 <h4>Déploiement</h4>
+</div>
 <p>Exportez les modèles validés directement vers ProChem pour une prédiction en ligne en temps réel. Les modèles peuvent être poussés simultanément vers tous les instruments connectés.</p>
 </div>
 </div>
 </div>
 <!-- caliX Key Metrics -->
-<div style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.85) 0%, rgba(10, 11, 16, 0.95) 100%), url('../images/software_cover.webp?v=1.0.5') no-repeat center center; background-size: cover; border-radius: 12px; padding: 3.5rem; border: 1px solid rgba(255,255,255,0.12);">
-<h3 style="font-size: 1.3rem; margin-bottom: 2rem; color: #ffffff; text-align: center;">Pourquoi cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Surpasse les logiciels de chimiométrie traditionnels</h3>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
-<div style="text-align: center;">
-<div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">500+</div>
-<div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Combinaisons de prétraitement testées automatiquement par AutoML en quelques minutes</div>
+<div class="calix-metrics-banner">
+<h3>Pourquoi cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Surpasse les logiciels de chimiométrie traditionnels</h3>
+<div class="calix-metrics-grid">
+<div class="calix-metric-item">
+<div class="calix-metric-val">500+</div>
+<div class="calix-metric-lbl">Combinaisons de prétraitement testées automatiquement par AutoML en quelques minutes</div>
 </div>
-<div style="text-align: center;">
-<div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">Zéro</div>
-<div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Connaissances en programmation requises - interface entièrement visuelle et pilotée par clic</div>
+<div class="calix-metric-item">
+<div class="calix-metric-val">Zéro</div>
+<div class="calix-metric-lbl">Connaissances en programmation requises - interface entièrement visuelle et pilotée par clic</div>
 </div>
-<div style="text-align: center;">
-<div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;">1-Clic</div>
-<div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Transfert d'étalonnage sur l'ensemble du parc d'instruments sans réétalonnage</div>
+<div class="calix-metric-item">
+<div class="calix-metric-val">1-Clic</div>
+<div class="calix-metric-lbl">Transfert d'étalonnage sur l'ensemble du parc d'instruments sans réétalonnage</div>
 </div>
-<div style="text-align: center;">
-<div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-title); margin-bottom: 0.5rem;"><5 minutes</div>
-<div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Cycle d'étalonnage complet du AutoML, des données brutes au modèle validé</div>
+<div class="calix-metric-item">
+<div class="calix-metric-val"><5 minutes</div>
+<div class="calix-metric-lbl">Cycle d'étalonnage complet du AutoML, des données brutes au modèle validé</div>
 </div>
 </div>
 </div>
@@ -442,33 +474,45 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">Caractéristiques principales du ProChem</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_multi_analyzer.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
 <h4 style="color: #ffffff;">Gestion multi-analyseurs</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Connectez et gérez plusieurs analyseurs USTECH à partir d’une seule instance ProChem. Surveillez tous les points de mesure de votre installation à partir d’un seul tableau de bord.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_trending.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Tendances et visualisation en temps réel</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Graphiques de tendances en direct pour tous les constituants mesurés avec limites d'alarme configurables, moyennes mobiles et superpositions SPC (Statistical Process Control).</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">Surveillance automatique de la santé</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Autodiagnostic continu comprenant le suivi de l'intensité de la lampe, la validation du balayage de référence, la surveillance du bruit spectral et le basculement automatique de la double lampe.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
 <h4 style="color: #ffffff;">Mode batch et continu</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Configurez des programmes de mesure pour les processus par lots (mélangeurs, réacteurs) ou en flux continu (convoyeurs, pipelines) avec une moyenne de balayage réglable.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_access.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">Contrôle d'accès des utilisateurs</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Gestion des utilisateurs à plusieurs niveaux (opérateur, superviseur, administrateur) avec journalisation d'audit. Enregistrements électroniques conformes à la norme 21 CFR Part 11 pour les applications pharmaceutiques.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
 <h4 style="color: #ffffff;">Accès et surveillance à distance</h4>
+</div>
 <p style="color: rgba(255,255,255,0.85);">Accès sécurisé au tableau de bord à distance via un navigateur Web. Surveillez l’état des instruments, examinez les tendances et recevez des notifications d’alarme de n’importe où.</p>
 </div>
 </div>
