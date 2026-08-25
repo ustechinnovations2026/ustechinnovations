@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How FT-NIR spectroscopy works, from photons to predictions: measurement path, calibration science and the caliX + ProChem ecosystem, explained by USTECH.">
+<title>NIR 技术与定标科学 | USTECH</title>
+<link rel="stylesheet" href="../index.css?v=1.1.0">
+<!-- Organization + WebSite Schema -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@graph": [
+{
+"@type": "Organization",
+"@id": "https://www.ustechinnovations.com/#org",
+"name": "USTECH Innovations",
+"url": "https://www.ustechinnovations.com/",
+"logo": "https://www.ustechinnovations.com/images/logo.svg",
+"description": "食品、饲料、乳制品和化工生产过程的在线 FT-NIR 光谱系统、化学计量学软件及定标模型制造商。",
+"foundingDate": "2023",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "30 N Gould St Ste 34301",
+"addressLocality": "Sheridan",
+"addressRegion": "WY",
+"postalCode": "82801",
+"addressCountry": "US"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"telephone": "+1-307-527-0072",
+"email": "info@ustechinnovations.com",
+"contactType": "sales"
+},
+"sameAs": [
+"https://www.linkedin.com/company/ustech-innovations"
+]
+},
+{
+"@type": "WebSite",
+"@id": "https://www.ustechinnovations.com/#website",
+"url": "https://www.ustechinnovations.com/",
+"name": "USTECH Innovations",
+"publisher": {
+"@id": "https://www.ustechinnovations.com/#org"
+}
+}
+]
+}
+</script>
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "首页",
+"item": "https://www.ustechinnovations.com/zh/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "知识库",
+"item": "https://www.ustechinnovations.com/zh/knowledge.html"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "技术"
+}
+]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="canonical" href="https://www.ustechinnovations.com/zh/knowledge-technology.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/knowledge-technology.html" />
+    <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/knowledge-technology.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.ustechinnovations.com/tr/knowledge-technology.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.ustechinnovations.com/fr/knowledge-technology.html" />
+    <link rel="alternate" hreflang="de" href="https://www.ustechinnovations.com/de/knowledge-technology.html" />
+    <link rel="alternate" hreflang="es" href="https://www.ustechinnovations.com/es/knowledge-technology.html" />
+    <link rel="alternate" hreflang="ar" href="https://www.ustechinnovations.com/ar/knowledge-technology.html" />
+    <link rel="alternate" hreflang="zh" href="https://www.ustechinnovations.com/zh/knowledge-technology.html" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="USTECH Innovations">
+    <meta property="og:title" content="NIR 技术与定标科学 | USTECH">
+    <meta property="og:description" content="How FT-NIR spectroscopy works, from photons to predictions: measurement path, calibration science and the caliX + ProChem ecosystem, explained by USTECH.">
+    <meta property="og:url" content="https://www.ustechinnovations.com/zh/knowledge-technology.html">
+    <meta property="og:image" content="https://www.ustechinnovations.com/images/og/knowledge-technology.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NIR 技术与定标科学 | USTECH">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NIR 技术与定标科学 | USTECH">
+    <meta name="twitter:description" content="How FT-NIR spectroscopy works, from photons to predictions: measurement path, calibration science and the caliX + ProChem ecosystem, explained by USTECH.">
+    <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/knowledge-technology.jpg">
+    <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations 标志" style="width: auto;" fetchpriority="high" decoding="async"></a>
+            <button class="nav-toggle" aria-label="切换导航">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">行业应用 <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">食品与饲料</a>
+                        <a href="industry-dairy.html" class="dropdown-item">乳制品</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">化工与制药</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">产品中心 <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">硬件设备</a>
+                        <a href="products-software.html" class="dropdown-item">软件系统</a>
+                        <a href="products-portal.html" class="dropdown-item">云端门户</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">校准模型</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link active">知识中心 <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">核心技术</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">技术博客</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">关于我们</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                <li><a href="faq.html" class="nav-link">常见问题</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0.25rem 0;">
+                        <span class="lang-flag-circle" data-lang="zh" style="display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 19px; border-radius: 3.5px; cursor: pointer; transition: all 0.2s ease; overflow: hidden;">
+                            <svg viewBox="0 0 30 20" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#DE2910"/><polygon points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7" fill="#FFDE00"/><g transform="translate(10,2) rotate(23)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,4) rotate(45)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,7) rotate(0)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(10,9) rotate(-20)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="../knowledge-technology.html" class="dropdown-item lang-option" data-lang="en" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 60 30" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="../tr/knowledge-technology.html" class="dropdown-item lang-option" data-lang="tr" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            Türkçe
+                        </a>
+                        <a href="../de/knowledge-technology.html" class="dropdown-item lang-option" data-lang="de" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 5 3" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="../fr/knowledge-technology.html" class="dropdown-item lang-option" data-lang="fr" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="10" height="20" fill="#002395"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ED2939"/></svg>
+                            Français
+                        </a>
+                        <a href="../es/knowledge-technology.html" class="dropdown-item lang-option" data-lang="es" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Español
+                        </a>
+                        <a href="../ar/knowledge-technology.html" class="dropdown-item lang-option" data-lang="ar" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="20" fill="#006C35"/><path d="M6,13.5 L24,13.5 M22,11.5 L24.5,13.5 L22,15.5 M7.5,12 L7.5,15" stroke="#fff" stroke-width="0.9" fill="none" stroke-linecap="round"/><text x="15" y="9.5" font-family="sans-serif" font-size="4.5" font-weight="bold" fill="#fff" text-anchor="middle" letter-spacing="0.5">العربية</text></svg>
+                            العربية
+                        </a>
+                        <a href="knowledge-technology.html" class="dropdown-item lang-option" data-lang="zh" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="20" fill="#DE2910"/><polygon points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7" fill="#FFDE00"/><g transform="translate(10,2) rotate(23)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,4) rotate(45)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,7) rotate(0)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(10,9) rotate(-20)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g></svg>
+                            简体中文
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+<main class="main-content">
+<section class="section hero-section" style="background: linear-gradient(to right, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.75) 50%, rgba(10,10,10,0.3) 100%), url('../images/tech_hero_bg.webp?v=1.0.5') no-repeat center center; background-size: cover; min-height: 400px; display: flex; align-items: center; position: relative; padding: 6rem 0;">
+<div class="container" style="padding: 0 2rem; position: relative; z-index: 2;">
+<span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.65); font-weight: 700; display: block; margin-bottom: 1.25rem;">知识库 / 技术</span>
+<h1 style="font-size: 2.8rem; color: #ffffff; line-height: 1.15; letter-spacing: -1.5px; font-weight: 400; margin-bottom: 1.5rem; max-width: 750px;">NIR 技术与定标科学</h1>
+<p style="font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.7; max-width: 680px; margin-bottom: 0;">了解近红外光谱技术、高级定标模型以及我们集成的软件生态系统如何提供实时过程智能。</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="grid grid-2" style="align-items: center; gap: 4rem; margin-bottom: 6rem;">
+<div>
+<h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">近红外光谱技术背后的科学</h2>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem;">近红外 (NIR) 光谱学测量分子化学键（主要是 C-H、O-H 和 N-H）的光吸收。通过将宽光谱 NIR 光投射到样品上，分析仪可以测量哪些波长被吸收，哪些波长被反射回去。这种吸收模式创建了揭示材料化学成分的独特光谱指纹。</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem;">USTECH 在其分析仪产品组合中采用 FT-NIR（傅里叶变换近红外光谱）技术，在宽波长范围（1,350–2,550 纳米）内提供高光谱分辨率。结合我们专有的定标模型和软件生态系统，该技术能够直接在生产线上进行实时的无损成分分析——消除了传统实验室方法的延迟和成本。</p>
+</div>
+<div style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.65) 0%, rgba(10, 11, 16, 0.9) 100%), url('../images/tech_core_bg.webp?v=1.0.5') no-repeat center center; background-size: cover; border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 3rem; color: #ffffff;">
+<h4 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff;">核心技术优势</h4>
+<div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
+<div>
+<strong style="color: var(--accent-gold);">工业级设计：</strong>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">坚固耐用的分析仪，专为振动、灰尘、温度波动和 CIP 清洗等恶劣工厂环境设计。</p>
+</div>
+<div>
+<strong style="color: var(--accent-gold);">超宽范围：</strong>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">覆盖 1,350 到 2,550 纳米，捕获主要的和组合的化学泛频倍频吸收。</p>
+</div>
+<div>
+<strong style="color: var(--accent-gold);">定标模型可移植性：</strong>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">极高的仪器间一致性，使模型能够在设备间直接定标转移而无需重新定标。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Technology Workflow Infographic -->
+<div style="margin-bottom: 6rem;">
+<div class="section-header" style="max-width: 800px; margin-bottom: 3rem;">
+<span class="section-subtitle">工作原理</span>
+<h2 class="section-title">从光到数据：测量路径</h2>
+<p class="section-desc">追踪从近红外光发射，通过光谱分析，至可操作过程数据的路径——由 USTECH 定标模型和软件提供支持。</p>
+</div>
+<div class="tech-workflow-grid">
+<!-- Step 1 -->
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">01</div>
+<h4>宽带发射</h4>
+</div>
+<p>稳定、长寿命的卤素光源将连续的近红外光谱投射到样品材料上。</p>
+</div>
+<!-- Step 2 -->
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">02</div>
+<h4>选择性吸收</h4>
+</div>
+<p>样品中的有机分子（C-H、O-H、N-H 键）根据其浓度吸收特定波长，反射其余部分。</p>
+</div>
+<!-- Step 3 -->
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">03</div>
+<h4>FT-NIR 光谱引擎</h4>
+</div>
+<p>反射光进入分析仪内部的 FT-NIR 干涉仪，干涉仪分离波长并生成高分辨率光谱干涉图。</p>
+</div>
+<!-- Step 4 -->
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">04</div>
+<h4>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 定标模型</h4>
+</div>
+<p>原始光谱数据通过 USTECH 的 caliX 进行处理 定标模型，其使用高级化学计量学算法 (PLS、AutoML) 在毫秒内预测化学成分。</p>
+</div>
+<!-- Step 5 -->
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">05</div>
+<h4>ProChem 过程输出</h4>
+</div>
+<p>预测值（蛋白质、水分、脂肪等）通过 ProChem 经由 OPC UA、Modbus 或模拟输出传输至您的 PLC/SCADA 系统，以进行实时闭环过程控制。</p>
+</div>
+</div>
+</div>
+<!-- Competitive Differentiation (Why USTECH) -->
+<div style="margin-bottom: 6rem;">
+<div class="section-header" style="max-width: 800px; margin-bottom: 3rem;">
+<span class="section-subtitle">竞争优势</span>
+<h2 class="section-title">为何选择 USTECH 在线分析仪？</h2>
+<p class="section-desc">USTECH 结合了强大的 FT-NIR 硬件与智能的定标软件及无缝的工业集成，将实验室级精度引入工厂车间。</p>
+</div>
+<div class="comparison-table-wrapper">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>参数</th>
+<th class="ustech-highlight">USTECH FT-NIR 解决方案</th>
+<th>传统 FT-NIR</th>
+<th>二极管阵列（色散型）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="feature-name">解决方案架构</td>
+<td class="ustech-highlight">集成的硬件+软件生态系统：FT-NIR 分析仪，cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 定标套件以及 ProChem 过程自动化软件。</td>
+<td>独立的光谱仪，需要第三方化学计量学和集成软件。</td>
+<td>基础硬件，带有有限的软件支持和手动数据导出功能。</td>
+</tr>
+<tr>
+<td class="feature-name">工业就绪</td>
+<td class="ustech-highlight"><strong>可直接生产使用</strong>。专为传送带、混合器、管道和反应釜上的在线安装而制造。</td>
+<td><strong>侧重实验室</strong>。需要受控的环境；并非为连续过程控制而设计。</td>
+<td><strong>有限的</strong>。有部分在线选项可用，但光谱范围受限且缺乏软件支持。</td>
+</tr>
+<tr>
+<td class="feature-name">光谱范围与分辨率</td>
+<td class="ustech-highlight"><strong>全近红外光谱范围</strong> （1350 – 2550 纳米）。以高干涉分辨率采集。</td>
+<td><strong>出色的范围与分辨率</strong>，对于现场操作而言过分复杂且脆弱。</td>
+<td><strong>有限的范围</strong> （通常为 900 – 1700 nm）。分辨率较低，错失关键的泛频吸收。</td>
+</tr>
+<tr>
+<td class="feature-name">定标模型与软件</td>
+<td class="ustech-highlight"><strong>集成化</strong>. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML 自动建立模型；ProChem 一键将其部署至所有连接的仪器。</td>
+<td><strong>手动的</strong>。需要昂贵的第三方化学计量学软件以及手动的定标转移。</td>
+<td><strong>基本的</strong>。内置化学计量学功能有限；设备之间的定标转移很困难。</td>
+</tr>
+<tr>
+<td class="feature-name">过程集成</td>
+<td class="ustech-highlight"><strong>原生</strong>。ProChem 通过 OPC UA、Modbus、4–20 mA 以及 REST API 直接连接到 PLC/SCADA。</td>
+<td><strong>有限的</strong>。通常需要自定义中间件或第三方 OPC 服务器才能与 PLC 连接。</td>
+<td><strong>基本的</strong>。通常限于模拟输出或专有协议。</td>
+</tr>
+<tr>
+<td class="feature-name">总体拥有成本</td>
+<td class="ustech-highlight"><strong>经过优化</strong>。极具竞争力的硬件价格，包含定标软件，并且几乎不需要后续维护服务。</td>
+<td><strong>非常高</strong>。昂贵的硬件加上第三方化学计量学和集成软件的年度许可证。</td>
+<td><strong>中等</strong>。硬件成本较低，但由于功能有限，需要对软件和技术支持进行额外投资。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ============================================================
+caliX Chemometrics Suite – Deep Dive
+============================================================ -->
+<section class="section" style="border-top: 1px solid var(--border-color); padding: 6rem 0;">
+<div class="container" style="padding: 0 2rem;">
+<div class="section-header" style="max-width: 100%; margin-bottom: 3.5rem;">
+<span class="section-subtitle">软件 / 化学计量学</span>
+<h2 class="section-title">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> — 智能定标套件</h2>
+<p class="section-desc">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 是 USTECH 专有的化学计量学和定标软件，可将原始光谱数据转化为可操作的化学成分值。它为专家级光谱学家和初次用户而设计，自动化了整个定标生命周期。</p>
+</div>
+<div style="margin-bottom: 5rem;">
+<div style="margin-bottom: 3.5rem;">
+<h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">caliX 是什么?</h3>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 是一个桌面化学计量学应用程序，可在一个统一的工作区内管理从光谱数据导入到预处理、异常样本检测、模型构建和验证的整个流程。它弥合了实验室参考分析与实时生产测量之间的差距。</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">与通用统计软件不同，cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 专为 NIR 光谱工作流而构建。它原生理解光谱数据，提供专业的工具如 Savitzky-Golay 导数平滑、乘性散射校正 (MSC)、标准正态变量变换 (SNV) 以及一阶/二阶导数预处理——所有这些都可以通过视觉化、点击驱动的界面进行访问。</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 支持所有 USTECH 硬件平台（ProLine2550、ProLine17ES、USTECH MasterLine、USTECH Tornado+），并可从集中的工作区管理整个仪器队列中的定标模型部署。</p>
+</div>
+<h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">核心功能</h3>
+<div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_automl.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+<h4 style="color: #ffffff;">AutoML 引擎</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">自动化模型构建可以测试数百种预处理与回归组合，并按交叉验证性能 (RMSECV、R²、RPD) 对结果进行排名。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_outlier.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line><circle cx="12" cy="12" r="4"></circle></svg></div>
+<h4 style="color: #ffffff;">高级异常样本检测</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">马氏距离、杠杆/残差分析、Hotelling's T² 和光谱残差方法，用于自动标记和隔离异常样本。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_preprocessing.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+<h4 style="color: #ffffff;">光谱预处理</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">MSC、SNV、Savitzky-Golay 导数（一阶/二阶）、Norris-Williams 平滑、去趋势以及波长区域选择 (iPLS)——所有选项均可直观配置。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_regression.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
+<h4 style="color: #ffffff;">回归算法</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">偏最小二乘法 (PLS)、主成分回归 (PCR)、多元线性回归 (MLR) 和支持向量回归 (SVR)。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_classification.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+<h4 style="color: #ffffff;">分类模型</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">基于 PCA 的分类、SIMCA 以及判别分析，用于原材料鉴定和真实性应用。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_transfer.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
+<h4 style="color: #ffffff;">定标转移</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">在所有设备中一键部署模型。USTECH 极高的仪器间一致性意味着无需斜率/偏差校正。</p>
+</div>
+</div>
+</div>
+<!-- caliX Workflow Steps -->
+<div style="margin-bottom: 5rem;">
+<h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 定标工作流程</h3>
+<div class="tech-workflow-grid">
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">01</div>
+<h4>数据导入</h4>
+</div>
+<p>导入带实验室参考值的光谱扫描数据 (.xlsx、.csv)。cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 自动检测波长列和成分参数。</p>
+</div>
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">02</div>
+<h4>数据清洗</h4>
+</div>
+<p>使用多变量统计方法识别并剔除异常样本检测。稀疏冗余样本以建立平衡、具有代表性的定标集。</p>
+</div>
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">03</div>
+<h4>预处理</h4>
+</div>
+<p>应用光谱转换（MSC、SNV、导数）消除散射效应并提高化学信号的清晰度。</p>
+</div>
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">04</div>
+<h4>模型建立</h4>
+</div>
+<p>使用 AutoML 或手动回归来构建和优化定标模型。交叉验证确保模型抗过拟合的鲁棒性。</p>
+</div>
+<div class="tech-step-card">
+<div class="tech-step-header">
+<div class="tech-step-num">05</div>
+<h4>部署</h4>
+</div>
+<p>将经过验证的模型直接导出至 ProChem 以进行实时在线预测。模型可以同步推送到所有连接的仪器。</p>
+</div>
+</div>
+</div>
+<!-- caliX Key Metrics -->
+<div class="calix-metrics-banner">
+<h3>为何选择 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 优于传统的化学计量学软件</h3>
+<div class="calix-metrics-grid">
+<div class="calix-metric-item">
+<div class="calix-metric-val">500+</div>
+<div class="calix-metric-lbl">AutoML 在几分钟内自动测试多种预处理组合</div>
+</div>
+<div class="calix-metric-item">
+<div class="calix-metric-val">零</div>
+<div class="calix-metric-lbl">不需要编程知识——全可视化、点击驱动的界面</div>
+</div>
+<div class="calix-metric-item">
+<div class="calix-metric-val">一键操作</div>
+<div class="calix-metric-lbl">在整个仪器组中转移定标模型，无需重新定标</div>
+</div>
+<div class="calix-metric-item">
+<div class="calix-metric-val"><5 分钟</div>
+<div class="calix-metric-lbl">从原始数据到验证模型的完整 AutoML 定标生命周期</div>
+</div>
+</div>
+</div>
+<div style="text-align: center; margin-top: 3rem;">
+<a href="product-calix.html" class="btn btn-primary">查阅完整 <span style="white-space: nowrap;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></span> 技术文档</a>
+</div>
+</div>
+</section>
+<!-- ============================================================
+ProChem Process Automation Platform – Deep Dive
+============================================================ -->
+<section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 6rem 0;">
+<div class="container" style="padding: 0 2rem;">
+<div class="section-header" style="max-width: 100%; margin-bottom: 3.5rem;">
+<span class="section-subtitle">软件 / 过程自动化</span>
+<h2 class="section-title">ProChem — 实时过程集成平台</h2>
+<p class="section-desc">ProChem 是 USTECH 的工业级过程自动化软件，可将近红外光谱测量与工厂控制系统相连。它是将实验室定标模型转化为实时、可操作的过程数据的运营支柱。</p>
+</div>
+<div style="margin-bottom: 5rem;">
+<div style="margin-bottom: 3.5rem;">
+<h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem 是什么？</h3>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 是直接运行于生产线级别的边缘计算软件平台。它接收在 caliX 中构建的定标模型 并将其实时应用于 USTECH 分析仪输入的扫描光谱。然后通过工业通信协议将预测的化学成分值传送到工厂的 PLC/SCADA 系统。</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 专为在苛刻工业环境中全天候 24/7 无人值守操作而设计。它负责仪器健康监控、自动参考扫描、带有双灯切换的灯泡故障检测以及光谱质量验证——所有这些都无需操作员干预。</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">无论您的生产设施使用的是西门子 (Siemens)、艾伦-布拉德利 (Allen-Bradley)、施耐德 (Schneider) 还是 ABB 自动化基础设施，ProChem 都能通过行业标准协议（OPC UA、Modbus TCP/RTU、4–20 mA 模拟输出、REST API）原生通信，将测量数据精确传送到您的控制逻辑需要的地方。</p>
+</div>
+<h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem 核心功能</h3>
+<div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_multi_analyzer.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+<h4 style="color: #ffffff;">多台分析仪管理</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">从一个 ProChem 实例连接和管理多台 USTECH 分析仪。在一个仪表板上监控整个设施的所有测量点。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_trending.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+<h4 style="color: #ffffff;">实时趋势与可视化</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">所有测量成分的实时趋势图，带有可配置的警报限制、移动平均线和 SPC（统计过程控制）覆盖图。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+<h4 style="color: #ffffff;">自动健康监测</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">持续自诊断，包括灯光强度跟踪、参考扫描验证、光谱噪声监测和自动双灯故障切换。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+<h4 style="color: #ffffff;">批处理与连续模式</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">针对批处理过程（混合器、反应釜）或连续流动（传送带、管道）配置测量计划，支持可调节的扫描平均值。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_access.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+<h4 style="color: #ffffff;">用户访问控制</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">具备审计日志记录的多级用户管理（操作员、主管、管理员）。制药应用符合 21 CFR Part 11 的电子记录标准。</p>
+</div>
+<div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
+<div class="tech-step-header">
+<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+<h4 style="color: #ffffff;">远程访问与监控</h4>
+</div>
+<p style="color: rgba(255,255,255,0.85);">通过 Web 浏览器安全远程访问仪表板。从任何地方监控仪器健康状况、查看趋势并接收报警通知。</p>
+</div>
+</div>
+</div>
+<!-- Typical Use Case Banner -->
+<div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
+<h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">典型用例</h4>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">某饲料厂在混合器卸料传送带上安装了 ProLine2550。ProChem 每 3 秒接收一次光谱扫描，使用 caliX 预测蛋白质、水分和脂肪构建的模型，并通过 OPC UA 将值发送到西门子 S7-1500 PLC。PLC 会自动调节原材料配料阀门，以保持蛋白质在目标规格的 ±0.15% 范围内——消除了昂贵的蛋白质浪费，并防止出现不合格批次。</p>
+</div>
+<div style="text-align: center;">
+<a href="product-prochem.html" class="btn btn-primary">查阅完整 ProChem 技术文档</a>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="section" style="background: linear-gradient(180deg, rgba(18, 20, 29, 0.82) 0%, rgba(18, 20, 29, 0.85) 100%), url('../images/autocal_bg.webp?v=1.0.5') no-repeat center center; background-size: cover; text-align: center; color: var(--bg-primary); padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+<div class="container" style="max-width: 800px; padding: 0 2rem;">
+<h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">想要优化您的生产线吗？</h2>
+<p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
+了解我们定制的定标方法和 FT-NIR 在线分析仪如何适应您的设施。您可以探索 <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">我们的产品系列</a> 以查看我们的全系列设备和软件，或浏览 <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">我们的联系方式</a> 联系我们的销售工程师。
+</p>
+<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+<a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">浏览产品系列</a>
+<a href="contact.html" class="btn btn-secondary" style="border-color: var(--border-hover); color: var(--bg-primary);">查看联系方式</a>
+</div>
+</div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>行业应用</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">食品与饲料</a></li>
+                        <li><a href="industry-dairy.html">乳制品</a></li>
+                        <li><a href="industry-chemical-pharma.html">化工与制药</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>产品中心</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">硬件设备</a></li>
+                        <li><a href="products-software.html">软件系统</a></li>
+                        <li><a href="products-portal.html">云端门户</a></li>
+                        <li><a href="products-calibration-models.html">校准模型</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations 标志" style="height: 58px; width: auto;" fetchpriority="high" decoding="async"></a>
+                <p>自2023年起提供高精度在线分析光谱仪器与化学计量学软件解决方案。</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>联系我们</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">电话： <a href="tel:+13075270072" style="color: inherit; text-decoration: none;">+1 307 527 0072</a></p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">邮箱： <a href="mailto:info@ustechinnovations.com" style="color: inherit; text-decoration: none;">info@ustechinnovations.com</a></p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">关注我们：</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. 保留所有权利。 | <a href="privacy-policy.html" style="color: var(--text-muted);">隐私政策</a> | <a href="terms-of-service.html" style="color: var(--text-muted);">服务条款</a></p>
+            <p>专为严苛的科学与工业精度而设计。</p>
+        </div>
+    </footer>
+<script src="../app.js?v=1.1.0"></script>
+</body>
+</html>

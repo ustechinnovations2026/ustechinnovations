@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="USTECH 应用团队关于 FT-NIR 精度、MEMS 光谱仪、PLC/SCADA 集成、定标转移、维护和 ROI 的 30 个解答。">
+<title>FT-NIR 光谱学常见问题：设备、软件、模型 | USTECH</title>
+<link rel="stylesheet" href="../index.css?v=1.1.0">
+<style>
+/* Sidebar Nav Styling */
+.faq-nav-link {
+display: block;
+padding: 0.75rem 1rem;
+color: var(--text-secondary);
+text-decoration: none;
+font-weight: 500;
+border-radius: 6px;
+transition: all 0.2s ease;
+border-left: 3px solid transparent;
+}
+.faq-nav-link:hover {
+color: var(--text-primary);
+background-color: var(--bg-secondary);
+}
+.faq-nav-link.active {
+color: var(--text-primary) !important;
+font-weight: 600 !important;
+border-left: 3px solid var(--accent-gold) !important;
+background-color: var(--bg-secondary) !important;
+}
+/* Category Sections */
+.faq-category-section {
+margin-bottom: 4.5rem;
+scroll-margin-top: 120px; /* offset for sticky header */
+}
+.faq-category-header {
+font-size: 1.6rem;
+font-family: var(--font-title);
+font-weight: 700;
+letter-spacing: -0.5px;
+color: var(--text-primary);
+margin-bottom: 1.5rem;
+border-bottom: 1px solid var(--border-color);
+padding-bottom: 0.75rem;
+}
+/* Responsive 常见问题 layout */
+@media (max-width: 991px) {
+.faq-layout {
+grid-template-columns: 1fr !important;
+gap: 2.5rem !important;
+}
+.faq-sidebar {
+position: static !important;
+top: auto !important;
+margin-bottom: 1rem;
+}
+.faq-sidebar ul {
+flex-direction: row !important;
+flex-wrap: wrap;
+}
+.faq-nav-link {
+border-left: none !important;
+border-bottom: 3px solid transparent;
+padding: 0.5rem 1rem !important;
+}
+.faq-nav-link.active {
+border-bottom: 3px solid var(--accent-gold) !important;
+border-left: none !important;
+}
+}
+</style>
+<!-- Organization + WebSite Schema -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@graph": [
+{
+"@type": "Organization",
+"@id": "https://www.ustechinnovations.com/#org",
+"name": "USTECH Innovations",
+"url": "https://www.ustechinnovations.com/",
+"logo": "https://www.ustechinnovations.com/images/logo.svg",
+"description": "食品、饲料、乳制品和化工生产过程的在线 FT-NIR 光谱系统、化学计量学软件及定标模型制造商。",
+"foundingDate": "2023",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "30 N Gould St Ste 34301",
+"addressLocality": "Sheridan",
+"addressRegion": "WY",
+"postalCode": "82801",
+"addressCountry": "US"
+},
+"contactPoint": {
+"@type": "ContactPoint",
+"telephone": "+1-307-527-0072",
+"email": "info@ustechinnovations.com",
+"contactType": "sales"
+},
+"sameAs": [
+"https://www.linkedin.com/company/ustech-innovations"
+]
+},
+{
+"@type": "WebSite",
+"@id": "https://www.ustechinnovations.com/#website",
+"url": "https://www.ustechinnovations.com/",
+"name": "USTECH Innovations",
+"publisher": {
+"@id": "https://www.ustechinnovations.com/#org"
+}
+}
+]
+}
+</script>
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "FT-NIR 近红外光谱学需要化学制备吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "不需要。近红外光谱技术是一种完全无损的物理测量。光线投射到样本表面并分析其反射。绝对没有化学物质的使用，没有废物处理成本，也没有样本破坏。"
+}
+},
+{
+"@type": "Question",
+"name": "FT-NIR 的准确性与传统的湿化学方法相比如何？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "FT-NIR 是一种二级分析方法，这意味着它是根据主要实验室参考方法（如湿化学）进行定标的。定标后，它的重复性和准确性非常接近参考方法，其优点是速度无限快（几秒对比几小时），消除了人为操作错误，并且不需要消耗品或危险试剂。"
+}
+},
+{
+"@type": "Question",
+"name": "基于滤光片的 NIR、二极管阵列 NIR 和 FT-NIR 之间有什么区别？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "基于滤光片的系统仅测量几个特定波长，限制了其灵活性。二极管阵列系统测量多个波长，但光谱分辨率较低。FT-NIR 使用干涉仪以极高的分辨率连续扫描整个近红外光谱，提供卓越的精度、更好的定标稳定性和检测微量成分的能力。"
+}
+},
+{
+"@type": "Question",
+"name": "基于 MEMS 的光谱仪与传统的扫描光栅光谱仪有何不同？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "扫描光栅光谱仪依赖于脆弱的移动反射镜和光栅，这些部件对振动、温度变化和磨损非常敏感。基于 MEMS 的光谱仪（如 USTECH 的光学引擎）使用直接蚀刻在硅片上的固态微机电系统。它们不包含宏观移动部件，因此极其坚固、抗震，并在恶劣的生产车间中具有热稳定性。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH FT-NIR 仪器的波段范围是多少？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "USTECH FT-NIR 仪器在 800 nm 到 2600 nm 波段（12,500 到 3,850 cm¹）内运行。该宽范围覆盖了 C-H、O-H 和 N-H 分子键的关键吸收带，可实现对水分、蛋白质、脂肪、淀粉、纤维和灰分的全面分析。"
+}
+},
+{
+"@type": "Question",
+"name": "FT-NIR 可以分析浓度低于 0.1% 的微量成分吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "近红外光谱技术非常灵敏，但在标准条件下，对于有机成分，其实际检测限通常在 0.1% (1000 ppm) 左右。对于低于此阈值的浓度，准确性在很大程度上取决于样本基质以及用于训练定标模型的主要参考方法的精度。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH Tornado+ 研磨机如何避免加热样本？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "USTECH Tornado+ 研磨机具有双壁研磨室，连接到连续的液态水冷却回路。当研磨谷物或高脂饲料样本时，冷却液会迅速散发电机摩擦热量，保持研磨室冷却并防止水分蒸发或脂肪融化。"
+}
+},
+{
+"@type": "Question",
+"name": "ProLine17ES 分析仪中的光源能使用多长时间？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "我们的在线分析仪使用额定运行时间超过 20,000 小时的长寿命卤素灯。此外，系统配备双灯冗余：如果主灯发生故障，分析仪将自动将备用灯旋转到位并触发警报，确保过程零停机时间。"
+}
+},
+{
+"@type": "Question",
+"name": "使用 USTECH 系统可以分析哪些类型的物理样本？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "我们的 FT-NIR 系统可以分析各种样本形式。固体、颗粒和粉末使用样品瓶、旋转样品瓶或培养皿扫描仪进行测量。液体、浆料和糊状物使用透射附件、漫反射光纤探头或直接安装在管道上的在线流通池进行测量。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH StarchQC 损伤淀粉分析仪如何工作？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "USTECH StarchQC 损伤淀粉分析仪利用电流法测量淀粉降解动力学。通过将少量面粉样本暴露于特定酶中，该分析仪在破损淀粉被分解时测量电化学反应速率，从而在几分钟内提供高精度的破损淀粉百分比。"
+}
+},
+{
+"@type": "Question",
+"name": "在线传感器是否需要保护窗口，如何保持其清洁？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的，在线传感器使用高耐用性的蓝宝石光学窗口将传感器光学元件与产品流隔离。蓝宝石非常耐刮擦（莫氏硬度为 9）。为了防止产品堆积，我们提供自动空气吹扫环或机械擦拭器，可定期清洁窗口而无需停止生产线。"
+}
+},
+{
+"@type": "Question",
+"name": "液体分析需要多长的光程？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "最佳光程长度取决于液体的化学成分和吸收强度。对于透射 NIR 区域的水基液体或溶剂，光程通常在 1 毫米到 8 毫米之间。我们提供可调节的漫反射和透射探头，以便根据您的特定流体基质轻松调整该光程。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH 光学硬件的标准保修是多长？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "所有 USTECH FT-NIR 仪器和传感器均提供标准的 12 个月全面保修。我们还提供延长保修计划和年度服务合同，涵盖预防性维护、光学对准检查和光源更换。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH 光谱仪可以与我们工厂的 PLC 或 SCADA 系统集成吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的，绝对可以。我们的 ProChem 软件套件在设计时考虑了工业通信协议。它原生支持 OPC UA、Modbus TCP 和直接模拟/数字输出 (4-20 mA)，可在 15 至 30 秒内将结果直接传递给 PLC 系统（如西门子、Allen-Bradley）或 SCADA 平台。"
+}
+},
+{
+"@type": "Question",
+"name": "ProChem 如何处理过程参数的闭环控制？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "ProChem 计算实时化学浓度值并将其发送至工厂 SCADA/PLC。PLC 将这些值与设定值（例如目标水分）进行比较，并使用 PID 回路调节控制阀（例如蒸汽或喷水）。ProChem 还包括内置的安全边界，以忽略过程启动/停止阶段的读数。"
+}
+},
+{
+"@type": "Question",
+"name": "caliX 软件套件符合 FDA 21 CFR Part 11 吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的。caliX Suite 支持完整的电子签名跟踪、安全的多用户角色权限级别、所有定标修改的完整审计跟踪日志记录以及原始数据导出验证。它完全符合 21 CFR Part 11 和 GMP Annex 11 强制规定的严格文档和完整性标准。"
+}
+},
+{
+"@type": "Question",
+"name": "如果工厂网络中断，USTECH 软件可以离线运行吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的。虽然 caliX 云仪表板集中管理定标和仪器群诊断，但所有本地测量逻辑、光学计算和 PLC 通信接口都在仪器的专用 PC 上本地运行。如果互联网或内部网络断开，系统将在没有任何数据丢失或过程被中断的情况下继续离线运行。"
+}
+},
+{
+"@type": "Question",
+"name": "对于连接云的 caliX 设备，如何处理网络安全？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "本地仪器 PC 与 caliX 云之间的所有数据通信都使用 TLS 1.3 进行了完全加密。本地客户端代理仅建立出站连接；在工厂网络上从不打开任何入站端口。此外，如果企业安全策略禁止云连接，本地 PC 可以与互联网完全气隙隔离。"
+}
+},
+{
+"@type": "Question",
+"name": "我能自动创建自定义仪表板和 PDF 质量报告吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的。ProChem 具有灵活的报告模板引擎。您可以配置该软件在每个生产批次结束时自动生成 PDF 分析证书 (COA)。这些报告可以包含统计摘要、异常样本警告和图表，并且可以自动发送给 QA 经理或存储在本地网络驱动器上。"
+}
+},
+{
+"@type": "Question",
+"name": "定标模型可以在不同的 MasterLine 设备之间共享吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "可以。由于我们的光学引擎是使用 MEMS 硅芯片制造的，而不是手工制作的玻璃和反射镜组件，因此设备间的差异几乎不存在。在 caliX 软件套件中建立的定标模型可以立即部署到多个设备，而无需进行手动模型匹配。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH 如何支持定标模型的维护和更新？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "USTECH 提供全面的支持。通过 caliX Suite，用户可以上传新的参考数据以自动更新回归模型。我们还提供远程化学计量学支持，我们的专家可安全连接以检查模型性能、运行验证测试并远程优化定标模型。"
+}
+},
+{
+"@type": "Question",
+"name": "什么是“异常样本”，系统在分析期间如何处理它？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "异常样本是指其光谱特征明显偏离定标数据集的样本（由于异物、极端密度变化或超出模型范围的参数）。我们的软件计算每次扫描的马氏距离。如果样本被标记为异常样本，系统会提醒操作员并忽略该读数，以防止错误数据影响 PLC 控制回路。"
+}
+},
+{
+"@type": "Question",
+"name": "构建自定义定标模型需要多少物理参考样本？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "要从头构建一个稳健的自定义 PLS（偏最小二乘法）定标模型，我们通常建议至少提供 50 到 100 个覆盖整个预期值范围的样本点。但是，USTECH 为大多数饲料、谷物、乳制品和聚合物应用提供了预安装的全球定标数据库，这意味着您只需几个验证点即可在第一天开始分析。"
+}
+},
+{
+"@type": "Question",
+"name": "在较旧的第三方光谱仪上开发的定标模型可以转移到 USTECH 吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的。我们的化学计量学家在将定标数据库从旧的扫描单色仪或光电二极管阵列仪器（例如 FOSS、Bruker、Thermo）转移到 USTECH FT-NIR 设备方面拥有丰富的经验。我们利用数学标准化算法来匹配光谱轮廓，并节省数年的参考分析工作。"
+}
+},
+{
+"@type": "Question",
+"name": "caliX Suite 支持哪些建模算法？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "caliX Suite 支持各种化学计量学建模工具。对于定量分析，它支持 PLS（偏最小二乘法）、MLR（多元线性回归）和高级机器学习模型。对于定性分类，它支持 PCA（主成分分析）、SIMCA（类比软独立建模）和 SVM（支持向量机）。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH 在线系统的典型投资回报率 (ROI) 周期是多长？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "大多数工业加工厂在 6 到 12 个月内即可实现全部投资回报。节省主要是通过减少原材料过度损耗（闭环公差管理）、消除不合格批次、降低实验室劳动力成本，以及通过优化干燥和混合过程来减少能源消耗来实现的。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH FT-NIR 仪器多久需要重新对准光学系统一次？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "永远不需要。与传统的实验室 FT-NIR 光谱仪（使用需要定期重新校准的旋转镜和激光制导干涉仪）不同，我们的 MEMS 干涉仪是固态和永久性的。光路在出厂时是固定的，确保永久的波长定标稳定性。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH 分析仪和传感器需要哪些日常维护？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "日常维护非常少。对于台式系统，操作员应每周清洁样本窗口，并使用内置的黄金参考板运行标准参考扫描。对于在线传感器，主要维护任务是每2至3年更换一次灯泡，并在工厂年度停机期间验证车窗雨刮器密封件。"
+}
+},
+{
+"@type": "Question",
+"name": "USTECH 是否为工厂操作员和实验室人员提供培训？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "是的。每台仪器的安装都包括全面的现场培训。我们涵盖基本的系统操作、样品准备、软件界面导航和日常维护故障排除。我们还为希望开发和维护自己的定标的质量保证经理提供高级化学计量学培训。"
+}
+},
+{
+"@type": "Question",
+"name": "在线管道传感器的典型安装时间是多长？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "典型的管道传感器安装需要 1 到 2 天的物理安装和传感器配置。我们在预定的维护窗口期间与您的工程团队协调安装传感器法兰，然后进行电气连接、PLC 通信验证和定标验证。"
+}
+}
+]
+}
+</script>
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "首页",
+"item": "https://www.ustechinnovations.com/zh/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "常见问题"
+}
+]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="canonical" href="https://www.ustechinnovations.com/zh/faq.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/faq.html" />
+    <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/faq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.ustechinnovations.com/tr/faq.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.ustechinnovations.com/fr/faq.html" />
+    <link rel="alternate" hreflang="de" href="https://www.ustechinnovations.com/de/faq.html" />
+    <link rel="alternate" hreflang="es" href="https://www.ustechinnovations.com/es/faq.html" />
+    <link rel="alternate" hreflang="ar" href="https://www.ustechinnovations.com/ar/faq.html" />
+    <link rel="alternate" hreflang="zh" href="https://www.ustechinnovations.com/zh/faq.html" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="USTECH Innovations">
+    <meta property="og:title" content="FT-NIR 光谱学常见问题：设备、软件、模型 | USTECH">
+    <meta property="og:description" content="USTECH 应用团队关于 FT-NIR 精度、MEMS 光谱仪、PLC/SCADA 集成、定标转移、维护和 ROI 的 30 个解答。">
+    <meta property="og:url" content="https://www.ustechinnovations.com/zh/faq.html">
+    <meta property="og:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="FT-NIR 光谱学常见问题：设备、软件、模型 | USTECH">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FT-NIR 光谱学常见问题：设备、软件、模型 | USTECH">
+    <meta name="twitter:description" content="USTECH 应用团队关于 FT-NIR 精度、MEMS 光谱仪、PLC/SCADA 集成、定标转移、维护和 ROI 的 30 个解答。">
+    <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
+    <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations 标志" style="width: auto;" fetchpriority="high" decoding="async"></a>
+            <button class="nav-toggle" aria-label="切换导航">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="industries.html" class="nav-link">行业应用 <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="industry-food-feed.html" class="dropdown-item">食品与饲料</a>
+                        <a href="industry-dairy.html" class="dropdown-item">乳制品</a>
+                        <a href="industry-chemical-pharma.html" class="dropdown-item">化工与制药</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link">产品中心 <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="products-devices.html" class="dropdown-item">硬件设备</a>
+                        <a href="products-software.html" class="dropdown-item">软件系统</a>
+                        <a href="products-portal.html" class="dropdown-item">云端门户</a>
+                        <a href="products-calibration-models.html" class="dropdown-item">校准模型</a>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="knowledge.html" class="nav-link">知识中心 <span style="font-size: 0.7rem; margin-left: 2px;">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="knowledge-technology.html" class="dropdown-item">核心技术</a>
+                        <a href="knowledge-blogs.html" class="dropdown-item">技术博客</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">关于我们</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                <li><a href="faq.html" class="nav-link active">常见问题</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link lang-toggle" onclick="return false;" style="display: flex; align-items: center; padding: 0.25rem 0;">
+                        <span class="lang-flag-circle" data-lang="zh" style="display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 19px; border-radius: 3.5px; cursor: pointer; transition: all 0.2s ease; overflow: hidden;">
+                            <svg viewBox="0 0 30 20" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#DE2910"/><polygon points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7" fill="#FFDE00"/><g transform="translate(10,2) rotate(23)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,4) rotate(45)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,7) rotate(0)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(10,9) rotate(-20)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g></svg>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="../faq.html" class="dropdown-item lang-option" data-lang="en" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 60 30" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"/><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                            English
+                        </a>
+                        <a href="../tr/faq.html" class="dropdown-item lang-option" data-lang="tr" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="20" fill="#E30A17"/><circle cx="14.5" cy="10" r="6" fill="#fff"/><circle cx="16" cy="10" r="4.8" fill="#E30A17"/><g transform="translate(20,10) rotate(33)"><polygon points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1" fill="#fff"/></g></svg>
+                            Türkçe
+                        </a>
+                        <a href="../de/faq.html" class="dropdown-item lang-option" data-lang="de" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 5 3" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCC00"/></svg>
+                            Deutsch
+                        </a>
+                        <a href="../fr/faq.html" class="dropdown-item lang-option" data-lang="fr" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="10" height="20" fill="#002395"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ED2939"/></svg>
+                            Français
+                        </a>
+                        <a href="../es/faq.html" class="dropdown-item lang-option" data-lang="es" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/><g transform="translate(10,10)"><rect x="-2" y="-3.5" width="4" height="4.5" rx="0.3" fill="#AA151B" stroke="#7B2D26" stroke-width="0.2"/><rect x="-1.5" y="-3" width="1.2" height="1.8" rx="0.15" fill="#F1BF00"/><rect x="0.3" y="-3" width="1.2" height="1.8" rx="0.15" fill="#fff"/><rect x="-1.5" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#fff"/><rect x="0.3" y="-0.8" width="1.2" height="1.5" rx="0.15" fill="#F1BF00"/><line x1="-3" y1="-3.5" x2="-3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><line x1="3" y1="-3.5" x2="3" y2="2" stroke="#7B2D26" stroke-width="0.4"/><ellipse cx="-3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><ellipse cx="3" cy="-3.8" rx="0.6" ry="0.5" fill="#7B2D26"/><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"/></g></svg>
+                            Español
+                        </a>
+                        <a href="../ar/faq.html" class="dropdown-item lang-option" data-lang="ar" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="20" fill="#006C35"/><path d="M6,13.5 L24,13.5 M22,11.5 L24.5,13.5 L22,15.5 M7.5,12 L7.5,15" stroke="#fff" stroke-width="0.9" fill="none" stroke-linecap="round"/><text x="15" y="9.5" font-family="sans-serif" font-size="4.5" font-weight="bold" fill="#fff" text-anchor="middle" letter-spacing="0.5">العربية</text></svg>
+                            العربية
+                        </a>
+                        <a href="faq.html" class="dropdown-item lang-option" data-lang="zh" style="display: flex; align-items: center; gap: 0.65rem;">
+                            <svg viewBox="0 0 30 20" width="24" height="16" preserveAspectRatio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);"><rect width="30" height="20" fill="#DE2910"/><polygon points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7" fill="#FFDE00"/><g transform="translate(10,2) rotate(23)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,4) rotate(45)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(12,7) rotate(0)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g><g transform="translate(10,9) rotate(-20)"><polygon points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3" fill="#FFDE00"/></g></svg>
+                            简体中文
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+<main class="main-content">
+<section class="section" style="padding-bottom: 2rem; background: linear-gradient(180deg, rgba(10, 11, 16, 0.65) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/faq_header_bg.webp?v=1.0.5') no-repeat center center; background-size: cover; padding-top: 6rem; padding-bottom: 4rem;">
+<div class="container" style="text-align: center;">
+<span class="section-subtitle" style="color: rgba(255,255,255,0.7);">常见查询</span>
+<h1 class="section-title" style="color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">常见问题解答</h1>
+<p class="section-desc" style="max-width: 800px; color: rgba(255,255,255,0.85); margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.3);">对我们的 FT-NIR 光学技术、定标模型转移或硬件规格有疑问吗？在下面找到即时答案。</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="faq-layout" style="display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: start;">
+<!-- Sidebar Navigation -->
+<aside class="faq-sidebar" style="position: sticky; top: 120px;">
+<h3 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 700;">分类</h3>
+<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+<li><a href="#category-tech" class="faq-nav-link active">技术与精度</a></li>
+<li><a href="#category-hardware" class="faq-nav-link">设备与硬件</a></li>
+<li><a href="#category-software" class="faq-nav-link">软件系统与集成</a></li>
+<li><a href="#category-calibration" class="faq-nav-link">定标模型</a></li>
+<li><a href="#category-support" class="faq-nav-link">服务与维护</a></li>
+</ul>
+</aside>
+<!-- FAQ Content Column -->
+<div class="faq-content">
+<!-- SECTION 1: Technology & Precision -->
+<div id="category-tech" class="faq-category-section">
+<h2 class="faq-category-header">技术与精度</h2>
+<div class="faq-list">
+<!-- FAQ 1 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>FT-NIR 近红外光谱学需要化学制备吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>不需要。近红外光谱技术是一种完全无损的物理测量。光线投射到样本表面并分析其反射。绝对没有化学物质的使用，没有废物处理成本，也没有样本破坏。</p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>FT-NIR 的准确性与传统的湿化学方法相比如何？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>FT-NIR 是一种二级分析方法，这意味着它是根据主要实验室参考方法（如湿化学）进行定标的。定标后，它的重复性和准确性非常接近参考方法，其优点是速度无限快（几秒对比几小时），消除了人为操作错误，并且不需要消耗品或危险试剂。</p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>基于滤光片的 NIR、二极管阵列 NIR 和 FT-NIR 之间有什么区别？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>基于滤光片的系统仅测量几个特定波长，限制了其灵活性。二极管阵列系统测量多个波长，但光谱分辨率较低。FT-NIR 使用干涉仪以极高的分辨率连续扫描整个近红外光谱，提供卓越的精度、更好的定标稳定性和检测微量成分的能力。</p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>基于 MEMS 的光谱仪与传统的扫描光栅光谱仪有何不同？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>扫描光栅光谱仪依赖于脆弱的移动反射镜和光栅，这些部件对振动、温度变化和磨损非常敏感。基于 MEMS 的光谱仪（如 USTECH 的光学引擎）使用直接蚀刻在硅片上的固态微机电系统。它们不包含宏观移动部件，因此极其坚固、抗震，并在恶劣的生产车间中具有热稳定性。</p>
+</div>
+</div>
+<!-- FAQ 5 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH FT-NIR 仪器的波段范围是多少？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>USTECH FT-NIR 仪器在 800 nm 到 2600 nm 波段（12,500 到 3,850 cm¹）内运行。该宽范围覆盖了 C-H、O-H 和 N-H 分子键的关键吸收带，可实现对水分、蛋白质、脂肪、淀粉、纤维和灰分的全面分析。</p>
+</div>
+</div>
+<!-- FAQ 6 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>FT-NIR 可以分析浓度低于 0.1% 的微量成分吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>近红外光谱技术非常灵敏，但在标准条件下，对于有机成分，其实际检测限通常在 0.1% (1000 ppm) 左右。对于低于此阈值的浓度，准确性在很大程度上取决于样本基质以及用于训练定标模型的主要参考方法的精度。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Devices & Hardware -->
+<div id="category-hardware" class="faq-category-section">
+<h2 class="faq-category-header">设备与硬件</h2>
+<div class="faq-list">
+<!-- FAQ 7 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH Tornado+ 研磨机如何避免加热样本？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>USTECH Tornado+ 研磨机具有双壁研磨室，连接到连续的液态水冷却回路。当研磨谷物或高脂饲料样本时，冷却液会迅速散发电机摩擦热量，保持研磨室冷却并防止水分蒸发或脂肪融化。</p>
+</div>
+</div>
+<!-- FAQ 8 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>ProLine17ES 分析仪中的光源能使用多长时间？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>我们的在线分析仪使用额定运行时间超过 20,000 小时的长寿命卤素灯。此外，系统配备双灯冗余：如果主灯发生故障，分析仪将自动将备用灯旋转到位并触发警报，确保过程零停机时间。</p>
+</div>
+</div>
+<!-- FAQ 9 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>使用 USTECH 系统可以分析哪些类型的物理样本？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>我们的 FT-NIR 系统可以分析各种样本形式。固体、颗粒和粉末使用样品瓶、旋转样品瓶或培养皿扫描仪进行测量。液体、浆料和糊状物使用透射附件、漫反射光纤探头或直接安装在管道上的在线流通池进行测量。</p>
+</div>
+</div>
+<!-- FAQ 10 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH StarchQC 损伤淀粉分析仪如何工作？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>USTECH StarchQC 损伤淀粉分析仪利用电流法测量淀粉降解动力学。通过将少量面粉样本暴露于特定酶中，该分析仪在破损淀粉被分解时测量电化学反应速率，从而在几分钟内提供高精度的破损淀粉百分比。</p>
+</div>
+</div>
+<!-- FAQ 11 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>在线传感器是否需要保护窗口，如何保持其清洁？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的，在线传感器使用高耐用性的蓝宝石光学窗口将传感器光学元件与产品流隔离。蓝宝石非常耐刮擦（莫氏硬度为 9）。为了防止产品堆积，我们提供自动空气吹扫环或机械擦拭器，可定期清洁窗口而无需停止生产线。</p>
+</div>
+</div>
+<!-- FAQ 13 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>液体分析需要多长的光程？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>最佳光程长度取决于液体的化学成分和吸收强度。对于透射 NIR 区域的水基液体或溶剂，光程通常在 1 毫米到 8 毫米之间。我们提供可调节的漫反射和透射探头，以便根据您的特定流体基质轻松调整该光程。</p>
+</div>
+</div>
+<!-- FAQ 14 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH 光学硬件的标准保修是多长？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>所有 USTECH FT-NIR 仪器和传感器均提供标准的 12 个月全面保修。我们还提供延长保修计划和年度服务合同，涵盖预防性维护、光学对准检查和光源更换。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Software & PLC Integration -->
+<div id="category-software" class="faq-category-section">
+<h2 class="faq-category-header">软件系统与 PLC 集成</h2>
+<div class="faq-list">
+<!-- FAQ 15 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH 光谱仪可以与我们工厂的 PLC 或 SCADA 系统集成吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的，绝对可以。我们的 ProChem 软件套件在设计时考虑了工业通信协议。它原生支持 OPC UA、Modbus TCP 和直接模拟/数字输出 (4-20 mA)，可在 15 至 30 秒内将结果直接传递给 PLC 系统（如西门子、Allen-Bradley）或 SCADA 平台。</p>
+</div>
+</div>
+<!-- FAQ 16 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>ProChem 如何处理过程参数的闭环控制？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>ProChem 计算实时化学浓度值并将其发送至工厂 SCADA/PLC。PLC 将这些值与设定值（例如目标水分）进行比较，并使用 PID 回路调节控制阀（例如蒸汽或喷水）。ProChem 还包括内置的安全边界，以忽略过程启动/停止阶段的读数。</p>
+</div>
+</div>
+<!-- FAQ 17 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 软件套件符合 FDA 21 CFR 第 11 部分的要求吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的。cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件支持完整的电子签名跟踪、安全的多用户角色权限级别、对所有定标修改的完整审计跟踪记录以及原始数据导出验证。它完全符合 21 CFR 第 11 部分和 GMP 附录 11 强制执行的严格文档和完整性标准。</p>
+</div>
+</div>
+<!-- FAQ 18 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>如果工厂网络中断，USTECH 软件可以离线运行吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的。虽然 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 云仪表板集中管理定标和设备诊断，所有本地测量逻辑、光学计算和 PLC 通信接口均在仪器专用 PC 上本地运行。如果互联网或内部网络中断，系统将继续离线运行，不会出现任何数据丢失或过程延迟。</p>
+</div>
+</div>
+<!-- FAQ 19 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>云连接的 caliX 如何处理网络安全 设备？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>本地仪器 PC 和 caliX 之间的所有数据通信 云端采用 TLS 1.3 进行完全加密。本地客户端代理仅建立出站连接；工厂网络上永远不会打开任何入站端口。此外，如果企业安全策略禁止云连接，本地 PC 可以与互联网完全物理隔离。</p>
+</div>
+</div>
+<!-- FAQ 20 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>我能自动创建自定义仪表板和 PDF 质量报告吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的。ProChem 具有灵活的报告模板引擎。您可以配置该软件在每个生产批次结束时自动生成 PDF 分析证书 (COA)。这些报告可以包含统计摘要、异常样本警告和图表，并且可以自动发送给 QA 经理或存储在本地网络驱动器上。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Calibration & Chemometrics -->
+<div id="category-calibration" class="faq-category-section">
+<h2 class="faq-category-header">定标模型</h2>
+<div class="faq-list">
+<!-- FAQ 21 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>定标模型可以在不同的 MasterLine 设备之间共享吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的。因为我们的光学引擎是使用 MEMS 硅芯片构建的，而不是手工制作的玻璃和镜片组件，因此几乎不存在设备间的差异。在 caliX 中建立的定标模型 软件套件可以立即部署到多台设备上，而无需手动模型匹配。</p>
+</div>
+</div>
+<!-- FAQ 22 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH 如何支持定标模型的维护和更新？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>USTECH 提供全面的支持。通过 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件，用户可以上传新的参考数据以自动更新回归模型。我们还提供远程化学计量学支持，我们的专家可安全地连接以查看模型性能、运行验证测试并远程优化定标。</p>
+</div>
+</div>
+<!-- FAQ 23 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>什么是“异常样本”，系统在分析期间如何处理它？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>异常样本是指其光谱特征明显偏离定标数据集的样本（由于异物、极端密度变化或超出模型范围的参数）。我们的软件计算每次扫描的马氏距离。如果样本被标记为异常样本，系统会提醒操作员并忽略该读数，以防止错误数据影响 PLC 控制回路。</p>
+</div>
+</div>
+<!-- FAQ 24 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>构建自定义定标模型需要多少物理参考样本？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>要从头构建一个稳健的自定义 PLS（偏最小二乘法）定标模型，我们通常建议至少提供 50 到 100 个覆盖整个预期值范围的样本点。但是，USTECH 为大多数饲料、谷物、乳制品和聚合物应用提供了预安装的全球定标数据库，这意味着您只需几个验证点即可在第一天开始分析。</p>
+</div>
+</div>
+<!-- FAQ 25 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>在较旧的第三方光谱仪上开发的定标模型可以转移到 USTECH 吗？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的。我们的化学计量学家在将定标数据库从旧的扫描单色仪或光电二极管阵列仪器（例如 FOSS、Bruker、Thermo）转移到 USTECH FT-NIR 设备方面拥有丰富的经验。我们利用数学标准化算法来匹配光谱轮廓，并节省数年的参考分析工作。</p>
+</div>
+</div>
+<!-- FAQ 26 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>caliX 使用哪些建模算法 套件支持什么？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件支持广泛的化学计量学建模工具。对于定量分析，它支持 PLS（偏最小二乘法）、MLR（多元线性回归）和高级机器学习模型。对于定性分类，它支持 PCA（主成分分析）、SIMCA（簇类独立软模式分类）和 SVM（支持向量机）。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Services & Maintenance -->
+<div id="category-support" class="faq-category-section">
+<h2 class="faq-category-header">服务、维护与投资回报率 (ROI)</h2>
+<div class="faq-list">
+<!-- FAQ 27 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH 在线系统的典型投资回报率 (ROI) 周期是多长？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>大多数工业加工厂在 6 到 12 个月内即可实现全部投资回报。节省主要是通过减少原材料过度损耗（闭环公差管理）、消除不合格批次、降低实验室劳动力成本，以及通过优化干燥和混合过程来减少能源消耗来实现的。</p>
+</div>
+</div>
+<!-- FAQ 28 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH FT-NIR 仪器多久需要重新对准光学系统一次？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>永远不需要。与传统的实验室 FT-NIR 光谱仪（使用需要定期重新校准的旋转镜和激光制导干涉仪）不同，我们的 MEMS 干涉仪是固态和永久性的。光路在出厂时是固定的，确保永久的波长定标稳定性。</p>
+</div>
+</div>
+<!-- FAQ 29 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH 分析仪和传感器需要哪些日常维护？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>日常维护非常少。对于台式系统，操作员应每周清洁样本窗口，并使用内置的黄金参考板运行标准参考扫描。对于在线传感器，主要维护任务是每2至3年更换一次灯泡，并在工厂年度停机期间验证车窗雨刮器密封件。</p>
+</div>
+</div>
+<!-- FAQ 30 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>USTECH 是否为工厂操作员和实验室人员提供培训？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>是的。每台仪器的安装都包括全面的现场培训。我们涵盖基本的系统操作、样品准备、软件界面导航和日常维护故障排除。我们还为希望开发和维护自己的定标的质量保证经理提供高级化学计量学培训。</p>
+</div>
+</div>
+<!-- FAQ 31 -->
+<div class="faq-item">
+<button class="faq-question">
+<span>在线管道传感器的典型安装时间是多长？</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>典型的管道传感器安装需要 1 到 2 天的物理安装和传感器配置。我们在预定的维护窗口期间与您的工程团队协调安装传感器法兰，然后进行电气连接、PLC 通信验证和定标验证。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Contact Section -->
+<section class="section bg-light" style="border-top: 1px solid var(--border-color); padding: 5rem 2rem; text-align: center;">
+<div class="container" style="max-width: 900px;">
+<div style="background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; box-shadow: var(--shadow-md);">
+<div style="margin-bottom: 1.5rem;">
+<img src="../images/support_avatar.webp?v=1.0.5" alt="客户支持" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-sm); border: 3px solid var(--accent-gold);" loading="lazy" decoding="async">
+</div>
+<h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">还有问题吗？</h2>
+<p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1rem; line-height: 1.6;">如果您没有找到您想要的答案，或者如果您需要针对您工厂特定应用的定制建议，我们的支持团队已准备好为您提供帮助。您可以浏览 <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">我们的产品中心</a> 查看我们全系列的设备和软件，或查阅 <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">我们的联系方式</a> 联系我们的销售工程师。</p>
+<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+<a href="contact.html" class="btn btn-primary">查看我们的联系方式</a>
+<a href="mailto:info@ustechinnovations.com" class="btn btn-secondary">发送邮件咨询专家</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Left: Industries + Products -->
+            <div class="footer-left">
+                <div class="footer-links-col">
+                    <h4>行业应用</h4>
+                    <ul class="footer-links">
+                        <li><a href="industry-food-feed.html">食品与饲料</a></li>
+                        <li><a href="industry-dairy.html">乳制品</a></li>
+                        <li><a href="industry-chemical-pharma.html">化工与制药</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>产品中心</h4>
+                    <ul class="footer-links">
+                        <li><a href="products-devices.html">硬件设备</a></li>
+                        <li><a href="products-software.html">软件系统</a></li>
+                        <li><a href="products-portal.html">云端门户</a></li>
+                        <li><a href="products-calibration-models.html">校准模型</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Center: Logo -->
+            <div class="footer-logo-center">
+                <a href="index.html" class="logo"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations 标志" style="height: 58px; width: auto;" fetchpriority="high" decoding="async"></a>
+                <p>自2023年起提供高精度在线分析光谱仪器与化学计量学软件解决方案。</p>
+            </div>
+            <!-- Right: Contact -->
+            <div class="footer-links-col">
+                <h4>联系我们</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">电话： <a href="tel:+13075270072" style="color: inherit; text-decoration: none;">+1 307 527 0072</a></p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">邮箱： <a href="mailto:info@ustechinnovations.com" style="color: inherit; text-decoration: none;">info@ustechinnovations.com</a></p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">关注我们：</p>
+                <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+                    <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 USTECH Innovations LLC. 保留所有权利。 | <a href="privacy-policy.html" style="color: var(--text-muted);">隐私政策</a> | <a href="terms-of-service.html" style="color: var(--text-muted);">服务条款</a></p>
+            <p>专为严苛的科学与工业精度而设计。</p>
+        </div>
+    </footer>
+<script src="../app.js?v=1.1.0"></script>
+<!-- Scroll-Spy and Navigation JS -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const sections = document.querySelectorAll('.faq-category-section');
+const navLinks = document.querySelectorAll('.faq-nav-link');
+// Smooth scroll for nav links
+navLinks.forEach(link => {
+link.addEventListener('click', (e) => {
+e.preventDefault();
+const targetId = link.getAttribute('href');
+const targetSection = document.querySelector(targetId);
+if (targetSection) {
+const offset = 120; // sticky header compensation
+const bodyRect = document.body.getBoundingClientRect().top;
+const elementRect = targetSection.getBoundingClientRect().top;
+const elementPosition = elementRect - bodyRect;
+const offsetPosition = elementPosition - offset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+// Scroll spy logic using IntersectionObserver
+const observerOptions = {
+root: null,
+rootMargin: '-20% 0px -60% 0px',
+threshold: 0
+};
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const id = entry.target.getAttribute('id');
+navLinks.forEach(link => {
+if (link.getAttribute('href') === `#${id}`) {
+link.classList.add('active');
+} else {
+link.classList.remove('active');
+}
+});
+}
+});
+}, observerOptions);
+sections.forEach(section => {
+observer.observe(section);
+});
+});
+</script>
+</body>
+</html>
