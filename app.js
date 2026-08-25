@@ -887,8 +887,14 @@ function searchLoc(item) {
     return (SEARCH_I18N[base] && SEARCH_I18N[base][lang]) || null;
 }
 
-// Detect current language from pathname (supports file:// and http/https://)
+// Detect current language from HTML lang attribute or pathname
 function detectCurrentLang() {
+    if (document.documentElement && document.documentElement.lang) {
+        var htmlLang = document.documentElement.lang.toLowerCase().substring(0, 2);
+        if (SUPPORTED_LANGS.indexOf(htmlLang) !== -1) {
+            return htmlLang;
+        }
+    }
     var path = (window.location.pathname || '').replace(/\\/g, '/');
     var match = path.match(/\/(tr|fr|de|es|ar)(\/|$)/i);
     return match ? match[1].toLowerCase() : 'en';
@@ -926,7 +932,7 @@ function getLangUrl(targetLang) {
         return targetLang + '/' + targetPage;
     }
 
-    // Currently in a language subfolder (tr, fr, de, es)
+    // Currently in a language subfolder (tr, fr, de, es, ar)
     if (targetLang === 'en') {
         return '../' + targetPage;
     }
@@ -950,21 +956,24 @@ function selectLang(el) {
         var currentLang = detectCurrentLang();
         var currentPage = detectCurrentPage();
         
-        // Update the flag circle to show current language flag
-        var currentOption = document.querySelector('.lang-option[data-lang="' + currentLang + '"]');
-        if (currentOption) {
-            var svg = currentOption.querySelector('svg');
-            if (svg) {
-                var clone = svg.cloneNode(true);
-                clone.setAttribute('width', '100%');
-                clone.setAttribute('height', '100%');
-                clone.setAttribute('preserveAspectRatio', 'xMidYMid slice');
-                clone.removeAttribute('style');
-                document.querySelectorAll('.lang-flag-circle').forEach(function(circle) {
-                    circle.setAttribute('data-lang', currentLang);
-                    circle.innerHTML = '';
-                    circle.appendChild(clone.cloneNode(true));
-                });
+        // Update the flag circle only if it does not match current language
+        var firstCircle = document.querySelector('.lang-flag-circle');
+        if (firstCircle && firstCircle.getAttribute('data-lang') !== currentLang) {
+            var currentOption = document.querySelector('.lang-option[data-lang="' + currentLang + '"]');
+            if (currentOption) {
+                var svg = currentOption.querySelector('svg');
+                if (svg) {
+                    var clone = svg.cloneNode(true);
+                    clone.setAttribute('width', '100%');
+                    clone.setAttribute('height', '100%');
+                    clone.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+                    clone.removeAttribute('style');
+                    document.querySelectorAll('.lang-flag-circle').forEach(function(circle) {
+                        circle.setAttribute('data-lang', currentLang);
+                        circle.innerHTML = '';
+                        circle.appendChild(clone.cloneNode(true));
+                    });
+                }
             }
         }
         
