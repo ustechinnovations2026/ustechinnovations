@@ -7491,12 +7491,16 @@ div.hero-metrics-grid,
 }
 
 /* =====================================================================
-   6. Language Switcher Flag Circle — Pure Round Flag Only (No Outer Ring)
+   6. Language Switcher Flag Badge — Rectangular with Rounded Corners
    ===================================================================== */
 .lang-toggle {
-    padding: 0 !important;
+    padding: 0.35rem 0 !important;
     border: none !important;
     background: transparent !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    vertical-align: middle !important;
 }
 
 .lang-toggle::after {
@@ -7508,20 +7512,21 @@ div.hero-metrics-grid,
     align-items: center !important;
     justify-content: center !important;
     width: 28px !important;
-    height: 28px !important;
+    height: 19px !important;
     min-width: 28px !important;
-    min-height: 28px !important;
-    border-radius: 50% !important;
+    min-height: 19px !important;
+    border-radius: 3.5px !important;
     overflow: hidden !important;
-    border: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
     outline: none !important;
-    box-shadow: none !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) !important;
     position: relative !important;
     padding: 0 !important;
     margin: 0 !important;
     flex-shrink: 0 !important;
     background: transparent !important;
-    transition: transform 0.25s ease !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    vertical-align: middle !important;
 }
 
 .lang-flag-circle,
@@ -7531,9 +7536,8 @@ div.hero-metrics-grid,
 }
 
 .lang-flag-circle:hover {
-    transform: scale(1.12) !important;
-    border: none !important;
-    box-shadow: none !important;
+    transform: scale(1.08) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
 }
 
 .lang-flag-circle svg {
@@ -7543,9 +7547,23 @@ div.hero-metrics-grid,
     min-width: 100% !important;
     min-height: 100% !important;
     object-fit: cover !important;
-    border-radius: 50% !important;
-    transform: scale(1.45) !important;
-    transform-origin: center center !important;
+    border-radius: 3.5px !important;
+    transform: none !important;
+}
+
+@media (max-width: 768px) {
+    .nav-links > li > .lang-toggle,
+    .nav-links .nav-item .lang-toggle {
+        justify-content: flex-start !important;
+        padding: 0.75rem 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: left !important;
+    }
+    .lang-flag-circle {
+        margin: 0 !important;
+    }
 }
 
 /* =====================================================================
