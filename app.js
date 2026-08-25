@@ -118,7 +118,7 @@ try {
 // Works identically on file:// (local test), localhost, and production.
 // =====================================================================
 
-var SUPPORTED_LANGS = ['en', 'tr', 'fr', 'de', 'es'];
+var SUPPORTED_LANGS = ['en', 'tr', 'fr', 'de', 'es', 'ar'];
 
 // =====================================================================
 // UI I18N (USTECH_UI_I18N_v1) -- app.js tek dosya 5 dile servis edilir; icindeki
@@ -229,6 +229,27 @@ var UI_I18N = {
     cta_title: 'Optimice su producción con NIR',
     cta_desc: 'Programe una demo personalizada o envíe sus muestras para un ensayo de factibilidad gratuito.',
     cta_btn: 'Solicitar Demostración'
+  },
+  ar: {
+    search_ph: 'البحث في الصفحات والمنتجات...', search_ph_short: 'البحث في الموقع...',
+    close_search: 'إغلاق البحث', popular: 'عمليات البحث الشائعة', popular_badge: 'شائع',
+    suggested_for: 'النتائج المقترحة لـ', suggested_badge: 'مقترح',
+    no_suggestions: 'لم يتم العثور على اقتراحات لـ', no_results: 'لم يتم العثور على نتائج تطابق استفسارك.',
+    cat_Products: 'المنتجات', cat_Industries: 'الصناعات', cat_Knowledge: 'المعرفة', cat_General: 'عام',
+    cookie_settings: 'إعدادات ملفات تعريف الارتباط', cookie_title: 'تفضيلات ملفات تعريف الارتباط',
+    cookie_text: 'نستخدم ملفات تعريف الارتباط لتحسين تجربتك وتحليل استخدام الموقع ودعم جهودنا التسويقية. خصص إعداداتك أدناه.',
+    cookie_ess: 'ملفات تعريف الارتباط الأساسية', cookie_ess_d: 'ضرورية لعمل الموقع بشكل صحيح. لا يمكن تعطيلها.',
+    cookie_ana: 'ملفات تعريف الارتباط التحليلية', cookie_ana_d: 'تساعدنا في قياس حركة المرور وتحليل سلوك المستخدمين لتحسين الموقع.',
+    cookie_mkt: 'ملفات تعريف الارتباط التسويقية', cookie_mkt_d: 'تُستخدم لتقديم محتوى مستهدف وقياس أداء الإعلانات.',
+    cookie_save: 'حفظ الإعدادات', cookie_accept: 'قبول الكل', back_top: 'العودة إلى الأعلى',
+    spec_tab: 'تحدث مع خبير متخصص', spec_close: 'إغلاق',
+    spec_text: 'خبراء التحليل الطيفي FT-NIR لدينا مستعدون لمساعدتك في العثور على الحل المناسب لعمليتك. تواصل معنا عبر أي قناة أدناه.',
+    spec_call: 'اتصل بنا', spec_email: 'البريد الإلكتروني', spec_cta: 'طلب استشارة',
+    cookie_saved: 'تم حفظ تفضيلات ملفات تعريف الارتباط.', cookie_all: 'تم قبول جميع ملفات تعريف الارتباط.',
+    cta_badge: 'عرض حي وتحليل عينات',
+    cta_title: 'عزز كفاءة إنتاجك مع تقنية NIR في الوقت الفعلي',
+    cta_desc: 'حدد موعداً لعرض توضيحي مخصص أو أرسل عيناتك لإجراء اختبار مجاني لدراسة الجدوى في المختبر.',
+    cta_btn: 'طلب عرض توضيحي حي'
   }
 };
 function ui(key) {
@@ -279,6 +300,11 @@ function resolveSiteUrl(url) {
 // Uretici: i18n/arama_dizini_uret.py -- ELLE DUZENLEME, ceviri JSON'larini duzelt.
 var SEARCH_I18N = {
  "about.html": {
+  "ar": {
+   "k": "من نحن الشركة الفريق",
+   "s": "تعرف على الفريق الذي يقف وراء USTECH: علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل FT-NIR وبرمجيات caliX والمعايرات المحمولة منذ عام 2023.",
+   "t": "حول USTECH Innovations: خبراء FT-NIR والكيمياء القياسية"
+  },
   "de": {
    "k": "über uns unternehmen team",
    "s": "Das Team hinter USTECH: Chemometriker und Automatisierer, die seit 2023 FT-NIR-Analysatoren, caliX-Software und portable Kalibrierungen entwickeln.",
@@ -301,6 +327,11 @@ var SEARCH_I18N = {
   }
  },
  "contact.html": {
+  "ar": {
+   "k": "اتصل بنا عرض سعر هاتف بريد دعم",
+   "s": "تحدث إلى مهندس تطبيقات USTECH: اطلب عرض أسعار، أو احجز عرضًا توضيحيًا أو تحليلاً مجانياً لعينة، واستخدم حاسبة العائد على الاستثمار لتقدير مدخراتك السنوية.",
+   "t": "اتصل بـ USTECH | طلب عرض توضيحي أو تحليل عينة NIR"
+  },
   "de": {
    "k": "kontakt angebot preis demo support",
    "s": "Sprechen Sie mit einem USTECH-Anwendungstechniker: Angebot, Demo oder kostenlose Musteranalyse und ROI-Rechner für Ihre jährlichen Einsparungen.",
@@ -323,6 +354,11 @@ var SEARCH_I18N = {
   }
  },
  "faq.html": {
+  "ar": {
+   "k": "الأسئلة الشائعة ضمان صيانة",
+   "s": "30 إجابة حول دقة FT-NIR ومقاييس الطيف MEMS وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات USTECH.",
+   "t": "الأسئلة الشائعة حول التحليل الطيفي FT-NIR: الأجهزة، البرامج، النماذج"
+  },
   "de": {
    "k": "faq häufige fragen garantie wartung",
    "s": "30 Antworten zu FT-NIR-Genauigkeit, MEMS-Spektrometern, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI – vom Anwendungsteam von USTECH.",
@@ -345,6 +381,11 @@ var SEARCH_I18N = {
   }
  },
  "index.html": {
+  "ar": {
+   "k": "الرئيسية",
+   "s": "تحليل FT-NIR المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية. قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل USTECH.",
+   "t": "أجهزة تحليل عمليات FT-NIR المضمنة والكيمياء القياسية"
+  },
   "de": {
    "k": "startseite",
    "s": "Echtzeit-Inline-FT-NIR-Analyse für Lebensmittel-, Futtermittel-, Molkerei- und Chemiebetriebe. Weniger Überdosierung, Spezifikation in jeder Charge.",
@@ -367,6 +408,11 @@ var SEARCH_I18N = {
   }
  },
  "industries.html": {
+  "ar": {
+   "k": "الصناعات التطبيقات",
+   "s": "اكتشف كيف يفيد تحليل FT-NIR المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني. حلول USTECH الخاصة بالصناعة.",
+   "t": "حلول FT-NIR حسب الصناعة: الأغذية، الألبان، الكيماويات"
+  },
   "de": {
    "k": "branchen industrien anwendungen",
    "s": "Wie sich Inline-FT-NIR-Analyse in Lebensmittel- und Futtermittelverarbeitung, Molkerei sowie Chemie- und Pharmaproduktion auszahlt. USTECH-Lösungen.",
@@ -389,6 +435,11 @@ var SEARCH_I18N = {
   }
  },
  "industry-chemical-pharma.html": {
+  "ar": {
+   "k": "الكيمياء والصيدلة الأدوية البوليمر الراتنج",
+   "s": "FT-NIR الجاهز لـ FDA 21 CFR Part 11 لمصانع الأدوية والكيماويات: PAT في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات.",
+   "t": "تحليلات عمليات الكيماويات والأدوية (PAT)"
+  },
   "de": {
    "k": "chemie pharma polymer harz",
    "s": "Bereit für FDA 21 CFR Part 11 FT-NIR für Pharma- und Chemieanlagen: Echtzeit-PAT für Rohstoff-ID, Mischungsgleichmäßigkeit, Trocknungsendpunkt und Reaktionen.",
@@ -411,6 +462,11 @@ var SEARCH_I18N = {
   }
  },
  "industry-dairy.html": {
+  "ar": {
+   "k": "الألبان الحليب الجبن الزبدة الزبادي مسحوق الحليب",
+   "s": "قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام FT-NIR المدمج المتوافق مع CIP والمصمم لمصانع الألبان. استكشف حلول USTECH.",
+   "t": "NIR المدمج للألبان: توحيد الدهون والإنتاجية"
+  },
   "de": {
    "k": "molkerei milch käse butter sahne joghurt",
    "s": "Jeden Tankwagen bewerten, Butterfett-Überdosierung beenden und Pulverfeuchte regeln – mit CIP-fähigem Inline-FT-NIR für Molkereibetriebe.",
@@ -433,6 +489,11 @@ var SEARCH_I18N = {
   }
  },
  "industry-food-feed.html": {
+  "ar": {
+   "k": "الأغذية والأعلاف الحبوب الدقيق البروتين الرطوبة",
+   "s": "تحليل NIR للبروتين والرطوبة والدهون في الوقت الفعلي من الاستلام إلى العلف النهائي. أوقف هدر التركيب وقم بتوثيق كل دفعة مع USTECH.",
+   "t": "NIR المدمج لمصانع الأعلاف: أوقف هدر البروتين"
+  },
   "de": {
    "k": "lebensmittel futtermittel getreide mehl protein feuchte",
    "s": "Echtzeit-NIR-Analyse von Protein, Feuchte und Fett von der Annahme bis zum Fertigfutter. Weniger Rezeptur-Überdosierung, jede Charge dokumentiert.",
@@ -455,6 +516,11 @@ var SEARCH_I18N = {
   }
  },
  "knowledge-blogs.html": {
+  "ar": {
+   "k": "المدونات المقالات الملاحظات الفنية",
+   "s": "52 articles, whitepapers and guides on  NIR  calibration,  PLS  modeling, inline process control and ROI - practical reading for QC and process engineers.",
+   "t": "NIR  Spectroscopy Blog & Whitepapers"
+  },
   "de": {
    "k": "blog artikel anwendungshinweise",
    "s": "52 Artikel, Whitepaper und Leitfäden zu NIR-Kalibrierung, PLS-Modellierung, Inline-Prozesskontrolle und ROI – praxisnahe Lektüre für QC- und Prozessingenieure.",
@@ -477,6 +543,11 @@ var SEARCH_I18N = {
   }
  },
  "knowledge-technology.html": {
+  "ar": {
+   "k": "التكنولوجيا ft-nir التحليل الطيفي mems المعايرة",
+   "s": "How  FT-NIR  spectroscopy works, from photons to predictions: measurement path, calibration science and the  caliX  +  ProChem  ecosystem, explained by  USTECH .",
+   "t": "NIR  Technology & Calibration Science"
+  },
   "de": {
    "k": "technologie spektroskopie theorie",
    "s": "FT-NIR-Spektroskopie erklärt, von Photonen bis zur Vorhersage: Messpfad, Kalibrierwissenschaft und das caliX-ProChem-Ökosystem von USTECH.",
@@ -499,6 +570,11 @@ var SEARCH_I18N = {
   }
  },
  "knowledge.html": {
+  "ar": {
+   "k": "المعرفة التكنولوجيا الأدلة",
+   "s": "تعلم التحليل الطيفي بالأشعة تحت الحمراء القريبة (NIR) من الألف إلى الياء: شروحات التكنولوجيا، علم المعايرة وأكثر من 50 مدونة وورقة بيضاء كتبها مهندسو USTECH.",
+   "t": "مركز المعرفة لتقنية NIR: التكنولوجيا والأدلة"
+  },
   "de": {
    "k": "wissen technologie leitfäden",
    "s": "NIR-Spektroskopie von Grund auf: Technologie-Erklärungen, Kalibrierwissenschaft und technische Fachbeiträge der USTECH-Ingenieure.",
@@ -521,6 +597,11 @@ var SEARCH_I18N = {
   }
  },
  "product-calix.html": {
+  "ar": {
+   "k": "calix معايرة كيموميتريكس تعلم آلي automl pls pca",
+   "s": "بناء نماذج معايرة NIR والتحقق من صحتها ونشرها في دقائق.  يجمع  caliX  بين  PLS و  PCA  و  AutoML  في مساحة عمل مكونة من ثماني وحدات لبيانات NIR و FTIR و Raman.",
+   "t": "caliX :  AutoML  القياسات الكيميائية وبرامج المعايرة"
+  },
   "de": {
    "k": "calix kalibrierung chemometrie maschinelles lernen",
    "s": "NIR-Kalibriermodelle in Minuten erstellen, validieren und ausrollen. caliX vereint PLS, PCA und AutoML in einem Arbeitsbereich mit acht Modulen.",
@@ -543,6 +624,11 @@ var SEARCH_I18N = {
   }
  },
  "product-masterline.html": {
+  "ar": {
+   "k": "masterline محلل مكتبي الحبوب الأعلاف",
+   "s": "USTECH MasterLine - محلل FT-NIR مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف.",
+   "t": "USTECH MasterLine"
+  },
   "de": {
    "k": "masterline tischgerät analysator getreide",
    "s": "USTECH MasterLine - Tisch-FT-NIR-Analysator für die schnelle, zerstörungsfreie Qualitätskontrolle von Getreide, Futterzutaten und Raufutter.",
@@ -565,6 +651,11 @@ var SEARCH_I18N = {
   }
  },
  "product-prochem.html": {
+  "ar": {
+   "k": "prochem التحكم في العمليات plc scada pat",
+   "s": "يربط  ProChem  أجهزة  تحليل USTECH بـ PLC و SCADA: لوحات المعلومات المباشرة والإنذارات والتحكم التلقائي في نقطة الضبط التي تحول نتائج NIR إلى إجراء في الوقت الفعلي.",
+   "t": "ProChem : PAT في الوقت الفعلي والتحكم في الحلقة المغلقة"
+  },
   "de": {
    "k": "prochem prozesssteuerung sps scada echtzeit",
    "s": "ProChem verbindet USTECH-Analysatoren mit SPS und SCADA: Live-Dashboards, Alarme und automatische Sollwertregelung in Echtzeit.",
@@ -587,6 +678,11 @@ var SEARCH_I18N = {
   }
  },
  "product-proline-17es.html": {
+  "ar": {
+   "k": "proline 17es مستشعر حزام ناقل خط الإنتاج",
+   "s": "محلل ProLine17ES - مقياس طيف لتقنية تحليل العمليات (PAT) الصناعية على خط الإنتاج للأنابيب والمزالق.",
+   "t": "محلل ProLine17ES"
+  },
   "de": {
    "k": "proline 17es sensor förderband",
    "s": "ProLine17ES Analysator – Industrielles Inline-Spektrometer für Prozessanalysentechnik (PAT) für Rohrleitungen und Rutschen.",
@@ -609,6 +705,11 @@ var SEARCH_I18N = {
   }
  },
  "product-proline-2550.html": {
+  "ar": {
+   "k": "proline 2550 أنبوب مفاعل سائل مسحوق خط الإنتاج",
+   "s": "محلل العملية ProLine2550 FT-NIR - مقياس طيف للعمليات الصناعية القوية على خط الإنتاج للخلاطات والمفاعلات وخطوط الأنابيب.",
+   "t": "محلل العملية ProLine2550 FT-NIR"
+  },
   "de": {
    "k": "proline 2550 rohr reaktor flüssigkeit",
    "s": "IP69K-Inline-FT-NIR-Analysator für Rohre, Mischer und Reaktoren. Unbegrenzte Parameter, OPC UA und PROFINET, Regelkreis über ProChem.",
@@ -631,6 +732,11 @@ var SEARCH_I18N = {
   }
  },
  "product-tornado.html": {
+  "ar": {
+   "k": "tornado مطحنة تحضير العينات تبريد مائي",
+   "s": "طاحونة مختبر USTECH Tornado+ عالية الأداء - طاحونة تحضير العينات مبردة بالماء للحبوب والبذور والأعلاف.",
+   "t": "طاحونة مختبر USTECH Tornado+"
+  },
   "de": {
    "k": "tornado mühle mahlen probenvorbereitung",
    "s": "USTECH Tornado+ Hochleistungs-Labormühle – Wassergekühlte Probenaufbereitungsmühle für Getreide, Saatgut und Futtermittel.",
@@ -653,6 +759,11 @@ var SEARCH_I18N = {
   }
  },
  "products-devices.html": {
+  "ar": {
+   "k": "الأجهزة المحللات أجهزة الطيف المستشعرات",
+   "s": "قارن بين أجهزة USTECH FT-NIR: أجهزة التحليل المدمجة ProLine2550 و ProLine17ES، ومراقبة الجودة في الموقع MasterLine، ومطاحن العينات SamplePrep و Tornado+.",
+   "t": "أجهزة تحليل FT-NIR لمراقبة الجودة المدمجة وفي الموقع"
+  },
   "de": {
    "k": "geräte analysator spektrometer sensor hardware",
    "s": "Vergleichen Sie USTECH FT-NIR-Hardware: ProLine2550 und ProLine17ES Inline-Analysatoren, MasterLine At-Line-QC, SamplePrep und Tornado+ Probenmühlen.",
@@ -675,6 +786,11 @@ var SEARCH_I18N = {
   }
  },
  "products-software.html": {
+  "ar": {
+   "k": "البرمجيات الكيموميتريكس الأتمتة",
+   "s": "أنشئ معايرات NIR في دقائق باستخدام caliX AutoML واربط النتائج بـ PLC/SCADA باستخدام ProChem للتحكم الحقيقي في حلقة العملية المغلقة.",
+   "t": "caliX و ProChem: القياسات الكيميائية وبرمجيات PAT"
+  },
   "de": {
    "k": "software chemometrie automatisierung",
    "s": "Erstellen Sie NIR-Kalibrierungen in Minuten mit caliX AutoML und übertragen Sie Ergebnisse mit ProChem an SPS/SCADA für echte Closed-Loop-Prozesssteuerung.",
@@ -697,6 +813,11 @@ var SEARCH_I18N = {
   }
  },
  "products.html": {
+  "ar": {
+   "k": "المنتجات الأجهزة البرمجيات المعايرة",
+   "s": "اكتشف عائلة منتجات USTECH: أجهزة تحليل ProLine FT-NIR المدمجة، وبرمجيات caliX القياسية الكيميائية، وأتمتة ProChem ونماذج المعايرة الجاهزة.",
+   "t": "أجهزة تحليل FT-NIR والبرمجيات والمعايرات"
+  },
   "de": {
    "k": "produkte geräte software kalibrierung",
    "s": "Die USTECH-Produktfamilie: ProLine Inline-FT-NIR-Analysatoren, caliX Chemometrie-Software, ProChem-Automatisierung und fertige Kalibriermodelle.",
@@ -769,7 +890,7 @@ function searchLoc(item) {
 // Detect current language from pathname (supports file:// and http/https://)
 function detectCurrentLang() {
     var path = (window.location.pathname || '').replace(/\\/g, '/');
-    var match = path.match(/\/(tr|fr|de|es)(\/|$)/i);
+    var match = path.match(/\/(tr|fr|de|es|ar)(\/|$)/i);
     return match ? match[1].toLowerCase() : 'en';
 }
 

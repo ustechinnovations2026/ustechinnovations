@@ -1,0 +1,248 @@
+/* =====================================================================
+   RTL Override Stylesheet for Arabic (ar) Pages
+   Loaded ONLY on /ar/ pages: <link rel="stylesheet" href="../rtl.css">
+   Requires <html lang="ar" dir="rtl"> on the document root.
+   ZERO impact on existing LTR languages (EN, TR, FR, DE, ES).
+   ===================================================================== */
+
+/* ----- Arabic Typography ----- */
+[dir="rtl"] body {
+    font-family: 'Noto Sans Arabic', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7;
+}
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3,
+[dir="rtl"] .section-title, [dir="rtl"] .hero-title {
+    font-family: 'Cairo', 'Outfit', sans-serif;
+    line-height: 1.4;
+}
+
+/* ----- Global Text Direction ----- */
+[dir="rtl"] body {
+    text-align: right;
+}
+[dir="rtl"] .section-header,
+[dir="rtl"] .hero-content,
+[dir="rtl"] .footer-logo-center,
+[dir="rtl"] .footer-bottom {
+    text-align: center;
+}
+
+/* ----- Navigation ----- */
+/* Dropdown chevron arrow spacing */
+[dir="rtl"] .nav-link span[style*="margin-left"] {
+    margin-left: 0 !important;
+    margin-right: 2px;
+}
+
+/* Mobile submenu indentation */
+@media (max-width: 768px) {
+    [dir="rtl"] .dropdown-menu {
+        padding: 0 1.25rem 0 0 !important;
+        border-left: none !important;
+        border-right: 2px solid var(--border-color);
+    }
+}
+
+/* Dropdown hover indent */
+[dir="rtl"] .dropdown-item:hover {
+    padding-left: 1.5rem;
+    padding-right: 1.75rem;
+}
+
+/* ----- Documentation Sidebar ----- */
+[dir="rtl"] .doc-sidebar {
+    border-right: none;
+    padding-right: 0;
+    border-left: 1px solid var(--border-color);
+    padding-left: 2rem;
+}
+[dir="rtl"] .doc-sidebar-link:hover,
+[dir="rtl"] .doc-sidebar-link.active {
+    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+}
+
+/* Doc layout grid: sidebar on right, content on left */
+[dir="rtl"] .doc-layout-grid {
+    direction: rtl;
+}
+
+/* ----- Callout / Alert Borders ----- */
+[dir="rtl"] .doc-alert {
+    border-left: none;
+    border-right: 4px solid var(--accent-black);
+}
+[dir="rtl"] blockquote {
+    border-left: none;
+    padding-left: 0;
+    border-right: 4px solid var(--accent-black);
+    padding-right: 1.5rem;
+}
+
+/* ----- Comparison Table Status Bars ----- */
+[dir="rtl"] .comparison-traditional {
+    border-left: none;
+    border-right: 3px solid #ef4444;
+}
+[dir="rtl"] .comparison-ustech {
+    border-left: none;
+    border-right: 3px solid #60a5fa;
+}
+
+/* ----- Blog References ----- */
+[dir="rtl"] .blog-post-references li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+[dir="rtl"] .blog-post-references li::before {
+    left: auto;
+    right: 0.25rem;
+}
+
+/* ----- Arrow Directions & Animations ----- */
+[dir="rtl"] .btn-text::after {
+    content: ' \2190';
+}
+[dir="rtl"] .btn-text:hover::after {
+    padding-right: 4px;
+    padding-left: 0;
+}
+[dir="rtl"] .blog-back-link:hover {
+    transform: translateX(4px);
+}
+[dir="rtl"] .blog-view-all-btn:hover svg {
+    transform: translateX(-4px);
+}
+
+/* Industry/Product column arrows */
+[dir="rtl"] .industry-column-arrow svg,
+[dir="rtl"] .product-column-arrow svg {
+    transform: scaleX(-1);
+}
+[dir="rtl"] .industry-column-panel:hover .industry-column-arrow svg,
+[dir="rtl"] .product-column-panel:hover .product-column-arrow svg {
+    transform: scaleX(-1) translateX(-4px);
+}
+
+/* ----- Floating Widgets: Swapped Corners ----- */
+/* Cookie settings button: left -> right */
+[dir="rtl"] .cookie-settings-btn {
+    left: auto;
+    right: 20px;
+}
+
+/* Back-to-top button: right -> left */
+[dir="rtl"] .back-to-top-btn {
+    right: auto;
+    left: 20px;
+}
+
+/* Scroll CTA widget: right -> left */
+[dir="rtl"] .ustech-scroll-cta {
+    right: auto;
+    left: 24px;
+}
+[dir="rtl"] .ustech-scroll-cta-close {
+    right: auto;
+    left: 12px;
+}
+[dir="rtl"] .ustech-scroll-cta-title {
+    padding-right: 0;
+    padding-left: 1.5rem;
+}
+
+/* Specialist drawer: slides from left instead of right */
+[dir="rtl"] .specialist-tab {
+    right: auto;
+    left: 0;
+    border-radius: 0 8px 8px 0;
+}
+[dir="rtl"] .specialist-panel {
+    right: auto;
+    left: -400px;
+}
+[dir="rtl"] .specialist-panel.open {
+    left: 0;
+}
+
+/* ----- Search Overlay ----- */
+[dir="rtl"] .search-input-wrapper .search-icon {
+    left: auto;
+    right: 0.9rem;
+}
+[dir="rtl"] .search-close-btn {
+    right: auto;
+    left: 0.7rem;
+}
+[dir="rtl"] .search-clear-btn {
+    right: auto;
+    left: 2.8rem;
+}
+[dir="rtl"] .header-search-input {
+    padding-left: 3.5rem;
+    padding-right: 2.8rem;
+}
+
+/* ----- FAQ Accordion ----- */
+[dir="rtl"] .faq-question {
+    text-align: right;
+}
+
+/* ----- Tables ----- */
+[dir="rtl"] .doc-table,
+[dir="rtl"] .comparison-table {
+    text-align: right;
+}
+
+/* ----- Product Detail Grid ----- */
+[dir="rtl"] .product-detail-grid {
+    direction: rtl;
+}
+
+/* ----- Calculator Grid ----- */
+[dir="rtl"] .calculator-grid {
+    direction: rtl;
+}
+
+/* ----- Timeline (About page) ----- */
+[dir="rtl"] .timeline-item:nth-child(even) {
+    flex-direction: row;
+}
+[dir="rtl"] .timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+/* ----- Value Chain Rows ----- */
+[dir="rtl"] .value-chain-row:nth-child(even) {
+    flex-direction: row;
+}
+
+/* ----- Spectroscopy Canvas ----- */
+/* Keep scientific charts LTR (wavelength axis is always left-to-right) */
+[dir="rtl"] .spectrum-chart-wrapper,
+[dir="rtl"] .spectrum-canvas-container {
+    direction: ltr;
+}
+
+/* ----- Cookie Modal ----- */
+[dir="rtl"] .cookie-option-info {
+    text-align: right;
+}
+[dir="rtl"] .cookie-modal-buttons {
+    text-align: left;
+}
+
+/* ----- Privacy/Local Privacy Modals ----- */
+[dir="rtl"] .local-privacy-modal,
+[dir="rtl"] .local-privacy-modal-body,
+[dir="rtl"] .local-privacy-modal-content {
+    text-align: right;
+}
+
+/* ----- Footer Grid RTL ----- */
+[dir="rtl"] .footer-grid {
+    direction: rtl;
+}
+[dir="rtl"] .footer-socials {
+    justify-content: flex-start;
+}
