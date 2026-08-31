@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="USTECH Innovations 指南 - 通过 PCA 开发稳健的化学计量分类模型。" name="description"/>
+<meta content="PCA分类NIR、化学计量学分类、主成分分析光谱、材料鉴定NIR" name="keywords"/>
+<title>PCA 化学计量学分类模型 | USTECH Innovations</title>
+<link href="../index.css?v=1.1.0" rel="stylesheet"/>
+<link href="https://www.ustechinnovations.com/zh/blog-pca-classification-models.html" rel="canonical"/>
+<!-- Organization + WebSite Schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ustechinnovations.com/#org",
+      "name": "USTECH Innovations",
+      "url": "https://www.ustechinnovations.com/",
+      "logo": "https://www.ustechinnovations.com/images/logo.svg",
+      "description": "用于食品、饲料、乳制品和化学加工的在线 FT-NIR 光谱系统、化学计量学软件和校准模型的制造商。",
+      "foundingDate": "2023",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30 N Gould St Ste 34301",
+        "addressLocality": "Sheridan",
+        "addressRegion": "WY",
+        "postalCode": "82801",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-307-527-0072",
+        "email": "info@ustechinnovations.com",
+        "contactType": "sales"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/ustech-innovations"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ustechinnovations.com/#website",
+      "url": "https://www.ustechinnovations.com/",
+      "name": "USTECH Innovations",
+      "publisher": {
+        "@id": "https://www.ustechinnovations.com/#org"
+      }
+    }
+  ]
+}</script>
+<!-- BlogPosting Schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "通过 PCA 开发稳健的化学计量分类模型",
+  "description": "USTECH Innovations 指南 - 通过 PCA 开发稳健的化学计量分类模型。",
+  "url": "https://www.ustechinnovations.com/zh/blog-pca-classification-models.html",
+  "datePublished": "2026-06-07",
+  "dateModified": "2026-06-07",
+  "author": {
+    "@type": "Organization",
+    "name": "USTECH Innovations",
+    "@id": "https://www.ustechinnovations.com/#org"
+  },
+  "publisher": {
+    "@id": "https://www.ustechinnovations.com/#org"
+  },
+  "image": "https://www.ustechinnovations.com/images/blog_pca_chemometrics.webp"
+}</script>
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://www.ustechinnovations.com/zh/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "知识中心",
+      "item": "https://www.ustechinnovations.com/zh/knowledge.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "博客文章",
+      "item": "https://www.ustechinnovations.com/zh/knowledge-blogs.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "开发稳健的化学计量分类..."
+    }
+  ]
+}</script>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="../favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="../apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="article" property="og:type"/>
+<meta content="USTECH Innovations" property="og:site_name"/>
+<meta content="PCA 化学计量学分类模型 | USTECH Innovations" property="og:title"/>
+<meta content="USTECH Innovations 指南 - 通过 PCA 开发稳健的化学计量分类模型。" property="og:description"/>
+<meta content="https://www.ustechinnovations.com/zh/blog-pca-classification-models.html" property="og:url"/>
+<meta content="https://www.ustechinnovations.com/images/og/blog-pca-classification-models.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PCA Chemometric Classification Models | USTECH Innovations" property="og:image:alt"/>
+<meta content="zh_CN" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="PCA 化学计量学分类模型 | USTECH Innovations" name="twitter:title"/>
+<meta content="USTECH Innovations 指南 - 通过 PCA 开发稳健的化学计量分类模型。" name="twitter:description"/>
+<meta content="https://www.ustechinnovations.com/images/og/blog-pca-classification-models.jpg" name="twitter:image"/>
+<link href="../site.webmanifest" rel="manifest"/>
+</head>
+<body>
+<!-- Header / Navigation -->
+<header>
+<div class="nav-container">
+<a class="logo" href="index.html"><img alt="USTECH Innovations 标志" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="width: auto;"/></a>
+<button aria-label="切换导航" class="nav-toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-links">
+<li><a class="nav-link" href="index.html">首页</a></li>
+<li class="nav-item has-dropdown">
+<a class="nav-link" href="industries.html">行业应用 <span style="font-size: 0.7rem; margin-left: 2px;">▼</span></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="industry-food-feed.html">食品与饲料</a>
+<a class="dropdown-item" href="industry-dairy.html">乳制品</a>
+<a class="dropdown-item" href="industry-chemical-pharma.html">化工与制药</a>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<a class="nav-link" href="products.html">产品中心 <span style="font-size: 0.7rem; margin-left: 2px;">▼</span></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="products-devices.html">硬件设备</a>
+<a class="dropdown-item" href="products-software.html">软件系统</a>
+<a class="dropdown-item" href="products-portal.html">云端门户</a>
+<a class="dropdown-item" href="products-calibration-models.html">校准模型</a>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<a class="nav-link" href="knowledge.html">知识中心 <span style="font-size: 0.7rem; margin-left: 2px;">▼</span></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="knowledge-technology.html">核心技术</a>
+<a class="dropdown-item" href="knowledge-blogs.html">技术博客</a>
+</div>
+</li>
+<li><a class="nav-link" href="about.html">关于我们</a></li>
+<li><a class="nav-link" href="contact.html">联系我们</a></li>
+<li><a class="nav-link" href="faq.html">常见问题</a></li>
+<li class="nav-item has-dropdown">
+<a class="nav-link lang-toggle" href="#" onclick="return false;" style="display: flex; align-items: center; padding: 0.25rem 0;">
+<span class="lang-flag-circle" data-lang="zh" style="display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 19px; border-radius: 3.5px; cursor: pointer; transition: all 0.2s ease; overflow: hidden;">
+<svg height="100%" preserveaspectratio="xMidYMid slice" viewbox="0 0 30 20" width="100%"><rect fill="#DE2910" height="20" width="30"></rect><polygon fill="#FFDE00" points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7"></polygon><g transform="translate(10,2) rotate(23)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(12,4) rotate(45)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(12,7) rotate(0)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(10,9) rotate(-20)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g></svg>
+</span>
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item lang-option" data-lang="en" href="../blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 60 30" width="24"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"></path><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></svg>
+                            English
+                        </a>
+<a class="dropdown-item lang-option" data-lang="tr" href="../tr/blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#E30A17" height="20" width="30"></rect><circle cx="14.5" cy="10" fill="#fff" r="6"></circle><circle cx="16" cy="10" fill="#E30A17" r="4.8"></circle><g transform="translate(20,10) rotate(33)"><polygon fill="#fff" points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1"></polygon></g></svg>
+                            Türkçe
+                        </a>
+<a class="dropdown-item lang-option" data-lang="de" href="../de/blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 5 3" width="24"><rect fill="#000" height="1" width="5"></rect><rect fill="#DD0000" height="1" width="5" y="1"></rect><rect fill="#FFCC00" height="1" width="5" y="2"></rect></svg>
+                            Deutsch
+                        </a>
+<a class="dropdown-item lang-option" data-lang="fr" href="../fr/blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#002395" height="20" width="10"></rect><rect fill="#fff" height="20" width="10" x="10"></rect><rect fill="#ED2939" height="20" width="10" x="20"></rect></svg>
+                            Français
+                        </a>
+<a class="dropdown-item lang-option" data-lang="es" href="../es/blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#AA151B" height="5" width="30"></rect><rect fill="#F1BF00" height="10" width="30" y="5"></rect><rect fill="#AA151B" height="5" width="30" y="15"></rect><g transform="translate(10,10)"><rect fill="#AA151B" height="4.5" rx="0.3" stroke="#7B2D26" stroke-width="0.2" width="4" x="-2" y="-3.5"></rect><rect fill="#F1BF00" height="1.8" rx="0.15" width="1.2" x="-1.5" y="-3"></rect><rect fill="#fff" height="1.8" rx="0.15" width="1.2" x="0.3" y="-3"></rect><rect fill="#fff" height="1.5" rx="0.15" width="1.2" x="-1.5" y="-0.8"></rect><rect fill="#F1BF00" height="1.5" rx="0.15" width="1.2" x="0.3" y="-0.8"></rect><line stroke="#7B2D26" stroke-width="0.4" x1="-3" x2="-3" y1="-3.5" y2="2"></line><line stroke="#7B2D26" stroke-width="0.4" x1="3" x2="3" y1="-3.5" y2="2"></line><ellipse cx="-3" cy="-3.8" fill="#7B2D26" rx="0.6" ry="0.5"></ellipse><ellipse cx="3" cy="-3.8" fill="#7B2D26" rx="0.6" ry="0.5"></ellipse><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"></path></g></svg>
+                            Español
+                        </a>
+<a class="dropdown-item lang-option" data-lang="ar" href="../ar/blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#006C35" height="20" width="30"></rect><path d="M6,13.5 L24,13.5 M22,11.5 L24.5,13.5 L22,15.5 M7.5,12 L7.5,15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.9"></path><text fill="#fff" font-family="sans-serif" font-size="4.5" font-weight="bold" letter-spacing="0.5" text-anchor="middle" x="15" y="9.5">العربية</text></svg>
+                            العربية
+                        </a>
+<a class="dropdown-item lang-option" data-lang="zh" href="blog-pca-classification-models.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#DE2910" height="20" width="30"></rect><polygon fill="#FFDE00" points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7"></polygon><g transform="translate(10,2) rotate(23)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(12,4) rotate(45)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(12,7) rotate(0)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(10,9) rotate(-20)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g></svg>
+                            简体中文
+                        </a>
+</div>
+</li>
+</ul>
+</div>
+</header>
+<main class="main-content">
+<article class="blog-post-container">
+<a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
+<img alt="Chemometric Modeling Software PCA Interface" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pca_chemometrics.webp?v=1.0.5"/>
+<div class="blog-post-header">
+<span class="blog-post-meta">Guide — June 07, 2026 — 4 分钟阅读</span>
+<h1 class="blog-post-title">通过 PCA 开发稳健的化学计量分类模型</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">解释主成分分析的分步方法。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型易于构建 (PCA)，用于原材料的定性识别和工业掺假检测。</p>
+</div>
+<div class="blog-post-content">
+<h2>定性光谱学简介</h2>
+<p>定量化学计量学侧重于预测数值浓度（例如水分、脂肪或蛋白质百分比），而定性化学计量学旨在回答结构分类问题：**这种材料是什么？与标签的规格相符吗？是否被掺假或稀释？**</p>
+<p>在高吞吐量的制造工厂和原材料仓库中，在收货码头验证物料身份是第一道防线<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和药物筛选</a>防止生产错误。 **主成分分析。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型易于构建 (PCA)** 是用于构建稳健、非破坏性光谱库以进行即时定性识别的主要数学工具。</p>
+<h2>PCA 如何处理光谱数据集</h2>
+<p>典型的 NIR 光谱包含数百个高度相关的波长通道。这些渠道的预测很难以原始形式进行分析。 PCA 是一种降维技术，它将高维光谱空间投影到一小组称为**主成分 (PC)** 的正交轴上。</p>
+<ul>
+<li><strong>电脑1：</strong>捕获光谱数据中最大的方差方向（通常与物理差异相关，例如颗粒大小）。</li>
+<li><strong>电脑2：</strong>捕获与 PC1 正交的第二大方差方向（通常与化学变化相关，例如化学浓度变化）。</li>
+<li><strong>PC3、PC4...：</strong>捕获方差的递减程度，将精细化学变化与随机仪器噪声隔离开来。</li>
+</ul>
+<p>通过将每个频谱映射为沿着这些 PC 的坐标（称为“分数”），复杂的频谱被简化为 2D 或 3D 分数图中的单个点。相似材料的光谱聚集在一起，而异常值则很突出。</p>
+<blockquote>“PCA 将光谱的有意义的特征与随机噪声隔离开来，将数百个波长测量结果转化为一组定义材料簇的紧凑坐标。”</blockquote>
+<h2>建立分类边界</h2>
+<p>为了对传入材料进行分类，我们必须在分数图中定义参考簇周围的数学边界。 **卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite** 使用双管齐下的统计测试：</p>
+<ol>
+<li><strong>Hotelling 的 T²（模型内距离）：</strong>测量 PC 模型空间内距簇中心的距离。它表示样本在参考总体中的典型程度。</li>
+<li><strong>Q 残差（模型外距离）：</strong>测量 PCA 模型未捕获的残差方差。如果输入的样本具有高 Q 残差，则它包含模型从未见过的化学特征（例如掺假物或不同物质）。</li>
+</ol>
+<table class="doc-table" style="margin-top: 1.5rem;">
+<thead>
+<tr>
+<th>公制</th>
+<th>统计限度</th>
+<th>通过标准</th>
+<th>失败时指示的操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>霍特林 T²</strong></td>
+<td>95% 置信度椭圆</td>
+<td>样本坐标位于椭圆边界内</td>
+<td><strong>超出规格：</strong>材料与参考类别匹配，但具有非典型属性（例如，错误的湿度或密度）。</td>
+</tr>
+<tr>
+<td><strong>Q 残差</strong></td>
+<td>99% 阈值限制</td>
+<td>残余噪音低于噪音上限</td>
+<td><strong>未知材料：</strong>检测到无法解释的化学结构。标记污染、替代或供应商错误。</td>
+</tr>
+</tbody>
+</table>
+<h2>部署 PCA 分类模型</h2>
+<p>一旦在 **cali 中构建了分类模型<span class="calix-x" style="color: #38b6ff !important;">X</span>套件**，可以直接导出到接收坞终端上运行的**ProChem软件**。当操作员将原材料袋放在在线传感器下时，系统会扫描材料，将光谱投影到 PCA 模型上，计算 T² 和 Q 统计数据，并在三秒内显示简单的 **通过/失败** 结果。这取代了数小时的色谱分析，防止错误的材料进入生产线。</p>
+<div class="blog-post-references">
+<h3>参考</h3>
+<ul>
+<li>霍特林，H. (1931)。 《学生比例的概括》<em>数理统计年鉴</em>，2(3)，360-378。</li>
+<li>“使用主成分分析进行定性分析和原材料鉴定。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型可以在 NIR 光谱中轻松构建，”<em>化学计量学杂志</em>，2021 年。</li>
+<li>杰克逊，J.E. 和穆德霍尔卡，G.S. (1979)。 “与主成分分析相关的残差的控制程序。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型很容易构建，”<em>技术计量学</em>，21（3），341-349。</li>
+</ul>
+</div>
+</div>
+<!-- Lead Capture Form for Technical Report -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、校准数据集和仪器参数。</p>
+<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
+<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
+<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
+<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
+</div>
+<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
+<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
+<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
+</label>
+</form>
+</div>
+<!-- Read Next Section -->
+<div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
+<h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">阅读下一步</h3>
+<div class="grid grid-2" style="gap: 1.5rem;">
+<!-- Corn Milling Card -->
+<div class="card" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+<img alt="优化玉米湿磨中的淀粉提取效率" decoding="async" loading="lazy" src="../images/blog_starch_milling.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">案例研究</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-starch-extraction-milling.html" style="color: var(--accent-black); text-decoration: none;">优化玉米湿磨中的淀粉提取效率</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">了解玉米加工设备如何使用在线测试最大限度地提高淀粉分离器的产量。</p>
+<a class="btn-text" href="blog-starch-extraction-milling.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读案例研究</a>
+</div>
+</div>
+<!-- Optical Fiber Interface Card -->
+<div class="card" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+<img alt="腐蚀性化学反应器的光纤接口设计" decoding="async" loading="lazy" src="../images/blog_fiber_reactors.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">白皮书</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-fiber-interface-reactors.html" style="color: var(--accent-black); text-decoration: none;">腐蚀性化学反应器的光纤接口设计</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">腐蚀性化学回路中蓝宝石光学器件和哈氏合金探头配置的技术规格和构建细节。</p>
+<a class="btn-text" href="blog-fiber-interface-reactors.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读白皮书</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer>
+<div class="footer-grid">
+<!-- Left: Industries + Products -->
+<div class="footer-left">
+<div class="footer-links-col">
+<h4>行业应用</h4>
+<ul class="footer-links">
+<li><a href="industry-food-feed.html">食品与饲料</a></li>
+<li><a href="industry-dairy.html">乳制品</a></li>
+<li><a href="industry-chemical-pharma.html">化工与制药</a></li>
+</ul>
+</div>
+<div class="footer-links-col">
+<h4>产品中心</h4>
+<ul class="footer-links">
+<li><a href="products-devices.html">硬件设备</a></li>
+<li><a href="products-software.html">软件系统</a></li>
+<li><a href="products-portal.html">云端门户</a></li>
+<li><a href="products-calibration-models.html">校准模型</a></li>
+</ul>
+</div>
+</div>
+<!-- Center: Logo -->
+<div class="footer-logo-center">
+<a class="logo" href="index.html"><img alt="USTECH Innovations 标志" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 58px; width: auto;"/></a>
+<p>自2023年起提供高精度在线分析光谱仪器与化学计量学软件解决方案。</p>
+</div>
+<!-- Right: Contact -->
+<div class="footer-links-col">
+<h4>联系我们</h4>
+<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">电话： <a href="tel:+13075270072" style="color: inherit; text-decoration: none;">+1 307 527 0072</a></p>
+<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">邮箱： <a href="mailto:info@ustechinnovations.com" style="color: inherit; text-decoration: none;">info@ustechinnovations.com</a></p>
+<p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">关注我们：</p>
+<div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/ustech-innovations-llc/about/" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+<rect height="12" width="4" x="2" y="9"></rect>
+<circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 USTECH Innovations LLC. 保留所有权利。 | <a href="privacy-policy.html" style="color: var(--text-muted);">隐私政策</a> | <a href="terms-of-service.html" style="color: var(--text-muted);">服务条款</a></p>
+<p>专为严苛的科学与工业精度而设计。</p>
+</div>
+</footer>
+<script src="../app.js?v=1.1.0"></script>
+</body>
+</html>

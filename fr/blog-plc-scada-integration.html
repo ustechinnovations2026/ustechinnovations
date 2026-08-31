@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA. Un aperçu pratique des architectures d'intégration, des interfaces de données et des considérations de planification pour l'automatisation NIR en ligne." name="description"/>
+<meta content="Intégration FT-NIR PLC, analyseur NIR SCADA, automatisation de l'analyseur en ligne, processus NIR Ethernet" name="keywords"/>
+<title>Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA | USTECH Innovations</title>
+<link href="../index.css?v=1.1.0" rel="stylesheet"/>
+<link href="https://www.ustechinnovations.com/fr/blog-plc-scada-integration.html" rel="canonical"/>
+<!-- Organization + WebSite Schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ustechinnovations.com/#org",
+      "name": "USTECH Innovations",
+      "url": "https://www.ustechinnovations.com/",
+      "logo": "https://www.ustechinnovations.com/images/logo.svg",
+      "description": "Fabricant de systèmes de spectroscopie en ligne FT-NIR, de logiciels de chimiométrie et de modèles d'étalonnage pour l'alimentation humaine et animale, les produits laitiers et la transformation chimique.",
+      "foundingDate": "2023",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30 N Gould St Ste 34301",
+        "addressLocality": "Sheridan",
+        "addressRegion": "WY",
+        "postalCode": "82801",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-307-527-0072",
+        "email": "info@ustechinnovations.com",
+        "contactType": "sales"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/ustech-innovations"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ustechinnovations.com/#website",
+      "url": "https://www.ustechinnovations.com/",
+      "name": "USTECH Innovations",
+      "publisher": {
+        "@id": "https://www.ustechinnovations.com/#org"
+      }
+    }
+  ]
+}</script>
+<!-- BlogPosting Schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA : un aperçu pratique",
+  "description": "Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA. Un aperçu pratique des architectures d'intégration, des interfaces de données et des considérations de planification pour l'automatisation NIR en ligne.",
+  "url": "https://www.ustechinnovations.com/fr/blog-plc-scada-integration.html",
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "author": {
+    "@type": "Organization",
+    "name": "USTECH Innovations",
+    "@id": "https://www.ustechinnovations.com/#org"
+  },
+  "publisher": {
+    "@id": "https://www.ustechinnovations.com/#org"
+  },
+  "image": "https://www.ustechinnovations.com/images/blog_plc_scada.webp"
+}</script>
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://www.ustechinnovations.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Connaissances",
+      "item": "https://www.ustechinnovations.com/fr/knowledge.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blogs",
+      "item": "https://www.ustechinnovations.com/fr/knowledge-blogs.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Comment les analyseurs FT-NIR s'intègrent à PLC ..."
+    }
+  ]
+}</script>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="../favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="../apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="article" property="og:type"/>
+<meta content="USTECH Innovations" property="og:site_name"/>
+<meta content="Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA | USTECH Innovations" property="og:title"/>
+<meta content="Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA. Un aperçu pratique des architectures d'intégration, des interfaces de données et des considérations de planification pour l'automatisation NIR en ligne." property="og:description"/>
+<meta content="https://www.ustechinnovations.com/fr/blog-plc-scada-integration.html" property="og:url"/>
+<meta content="https://www.ustechinnovations.com/images/og/blog-plc-scada-integration.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="How FT-NIR Analyzers Integrate with PLC and SCADA Systems | USTECH Innovations" property="og:image:alt"/>
+<meta content="fr_FR" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA | USTECH Innovations" name="twitter:title"/>
+<meta content="Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA. Un aperçu pratique des architectures d'intégration, des interfaces de données et des considérations de planification pour l'automatisation NIR en ligne." name="twitter:description"/>
+<meta content="https://www.ustechinnovations.com/images/og/blog-plc-scada-integration.jpg" name="twitter:image"/>
+<link href="../site.webmanifest" rel="manifest"/>
+</head>
+<body>
+<!-- Header / Navigation -->
+<header>
+<div class="nav-container">
+<a class="logo" href="index.html"><img alt="Logo USTECH Innovations" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="width: auto;"/></a>
+<button aria-label="Basculer la navigation" class="nav-toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-links">
+<li><a class="nav-link" href="index.html">Accueil</a></li>
+<li class="nav-item has-dropdown">
+<a class="nav-link" href="industries.html">Industries <span style="font-size: 0.7rem; margin-left: 2px;">▼</span></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="industry-food-feed.html">Alimentation et Nutrition Animale</a>
+<a class="dropdown-item" href="industry-dairy.html">Produits Laitiers</a>
+<a class="dropdown-item" href="industry-chemical-pharma.html">Chimie et Pharmacie</a>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<a class="nav-link" href="products.html">Produits <span style="font-size: 0.7rem; margin-left: 2px;">▼</span></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="products-devices.html">Appareils</a>
+<a class="dropdown-item" href="products-software.html">Logiciels</a>
+<a class="dropdown-item" href="products-portal.html">Portail</a>
+<a class="dropdown-item" href="products-calibration-models.html">Modèles d'Étalonnage</a>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<a class="nav-link" href="knowledge.html">Connaissances <span style="font-size: 0.7rem; margin-left: 2px;">▼</span></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="knowledge-technology.html">Technologie</a>
+<a class="dropdown-item" href="knowledge-blogs.html">Blogs</a>
+</div>
+</li>
+<li><a class="nav-link" href="about.html">À Propos</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li><a class="nav-link" href="faq.html">FAQ</a></li>
+<li class="nav-item has-dropdown">
+<a class="nav-link lang-toggle" href="#" onclick="return false;" style="display: flex; align-items: center; padding: 0.25rem 0;">
+<span class="lang-flag-circle" data-lang="fr" style="display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 19px; border-radius: 3.5px; cursor: pointer; transition: all 0.2s ease; overflow: hidden;">
+<svg height="100%" preserveaspectratio="xMidYMid slice" viewbox="0 0 30 20" width="100%"><rect fill="#002395" height="20" width="10"></rect><rect fill="#fff" height="20" width="10" x="10"></rect><rect fill="#ED2939" height="20" width="10" x="20"></rect></svg>
+</span>
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item lang-option" data-lang="en" href="../blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 60 30" width="24"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path d="M0,0 L20,10 M40,20 L60,30" stroke="#C8102E" stroke-width="4"></path><path d="M60,0 L40,10 M20,20 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></svg>
+                            English
+                        </a>
+<a class="dropdown-item lang-option" data-lang="tr" href="../tr/blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#E30A17" height="20" width="30"></rect><circle cx="14.5" cy="10" fill="#fff" r="6"></circle><circle cx="16" cy="10" fill="#E30A17" r="4.8"></circle><g transform="translate(20,10) rotate(33)"><polygon fill="#fff" points="0,-3.5 0.8,-1 3.3,-1 1.3,0.4 2,2.8 0,1.2 -2,2.8 -1.3,0.4 -3.3,-1 -0.8,-1"></polygon></g></svg>
+                            Türkçe
+                        </a>
+<a class="dropdown-item lang-option" data-lang="de" href="../de/blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 5 3" width="24"><rect fill="#000" height="1" width="5"></rect><rect fill="#DD0000" height="1" width="5" y="1"></rect><rect fill="#FFCC00" height="1" width="5" y="2"></rect></svg>
+                            Deutsch
+                        </a>
+<a class="dropdown-item lang-option" data-lang="fr" href="blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#002395" height="20" width="10"></rect><rect fill="#fff" height="20" width="10" x="10"></rect><rect fill="#ED2939" height="20" width="10" x="20"></rect></svg>
+                            Français
+                        </a>
+<a class="dropdown-item lang-option" data-lang="es" href="../es/blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#AA151B" height="5" width="30"></rect><rect fill="#F1BF00" height="10" width="30" y="5"></rect><rect fill="#AA151B" height="5" width="30" y="15"></rect><g transform="translate(10,10)"><rect fill="#AA151B" height="4.5" rx="0.3" stroke="#7B2D26" stroke-width="0.2" width="4" x="-2" y="-3.5"></rect><rect fill="#F1BF00" height="1.8" rx="0.15" width="1.2" x="-1.5" y="-3"></rect><rect fill="#fff" height="1.8" rx="0.15" width="1.2" x="0.3" y="-3"></rect><rect fill="#fff" height="1.5" rx="0.15" width="1.2" x="-1.5" y="-0.8"></rect><rect fill="#F1BF00" height="1.5" rx="0.15" width="1.2" x="0.3" y="-0.8"></rect><line stroke="#7B2D26" stroke-width="0.4" x1="-3" x2="-3" y1="-3.5" y2="2"></line><line stroke="#7B2D26" stroke-width="0.4" x1="3" x2="3" y1="-3.5" y2="2"></line><ellipse cx="-3" cy="-3.8" fill="#7B2D26" rx="0.6" ry="0.5"></ellipse><ellipse cx="3" cy="-3.8" fill="#7B2D26" rx="0.6" ry="0.5"></ellipse><path d="M-2,-3.5 Q0,-5.5 2,-3.5" fill="none" stroke="#AA151B" stroke-width="0.5"></path></g></svg>
+                            Español
+                        </a>
+<a class="dropdown-item lang-option" data-lang="ar" href="../ar/blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#006C35" height="20" width="30"></rect><path d="M6,13.5 L24,13.5 M22,11.5 L24.5,13.5 L22,15.5 M7.5,12 L7.5,15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.9"></path><text fill="#fff" font-family="sans-serif" font-size="4.5" font-weight="bold" letter-spacing="0.5" text-anchor="middle" x="15" y="9.5">العربية</text></svg>
+                            العربية
+                        </a>
+<a class="dropdown-item lang-option" data-lang="zh" href="../zh/blog-plc-scada-integration.html" style="display: flex; align-items: center; gap: 0.65rem;">
+<svg height="16" preserveaspectratio="xMidYMid slice" style="border-radius: 3px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12);" viewbox="0 0 30 20" width="24"><rect fill="#DE2910" height="20" width="30"></rect><polygon fill="#FFDE00" points="5,2 6.2,5.7 10,5.7 6.9,8 8.1,11.7 5,9.4 1.9,11.7 3.1,8 0,5.7 3.8,5.7"></polygon><g transform="translate(10,2) rotate(23)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(12,4) rotate(45)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(12,7) rotate(0)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g><g transform="translate(10,9) rotate(-20)"><polygon fill="#FFDE00" points="0,-1 0.3,-0.3 1,-0.3 0.5,0.1 0.7,0.8 0,0.4 -0.7,0.8 -0.5,0.1 -1,-0.3 -0.3,-0.3"></polygon></g></svg>
+                            简体中文
+                        </a>
+</div>
+</li>
+</ul>
+</div>
+</header>
+<main class="main-content">
+<article class="blog-post-container">
+<a class="blog-back-link" href="knowledge-blogs.html">← Retour à Tous les Blogs et Publications</a>
+<img alt="FT-NIR Analyzer PLC and SCADA Integration" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_plc_scada.webp?v=1.0.5"/>
+<div class="blog-post-header">
+<span class="blog-post-meta">ARTICLE — June 10, 2026 — 4 min de lecture</span>
+<h1 class="blog-post-title">Comment les analyseurs FT-NIR s'intègrent aux systèmes PLC et SCADA : un aperçu pratique</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Un guide pratique pour connecter les analyseurs en ligne FT-NIR à l'infrastructure d'automatisation de l'usine pour un contrôle de processus en temps réel.</p>
+</div>
+<div class="blog-post-content">
+<p>La valeur de l’analyse FT-NIR en ligne ne se limite pas à la mesure elle-même. Pour les fabricants exploitant des environnements de production automatisés, la possibilité d'introduire des données analytiques en temps réel directement dans les systèmes de contrôle de processus (automates, SCADA et plates-formes MES) est ce qui transforme un instrument analytique en un outil d'intelligence des processus. Cet article fournit un aperçu pratique de la façon dont les analyseurs FT-NIR se connectent à l'infrastructure d'automatisation de l'usine, des architectures d'intégration disponibles et des éléments à prendre en compte lors de la planification d'un déploiement NIR en ligne dans une installation automatisée.</p>
+<h2>Pourquoi l'intégration est importante</h2>
+<p>Un analyseur en ligne FT-NIR qui fournit les résultats de mesure uniquement à un écran dédié ou à une interface logicielle nécessite qu'un opérateur humain lise ces résultats et lance tout ajustement du processus. Il s’agit d’une amélioration significative par rapport aux tests en laboratoire, mais cela dépend toujours de l’attention de l’opérateur et introduit une latence de réponse humaine. Lorsque les données analytiques sont intégrées directement au système PLC ou SCADA contrôlant le processus de production, la boucle peut être fermée automatiquement. Une lecture d'humidité supérieure à un seuil défini peut déclencher un ajustement du temps de séchage ou de la température sans nécessiter d'intervention humaine.</p>
+<blockquote>"Lorsque les données analytiques sont intégrées directement au système PLC ou SCADA contrôlant le processus de production, la boucle peut être fermée automatiquement, transformant ainsi un instrument analytique en un véritable outil d'intelligence des processus."</blockquote>
+<h2>Architectures d'intégration communes</h2>
+<p>Ethernet TCP/IP avec l'interface HTTP est la méthode d'intégration la plus flexible et de plus en plus courante pour les analyseurs en ligne modernes. L'analyseur fonctionne comme un serveur sur le réseau de l'usine et le système PLC ou SCADA interroge les résultats de mesure via des requêtes HTTP standard à des intervalles définis. Le<a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a>implémente cette architecture de manière native — les résultats de mesure sont disponibles via l'interface HTTP immédiatement après chaque cycle d'analyse.</p>
+<p>OPC-UA et les protocoles industriels tels que Modbus TCP ou PROFINET sont également utilisés dans des environnements d'automatisation plus complexes. Alors que le<a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a>Le chemin d'intégration principal de est Ethernet/HTTP, le<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Logiciel ProChem</a>La plate-forme fournit des options d'exportation de données supplémentaires qui peuvent alimenter les systèmes d'historique, les plates-formes MES et les middlewares d'agrégation de données.</p>
+<h2>Quelles données sont disponibles pour l'intégration</h2>
+<p>A chaque cycle de mesure, le<a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a>génère un ensemble de valeurs de paramètres quantitatifs : humidité, protéines, graisses et tout autre paramètre inclus dans le modèle d'étalonnage actif. Ces valeurs, ainsi qu'un horodatage et des indicateurs d'état de l'instrument, sont disponibles via l'interface de données. Les éléments de données les plus couramment utilisés sont :</p>
+<ul>
+<li><strong>Valeurs mesurées actuelles</strong>pour chaque paramètre actif</li>
+<li><strong>Indicateurs d'état d'alarme</strong>lorsqu'un paramètre dépasse les limites définies</li>
+<li><strong>Indicateurs d’état de santé des instruments</strong>pour une maintenance proactive et une surveillance de la disponibilité</li>
+</ul>
+<h2>Considérations pratiques pour la planification de l'intégration</h2>
+<p><strong>Architecture réseau</strong>est la première considération pratique. L'analyseur doit être accessible sur le réseau de l'usine. Le<a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a>se connecte via Ethernet standard et utilise une alimentation 24 V CC, ce qui facilite son intégration dans les topologies de réseaux industriels existantes.</p>
+<p><strong>Fréquence d'interrogation PLC</strong>doit être aligné sur le temps de cycle de mesure de l’analyseur. Le ProLine2550 fournit un nouveau résultat de mesure environ toutes les quelques secondes en fonction de la configuration. L'intervalle d'interrogation du PLC doit donc être défini en conséquence pour capturer chaque mesure sans surcharge inutile du réseau.</p>
+<p><strong>Configuration du seuil d'alarme</strong>est une étape critique dans tout déploiement d’intégration. Pour chaque paramètre mesuré, vous devez définir des plages de fonctionnement normales, des seuils d'avertissement et des limites d'alarme. Ces seuils doivent refléter à la fois les tolérances des spécifications du produit et l'incertitude de mesure de la méthode analytique.</p>
+<p><strong>Gestion du modèle d'étalonnage</strong>doit être envisagée dans le contexte d’une intégration à long terme. La mise à jour d'un modèle d'étalonnage ne devrait pas nécessiter de perturbation significative de l'intégration PLC. Le<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Logiciel ProChem</a>La plateforme permet de déployer des mises à jour d'étalonnage sans modifier la configuration de l'interface de données, garantissant ainsi la continuité du lien d'automatisation.</p>
+<h2>De la mesure au contrôle</h2>
+<p>La pleine valeur de l’analyse FT-NIR en ligne est réalisée lorsque les données de mesure deviennent une entrée active dans le contrôle du processus. Le chemin depuis l'installation jusqu'au contrôle de processus intégré est une progression : de la mesure autonome à l'enregistrement et à la surveillance des données, en passant par la notification basée sur les alarmes et le retour d'information automatisé sur le processus. Chaque étape s’appuie sur la précédente et l’architecture d’intégration doit être conçue pour soutenir cette progression dès le départ.</p>
+<blockquote>"Le ProLine2550 se connecte à votre usine via Ethernet standard TCP/IP.<a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Contacter USTECH</a>pour discuter de l'intégration avec votre environnement d'automatisation."</blockquote>
+</div>
+<!-- Lead Capture Form for Technical Report -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Télécharger le rapport technique complet</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Accédez au document technique complet et non édité avec les spécifications d'intégration complètes, les détails du protocole et les diagrammes d'architecture d'automatisation.</p>
+<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
+<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
+<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
+<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
+</div>
+<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
+<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
+<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
+</label>
+</form>
+</div>
+<!-- Read Next Section -->
+<div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
+<h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Lire ensuite</h3>
+<div class="grid grid-2" style="gap: 1.5rem;">
+<!-- 5 Questions Before Buying Card -->
+<div class="card" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+<img alt="5 questions à poser avant d'acheter un analyseur en ligne FT-NIR" decoding="async" loading="lazy" src="../images/blog_buying_guide.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-5-questions-buying-ftnir.html" style="color: var(--accent-black); text-decoration: none;">5 questions à poser avant d'acheter un analyseur en ligne FT-NIR</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un guide d'achat pratique couvrant les questions essentielles à évaluer avant d'investir dans la technologie en ligne NIR.</p>
+<a class="btn-text" href="blog-5-questions-buying-ftnir.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire l'article</a>
+</div>
+</div>
+<!-- NIR vs FT-NIR Card -->
+<div class="card" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+<img alt="NIR vs FT-NIR: What's the Difference" decoding="async" loading="lazy" src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-nir-vs-ftnir.html" style="color: var(--accent-black); text-decoration: none;">NIR vs FT-NIR : quelle est la différence</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Comprendre les principales différences techniques entre la spectroscopie dispersive NIR et la spectroscopie NIR à transformée de Fourier pour les applications industrielles.</p>
+<a class="btn-text" href="blog-nir-vs-ftnir.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire l'article</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer>
+<div class="footer-grid">
+<!-- Left: Industries + Products -->
+<div class="footer-left">
+<div class="footer-links-col">
+<h4>Industries</h4>
+<ul class="footer-links">
+<li><a href="industry-food-feed.html">Alimentation et Nutrition Animale</a></li>
+<li><a href="industry-dairy.html">Produits Laitiers</a></li>
+<li><a href="industry-chemical-pharma.html">Chimie et Pharmacie</a></li>
+</ul>
+</div>
+<div class="footer-links-col">
+<h4>Produits</h4>
+<ul class="footer-links">
+<li><a href="products-devices.html">Appareils</a></li>
+<li><a href="products-software.html">Logiciels</a></li>
+<li><a href="products-portal.html">Portail</a></li>
+<li><a href="products-calibration-models.html">Modèles d'Étalonnage</a></li>
+</ul>
+</div>
+</div>
+<!-- Center: Logo -->
+<div class="footer-logo-center">
+<a class="logo" href="index.html"><img alt="Logo USTECH Innovations" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 58px; width: auto;"/></a>
+<p>Fourniture d'appareils de spectroscopie analytique de haute précision et de solutions logicielles depuis 2023.</p>
+</div>
+<!-- Right: Contact -->
+<div class="footer-links-col">
+<h4>Contactez-nous</h4>
+<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">30 N Gould St Ste 34301, Sheridan, WY 82801</p>
+<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Téléphone : <a href="tel:+13075270072" style="color: inherit; text-decoration: none;">+1 307 527 0072</a></p>
+<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">E-mail : <a href="mailto:info@ustechinnovations.com" style="color: inherit; text-decoration: none;">info@ustechinnovations.com</a></p>
+<p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Suivez-nous sur :</p>
+<div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/ustech-innovations-llc/about/" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+<rect height="12" width="4" x="2" y="9"></rect>
+<circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 USTECH Innovations LLC. Tous droits réservés. | <a href="privacy-policy.html" style="color: var(--text-muted);">Politique de Confidentialité</a> | <a href="terms-of-service.html" style="color: var(--text-muted);">Conditions d'Utilisation</a></p>
+<p>Conçu pour la précision scientifique et industrielle.</p>
+</div>
+</footer>
+<script src="../app.js?v=1.1.0"></script>
+</body>
+</html>
