@@ -886,7 +886,7 @@ cali<span class="calix-x" style="color: #38b6ff !important;">X</span>-desktop.us
 <!-- Dynamic Slide Text Container -->
 <div id="carousel-slide-text" style="max-width: 850px; margin: 1.5rem auto 0 auto; text-align: center; min-height: 90px; transition: opacity 0.2s ease;">
 <h3 id="slide-text-title" style="font-size: 1.3rem; font-family: var(--font-title); font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: -0.3px;">Datenimport-Arbeitsbereich</h3>
-<p id="slide-text-desc" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin: 0;">Importieren Sie Rohspektren und Labor-Referenzwerte aus Excel-Arbeitsblättern oder CSV-Dateien.</p>
+<p id="slide-text-desc" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin: 0;">Importieren Sie Rohspektren und Laborreferenzwerte aus Excel-Arbeitsblättern oder CSV-Dateien.</p>
 </div>
 </div>
 </section>
@@ -1061,7 +1061,7 @@ Rückschritt<br><span style="color: var(--accent-blue); font-size: 0.9rem; font-
 </div>
 <div style="flex-grow: 1;">
 <h3>Spektrometer-Standardisierung</h3>
-<p>Übertragen Sie Mastermodelle mühelos auf Slave-Instrumente. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> gleicht Hardwareabweichungen mithilfe von Piecewise Direct Standardization (PDS) und Steigungs-/Bias-Korrektur (SBC) aus.</p>
+<p>Übertragen Sie Mastermodelle mühelos auf Slave-Instrumente. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> gleicht Hardwareabweichungen mithilfe von Stückweise direkte Standardisierung (PDS) und Steigungs-/Bias-Korrektur (SBC) aus.</p>
 </div>
 </div>
 </div>
@@ -1347,131 +1347,158 @@ if (!carousel || dots.length === 0) return;
 const slideData = [
 {
 title: "Datenimport-Arbeitsbereich",
-desc: "Importieren Sie Rohspektren und Labor-Referenzwerte aus Excel-Arbeitsblättern oder CSV-Dateien."
+desc: "Importieren Sie Rohspektren und Laborreferenzwerte aus Excel-Arbeitsblättern oder CSV-Dateien."
 },
 {
-title: "Daten Visualizer & Plotter",
-desc: "View and overlay raw absorbance/reflectance spectra with interactive wavelength scanning."
+title: "Datenvisualisierer & Plotter",
+desc: "Zeigen Sie rohe Absorptions-/Reflexionsspektren mit interaktivem Wellenlängenscan an und überlagern Sie diese."
 },
 {
-title: "Ausreißererkennung Dashboard",
-desc: "Identify and flag atypical samples using PCA influence (Hotelling T² & Q-residuals) and PLS leverage metrics."
+title: "Ausreißer-Erkennungs-Dashboard",
+desc: "Identifizieren und markieren Sie atypische Proben mithilfe von PCA-Einfluss (Hotelling T² & Q-Residuen) und PLS-Hebelmetriken."
 },
 {
-title: "Spektrale Vorverarbeitung Filters",
-desc: "Apply MSC, SNV, and Detrending math to eliminate physical light-scattering differences."
+title: "Spektrale Vorverarbeitungsfilter",
+desc: "Wenden Sie MSC-, SNV- und Detrending-Mathematik an, um physikalische Lichtstreuungsunterschiede zu eliminieren."
 },
 {
-title: "Savitzky-Golay Derivative Smoothing",
-desc: "Clean up flat baseline drift and sharpen overlapping spectral peaks."
+title: "Savitzky-Golay-Ableitungsglättung",
+desc: "Bereinigen Sie flache Basislinien-Drifts und schärfen Sie überlappende Spektralpeaks."
 },
 {
-title: "AutoML Search Engine Configuration",
-desc: "Initiate automated grid searches scanning up to 95 calibration pipeline combinations in seconds."
+title: "AutoML-Suchmaschinenkonfiguration",
+desc: "Starten Sie automatisierte Grid-Suchen, die bis zu 95 Kalibrierungs-Pipeline-Kombinationen in Sekunden analysieren."
 },
 {
-title: "Model Calibration Results Panel",
-desc: "Review RMSEC, RMSECV, R², and RPD evaluation metrics for active prediction parameters."
+title: "Modellkalibrierungsergebnisse",
+desc: "Überprüfen Sie RMSEC-, RMSECV-, R²- und RPD-Bewertungsmetriken für aktive Vorhersageparameter."
 },
 {
-title: "Predicted vs. Reference Plots",
-desc: "Assess quantitative model accuracy with interactive 45-degree scatter plots."
+title: "Vorhersage- vs. Referenz-Diagramme",
+desc: "Bewerten Sie die quantitative Modellgenauigkeit mit interaktiven 45-Grad-Streudiagrammen."
 },
 {
-title: "Latent Variables (LV) Diagnostics",
-desc: "Determine the optimal number of LVs using cross-validation elbow curves to prevent overfitting."
+title: "Diagnose Latenter Variablen (LV)",
+desc: "Bestimmen Sie die optimale Anzahl an LVs mittels Kreuzvalidierungs-Ellenbogenkurven zur Vermeidung von Overfitting."
 },
 {
-title: "Qualitative Klassifikation (PCA)",
-desc: "Unsupervised clustering of sample groups (e.g. origins, grain varieties, raw materials)."
+title: "Qualitative Klassifizierung (PCA)",
+desc: "Unüberwachte Gruppierung von Probengruppen (z. B. Herkunft, Getreidesorten, Rohstoffe)."
 },
 {
-title: "Supervised Klassifikation (PLS-DA)",
-desc: "Train classification models to verify product authenticity with full Confusion Matrix validation."
+title: "Überwachte Klassifizierung (PLS-DA)",
+desc: "Trainieren Sie Klassifizierungsmodelle zur Überprüfung der Produktechtheit mit vollständiger Konfusionsmatrix-Validierung."
 },
 {
-title: "Model Standardization Settings",
-desc: "Sync master calibrations to slave spectrometers mathematically to correct for hardware variations."
+title: "Modellstandardisierungseinstellungen",
+desc: "Synchronisieren Sie Master-Kalibrierungen mathematisch mit Slave-Spektrometern, um Hardwarevariationen auszugleichen."
 },
 {
-title: "Piecewise Direct Standardization (PDS)",
-desc: "Execute advanced cross-instrument model transfer using standardized reference scans."
+title: "Stückweise direkte Standardisierung (PDS)",
+desc: "Führen Sie fortschrittlichen geräteübergreifenden Modelltransfer mit standardisierten Referenzscans durch."
 },
 {
-title: "Modellkonverter Utility",
+title: "Modellkonvertierungs-Dienstprogramm",
 desc: "Export compiled cali<span class=\"calix-x\">X</span> models (.ihb) as industry-standard XML files compatible with third-party software."
 },
 {
-title: "Project Management Arbeitsbereich",
-desc: "Save and manage entire active calibration workspace sessions (.clx) and compiled prediction files."
+title: "Projektmanagement-Arbeitsbereich",
+desc: "Speichern und verwalten Sie vollständige aktive Kalibrierungs-Arbeitsbereichssitzungen (.clx) und kompilierte Vorhersagedateien."
 }
 ];
+const prevArrow = document.querySelector('.prev-arrow');
+const nextArrow = document.querySelector('.next-arrow');
+const slides = carousel.querySelectorAll('.app-carousel-slide');
+const isRTL = document.documentElement.dir === 'rtl' || document.documentElement.lang === 'ar';
+let activeIndex = 0;
 // Slide text update function
 const updateSlideText = (index) => {
-if (slideData[index]) {
+if (slideData[index] && textTitle && textDesc) {
 textTitle.textContent = slideData[index].title;
 textDesc.textContent = slideData[index].desc;
 }
 };
-const prevArrow = document.querySelector('.prev-arrow');
-const nextArrow = document.querySelector('.next-arrow');
-// Dot navigation click
-dots.forEach((dot, index) => {
-dot.addEventListener('click', () => {
+// Set active dot class
+const setActiveDot = (index) => {
+dots.forEach((d, idx) => {
+if (idx === index) {
+d.classList.add('active');
+d.style.backgroundColor = 'var(--text-primary)';
+d.style.opacity = '1';
+} else {
+d.classList.remove('active');
+d.style.backgroundColor = 'var(--border-hover)';
+d.style.opacity = '0.5';
+}
+});
+updateSlideText(index);
+};
+const goToSlide = (index) => {
+if (index < 0) index = slideData.length - 1;
+if (index >= slideData.length) index = 0;
+activeIndex = index;
+if (slides[index]) {
+carousel.scrollTo({
+left: slides[index].offsetLeft,
+behavior: 'smooth'
+});
+} else {
 const width = carousel.offsetWidth;
 carousel.scrollTo({
 left: width * index,
 behavior: 'smooth'
 });
-setActiveDot(index);
+}
+setActiveDot(activeIndex);
+};
+// Dot navigation click
+dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+goToSlide(index);
 });
 });
 // Arrow navigation click
 if (prevArrow && nextArrow) {
-prevArrow.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-const prevIndex = (index - 1 + slideData.length) % slideData.length;
-carousel.scrollTo({
-left: width * prevIndex,
-behavior: 'smooth'
+prevArrow.addEventListener('click', (e) => {
+e.preventDefault();
+if (isRTL) {
+goToSlide(activeIndex + 1);
+} else {
+goToSlide(activeIndex - 1);
+}
 });
-setActiveDot(prevIndex);
-});
-nextArrow.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-const nextIndex = (index + 1) % slideData.length;
-carousel.scrollTo({
-left: width * nextIndex,
-behavior: 'smooth'
-});
-setActiveDot(nextIndex);
+nextArrow.addEventListener('click', (e) => {
+e.preventDefault();
+if (isRTL) {
+goToSlide(activeIndex - 1);
+} else {
+goToSlide(activeIndex + 1);
+}
 });
 }
-// Set active dot class
-const setActiveDot = (index) => {
-dots.forEach(d => {
-d.classList.remove('active');
-d.style.backgroundColor = 'var(--border-hover)';
-d.style.opacity = '0.5';
-});
-if (dots[index]) {
-dots[index].classList.add('active');
-dots[index].style.backgroundColor = 'var(--text-primary)';
-dots[index].style.opacity = '1';
-updateSlideText(index);
-}
-};
 // Scroll listener to update dots on drag/swipe
 let scrollTimeout;
 carousel.addEventListener('scroll', () => {
 clearTimeout(scrollTimeout);
 scrollTimeout = setTimeout(() => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-setActiveDot(index);
-}, 100);
+const carouselRect = carousel.getBoundingClientRect();
+const carouselCenter = carouselRect.left + carouselRect.width / 2;
+let closestIdx = 0;
+let minDistance = Infinity;
+slides.forEach((slide, idx) => {
+const slideRect = slide.getBoundingClientRect();
+const slideCenter = slideRect.left + slideRect.width / 2;
+const dist = Math.abs(carouselCenter - slideCenter);
+if (dist < minDistance) {
+minDistance = dist;
+closestIdx = idx;
+}
+});
+if (closestIdx !== activeIndex) {
+activeIndex = closestIdx;
+setActiveDot(activeIndex);
+}
+}, 80);
 });
 // Touch drag support
 let isDown = false;
@@ -1485,11 +1512,13 @@ startX = e.pageX - carousel.offsetLeft;
 scrollLeft = carousel.scrollLeft;
 });
 carousel.addEventListener('mouseleave', () => {
+if (!isDown) return;
 isDown = false;
 carousel.style.cursor = 'grab';
 carousel.style.scrollBehavior = 'smooth';
 });
 carousel.addEventListener('mouseup', () => {
+if (!isDown) return;
 isDown = false;
 carousel.style.cursor = 'grab';
 carousel.style.scrollBehavior = 'smooth';

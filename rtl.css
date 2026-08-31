@@ -246,3 +246,17 @@
 [dir="rtl"] .footer-socials {
     justify-content: flex-start;
 }
+
+/* ----- Product Screenshot Showcase Carousel RTL ----- */
+[dir="rtl"] .app-showcase-window,
+[dir="rtl"] .app-screen-container,
+[dir="rtl"] .app-screen-carousel {
+    direction: ltr; /* Keeps screenshot track and window chrome in standard LTR */
+}
+
+[dir="rtl"] #carousel-slide-text,
+[dir="rtl"] #slide-text-title,
+[dir="rtl"] #slide-text-desc {
+    direction: rtl;
+    text-align: center;
+}

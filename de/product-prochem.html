@@ -795,7 +795,7 @@ prochem-desktop.ustech.local/active-stream
 <!-- Dynamic Slide Text Container -->
 <div id="carousel-slide-text" style="max-width: 850px; margin: 1.5rem auto 0 auto; text-align: center; min-height: 90px; transition: opacity 0.2s ease;">
 <h3 id="slide-text-title" style="font-size: 1.3rem; font-family: var(--font-title); font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: -0.3px;">ProChem Desktop-Dashboard</h3>
-<p id="slide-text-desc" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin: 0;">Hauptbedienkonsole zur Anzeige kontinuierlicher Live-Messläufe, Proben-IDs, aktiver Kalibriermethoden und detaillierter Parameter-Prozentwerte (Protein, Fett, Feuchte, Asche, Rohfaser, Stärke).</p>
+<p id="slide-text-desc" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin: 0;">Haupt-Bedienerkonsole zur Anzeige fortlaufender Live-Messungen, Proben-IDs, aktiver Kalibriermethoden und detaillierter Prozentwerte (Protein, Fett, Feuchte, Asche, Faser, Stärke).</p>
 </div>
 </div>
 </section>
@@ -1529,89 +1529,46 @@ if (!carousel || dots.length === 0) return;
 const slideTexts = [
 {
 title: "ProChem Desktop-Dashboard",
-desc: "Hauptbedienkonsole zur Anzeige kontinuierlicher Live-Messläufe, Proben-IDs, aktiver Kalibriermethoden und detaillierter Parameter-Prozentwerte (Protein, Fett, Feuchte, Asche, Rohfaser, Stärke)."
+desc: "Haupt-Bedienerkonsole zur Anzeige fortlaufender Live-Messungen, Proben-IDs, aktiver Kalibriermethoden und detaillierter Prozentwerte (Protein, Fett, Feuchte, Asche, Faser, Stärke)."
 },
 {
-title: "Quantitative Analyze & Save Information",
-desc: "Verification prompt to link raw measurement data with specific Sample IDs, names, custom tags, and supplier profiles before archiving."
+title: "Quantitative Analyse & Informationsspeicherung",
+desc: "Verifizierungsaufforderung zur Verknüpfung von Rohmessdaten mit Proben-IDs, Namen, benutzerdefinierten Tags und Lieferantenprofilen vor der Archivierung."
 },
 {
-title: "Method & Sensor Configuration",
-desc: "Configure integration and waiting times, sample cup rotations, temperature-dependent auto-calibration rules, and wavelength correction boundaries."
+title: "Methoden- & Sensorkonfiguration",
+desc: "Konfigurieren Sie Integrations- und Wartezeiten, Probenschalen-Rotationen, temperaturabhängige Autokalibrierregeln und Wellenlängen-Korrekturgrenzen."
 },
 {
-title: "Live Wavelength & Intensity Graphs",
-desc: "Visual representation of the optical light spectra, plotting raw count intensity across active measurement, baseline, and zero reference lines."
+title: "Live-Wellenlängen- & Intensitätsdiagramme",
+desc: "Visuelle Darstellung der optischen Lichtspektren mit Darstellung der Rohintensität über aktive Messung, Basislinie und Nullreferenzlinien."
 },
 {
-title: "Traceability & Metadata Audits",
-desc: "Detailed log metadata containing unique run codes, origin suppliers, and custom information inputs for total quality compliance."
+title: "Rückverfolgbarkeit & Metadaten-Audits",
+desc: "Detaillierte Protokoll-Metadaten mit eindeutigen Laufcodes, Lieferanten und benutzerdefinierten Eingaben für vollständige Qualitäts-Compliance."
 }
 ];
-let lastActiveIndex = 0;
+const prevArrow = document.querySelector('.prev-arrow');
+const nextArrow = document.querySelector('.next-arrow');
+const slides = carousel.querySelectorAll('.app-carousel-slide');
+const isRTL = document.documentElement.dir === 'rtl' || document.documentElement.lang === 'ar';
+let activeIndex = 0;
 const textContainer = document.getElementById('carousel-slide-text');
 const titleEl = document.getElementById('slide-text-title');
 const descEl = document.getElementById('slide-text-desc');
 function updateSlideText(index) {
-if (titleEl && descEl && slideTexts[index] && textContainer) {
-textContainer.style.opacity = '0';
+if (titleEl && descEl && slideTexts[index]) {
+if (textContainer) textContainer.style.opacity = '0';
 setTimeout(() => {
 titleEl.textContent = slideTexts[index].title;
 descEl.textContent = slideTexts[index].desc;
-textContainer.style.opacity = '1';
-}, 150);
+if (textContainer) textContainer.style.opacity = '1';
+}, 120);
 }
 }
-let isDown = false;
-let startX;
-let scrollLeft;
-// Mouse down - start dragging
-carousel.addEventListener('mousedown', (e) => {
-isDown = true;
-carousel.style.cursor = 'grabbing';
-carousel.style.scrollBehavior = 'auto'; // Disable smooth scroll while dragging
-startX = e.pageX - carousel.offsetLeft;
-scrollLeft = carousel.scrollLeft;
-});
-// Mouse leave - end dragging
-carousel.addEventListener('mouseleave', () => {
-if (!isDown) return;
-isDown = false;
-carousel.style.cursor = 'grab';
-carousel.style.scrollBehavior = 'smooth';
-snapToNearestSlide();
-});
-// Mouse up - end dragging
-carousel.addEventListener('mouseup', () => {
-if (!isDown) return;
-isDown = false;
-carousel.style.cursor = 'grab';
-carousel.style.scrollBehavior = 'smooth';
-snapToNearestSlide();
-});
-// Mouse move - scroll
-carousel.addEventListener('mousemove', (e) => {
-if (!isDown) return;
-e.preventDefault();
-const x = e.pageX - carousel.offsetLeft;
-const walk = (x - startX) * 1.5; // Drag speed multiplier
-carousel.scrollLeft = scrollLeft - walk;
-});
-function snapToNearestSlide() {
-const width = carousel.offsetWidth;
-const activeIndex = Math.round(carousel.scrollLeft / width);
-carousel.scrollTo({
-left: activeIndex * width,
-behavior: 'smooth'
-});
-}
-// Sync dots and text on scroll
-carousel.addEventListener('scroll', () => {
-const width = carousel.offsetWidth;
-if (width <= 0) return;
-const activeIndex = Math.round(carousel.scrollLeft / width);
+function setActiveDot(index) {
 dots.forEach((dot, idx) => {
-if (idx === activeIndex) {
+if (idx === index) {
 dot.classList.add('active');
 dot.style.backgroundColor = 'var(--text-primary)';
 dot.style.opacity = '1';
@@ -1621,45 +1578,106 @@ dot.style.backgroundColor = 'var(--border-hover)';
 dot.style.opacity = '0.5';
 }
 });
-if (activeIndex !== lastActiveIndex) {
-lastActiveIndex = activeIndex;
+}
+function goToSlide(index) {
+if (index < 0) index = slideTexts.length - 1;
+if (index >= slideTexts.length) index = 0;
+activeIndex = index;
+if (slides[index]) {
+carousel.scrollTo({
+left: slides[index].offsetLeft,
+behavior: 'smooth'
+});
+} else {
+const width = carousel.offsetWidth;
+carousel.scrollTo({
+left: width * index,
+behavior: 'smooth'
+});
+}
+setActiveDot(activeIndex);
 updateSlideText(activeIndex);
 }
-});
 // Click dots to navigate
 dots.forEach((dot, idx) => {
 dot.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-carousel.style.scrollBehavior = 'smooth';
-carousel.scrollTo({
-left: idx * width,
-behavior: 'smooth'
-});
+goToSlide(idx);
 });
 });
 // Arrow navigation click
-const prevArrow = document.querySelector('.prev-arrow');
-const nextArrow = document.querySelector('.next-arrow');
 if (prevArrow && nextArrow) {
-prevArrow.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-const prevIndex = (index - 1 + slideTexts.length) % slideTexts.length;
-carousel.scrollTo({
-left: width * prevIndex,
-behavior: 'smooth'
+prevArrow.addEventListener('click', (e) => {
+e.preventDefault();
+if (isRTL) {
+goToSlide(activeIndex + 1);
+} else {
+goToSlide(activeIndex - 1);
+}
 });
-});
-nextArrow.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-const nextIndex = (index + 1) % slideTexts.length;
-carousel.scrollTo({
-left: width * nextIndex,
-behavior: 'smooth'
-});
+nextArrow.addEventListener('click', (e) => {
+e.preventDefault();
+if (isRTL) {
+goToSlide(activeIndex - 1);
+} else {
+goToSlide(activeIndex + 1);
+}
 });
 }
+// Sync dots and text on scroll
+let scrollTimeout;
+carousel.addEventListener('scroll', () => {
+clearTimeout(scrollTimeout);
+scrollTimeout = setTimeout(() => {
+const carouselRect = carousel.getBoundingClientRect();
+const carouselCenter = carouselRect.left + carouselRect.width / 2;
+let closestIdx = 0;
+let minDistance = Infinity;
+slides.forEach((slide, idx) => {
+const slideRect = slide.getBoundingClientRect();
+const slideCenter = slideRect.left + slideRect.width / 2;
+const dist = Math.abs(carouselCenter - slideCenter);
+if (dist < minDistance) {
+minDistance = dist;
+closestIdx = idx;
+}
+});
+if (closestIdx !== activeIndex) {
+activeIndex = closestIdx;
+setActiveDot(activeIndex);
+updateSlideText(activeIndex);
+}
+}, 80);
+});
+// Touch drag support
+let isDown = false;
+let startX;
+let scrollLeft;
+carousel.addEventListener('mousedown', (e) => {
+isDown = true;
+carousel.style.cursor = 'grabbing';
+carousel.style.scrollBehavior = 'auto';
+startX = e.pageX - carousel.offsetLeft;
+scrollLeft = carousel.scrollLeft;
+});
+carousel.addEventListener('mouseleave', () => {
+if (!isDown) return;
+isDown = false;
+carousel.style.cursor = 'grab';
+carousel.style.scrollBehavior = 'smooth';
+});
+carousel.addEventListener('mouseup', () => {
+if (!isDown) return;
+isDown = false;
+carousel.style.cursor = 'grab';
+carousel.style.scrollBehavior = 'smooth';
+});
+carousel.addEventListener('mousemove', (e) => {
+if (!isDown) return;
+e.preventDefault();
+const x = e.pageX - carousel.offsetLeft;
+const walk = (x - startX) * 1.5;
+carousel.scrollLeft = scrollLeft - walk;
+});
 });
 </script>
 </body>

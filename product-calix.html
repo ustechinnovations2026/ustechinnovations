@@ -1406,72 +1406,99 @@ title: "Project Management Workspace",
 desc: "Save and manage entire active calibration workspace sessions (.clx) and compiled prediction files."
 }
 ];
+const prevArrow = document.querySelector('.prev-arrow');
+const nextArrow = document.querySelector('.next-arrow');
+const slides = carousel.querySelectorAll('.app-carousel-slide');
+const isRTL = document.documentElement.dir === 'rtl' || document.documentElement.lang === 'ar';
+let activeIndex = 0;
 // Slide text update function
 const updateSlideText = (index) => {
-if (slideData[index]) {
+if (slideData[index] && textTitle && textDesc) {
 textTitle.textContent = slideData[index].title;
 textDesc.textContent = slideData[index].desc;
 }
 };
-const prevArrow = document.querySelector('.prev-arrow');
-const nextArrow = document.querySelector('.next-arrow');
-// Dot navigation click
-dots.forEach((dot, index) => {
-dot.addEventListener('click', () => {
+// Set active dot class
+const setActiveDot = (index) => {
+dots.forEach((d, idx) => {
+if (idx === index) {
+d.classList.add('active');
+d.style.backgroundColor = 'var(--text-primary)';
+d.style.opacity = '1';
+} else {
+d.classList.remove('active');
+d.style.backgroundColor = 'var(--border-hover)';
+d.style.opacity = '0.5';
+}
+});
+updateSlideText(index);
+};
+const goToSlide = (index) => {
+if (index < 0) index = slideData.length - 1;
+if (index >= slideData.length) index = 0;
+activeIndex = index;
+if (slides[index]) {
+carousel.scrollTo({
+left: slides[index].offsetLeft,
+behavior: 'smooth'
+});
+} else {
 const width = carousel.offsetWidth;
 carousel.scrollTo({
 left: width * index,
 behavior: 'smooth'
 });
-setActiveDot(index);
+}
+setActiveDot(activeIndex);
+};
+// Dot navigation click
+dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+goToSlide(index);
 });
 });
 // Arrow navigation click
 if (prevArrow && nextArrow) {
-prevArrow.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-const prevIndex = (index - 1 + slideData.length) % slideData.length;
-carousel.scrollTo({
-left: width * prevIndex,
-behavior: 'smooth'
+prevArrow.addEventListener('click', (e) => {
+e.preventDefault();
+if (isRTL) {
+goToSlide(activeIndex + 1);
+} else {
+goToSlide(activeIndex - 1);
+}
 });
-setActiveDot(prevIndex);
-});
-nextArrow.addEventListener('click', () => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-const nextIndex = (index + 1) % slideData.length;
-carousel.scrollTo({
-left: width * nextIndex,
-behavior: 'smooth'
-});
-setActiveDot(nextIndex);
+nextArrow.addEventListener('click', (e) => {
+e.preventDefault();
+if (isRTL) {
+goToSlide(activeIndex - 1);
+} else {
+goToSlide(activeIndex + 1);
+}
 });
 }
-// Set active dot class
-const setActiveDot = (index) => {
-dots.forEach(d => {
-d.classList.remove('active');
-d.style.backgroundColor = 'var(--border-hover)';
-d.style.opacity = '0.5';
-});
-if (dots[index]) {
-dots[index].classList.add('active');
-dots[index].style.backgroundColor = 'var(--text-primary)';
-dots[index].style.opacity = '1';
-updateSlideText(index);
-}
-};
 // Scroll listener to update dots on drag/swipe
 let scrollTimeout;
 carousel.addEventListener('scroll', () => {
 clearTimeout(scrollTimeout);
 scrollTimeout = setTimeout(() => {
-const width = carousel.offsetWidth;
-const index = Math.round(carousel.scrollLeft / width);
-setActiveDot(index);
-}, 100);
+const carouselRect = carousel.getBoundingClientRect();
+const carouselCenter = carouselRect.left + carouselRect.width / 2;
+let closestIdx = 0;
+let minDistance = Infinity;
+slides.forEach((slide, idx) => {
+const slideRect = slide.getBoundingClientRect();
+const slideCenter = slideRect.left + slideRect.width / 2;
+const dist = Math.abs(carouselCenter - slideCenter);
+if (dist < minDistance) {
+minDistance = dist;
+closestIdx = idx;
+}
+});
+if (closestIdx !== activeIndex) {
+activeIndex = closestIdx;
+setActiveDot(activeIndex);
+}
+}, 80);
 });
 // Touch drag support
 let isDown = false;
@@ -1485,11 +1512,13 @@ startX = e.pageX - carousel.offsetLeft;
 scrollLeft = carousel.scrollLeft;
 });
 carousel.addEventListener('mouseleave', () => {
+if (!isDown) return;
 isDown = false;
 carousel.style.cursor = 'grab';
 carousel.style.scrollBehavior = 'smooth';
 });
 carousel.addEventListener('mouseup', () => {
+if (!isDown) return;
 isDown = false;
 carousel.style.cursor = 'grab';
 carousel.style.scrollBehavior = 'smooth';
