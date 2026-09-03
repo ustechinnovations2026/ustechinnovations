@@ -5107,6 +5107,41 @@ input:checked + .slider:before {
 .laser-hero .hero-bg-media { background: #0a0b10; }
 
 .card-bg.proline-fit { object-fit: contain; padding: 2.5rem; background-color: rgb(210, 212, 212); }
+
+/* Showcase Hardware Card Image Fits - larger balanced size */
+.card-bg.proline-ec-fit {
+    object-fit: contain;
+    padding: 0.6rem 0.5rem 3rem 0.5rem;
+    background-color: #ffffff;
+}
+
+.card-bg.proline-ecs-fit {
+    object-fit: contain;
+    padding: 0.6rem 0.5rem 3rem 0.5rem;
+    background-color: #ffffff;
+}
+
+.card-bg.trueline-fit {
+    object-fit: contain;
+    padding: 0.6rem 0.5rem 3rem 0.5rem;
+    background-color: #ffffff;
+}
+
+.card-bg.starch-fit {
+    object-fit: contain;
+    padding: 0.6rem 0.5rem 3rem 0.5rem;
+    background-color: rgb(218, 218, 218);
+}
+
+@media (max-width: 768px) {
+    .card-bg.proline-ec-fit,
+    .card-bg.proline-ecs-fit,
+    .card-bg.trueline-fit,
+    .card-bg.starch-fit {
+        padding: 0.4rem 0.4rem 2.2rem 0.4rem;
+    }
+}
+
 .card-bg.feed-fit { object-position: center center; }
 
 /* SVG Laser Bouncing Animation (from animation_preview) */

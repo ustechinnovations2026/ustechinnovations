@@ -55,16 +55,8 @@ try {
             section.style.display = 'none';
         });
 
-        // 5. Hide StarchQC and SamplePrep products on products-devices.html
-        var starchQC = document.getElementById('i-sens-starch');
+        // 5. Hide SamplePrep product on products-devices.html (StarchQC now visible)
         var samplePrep = document.getElementById('nano-sample-prep');
-        if (starchQC) {
-            starchQC.style.display = 'none';
-            var prevHr = starchQC.previousElementSibling;
-            if (prevHr && prevHr.tagName === 'HR') {
-                prevHr.style.display = 'none';
-            }
-        }
         if (samplePrep) {
             samplePrep.style.display = 'none';
             var prevHr = samplePrep.previousElementSibling;
@@ -73,23 +65,12 @@ try {
             }
         }
 
-        // 6. Hide StarchQC and SamplePrep cards from the homepage slider
-        document.querySelectorAll('a[href="product-i-sens-starch.html"], a[href="product-n-sens-sampleprep.html"]').forEach(function(el) {
+        // 6. Hide SamplePrep card from the homepage slider
+        document.querySelectorAll('a[href="product-n-sens-sampleprep.html"]').forEach(function(el) {
             if (el.classList.contains('blog-slider-card')) {
                 el.style.display = 'none';
             }
         });
-
-        // 7. Hide StarchQC inline link on products.html to avoid dead links
-        var starchInline = document.querySelector('a[href="product-i-sens-starch.html"]');
-        if (starchInline && !starchInline.classList.contains('blog-slider-card') && !starchInline.classList.contains('dropdown-item')) {
-            starchInline.style.display = 'none';
-            // Also hide the preceding comma and space if possible
-            var parent = starchInline.parentNode;
-            if (parent) {
-                parent.innerHTML = parent.innerHTML.replace(', <a href="product-i-sens-starch.html"', ' <a href="product-i-sens-starch.html"');
-            }
-        }
 
         // 8. Language Switcher — now visible (subdirectory-based i18n)
 
@@ -308,6 +289,10 @@ var TRANSLATED_PAGES = {};
  'product-masterline.html',
  'product-prochem.html',
  'product-proline.html',
+ 'product-proline-17ec.html',
+ 'product-proline-17ecs.html',
+ 'product-trueline-17ec.html',
+ 'product-starchqc.html',
  'product-proline-17es.html',
  'product-proline-2550.html',
  'product-tornado.html',
