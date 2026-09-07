@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="تحدث إلى مهندس تطبيقات USTECH: اطلب عرض أسعار، أو احجز عرضًا توضيحيًا أو تحليلاً مجانياً لعينة، واستخدم حاسبة العائد على الاستثمار لتقدير مدخراتك السنوية.">
 <title>اتصل بـ USTECH | طلب عرض توضيحي أو تحليل عينة NIR</title>
-<link rel="stylesheet" href="../index.css?v=1.1.0">
+<link rel="stylesheet" href="../index.css?v=1.1.1">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -579,7 +579,7 @@ lblCostDesc.firstChild.textContent = 'Milk Value (per 1,000 Liters): ';
 rCapacity.min = 2; rCapacity.max = 50; rCapacity.value = 10;
 rCost.min = 500; rCost.max = 5000; rCost.value = 1500;
 lblCapacityDesc.firstChild.textContent = 'Daily Processing Capacity: ';
-lblCostDesc.firstChild.textContent = 'Material Cost (per m&mdash;): ';
+lblCostDesc.firstChild.textContent = 'Material Cost (per m³): ';
 }
 updateRoi();
 });
@@ -602,7 +602,7 @@ capUnit = 'k Liters/hr';
 lblCapacity.textContent = capacity + ' ' + capUnit;
 lblCost.textContent = costPrefix + cost;
 } else if (ind === 'chemical') {
-capUnit = ' m&mdash;/hr';
+capUnit = ' m³/hr';
 lblCapacity.textContent = capacity + capUnit;
 lblCost.textContent = costPrefix + cost;
 }

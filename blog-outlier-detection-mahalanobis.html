@@ -3,11 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&mdash;">
+<meta name="description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;">
 <meta name="keywords" content="outlier detection chemometrics, Mahalanobis distance NIR, Hotelling T-squared, spectral outlier analysis">
 <title>Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2; | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.0">
+<link rel="stylesheet" href="index.css?v=1.1.1">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="tr" href="https://www.ustechinnovations.com/tr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="fr" href="https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="de" href="https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="es" href="https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="ar" href="https://www.ustechinnovations.com/ar/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="zh" href="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" />
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -112,7 +120,7 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2; | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&mdash;">
+    <meta property="og:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg">
     <meta property="og:image:width" content="1200">
@@ -121,7 +129,7 @@
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2; | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&mdash;">
+    <meta name="twitter:description" content="USTECH Innovations Guide - Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -217,8 +225,8 @@ Espa&#241;ol
 <h2>Mahalanobis Distance: Measuring Covariance</h2>
 <p>Simple Euclidean distance measures the straight-line distance between a sample spectrum and the calibration mean. However, Euclidean distance fails in chemometrics because it ignores the strong correlation (covariance) between adjacent wavelengths in NIR spectra. </p>
 <p>**Mahalanobis Distance (MD)** resolves this by scaling the distance by the covariance matrix of the calibration dataset. Effectively, MD accounts for the direction of variance, assigning less weight to variations in directions of high normal calibration variance, and high weight to deviations in directions where the calibration data is tightly bound.</p>
-<h2>Hotelling's T&mdash;: Confidence Thresholds</h2>
-<p>While Mahalanobis Distance provides a raw distance value, we need a statistically sound threshold to flag outliers. **Hotelling's T&mdash;** normalizes the Mahalanobis Distance in a Principal Component (PC) projection space, calculating a multivariate score. Because T&sup2; follows an F-distribution, we can establish formal statistical confidence limits (typically 95% or 99%):</p>
+<h2>Hotelling's T&sup2;: Confidence Thresholds</h2>
+<p>While Mahalanobis Distance provides a raw distance value, we need a statistically sound threshold to flag outliers. **Hotelling's T&sup2;** normalizes the Mahalanobis Distance in a Principal Component (PC) projection space, calculating a multivariate score. Because T&sup2; follows an F-distribution, we can establish formal statistical confidence limits (typically 95% or 99%):</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -254,7 +262,7 @@ Espa&#241;ol
 <p>To implement outlier limits in your calibrations, follow these steps in **cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite**:</p>
 <ol>
 <li><strong>Compile PCA/PLS scores:</strong> Open your calibration file and calculate the principal component loading vectors.</li>
-<li><strong>Set Confidence Interval:</strong> Navigate to the Outliers tab and select `Hotelling T&mdash;`. Choose a 99% confidence threshold ($\alpha = 0.01$) for critical control points, or 95% ($\alpha = 0.05$) for routine monitoring.</li>
+<li><strong>Set Confidence Interval:</strong> Navigate to the Outliers tab and select `Hotelling T&sup2;`. Choose a 99% confidence threshold ($\alpha = 0.01$) for critical control points, or 95% ($\alpha = 0.05$) for routine monitoring.</li>
 <li><strong>Enable ProChem Alarms:</strong> Sync the model to the process spectrometer. In **ProChem**, map the outlier flag output to your PLC register to hold the last valid prediction when an outlier is triggered.</li>
 </ol>
 <h2>Conclusion</h2>
@@ -264,7 +272,7 @@ Espa&#241;ol
 <ul>
 <li>ASTM E1655 - <em>Standard Practices for Infrared Multivariate Quantitative Analysis</em>.</li>
 <li>Hotelling, H., "The Generalization of Student's Ratio," <em>Annals of Mathematical Statistics</em>, 1931.</li>
-<li>Martens, H. and N&mdash;s, T., <em>Multivariate Calibration</em>, John Wiley & Sons, 1989.</li>
+<li>Martens, H. and Næs, T., <em>Multivariate Calibration</em>, John Wiley & Sons, 1989.</li>
 </ul>
 </div>
 </div>

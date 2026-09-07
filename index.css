@@ -5276,9 +5276,14 @@ input:checked + .slider:before {
     z-index: 2;
 }
 
-/* Hero h1 single line */
+/* Hero h1: tek satira ZORLAMA yok (07.09.2026 tasma analizi).
+   nowrap + .hero{overflow:hidden} basligi 1281px ve uzeri TUM masaustu
+   genisliklerinde sessizce kesiyordu. 56px'te olcum: EN 1474px, TR 1551px,
+   DE 1568px, FR 1711px, ES 1811px yer istiyor; kutu ise vw-207.
+   ES 1920px monitorde bile 98px tasiyordu. nowrap'i GERI EKLEMEYIN. */
 .hero h1 {
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 /* Fix hero h1 clipping */

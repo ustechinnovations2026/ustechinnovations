@@ -4,11 +4,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations Kılavuzu - Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T—" name="description"/>
+<meta content="USTECH Innovations Kılavuzu - Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²" name="description"/>
 <meta content="aykırı değer tespit kemometrikleri, Mahalanobis mesafesi NIR, Hotelling T-kare, spektral aykırı değer analizi" name="keywords"/>
 <title>Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²'si | USTECH Innovations</title>
-<link href="../index.css?v=1.1.0" rel="stylesheet"/>
+<link href="../index.css?v=1.1.1" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/tr/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
+<link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="tr" href="https://www.ustechinnovations.com/tr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="fr" href="https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="de" href="https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="es" href="https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="ar" href="https://www.ustechinnovations.com/ar/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="zh" href="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" />
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -107,16 +115,16 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²'si | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations Kılavuzu - Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T—" property="og:description"/>
+<meta content="USTECH Innovations Kılavuzu - Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/tr/blog-outlier-detection-mahalanobis.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T² | USTECH Innovations" property="og:image:alt"/>
+<meta content="Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²'si | USTECH Innovations" property="og:image:alt"/>
 <meta content="tr_TR" property="og:locale"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²'si | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations Kılavuzu - Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T—" name="twitter:description"/>
+<meta content="USTECH Innovations Kılavuzu - Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -216,8 +224,8 @@
 <h2>Mahalanobis Mesafesi: Kovaryansın Ölçülmesi</h2>
 <p>Basit Öklid mesafesi, bir numune spektrumu ile kalibrasyon ortalaması arasındaki düz çizgi mesafesini ölçer. Ancak Öklid mesafesi kemometriklerde başarısız olur çünkü NIR spektrumundaki bitişik dalga boyları arasındaki güçlü korelasyonu (kovaryans) göz ardı eder.</p>
 <p>**Mahalanobis Mesafesi (MD)** mesafeyi kalibrasyon veri kümesinin kovaryans matrisiyle ölçeklendirerek bu sorunu çözer. MD, yüksek normal kalibrasyon varyansı yönlerindeki değişikliklere daha az ağırlık vererek ve kalibrasyon verilerinin sıkı bir şekilde sınırlandığı yönlerdeki sapmalara yüksek ağırlık vererek, etkili bir şekilde varyansın yönünü hesaba katar.</p>
-<h2>Hotelling'in T—: Güven Eşikleri</h2>
-<p>Mahalanobis Distance ham bir mesafe değeri sağlarken, aykırı değerleri işaretlemek için istatistiksel olarak sağlam bir eşiğe ihtiyacımız var. **Hotelling'in T—** çok değişkenli bir puan hesaplayarak Ana Bileşen (PC) projeksiyon uzayındaki Mahalanobis Uzaklığını normalleştirir. T² bir F dağılımını takip ettiğinden resmi istatistiksel güven sınırları (genellikle %95 veya %99) belirleyebiliriz:</p>
+<h2>Hotelling'in T²: Güven Eşikleri</h2>
+<p>Mahalanobis Distance ham bir mesafe değeri sağlarken, aykırı değerleri işaretlemek için istatistiksel olarak sağlam bir eşiğe ihtiyacımız var. **Hotelling'in T²** çok değişkenli bir puan hesaplayarak Ana Bileşen (PC) projeksiyon uzayındaki Mahalanobis Uzaklığını normalleştirir. T² bir F dağılımını takip ettiğinden resmi istatistiksel güven sınırları (genellikle %95 veya %99) belirleyebiliriz:</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -253,7 +261,7 @@
 <p>Kalibrasyonlarınızda aykırı değer sınırlarını uygulamak için **cali'deki şu adımları izleyin<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit**:</p>
 <ol>
 <li><strong>PCA/PLS puanlarını derleyin:</strong>Kalibrasyon dosyanızı açın ve ana bileşen yükleme vektörlerini hesaplayın.</li>
-<li><strong>Güven Aralığını Ayarlayın:</strong>Aykırı Değerler sekmesine gidin ve 'Otelleme T—'yi seçin. Kritik kontrol noktaları için %99'luk bir güven eşiği ($\alpha = 0,01$) veya rutin izleme için %95'lik bir güven eşiği ($\alpha = 0,05$) seçin.</li>
+<li><strong>Güven Aralığını Ayarlayın:</strong>Aykırı Değerler sekmesine gidin ve 'Otelleme T²'yi seçin. Kritik kontrol noktaları için %99'luk bir güven eşiği ($\alpha = 0,01$) veya rutin izleme için %95'lik bir güven eşiği ($\alpha = 0,05$) seçin.</li>
 <li><strong>ProChem Alarmlarını Etkinleştir:</strong>Modeli proses spektrometresine senkronize edin. **ProChem**'da, aykırı değer tetiklendiğinde son geçerli tahmini tutmak için aykırı değer bayrağı çıktısını PLC kaydınızla eşleştirin.</li>
 </ol>
 <h2>Çözüm</h2>
@@ -263,7 +271,7 @@
 <ul>
 <li>ASTM E1655 -<em>Kızılötesi Çok Değişkenli Kantitatif Analiz için Standart Uygulamalar</em>.</li>
 <li>Hotelling, H., "Öğrenci Oranının Genelleştirilmesi"<em>Matematiksel İstatistik Yıllıkları</em>, 1931.</li>
-<li>Martens, H. ve N—s, T.,<em>Çok Değişkenli Kalibrasyon</em>, John Wiley &amp; Sons, 1989.</li>
+<li>Martens, H. ve Næs, T.,<em>Çok Değişkenli Kalibrasyon</em>, John Wiley &amp; Sons, 1989.</li>
 </ul>
 </div>
 </div>

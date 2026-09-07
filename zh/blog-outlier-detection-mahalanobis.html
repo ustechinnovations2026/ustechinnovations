@@ -4,11 +4,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T—" name="description"/>
+<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²" name="description"/>
 <meta content="异常值检测化学计量学、马哈拉诺比斯距离 NIR、Hotelling T 方、光谱异常值分析" name="keywords"/>
 <title>化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations</title>
-<link href="../index.css?v=1.1.0" rel="stylesheet"/>
+<link href="../index.css?v=1.1.1" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
+<link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="tr" href="https://www.ustechinnovations.com/tr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="fr" href="https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="de" href="https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="es" href="https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="ar" href="https://www.ustechinnovations.com/ar/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="zh" href="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" />
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -107,16 +115,16 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T—" property="og:description"/>
+<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T² | USTECH Innovations" property="og:image:alt"/>
+<meta content="化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T—" name="twitter:description"/>
+<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -216,8 +224,8 @@
 <h2>马哈拉诺比斯距离：测量协方差</h2>
 <p>简单欧几里德距离测量样本光谱与校准平均值之间的直线距离。然而，欧几里得距离在化学计量学中失败，因为它忽略了 NIR 光谱中相邻波长之间的强相关性（协方差）。</p>
 <p>**马哈拉诺比斯距离 (MD)** 通过按校准数据集的协方差矩阵缩放距离来解决此问题。实际上，MD 考虑了方差的方向，对高正态校准方差方向的变化分配较小的权重，对校准数据紧密结合的方向的偏差分配较高的权重。</p>
-<h2>Hotelling 的 T—：置信阈值</h2>
-<p>虽然马哈拉诺比斯距离提供了原始距离值，但我们需要一个统计上合理的阈值来标记异常值。 **Hotelling 的 T—** 对主成分 (PC) 投影空间中的马哈拉诺比斯距离进行归一化，计算多元分数。由于 T² 遵循 F 分布，我们可以建立正式的统计置信限（通常为 95% 或 99%）：</p>
+<h2>Hotelling 的 T²：置信阈值</h2>
+<p>虽然马哈拉诺比斯距离提供了原始距离值，但我们需要一个统计上合理的阈值来标记异常值。 **Hotelling 的 T²** 对主成分 (PC) 投影空间中的马哈拉诺比斯距离进行归一化，计算多元分数。由于 T² 遵循 F 分布，我们可以建立正式的统计置信限（通常为 95% 或 99%）：</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -253,7 +261,7 @@
 <p>要在校准中实施异常值限制，请按照 **cali 中的以下步骤操作<span class="calix-x" style="color: #38b6ff !important;">X</span>套房**：</p>
 <ol>
 <li><strong>编译 PCA/PLS 分数：</strong>打开校准文件并计算主成分加载向量。</li>
-<li><strong>设置置信区间：</strong>导航到离群值选项卡并选择“Hotelling T—”。为关键控制点选择 99% 置信阈值 ($\alpha = 0.01$)，或为常规监控选择 95% ($\alpha = 0.05$)。</li>
+<li><strong>设置置信区间：</strong>导航到离群值选项卡并选择“Hotelling T²”。为关键控制点选择 99% 置信阈值 ($\alpha = 0.01$)，或为常规监控选择 95% ($\alpha = 0.05$)。</li>
 <li><strong>启用 ProChem 警报：</strong>将模型同步到过程光谱仪。在 **ProChem** 中，将异常值标志输出映射到 PLC 寄存器，以在触发异常值时保存最后的有效预测。</li>
 </ol>
 <h2>结论</h2>

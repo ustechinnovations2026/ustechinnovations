@@ -7,8 +7,16 @@
 <meta content="دليل USTECH Innovations - الكشف عن القيم الكيميائية الشاذة: مسافة المهالانوبيس مقابل T لفندقي—" name="description"/>
 <meta content="القياسات الكيميائية للكشف عن القيم الخارجية، مسافة المهالانوبيس NIR، مربع T للفنادق، التحليل الطيفي الخارجي" name="keywords"/>
 <title>الكشف الكيميائي الخارجي: مسافة المهالانوبيس مقابل T² لفندق | USTECH Innovations</title>
-<link href="../index.css?v=1.1.0" rel="stylesheet"/>
+<link href="../index.css?v=1.1.1" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/ar/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
+<link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="tr" href="https://www.ustechinnovations.com/tr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="fr" href="https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="de" href="https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="es" href="https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="ar" href="https://www.ustechinnovations.com/ar/blog-outlier-detection-mahalanobis.html" />
+<link rel="alternate" hreflang="zh" href="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" />
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -112,7 +120,7 @@
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T² | USTECH Innovations" property="og:image:alt"/>
+<meta content="الكشف الكيميائي الخارجي: مسافة المهالانوبيس مقابل T² لفندق | USTECH Innovations" property="og:image:alt"/>
 <meta content="ar_SA" property="og:locale"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="الكشف الكيميائي الخارجي: مسافة المهالانوبيس مقابل T² لفندق | USTECH Innovations" name="twitter:title"/>
@@ -216,8 +224,8 @@
 <h2>مسافة ماهالانوبيس: قياس التباين</h2>
 <p>تقيس المسافة الإقليدية البسيطة مسافة الخط المستقيم بين طيف العينة ومتوسط ​​المعايرة. ومع ذلك، فإن المسافة الإقليدية تفشل في القياسات الكيميائية لأنها تتجاهل الارتباط القوي (التباين) بين الأطوال الموجية المتجاورة في أطياف NIR.</p>
 <p>تعمل **مسافة Mahalanobis (MD)** على حل هذه المشكلة عن طريق قياس المسافة بواسطة مصفوفة التغاير لمجموعة بيانات المعايرة. على نحو فعال، يحسب MD اتجاه التباين، ويخصص وزنًا أقل للتغيرات في اتجاهات تباين المعايرة العادية العالية، ووزنًا مرتفعًا للانحرافات في الاتجاهات التي تكون فيها بيانات المعايرة مرتبطة بإحكام.</p>
-<h2>Hotelling's T—: عتبات الثقة</h2>
-<p>في حين أن مسافة Mahalanobis توفر قيمة أولية للمسافة، فإننا نحتاج إلى عتبة سليمة إحصائيًا لتحديد القيم المتطرفة. **Hotelling's T—** يقوم بتطبيع مسافة Mahalanobis في مساحة عرض المكون الرئيسي (PC)، وحساب درجة متعددة المتغيرات. نظرًا لأن T² يتبع توزيع F، يمكننا وضع حدود ثقة إحصائية رسمية (عادةً 95% أو 99%):</p>
+<h2>Hotelling's T²: عتبات الثقة</h2>
+<p>في حين أن مسافة Mahalanobis توفر قيمة أولية للمسافة، فإننا نحتاج إلى عتبة سليمة إحصائيًا لتحديد القيم المتطرفة. **Hotelling's T²** يقوم بتطبيع مسافة Mahalanobis في مساحة عرض المكون الرئيسي (PC)، وحساب درجة متعددة المتغيرات. نظرًا لأن T² يتبع توزيع F، يمكننا وضع حدود ثقة إحصائية رسمية (عادةً 95% أو 99%):</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -253,7 +261,7 @@
 <p>لتطبيق الحدود الخارجية في معايراتك، اتبع الخطوات التالية في **cali<span class="calix-x">X</span>جناح**:</p>
 <ol>
 <li><strong>تجميع نتائج PCA/PLS:</strong>افتح ملف المعايرة الخاص بك واحسب ناقلات تحميل المكون الرئيسي.</li>
-<li><strong>تعيين فاصل الثقة:</strong>انتقل إلى علامة التبويب القيم المتطرفة وحدد `Hotelling T—`. اختر حد ثقة 99% ($\alpha = 0.01$) لنقاط التحكم الحرجة، أو 95% ($\alpha = 0.05$) للمراقبة الروتينية.</li>
+<li><strong>تعيين فاصل الثقة:</strong>انتقل إلى علامة التبويب القيم المتطرفة وحدد `Hotelling T²`. اختر حد ثقة 99% ($\alpha = 0.01$) لنقاط التحكم الحرجة، أو 95% ($\alpha = 0.05$) للمراقبة الروتينية.</li>
 <li><strong>تمكين ProChem الإنذارات:</strong>مزامنة النموذج مع مطياف العملية. في **ProChem**، قم بتعيين مخرجات العلامة الخارجية إلى سجل PLC الخاص بك للاحتفاظ بآخر تنبؤ صالح عند تشغيل قيمة خارجية.</li>
 </ol>
 <h2>خاتمة</h2>
