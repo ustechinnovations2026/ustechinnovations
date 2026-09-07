@@ -268,7 +268,7 @@ function fold(str) {
 
 // Dil klasorlerinde (tr/ fr/ de/ es/) karsiligi OLAN sayfalar. Bunlarin disindaki
 // hedefler (bloglar, eski urun URL'leri, dogrulama dosyalari) yalnizca kokte var.
-// StarchQC/SamplePrep yayinlanirsa buraya eklenmeli (product-starchqc.html, product-sampleprep.html).
+// SamplePrep yayinlanirsa buraya eklenmeli (product-sampleprep.html). StarchQC 07.09.2026'da eklendi.
 var TRANSLATED_PAGES = {};
 [
  'index.html',
@@ -361,7 +361,7 @@ var LEGACY_PAGE_MAP = {
     'product-n-sens-tornado.html': 'product-tornado.html',
     'product-proline-17es.html': 'product-proline-17ec.html',   // emekli urun -> halefi (07.09.2026)
     'product-n-sens-sampleprep.html': 'products-devices.html',   // SamplePrep bekletiliyor
-    'product-i-sens-starch.html': 'products-devices.html',        // StarchQC bekletiliyor
+    'product-i-sens-starch.html': 'product-starchqc.html',        // StarchQC yayinda (07.09.2026)
     'about-us.html': 'about.html',
     'technology.html': 'knowledge-technology.html',
     'our-technology.html': 'knowledge-technology.html'
@@ -759,8 +759,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "caliX: AutoML Chemometrics & Calibration Software",
-      "s": "Build, validate and deploy NIR calibration models in minutes. caliX combines PLS, PCA and AutoML in an eight-module workspace for NIR, FTIR and Raman data.",
-      "k": "calix automl chemometrics calibration software build validate and deploy nir calibration models in minutes calix combines pls pca and automl in an eight-module workspace for nir ftir and raman data calix 校准模型 化学计量学 机器学习 automl pls pca"
+      "s": "在几分钟内建立、验证和部署 NIR 定标模型。caliX 在支持 NIR、FTIR 和 Raman 数据的一个八模块工作区中结合了 PLS、PCA 和 AutoML。",
+      "k": "calix automl chemometrics calibration software 在几分钟内建立 验证和部署 nir 定标模型 calix 在支持 nir ftir 和 raman 数据的一个八模块工作区中结合了 pls pca 和 automl calix 校准模型 化学计量学 机器学习 automl pls pca"
     }
   },
   "product-prochem.html": {
@@ -791,8 +791,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "ProChem: Real-Time PAT & Closed-Loop Control",
-      "s": "ProChem links USTECH analyzers to your PLC and SCADA: live dashboards, alarms and automatic setpoint control that turn NIR results into real-time action.",
-      "k": "prochem real-time pat closed-loop control prochem links ustech analyzers to your plc and scada live dashboards alarms and automatic setpoint control that turn nir results into real-time action prochem 过程控制 plc scada 实时监测 pat"
+      "s": "ProChem 将 USTECH 分析仪连接到您的 PLC 和 SCADA：实时仪表板、警报和自动设定点控制，将 NIR 结果转化为实时操作。",
+      "k": "prochem real-time pat closed-loop control prochem 将 ustech 分析仪连接到您的 plc 和 scada 实时仪表板 警报和自动设定点控制 将 nir 结果转化为实时操作 prochem 过程控制 plc scada 实时监测 pat"
     }
   },
   "product-masterline.html": {
@@ -823,8 +823,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "USTECH MasterLine",
-      "s": "USTECH MasterLine - Benchtop FT-NIR analyzer for grains, feed ingredients, and forage quality control.",
-      "k": "ustech masterline ustech masterline - benchtop ft-nir analyzer for grains feed ingredients and forage quality control masterline 台式近红外分析仪 谷物 饲料 实验室"
+      "s": "USTECH MasterLine - 用于谷物、饲料成分和饲草质量控制的台式 FT-NIR 分析仪。",
+      "k": "ustech masterline ustech masterline - 用于谷物 饲料成分和饲草质量控制的台式 ft-nir 分析仪 masterline 台式近红外分析仪 谷物 饲料 实验室"
     }
   },
   "product-proline-17ec.html": {
@@ -919,8 +919,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "ProLine2550 Process FT-NIR Analyzer",
-      "s": "ProLine2550 Process FT-NIR Analyzer - Rugged industrial inline process spectrometer for blenders, reactors, and pipelines.",
-      "k": "proline2550 process ft-nir analyzer proline2550 process ft-nir analyzer - rugged industrial inline process spectrometer for blenders reactors and pipelines proline 2550 在线过程分析仪 管道 反应釜 液体 粉体"
+      "s": "ProLine2550 在线 FT-NIR 分析仪 - 适用于混合器、反应器和管道的坚固工业级在线过程光谱仪。",
+      "k": "proline2550 process ft-nir analyzer proline2550 在线 ft-nir 分析仪 - 适用于混合器 反应器和管道的坚固工业级在线过程光谱仪 proline 2550 在线过程分析仪 管道 反应釜 液体 粉体"
     }
   },
   "product-tornado.html": {
@@ -951,8 +951,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "USTECH Tornado+ Lab Mill",
-      "s": "USTECH Tornado+ High-Performance Laboratory Mill - Water-cooled sample preparation mill for grains, seeds, and feed.",
-      "k": "ustech tornado lab mill ustech tornado high-performance laboratory mill - water-cooled sample preparation mill for grains seeds and feed tornado 旋风磨 样品制备 水冷 研磨"
+      "s": "USTECH Tornado+ 高性能实验室研磨机 - 用于谷物、种子和饲料的水冷样品制备研磨机。",
+      "k": "ustech tornado lab mill ustech tornado 高性能实验室研磨机 - 用于谷物 种子和饲料的水冷样品制备研磨机 tornado 旋风磨 样品制备 水冷 研磨"
     }
   },
   "knowledge.html": {
@@ -983,8 +983,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "NIR Knowledge Hub: Technology & Guides",
-      "s": "Learn NIR spectroscopy from the ground up: technology explainers, calibration science and 50+ blogs and whitepapers written by USTECH engineers.",
-      "k": "nir knowledge hub technology guides learn nir spectroscopy from the ground up technology explainers calibration science and 50 blogs and whitepapers written by ustech engineers 知识中心 技术文章 应用指南"
+      "s": "从零开始学习近红外光谱技术：技术讲解、定标科学以及由 USTECH 工程师编写的 50 多篇博客和白皮书。",
+      "k": "nir knowledge hub technology guides 从零开始学习近红外光谱技术 技术讲解 定标科学以及由 ustech 工程师编写的 50 多篇博客和白皮书 知识中心 技术文章 应用指南"
     }
   },
   "knowledge-technology.html": {
@@ -1015,8 +1015,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "NIR Technology & Calibration Science",
-      "s": "How FT-NIR spectroscopy works, from photons to predictions: measurement path, calibration science and the caliX + ProChem ecosystem, explained by USTECH.",
-      "k": "nir technology calibration science how ft-nir spectroscopy works from photons to predictions measurement path calibration science and the calix prochem ecosystem explained by ustech 核心技术 ft-nir 近红外光谱原理 mems 定标科学"
+      "s": "FT-NIR 光谱技术的工作原理，从光子到预测：测量路径、定标科学以及由 USTECH 解释的 caliX + ProChem 生态系统。",
+      "k": "nir technology calibration science ft-nir 光谱技术的工作原理 从光子到预测 测量路径 定标科学以及由 ustech 解释的 calix prochem 生态系统 核心技术 ft-nir 近红外光谱原理 mems 定标科学"
     }
   },
   "knowledge-blogs.html": {
@@ -1047,8 +1047,8 @@ var SEARCH_I18N = {
     },
     "zh": {
       "t": "NIR Spectroscopy Blog & Whitepapers",
-      "s": "52 articles, whitepapers and guides on NIR calibration, PLS modeling, inline process control and ROI - practical reading for QC and process engineers.",
-      "k": "nir spectroscopy blog whitepapers 52 articles whitepapers and guides on nir calibration pls modeling inline process control and roi - practical reading for qc and process engineers 技术博客 文章 应用说明 案例研究"
+      "s": "52 篇关于 NIR 定标、PLS 建模、在线闭环过程控制和投资回报率的文章、白皮书和指南——适用于质控和工艺工程师的实用读物。",
+      "k": "nir spectroscopy blog whitepapers 52 篇关于 nir 定标 pls 建模 在线闭环过程控制和投资回报率的文章 白皮书和指南 适用于质控和工艺工程师的实用读物 技术博客 文章 应用说明 案例研究"
     }
   }
 };
@@ -1983,6 +1983,13 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "Robust at-line analyzer designed for quality control of grains, meals, and finished animal feeds."
             },
             /* ProLine17ES: emekli (07.09.2026), canlidan kaldirildi -> yerine 17EC ve 17ECS */
+            {
+            title: "USTECH StarchQC",
+            url: "product-starchqc.html",
+            category: "Products",
+            keywords: "StarchQC damaged starch analyzer flour mill amperometric wet milling extraction at-line nisasta",
+            snippet: "Amperometric damaged starch analyzer for flour mills: fast, accurate measurement without wet chemistry."
+            },
             /* TrueLine 17EC: HOLD_LOCAL + UNPUBLISH_FROM_REMOTE -- yayinlanana kadar arama dizininde YOK */
             {
             title: "ProLine17EC Analyzer",
@@ -2456,7 +2463,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 { title: "cali<span class=\"calix-x\">X</span> AutoML Suite", url: "product-calix.html" },
                 { title: "ProLine17EC Analyzer", url: "product-proline-17ec.html" },
                 { title: "Food & Feed Solutions", url: "industry-food-feed.html" },
-                { title: "B2B ROI Calculator", url: "contact.html#roi" },
+                /* "B2B ROI Calculator" -> contact.html#roi KALDIRILDI (07.09.2026):
+                   #roi capasi sitede hic yok ve roi-section app.js madde 4 ile gizli. */
+                { title: "USTECH StarchQC", url: "product-starchqc.html" },
                 { title: "USTECH MasterLine", url: "product-masterline.html" }
             ];
 
