@@ -293,7 +293,7 @@ var TRANSLATED_PAGES = {};
  'product-proline-17ecs.html',
  // 'product-trueline-17ec.html',  // Temporarily Hidden
  'product-starchqc.html',
- 'product-proline-17es.html',
+ // 'product-proline-17es.html',  // Temporarily Hidden
  'product-proline-2550.html',
  'product-tornado.html',
  'knowledge.html',
@@ -356,7 +356,7 @@ var TRANSLATED_PAGES = {};
 // Eski URL -> guncel sayfa (eski .htaccess yonlendirmeleri; GitHub Pages .htaccess okumaz)
 var LEGACY_PAGE_MAP = {
     'product-n-sens-feed.html': 'product-masterline.html',
-    'product-n-sens-online.html': 'product-proline-17es.html',
+    'product-n-sens-online.html': // 'product-proline-17es.html',  // Temporarily Hidden
     'product-n-sens-tornado.html': 'product-tornado.html',
     'product-n-sens-sampleprep.html': 'products-devices.html',   // SamplePrep bekletiliyor
     'product-i-sens-starch.html': 'products-devices.html',        // StarchQC bekletiliyor
