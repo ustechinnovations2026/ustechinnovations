@@ -117,6 +117,7 @@ var UI_I18N = {
     cookie_text: 'We use cookies to optimize your experience, analyze site usage, and support our marketing efforts. Customize your settings below.',
     cookie_ess: 'Essential Cookies', cookie_ess_d: 'Necessary for the website to function properly. Cannot be disabled.',
     cookie_ana: 'Analytical Cookies', cookie_ana_d: 'Help us measure traffic and analyze user behavior to improve site features.',
+    cookie_mkt: 'Marketing Cookies', cookie_mkt_d: 'Used to deliver targeted content and monitor advertising performance.',
     cookie_save: 'Save Settings', cookie_accept: 'Accept All', back_top: 'Back to Top',
     spec_tab: 'Talk to a Specialist', spec_close: 'Close',
     spec_text: 'Our NIR spectroscopy experts are ready to help you find the right solution for your process. Reach out through any channel below.',
