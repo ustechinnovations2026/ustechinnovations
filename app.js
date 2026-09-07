@@ -356,7 +356,7 @@ var TRANSLATED_PAGES = {};
 // Eski URL -> guncel sayfa (eski .htaccess yonlendirmeleri; GitHub Pages .htaccess okumaz)
 var LEGACY_PAGE_MAP = {
     'product-n-sens-feed.html': 'product-masterline.html',
-    'product-n-sens-online.html': // 'product-proline-17es.html',  // Temporarily Hidden
+    'product-n-sens-online.html': 'product-proline-17ec.html',   // 17ES emekli -> 17EC (07.09.2026)
     'product-n-sens-tornado.html': 'product-tornado.html',
     'product-n-sens-sampleprep.html': 'products-devices.html',   // SamplePrep bekletiliyor
     'product-i-sens-starch.html': 'products-devices.html',        // StarchQC bekletiliyor
