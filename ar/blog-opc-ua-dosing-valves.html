@@ -214,18 +214,18 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 10, 2026 — 4 دقائق قراءة</span>
 <h1 class="blog-post-title">توحيد عمليات التكامل OPC UA لصمامات الجرعات ذات الحلقة المغلقة</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">كيفية تعيين علامات العملية، وضمان اتصالات الشبكة القوية، وتكوين حلقات تعليقات PID باستخدام<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem واجهة HMI</a>و PLCs القياسية للمصنع.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">كيفية تعيين علامات العملية، وضمان اتصالات الشبكة القوية، وتكوين حلقات تعليقات PID باستخدام <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem واجهة HMI</a> و PLCs القياسية للمصنع.</p>
 </div>
 <div class="blog-post-content">
 <h2>قوة أتمتة العمليات ذات الحلقة المغلقة</h2>
-<p>مصانع المعالجة الصناعية (مثل معايير الألبان،<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">الأتمتة الكيميائية والصيدلانية</a>تعتمد المفاعلات ومركبات التغذية) على توازنات كيميائية دقيقة. تقليديًا، تعمل أنظمة التحكم بطريقة الحلقة المفتوحة: يقوم المشغلون بإجراء فحوصات معملية غير متصلة بالإنترنت كل ساعة ويقومون يدويًا بضبط سرعات مضخة الجرعات أو صمامات التحكم بناءً على النتائج. تقدم هذه الحلقة اليدوية فترات تأخير وأخطاء المشغل والتباين الكبير في مواصفات المنتج.</p>
+<p>مصانع المعالجة الصناعية (مثل معايير الألبان،<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">الأتمتة الكيميائية والصيدلانية</a> تعتمد المفاعلات ومركبات التغذية) على توازنات كيميائية دقيقة. تقليديًا، تعمل أنظمة التحكم بطريقة الحلقة المفتوحة: يقوم المشغلون بإجراء فحوصات معملية غير متصلة بالإنترنت كل ساعة ويقومون يدويًا بضبط سرعات مضخة الجرعات أو صمامات التحكم بناءً على النتائج. تقدم هذه الحلقة اليدوية فترات تأخير وأخطاء المشغل والتباين الكبير في مواصفات المنتج.</p>
 <p>من خلال دمج مطياف FT-NIR المضمن مباشرة مع وحدات التحكم المنطقية القابلة للبرمجة (PLCs)، يمكن للمحطات إغلاق حلقة التحكم. يتم تغذية التنبؤات في الوقت الفعلي مباشرة إلى سجلات التحكم PLC، مما يتيح إجراء تعديلات تلقائية في ثوانٍ فرعية على صمامات الجرعات، مما يقلل الانحرافات إلى الحد الأدنى ويزيد من استقرار الإنتاجية.</p>
 <blockquote>"من خلال استبدال تعديلات نقطة الضبط اليدوية بملاحظات مطياف مباشرة وموثقة، تعمل أنظمة الحلقة المغلقة على تثبيت مخرجات المنتج ضمن حدود التفاوت الصارمة."</blockquote>
 <h2>OPC UA: العمود الفقري للاتصالات الصناعية</h2>
-<p>لإنشاء اتصال بين برنامج التحليل الطيفي وأجهزة التشغيل الآلي للمصنع، يستخدم USTECH معيار **OPC Unified Architecture (OPC UA)**. OPC UA عبارة عن بنية مستقلة عن النظام الأساسي وموجهة نحو الخدمة توفر اتصالات آمنة وموثوقة. فهو يحل محل بروتوكولات OPC DA القديمة لنظام التشغيل Windows فقط، ويدعم تشفير SSL المدمج ومصادقة المستخدم وتكرار البيانات.</p>
-<p>في التثبيت القياسي، **<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem واجهة HMI</a>** يعمل تشغيل مطياف FT-NIR كخادم OPC UA، مما يعرض قيم التركيز المتوقعة وحالة المستشعر والأعلام التشخيصية كعقد (علامات) في مساحة العنوان الخاصة به. يعمل نظام SCADA أو PLC الخاص بالمصنع كعميل OPC UA، حيث يشترك في هذه العلامات على فترات منتظمة.</p>
+<p>لإنشاء اتصال بين برنامج التحليل الطيفي وأجهزة التشغيل الآلي للمصنع، يستخدم USTECH معيار <strong>OPC Unified Architecture (OPC UA)</strong>. OPC UA عبارة عن بنية مستقلة عن النظام الأساسي وموجهة نحو الخدمة توفر اتصالات آمنة وموثوقة. فهو يحل محل بروتوكولات OPC DA القديمة لنظام التشغيل Windows فقط، ويدعم تشفير SSL المدمج ومصادقة المستخدم وتكرار البيانات.</p>
+<p>في التثبيت القياسي، <strong><a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem واجهة HMI</a></strong> يعمل تشغيل مطياف FT-NIR كخادم OPC UA، مما يعرض قيم التركيز المتوقعة وحالة المستشعر والأعلام التشخيصية كعقد (علامات) في مساحة العنوان الخاصة به. يعمل نظام SCADA أو PLC الخاص بالمصنع كعميل OPC UA، حيث يشترك في هذه العلامات على فترات منتظمة.</p>
 <h2>تعيين معرفات العقدة القياسية OPC UA</h2>
-<p>لتبسيط التكامل، تستخدم منصة USTECH **ProChem** بنية مساحة اسم OPC UA موحدة. يسرد الجدول أدناه علامات البيانات الأساسية التي تم تعيينها أثناء تثبيت الحلقة المغلقة:</p>
+<p>لتبسيط التكامل، تستخدم منصة USTECH <strong>ProChem</strong> بنية مساحة اسم OPC UA موحدة. يسرد الجدول أدناه علامات البيانات الأساسية التي تم تعيينها أثناء تثبيت الحلقة المغلقة:</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -304,7 +304,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
+<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
 </label>
 </form>
 </div>

@@ -214,7 +214,7 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 分钟阅读</span>
 <h1 class="blog-post-title">化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">分析指南，详细介绍了用于识别加州光谱异常、仪器漂移和不合格原材料的多元数学<span class="calix-x" style="color: #38b6ff !important;">X</span>套房。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">分析指南，详细介绍了 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中用于识别光谱异常、仪器漂移和不合格原材料的多元数学。</p>
 </div>
 <div class="blog-post-content">
 <h2>异常值检测在光谱学中的作用</h2>
@@ -223,9 +223,9 @@
 <blockquote>“异常值检测充当过程分析仪的免疫系统。它保证仅当样本与校准空间匹配时才输出预测。”</blockquote>
 <h2>马哈拉诺比斯距离：测量协方差</h2>
 <p>简单欧几里德距离测量样本光谱与校准平均值之间的直线距离。然而，欧几里得距离在化学计量学中失败，因为它忽略了 NIR 光谱中相邻波长之间的强相关性（协方差）。</p>
-<p>**马哈拉诺比斯距离 (MD)** 通过按校准数据集的协方差矩阵缩放距离来解决此问题。实际上，MD 考虑了方差的方向，对高正态校准方差方向的变化分配较小的权重，对校准数据紧密结合的方向的偏差分配较高的权重。</p>
+<p><strong>马哈拉诺比斯距离 (MD)</strong> 通过按校准数据集的协方差矩阵缩放距离来解决此问题。实际上，MD 考虑了方差的方向，对高正态校准方差方向的变化分配较小的权重，对校准数据紧密结合的方向的偏差分配较高的权重。</p>
 <h2>Hotelling 的 T²：置信阈值</h2>
-<p>虽然马哈拉诺比斯距离提供了原始距离值，但我们需要一个统计上合理的阈值来标记异常值。 **Hotelling 的 T²** 对主成分 (PC) 投影空间中的马哈拉诺比斯距离进行归一化，计算多元分数。由于 T² 遵循 F 分布，我们可以建立正式的统计置信限（通常为 95% 或 99%）：</p>
+<p>虽然马哈拉诺比斯距离提供了原始距离值，但我们需要一个统计上合理的阈值来标记异常值。 <strong>Hotelling 的 T²</strong> 对主成分 (PC) 投影空间中的马哈拉诺比斯距离进行归一化，计算多元分数。由于 T² 遵循 F 分布，我们可以建立正式的统计置信限（通常为 95% 或 99%）：</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -257,12 +257,12 @@
 </tr>
 </tbody>
 </table>
-<h2>在 cali 中设置离群值限制<span class="calix-x" style="color: #38b6ff !important;">X</span>套房</h2>
-<p>要在校准中实施异常值限制，请按照 **cali 中的以下步骤操作<span class="calix-x" style="color: #38b6ff !important;">X</span>套房**：</p>
+<h2>在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中设置离群值限制</h2>
+<p>要在校准中实施异常值限制，请按照 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件</strong> 中的以下步骤操作：</p>
 <ol>
 <li><strong>编译 PCA/PLS 分数：</strong>打开校准文件并计算主成分加载向量。</li>
 <li><strong>设置置信区间：</strong>导航到离群值选项卡并选择“Hotelling T²”。为关键控制点选择 99% 置信阈值 ($\alpha = 0.01$)，或为常规监控选择 95% ($\alpha = 0.05$)。</li>
-<li><strong>启用 ProChem 警报：</strong>将模型同步到过程光谱仪。在 **ProChem** 中，将异常值标志输出映射到 PLC 寄存器，以在触发异常值时保存最后的有效预测。</li>
+<li><strong>启用 ProChem 警报：</strong>将模型同步到过程光谱仪。在 <strong>ProChem</strong> 中，将异常值标志输出映射到 PLC 寄存器，以在触发异常值时保存最后的有效预测。</li>
 </ol>
 <h2>结论</h2>
 <p>使用马哈拉诺比斯距离和 Hotelling 的 T² 部署强大的异常值检测可确保过程分析仪的完整性。通过识别和隔离异常光谱，制造商可以防止校准失败并确保自动化过程循环。</p>
@@ -299,8 +299,8 @@
 <img alt="cali<span class="calix-x">X</span> 套件中的 PLS 回归简介" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指导</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">卡利 PLS 回归简介<span class="calix-x" style="color: #38b6ff !important;">X</span>套房</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">分步教程解释了如何使用 cali 从参考湿化学值编译校准模型<span class="calix-x" style="color: #38b6ff !important;">X</span>平台。</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件 PLS 回归简介</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">分步教程解释了如何使用 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台从参考湿化学值编译校准模型。</p>
 <a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读教程</a>
 </div>
 </div>

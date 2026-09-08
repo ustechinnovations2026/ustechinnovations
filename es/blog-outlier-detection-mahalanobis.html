@@ -214,7 +214,7 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 min de lectura</span>
 <h1 class="blog-post-title">Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a T² de Hotelling</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una guía analítica que detalla las matemáticas multivariadas utilizadas para identificar anomalías espectrales, derivas de instrumentos y materias primas fuera de especificación en Cali.<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una guía analítica que detalla las matemáticas multivariadas utilizadas para identificar anomalías espectrales, derivas de instrumentos y materias primas fuera de especificación en cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite.</p>
 </div>
 <div class="blog-post-content">
 <h2>El papel de la detección de valores atípicos en espectroscopia</h2>
@@ -223,9 +223,9 @@
 <blockquote>"La detección de valores atípicos actúa como el sistema inmunológico de un analizador de procesos. Garantiza que las predicciones sólo se generen cuando la muestra coincida con el espacio de calibración".</blockquote>
 <h2>Distancia de Mahalanobis: medición de la covarianza</h2>
 <p>La distancia euclidiana simple mide la distancia en línea recta entre un espectro de muestra y la media de calibración. Sin embargo, la distancia euclidiana falla en quimiometría porque ignora la fuerte correlación (covarianza) entre longitudes de onda adyacentes en los espectros NIR.</p>
-<p>**Distancia de Mahalanobis (MD)** resuelve esto escalando la distancia mediante la matriz de covarianza del conjunto de datos de calibración. Efectivamente, MD tiene en cuenta la dirección de la varianza, asignando menos peso a las variaciones en direcciones de alta varianza de calibración normal y alto peso a las desviaciones en direcciones donde los datos de calibración están estrechamente vinculados.</p>
+<p><strong>Distancia de Mahalanobis (MD)</strong> resuelve esto escalando la distancia mediante la matriz de covarianza del conjunto de datos de calibración. Efectivamente, MD tiene en cuenta la dirección de la varianza, asignando menos peso a las variaciones en direcciones de alta varianza de calibración normal y alto peso a las desviaciones en direcciones donde los datos de calibración están estrechamente vinculados.</p>
 <h2>T² de Hotelling: umbrales de confianza</h2>
-<p>Si bien la distancia de Mahalanobis proporciona un valor de distancia bruto, necesitamos un umbral estadísticamente sólido para señalar valores atípicos. **T² de Hotelling** normaliza la distancia de Mahalanobis en un espacio de proyección del componente principal (PC), calculando una puntuación multivariada. Debido a que T² sigue una distribución F, podemos establecer límites de confianza estadísticos formales (normalmente 95% o 99%):</p>
+<p>Si bien la distancia de Mahalanobis proporciona un valor de distancia bruto, necesitamos un umbral estadísticamente sólido para señalar valores atípicos. <strong>T² de Hotelling</strong> normaliza la distancia de Mahalanobis en un espacio de proyección del componente principal (PC), calculando una puntuación multivariada. Debido a que T² sigue una distribución F, podemos establecer límites de confianza estadísticos formales (normalmente 95% o 99%):</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -258,11 +258,11 @@
 </tbody>
 </table>
 <h2>Establecer límites de valores atípicos en cali<span class="calix-x">X</span> Suite</h2>
-<p>Para implementar límites de valores atípicos en sus calibraciones, siga estos pasos en **cali<span class="calix-x">X</span>Suite**:</p>
+<p>Para implementar límites de valores atípicos en sus calibraciones, siga estos pasos en <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
 <ol>
 <li><strong>Compilar puntuaciones PCA/PLS:</strong>Abra su archivo de calibración y calcule los vectores de carga de los componentes principales.</li>
 <li><strong>Establecer intervalo de confianza:</strong>Navegue a la pestaña Valores atípicos y seleccione `Hotelling T²`. Elija un umbral de confianza del 99 % ($\alpha = 0,01 $) para los puntos de control críticos, o del 95 % ($\alpha = 0,05 $) para el monitoreo de rutina.</li>
-<li><strong>Habilitar alarmas ProChem:</strong>Sincronice el modelo con el espectrómetro de proceso. En **ProChem**, asigne la salida del indicador de valor atípico a su registro PLC para mantener la última predicción válida cuando se activa un valor atípico.</li>
+<li><strong>Habilitar alarmas ProChem:</strong>Sincronice el modelo con el espectrómetro de proceso. En <strong>ProChem</strong>, asigne la salida del indicador de valor atípico a su registro PLC para mantener la última predicción válida cuando se activa un valor atípico.</li>
 </ol>
 <h2>Conclusión</h2>
 <p>La implementación de una detección sólida de valores atípicos utilizando Mahalanobis Distance y T² de Hotelling garantiza la integridad del analizador de procesos. Al identificar y aislar espectros anómalos, los fabricantes pueden prevenir fallas de calibración y asegurar bucles de procesos automatizados.</p>
@@ -286,7 +286,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
+<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
 </label>
 </form>
 </div>

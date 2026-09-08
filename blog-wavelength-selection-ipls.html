@@ -217,16 +217,16 @@ Espa&#241;ol
 </div>
 <div class="blog-post-content">
 <h2>Why Limit the Wavelength Range?</h2>
-<p>Modern process spectrometers (like the **ProLine2550**) collect data across the full near-infrared range (1,350 to 2,550 nm), yielding hundreds of highly correlated wavelength variables. While fitting a Partial Least Squares (PLS) regression model on the entire spectrum is standard, it is rarely the most robust approach. The full spectrum includes regions that contain zero chemical information about your target analyte, such as background noise, sensor roll-off, or strong water absorption bands that saturate the detector.</p>
+<p>Modern process spectrometers (like the <strong>ProLine2550</strong>) collect data across the full near-infrared range (1,350 to 2,550 nm), yielding hundreds of highly correlated wavelength variables. While fitting a Partial Least Squares (PLS) regression model on the entire spectrum is standard, it is rarely the most robust approach. The full spectrum includes regions that contain zero chemical information about your target analyte, such as background noise, sensor roll-off, or strong water absorption bands that saturate the detector.</p>
 <p>Constructing calibrations with unnecessary wavelengths increases the risk of overfitting, makes models susceptible to ambient temperature shifts, and requires a higher count of Latent Variables (LVs), which degrades calibration transferability between instruments.</p>
 <blockquote>
 "Selecting the optimum wavelengths is a form of multivariate feature engineering. By removing noise-dominated bands, we create a simpler, more robust calibration that generalizes across different spectrometers."
 </blockquote>
 <h2>Interval PLS (iPLS): Systematic Grid Selection</h2>
-<p>**Interval PLS (iPLS)** is a systematic algorithm that divides the full preprocessed spectrum into a set of smaller, non-overlapping wavelength intervals (typically 10 to 40 intervals). The algorithm builds a local PLS model for each individual interval and calculates the Root Mean Square Error of Cross-Validation (RMSECV).</p>
+<p><strong>Interval PLS (iPLS)</strong> is a systematic algorithm that divides the full preprocessed spectrum into a set of smaller, non-overlapping wavelength intervals (typically 10 to 40 intervals). The algorithm builds a local PLS model for each individual interval and calculates the Root Mean Square Error of Cross-Validation (RMSECV).</p>
 <p>By comparing the RMSECV of all local models against the global full-spectrum model, iPLS identifies the specific interval&mdash;or combination of intervals&mdash;that yields the lowest prediction error. This is highly effective for isolating distinct molecular overtones (e.g., N-H bands in protein or C-H bands in fat).</p>
 <h2>Genetic Algorithms: Evolutionary Selection</h2>
-<p>When the target chemical has absorption bands spread out across multiple regions, interval-based grid searches are insufficient. **Genetic Algorithms (GAs)** use an evolutionary search strategy to find optimal bands:</p>
+<p>When the target chemical has absorption bands spread out across multiple regions, interval-based grid searches are insufficient. <strong>Genetic Algorithms (GAs)</strong> use an evolutionary search strategy to find optimal bands:</p>
 <ul>
 <li><strong>Chromosomes:</strong> Wavelengths are represented as binary strings (1 for select, 0 for exclude).</li>
 <li><strong>Initial Population:</strong> A starting pool of random wavelength combinations is created.</li>
@@ -267,7 +267,7 @@ Espa&#241;ol
 </tbody>
 </table>
 <h2>Wavelength Optimization in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</h2>
-<p>To optimize your models in **cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite**:</p>
+<p>To optimize your models in <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</strong>:</p>
 <ol>
 <li>Open your calibration model and navigate to the `Feature Selection` menu.</li>
 <li>Select `Interval PLS` to run a grid search, or `Genetic Algorithm` for evolutionary optimization.</li>

@@ -214,15 +214,15 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 dk okuma</span>
 <h1 class="blog-post-title">NIR Spektral Modeller için Dalga Boyu Seçimi ve Özellik Mühendisliği</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Cali'de Interval PLS (iPLS) ve Genetik Algoritmalar nasıl uygulanır?<span class="calix-x" style="color: #38b6ff !important;">X</span>Gürültüyü ortadan kaldırmak, kimyasal emme bantlarını izole etmek ve model taşınabilirliğini geliştirmek için platform.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Gürültüyü ortadan kaldırmak, kimyasal emme bantlarını izole etmek ve model taşınabilirliğini geliştirmek için cali<span class="calix-x" style="color: #38b6ff !important;">X</span> platformunda Interval PLS (iPLS) ve Genetik Algoritmalar nasıl uygulanır?</p>
 </div>
 <div class="blog-post-content">
 <h2>Dalga Boyu Aralığını Neden Sınırlandırmalısınız?</h2>
-<p>Modern proses spektrometreleri (**ProLine2550** gibi) tam yakın kızılötesi aralığında (1.350 ila 2.550 nm) veri toplayarak yüzlerce yüksek korelasyonlu dalga boyu değişkeni sağlar. Kısmi En Küçük Kareler (PLS) regresyon modelinin tüm spektruma yerleştirilmesi standart olsa da nadiren en sağlam yaklaşımdır. Tam spektrum, arka plan gürültüsü, sensörün kayması veya dedektörü doyuran güçlü su emme bantları gibi hedef analitiniz hakkında sıfır kimyasal bilgi içeren bölgeleri içerir.</p>
+<p>Modern proses spektrometreleri (<strong>ProLine2550</strong> gibi) tam yakın kızılötesi aralığında (1.350 ila 2.550 nm) veri toplayarak yüzlerce yüksek korelasyonlu dalga boyu değişkeni sağlar. Kısmi En Küçük Kareler (PLS) regresyon modelinin tüm spektruma yerleştirilmesi standart olsa da nadiren en sağlam yaklaşımdır. Tam spektrum, arka plan gürültüsü, sensörün kayması veya dedektörü doyuran güçlü su emme bantları gibi hedef analitiniz hakkında sıfır kimyasal bilgi içeren bölgeleri içerir.</p>
 <p>Kalibrasyonların gereksiz dalga boylarıyla oluşturulması aşırı uyum riskini artırır, modelleri ortam sıcaklığı değişimlerine duyarlı hale getirir ve daha yüksek sayıda Gizli Değişken (LV) gerektirir, bu da cihazlar arasında kalibrasyon aktarılabilirliğini azaltır.</p>
 <blockquote>"Optimum dalga boylarını seçmek, çok değişkenli özellik mühendisliğinin bir biçimidir. Gürültünün hakim olduğu bantları kaldırarak, farklı spektrometreler arasında genelleşen daha basit, daha sağlam bir kalibrasyon yaratıyoruz."</blockquote>
 <h2>Aralık PLS (iPLS): Sistematik Izgara Seçimi</h2>
-<p>**Aralık PLS (iPLS)**, önceden işlenmiş spektrumun tamamını daha küçük, örtüşmeyen dalga boyu aralıklarına (tipik olarak 10 ila 40 aralık) bölen sistematik bir algoritmadır. Algoritma, her bir aralık için yerel bir PLS modeli oluşturur ve Çapraz Doğrulamanın Ortalama Karekök Hatasını (RMSECV) hesaplar.</p>
+<p><strong>Aralık PLS (iPLS)</strong>, önceden işlenmiş spektrumun tamamını daha küçük, örtüşmeyen dalga boyu aralıklarına (tipik olarak 10 ila 40 aralık) bölen sistematik bir algoritmadır. Algoritma, her bir aralık için yerel bir PLS modeli oluşturur ve Çapraz Doğrulamanın Ortalama Karekök Hatasını (RMSECV) hesaplar.</p>
 <p>iPLS, tüm yerel modellerin RMSECV değerini küresel tam spektrum modeliyle karşılaştırarak, en düşük tahmin hatasını veren belirli aralığı veya aralık kombinasyonunu tanımlar. Bu, farklı moleküler tonların (örneğin, proteindeki N-H bantları veya yağdaki C-H bantları) izole edilmesinde oldukça etkilidir.</p>
 <h2>Genetik Algoritmalar: Evrimsel Seçilim</h2>
 <p>"Analitik gecikmenin maliyeti soyut değildir. Yeniden işlenmesi veya atılması gereken uygun olmayan ürünün hacmi ve tespit edilemeyen her sapma sırasında tüketilen enerji, iş gücü ve kapasitedir."</p>
@@ -265,8 +265,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Cali'de Dalga Boyu Optimizasyonu<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit</h2>
-<p>Modellerinizi **cali'de optimize etmek için<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit**:</p>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit'te Dalga Boyu Optimizasyonu</h2>
+<p>Modellerinizi <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit</strong>'te optimize etmek için:</p>
 <ol>
 <li>Kalibrasyon modelinizi açın ve 'Özellik Seçimi' menüsüne gidin.</li>
 <li>Izgara araması yapmak için 'Aralık PLS' seçeneğini veya evrimsel optimizasyon için 'Genetik Algoritma' seçeneğini seçin.</li>
@@ -309,7 +309,7 @@
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Cali'de spektral ön işleme matematiği, yumuşatma parametresi seçimi ve türev konfigürasyonları hakkında eğitim kılavuzu<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> içinde spektral ön işleme matematiği, yumuşatma parametresi seçimi ve türev konfigürasyonları hakkında eğitim kılavuzu.</p>
 <a class="btn-text" href="blog-savitzky-golay-filtering.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Kılavuzu Okuyun</a>
 </div>
 </div>
@@ -318,8 +318,8 @@
 <img alt="cali<span class="calix-x">X</span> Suite'te PLS Regresyona Giriş" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Cali'de PLS Regresyona Giriş<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Cali kullanarak referans ıslak kimya değerlerinden kalibrasyon modellerinin nasıl derleneceğini açıklayan adım adım eğitim<span class="calix-x" style="color: #38b6ff !important;">X</span>platformu.</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit'te PLS Regresyona Giriş</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> platformunu kullanarak referans ıslak kimya değerlerinden kalibrasyon modellerinin nasıl derleneceğini açıklayan adım adım eğitim.</p>
 <a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Eğiticiyi Okuyun</a>
 </div>
 </div>

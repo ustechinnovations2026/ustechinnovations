@@ -135,6 +135,20 @@ header.scrolled .logo img {
     align-items: center;
 }
 
+/* ARAMA BUTONU HIZALAMASI  (08.09.2026)
+   app.js arama ikonunu .nav-container'in UCUNCU flex cocugu olarak ekliyor
+   (navLinksUl.nextSibling). justify-content:space-between bos alani uc cocuga
+   esit dagittigi icin menu logodan kopuyor ve arama ikonuyla arasinda ~190px
+   bosluk kaliyor -- menu ortaya/saga kaymis gorunuyor.
+   app.js'teki tasarim notu: "right side, next to lang selector".
+   Cozum: bos alanin TAMAMI menunun soluna toplanir; menu + arama ikonu
+   birlikte saga yaslanir. Mobilde (<=768px) menu absolute, ikon gizli:
+   bu yuzden kural yalnizca masaustunde gecerli. */
+@media (min-width: 769px) {
+    .nav-container > .nav-links      { margin-left: auto; }
+    .nav-container > .search-toggle-btn { margin-left: 2rem; }
+}
+
 .logo {
     display: flex;
     align-items: center;

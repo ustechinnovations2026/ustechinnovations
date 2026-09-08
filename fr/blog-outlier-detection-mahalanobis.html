@@ -223,9 +223,9 @@
 <blockquote>"La détection des valeurs aberrantes agit comme le système immunitaire d'un analyseur de processus. Elle garantit que les prédictions ne sont émises que lorsque l'échantillon correspond à l'espace d'étalonnage."</blockquote>
 <h2>Distance de Mahalanobis : mesure de la covariance</h2>
 <p>La distance euclidienne simple mesure la distance en ligne droite entre un spectre d'échantillon et la moyenne d'étalonnage. Cependant, la distance euclidienne échoue en chimiométrie car elle ignore la forte corrélation (covariance) entre les longueurs d'onde adjacentes dans les spectres NIR.</p>
-<p>**Mahalanobis Distance (MD)** résout ce problème en mettant à l'échelle la distance par la matrice de covariance de l'ensemble de données d'étalonnage. En effet, MD tient compte de la direction de la variance, en attribuant moins de poids aux variations dans les directions de variance d'étalonnage normale élevée, et un poids plus élevé aux écarts dans les directions où les données d'étalonnage sont étroitement liées.</p>
+<p><strong>Mahalanobis Distance (MD)</strong> résout ce problème en mettant à l'échelle la distance par la matrice de covariance de l'ensemble de données d'étalonnage. En effet, MD tient compte de la direction de la variance, en attribuant moins de poids aux variations dans les directions de variance d'étalonnage normale élevée, et un poids plus élevé aux écarts dans les directions où les données d'étalonnage sont étroitement liées.</p>
 <h2>T² de Hotelling : seuils de confiance</h2>
-<p>Bien que la distance de Mahalanobis fournisse une valeur de distance brute, nous avons besoin d'un seuil statistiquement solide pour signaler les valeurs aberrantes. **Le T²** de Hotelling normalise la distance de Mahalanobis dans un espace de projection à composante principale (PC), en calculant un score multivarié. Étant donné que T² suit une distribution F, nous pouvons établir des limites de confiance statistiques formelles (généralement 95 % ou 99 %) :</p>
+<p>Bien que la distance de Mahalanobis fournisse une valeur de distance brute, nous avons besoin d'un seuil statistiquement solide pour signaler les valeurs aberrantes. <strong>Le T²</strong> de Hotelling normalise la distance de Mahalanobis dans un espace de projection à composante principale (PC), en calculant un score multivarié. Étant donné que T² suit une distribution F, nous pouvons établir des limites de confiance statistiques formelles (généralement 95 % ou 99 %) :</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -257,12 +257,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Définition des limites des valeurs aberrantes dans Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
-<p>Pour implémenter des limites de valeurs aberrantes dans vos étalonnages, suivez ces étapes dans **cali<span class="calix-x">X</span>Suite**:</p>
+<h2>Définition des limites des valeurs aberrantes dans cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
+<p>Pour implémenter des limites de valeurs aberrantes dans vos étalonnages, suivez ces étapes dans <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
 <ol>
 <li><strong>Compiler les scores PCA/PLS :</strong>Ouvrez votre fichier d'étalonnage et calculez les vecteurs de chargement des composants principaux.</li>
 <li><strong>Définir l'intervalle de confiance :</strong>Accédez à l'onglet Valeurs aberrantes et sélectionnez « Hotelling T² ». Choisissez un seuil de confiance de 99 % ($\alpha = 0,01$) pour les points de contrôle critiques, ou de 95 % ($\alpha = 0,05$) pour la surveillance de routine.</li>
-<li><strong>Activer les alarmes ProChem :</strong>Synchronisez le modèle avec le spectromètre de processus. Dans **ProChem**, mappez la sortie de l'indicateur de valeur aberrante à votre registre PLC pour contenir la dernière prédiction valide lorsqu'une valeur aberrante est déclenchée.</li>
+<li><strong>Activer les alarmes ProChem :</strong>Synchronisez le modèle avec le spectromètre de processus. Dans <strong>ProChem</strong>, mappez la sortie de l'indicateur de valeur aberrante à votre registre PLC pour contenir la dernière prédiction valide lorsqu'une valeur aberrante est déclenchée.</li>
 </ol>
 <h2>Conclusion</h2>
 <p>Le déploiement d'une détection robuste des valeurs aberrantes à l'aide de Mahalanobis Distance et de Hotelling's T² garantit l'intégrité de l'analyseur de processus. En identifiant et en isolant les spectres anormaux, les fabricants peuvent éviter les échecs d’étalonnage et sécuriser les boucles de processus automatisés.</p>
@@ -286,7 +286,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
+<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
 </label>
 </form>
 </div>

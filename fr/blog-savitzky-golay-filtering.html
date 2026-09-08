@@ -214,12 +214,12 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 04, 2026 — 4 min de lecture</span>
 <h1 class="blog-post-title">Comprendre le filtrage Savitzky-Golay dans le prétraitement</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Une analyse approfondie expliquant les algorithmes de lissage, les ordres polynomiaux et les mathématiques dérivées pour l'alignement des ensembles de données spectrales à l'intérieur de cali.<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Une analyse approfondie expliquant les algorithmes de lissage, les ordres polynomiaux et les mathématiques dérivées pour l'alignement des ensembles de données spectrales à l'intérieur de cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 </div>
 <div class="blog-post-content">
 <h2>Le rôle du prétraitement en chimiométrie</h2>
-<p>Spectres proche infrarouge (NIR), en particulier<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">spectres chimiques et pharmaceutiques</a>, sont très complexes, souvent caractérisés par des bandes d'absorption qui se chevauchent, des décalages de ligne de base et un bruit haute fréquence. Avant d'ajuster des modèles d'étalonnage quantitatifs (comme la régression PLS), les chimiométriciens doivent prétraiter les données spectrales brutes. L’objectif est d’éliminer les artefacts physiques, tels que la diffusion due à différentes tailles de particules ou les changements de ligne de base dus aux changements de longueur du trajet lumineux, tout en préservant les signaux chimiques d’intérêt.</p>
-<p>Parmi les outils de l'arsenal de prétraitement, l'algorithme **Savitzky-Golay (SG)** est la norme industrielle en matière de lissage et de différenciation. Développé en 1964 par Abraham Savitzky et Marcel J. E. Golay, il reste le fondement des pipelines de données chimiométriques modernes.</p>
+<p>Spectres proche infrarouge (NIR), en particulier <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">spectres chimiques et pharmaceutiques</a>, sont très complexes, souvent caractérisés par des bandes d'absorption qui se chevauchent, des décalages de ligne de base et un bruit haute fréquence. Avant d'ajuster des modèles d'étalonnage quantitatifs (comme la régression PLS), les chimiométriciens doivent prétraiter les données spectrales brutes. L’objectif est d’éliminer les artefacts physiques, tels que la diffusion due à différentes tailles de particules ou les changements de ligne de base dus aux changements de longueur du trajet lumineux, tout en préservant les signaux chimiques d’intérêt.</p>
+<p>Parmi les outils de l'arsenal de prétraitement, l'algorithme <strong>Savitzky-Golay (SG)</strong> est la norme industrielle en matière de lissage et de différenciation. Développé en 1964 par Abraham Savitzky et Marcel J. E. Golay, il reste le fondement des pipelines de données chimiométriques modernes.</p>
 <blockquote>"Contrairement aux filtres à moyenne mobile standard qui brouillent les caractéristiques spectrales, le filtrage Savitzky-Golay préserve les hauteurs, les largeurs et les formes locales des pics en ajustant les polynômes locaux de bas degré aux données."</blockquote>
 <h2>Comment fonctionne l'algorithme Savitzky-Golay</h2>
 <p>Le concept de base est de faire glisser une fenêtre d'un nombre fixe de points de données ($w$, qui doit être un nombre entier impair) à travers le spectre. À chaque étape, un polynôme de degré $k$ (généralement $k = 2$ ou $3$, représentant des modèles quadratiques ou cubiques) est ajusté aux points de données dans la fenêtre à l'aide des moindres carrés linéaires. La valeur du polynôme ajusté au point central de la fenêtre devient la nouvelle valeur lissée pour cette longueur d'onde.</p>
@@ -263,7 +263,7 @@
 </tbody>
 </table>
 <h2>Implémentation de SG dans le cali<span class="calix-x">X</span>Suite</h2>
-<p>Dans le<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Californie<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite logicielle</a>pipeline de prétraitement, l'algorithme SG est appliqué automatiquement lors de la validation du modèle AutoML. Les utilisateurs peuvent configurer la taille de la fenêtre et les ordres dérivés dans l'éditeur de prétraitement, en regardant la mise à jour de l'erreur de validation croisée (RMSECV) en temps réel à mesure que différents paramètres sont testés. Cette boucle de rétroaction interactive garantit que vous choisissez les paramètres de prétraitement mathématique qui maximisent la précision du modèle et la transférabilité d'une unité à l'autre.</p>
+<p>Dans le <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite logicielle</a> pipeline de prétraitement, l'algorithme SG est appliqué automatiquement lors de la validation du modèle AutoML. Les utilisateurs peuvent configurer la taille de la fenêtre et les ordres dérivés dans l'éditeur de prétraitement, en regardant la mise à jour de l'erreur de validation croisée (RMSECV) en temps réel à mesure que différents paramètres sont testés. Cette boucle de rétroaction interactive garantit que vous choisissez les paramètres de prétraitement mathématique qui maximisent la précision du modèle et la transférabilité d'une unité à l'autre.</p>
 <div class="blog-post-references">
 <h3>Références</h3>
 <ul>
@@ -284,7 +284,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
+<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
 </label>
 </form>
 </div>

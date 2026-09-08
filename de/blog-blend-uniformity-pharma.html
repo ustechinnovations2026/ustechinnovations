@@ -218,7 +218,7 @@
 </div>
 <div class="blog-post-content">
 <h2>Die Herausforderung der Pulvermischung</h2>
-<p>Bei der Herstellung fester Dosierungen (Tabletten und Kapseln) ist das Mischen pharmazeutischer Wirkstoffe (ein kritischer Schritt in<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Mischung</a>) (APIs) mit Hilfsstoffen – wie Bindemitteln, Füllstoffen und Schmiermitteln – ist ein entscheidender Prozessblock. Um eine gleichmäßige Dosierungsstärke bei jeder einzelnen Tablette einer Charge zu gewährleisten, ist eine vollständige Homogenität von entscheidender Bedeutung. Übermäßiges Mischen kann zur Partikelentmischung oder zu Veränderungen der Auflösungsraten führen, wohingegen zu geringes Mischen zu Chargen führt, die nicht den Spezifikationen entsprechen.</p>
+<p>Bei der Herstellung fester Dosierungen (Tabletten und Kapseln) ist das Mischen pharmazeutischer Wirkstoffe (ein kritischer Schritt in <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Mischung</a>) (APIs) mit Hilfsstoffen – wie Bindemitteln, Füllstoffen und Schmiermitteln – ist ein entscheidender Prozessblock. Um eine gleichmäßige Dosierungsstärke bei jeder einzelnen Tablette einer Charge zu gewährleisten, ist eine vollständige Homogenität von entscheidender Bedeutung. Übermäßiges Mischen kann zur Partikelentmischung oder zu Veränderungen der Auflösungsraten führen, wohingegen zu geringes Mischen zu Chargen führt, die nicht den Spezifikationen entsprechen.</p>
 <p>Traditionell überprüfen Anlagen die Mischung mithilfe von „Probendieb“-Geräten. Dazu gehört das Anhalten des rotierenden V-Mischers oder Doppelkegelmischers, das Öffnen des Gefäßes und das Einführen einer Metallsonde, um physikalische Proben für HPLC-Tests im Labor zu entnehmen. Dieses Verfahren hat große Nachteile:</p>
 <ul>
 <li><strong>Trennungsrisiko:</strong>Das Einsetzen des Probendiebs kann das Pulverbett stören und zu Fehlern bei der Probenentnahme führen.</li>
@@ -227,10 +227,10 @@
 </ul>
 <blockquote>„Die PAT-Initiative (Process Analytical Technology) des FDA fördert zerstörungsfreie Echtzeitmessungen direkt innerhalb der Prozessschleife, um Qualität an der Quelle zu gewährleisten.“</blockquote>
 <h2>Drahtlose FT-NIR-Implementierung</h2>
-<p>Um Verzögerungen bei der Probenahme zu vermeiden, installierte eine Anlage einen **ProLine2550 FT-NIR-Analysator**, der mit einer drahtlosen, batteriebetriebenen diffusen Reflexionssonde konfiguriert ist. Die Sonde wurde direkt im Deckel eines rotierenden Behältermixers montiert und beobachtete das Pulver durch ein hygienisches Saphirfenster.</p>
-<p>Das Spektrometer erfasste jedes Mal einen Scan, wenn der Mixer in die untere Position gedreht wurde, um sicherzustellen, dass das Pulver direkt auf das Fenster fiel. Ein drahtloser Sender sendete die Spektraldaten in Echtzeit an einen Empfänger, der mit dem ** verbunden ist.<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem Prozesssteuerungs-HMI</a>** Plattform im Kontrollraum.</p>
+<p>Um Verzögerungen bei der Probenahme zu vermeiden, installierte eine Anlage einen <strong>ProLine2550 FT-NIR-Analysator</strong>, der mit einer drahtlosen, batteriebetriebenen diffusen Reflexionssonde konfiguriert ist. Die Sonde wurde direkt im Deckel eines rotierenden Behältermixers montiert und beobachtete das Pulver durch ein hygienisches Saphirfenster.</p>
+<p>Das Spektrometer erfasste jedes Mal einen Scan, wenn der Mixer in die untere Position gedreht wurde, um sicherzustellen, dass das Pulver direkt auf das Fenster fiel. Ein drahtloser Sender sendete die Spektraldaten in Echtzeit an einen Empfänger, der mit dem  <strong>verbunden ist.<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem Prozesssteuerungs-HMI</a></strong> Plattform im Kontrollraum.</p>
 <h2>Blend-Endpunktbestimmung in Echtzeit</h2>
-<p>Anstatt die absoluten chemischen Konzentrationen abzubilden, wird der Mischungsendpunkt durch die Überwachung der Variation zwischen aufeinanderfolgenden Scans bestimmt. Mit fortschreitender Mischung verringern sich die Unterschiede zwischen den Spektren. Das **kali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite** verarbeitet die Spektren mithilfe von Standardnormalvariablen (SNV) und Filtern der ersten Ableitung, um Streuungsunterschiede zu entfernen, und berechnet dann die relative Standardabweichung (RSD) der Absorptionsbande des Wirkstoffs:</p>
+<p>Anstatt die absoluten chemischen Konzentrationen abzubilden, wird der Mischungsendpunkt durch die Überwachung der Variation zwischen aufeinanderfolgenden Scans bestimmt. Mit fortschreitender Mischung verringern sich die Unterschiede zwischen den Spektren. Das <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</strong> verarbeitet die Spektren mithilfe von Standardnormalvariablen (SNV) und Filtern der ersten Ableitung, um Streuungsunterschiede zu entfernen, und berechnet dann die relative Standardabweichung (RSD) der Absorptionsbande des Wirkstoffs:</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -266,7 +266,7 @@
 <ul>
 <li><strong>Reduzierung der Zykluszeit:</strong>Die durchschnittliche Mischzeit wurde um 30 % verkürzt, da die Bediener den Mixer sofort nach Erreichen des RSD-Ziels abschalteten, anstatt für eine festgelegte, konservative Dauer zu mischen.</li>
 <li><strong>Eliminierung von Nacharbeiten:</strong>Chargen, die aufgrund von Übermischung oder Entmischung nicht den Spezifikationen entsprachen, wurden auf Null reduziert.</li>
-<li><strong>Automatisierte Chargenprotokolle:</strong>Der **<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem Prozesssteuerungs-HMI</a>** fasst den RSD-Trend und die endgültigen Spektren direkt in einem elektronischen Chargenprotokoll zusammen, das zur behördlichen Überprüfung unter 21 CFR Part 11 bereitsteht.</li>
+<li><strong>Automatisierte Chargenprotokolle:</strong>Der <strong><a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem Prozesssteuerungs-HMI</a></strong> fasst den RSD-Trend und die endgültigen Spektren direkt in einem elektronischen Chargenprotokoll zusammen, das zur behördlichen Überprüfung unter 21 CFR Part 11 bereitsteht.</li>
 </ul>
 <h2>Abschluss</h2>
 <p>Der Einsatz drahtloser FT-NIR-Spektroskopie in rotierenden Mischern verlagert die pharmazeutische Produktion von Offline-Tests auf aktive Prozesskontrolle. Durch die Verfolgung des RSD-Abfalls direkt im Mischbehälter können Hersteller die Zykluszeiten sicher verkürzen, eine einheitliche Dosierung gewährleisten und behördliche Anforderungen erfüllen, ohne die Produktion anzuhalten.</p>
@@ -290,7 +290,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
+<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
 </label>
 </form>
 </div>

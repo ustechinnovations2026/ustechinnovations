@@ -218,14 +218,14 @@
 </div>
 <div class="blog-post-content">
 <h2>¿Por qué limitar el rango de longitud de onda?</h2>
-<p>Los espectrómetros de proceso modernos (como el **ProLine2550**) recopilan datos en todo el rango del infrarrojo cercano (1350 a 2550 nm), produciendo cientos de variables de longitud de onda altamente correlacionadas. Si bien es estándar ajustar un modelo de regresión de mínimos cuadrados parciales (PLS) en todo el espectro, rara vez es el enfoque más sólido. El espectro completo incluye regiones que no contienen información química sobre el analito objetivo, como ruido de fondo, atenuación del sensor o fuertes bandas de absorción de agua que saturan el detector.</p>
+<p>Los espectrómetros de proceso modernos (como el <strong>ProLine2550</strong>) recopilan datos en todo el rango del infrarrojo cercano (1350 a 2550 nm), produciendo cientos de variables de longitud de onda altamente correlacionadas. Si bien es estándar ajustar un modelo de regresión de mínimos cuadrados parciales (PLS) en todo el espectro, rara vez es el enfoque más sólido. El espectro completo incluye regiones que no contienen información química sobre el analito objetivo, como ruido de fondo, atenuación del sensor o fuertes bandas de absorción de agua que saturan el detector.</p>
 <p>La construcción de calibraciones con longitudes de onda innecesarias aumenta el riesgo de sobreajuste, hace que los modelos sean susceptibles a los cambios de temperatura ambiente y requiere un mayor recuento de variables latentes (LV), lo que degrada la transferibilidad de la calibración entre instrumentos.</p>
 <blockquote>"Seleccionar las longitudes de onda óptimas es una forma de ingeniería de características multivariadas. Al eliminar las bandas dominadas por el ruido, creamos una calibración más simple y sólida que se generaliza en diferentes espectrómetros".</blockquote>
 <h2>Intervalo PLS (iPLS): Selección sistemática de cuadrícula</h2>
-<p>**El intervalo PLS (iPLS)** es un algoritmo sistemático que divide el espectro preprocesado completo en un conjunto de intervalos de longitud de onda más pequeños que no se superponen (normalmente de 10 a 40 intervalos). El algoritmo construye un modelo PLS local para cada intervalo individual y calcula el error cuadrático medio de validación cruzada (RMSECV).</p>
+<p><strong>El intervalo PLS (iPLS)</strong> es un algoritmo sistemático que divide el espectro preprocesado completo en un conjunto de intervalos de longitud de onda más pequeños que no se superponen (normalmente de 10 a 40 intervalos). El algoritmo construye un modelo PLS local para cada intervalo individual y calcula el error cuadrático medio de validación cruzada (RMSECV).</p>
 <p>Al comparar el RMSECV de todos los modelos locales con el modelo global de espectro completo, iPLS identifica el intervalo específico (o combinación de intervalos) que produce el error de predicción más bajo. Esto es muy eficaz para aislar distintos matices moleculares (por ejemplo, bandas N-H en proteínas o bandas C-H en grasas).</p>
 <h2>Algoritmos genéticos: selección evolutiva</h2>
-<p>Cuando la sustancia química objetivo tiene bandas de absorción distribuidas en múltiples regiones, las búsquedas en cuadrículas basadas en intervalos son insuficientes. **Los algoritmos genéticos (GA)** utilizan una estrategia de búsqueda evolutiva para encontrar bandas óptimas:</p>
+<p>Cuando la sustancia química objetivo tiene bandas de absorción distribuidas en múltiples regiones, las búsquedas en cuadrículas basadas en intervalos son insuficientes. <strong>Los algoritmos genéticos (GA)</strong> utilizan una estrategia de búsqueda evolutiva para encontrar bandas óptimas:</p>
 <ul>
 <li><strong>Cromosomas:</strong>Las longitudes de onda se representan como cadenas binarias (1 para seleccionar, 0 para excluir).</li>
 <li><strong>Población inicial:</strong>Se crea un grupo inicial de combinaciones aleatorias de longitudes de onda.</li>
@@ -266,7 +266,7 @@
 </tbody>
 </table>
 <h2>Optimización de longitud de onda en cali<span class="calix-x">X</span> Suite</h2>
-<p>Para optimizar tus modelos en **cali<span class="calix-x">X</span>Suite**:</p>
+<p>Para optimizar tus modelos en <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
 <ol>
 <li>Abra su modelo de calibración y navegue hasta el menú "Selección de funciones".</li>
 <li>Seleccione `Intervalo PLS` para ejecutar una búsqueda en cuadrícula o `Algoritmo genético` para optimización evolutiva.</li>
@@ -295,7 +295,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
+<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
 </label>
 </form>
 </div>
@@ -309,7 +309,7 @@
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">Comprender el filtrado Savitzky-Golay en el preprocesamiento</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Una guía educativa sobre matemáticas de preprocesamiento espectral, selección de parámetros de suavizado y configuraciones derivadas en Cali.<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Una guía educativa sobre matemáticas de preprocesamiento espectral, selección de parámetros de suavizado y configuraciones derivadas en cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 <a class="btn-text" href="blog-savitzky-golay-filtering.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer guía</a>
 </div>
 </div>

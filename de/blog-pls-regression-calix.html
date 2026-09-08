@@ -218,25 +218,25 @@
 </div>
 <div class="blog-post-content">
 <h2>Was ist die partielle Regression der kleinsten Quadrate (PLS)?</h2>
-<p>Nahinfrarotspektren (NIR) bestehen aus Tausenden einzelner Wellenlängenpunkte. Da sich die NIR-Lichtabsorption als breite, überlappende Schwingungsobertöne und nicht als scharfe Spitzen manifestiert, reicht eine einzelne Wellenlänge selten aus, um eine chemische Konzentration vorherzusagen. Wir brauchen multivariate Statistiken, insbesondere für komplexe<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Anwendungen</a>.</p>
+<p>Nahinfrarotspektren (NIR) bestehen aus Tausenden einzelner Wellenlängenpunkte. Da sich die NIR-Lichtabsorption als breite, überlappende Schwingungsobertöne und nicht als scharfe Spitzen manifestiert, reicht eine einzelne Wellenlänge selten aus, um eine chemische Konzentration vorherzusagen. Wir brauchen multivariate Statistiken, insbesondere für komplexe <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Anwendungen</a>.</p>
 <p><strong>Partielle Regression der kleinsten Quadrate (PLS).</strong>ist der chemometrische Goldstandardalgorithmus. Es reduziert die Tausenden hochgradig kollinearer Spektralvariablen in einige orthogonale Faktoren (genannt).<strong>Latente Variablen (LVs)</strong>oder Hauptkomponenten), die die Kovarianz zwischen den Spektraldaten und den Ziellabor-Referenzkonzentrationen maximieren.</p>
-<p>Die Entwicklung eines Modells erforderte früher manuelle Skripterstellung in MATLAB oder R. Innerhalb des **cali<span class="calix-x">X</span>AutoML Suite** (die hochpräzise Konstruktionen erstellt).<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">kali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML-Modelle</a>) wird dieser Arbeitsablauf in fünf klare Phasen vereinfacht.</p>
+<p>Die Entwicklung eines Modells erforderte früher manuelle Skripterstellung in MATLAB oder R. Innerhalb des <strong>cali<span class="calix-x">X</span>AutoML Suite</strong> (die hochpräzise Konstruktionen erstellt).<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML-Modelle</a>) wird dieser Arbeitsablauf in fünf klare Phasen vereinfacht.</p>
 ---
 <h2>Schritt 1: Datenabgleich und -import</h2>
-<p>Bereiten Sie zunächst eine Kalibrierungstabelle (CSV oder Excel) vor, in der Sie die Namen Ihrer Spektraldateien mit den Ergebnissen Ihres Nasschemielabors abgleichen. kali<span class="calix-x" style="color: #38b6ff !important;">X</span>unterstützt den direkten Import von Rohspektrometer-Datenbankformaten und standardmäßigen spektroskopischen Austauschformaten wie JCAMP-DX.</p>
-<p>Einmal importiert, cali<span class="calix-x">X</span>teilt Ihren Datensatz automatisch auf:<strong>75 % für Kalibrierung und Kreuzvalidierung</strong>(um das Modell zu trainieren) und<strong>25 % als unabhängiges Validierungsset</strong>(völlig getrennt gehalten, um die endgültige Vorhersageleistung zu testen).</p>
+<p>Bereiten Sie zunächst eine Kalibrierungstabelle (CSV oder Excel) vor, in der Sie die Namen Ihrer Spektraldateien mit den Ergebnissen Ihres Nasschemielabors abgleichen. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>unterstützt den direkten Import von Rohspektrometer-Datenbankformaten und standardmäßigen spektroskopischen Austauschformaten wie JCAMP-DX.</p>
+<p>Einmal importiert, cali<span class="calix-x">X</span>teilt Ihren Datensatz automatisch auf:<strong>75 % für Kalibrierung und Kreuzvalidierung</strong>(um das Modell zu trainieren) und <strong>25 % als unabhängiges Validierungsset</strong>(völlig getrennt gehalten, um die endgültige Vorhersageleistung zu testen).</p>
 <h2>Schritt 2: Auswahl der spektralen Vorverarbeitung</h2>
 <p>Rohe NIR-Lichtsignale enthalten physikalisches Streurauschen, das durch Variationen der Partikelgröße, der Packungsdichte der Probe oder des Sondenabstands verursacht wird. Durch die spektrale Vorverarbeitung werden diese physikalischen Grundlinien mathematisch eliminiert, sodass sich das PLS-Modell ausschließlich auf die chemische Absorption konzentriert.</p>
-<p>Im Kali<span class="calix-x" style="color: #38b6ff !important;">X</span>Pipeline können Sie Standard-Vorverarbeitungsschritte anwenden und verketten:</p>
+<p>Im cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Pipeline können Sie Standard-Vorverarbeitungsschritte anwenden und verketten:</p>
 <ul>
 <li><strong>Standardnormalvariable (SNV):</strong>Zentrieren und Skalieren jedes einzelnen Spektrums, um multiplikative Skalierung und Offset-Variationen zu entfernen.</li>
 <li><strong>Multiplikative Streukorrektur (MSC):</strong>Regression jedes Spektrums gegenüber dem Durchschnittsspektrum, um Streusteigungen zu isolieren und zu entfernen.</li>
 <li><strong>Savitzky-Golay Derivate (1. oder 2.):</strong>Berechnet lokale Polynomanpassungen, um Ableitungen vorzunehmen, überlappende Bänder aufzulösen und Basislinienverschiebungen zu entfernen.</li>
 </ul>
-<p><em>Tipp: Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Die AutoML-Engine führt automatisch eine Rastersuche über Dutzende von Vorverarbeitungskombinationen durch, um die optimale Reihenfolge für Ihre Matrix vorzuschlagen.</em></p>
+<p><em>Tipp: cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Die AutoML-Engine führt automatisch eine Rastersuche über Dutzende von Vorverarbeitungskombinationen durch, um die optimale Reihenfolge für Ihre Matrix vorzuschlagen.</em></p>
 <h2>Schritt 3: Auswahl latenter Variablen (LVs)</h2>
-<p>Die Auswahl der richtigen Anzahl latenter Variablen ist entscheidend, um eine **Überanpassung** zu verhindern. Wenn Sie zu wenige LVs auswählen, ist Ihr Modell unzureichend angepasst und es fehlen chemische Korrelationen. Wenn Sie zu viele LVs auswählen, beginnt Ihr Modell mit der Anpassung zufälligen spektralen Rauschens, was beim Scannen neuer Proben fehlschlägt.</p>
-<p>Schauen Sie sich das an<strong>Mittlerer quadratischer Fehler der Kreuzvalidierung (RMSECV)</strong>Kurve. Wählen Sie die Anzahl der LVs am „Kurvenbogen“ aus, bei dem der Fehler nicht mehr signifikant abfällt. Das Hinzufügen weiterer Komponenten über diesen Punkt hinaus passt nur zum Rauschen.</p>
+<p>Die Auswahl der richtigen Anzahl latenter Variablen ist entscheidend, um eine <strong>Überanpassung</strong> zu verhindern. Wenn Sie zu wenige LVs auswählen, ist Ihr Modell unzureichend angepasst und es fehlen chemische Korrelationen. Wenn Sie zu viele LVs auswählen, beginnt Ihr Modell mit der Anpassung zufälligen spektralen Rauschens, was beim Scannen neuer Proben fehlschlägt.</p>
+<p>Schauen Sie sich das an <strong>Mittlerer quadratischer Fehler der Kreuzvalidierung (RMSECV)</strong>Kurve. Wählen Sie die Anzahl der LVs am „Kurvenbogen“ aus, bei dem der Fehler nicht mehr signifikant abfällt. Das Hinzufügen weiterer Komponenten über diesen Punkt hinaus passt nur zum Rauschen.</p>
 <pre>
 # Sample Model Statistics Output in cali<span class="calix-x">X</span>
 ---------------------------------------------
@@ -251,11 +251,11 @@ Bias: -0.01%
 ---------------------------------------------
 </pre>
 <h2>Schritt 4: Unabhängige Validierung</h2>
-<p>Um das Modell für den Werkseinsatz zu qualifizieren, führen Sie Vorhersagen für den 25 % unabhängigen Testsatz durch. Der<strong>Mittlerer quadratischer Fehler der Vorhersage (RMSEP)</strong>misst die tatsächliche Genauigkeit, die Sie bei der Inline-Nutzung des Sensors erhalten. Ein robustes Modell sollte einen RMSEP anzeigen, der Ihrem Kreuzvalidierungsfehler (RMSECV) sehr nahe kommt.</p>
+<p>Um das Modell für den Werkseinsatz zu qualifizieren, führen Sie Vorhersagen für den 25 % unabhängigen Testsatz durch. Der <strong>Mittlerer quadratischer Fehler der Vorhersage (RMSEP)</strong>misst die tatsächliche Genauigkeit, die Sie bei der Inline-Nutzung des Sensors erhalten. Ein robustes Modell sollte einen RMSEP anzeigen, der Ihrem Kreuzvalidierungsfehler (RMSECV) sehr nahe kommt.</p>
 <h2>Schritt 5: Exportieren nach ProChem</h2>
-<p>Wenn Sie mit der Modellleistung zufrieden sind, klicken Sie auf<strong>„Modellpaket exportieren“</strong>. Dadurch wird eine sichere „.cali“-Datei generiert<span class="calix-x" style="color: #38b6ff !important;">X</span>` Modelldatei. Laden Sie diese Datei direkt in die<strong>ProChem Prozesssteuerungssoftware</strong>an Ihrer Produktionslinie. ProChem wendet die vorkonfigurierten Vorverarbeitungsschritte automatisch auf Inline-Spektren an, prognostiziert Konzentrationen in Echtzeit und sendet die Ergebnisse direkt an Ihre Anlage PLC.</p>
+<p>Wenn Sie mit der Modellleistung zufrieden sind, klicken Sie auf<strong>„Modellpaket exportieren“</strong>. Dadurch wird eine sichere `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>`-Modelldatei generiert. Laden Sie diese Datei direkt in die <strong>ProChem Prozesssteuerungssoftware</strong> an Ihrer Produktionslinie. ProChem wendet die vorkonfigurierten Vorverarbeitungsschritte automatisch auf Inline-Spektren an, prognostiziert Konzentrationen in Echtzeit und sendet die Ergebnisse direkt an Ihre Anlage PLC.</p>
 <h2>Zusammenfassung</h2>
-<p>Durch die Kombination einer strengen PLS-Regressionslogik mit automatisierter Vorverarbeitungsoptimierung wird die Kali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite macht die Chemometrie für Qualitätskontrollingenieure zugänglich, ohne auf wissenschaftliche Tiefe zu verzichten. Sie erhalten zuverlässige, robuste Modelle, die Ihre B2B-Margen vom ersten Tag an schützen.</p>
+<p>Durch die Kombination einer strengen PLS-Regressionslogik mit automatisierter Vorverarbeitungsoptimierung wird die cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite macht die Chemometrie für Qualitätskontrollingenieure zugänglich, ohne auf wissenschaftliche Tiefe zu verzichten. Sie erhalten zuverlässige, robuste Modelle, die Ihre B2B-Margen vom ersten Tag an schützen.</p>
 <div class="blog-post-references">
 <h3>Referenzen</h3>
 <ul>
@@ -276,7 +276,7 @@ Bias: -0.01%
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
+<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
 </label>
 </form>
 </div>

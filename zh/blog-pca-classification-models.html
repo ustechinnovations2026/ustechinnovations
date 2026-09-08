@@ -214,14 +214,14 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 07, 2026 — 4 分钟阅读</span>
 <h1 class="blog-post-title">通过 PCA 开发稳健的化学计量分类模型</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">解释主成分分析的分步方法。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型易于构建 (PCA)，用于原材料的定性识别和工业掺假检测。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">解释主成分分析的分步方法。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型易于构建 (PCA)，用于原材料的定性识别和工业掺假检测。</p>
 </div>
 <div class="blog-post-content">
 <h2>定性光谱学简介</h2>
-<p>定量化学计量学侧重于预测数值浓度（例如水分、脂肪或蛋白质百分比），而定性化学计量学旨在回答结构分类问题：**这种材料是什么？与标签的规格相符吗？是否被掺假或稀释？**</p>
-<p>在高吞吐量的制造工厂和原材料仓库中，在收货码头验证物料身份是第一道防线<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和药物筛选</a>防止生产错误。 **主成分分析。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型易于构建 (PCA)** 是用于构建稳健、非破坏性光谱库以进行即时定性识别的主要数学工具。</p>
+<p>定量化学计量学侧重于预测数值浓度（例如水分、脂肪或蛋白质百分比），而定性化学计量学旨在回答结构分类问题：<strong>这种材料是什么？与标签的规格相符吗？是否被掺假或稀释？</strong></p>
+<p>在高吞吐量的制造工厂和原材料仓库中，在收货码头验证物料身份是第一道防线<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和药物筛选</a>防止生产错误。 <strong>主成分分析。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型易于构建 (PCA)</strong> 是用于构建稳健、非破坏性光谱库以进行即时定性识别的主要数学工具。</p>
 <h2>PCA 如何处理光谱数据集</h2>
-<p>典型的 NIR 光谱包含数百个高度相关的波长通道。这些渠道的预测很难以原始形式进行分析。 PCA 是一种降维技术，它将高维光谱空间投影到一小组称为**主成分 (PC)** 的正交轴上。</p>
+<p>典型的 NIR 光谱包含数百个高度相关的波长通道。这些渠道的预测很难以原始形式进行分析。 PCA 是一种降维技术，它将高维光谱空间投影到一小组称为<strong>主成分 (PC)</strong> 的正交轴上。</p>
 <ul>
 <li><strong>电脑1：</strong>捕获光谱数据中最大的方差方向（通常与物理差异相关，例如颗粒大小）。</li>
 <li><strong>电脑2：</strong>捕获与 PC1 正交的第二大方差方向（通常与化学变化相关，例如化学浓度变化）。</li>
@@ -230,7 +230,7 @@
 <p>通过将每个频谱映射为沿着这些 PC 的坐标（称为“分数”），复杂的频谱被简化为 2D 或 3D 分数图中的单个点。相似材料的光谱聚集在一起，而异常值则很突出。</p>
 <blockquote>“PCA 将光谱的有意义的特征与随机噪声隔离开来，将数百个波长测量结果转化为一组定义材料簇的紧凑坐标。”</blockquote>
 <h2>建立分类边界</h2>
-<p>为了对传入材料进行分类，我们必须在分数图中定义参考簇周围的数学边界。 **卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite** 使用双管齐下的统计测试：</p>
+<p>为了对传入材料进行分类，我们必须在分数图中定义参考簇周围的数学边界。 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</strong> 使用双管齐下的统计测试：</p>
 <ol>
 <li><strong>Hotelling 的 T²（模型内距离）：</strong>测量 PC 模型空间内距簇中心的距离。它表示样本在参考总体中的典型程度。</li>
 <li><strong>Q 残差（模型外距离）：</strong>测量 PCA 模型未捕获的残差方差。如果输入的样本具有高 Q 残差，则它包含模型从未见过的化学特征（例如掺假物或不同物质）。</li>
@@ -260,13 +260,13 @@
 </tbody>
 </table>
 <h2>部署 PCA 分类模型</h2>
-<p>一旦在 **cali 中构建了分类模型<span class="calix-x" style="color: #38b6ff !important;">X</span>套件**，可以直接导出到接收坞终端上运行的**ProChem软件**。当操作员将原材料袋放在在线传感器下时，系统会扫描材料，将光谱投影到 PCA 模型上，计算 T² 和 Q 统计数据，并在三秒内显示简单的 **通过/失败** 结果。这取代了数小时的色谱分析，防止错误的材料进入生产线。</p>
+<p>一旦在 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件</strong> 中构建了分类模型，就可以直接导出到接收坞终端上运行的 <strong>ProChem 软件</strong>。当操作员将原材料袋放在在线传感器下时，系统会扫描材料，将光谱投影到 PCA 模型上，计算 T² 和 Q 统计数据，并在三秒内显示简单的 <strong>通过/失败</strong> 结果。这取代了数小时的色谱分析，防止错误的材料进入生产线。</p>
 <div class="blog-post-references">
 <h3>参考</h3>
 <ul>
 <li>霍特林，H. (1931)。 《学生比例的概括》<em>数理统计年鉴</em>，2(3)，360-378。</li>
-<li>“使用主成分分析进行定性分析和原材料鉴定。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型可以在 NIR 光谱中轻松构建，”<em>化学计量学杂志</em>，2021 年。</li>
-<li>杰克逊，J.E. 和穆德霍尔卡，G.S. (1979)。 “与主成分分析相关的残差的控制程序。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型很容易构建，”<em>技术计量学</em>，21（3），341-349。</li>
+<li>“使用主成分分析进行定性分析和原材料鉴定。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型可以在 NIR 光谱中轻松构建，”<em>化学计量学杂志</em>，2021 年。</li>
+<li>杰克逊，J.E. 和穆德霍尔卡，G.S. (1979)。 “与主成分分析相关的残差的控制程序。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>化学计量工具</a>。使用化学计量学工具<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>, PCA 模型很容易构建，”<em>技术计量学</em>，21（3），341-349。</li>
 </ul>
 </div>
 </div>

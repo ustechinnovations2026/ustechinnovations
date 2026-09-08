@@ -227,10 +227,10 @@
 </ul>
 <blockquote>„Die Echtzeitverfolgung kritischer Prozessparameter (CPPs) ermöglicht es Bioprozessingenieuren, von manuellen, rezeptgesteuerten Zuführungen zu rückkopplungsgesteuerten Zuführungsschleifen zu wechseln und so den Zellstoffwechsel direkt zu stabilisieren.“</blockquote>
 <h2>Hygienische Inline-FT-NIR-Implementierung</h2>
-<p>Um eine kontinuierliche Überwachungsschleife einzurichten, hat der Hersteller einen Analysator **ProLine2550 FT-NIR** integriert, der mit einer hygienischen, autoklavensicheren Saphir-Tauchsonde ausgestattet ist. Die Sonde wurde direkt in die Kopfplatte des Bioreaktors eingeführt, wobei ein standardmäßiger PG13,5-Anschluss mit EPDM-Dichtungen verwendet wurde, die den EHEDG-Richtlinien entsprechen.</p>
-<p>Nahinfrarotes Licht gelangte über Glasfasern zur Sondenspitze, wo es durch die Zellkulturbrühe gelangte. Ein hochauflösender InGaAs-Detektor liest alle 15 Minuten die Transmissionsspektren aus. Die Spektraldaten wurden in das **cali eingespeist<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite** zur chemometrischen Vorhersage kritischer Prozessparameter (CPPs).</p>
+<p>Um eine kontinuierliche Überwachungsschleife einzurichten, hat der Hersteller einen Analysator <strong>ProLine2550 FT-NIR</strong> integriert, der mit einer hygienischen, autoklavensicheren Saphir-Tauchsonde ausgestattet ist. Die Sonde wurde direkt in die Kopfplatte des Bioreaktors eingeführt, wobei ein standardmäßiger PG13,5-Anschluss mit EPDM-Dichtungen verwendet wurde, die den EHEDG-Richtlinien entsprechen.</p>
+<p>Nahinfrarotes Licht gelangte über Glasfasern zur Sondenspitze, wo es durch die Zellkulturbrühe gelangte. Ein hochauflösender InGaAs-Detektor liest alle 15 Minuten die Transmissionsspektren aus. Die Spektraldaten wurden zur chemometrischen Vorhersage kritischer Prozessparameter (CPPs) in die <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</strong> eingespeist.</p>
 <h2>Modellvalidierung und Regelung</h2>
-<p>Mit dem **cali<span class="calix-x">X</span>Suite** wurden Kalibrierungsmodelle durch Korrelation von Inline-FT-NIR-Spektren mit Referenzwerten von Offline-Biochemieanalysatoren erstellt. Das Kali<span class="calix-x" style="color: #38b6ff !important;">X</span>Die AutoML-Engine wendete die Savitzky-Golay-Vorverarbeitung der ersten Ableitung und die Standard-Normalvariaten-Filterung (SNV) an, um Lichtstreuung zu beseitigen, die durch unterschiedliche Zelldichte (Trübung) verursacht wird. Die Validierungsstatistiken belegen die Genauigkeit auf Laborniveau:</p>
+<p>Mit dem <strong>cali<span class="calix-x">X</span>Suite</strong> wurden Kalibrierungsmodelle durch Korrelation von Inline-FT-NIR-Spektren mit Referenzwerten von Offline-Biochemieanalysatoren erstellt. Das cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Die AutoML-Engine wendete die Savitzky-Golay-Vorverarbeitung der ersten Ableitung und die Standard-Normalvariaten-Filterung (SNV) an, um Lichtstreuung zu beseitigen, die durch unterschiedliche Zelldichte (Trübung) verursacht wird. Die Validierungsstatistiken belegen die Genauigkeit auf Laborniveau:</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -261,7 +261,7 @@
 </tr>
 </tbody>
 </table>
-<p>Die vorhergesagte Glukosekonzentration wurde über **ProChem** über eine OPC UA-Schnittstelle direkt an das SCADA-System ausgegeben. Wenn der vorhergesagte Glukosewert unter 2,0 g/L fiel, aktivierte der SCADA-Controller automatisch die Zufuhrpumpen und standardisierte den Glukosewert ohne Eingriff des Bedieners auf einen konstanten Wert von 2,5 g/L.</p>
+<p>Die vorhergesagte Glukosekonzentration wurde über <strong>ProChem</strong> über eine OPC UA-Schnittstelle direkt an das SCADA-System ausgegeben. Wenn der vorhergesagte Glukosewert unter 2,0 g/L fiel, aktivierte der SCADA-Controller automatisch die Zufuhrpumpen und standardisierte den Glukosewert ohne Eingriff des Bedieners auf einen konstanten Wert von 2,5 g/L.</p>
 <h2>Betriebliche Vorteile und Qualitätsverbesserungen</h2>
 <p>Durch die Implementierung einer Echtzeit-Zuführung mit geschlossenem Kreislauf konnte die Anlage die folgenden Vorteile erzielen:</p>
 <ul>
@@ -270,7 +270,7 @@
 <li><strong>Sterilitätssicherung:</strong>Manuelle Probenentnahmen wurden um 85 % reduziert, was die Zahl der Kontaminationsereignisse deutlich verringerte.</li>
 </ul>
 <h2>Abschluss</h2>
-<p>Der Einsatz von Inline-FT-NIR-Spektroskopie in Bioreaktoren verändert den Biopharma-Betrieb von der retrogressiven Probenahme zur aktiven Kontrolle. Durch die Verwendung von Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Mithilfe der chemometrischen Modelle zur Automatisierung der Fütterung können Biohersteller das Zellwachstum optimieren, die Sterilität sicherstellen und die Chargenausbeute maximieren.</p>
+<p>Der Einsatz von Inline-FT-NIR-Spektroskopie in Bioreaktoren verändert den Biopharma-Betrieb von der retrogressiven Probenahme zur aktiven Kontrolle. Durch die Verwendung von cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Mithilfe der chemometrischen Modelle zur Automatisierung der Fütterung können Biohersteller das Zellwachstum optimieren, die Sterilität sicherstellen und die Chargenausbeute maximieren.</p>
 <div class="blog-post-references">
 <h3>Referenzen</h3>
 <ul>
@@ -291,7 +291,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
+<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
 </label>
 </form>
 </div>

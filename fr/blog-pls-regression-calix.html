@@ -218,16 +218,16 @@
 </div>
 <div class="blog-post-content">
 <h2>Qu'est-ce que la régression des moindres carrés partiels (PLS) ?</h2>
-<p>Les spectres du proche infrarouge (NIR) sont constitués de milliers de points de longueur d'onde individuels. Étant donné que l’absorption de la lumière NIR se manifeste par de larges nuances vibratoires qui se chevauchent plutôt que par des pics nets, une seule longueur d’onde suffit rarement à prédire une concentration chimique. Nous avons besoin de statistiques multivariées, en particulier pour les<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">applications chimiques et pharmaceutiques</a>.</p>
-<p><strong>Régression des moindres carrés partiels (PLS)</strong>est l’algorithme chimiométrique de référence. Il réduit les milliers de variables spectrales hautement colinéaires en quelques facteurs orthogonaux (appelés<strong>Variables latentes (LV)</strong>ou composants principaux) qui maximisent la covariance entre les données spectrales et les concentrations de référence du laboratoire cible.</p>
-<p>Développer un modèle nécessitant des scripts manuels dans MATLAB ou R. Au sein du **cali<span class="calix-x">X</span>AutoML Suite** (qui construit des<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Californie<span class="calix-x" style="color: #38b6ff !important;">X</span>Modèles AutoML</a>), ce flux de travail est simplifié en cinq étapes claires.</p>
+<p>Les spectres du proche infrarouge (NIR) sont constitués de milliers de points de longueur d'onde individuels. Étant donné que l’absorption de la lumière NIR se manifeste par de larges nuances vibratoires qui se chevauchent plutôt que par des pics nets, une seule longueur d’onde suffit rarement à prédire une concentration chimique. Nous avons besoin de statistiques multivariées, en particulier pour les <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">applications chimiques et pharmaceutiques</a>.</p>
+<p><strong>Régression des moindres carrés partiels (PLS)</strong>est l’algorithme chimiométrique de référence. Il réduit les milliers de variables spectrales hautement colinéaires en quelques facteurs orthogonaux (appelés <strong>Variables latentes (LV)</strong>ou composants principaux) qui maximisent la covariance entre les données spectrales et les concentrations de référence du laboratoire cible.</p>
+<p>Développer un modèle nécessitant des scripts manuels dans MATLAB ou R. Au sein du <strong>cali<span class="calix-x">X</span>AutoML Suite</strong> (qui construit des <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Modèles AutoML</a>), ce flux de travail est simplifié en cinq étapes claires.</p>
 ---
 <h2>Étape 1 : alignement et importation des données</h2>
-<p>Tout d’abord, préparez une feuille de calcul d’étalonnage (CSV ou Excel) faisant correspondre les noms de vos fichiers spectraux à leurs résultats de laboratoire de chimie humide. Californie<span class="calix-x" style="color: #38b6ff !important;">X</span>prend en charge l'importation directe de formats de base de données de spectromètres bruts et de formats d'échange spectroscopiques standard tels que JCAMP-DX.</p>
-<p>Une fois importé, cali<span class="calix-x">X</span>divise automatiquement votre ensemble de données :<strong>75 % pour l'étalonnage et la validation croisée</strong>(pour entraîner le modèle) et<strong>25 % en tant qu'ensemble de validation indépendant</strong>(conservé complètement séparé pour tester les performances prédictives finales).</p>
+<p>Tout d’abord, préparez une feuille de calcul d’étalonnage (CSV ou Excel) faisant correspondre les noms de vos fichiers spectraux à leurs résultats de laboratoire de chimie humide. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>prend en charge l'importation directe de formats de base de données de spectromètres bruts et de formats d'échange spectroscopiques standard tels que JCAMP-DX.</p>
+<p>Une fois importé, cali<span class="calix-x">X</span>divise automatiquement votre ensemble de données :<strong>75 % pour l'étalonnage et la validation croisée</strong>(pour entraîner le modèle) et <strong>25 % en tant qu'ensemble de validation indépendant</strong>(conservé complètement séparé pour tester les performances prédictives finales).</p>
 <h2>Étape 2 : Choisir le prétraitement spectral</h2>
 <p>Les signaux lumineux bruts NIR contiennent un bruit de diffusion physique provoqué par les variations de taille des particules, la densité de compactage de l'échantillon ou la distance de la sonde. Le prétraitement spectral élimine mathématiquement ces lignes de base physiques, de sorte que le modèle PLS se concentre uniquement sur l'absorption chimique.</p>
-<p>En Californie<span class="calix-x" style="color: #38b6ff !important;">X</span>pipeline, vous pouvez appliquer et enchaîner les étapes de prétraitement standards :</p>
+<p>En cali<span class="calix-x" style="color: #38b6ff !important;">X</span>pipeline, vous pouvez appliquer et enchaîner les étapes de prétraitement standards :</p>
 <ul>
 <li><strong>Standard Normal Varié (SNV) :</strong>Centrer et mettre à l'échelle chaque spectre individuel pour supprimer les variations de mise à l'échelle multiplicative et de décalage.</li>
 <li><strong>Correction de diffusion multiplicative (MSC) :</strong>Régresse chaque spectre par rapport au spectre moyen pour isoler et supprimer les pentes de dispersion.</li>
@@ -235,8 +235,8 @@
 </ul>
 <p><em>Astuce : cali<span class="calix-x">X</span>Le moteur AutoML d' exécutera automatiquement une recherche dans la grille sur des dizaines de combinaisons de prétraitement pour suggérer la séquence optimale pour votre matrice.</em></p>
 <h2>Étape 3 : Sélection des variables latentes (LV)</h2>
-<p>La sélection du nombre correct de variables latentes est essentielle pour éviter le **surapprentissage**. Si vous sélectionnez trop peu de LV, votre modèle est sous-ajusté et manque de corrélations chimiques. Si vous sélectionnez trop de LV, votre modèle commence à ajuster un bruit spectral aléatoire, ce qui échouera lors de l'analyse de nouveaux échantillons.</p>
-<p>Regardez le<strong>Erreur quadratique moyenne de validation croisée (RMSECV)</strong>courbe. Sélectionnez le nombre de LV au "coude" de la courbe, là où l'erreur cesse de baisser de manière significative. L'ajout de composants supplémentaires au-delà de ce point ne correspond qu'au bruit.</p>
+<p>La sélection du nombre correct de variables latentes est essentielle pour éviter le <strong>surapprentissage</strong>. Si vous sélectionnez trop peu de LV, votre modèle est sous-ajusté et manque de corrélations chimiques. Si vous sélectionnez trop de LV, votre modèle commence à ajuster un bruit spectral aléatoire, ce qui échouera lors de l'analyse de nouveaux échantillons.</p>
+<p>Regardez le <strong>Erreur quadratique moyenne de validation croisée (RMSECV)</strong>courbe. Sélectionnez le nombre de LV au "coude" de la courbe, là où l'erreur cesse de baisser de manière significative. L'ajout de composants supplémentaires au-delà de ce point ne correspond qu'au bruit.</p>
 <pre>
 # Sample Model Statistics Output in cali<span class="calix-x">X</span>
 ---------------------------------------------
@@ -251,9 +251,9 @@ Bias: -0.01%
 ---------------------------------------------
 </pre>
 <h2>Étape 4 : Validation indépendante</h2>
-<p>Pour qualifier le modèle pour un déploiement en usine, exécutez des prédictions sur l'ensemble de tests indépendant à 25 %. Le<strong>Erreur quadratique moyenne de prédiction (RMSEP)</strong>mesure la véritable précision que vous verrez lors de l'utilisation du capteur en ligne. Un modèle robuste doit afficher un RMSEP très proche de votre erreur de validation croisée (RMSECV).</p>
+<p>Pour qualifier le modèle pour un déploiement en usine, exécutez des prédictions sur l'ensemble de tests indépendant à 25 %. Le <strong>Erreur quadratique moyenne de prédiction (RMSEP)</strong>mesure la véritable précision que vous verrez lors de l'utilisation du capteur en ligne. Un modèle robuste doit afficher un RMSEP très proche de votre erreur de validation croisée (RMSECV).</p>
 <h2>Étape 5 : Exportation vers ProChem</h2>
-<p>Une fois que vous êtes satisfait des performances du modèle, cliquez sur<strong>« Package de modèles d'exportation »</strong>. Cela génère un `.cali sécurisé<span class="calix-x" style="color: #38b6ff !important;">X</span>`fichier modèle. Chargez ce fichier directement dans le<strong>ProChem Logiciel de contrôle de processus</strong>sur votre ligne de production. ProChem appliquera automatiquement les étapes de prétraitement préconfigurées aux spectres en ligne et prédit les concentrations en temps réel, envoyant les résultats directement à votre usine PLC.</p>
+<p>Une fois que vous êtes satisfait des performances du modèle, cliquez sur<strong>« Package de modèles d'exportation »</strong>. Cela génère un fichier modèle `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>` sécurisé. Chargez ce fichier directement dans le <strong>ProChem Logiciel de contrôle de processus</strong> sur votre ligne de production. ProChem appliquera automatiquement les étapes de prétraitement préconfigurées aux spectres en ligne et prédit les concentrations en temps réel, envoyant les résultats directement à votre usine PLC.</p>
 <h2>Résumé</h2>
 <p>En combinant une logique de régression PLS rigoureuse avec une optimisation du prétraitement automatisé, le cali<span class="calix-x">X</span>Suite rend la chimiométrie accessible aux ingénieurs de contrôle qualité sans sacrifier la profondeur scientifique. Vous disposez de modèles fiables et robustes, prêts à protéger vos marges B2B dès le premier jour.</p>
 <div class="blog-post-references">
@@ -276,7 +276,7 @@ Bias: -0.01%
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
+<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
 </label>
 </form>
 </div>

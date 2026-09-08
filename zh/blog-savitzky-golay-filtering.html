@@ -214,12 +214,12 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 04, 2026 — 4 分钟阅读</span>
 <h1 class="blog-post-title">了解预处理中的 Savitzky-Golay 过滤</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">深入解释 cali 内光谱数据集对齐的平滑算法、多项式阶数和导数数学<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">深入解释 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 内光谱数据集对齐的平滑算法、多项式阶数和导数数学。</p>
 </div>
 <div class="blog-post-content">
 <h2>预处理在化学计量学中的作用</h2>
 <p>近红外 (NIR) 光谱，特别是<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和药物光谱</a>，非常复杂，通常具有重叠吸收带、基线偏移和高频噪声的特征。在拟合定量校准模型（如 PLS 回归）之前，化学计量学家必须预处理原始光谱数据。目标是消除物理伪影（例如不同粒径的散射或光路长度变化引起的基线偏移），同时保留感兴趣的化学信号。</p>
-<p>在预处理工具库中的工具中，**Savitzky-Golay (SG) 算法**是平滑和微分的行业标准。它由 Abraham Savitzky 和 ​​Marcel J. E. Golay 于 1964 年开发，至今仍然是现代化学计量数据管道的基础。</p>
+<p>在预处理工具库中的工具中，<strong>Savitzky-Golay (SG) 算法</strong>是平滑和微分的行业标准。它由 Abraham Savitzky 和 ​​Marcel J. E. Golay 于 1964 年开发，至今仍然是现代化学计量数据管道的基础。</p>
 <blockquote>“与模糊光谱特征的标准移动平均滤波器不同，Savitzky-Golay 滤波通过将局部低次多项式拟合到数据来保留峰值高度、宽度和局部形状。”</blockquote>
 <h2>Savitzky-Golay 算法的工作原理</h2>
 <p>核心概念是在频谱上滑动固定数量数据点（$w$，必须是奇数）的窗口。在每个步骤中，使用线性最小二乘法将 $k$ 次数的多项式（通常 $k = 2$ 或 $3$，表示二次或三次模型）拟合到窗口内的数据点。窗口中心点处的拟合多项式的值成为该波长的新的平滑值。</p>
@@ -262,8 +262,8 @@
 </tr>
 </tbody>
 </table>
-<h2>在 cali 中实施 SG<span class="calix-x" style="color: #38b6ff !important;">X</span>套房</h2>
-<p>在<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>套件软件</a>预处理管道中，SG 算法在 AutoML 模型验证期间自动应用。用户可以在预处理编辑器中配置窗口大小和导数阶数，并在测试不同设置时实时观察交叉验证错误 (RMSECV) 更新。这种交互式反馈循环可确保您选择能够最大限度提高模型精度和单位间可转移性的数学预处理参数。</p>
+<h2>在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中实施 SG</h2>
+<p>在<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>套件软件</a>预处理管道中，SG 算法在 AutoML 模型验证期间自动应用。用户可以在预处理编辑器中配置窗口大小和导数阶数，并在测试不同设置时实时观察交叉验证错误 (RMSECV) 更新。这种交互式反馈循环可确保您选择能够最大限度提高模型精度和单位间可转移性的数学预处理参数。</p>
 <div class="blog-post-references">
 <h3>参考</h3>
 <ul>

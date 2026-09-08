@@ -214,12 +214,12 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 04, 2026 — 4 min de lectura</span>
 <h1 class="blog-post-title">Comprender el filtrado Savitzky-Golay en el preprocesamiento</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una inmersión profunda que explica algoritmos de suavizado, órdenes polinomiales y matemáticas derivadas para la alineación de conjuntos de datos espectrales dentro de cali.<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una inmersión profunda que explica algoritmos de suavizado, órdenes polinomiales y matemáticas derivadas para la alineación de conjuntos de datos espectrales dentro de cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 </div>
 <div class="blog-post-content">
 <h2>El papel del preprocesamiento en quimiometría</h2>
-<p>Espectros de infrarrojo cercano (NIR), particularmente<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">espectros químicos y farmacéuticos</a>, son muy complejos y a menudo se caracterizan por bandas de absorción superpuestas, desplazamientos de la línea base y ruido de alta frecuencia. Antes de ajustar modelos de calibración cuantitativos (como la regresión PLS), los quimiometristas deben preprocesar los datos espectrales sin procesar. El objetivo es eliminar los artefactos físicos, como la dispersión de diferentes tamaños de partículas o los cambios en la línea de base debido a cambios en la longitud del camino de la luz, preservando al mismo tiempo las señales químicas de interés.</p>
-<p>Entre las herramientas del arsenal de preprocesamiento, el algoritmo **Savitzky-Golay (SG)** es el estándar de la industria para el suavizado y la diferenciación. Desarrollado en 1964 por Abraham Savitzky y Marcel J. E. Golay, sigue siendo la base de los sistemas de datos quimiométricos modernos.</p>
+<p>Espectros de infrarrojo cercano (NIR), particularmente <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">espectros químicos y farmacéuticos</a>, son muy complejos y a menudo se caracterizan por bandas de absorción superpuestas, desplazamientos de la línea base y ruido de alta frecuencia. Antes de ajustar modelos de calibración cuantitativos (como la regresión PLS), los quimiometristas deben preprocesar los datos espectrales sin procesar. El objetivo es eliminar los artefactos físicos, como la dispersión de diferentes tamaños de partículas o los cambios en la línea de base debido a cambios en la longitud del camino de la luz, preservando al mismo tiempo las señales químicas de interés.</p>
+<p>Entre las herramientas del arsenal de preprocesamiento, el algoritmo <strong>Savitzky-Golay (SG)</strong> es el estándar de la industria para el suavizado y la diferenciación. Desarrollado en 1964 por Abraham Savitzky y Marcel J. E. Golay, sigue siendo la base de los sistemas de datos quimiométricos modernos.</p>
 <blockquote>"A diferencia de los filtros de promedio móvil estándar que difuminan las características espectrales, el filtrado Savitzky-Golay preserva las alturas, anchos y formas locales de los picos ajustando polinomios locales de bajo grado a los datos".</blockquote>
 <h2>Cómo funciona el algoritmo Savitzky-Golay</h2>
 <p>El concepto central es deslizar una ventana de un número fijo de puntos de datos ($w$, que debe ser un número entero impar) a través del espectro. En cada paso, se ajusta un polinomio de grado $k$ (normalmente $k = 2$ o $3$, que representa modelos cuadráticos o cúbicos) a los puntos de datos dentro de la ventana utilizando mínimos cuadrados lineales. El valor del polinomio ajustado en el punto central de la ventana se convierte en el nuevo valor suavizado para esa longitud de onda.</p>
@@ -263,7 +263,7 @@
 </tbody>
 </table>
 <h2>Implementando SG en cali<span class="calix-x">X</span> Suite</h2>
-<p>En el<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>software de suite</a>canalización de preprocesamiento, el algoritmo SG se aplica automáticamente durante la validación del modelo AutoML. Los usuarios pueden configurar el tamaño de la ventana y las órdenes derivadas en el editor de preprocesamiento, observando la actualización del error de validación cruzada (RMSECV) en tiempo real a medida que se prueban diferentes configuraciones. Este circuito de retroalimentación interactivo garantiza que usted elija los parámetros de preprocesamiento matemático que maximicen la precisión del modelo y la transferibilidad de unidad a unidad.</p>
+<p>En el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>software de suite</a> canalización de preprocesamiento, el algoritmo SG se aplica automáticamente durante la validación del modelo AutoML. Los usuarios pueden configurar el tamaño de la ventana y las órdenes derivadas en el editor de preprocesamiento, observando la actualización del error de validación cruzada (RMSECV) en tiempo real a medida que se prueban diferentes configuraciones. Este circuito de retroalimentación interactivo garantiza que usted elija los parámetros de preprocesamiento matemático que maximicen la precisión del modelo y la transferibilidad de unidad a unidad.</p>
 <div class="blog-post-references">
 <h3>Referencias</h3>
 <ul>
@@ -284,7 +284,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
+<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
 </label>
 </form>
 </div>

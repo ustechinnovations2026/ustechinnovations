@@ -223,10 +223,10 @@ Espa&#241;ol
 "By replacing manual setpoint adjustments with direct, authenticated spectrometer feedback, closed-loop systems stabilize product outputs within strict tolerances."
 </blockquote>
 <h2>OPC UA: The Industrial Communication Backbone</h2>
-<p>To establish communication between spectroscopy software and factory automation hardware, USTECH uses the **OPC Unified Architecture (OPC UA)** standard. OPC UA is a platform-independent, service-oriented architecture that provides secure, reliable communications. It replaces legacy Windows-only OPC DA protocols, supporting built-in SSL encryption, user authentication, and data redundancy.</p>
-<p>In a standard installation, the **<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem HMI interface</a>** running the FT-NIR spectrometer acts as an OPC UA Server, exposing predicted concentration values, sensor status, and diagnostic flags as nodes (tags) in its address space. The plant's SCADA system or PLC acts as an OPC UA Client, subscribing to these tags at regular intervals.</p>
+<p>To establish communication between spectroscopy software and factory automation hardware, USTECH uses the <strong>OPC Unified Architecture (OPC UA)</strong> standard. OPC UA is a platform-independent, service-oriented architecture that provides secure, reliable communications. It replaces legacy Windows-only OPC DA protocols, supporting built-in SSL encryption, user authentication, and data redundancy.</p>
+<p>In a standard installation, the <strong><a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem HMI interface</a></strong> running the FT-NIR spectrometer acts as an OPC UA Server, exposing predicted concentration values, sensor status, and diagnostic flags as nodes (tags) in its address space. The plant's SCADA system or PLC acts as an OPC UA Client, subscribing to these tags at regular intervals.</p>
 <h2>Mapping Standard OPC UA Node IDs</h2>
-<p>To simplify integration, USTECH's **ProChem platform** utilizes a standardized OPC UA namespace structure. The table below lists the primary data tags mapped during a closed-loop installation:</p>
+<p>To simplify integration, USTECH's <strong>ProChem platform</strong> utilizes a standardized OPC UA namespace structure. The table below lists the primary data tags mapped during a closed-loop installation:</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>

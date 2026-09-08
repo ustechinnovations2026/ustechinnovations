@@ -222,10 +222,10 @@
 <p>通过将内联 FT-NIR 光谱仪直接与可编程逻辑控制器 (PLCs) 集成，工厂可以闭合控制回路。实时预测直接输入 PLC 控制寄存器，实现对计量阀的亚秒级自动调整，最大限度地减少偏差并最大限度地提高产量稳定性。</p>
 <blockquote>“通过用直接、经过验证的光谱仪反馈取代手动设定点调整，闭环系统可以将产品输出稳定在严格的公差范围内。”</blockquote>
 <h2>OPC UA：工业通信骨干网</h2>
-<p>为了在光谱软件和工厂自动化硬件之间建立通信，USTECH 使用 **OPC 统一架构 (OPC UA)** 标准。 OPC UA 是一种独立于平台、面向服务的架构，可提供安全、可靠的通信。它取代了旧版仅限 Windows 的 OPC DA 协议，支持内置 SSL 加密、用户身份验证和数据冗余。</p>
-<p>在标准安装中，**<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem 人机界面</a>** 运行 FT-NIR 光谱仪充当 OPC UA 服务器，将预测浓度值、传感器状态和诊断标志作为其地址空间中的节点（标签）公开。工厂的 SCADA 系统或 PLC 充当 OPC UA 客户端，定期订阅这些标签。</p>
+<p>为了在光谱软件和工厂自动化硬件之间建立通信，USTECH 使用 <strong>OPC 统一架构 (OPC UA)</strong> 标准。 OPC UA 是一种独立于平台、面向服务的架构，可提供安全、可靠的通信。它取代了旧版仅限 Windows 的 OPC DA 协议，支持内置 SSL 加密、用户身份验证和数据冗余。</p>
+<p>在标准安装中，<strong><a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem 人机界面</a></strong> 运行 FT-NIR 光谱仪充当 OPC UA 服务器，将预测浓度值、传感器状态和诊断标志作为其地址空间中的节点（标签）公开。工厂的 SCADA 系统或 PLC 充当 OPC UA 客户端，定期订阅这些标签。</p>
 <h2>映射标准 OPC UA 节点 ID</h2>
-<p>为了简化集成，USTECH 的 **ProChem 平台** 采用标准化的 OPC UA 命名空间结构。下表列出了闭环安装期间映射的主要数据标签：</p>
+<p>为了简化集成，USTECH 的 <strong>ProChem 平台</strong> 采用标准化的 OPC UA 命名空间结构。下表列出了闭环安装期间映射的主要数据标签：</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>

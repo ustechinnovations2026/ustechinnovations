@@ -214,18 +214,18 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 دقائق قراءة</span>
 <h1 class="blog-post-title">اختيار الطول الموجي وهندسة الميزات للنماذج الطيفية NIR</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">كيفية تنفيذ الفاصل الزمني PLS (iPLS) والخوارزميات الجينية في كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>منصة لإزالة الضوضاء، وعزل نطاقات الامتصاص الكيميائي، وتعزيز إمكانية نقل النموذج.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">كيفية تنفيذ الفاصل الزمني PLS (iPLS) والخوارزميات الجينية في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>منصة لإزالة الضوضاء، وعزل نطاقات الامتصاص الكيميائي، وتعزيز إمكانية نقل النموذج.</p>
 </div>
 <div class="blog-post-content">
 <h2>لماذا الحد من نطاق الطول الموجي؟</h2>
-<p>تعمل مقاييس الطيف الحديثة (مثل **ProLine2550**) على جمع البيانات عبر نطاق الأشعة تحت الحمراء القريب الكامل (1350 إلى 2550 نانومتر)، مما ينتج عنه مئات من متغيرات الطول الموجي المترابطة للغاية. على الرغم من أن تركيب نموذج انحدار المربعات الصغرى الجزئية (PLS) على الطيف بأكمله يعد أمرًا قياسيًا، إلا أنه نادرًا ما يكون النهج الأكثر قوة. يتضمن النطاق الكامل مناطق لا تحتوي على أي معلومات كيميائية عن المادة التحليلية المستهدفة، مثل الضوضاء الخلفية، أو تدفق المستشعر، أو نطاقات امتصاص الماء القوية التي تشبع الكاشف.</p>
+<p>تعمل مقاييس الطيف الحديثة (مثل <strong>ProLine2550</strong>) على جمع البيانات عبر نطاق الأشعة تحت الحمراء القريب الكامل (1350 إلى 2550 نانومتر)، مما ينتج عنه مئات من متغيرات الطول الموجي المترابطة للغاية. على الرغم من أن تركيب نموذج انحدار المربعات الصغرى الجزئية (PLS) على الطيف بأكمله يعد أمرًا قياسيًا، إلا أنه نادرًا ما يكون النهج الأكثر قوة. يتضمن النطاق الكامل مناطق لا تحتوي على أي معلومات كيميائية عن المادة التحليلية المستهدفة، مثل الضوضاء الخلفية، أو تدفق المستشعر، أو نطاقات امتصاص الماء القوية التي تشبع الكاشف.</p>
 <p>يؤدي إنشاء معايرات بأطوال موجية غير ضرورية إلى زيادة خطر التجهيز الزائد، ويجعل النماذج عرضة للتغيرات في درجات الحرارة المحيطة، ويتطلب عددًا أكبر من المتغيرات الكامنة (LVs)، مما يقلل من إمكانية نقل المعايرة بين الأجهزة.</p>
 <blockquote>"إن اختيار الأطوال الموجية المثلى هو شكل من أشكال هندسة الميزات متعددة المتغيرات. ومن خلال إزالة النطاقات التي تهيمن عليها الضوضاء، نقوم بإنشاء معايرة أبسط وأكثر قوة يتم تعميمها عبر مقاييس الطيف المختلفة."</blockquote>
 <h2>الفاصل الزمني PLS (iPLS): اختيار الشبكة المنهجي</h2>
-<p>**الفاصل الزمني PLS (iPLS)** هو خوارزمية منهجية تقسم الطيف المعالج مسبقًا بالكامل إلى مجموعة من فترات الطول الموجي الأصغر وغير المتداخلة (عادةً من 10 إلى 40 فواصل زمنية). تقوم الخوارزمية ببناء نموذج PLS محلي لكل فاصل زمني فردي وتحسب خطأ مربع الجذر المتوسط ​​للتحقق من الصحة (RMSECV).</p>
+<p><strong>الفاصل الزمني PLS (iPLS)</strong> هو خوارزمية منهجية تقسم الطيف المعالج مسبقًا بالكامل إلى مجموعة من فترات الطول الموجي الأصغر وغير المتداخلة (عادةً من 10 إلى 40 فواصل زمنية). تقوم الخوارزمية ببناء نموذج PLS محلي لكل فاصل زمني فردي وتحسب خطأ مربع الجذر المتوسط ​​للتحقق من الصحة (RMSECV).</p>
 <p>ومن خلال مقارنة RMSECV لجميع النماذج المحلية مع النموذج العالمي كامل الطيف، يحدد iPLS الفاصل الزمني المحدد - أو مجموعة الفواصل الزمنية - التي تنتج أقل خطأ في التنبؤ. وهذا فعال للغاية لعزل النغمات الجزيئية المتميزة (على سبيل المثال، نطاقات N-H في البروتين أو نطاقات CH في الدهون).</p>
 <h2>الخوارزميات الجينية: الاختيار التطوري</h2>
-<p>عندما يكون للمادة الكيميائية المستهدفة نطاقات امتصاص منتشرة عبر مناطق متعددة، فإن عمليات البحث الشبكية على أساس الفاصل الزمني تكون غير كافية. ** تستخدم الخوارزميات الجينية (GAs) ** إستراتيجية بحث تطورية للعثور على النطاقات المثالية:</p>
+<p>عندما يكون للمادة الكيميائية المستهدفة نطاقات امتصاص منتشرة عبر مناطق متعددة، فإن عمليات البحث الشبكية على أساس الفاصل الزمني تكون غير كافية.  <strong>تستخدم الخوارزميات الجينية (GAs)</strong>  إستراتيجية بحث تطورية للعثور على النطاقات المثالية:</p>
 <ul>
 <li><strong>الكروموسومات:</strong>يتم تمثيل الأطوال الموجية كسلاسل ثنائية (1 للاختيار، 0 للاستبعاد).</li>
 <li><strong>السكان الأولي:</strong>يتم إنشاء مجموعة بداية من مجموعات الطول الموجي العشوائية.</li>
@@ -255,18 +255,18 @@
 <td><strong>iPLS تم التحديد</strong></td>
 <td>1680 – 1740 و 2200 – 2260 نانومتر</td>
 <td><strong>5 LV</strong></td>
-<td><strong>≥ 1.12 مجم كوه/جم</strong></td>
+<td><strong>≤ 1.12 مجم كوه/جم</strong></td>
 </tr>
 <tr>
 <td><strong>تم التحديد</strong></td>
 <td>نطاقات مختارة في مناطق C-H/O-H</td>
 <td><strong>4 LV</strong></td>
-<td><strong>≥ 1.05 مجم كوه/جم</strong></td>
+<td><strong>≤ 1.05 مجم كوه/جم</strong></td>
 </tr>
 </tbody>
 </table>
-<h2>لماذا الحد من نطاق الطول الموجي؟<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</h2>
-<p>لتحسين النماذج الخاصة بك في ** كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح**:</p>
+<h2>تحسين الطول الموجي في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> جناح</h2>
+<p>لتحسين النماذج الخاصة بك في  <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</strong>:</p>
 <ol>
 <li>افتح نموذج المعايرة الخاص بك وانتقل إلى قائمة "تحديد الميزة".</li>
 <li>حدد "الفاصل الزمني PLS" لتشغيل بحث الشبكة، أو "الخوارزمية الجينية" للتحسين التطوري.</li>
@@ -295,7 +295,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
+<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
 </label>
 </form>
 </div>
@@ -309,7 +309,7 @@
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مرشد</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">فهم Savitzky-Golay التصفية في المعالجة المسبقة</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">دليل تعليمي حول رياضيات المعالجة الطيفية، واختيار المعلمات المتجانسة، والتكوينات المشتقة في كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">دليل تعليمي حول رياضيات المعالجة الطيفية، واختيار المعلمات المتجانسة، والتكوينات المشتقة في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 <a class="btn-text" href="blog-savitzky-golay-filtering.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">قراءة الدليل</a>
 </div>
 </div>
@@ -318,8 +318,8 @@
 <img alt="مقدمة إلى انحدار PLS في مجموعة cali<span class="calix-x">X</span>" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مرشد</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">مقدمة إلى PLS الانحدار في كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">برنامج تعليمي خطوة بخطوة يشرح كيفية تجميع نماذج المعايرة من قيم الكيمياء الرطبة المرجعية باستخدام الكالي<span class="calix-x" style="color: #38b6ff !important;">X</span>منصة.</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">مقدمة إلى PLS الانحدار في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">برنامج تعليمي خطوة بخطوة يشرح كيفية تجميع نماذج المعايرة من قيم الكيمياء الرطبة المرجعية باستخدام الcali<span class="calix-x" style="color: #38b6ff !important;">X</span>منصة.</p>
 <a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">قراءة البرنامج التعليمي</a>
 </div>
 </div>

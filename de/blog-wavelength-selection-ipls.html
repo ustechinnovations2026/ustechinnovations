@@ -214,18 +214,18 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 Min. Lesezeit</span>
 <h1 class="blog-post-title">Wellenlängenauswahl und Feature-Engineering für NIR-Spektralmodelle</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">So implementieren Sie Intervall PLS (iPLS) und genetische Algorithmen im Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Plattform zur Rauschunterdrückung, zur Isolierung chemischer Absorptionsbanden und zur Verbesserung der Modellportabilität.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">So implementieren Sie Intervall PLS (iPLS) und genetische Algorithmen im cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Plattform zur Rauschunterdrückung, zur Isolierung chemischer Absorptionsbanden und zur Verbesserung der Modellportabilität.</p>
 </div>
 <div class="blog-post-content">
 <h2>Warum den Wellenlängenbereich begrenzen?</h2>
-<p>Moderne Prozessspektrometer (wie das **ProLine2550**) sammeln Daten über den gesamten Nahinfrarotbereich (1.350 bis 2.550 nm) und liefern Hunderte hochkorrelierte Wellenlängenvariablen. Obwohl die Anpassung eines Regressionsmodells der partiellen kleinsten Quadrate (PLS) auf das gesamte Spektrum Standard ist, ist es selten der robusteste Ansatz. Das gesamte Spektrum umfasst Bereiche, die keine chemischen Informationen über Ihren Zielanalyten enthalten, wie z. B. Hintergrundrauschen, Sensorabfall oder starke Wasserabsorptionsbanden, die den Detektor sättigen.</p>
+<p>Moderne Prozessspektrometer (wie das <strong>ProLine2550</strong>) sammeln Daten über den gesamten Nahinfrarotbereich (1.350 bis 2.550 nm) und liefern Hunderte hochkorrelierte Wellenlängenvariablen. Obwohl die Anpassung eines Regressionsmodells der partiellen kleinsten Quadrate (PLS) auf das gesamte Spektrum Standard ist, ist es selten der robusteste Ansatz. Das gesamte Spektrum umfasst Bereiche, die keine chemischen Informationen über Ihren Zielanalyten enthalten, wie z. B. Hintergrundrauschen, Sensorabfall oder starke Wasserabsorptionsbanden, die den Detektor sättigen.</p>
 <p>Die Erstellung von Kalibrierungen mit unnötigen Wellenlängen erhöht das Risiko einer Überanpassung, macht Modelle anfällig für Änderungen der Umgebungstemperatur und erfordert eine höhere Anzahl latenter Variablen (LVs), was die Übertragbarkeit der Kalibrierung zwischen Instrumenten beeinträchtigt.</p>
 <blockquote>„Die Auswahl der optimalen Wellenlängen ist eine Form des multivariaten Feature-Engineerings. Indem wir rauschdominierte Bänder entfernen, schaffen wir eine einfachere, robustere Kalibrierung, die sich auf verschiedene Spektrometer verallgemeinert.“</blockquote>
 <h2>Intervall PLS (iPLS): Systematische Rasterauswahl</h2>
-<p>**Intervall PLS (iPLS)** ist ein systematischer Algorithmus, der das gesamte vorverarbeitete Spektrum in eine Reihe kleinerer, sich nicht überlappender Wellenlängenintervalle (typischerweise 10 bis 40 Intervalle) unterteilt. Der Algorithmus erstellt ein lokales PLS-Modell für jedes einzelne Intervall und berechnet den quadratischen Mittelfehler der Kreuzvalidierung (RMSECV).</p>
+<p><strong>Intervall PLS (iPLS)</strong> ist ein systematischer Algorithmus, der das gesamte vorverarbeitete Spektrum in eine Reihe kleinerer, sich nicht überlappender Wellenlängenintervalle (typischerweise 10 bis 40 Intervalle) unterteilt. Der Algorithmus erstellt ein lokales PLS-Modell für jedes einzelne Intervall und berechnet den quadratischen Mittelfehler der Kreuzvalidierung (RMSECV).</p>
 <p>Durch den Vergleich der RMSECV aller lokalen Modelle mit dem globalen Vollspektrummodell identifiziert iPLS das spezifische Intervall – oder die Kombination von Intervallen –, das den niedrigsten Vorhersagefehler ergibt. Dies ist äußerst effektiv zur Isolierung unterschiedlicher molekularer Obertöne (z. B. N-H-Banden in Protein oder C-H-Banden in Fett).</p>
 <h2>Genetische Algorithmen: Evolutionäre Selektion</h2>
-<p>Wenn die Absorptionsbanden der Zielchemikalie über mehrere Regionen verteilt sind, reichen intervallbasierte Rastersuchen nicht aus. **Genetische Algorithmen (GAs)** verwenden eine evolutionäre Suchstrategie, um optimale Banden zu finden:</p>
+<p>Wenn die Absorptionsbanden der Zielchemikalie über mehrere Regionen verteilt sind, reichen intervallbasierte Rastersuchen nicht aus. <strong>Genetische Algorithmen (GAs)</strong> verwenden eine evolutionäre Suchstrategie, um optimale Banden zu finden:</p>
 <ul>
 <li><strong>Chromosomen:</strong>Wellenlängen werden als binäre Zeichenfolgen dargestellt (1 für „Auswählen“, 0 für „Ausschließen“).</li>
 <li><strong>Anfangsbevölkerung:</strong>Es wird ein Startpool zufälliger Wellenlängenkombinationen erstellt.</li>
@@ -265,8 +265,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Wellenlängenoptimierung in Kali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
-<p>Zur Optimierung Ihrer Modelle in **kali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite**:</p>
+<h2>Wellenlängenoptimierung in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
+<p>Zur Optimierung Ihrer Modelle in <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</strong>:</p>
 <ol>
 <li>Öffnen Sie Ihr Kalibrierungsmodell und navigieren Sie zum Menü „Funktionsauswahl“.</li>
 <li>Wählen Sie „Intervall PLS“, um eine Rastersuche durchzuführen, oder „Genetischer Algorithmus“ für die evolutionäre Optimierung.</li>
@@ -295,7 +295,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
+<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
 </label>
 </form>
 </div>
@@ -309,7 +309,7 @@
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">FÜHRUNG</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">Grundlegendes zur Savitzky-Golay-Filterung in der Vorverarbeitung</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Ein pädagogischer Leitfaden zur spektralen Vorverarbeitungsmathematik, zur Auswahl von Glättungsparametern und zu Ableitungskonfigurationen in Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Ein pädagogischer Leitfaden zur spektralen Vorverarbeitungsmathematik, zur Auswahl von Glättungsparametern und zu Ableitungskonfigurationen in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 <a class="btn-text" href="blog-savitzky-golay-filtering.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leitfaden lesen</a>
 </div>
 </div>
@@ -318,8 +318,8 @@
 <img alt="Einführung in die PLS-Regression in der cali<span class="calix-x">X</span> Suite" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">FÜHRUNG</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Einführung in die PLS-Regression in Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Eine Schritt-für-Schritt-Anleitung, die erklärt, wie man mithilfe des Calibrationskalibrierungsmodells anhand von Referenzwerten der Nasschemie Kalibrierungsmodelle erstellt<span class="calix-x" style="color: #38b6ff !important;">X</span>Plattform.</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Einführung in die PLS-Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Eine Schritt-für-Schritt-Anleitung, die erklärt, wie man mithilfe der cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Plattform Kalibrierungsmodelle anhand von Referenzwerten der Nasschemie erstellt.</p>
 <a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lesen Sie das Tutorial</a>
 </div>
 </div>

@@ -218,13 +218,13 @@
 </div>
 <div class="blog-post-content">
 <h2>¿Qué es la regresión de mínimos cuadrados parciales (PLS)?</h2>
-<p>Los espectros del infrarrojo cercano (NIR) constan de miles de puntos de longitud de onda individuales. Debido a que la absorción de luz NIR se manifiesta como matices vibratorios amplios y superpuestos en lugar de picos agudos, una sola longitud de onda rara vez es suficiente para predecir una concentración química. Necesitamos estadísticas multivariadas, particularmente para complejos<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">aplicaciones químicas y farmacéuticas</a>.</p>
-<p><strong>Regresión de mínimos cuadrados parciales (PLS)</strong>es el algoritmo quimiométrico estándar de oro. Reduce los miles de variables espectrales altamente colineales en unos pocos factores ortogonales (llamados<strong>Variables latentes (LV)</strong>o componentes principales) que maximizan la covarianza entre los datos espectrales y las concentraciones de referencia del laboratorio objetivo.</p>
-<p>Desarrollar un modelo solía requerir secuencias de comandos manuales en MATLAB o R. Dentro del **cali<span class="calix-x">X</span>AutoML Suite** (que crea archivos altamente precisos<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>Modelos de AutoML</a>), este flujo de trabajo se simplifica en cinco etapas claras.</p>
+<p>Los espectros del infrarrojo cercano (NIR) constan de miles de puntos de longitud de onda individuales. Debido a que la absorción de luz NIR se manifiesta como matices vibratorios amplios y superpuestos en lugar de picos agudos, una sola longitud de onda rara vez es suficiente para predecir una concentración química. Necesitamos estadísticas multivariadas, particularmente para complejos <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">aplicaciones químicas y farmacéuticas</a>.</p>
+<p><strong>Regresión de mínimos cuadrados parciales (PLS)</strong>es el algoritmo quimiométrico estándar de oro. Reduce los miles de variables espectrales altamente colineales en unos pocos factores ortogonales (llamados <strong>Variables latentes (LV)</strong>o componentes principales) que maximizan la covarianza entre los datos espectrales y las concentraciones de referencia del laboratorio objetivo.</p>
+<p>Desarrollar un modelo solía requerir secuencias de comandos manuales en MATLAB o R. Dentro del <strong>cali<span class="calix-x">X</span>AutoML Suite</strong> (que crea archivos altamente precisos <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>Modelos de AutoML</a>), este flujo de trabajo se simplifica en cinco etapas claras.</p>
 ---
 <h2>Paso 1: Alineación e importación de datos</h2>
-<p>Primero, prepare una hoja de cálculo de calibración (CSV o Excel) que haga coincidir los nombres de sus archivos espectrales con los resultados del laboratorio de química húmeda. Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>admite la importación directa de formatos de bases de datos de espectrómetros sin procesar y formatos de intercambio espectroscópico estándar como JCAMP-DX.</p>
-<p>Una vez importado, cali<span class="calix-x">X</span>divide su conjunto de datos automáticamente:<strong>75% para calibración y validación cruzada</strong>(para entrenar el modelo) y<strong>25% como conjunto de validación independiente</strong>(se mantiene completamente separado para probar el rendimiento predictivo final).</p>
+<p>Primero, prepare una hoja de cálculo de calibración (CSV o Excel) que haga coincidir los nombres de sus archivos espectrales con los resultados del laboratorio de química húmeda. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>admite la importación directa de formatos de bases de datos de espectrómetros sin procesar y formatos de intercambio espectroscópico estándar como JCAMP-DX.</p>
+<p>Una vez importado, cali<span class="calix-x">X</span>divide su conjunto de datos automáticamente:<strong>75% para calibración y validación cruzada</strong>(para entrenar el modelo) y <strong>25% como conjunto de validación independiente</strong>(se mantiene completamente separado para probar el rendimiento predictivo final).</p>
 <h2>Paso 2: elegir el preprocesamiento espectral</h2>
 <p>Las señales de luz sin procesar NIR contienen ruido de dispersión física causado por variaciones del tamaño de las partículas, la densidad de empaquetamiento de la muestra o la distancia de la sonda. El preprocesamiento espectral elimina matemáticamente estas líneas de base físicas, por lo que el modelo PLS se centra exclusivamente en la absorción química.</p>
 <p>en la cali<span class="calix-x">X</span>canalización, puede aplicar y encadenar pasos de preprocesamiento estándar:</p>
@@ -235,8 +235,8 @@
 </ul>
 <p><em>Consejo: cali<span class="calix-x">X</span>El motor AutoML de AutoML ejecutará automáticamente una búsqueda en cuadrícula sobre docenas de combinaciones de preprocesamiento para sugerir la secuencia óptima para su matriz.</em></p>
 <h2>Paso 3: Seleccionar variables latentes (LV)</h2>
-<p>Seleccionar la cantidad correcta de variables latentes es fundamental para evitar el **sobreajuste**. Si selecciona muy pocos LV, su modelo no está adaptado y pierde correlaciones químicas. Si selecciona demasiados LV, su modelo comienza a ajustar ruido espectral aleatorio, lo que fallará al escanear nuevas muestras.</p>
-<p>Mira el<strong>Error cuadrático medio de validación cruzada (RMSECV)</strong>curva. Seleccione el número de VI en el "codo" de la curva, donde el error deja de caer significativamente. Agregar más componentes más allá de este punto solo encaja con el ruido.</p>
+<p>Seleccionar la cantidad correcta de variables latentes es fundamental para evitar el <strong>sobreajuste</strong>. Si selecciona muy pocos LV, su modelo no está adaptado y pierde correlaciones químicas. Si selecciona demasiados LV, su modelo comienza a ajustar ruido espectral aleatorio, lo que fallará al escanear nuevas muestras.</p>
+<p>Mira el <strong>Error cuadrático medio de validación cruzada (RMSECV)</strong>curva. Seleccione el número de VI en el "codo" de la curva, donde el error deja de caer significativamente. Agregar más componentes más allá de este punto solo encaja con el ruido.</p>
 <pre>
 # Sample Model Statistics Output in cali<span class="calix-x">X</span>
 ---------------------------------------------
@@ -251,9 +251,9 @@ Bias: -0.01%
 ---------------------------------------------
 </pre>
 <h2>Paso 4: Validación independiente</h2>
-<p>Para calificar el modelo para la implementación en fábrica, ejecute predicciones en el conjunto de pruebas independientes del 25 %. El<strong>Error cuadrático medio de predicción (RMSEP)</strong>Mide la precisión real que verá cuando utilice el sensor en línea. Un modelo robusto debería mostrar un RMSEP que esté muy cerca de su error de validación cruzada (RMSECV).</p>
+<p>Para calificar el modelo para la implementación en fábrica, ejecute predicciones en el conjunto de pruebas independientes del 25 %. El <strong>Error cuadrático medio de predicción (RMSEP)</strong>Mide la precisión real que verá cuando utilice el sensor en línea. Un modelo robusto debería mostrar un RMSEP que esté muy cerca de su error de validación cruzada (RMSECV).</p>
 <h2>Paso 5: Exportar a ProChem</h2>
-<p>Una vez que esté satisfecho con el rendimiento del modelo, haga clic en<strong>"Paquete de modelo de exportación"</strong>. Esto genera un `.cali seguro<span class="calix-x" style="color: #38b6ff !important;">X</span>`archivo modelo. Cargue este archivo directamente en el<strong>ProChem Software de control de procesos</strong>en su línea de producción. ProChem aplicará automáticamente los pasos de preprocesamiento preconfigurados a los espectros en línea y predecirá las concentraciones en tiempo real, enviando los resultados directamente a su planta PLC.</p>
+<p>Una vez que esté satisfecho con el rendimiento del modelo, haga clic en<strong>"Paquete de modelo de exportación"</strong>. Esto genera un archivo de modelo `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>` seguro. Cargue este archivo directamente en el <strong>ProChem Software de control de procesos</strong> en su línea de producción. ProChem aplicará automáticamente los pasos de preprocesamiento preconfigurados a los espectros en línea y predecirá las concentraciones en tiempo real, enviando los resultados directamente a su planta PLC.</p>
 <h2>Resumen</h2>
 <p>Al combinar la rigurosa lógica de regresión PLS con la optimización del preprocesamiento automatizado, el cali<span class="calix-x">X</span>Suite hace que la quimiometría sea accesible para los ingenieros de control de calidad sin sacrificar la profundidad científica. Obtendrá modelos confiables y robustos listos para proteger sus márgenes B2B desde el primer día.</p>
 <div class="blog-post-references">
@@ -276,7 +276,7 @@ Bias: -0.01%
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
+<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
 </label>
 </form>
 </div>

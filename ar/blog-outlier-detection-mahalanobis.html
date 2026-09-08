@@ -214,7 +214,7 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 دقائق قراءة</span>
 <h1 class="blog-post-title">الكشف الكيميائي الخارجي: مسافة المهالانوبيس مقابل T² لفندق</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">دليل تحليلي يوضح بالتفصيل الرياضيات متعددة المتغيرات المستخدمة لتحديد الحالات الشاذة الطيفية، وانجرافات الأدوات، والمواد الخام غير المطابقة للمواصفات في كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">دليل تحليلي يوضح بالتفصيل الرياضيات متعددة المتغيرات المستخدمة لتحديد الحالات الشاذة الطيفية، وانجرافات الأدوات، والمواد الخام غير المطابقة للمواصفات في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح.</p>
 </div>
 <div class="blog-post-content">
 <h2>دور الكشف الخارجي في التحليل الطيفي</h2>
@@ -223,9 +223,9 @@
 <blockquote>"يعمل الاكتشاف الخارجي كجهاز مناعي لمحلل العمليات. فهو يضمن عدم إخراج التنبؤات إلا عندما تتطابق العينة مع مساحة المعايرة."</blockquote>
 <h2>مسافة ماهالانوبيس: قياس التباين</h2>
 <p>تقيس المسافة الإقليدية البسيطة مسافة الخط المستقيم بين طيف العينة ومتوسط ​​المعايرة. ومع ذلك، فإن المسافة الإقليدية تفشل في القياسات الكيميائية لأنها تتجاهل الارتباط القوي (التباين) بين الأطوال الموجية المتجاورة في أطياف NIR.</p>
-<p>تعمل **مسافة Mahalanobis (MD)** على حل هذه المشكلة عن طريق قياس المسافة بواسطة مصفوفة التغاير لمجموعة بيانات المعايرة. على نحو فعال، يحسب MD اتجاه التباين، ويخصص وزنًا أقل للتغيرات في اتجاهات تباين المعايرة العادية العالية، ووزنًا مرتفعًا للانحرافات في الاتجاهات التي تكون فيها بيانات المعايرة مرتبطة بإحكام.</p>
+<p>تعمل <strong>مسافة Mahalanobis (MD)</strong> على حل هذه المشكلة عن طريق قياس المسافة بواسطة مصفوفة التغاير لمجموعة بيانات المعايرة. على نحو فعال، يحسب MD اتجاه التباين، ويخصص وزنًا أقل للتغيرات في اتجاهات تباين المعايرة العادية العالية، ووزنًا مرتفعًا للانحرافات في الاتجاهات التي تكون فيها بيانات المعايرة مرتبطة بإحكام.</p>
 <h2>Hotelling's T²: عتبات الثقة</h2>
-<p>في حين أن مسافة Mahalanobis توفر قيمة أولية للمسافة، فإننا نحتاج إلى عتبة سليمة إحصائيًا لتحديد القيم المتطرفة. **Hotelling's T²** يقوم بتطبيع مسافة Mahalanobis في مساحة عرض المكون الرئيسي (PC)، وحساب درجة متعددة المتغيرات. نظرًا لأن T² يتبع توزيع F، يمكننا وضع حدود ثقة إحصائية رسمية (عادةً 95% أو 99%):</p>
+<p>في حين أن مسافة Mahalanobis توفر قيمة أولية للمسافة، فإننا نحتاج إلى عتبة سليمة إحصائيًا لتحديد القيم المتطرفة. <strong>Hotelling's T²</strong> يقوم بتطبيع مسافة Mahalanobis في مساحة عرض المكون الرئيسي (PC)، وحساب درجة متعددة المتغيرات. نظرًا لأن T² يتبع توزيع F، يمكننا وضع حدود ثقة إحصائية رسمية (عادةً 95% أو 99%):</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -257,12 +257,12 @@
 </tr>
 </tbody>
 </table>
-<h2>تحديد الحدود الخارجية في كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</h2>
-<p>لتطبيق الحدود الخارجية في معايراتك، اتبع الخطوات التالية في **cali<span class="calix-x">X</span>جناح**:</p>
+<h2>تحديد الحدود الخارجية في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</h2>
+<p>لتطبيق الحدود الخارجية في معايراتك، اتبع الخطوات التالية في <strong>cali<span class="calix-x">X</span>جناح</strong>:</p>
 <ol>
 <li><strong>تجميع نتائج PCA/PLS:</strong>افتح ملف المعايرة الخاص بك واحسب ناقلات تحميل المكون الرئيسي.</li>
 <li><strong>تعيين فاصل الثقة:</strong>انتقل إلى علامة التبويب القيم المتطرفة وحدد `Hotelling T²`. اختر حد ثقة 99% ($\alpha = 0.01$) لنقاط التحكم الحرجة، أو 95% ($\alpha = 0.05$) للمراقبة الروتينية.</li>
-<li><strong>تمكين ProChem الإنذارات:</strong>مزامنة النموذج مع مطياف العملية. في **ProChem**، قم بتعيين مخرجات العلامة الخارجية إلى سجل PLC الخاص بك للاحتفاظ بآخر تنبؤ صالح عند تشغيل قيمة خارجية.</li>
+<li><strong>تمكين ProChem الإنذارات:</strong>مزامنة النموذج مع مطياف العملية. في <strong>ProChem</strong>، قم بتعيين مخرجات العلامة الخارجية إلى سجل PLC الخاص بك للاحتفاظ بآخر تنبؤ صالح عند تشغيل قيمة خارجية.</li>
 </ol>
 <h2>خاتمة</h2>
 <p>ويضمن نشر اكتشاف قوي للخارج باستخدام Mahalanobis Distance وT² من Hotelling سلامة محلل العملية. ومن خلال تحديد الأطياف الشاذة وعزلها، يمكن للمصنعين منع فشل المعايرة وتأمين حلقات العملية الآلية.</p>
@@ -286,7 +286,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
+<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
 </label>
 </form>
 </div>
@@ -299,8 +299,8 @@
 <img alt="مقدمة إلى انحدار PLS في مجموعة cali<span class="calix-x">X</span>" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مرشد</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">مقدمة إلى PLS الانحدار في كالي<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">برنامج تعليمي خطوة بخطوة يشرح كيفية تجميع نماذج المعايرة من قيم الكيمياء الرطبة المرجعية باستخدام الكالي<span class="calix-x" style="color: #38b6ff !important;">X</span>منصة.</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">مقدمة إلى PLS الانحدار في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>جناح</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">برنامج تعليمي خطوة بخطوة يشرح كيفية تجميع نماذج المعايرة من قيم الكيمياء الرطبة المرجعية باستخدام الcali<span class="calix-x" style="color: #38b6ff !important;">X</span>منصة.</p>
 <a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">قراءة البرنامج التعليمي</a>
 </div>
 </div>

@@ -220,22 +220,22 @@
 <h2>什么是偏最小二乘 (PLS) 回归？</h2>
 <p>近红外 (NIR) 光谱由数千个单独的波长点组成。由于近红外光吸收表现为宽广、重叠的振动泛音而不是尖锐的峰值，因此单个波长很少足以预测化学浓度。我们需要多元统计，特别是对于复杂的统计<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和制药应用</a>.</p>
 <p><strong>偏最小二乘 (PLS) 回归</strong>是金标准化学计量学算法。它将数千个高度共线性的光谱变量减少为几个正交因子（称为<strong>潜在变量 (LV)</strong>或主成分），最大化光谱数据和目标实验室参考浓度之间的协方差。</p>
-<p>开发模型过去需要在 MATLAB 或 R 中手动编写脚本。在 **cali 内<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML Suite**（构建高度准确的<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML 模型</a>），这个工作流程被简化为五个清晰的阶段。</p>
+<p>开发模型过去需要在 MATLAB 或 R 中手动编写脚本。在 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML Suite</strong> 内（构建高度准确的<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML 模型</a>），这个工作流程被简化为五个清晰的阶段。</p>
 ---
 <h2>第 1 步：数据对齐和导入</h2>
-<p>首先，准备一个校准电子表格（CSV 或 Excel），将您的光谱文件名与其湿化学实验室结果相匹配。卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>支持直接导入原始光谱仪数据库格式和标准光谱交换格式（如 JCAMP-DX）。</p>
+<p>首先，准备一个校准电子表格（CSV 或 Excel），将您的光谱文件名与其湿化学实验室结果相匹配。cali<span class="calix-x" style="color: #38b6ff !important;">X</span>支持直接导入原始光谱仪数据库格式和标准光谱交换格式（如 JCAMP-DX）。</p>
 <p>导入后，cali<span class="calix-x">X</span>自动分割您的数据集：<strong>75% 用于校准和交叉验证</strong>（训练模型）和<strong>25% 作为独立验证集</strong>（完全分开以测试最终的预测性能）。</p>
 <h2>第 2 步：选择光谱预处理</h2>
 <p>原始 NIR 光信号包含由颗粒尺寸变化、样品填充密度或探头距离引起的物理散射噪声。光谱预处理在数学上消除了这些物理基线，因此 PLS 模型纯粹关注化学吸收。</p>
-<p>在卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>管道，您可以应用并链接标准预处理步骤：</p>
+<p>在cali<span class="calix-x" style="color: #38b6ff !important;">X</span>管道，您可以应用并链接标准预处理步骤：</p>
 <ul>
 <li><strong>标准正态变量 (SNV)：</strong>对每个单独的光谱进行居中和缩放以消除乘法缩放和偏移变化。</li>
 <li><strong>乘性散射校正 (MSC)：</strong>将每个光谱与平均光谱进行回归，以隔离和消除散射斜率。</li>
 <li><strong>Savitzky-Golay 衍生物（一阶或二阶）：</strong>计算局部多项式拟合以获取导数，解决重叠带并消除基线偏移。</li>
 </ul>
-<p><em>提示：卡利<span class="calix-x" style="color: #38b6ff !important;">X</span>的 AutoML 引擎将自动对数十种预处理组合运行网格搜索，以建议矩阵的最佳序列。</em></p>
+<p><em>提示：cali<span class="calix-x" style="color: #38b6ff !important;">X</span>的 AutoML 引擎将自动对数十种预处理组合运行网格搜索，以建议矩阵的最佳序列。</em></p>
 <h2>第 3 步：选择潜在变量 (LV)</h2>
-<p>选择正确数量的潜在变量对于防止**过度拟合**至关重要。如果您选择的 LV 太少，您的模型就会拟合不足并错过化学相关性。如果您选择太多 LV，您的模型将开始拟合随机光谱噪声，这在扫描新样本时将会失败。</p>
+<p>选择正确数量的潜在变量对于防止<strong>过度拟合</strong>至关重要。如果您选择的 LV 太少，您的模型就会拟合不足并错过化学相关性。如果您选择太多 LV，您的模型将开始拟合随机光谱噪声，这在扫描新样本时将会失败。</p>
 <p>看看<strong>交叉验证的均方根误差 (RMSECV)</strong>曲线。选择曲线“弯头”处的 LV 数量，此时误差不再显着下降。超出这一点添加更多组件只会产生噪音。</p>
 <pre>
 # Sample Model Statistics Output in cali<span class="calix-x">X</span>

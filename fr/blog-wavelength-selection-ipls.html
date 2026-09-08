@@ -218,14 +218,14 @@
 </div>
 <div class="blog-post-content">
 <h2>Pourquoi limiter la plage de longueurs d'onde ?</h2>
-<p>Les spectromètres de processus modernes (comme le **ProLine2550**) collectent des données sur toute la gamme du proche infrarouge (1 350 à 2 550 nm), produisant des centaines de variables de longueur d'onde hautement corrélées. Bien que l’ajustement d’un modèle de régression des moindres carrés partiels (PLS) sur l’ensemble du spectre soit standard, il s’agit rarement de l’approche la plus robuste. Le spectre complet comprend des régions qui ne contiennent aucune information chimique sur votre analyte cible, comme le bruit de fond, l'atténuation du capteur ou les fortes bandes d'absorption d'eau qui saturent le détecteur.</p>
+<p>Les spectromètres de processus modernes (comme le <strong>ProLine2550</strong>) collectent des données sur toute la gamme du proche infrarouge (1 350 à 2 550 nm), produisant des centaines de variables de longueur d'onde hautement corrélées. Bien que l’ajustement d’un modèle de régression des moindres carrés partiels (PLS) sur l’ensemble du spectre soit standard, il s’agit rarement de l’approche la plus robuste. Le spectre complet comprend des régions qui ne contiennent aucune information chimique sur votre analyte cible, comme le bruit de fond, l'atténuation du capteur ou les fortes bandes d'absorption d'eau qui saturent le détecteur.</p>
 <p>Construire des étalonnages avec des longueurs d'onde inutiles augmente le risque de surajustement, rend les modèles sensibles aux changements de température ambiante et nécessite un nombre plus élevé de variables latentes (LV), ce qui dégrade la transférabilité de l'étalonnage entre les instruments.</p>
 <blockquote>"La sélection des longueurs d'onde optimales est une forme d'ingénierie de fonctionnalités multivariées. En supprimant les bandes dominées par le bruit, nous créons un étalonnage plus simple et plus robuste qui se généralise à différents spectromètres."</blockquote>
 <h2>Intervalle PLS (iPLS) : sélection systématique de la grille</h2>
-<p>**L'intervalle PLS (iPLS)** est un algorithme systématique qui divise l'intégralité du spectre prétraité en un ensemble d'intervalles de longueur d'onde plus petits et sans chevauchement (généralement 10 à 40 intervalles). L'algorithme construit un modèle PLS local pour chaque intervalle individuel et calcule l'erreur quadratique moyenne de validation croisée (RMSECV).</p>
+<p><strong>L'intervalle PLS (iPLS)</strong> est un algorithme systématique qui divise l'intégralité du spectre prétraité en un ensemble d'intervalles de longueur d'onde plus petits et sans chevauchement (généralement 10 à 40 intervalles). L'algorithme construit un modèle PLS local pour chaque intervalle individuel et calcule l'erreur quadratique moyenne de validation croisée (RMSECV).</p>
 <p>En comparant le RMSECV de tous les modèles locaux au modèle global à spectre complet, iPLS identifie l'intervalle spécifique (ou la combinaison d'intervalles) qui génère l'erreur de prédiction la plus faible. Ceci est très efficace pour isoler des nuances moléculaires distinctes (par exemple, les bandes N-H dans les protéines ou les bandes CH dans les graisses).</p>
 <h2>Algorithmes génétiques : sélection évolutive</h2>
-<p>Lorsque le produit chimique cible a des bandes d’absorption réparties sur plusieurs régions, les recherches de grille basées sur des intervalles sont insuffisantes. **Les algorithmes génétiques (AG)** utilisent une stratégie de recherche évolutive pour trouver des bandes optimales :</p>
+<p>Lorsque le produit chimique cible a des bandes d’absorption réparties sur plusieurs régions, les recherches de grille basées sur des intervalles sont insuffisantes. <strong>Les algorithmes génétiques (AG)</strong> utilisent une stratégie de recherche évolutive pour trouver des bandes optimales :</p>
 <ul>
 <li><strong>Chromosomes :</strong>Les longueurs d'onde sont représentées sous forme de chaînes binaires (1 pour sélectionner, 0 pour exclure).</li>
 <li><strong>Population initiale :</strong>Un pool de départ de combinaisons de longueurs d'onde aléatoires est créé.</li>
@@ -266,7 +266,7 @@
 </tbody>
 </table>
 <h2>Optimisation de la longueur d'onde en cali<span class="calix-x">X</span>Suite</h2>
-<p>Pour optimiser vos modèles en **cali<span class="calix-x">X</span>Suite**:</p>
+<p>Pour optimiser vos modèles en <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
 <ol>
 <li>Ouvrez votre modèle d'étalonnage et accédez au menu « Sélection des fonctionnalités ».</li>
 <li>Sélectionnez « Intervalle PLS » pour exécuter une recherche dans la grille, ou « Algorithme génétique » pour une optimisation évolutive.</li>
@@ -295,7 +295,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
+<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
 </label>
 </form>
 </div>

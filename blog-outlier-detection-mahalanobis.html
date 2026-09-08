@@ -224,9 +224,9 @@ Espa&#241;ol
 </blockquote>
 <h2>Mahalanobis Distance: Measuring Covariance</h2>
 <p>Simple Euclidean distance measures the straight-line distance between a sample spectrum and the calibration mean. However, Euclidean distance fails in chemometrics because it ignores the strong correlation (covariance) between adjacent wavelengths in NIR spectra. </p>
-<p>**Mahalanobis Distance (MD)** resolves this by scaling the distance by the covariance matrix of the calibration dataset. Effectively, MD accounts for the direction of variance, assigning less weight to variations in directions of high normal calibration variance, and high weight to deviations in directions where the calibration data is tightly bound.</p>
+<p><strong>Mahalanobis Distance (MD)</strong> resolves this by scaling the distance by the covariance matrix of the calibration dataset. Effectively, MD accounts for the direction of variance, assigning less weight to variations in directions of high normal calibration variance, and high weight to deviations in directions where the calibration data is tightly bound.</p>
 <h2>Hotelling's T&sup2;: Confidence Thresholds</h2>
-<p>While Mahalanobis Distance provides a raw distance value, we need a statistically sound threshold to flag outliers. **Hotelling's T&sup2;** normalizes the Mahalanobis Distance in a Principal Component (PC) projection space, calculating a multivariate score. Because T&sup2; follows an F-distribution, we can establish formal statistical confidence limits (typically 95% or 99%):</p>
+<p>While Mahalanobis Distance provides a raw distance value, we need a statistically sound threshold to flag outliers. <strong>Hotelling's T&sup2;</strong> normalizes the Mahalanobis Distance in a Principal Component (PC) projection space, calculating a multivariate score. Because T&sup2; follows an F-distribution, we can establish formal statistical confidence limits (typically 95% or 99%):</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -259,11 +259,11 @@ Espa&#241;ol
 </tbody>
 </table>
 <h2>Setting Outlier Limits in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</h2>
-<p>To implement outlier limits in your calibrations, follow these steps in **cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite**:</p>
+<p>To implement outlier limits in your calibrations, follow these steps in <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</strong>:</p>
 <ol>
 <li><strong>Compile PCA/PLS scores:</strong> Open your calibration file and calculate the principal component loading vectors.</li>
 <li><strong>Set Confidence Interval:</strong> Navigate to the Outliers tab and select `Hotelling T&sup2;`. Choose a 99% confidence threshold ($\alpha = 0.01$) for critical control points, or 95% ($\alpha = 0.05$) for routine monitoring.</li>
-<li><strong>Enable ProChem Alarms:</strong> Sync the model to the process spectrometer. In **ProChem**, map the outlier flag output to your PLC register to hold the last valid prediction when an outlier is triggered.</li>
+<li><strong>Enable ProChem Alarms:</strong> Sync the model to the process spectrometer. In <strong>ProChem</strong>, map the outlier flag output to your PLC register to hold the last valid prediction when an outlier is triggered.</li>
 </ol>
 <h2>Conclusion</h2>
 <p>Deploying robust outlier detection using Mahalanobis Distance and Hotelling's T&sup2; ensures process analyzer integrity. By identifying and isolating anomalous spectra, manufacturers can prevent calibration failures and secure automated process loops.</p>

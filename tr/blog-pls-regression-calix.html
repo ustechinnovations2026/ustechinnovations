@@ -219,15 +219,15 @@
 <div class="blog-post-content">
 <h2>Kısmi En Küçük Kareler (PLS) Regresyon Nedir?</h2>
 <p>Yakın kızılötesi (NIR) spektrumları binlerce ayrı dalga boyu noktasından oluşur. NIR ışık absorpsiyonu, keskin tepe noktalarından ziyade geniş, örtüşen titreşim tonları olarak ortaya çıktığı için, tek bir dalga boyu, bir kimyasal konsantrasyonu tahmin etmek için nadiren yeterlidir. Özellikle karmaşık durumlar için çok değişkenli istatistiklere ihtiyacımız var.<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">kimyasal ve farmasötik uygulamalar</a>.</p>
-<p><strong>Kısmi En Küçük Kareler (PLS) Regresyon</strong>altın standart kemometrik algoritmadır. Binlerce yüksek düzeyde eşdoğrusal spektral değişkeni birkaç ortogonal faktöre (bunlara denir) indirger.<strong>Gizli Değişkenler (LV'ler)</strong>veya ana bileşenler), spektral veriler ile hedef laboratuvar referans konsantrasyonları arasındaki kovaryansı maksimuma çıkaran.</p>
-<p>MATLAB veya R'de manuel komut dosyası yazmayı gerektiren bir model geliştirmek. **cali içinde<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML Suite** (son derece hassas<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML modelleri</a>), bu iş akışı beş net aşamaya basitleştirilmiştir.</p>
+<p><strong>Kısmi En Küçük Kareler (PLS) Regresyon</strong> altın standart kemometrik algoritmadır. Binlerce yüksek düzeyde eşdoğrusal spektral değişkeni birkaç ortogonal faktöre (bunlara denir) indirger.<strong>Gizli Değişkenler (LV'ler)</strong>veya ana bileşenler), spektral veriler ile hedef laboratuvar referans konsantrasyonları arasındaki kovaryansı maksimuma çıkaran.</p>
+<p>MATLAB veya R'de manuel komut dosyası yazmayı gerektiren bir model geliştirmek. <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML Suite</strong> içinde (son derece hassas <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML modelleri</a>), bu iş akışı beş net aşamaya basitleştirilmiştir.</p>
 ---
 <h2>1. Adım: Veri Hizalama ve İçe Aktarma</h2>
-<p>Öncelikle, spektral dosya adlarınızı ıslak kimya laboratuvar sonuçlarıyla eşleştiren bir kalibrasyon elektronik tablosu (CSV veya Excel) hazırlayın. Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>ham spektrometre veritabanı formatlarının ve JCAMP-DX gibi standart spektroskopik değişim formatlarının doğrudan içe aktarılmasını destekler.</p>
-<p>Bir kez içe aktarıldığında, cali<span class="calix-x">X</span>veri kümenizi otomatik olarak böler:<strong>Kalibrasyon ve Çapraz Doğrulama için %75</strong>(modeli eğitmek için) ve<strong>Bağımsız Doğrulama Seti olarak %25</strong>(nihai tahmin performansını test etmek için tamamen ayrı tutulur).</p>
+<p>Öncelikle, spektral dosya adlarınızı ıslak kimya laboratuvar sonuçlarıyla eşleştiren bir kalibrasyon elektronik tablosu (CSV veya Excel) hazırlayın. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>ham spektrometre veritabanı formatlarının ve JCAMP-DX gibi standart spektroskopik değişim formatlarının doğrudan içe aktarılmasını destekler.</p>
+<p>Bir kez içe aktarıldığında, cali<span class="calix-x">X</span>veri kümenizi otomatik olarak böler:<strong>Kalibrasyon ve Çapraz Doğrulama için %75</strong>(modeli eğitmek için) ve <strong>Bağımsız Doğrulama Seti olarak %25</strong>(nihai tahmin performansını test etmek için tamamen ayrı tutulur).</p>
 <h2>Adım 2: Spektral Ön İşlemeyi Seçme</h2>
 <p>Ham NIR ışık sinyalleri, parçacık boyutu değişimlerinin, numune paketleme yoğunluğunun veya prob mesafesinin neden olduğu fiziksel dağılım gürültüsünü içerir. Spektral ön işleme, bu fiziksel temel çizgileri matematiksel olarak ortadan kaldırır, böylece PLS modeli yalnızca kimyasal absorpsiyona odaklanır.</p>
-<p>Cali'de<span class="calix-x" style="color: #38b6ff !important;">X</span>boru hattını kullanarak standart ön işleme adımlarını uygulayabilir ve zincirleyebilirsiniz:</p>
+<p>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> boru hattında standart ön işleme adımlarını uygulayabilir ve zincirleyebilirsiniz:</p>
 <ul>
 <li><strong>Standart Normal Değişken (SNV):</strong>Çarpımsal ölçeklendirmeyi ve sapmaları dengelemek için her bir spektrumu ortalamak ve ölçeklendirmek.</li>
 <li><strong>Çarpımsal Dağılım Düzeltmesi (MSC):</strong>Dağılım eğimlerini izole etmek ve ortadan kaldırmak için her spektrumu ortalama spektruma göre regrese eder.</li>
@@ -235,8 +235,8 @@
 </ul>
 <p><em>İpucu: cali<span class="calix-x">X</span>AutoML motoru, matrisiniz için en uygun sırayı önermek amacıyla düzinelerce ön işleme kombinasyonu üzerinde otomatik olarak bir ızgara araması çalıştıracaktır.</em></p>
 <h2>Adım 3: Gizli Değişkenlerin (LV'ler) Seçilmesi</h2>
-<p>**Fazla uyumu** önlemek için doğru sayıda Gizli Değişkenin seçilmesi kritik öneme sahiptir. Çok az sayıda LV seçerseniz modeliniz yetersiz kalır ve kimyasal korelasyonları kaçırır. Çok fazla LV seçerseniz modeliniz rastgele spektral gürültüyü uydurmaya başlar ve bu, yeni örnekleri tararken başarısız olur.</p>
-<p>Şuna bak<strong>Çapraz Doğrulamanın Ortalama Karekök Hatası (RMSECV)</strong>eğri. Hatanın önemli ölçüde düşmeyi bıraktığı eğrinin "dirseğindeki" LV sayısını seçin. Bu noktanın ötesinde daha fazla bileşen eklemek yalnızca gürültüye uyum sağlar.</p>
+<p><strong>Fazla uyumu</strong> önlemek için doğru sayıda Gizli Değişkenin seçilmesi kritik öneme sahiptir. Çok az sayıda LV seçerseniz modeliniz yetersiz kalır ve kimyasal korelasyonları kaçırır. Çok fazla LV seçerseniz modeliniz rastgele spektral gürültüyü uydurmaya başlar ve bu, yeni örnekleri tararken başarısız olur.</p>
+<p>Şuna bak <strong>Çapraz Doğrulamanın Ortalama Karekök Hatası (RMSECV)</strong>eğri. Hatanın önemli ölçüde düşmeyi bıraktığı eğrinin "dirseğindeki" LV sayısını seçin. Bu noktanın ötesinde daha fazla bileşen eklemek yalnızca gürültüye uyum sağlar.</p>
 <pre>
 # Sample Model Statistics Output in cali<span class="calix-x">X</span>
 ---------------------------------------------
@@ -253,9 +253,9 @@ Bias: -0.01%
 <h2>Adım 4: Bağımsız Doğrulama</h2>
 <p>Modeli fabrika dağıtımına uygun hale getirmek için tahminleri %25 bağımsız test setinde çalıştırın.<strong>Tahminin Ortalama Karekök Hatası (RMSEP)</strong>sensörü hat üzerinde kullanırken göreceğiniz gerçek doğruluğu ölçer. Sağlam bir model, çapraz doğrulama hatasına (RMSECV) çok yakın bir RMSEP görüntülemelidir.</p>
 <h2>Adım 5: ProChem'ye aktarma</h2>
-<p>Model performansından memnun kaldığınızda, öğesine tıklayın.<strong>"İhracat Modeli Paketi"</strong>. Bu güvenli bir `.cali oluşturur<span class="calix-x" style="color: #38b6ff !important;">X</span>'model dosyası. Bu dosyayı doğrudan<strong>ProChem Proses Kontrol Yazılımı</strong>üretim hattınızda. ProChem önceden yapılandırılmış ön işleme adımlarını satır içi spektrumlara otomatik olarak uygulayacak ve konsantrasyonları gerçek zamanlı olarak tahmin ederek sonuçları doğrudan tesisinize PLC gönderecektir.</p>
+<p>Model performansından memnun kaldığınızda, öğesine tıklayın.<strong>"İhracat Modeli Paketi"</strong>. Bu, güvenli bir `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>` model dosyası oluşturur. Bu dosyayı üretim hattınızdaki <strong>ProChem Proses Kontrol Yazılımı</strong>'na doğrudan yükleyin. ProChem önceden yapılandırılmış ön işleme adımlarını satır içi spektrumlara otomatik olarak uygulayacak ve konsantrasyonları gerçek zamanlı olarak tahmin ederek sonuçları doğrudan tesisinize PLC gönderecektir.</p>
 <h2>Özet</h2>
-<p>Cali, titiz PLS regresyon mantığını otomatik ön işleme optimizasyonuyla birleştirerek<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite, bilimsel derinlikten ödün vermeden kalite kontrol mühendislerinin kemometrik ölçümlere erişmesini sağlar. İlk günden B2B marjlarınızı korumaya hazır, güvenilir, sağlam modellere sahip olursunuz.</p>
+<p>Titiz PLS regresyon mantığını otomatik ön işleme optimizasyonuyla birleştiren cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, bilimsel derinlikten ödün vermeden kalite kontrol mühendislerinin kemometrik ölçümlere erişmesini sağlar. İlk günden B2B marjlarınızı korumaya hazır, güvenilir, sağlam modellere sahip olursunuz.</p>
 <div class="blog-post-references">
 <h3>Referanslar</h3>
 <ul>

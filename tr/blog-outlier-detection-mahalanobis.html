@@ -214,7 +214,7 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 11, 2026 — 4 dk okuma</span>
 <h1 class="blog-post-title">Kemometrik Aykırı Değer Tespiti: Mahalanobis Mesafesi ve Hotelling'in T²'si</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Cali'deki spektral anormallikleri, cihaz sapmalarını ve spesifikasyon dışı ham maddeleri tanımlamak için kullanılan çok değişkenli matematiği detaylandıran analitik bir kılavuz<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit'te spektral anormallikleri, cihaz sapmalarını ve spesifikasyon dışı ham maddeleri tanımlamak için kullanılan çok değişkenli matematiği detaylandıran analitik bir kılavuz.</p>
 </div>
 <div class="blog-post-content">
 <h2>Spektroskopide Aykırı Değer Tespitinin Rolü</h2>
@@ -223,9 +223,9 @@
 <blockquote>"Aykırı değerlerin tespiti, bir süreç analiz cihazının bağışıklık sistemi görevi görür. Tahminlerin yalnızca numune kalibrasyon alanıyla eşleştiğinde yayınlanmasını garanti eder."</blockquote>
 <h2>Mahalanobis Mesafesi: Kovaryansın Ölçülmesi</h2>
 <p>Basit Öklid mesafesi, bir numune spektrumu ile kalibrasyon ortalaması arasındaki düz çizgi mesafesini ölçer. Ancak Öklid mesafesi kemometriklerde başarısız olur çünkü NIR spektrumundaki bitişik dalga boyları arasındaki güçlü korelasyonu (kovaryans) göz ardı eder.</p>
-<p>**Mahalanobis Mesafesi (MD)** mesafeyi kalibrasyon veri kümesinin kovaryans matrisiyle ölçeklendirerek bu sorunu çözer. MD, yüksek normal kalibrasyon varyansı yönlerindeki değişikliklere daha az ağırlık vererek ve kalibrasyon verilerinin sıkı bir şekilde sınırlandığı yönlerdeki sapmalara yüksek ağırlık vererek, etkili bir şekilde varyansın yönünü hesaba katar.</p>
+<p><strong>Mahalanobis Mesafesi (MD)</strong> mesafeyi kalibrasyon veri kümesinin kovaryans matrisiyle ölçeklendirerek bu sorunu çözer. MD, yüksek normal kalibrasyon varyansı yönlerindeki değişikliklere daha az ağırlık vererek ve kalibrasyon verilerinin sıkı bir şekilde sınırlandığı yönlerdeki sapmalara yüksek ağırlık vererek, etkili bir şekilde varyansın yönünü hesaba katar.</p>
 <h2>Hotelling'in T²: Güven Eşikleri</h2>
-<p>Mahalanobis Distance ham bir mesafe değeri sağlarken, aykırı değerleri işaretlemek için istatistiksel olarak sağlam bir eşiğe ihtiyacımız var. **Hotelling'in T²** çok değişkenli bir puan hesaplayarak Ana Bileşen (PC) projeksiyon uzayındaki Mahalanobis Uzaklığını normalleştirir. T² bir F dağılımını takip ettiğinden resmi istatistiksel güven sınırları (genellikle %95 veya %99) belirleyebiliriz:</p>
+<p>Mahalanobis Distance ham bir mesafe değeri sağlarken, aykırı değerleri işaretlemek için istatistiksel olarak sağlam bir eşiğe ihtiyacımız var. <strong>Hotelling'in T²</strong> çok değişkenli bir puan hesaplayarak Ana Bileşen (PC) projeksiyon uzayındaki Mahalanobis Uzaklığını normalleştirir. T² bir F dağılımını takip ettiğinden resmi istatistiksel güven sınırları (genellikle %95 veya %99) belirleyebiliriz:</p>
 <table class="doc-table" style="margin-top: 1.5rem;">
 <thead>
 <tr>
@@ -257,12 +257,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Cali'de Aykırı Değer Sınırlarını Ayarlama<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit</h2>
-<p>Kalibrasyonlarınızda aykırı değer sınırlarını uygulamak için **cali'deki şu adımları izleyin<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit**:</p>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit'te Aykırı Değer Sınırlarını Ayarlama</h2>
+<p>Kalibrasyonlarınızda aykırı değer sınırlarını uygulamak için <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit</strong>'te şu adımları izleyin:</p>
 <ol>
 <li><strong>PCA/PLS puanlarını derleyin:</strong>Kalibrasyon dosyanızı açın ve ana bileşen yükleme vektörlerini hesaplayın.</li>
 <li><strong>Güven Aralığını Ayarlayın:</strong>Aykırı Değerler sekmesine gidin ve 'Otelleme T²'yi seçin. Kritik kontrol noktaları için %99'luk bir güven eşiği ($\alpha = 0,01$) veya rutin izleme için %95'lik bir güven eşiği ($\alpha = 0,05$) seçin.</li>
-<li><strong>ProChem Alarmlarını Etkinleştir:</strong>Modeli proses spektrometresine senkronize edin. **ProChem**'da, aykırı değer tetiklendiğinde son geçerli tahmini tutmak için aykırı değer bayrağı çıktısını PLC kaydınızla eşleştirin.</li>
+<li><strong>ProChem Alarmlarını Etkinleştir:</strong>Modeli proses spektrometresine senkronize edin. <strong>ProChem</strong>'da, aykırı değer tetiklendiğinde son geçerli tahmini tutmak için aykırı değer bayrağı çıktısını PLC kaydınızla eşleştirin.</li>
 </ol>
 <h2>Çözüm</h2>
 <p>Mahalanobis Distance ve Hotelling'in T²'sini kullanarak güçlü aykırı değer tespitinin uygulanması, süreç analiz cihazının bütünlüğünü sağlar. Anormal spektrumları tanımlayıp izole ederek üreticiler kalibrasyon hatalarını önleyebilir ve otomatik süreç döngülerini güvence altına alabilir.</p>
@@ -299,8 +299,8 @@
 <img alt="cali<span class="calix-x">X</span> Suite'te PLS Regresyona Giriş" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Cali'de PLS Regresyona Giriş<span class="calix-x" style="color: #38b6ff !important;">X</span>Süit</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Cali kullanarak referans ıslak kimya değerlerinden kalibrasyon modellerinin nasıl derleneceğini açıklayan adım adım eğitim<span class="calix-x" style="color: #38b6ff !important;">X</span>platformu.</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit'te PLS Regresyona Giriş</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> platformunu kullanarak referans ıslak kimya değerlerinden kalibrasyon modellerinin nasıl derleneceğini açıklayan adım adım eğitim.</p>
 <a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Eğiticiyi Okuyun</a>
 </div>
 </div>

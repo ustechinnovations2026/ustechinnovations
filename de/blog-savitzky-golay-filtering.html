@@ -214,12 +214,12 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide — June 04, 2026 — 4 Min. Lesezeit</span>
 <h1 class="blog-post-title">Grundlegendes zur Savitzky-Golay-Filterung in der Vorverarbeitung</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Ein tiefer Einblick in die Erläuterung von Glättungsalgorithmen, Polynomordnungen und Ableitungsmathematik für die Ausrichtung von Spektraldatensätzen innerhalb von Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Ein tiefer Einblick in die Erläuterung von Glättungsalgorithmen, Polynomordnungen und Ableitungsmathematik für die Ausrichtung von Spektraldatensätzen innerhalb von cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 </div>
 <div class="blog-post-content">
 <h2>Die Rolle der Vorverarbeitung in der Chemometrie</h2>
-<p>Insbesondere Nahinfrarotspektren (NIR).<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Spektren</a>sind hochkomplex und oft durch überlappende Absorptionsbanden, Grundlinienversätze und hochfrequentes Rauschen gekennzeichnet. Vor der Anpassung quantitativer Kalibrierungsmodelle (wie der PLS-Regression) müssen Chemometriker die rohen Spektraldaten vorverarbeiten. Das Ziel besteht darin, physikalische Artefakte – wie Streuung durch unterschiedliche Partikelgrößen oder Basislinienverschiebungen aufgrund von Änderungen der Lichtweglänge – zu beseitigen und gleichzeitig die interessierenden chemischen Signale zu erhalten.</p>
-<p>Unter den Werkzeugen im Vorverarbeitungsarsenal ist der **Savitzky-Golay (SG)-Algorithmus** der Industriestandard für Glättung und Differenzierung. Es wurde 1964 von Abraham Savitzky und Marcel J. E. Golay entwickelt und ist bis heute die Grundlage moderner chemometrischer Datenpipelines.</p>
+<p>Insbesondere Nahinfrarotspektren (NIR).<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Spektren</a> sind hochkomplex und oft durch überlappende Absorptionsbanden, Grundlinienversätze und hochfrequentes Rauschen gekennzeichnet. Vor der Anpassung quantitativer Kalibrierungsmodelle (wie der PLS-Regression) müssen Chemometriker die rohen Spektraldaten vorverarbeiten. Das Ziel besteht darin, physikalische Artefakte – wie Streuung durch unterschiedliche Partikelgrößen oder Basislinienverschiebungen aufgrund von Änderungen der Lichtweglänge – zu beseitigen und gleichzeitig die interessierenden chemischen Signale zu erhalten.</p>
+<p>Unter den Werkzeugen im Vorverarbeitungsarsenal ist der <strong>Savitzky-Golay (SG)-Algorithmus</strong> der Industriestandard für Glättung und Differenzierung. Es wurde 1964 von Abraham Savitzky und Marcel J. E. Golay entwickelt und ist bis heute die Grundlage moderner chemometrischer Datenpipelines.</p>
 <blockquote>„Im Gegensatz zu Standardfiltern mit gleitendem Durchschnitt, die spektrale Merkmale verwischen, bewahrt die Savitzky-Golay-Filterung Peakhöhen, -breiten und lokale Formen, indem lokale Polynome niedrigen Grades an die Daten angepasst werden.“</blockquote>
 <h2>So funktioniert der Savitzky-Golay-Algorithmus</h2>
 <p>Das Kernkonzept besteht darin, ein Fenster mit einer festen Anzahl von Datenpunkten ($w$, das eine ungerade ganze Zahl sein muss) über das Spektrum zu verschieben. Bei jedem Schritt wird ein Polynom vom Grad $k$ (normalerweise $k = 2$ oder $3$, was quadratische oder kubische Modelle darstellt) mithilfe der linearen Methode der kleinsten Quadrate an die Datenpunkte innerhalb des Fensters angepasst. Der Wert des angepassten Polynoms am Mittelpunkt des Fensters wird zum neuen, geglätteten Wert für diese Wellenlänge.</p>
@@ -262,8 +262,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Implementierung von SG im Cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
-<p>Im<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">kali<span class="calix-x" style="color: #38b6ff !important;">X</span>1,50 % – 6,00 %</a>In der Vorverarbeitungspipeline wird der SG-Algorithmus automatisch während der AutoML-Modellvalidierung angewendet. Benutzer können die Fenstergröße und die Ableitungsreihenfolge im Vorverarbeitungseditor konfigurieren und beobachten, wie der Kreuzvalidierungsfehler (RMSECV) in Echtzeit aktualisiert wird, während verschiedene Einstellungen getestet werden. Diese interaktive Rückkopplungsschleife garantiert, dass Sie die mathematischen Vorverarbeitungsparameter auswählen, die die Modellgenauigkeit und die Übertragbarkeit von Einheit zu Einheit maximieren.</p>
+<h2>Implementierung von SG im cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
+<p>Im <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>1,50 % – 6,00 %</a>In der Vorverarbeitungspipeline wird der SG-Algorithmus automatisch während der AutoML-Modellvalidierung angewendet. Benutzer können die Fenstergröße und die Ableitungsreihenfolge im Vorverarbeitungseditor konfigurieren und beobachten, wie der Kreuzvalidierungsfehler (RMSECV) in Echtzeit aktualisiert wird, während verschiedene Einstellungen getestet werden. Diese interaktive Rückkopplungsschleife garantiert, dass Sie die mathematischen Vorverarbeitungsparameter auswählen, die die Modellgenauigkeit und die Übertragbarkeit von Einheit zu Einheit maximieren.</p>
 <div class="blog-post-references">
 <h3>Referenzen</h3>
 <ul>
@@ -284,7 +284,7 @@
 </div>
 <label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
 <input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
+<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
 </label>
 </form>
 </div>
