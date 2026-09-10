@@ -3839,7 +3839,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p style="margin-bottom: 1.25rem;">We use cookies to enable core website services and to collect anonymized telemetry. Essential cookies are loaded automatically. Functional and analytical cookies (such as tracking site usage) are disabled by default and will only run if you provide consent via our Cookie Banner. You can manage, alter, or reject these cookies at any time.</p>
 
                         <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">11. Corporate Contact Details</h3>
-                        <p style="margin-bottom: 0;"><strong style="color: var(--text-primary);">USTECH Innovations LLC</strong><br>600 Park Offices Dr Ste 300, Durham, NC 27713, USA<br>Email: privacy@ustechinnovations.com<br>Phone: +1 307 527 0072</p>
+                        <p style="margin-bottom: 0;"><strong style="color: var(--text-primary);">USTECH Innovations LLC</strong><br>600 Park Offices Dr Ste 300, Durham, NC 27713, USA<br>Email: privacy@ustechinnovations.com</p>
                     </div>
                     <!-- Modal Footer -->
                     <div style="padding: 1.25rem 2rem; border-top: 1px solid var(--border-color); flex-shrink: 0; text-align: right; display: flex; justify-content: flex-end; gap: 1rem;">
@@ -3936,14 +3936,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="specialist-panel-body">
             <p>${ui('spec_text')}</p>
-
-            <a href="tel:+13075270072" class="specialist-contact-item">
-                <span class="specialist-contact-icon">${phoneSVG}</span>
-                <span>
-                    <span class="specialist-contact-label">${ui('spec_call')}</span>
-                    <span class="specialist-contact-value">+1 307 527 0072</span>
-                </span>
-            </a>
 
             <a href="mailto:info@ustechinnovations.com" class="specialist-contact-item">
                 <span class="specialist-contact-icon">${emailSVG}</span>
