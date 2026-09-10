@@ -3754,7 +3754,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;"><strong>Document Reference:</strong> PP-KVKK-2026-V3 | <strong>Last Updated:</strong> June 30, 2026</p>
 
                         <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem; margin-top: 0;">1. Data Controller Identification</h3>
-                        <p style="margin-bottom: 1.25rem;">This Privacy Policy and Clarification Text has been prepared by <strong>USTECH Innovations LLC</strong> ("USTECH", "Company", "we", "us", or "our"), headquartered at 30 N Gould St Ste 34301, Sheridan, WY 82801, USA, in our capacity as the <strong>Data Controller</strong> under the Turkish Personal Data Protection Law No. 6698 ("KVKK"), the EU General Data Protection Regulation ("GDPR"), and the California Consumer Privacy Act ("CCPA/CPRA"). This document governs the processing of personal data collected through our B2B website, online service portals, contact channels, and marketing platforms.</p>
+                        <p style="margin-bottom: 1.25rem;">This Privacy Policy and Clarification Text has been prepared by <strong>USTECH Innovations LLC</strong> ("USTECH", "Company", "we", "us", or "our"), headquartered at 600 Park Offices Dr Ste 300, Durham, NC 27713, USA, in our capacity as the <strong>Data Controller</strong> under the Turkish Personal Data Protection Law No. 6698 ("KVKK"), the EU General Data Protection Regulation ("GDPR"), and the California Consumer Privacy Act ("CCPA/CPRA"). This document governs the processing of personal data collected through our B2B website, online service portals, contact channels, and marketing platforms.</p>
 
                         <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">2. Categorization of Processed Personal Data</h3>
                         <p style="margin-bottom: 0.75rem;">In alignment with national and international data protection laws, we categorize the personal data we process as follows:</p>
@@ -3839,7 +3839,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p style="margin-bottom: 1.25rem;">We use cookies to enable core website services and to collect anonymized telemetry. Essential cookies are loaded automatically. Functional and analytical cookies (such as tracking site usage) are disabled by default and will only run if you provide consent via our Cookie Banner. You can manage, alter, or reject these cookies at any time.</p>
 
                         <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">11. Corporate Contact Details</h3>
-                        <p style="margin-bottom: 0;"><strong style="color: var(--text-primary);">USTECH Innovations LLC</strong><br>30 N Gould St Ste 34301, Sheridan, WY 82801, USA<br>Email: privacy@ustechinnovations.com<br>Phone: +1 307 527 0072</p>
+                        <p style="margin-bottom: 0;"><strong style="color: var(--text-primary);">USTECH Innovations LLC</strong><br>600 Park Offices Dr Ste 300, Durham, NC 27713, USA<br>Email: privacy@ustechinnovations.com<br>Phone: +1 307 527 0072</p>
                     </div>
                     <!-- Modal Footer -->
                     <div style="padding: 1.25rem 2rem; border-top: 1px solid var(--border-color); flex-shrink: 0; text-align: right; display: flex; justify-content: flex-end; gap: 1rem;">
