@@ -7,7 +7,7 @@
 
 ## Products
 - [ProLine2550](https://www.ustechinnovations.com/product-proline-2550.html): Inline FT-NIR process analyzer, IP69K, OPC UA/Profinet
-- [ProLine17EC](https://www.ustechinnovations.com/product-proline-17ec.html): Compact inline FT-NIR analyzer
+- [ProLine17EC](https://www.ustechinnovations.com/product-proline-17ec.html): Compact inline NIR analyzer
 - [caliX](https://www.ustechinnovations.com/product-calix.html): AutoML chemometrics and calibration software
 - [ProChem](https://www.ustechinnovations.com/product-prochem.html): Real-time PAT and closed-loop control platform
 - [MasterLine](https://www.ustechinnovations.com/product-masterline.html): At-line benchtop FT-NIR analyzer for grains, feed and forage

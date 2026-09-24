@@ -670,33 +670,33 @@ var SEARCH_I18N = {
   "products-devices.html": {
     "tr": {
       "t": "Hat İçi ve Hat Başı Kalite Kontrolü için FT-NIR Analizör Cihazları",
-      "s": "USTECH FT-NIR donanimini karsilastirin: ProLine17EC ve ProLine17ECS hat ici analizorler, ProLine2550 proses analizoru, MasterLine hat basi kalite kontrol ve Tornado+ numune degirmenleri.",
-      "k": "hat i çi ve hat başı kalite kontrolü için ft-nir analizör cihazları ustech ft-nir donanimini karsilastirin proline17ec ve proline17ecs hat ici analizorler proline2550 proses analizoru masterline hat basi kalite kontrol ve tornado numune degirmenleri cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı"
+      "s": "USTECH NIR donanimini karsilastirin: ProLine17EC ve ProLine17ECS hat ici analizorler, ProLine2550 proses analizoru, MasterLine hat basi kalite kontrol ve Tornado+ numune degirmenleri.",
+      "k": "hat i çi ve hat başı kalite kontrolü için ft-nir analizör cihazları ustech nir donanimini karsilastirin proline17ec ve proline17ecs hat ici analizorler proline2550 proses analizoru masterline hat basi kalite kontrol ve tornado numune degirmenleri cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı"
     },
     "fr": {
       "t": "Appareils d'analyse FT-NIR pour le contrôle qualité en ligne et at-line",
-      "s": "Comparez le materiel FT-NIR USTECH : analyseurs en ligne ProLine17EC et ProLine17ECS, analyseur de processus ProLine2550, controle qualite at-line MasterLine et broyeurs Tornado+.",
-      "k": "appareils d analyse ft-nir pour le contrôle qualité en ligne et at-line comparez le materiel ft-nir ustech analyseurs en ligne proline17ec et proline17ecs analyseur de processus proline2550 controle qualite at-line masterline et broyeurs tornado appareils analyseur spectromètre capteur matériel"
+      "s": "Comparez le materiel NIR USTECH : analyseurs en ligne ProLine17EC et ProLine17ECS, analyseur de processus ProLine2550, controle qualite at-line MasterLine et broyeurs Tornado+.",
+      "k": "appareils d analyse ft-nir pour le contrôle qualité en ligne et at-line comparez le materiel nir ustech analyseurs en ligne proline17ec et proline17ecs analyseur de processus proline2550 controle qualite at-line masterline et broyeurs tornado appareils analyseur spectromètre capteur matériel"
     },
     "de": {
       "t": "FT-NIR-Analysegeräte für Inline- & At-Line-QC",
-      "s": "Vergleichen Sie USTECH FT-NIR-Hardware: Inline-Analysatoren ProLine17EC und ProLine17ECS, Prozessanalysator ProLine2550, At-Line-QC MasterLine und Tornado+ Probenmuehlen.",
-      "k": "ft-nir-analysegeräte für inline- at-line-qc vergleichen sie ustech ft-nir-hardware inline-analysatoren proline17ec und proline17ecs prozessanalysator proline2550 at-line-qc masterline und tornado probenmuehlen geräte analysator spektrometer sensor hardware"
+      "s": "Vergleichen Sie USTECH NIR-Hardware: Inline-Analysatoren ProLine17EC und ProLine17ECS, Prozessanalysator ProLine2550, At-Line-QC MasterLine und Tornado+ Probenmuehlen.",
+      "k": "ft-nir-analysegeräte für inline- at-line-qc vergleichen sie ustech nir-hardware inline-analysatoren proline17ec und proline17ecs prozessanalysator proline2550 at-line-qc masterline und tornado probenmuehlen geräte analysator spektrometer sensor hardware"
     },
     "es": {
       "t": "Analizadores FT-NIR para Control en Línea y At-Line",
-      "s": "Compare el hardware FT-NIR de USTECH: analizadores en linea ProLine17EC y ProLine17ECS, analizador de procesos ProLine2550, control at-line MasterLine y molinos Tornado+.",
-      "k": "analizadores ft-nir para control en línea y at-line compare el hardware ft-nir de ustech analizadores en linea proline17ec y proline17ecs analizador de procesos proline2550 control at-line masterline y molinos tornado dispositivos analizador espectrómetro sensor hardware"
+      "s": "Compare el hardware NIR de USTECH: analizadores en linea ProLine17EC y ProLine17ECS, analizador de procesos ProLine2550, control at-line MasterLine y molinos Tornado+.",
+      "k": "analizadores ft-nir para control en línea y at-line compare el hardware nir de ustech analizadores en linea proline17ec y proline17ecs analizador de procesos proline2550 control at-line masterline y molinos tornado dispositivos analizador espectrómetro sensor hardware"
     },
     "ar": {
       "t": "أجهزة تحليل FT-NIR لمراقبة الجودة المدمجة وفي الموقع",
-      "s": "قارن أجهزة USTECH FT-NIR: محللات ProLine17EC و ProLine17ECS المضمنة، محلل العمليات ProLine2550، وحدة MasterLine ومطاحن Tornado+.",
-      "k": "أجهزة تحليل ft-nir لمراقبة الجودة المدمجة وفي الموقع قارن أجهزة ustech ft-nir محللات proline17ec و proline17ecs المضمنة، محلل العمليات proline2550، وحدة masterline ومطاحن tornado الأجهزة المحللات أجهزة الطيف المستشعرات"
+      "s": "قارن أجهزة USTECH NIR: محللات ProLine17EC و ProLine17ECS المضمنة، محلل العمليات ProLine2550، وحدة MasterLine ومطاحن Tornado+.",
+      "k": "أجهزة تحليل ft-nir لمراقبة الجودة المدمجة وفي الموقع قارن أجهزة ustech nir محللات proline17ec و proline17ecs المضمنة، محلل العمليات proline2550، وحدة masterline ومطاحن tornado الأجهزة المحللات أجهزة الطيف المستشعرات"
     },
     "zh": {
       "t": "用于在线及线旁质控的 FT-NIR 分析仪设备",
-      "s": "比较 USTECH FT-NIR 硬件：ProLine17EC 和 ProLine17ECS 在线分析仪、ProLine2550 过程分析仪、MasterLine 线旁质控以及 Tornado+ 粉碎研磨仪。",
-      "k": "用于在线及线旁质控的 ft-nir 分析仪设备 比较 ustech ft-nir 硬件 proline17ec 和 proline17ecs 在线分析仪 proline2550 过程分析仪 masterline 线旁质控以及 tornado 粉碎研磨仪 硬件设备 光谱仪 分析仪 在线近红外 传感器 线旁"
+      "s": "比较 USTECH NIR 硬件：ProLine17EC 和 ProLine17ECS 在线分析仪、ProLine2550 过程分析仪、MasterLine 线旁质控以及 Tornado+ 粉碎研磨仪。",
+      "k": "用于在线及线旁质控的 ft-nir 分析仪设备 比较 ustech nir 硬件 proline17ec 和 proline17ecs 在线分析仪 proline2550 过程分析仪 masterline 线旁质控以及 tornado 粉碎研磨仪 硬件设备 光谱仪 分析仪 在线近红外 传感器 线旁"
     }
   },
   "products-software.html": {
@@ -829,66 +829,66 @@ var SEARCH_I18N = {
   },
   "product-proline-17ec.html": {
     "tr": {
-      "t": "ProLine17EC Analizörü",
+      "t": "ProLine17EC NIR Analizörü",
       "s": "USTECH ProLine17EC, sürekli, gerçek zamanlı kalite kontrolü için 950–1650 nm InGaAs dizisi, 316 paslanmaz çelik muhafaza ve gıda sınıfı safir pencereye sahip sağlam bir IP65 satır içi NIR spektrometresidir.",
-      "k": "proline17ec analizörü ustech proline17ec sürekli gerçek zamanlı kalite kontrolü için 950 1650 nm ingaas dizisi 316 paslanmaz çelik muhafaza ve gıda sınıfı safir pencereye sahip sağlam bir ip65 satır içi nir spektrometresidir proline 17ec hat ici nir analizor sensor boru oluk konveyor safir ip65 paslanmaz celik ingaas surekli olcum kompakt"
+      "k": "proline17ec nir analizörü ustech proline17ec sürekli gerçek zamanlı kalite kontrolü için 950 1650 nm ingaas dizisi 316 paslanmaz çelik muhafaza ve gıda sınıfı safir pencereye sahip sağlam bir ip65 satır içi nir spektrometresidir proline 17ec hat ici nir analizor sensor boru oluk konveyor safir ip65 paslanmaz celik ingaas surekli olcum kompakt"
     },
     "fr": {
-      "t": "ProLine17EC Analyseur",
+      "t": "ProLine17EC Analyseur NIR",
       "s": "Le USTECH ProLine17EC est un spectromètre NIR en ligne IP65 robuste doté d'un réseau InGaAs de 950 à 1 650 nm, d'un boîtier en acier inoxydable 316 et d'une fenêtre en saphir de qualité alimentaire pour un contrôle qualité continu et en temps réel.",
-      "k": "proline17ec analyseur le ustech proline17ec est un spectromètre nir en ligne ip65 robuste doté d un réseau ingaas de 950 à 1 650 nm d un boîtier en acier inoxydable 316 et d une fenêtre en saphir de qualité alimentaire pour un contrôle qualité continu et en temps réel proline 17ec analyseur nir en ligne capteur conduite goulotte convoyeur saphir ip65 acier inoxydable ingaas mesure continue compact"
+      "k": "proline17ec analyseur nir le ustech proline17ec est un spectromètre nir en ligne ip65 robuste doté d un réseau ingaas de 950 à 1 650 nm d un boîtier en acier inoxydable 316 et d une fenêtre en saphir de qualité alimentaire pour un contrôle qualité continu et en temps réel proline 17ec analyseur nir en ligne capteur conduite goulotte convoyeur saphir ip65 acier inoxydable ingaas mesure continue compact"
     },
     "de": {
-      "t": "ProLine17EC Analysator",
+      "t": "ProLine17EC NIR-Analysator",
       "s": "Das USTECH ProLine17EC ist ein robustes IP65 Inline-Spektrometer NIR mit einem 950–1650 nm InGaAs-Array, einem 316-Edelstahlgehäuse und einem Saphirfenster in Lebensmittelqualität für kontinuierliche Qualitätskontrolle in Echtzeit.",
-      "k": "proline17ec analysator das ustech proline17ec ist ein robustes ip65 inline-spektrometer nir mit einem 950 1650 nm ingaas-array einem 316-edelstahlgehäuse und einem saphirfenster in lebensmittelqualität für kontinuierliche qualitätskontrolle in echtzeit proline 17ec inline-nir-analysator sensor rohr rutsche foerderband saphir ip65 edelstahl ingaas kontinuierliche messung kompakt"
+      "k": "proline17ec nir-analysator das ustech proline17ec ist ein robustes ip65 inline-spektrometer nir mit einem 950 1650 nm ingaas-array einem 316-edelstahlgehäuse und einem saphirfenster in lebensmittelqualität für kontinuierliche qualitätskontrolle in echtzeit proline 17ec inline-nir-analysator sensor rohr rutsche foerderband saphir ip65 edelstahl ingaas kontinuierliche messung kompakt"
     },
     "es": {
-      "t": "ProLine17EC Analizador",
+      "t": "ProLine17EC Analizador NIR",
       "s": "El USTECH ProLine17EC es un espectrómetro en línea IP65 NIR resistente que cuenta con una matriz InGaAs de 950–1650 nm, una carcasa de acero inoxidable 316 y una ventana de zafiro de calidad alimentaria para un control de calidad continuo y en tiempo real.",
-      "k": "proline17ec analizador el ustech proline17ec es un espectrómetro en línea ip65 nir resistente que cuenta con una matriz ingaas de 950 1650 nm una carcasa de acero inoxidable 316 y una ventana de zafiro de calidad alimentaria para un control de calidad continuo y en tiempo real proline 17ec analizador nir en linea sensor tuberia canaleta cinta transportadora zafiro ip65 acero inoxidable ingaas medicion continua compacto"
+      "k": "proline17ec analizador nir el ustech proline17ec es un espectrómetro en línea ip65 nir resistente que cuenta con una matriz ingaas de 950 1650 nm una carcasa de acero inoxidable 316 y una ventana de zafiro de calidad alimentaria para un control de calidad continuo y en tiempo real proline 17ec analizador nir en linea sensor tuberia canaleta cinta transportadora zafiro ip65 acero inoxidable ingaas medicion continua compacto"
     },
     "ar": {
-      "t": "ProLine17EC محلل",
+      "t": "ProLine17EC محلل NIR",
       "s": "USTECH ProLine17EC عبارة عن مطياف IP65 مضمن NIR يتميز بمصفوفة InGaAs 950-1650 نانومتر، وغطاء من الفولاذ المقاوم للصدأ 316، ونافذة من الياقوت الصالح للطعام للتحكم المستمر في الجودة في الوقت الفعلي.",
-      "k": "proline17ec محلل ustech proline17ec عبارة عن مطياف ip65 مضمن nir يتميز بمصفوفة ingaas 950-1650 نانومتر، وغطاء من الفولاذ المقاوم للصدأ 316، ونافذة من الياقوت الصالح للطعام للتحكم المستمر في الجودة في الوقت الفعلي proline 17ec محلل مضمن مستشعر أنبوب حزام ناقل قياس مستمر مدمج"
+      "k": "proline17ec محلل nir ustech proline17ec عبارة عن مطياف ip65 مضمن nir يتميز بمصفوفة ingaas 950-1650 نانومتر، وغطاء من الفولاذ المقاوم للصدأ 316، ونافذة من الياقوت الصالح للطعام للتحكم المستمر في الجودة في الوقت الفعلي proline 17ec محلل مضمن مستشعر أنبوب حزام ناقل قياس مستمر مدمج"
     },
     "zh": {
-      "t": "ProLine17EC 分析仪",
+      "t": "ProLine17EC NIR 分析仪",
       "s": "USTECH ProLine17EC 是一款坚固耐用的 IP65 内联 NIR 光谱仪，具有 950–1650 nm InGaAs 阵列、316 不锈钢外壳和食品级蓝宝石窗口，可实现连续、实时的质量控制。",
-      "k": "proline17ec 分析仪 ustech proline17ec 是一款坚固耐用的 ip65 内联 nir 光谱仪 具有 950 1650 nm ingaas 阵列 316 不锈钢外壳和食品级蓝宝石窗口 可实现连续 实时的质量控制 proline 17ec 在线近红外分析仪 传感器 管道 输送带 蓝宝石 不锈钢 连续测量 紧凑"
+      "k": "proline17ec nir 分析仪 ustech proline17ec 是一款坚固耐用的 ip65 内联 nir 光谱仪 具有 950 1650 nm ingaas 阵列 316 不锈钢外壳和食品级蓝宝石窗口 可实现连续 实时的质量控制 proline 17ec 在线近红外分析仪 传感器 管道 输送带 蓝宝石 不锈钢 连续测量 紧凑"
     }
   },
   "product-proline-17ecs.html": {
     "tr": {
-      "t": "ProLine17ECS Hat İçi FT-NIR Analizörü",
-      "s": "USTECH ProLine17ECS, zorlu proses hatları için numune başına 2.000 spektrum, 23.000:1 SNR ve çift IP65 paslanmaz çelik muhafaza sağlayan, bölünmüş mimariye sahip bir hat içi FT-NIR analizörüdür.",
-      "k": "proline17ecs hat i çi ft-nir analizörü ustech proline17ecs zorlu proses hatları için numune başına 2 000 spektrum 23 000 1 snr ve çift ip65 paslanmaz çelik muhafaza sağlayan bölünmüş mimariye sahip bir hat içi ft-nir analizörüdür proline 17ecs bolunmus mimari cift govde ayrik prob kafasi kontrol kutusu yuksek hassasiyet hat ici ft-nir analizor safir ip65 paslanmaz celik"
+      "t": "ProLine17ECS Hat İçi NIR Analizörü",
+      "s": "USTECH ProLine17ECS, zorlu proses hatları için numune başına 2.000 spektrum, 23.000:1 SNR ve çift IP65 paslanmaz çelik muhafaza sağlayan, bölünmüş mimariye sahip bir hat içi NIR analizörüdür.",
+      "k": "proline17ecs hat i çi nir analizörü ustech proline17ecs zorlu proses hatları için numune başına 2 000 spektrum 23 000 1 snr ve çift ip65 paslanmaz çelik muhafaza sağlayan bölünmüş mimariye sahip bir hat içi nir analizörüdür proline 17ecs bolunmus mimari cift govde ayrik prob kafasi kontrol kutusu yuksek hassasiyet hat ici nir analizor safir ip65 paslanmaz celik"
     },
     "fr": {
-      "t": "ProLine17ECS Analyseur FT-NIR en ligne",
-      "s": "Le USTECH ProLine17ECS est un analyseur FT-NIR en ligne à architecture divisée fournissant 2 000 spectres par échantillon, un SNR de 23 000:1 et un double boîtier en acier inoxydable IP65 pour les lignes de processus exigeantes.",
-      "k": "proline17ecs analyseur ft-nir en ligne le ustech proline17ecs est un analyseur ft-nir en ligne à architecture divisée fournissant 2 000 spectres par échantillon un snr de 23 000 1 et un double boîtier en acier inoxydable ip65 pour les lignes de processus exigeantes proline 17ecs architecture divisee double boitier sonde deportee boitier de commande haute sensibilite analyseur ft-nir en ligne saphir ip65 acier inoxydable"
+      "t": "ProLine17ECS Analyseur NIR en ligne",
+      "s": "Le USTECH ProLine17ECS est un analyseur NIR en ligne à architecture divisée fournissant 2 000 spectres par échantillon, un SNR de 23 000:1 et un double boîtier en acier inoxydable IP65 pour les lignes de processus exigeantes.",
+      "k": "proline17ecs analyseur nir en ligne le ustech proline17ecs est un analyseur nir en ligne à architecture divisée fournissant 2 000 spectres par échantillon un snr de 23 000 1 et un double boîtier en acier inoxydable ip65 pour les lignes de processus exigeantes proline 17ecs architecture divisee double boitier sonde deportee boitier de commande haute sensibilite analyseur nir en ligne saphir ip65 acier inoxydable"
     },
     "de": {
-      "t": "ProLine17ECS Inline-Analysator FT-NIR",
-      "s": "Der USTECH ProLine17ECS ist ein Inline-Analysator FT-NIR mit geteilter Architektur, der 2.000 Spektren pro Probe, 23.000:1 SNR und ein duales IP65-Edelstahlgehäuse für anspruchsvolle Prozesslinien liefert.",
-      "k": "proline17ecs inline-analysator ft-nir der ustech proline17ecs ist ein inline-analysator ft-nir mit geteilter architektur der 2 000 spektren pro probe 23 000 1 snr und ein duales ip65-edelstahlgehäuse für anspruchsvolle prozesslinien liefert proline 17ecs geteilte architektur zwei gehaeuse abgesetzter messkopf steuergeraet hohe empfindlichkeit inline-ft-nir-analysator saphir ip65 edelstahl"
+      "t": "ProLine17ECS NIR-Inline-Analysator",
+      "s": "Der USTECH ProLine17ECS ist ein NIR-Inline-Analysator mit geteilter Architektur, der 2.000 Spektren pro Probe, 23.000:1 SNR und ein duales IP65-Edelstahlgehäuse für anspruchsvolle Prozesslinien liefert.",
+      "k": "proline17ecs nir-inline-analysator der ustech proline17ecs ist ein nir-inline-analysator mit geteilter architektur der 2 000 spektren pro probe 23 000 1 snr und ein duales ip65-edelstahlgehäuse für anspruchsvolle prozesslinien liefert proline 17ecs geteilte architektur zwei gehaeuse abgesetzter messkopf steuergeraet hohe empfindlichkeit inline-nir-analysator saphir ip65 edelstahl"
     },
     "es": {
-      "t": "ProLine17ECS Analizador FT-NIR en línea",
-      "s": "El USTECH ProLine17ECS es un analizador FT-NIR en línea de arquitectura dividida que ofrece 2000 espectros por muestra, 23 000:1 SNR y una carcasa doble de acero inoxidable IP65 para líneas de proceso exigentes.",
-      "k": "proline17ecs analizador ft-nir en línea el ustech proline17ecs es un analizador ft-nir en línea de arquitectura dividida que ofrece 2000 espectros por muestra 23 000 1 snr y una carcasa doble de acero inoxidable ip65 para líneas de proceso exigentes proline 17ecs arquitectura dividida doble chasis cabezal de sonda separado caja de control alta sensibilidad analizador ft-nir en linea zafiro ip65 acero inoxidable"
+      "t": "ProLine17ECS Analizador NIR en línea",
+      "s": "El USTECH ProLine17ECS es un analizador NIR en línea de arquitectura dividida que ofrece 2000 espectros por muestra, 23 000:1 SNR y una carcasa doble de acero inoxidable IP65 para líneas de proceso exigentes.",
+      "k": "proline17ecs analizador nir en línea el ustech proline17ecs es un analizador nir en línea de arquitectura dividida que ofrece 2000 espectros por muestra 23 000 1 snr y una carcasa doble de acero inoxidable ip65 para líneas de proceso exigentes proline 17ecs arquitectura dividida doble chasis cabezal de sonda separado caja de control alta sensibilidad analizador nir en linea zafiro ip65 acero inoxidable"
     },
     "ar": {
-      "t": "ProLine17ECS محلل FT-NIR المضمن",
-      "s": "USTECH ProLine17ECS عبارة عن محلل FT-NIR مضمن ذو بنية مقسمة يوفر 2000 طيف لكل عينة، و23000:1 SNR، ومبيت مزدوج من الفولاذ المقاوم للصدأ IP65 لخطوط المعالجة الصعبة.",
-      "k": "proline17ecs محلل ft-nir المضمن ustech proline17ecs عبارة عن محلل ft-nir مضمن ذو بنية مقسمة يوفر 2000 طيف لكل عينة، و23000 1 snr، ومبيت مزدوج من الفولاذ المقاوم للصدأ ip65 لخطوط المعالجة الصعبة proline 17ecs بنية منفصلة رأس مسبار وحدة تحكم حساسية عالية محلل مضمن"
+      "t": "ProLine17ECS محلل NIR المضمن",
+      "s": "USTECH ProLine17ECS عبارة عن محلل NIR مضمن ذو بنية مقسمة يوفر 2000 طيف لكل عينة، و23000:1 SNR، ومبيت مزدوج من الفولاذ المقاوم للصدأ IP65 لخطوط المعالجة الصعبة.",
+      "k": "proline17ecs محلل nir المضمن ustech proline17ecs عبارة عن محلل nir مضمن ذو بنية مقسمة يوفر 2000 طيف لكل عينة، و23000 1 snr، ومبيت مزدوج من الفولاذ المقاوم للصدأ ip65 لخطوط المعالجة الصعبة proline 17ecs بنية منفصلة رأس مسبار وحدة تحكم حساسية عالية محلل مضمن"
     },
     "zh": {
-      "t": "ProLine17ECS 内联 FT-NIR 分析仪",
-      "s": "USTECH ProLine17ECS 是一款分体式架构内联 FT-NIR 分析仪，每个样品可提供 2,000 个光谱、23,000:1 SNR 和双 IP65 不锈钢外壳，适用于要求苛刻的生产线。",
-      "k": "proline17ecs 内联 ft-nir 分析仪 ustech proline17ecs 是一款分体式架构内联 ft-nir 分析仪 每个样品可提供 2 000 个光谱 23 000 1 snr 和双 ip65 不锈钢外壳 适用于要求苛刻的生产线 proline 17ecs 分体式结构 双机箱 分离式探头 控制器 高灵敏度 在线傅里叶近红外分析仪 蓝宝石 不锈钢"
+      "t": "ProLine17ECS 内联 NIR 分析仪",
+      "s": "USTECH ProLine17ECS 是一款分体式架构内联 NIR 分析仪，每个样品可提供 2,000 个光谱、23,000:1 SNR 和双 IP65 不锈钢外壳，适用于要求苛刻的生产线。",
+      "k": "proline17ecs 内联 nir 分析仪 ustech proline17ecs 是一款分体式架构内联 nir 分析仪 每个样品可提供 2 000 个光谱 23 000 1 snr 和双 ip65 不锈钢外壳 适用于要求苛刻的生产线 proline 17ecs 分体式结构 双机箱 分离式探头 控制器 高灵敏度 在线近红外分析仪 蓝宝石 不锈钢"
     }
   },
   "product-proline-2550.html": {
@@ -1992,17 +1992,17 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             /* TrueLine 17EC: HOLD_LOCAL + UNPUBLISH_FROM_REMOTE -- yayinlanana kadar arama dizininde YOK */
             {
-            title: "ProLine17EC Analyzer",
+            title: "ProLine17EC NIR Analyzer",
             url: "product-proline-17ec.html",
             category: "Products",
             keywords: "ProLine17EC ProLine 17EC 17EC ProLine17ES 17ES legacy replacement inline NIR analyzer sensor InGaAs sapphire window IP65 stainless steel pipe chute conveyor moisture protein fat ash starch fiber PLC SCADA",
             snippet: "Compact inline NIR analyzer with InGaAs array and food-grade sapphire window for continuous, real-time process control."
             },
             {
-            title: "ProLine17ECS Inline FT-NIR Analyzer",
+            title: "ProLine17ECS Inline NIR Analyzer",
             url: "product-proline-17ecs.html",
             category: "Products",
-            keywords: "ProLine17ECS ProLine 17ECS 17ECS split dual-chassis inline FT-NIR analyzer high sensitivity probe head controller junction box InGaAs sapphire IP65 stainless steel",
+            keywords: "ProLine17ECS ProLine 17ECS 17ECS split dual-chassis inline NIR analyzer high sensitivity probe head controller junction box InGaAs sapphire IP65 stainless steel",
             snippet: "Split dual-chassis inline FT-NIR analyzer built for demanding process lines that need maximum sensitivity."
             },
             {
@@ -2461,7 +2461,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const suggestions = [
                 { title: "cali<span class=\"calix-x\">X</span> AutoML Suite", url: "product-calix.html" },
-                { title: "ProLine17EC Analyzer", url: "product-proline-17ec.html" },
+                { title: "ProLine17EC NIR Analyzer", url: "product-proline-17ec.html" },
                 { title: "Food & Feed Solutions", url: "industry-food-feed.html" },
                 /* "B2B ROI Calculator" -> contact.html#roi KALDIRILDI (07.09.2026):
                    #roi capasi sitede hic yok ve roi-section app.js madde 4 ile gizli. */
