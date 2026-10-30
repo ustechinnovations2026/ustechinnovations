@@ -1377,7 +1377,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if ('scrollRestoration' in history) {
         history.scrollRestoration = 'manual';
     }
-    window.scrollTo(0, 0);
+    // Adreste #hedef varsa (orn. product-prochem.html#software-portal) en uste degil hedefe git;
+    // tembel yuklenen gorseller duzeni kaydirdigi icin konum 'load'dan sonra hesaplanir.
+    let hashTarget = null;
+    try { hashTarget = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (e) {}
+    if (hashTarget) {
+        const goToHash = () => window.scrollTo({ top: hashTarget.getBoundingClientRect().top + window.scrollY - 80, behavior: 'instant' });
+        if (document.readyState === 'complete') goToHash(); else window.addEventListener('load', goToHash);
+    } else {
+        window.scrollTo(0, 0);
+    }
 
     // Initial check on page load
     if (window.scrollY > 50) {
