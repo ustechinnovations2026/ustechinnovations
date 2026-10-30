@@ -1,38 +1,41 @@
 # USTECH Innovations
 
-> Manufacturer of inline FT-NIR spectroscopy systems, chemometrics
-> software (caliX) and process automation (ProChem) for food, feed,
-> dairy, chemical and pharmaceutical processing. Founded 2023,
+> Manufacturer of inline and at-line near-infrared (NIR and FT-NIR) analyzers,
+> chemometrics software (caliX) and process-control software (ProChem) for food,
+> feed, dairy, chemical and pharmaceutical processing. Founded 2023,
 > headquartered in Durham, North Carolina, USA.
 
 ## Products
-- [ProLine2550](https://www.ustechinnovations.com/product-proline-2550.html): Inline FT-NIR process analyzer, IP69K, OPC UA/Profinet
-- [ProLine17EC](https://www.ustechinnovations.com/product-proline-17ec.html): Compact inline NIR analyzer
-- [caliX](https://www.ustechinnovations.com/product-calix.html): AutoML chemometrics and calibration software
-- [ProChem](https://www.ustechinnovations.com/product-prochem.html): Real-time PAT and closed-loop control platform
-- [MasterLine](https://www.ustechinnovations.com/product-masterline.html): At-line benchtop FT-NIR analyzer for grains, feed and forage
-- [Tornado+](https://www.ustechinnovations.com/product-tornado.html): Water-cooled sample mill
-- [StarchQC](https://www.ustechinnovations.com/product-i-sens-starch.html): Damaged starch analyzer
-- [SamplePrep](https://www.ustechinnovations.com/product-n-sens-sampleprep.html): Sample preparation station
+- [ProLine17EC](https://www.ustechinnovations.com/product-proline-17ec.html): Inline NIR analyzer, 950-1650 nm InGaAs array, IP65 316 stainless steel housing, sapphire window
+- [ProLine17ECS](https://www.ustechinnovations.com/product-proline-17ecs.html): Inline NIR analyzer with high-speed InGaAs detection and dual-chassis IP65 housing
+- [ProLine2550](https://www.ustechinnovations.com/product-proline-2550.html): Inline FT-NIR process analyzer for blenders, reactors and pipelines
+- [MasterLine](https://www.ustechinnovations.com/product-masterline.html): Benchtop FT-NIR analyzer for grains, feed ingredients and forage
+- [caliX](https://www.ustechinnovations.com/product-calix.html): Chemometrics and calibration software (PLS, PCA, AutoML) for NIR, FTIR and Raman data
+- [ProChem](https://www.ustechinnovations.com/product-prochem.html): Analyzer software linking USTECH analyzers to PLC/SCADA: live dashboards, alarms, setpoint control
+- [StarchQC](https://www.ustechinnovations.com/product-starchqc.html): Damaged-starch analyzer for flour (amperometric method)
+- [Tornado+](https://www.ustechinnovations.com/product-tornado.html): Water-cooled laboratory sample mill for grains, seeds and feed
 
 ## Industries
 - [Food & Feed](https://www.ustechinnovations.com/industry-food-feed.html): Inline NIR for feed mills and food processing
 - [Dairy](https://www.ustechinnovations.com/industry-dairy.html): Fat standardization and yield optimization
-- [Chemical & Pharma](https://www.ustechinnovations.com/industry-chemical-pharma.html): FDA 21 CFR Part 11 compliant PAT
+- [Chemical & Pharma](https://www.ustechinnovations.com/industry-chemical-pharma.html): NIR for process analytical technology (PAT) in chemical and pharmaceutical production
 
 ## Knowledge
-- [Technology](https://www.ustechinnovations.com/knowledge-technology.html): How FT-NIR spectroscopy and calibration science work
-- [FAQ](https://www.ustechinnovations.com/faq.html): 30 technical answers
-- [Blog](https://www.ustechinnovations.com/knowledge-blogs.html): 52 articles and whitepapers on NIR, PLS and process control
+- [Technology](https://www.ustechinnovations.com/knowledge-technology.html): How NIR spectroscopy and calibration science work
+- [FAQ](https://www.ustechinnovations.com/faq.html): Technical questions and answers
+- [Blog](https://www.ustechinnovations.com/knowledge-blogs.html): 52 articles and guides on NIR, chemometrics and process control; every claim cites peer-reviewed or regulatory sources
 
 ## Languages
-English is the source language at the domain root. Translated versions of the
-25 main pages live under language subdirectories, linked via hreflang:
+English is the source language at the domain root. All main pages and all blog
+articles are also published in six other languages, linked via hreflang:
 - Turkish: https://www.ustechinnovations.com/tr/
 - French: https://www.ustechinnovations.com/fr/
 - German: https://www.ustechinnovations.com/de/
 - Spanish: https://www.ustechinnovations.com/es/
-Blog articles are available in all seven languages.
+- Arabic: https://www.ustechinnovations.com/ar/
+- Chinese (Simplified): https://www.ustechinnovations.com/zh/
+Product brochures (PDF) are in English.
 
 ## Contact
 - Email: info@ustechinnovations.com
+- Contact form: https://www.ustechinnovations.com/contact.html

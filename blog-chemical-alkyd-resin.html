@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="White paper detailing continuous tracking of resin esterification reactions to prevent gelling.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why alkyd cooks are followed by acid value and viscosity, what the titration and viscosity reference methods involve, why the gel point makes timing critical, and what published in-line NIR studies show.">
 <meta name="keywords" content="alkyd resin monitoring, acid value NIR, viscosity tracking resin, chemical process inline analysis">
 <title>Acid Value and Viscosity Tracking in Alkyd Resin Cooking | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-chemical-alkyd-resin.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-chemical-alkyd-resin.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-chemical-alkyd-resin.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Acid Value and Viscosity Tracking in Alkyd Resin Cooking",
-"description": "White paper detailing continuous tracking of resin esterification reactions to prevent gelling.",
+"description": "Why alkyd cooks are followed by acid value and viscosity, what the titration and viscosity reference methods involve, why the gel point makes timing critical, and what published in-line NIR studies show.",
 "url": "https://www.ustechinnovations.com/blog-chemical-alkyd-resin.html",
 "datePublished": "2026-02-12",
-"dateModified": "2026-02-12",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Acid Value and Viscosity Tracking in Alkyd Resin Cooking | USTECH Innovations">
-    <meta property="og:description" content="White paper detailing continuous tracking of resin esterification reactions to prevent gelling.">
+    <meta property="og:description" content="Why alkyd cooks are followed by acid value and viscosity, what the titration and viscosity reference methods involve, why the gel point makes timing critical, and what published in-line NIR studies show.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-chemical-alkyd-resin.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-chemical-alkyd-resin.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Acid Value and Viscosity Tracking in Alkyd Resin Cooking | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Acid Value and Viscosity Tracking in Alkyd Resin Cooking | USTECH Innovations">
-    <meta name="twitter:description" content="White paper detailing continuous tracking of resin esterification reactions to prevent gelling.">
+    <meta name="twitter:description" content="Why alkyd cooks are followed by acid value and viscosity, what the titration and viscosity reference methods involve, why the gel point makes timing critical, and what published in-line NIR studies show.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-chemical-alkyd-resin.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,44 +217,58 @@ Espa&#241;ol
 </a>
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Acid Value and Viscosity Tracking in Alkyd Resin Cooking" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">WHITE PAPER &mdash; February 12, 2026 &mdash; 1 min read</span>
+<span class="blog-post-meta">Article &mdash; February 12, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Acid Value and Viscosity Tracking in Alkyd Resin Cooking</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Predict reaction endpoints and acid values continuously in high-temperature chemical reactors.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why an alkyd polyesterification is followed by acid value and viscosity, what the reference methods involve, why step-growth gelation makes the endpoint so time-critical, and what peer-reviewed in-line NIR studies on polyester resins have shown &mdash; with the standards and literature behind each statement.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Risk of Gelling in Resin Polymerization</h2>
-<p>Alkyd resin manufacturing relies on esterification cooking at temperatures up to 240&deg;C. Reaction progress is tracked by Acid Value (AV) and viscosity. If AV drops too low, the batch polymerizes completely and gelation occurs, ruining the reactor. Manual sampling is slow and dangerous.</p>
-<h2>High-Temperature Process Probes</h2>
-<p>USTECH high-temperature sapphire immersion probes are installed directly inside the resin reactor wall. The probes withstand continuous exposure to hot, viscous mixtures. Live AV and viscosity predictions are updated continuously, guiding the exact dilution endpoint.</p>
+<h2>Why the cook is followed by two numbers</h2>
+<p>Alkyd resins are fatty-acid- or oil-modified polyesters; the Ullmann's chapter on alkyds covers raw materials, polymerisation theory, formulation and process types, and manufacture <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. A published preparation shows the sequence used in <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical plants</a>: soybean oil was alcoholysed with glycerol at 240 &deg;C, phthalic anhydride was added and the polyesterification was run at 220 &deg;C, monitored by checking acid value and viscosity at regular intervals, and ended when the acid value had fallen below 15 mg KOH/g <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>Conversion, molecular weight and the gel point</h2>
+<p>Alkyd formation is a step-growth polymerisation. Carothers' treatment relates the number-average degree of polymerisation to the fraction of functional groups reacted: chain length rises slowly for most of the reaction and steeply in the last few per cent of conversion, and with monomers of functionality above two the same analysis predicts a critical conversion at which an infinite network forms, i.e. the batch gels <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Flory's statistical treatment showed that gelation sets in at a lower conversion than the Carothers estimate, because the largest molecules reach the network state before the average one does <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. For an alkyd cooked with glycerol, a trifunctional polyol, the usable endpoint therefore lies in a narrow window close to the gel point, and overshooting turns the reactor contents into an irreversible gel. Formulators reduce the risk with chain stoppers, such as the benzoic acid used in the preparation above to consume part of the hydroxyl groups and prevent gelation <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; process monitoring reduces it by catching the endpoint in time.</p>
+<h2>The reference methods</h2>
+<p>Acid value of polyester resins and paint binders is determined by ISO 2114, which defines it as the milligrams of potassium hydroxide needed to neutralise one gram of resin, distinguishes a partial acid value (method A, carboxyl groups plus half of any free anhydride) from a total acid value (method B, anhydrides first hydrolysed for 20 min), and states in its scope that it serves both specification testing and research use to monitor the completion of the polycondensation reaction <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. In method A the resin is dissolved in a two-to-one toluene&ndash;ethanol mixture and titrated potentiometrically with 0.1 mol/L ethanolic potassium hydroxide <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Viscosity of the resin solution is measured by timing methods: ASTM D1545 times the rise of a bubble in a standard tube, reports bubble seconds, which are approximately equal to stokes for most liquids, and applies only to transparent liquids free of crystalline or gel particles <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>; ISO 2431 measures flow time through cups with 3, 4, 5 or 6 mm orifices and is usable only where the flow breakpoint can be determined with certainty, which becomes difficult towards its 100 s upper limit <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. All of these need a sample drawn from a hot reactor, cooled, diluted to a defined solids content and measured, so the result describes the batch as it was when sampled, not as it is when the result arrives.</p>
+<h2>What in-line NIR has shown on polyester reactions</h2>
+<p>Near-infrared spectra consist mainly of overtone and combination bands of X&ndash;H vibrations, above all C&ndash;H, O&ndash;H and N&ndash;H, which makes the region sensitive to hydroxyl-containing groups such as carboxylic acids, alcohols and water <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Blanco et al. followed an acid-catalysed esterification in-line by NIR and resolved the spectra into concentration profiles of the reacting species by multivariate curve resolution; the profiles deviated from reference values by under 3 % and yielded the rate constant and the effect of water in the feed <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. For polyester resins, Marengo et al. modelled hydroxyl number and acid value from FT-NIR spectra of 62 resin samples, compared neural networks with PCR and PLS, found the networks more accurate but more demanding in training data, and concluded that FT-NIR could follow both numbers during polyesterification on the process line <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Closest to an alkyd cook is the work of Avila et al., who placed a miniaturised MEMS Fabry&ndash;P&eacute;rot interferometer covering 1,350&ndash;1,650 nm, with an immersion transmission probe, in a 2 L reactor producing saturated polyester resin over twelve batches at 220&ndash;240 &deg;C <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Temperature variation, solid particles and bubbles caused strong spectral interference, so robust pre-processing and long-term probe stability were prerequisites; with those in place, PLS models predicted acid number and viscosity, and a PCA model served for end-point detection within multivariate statistical process control <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Two caveats apply: the Avila process is a saturated polyester, not an alkyd with fatty-acid chains, and the Marengo models were built on resin samples rather than in a reactor; a calibration for an alkyd reactor has to be built on that reactor's own batches.</p>
+<h2>Building the calibration for a reactor</h2>
+<p>The chemometric route is the usual one, scatter correction and derivatives to remove physical effects <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>, then PLS regression against reference values; three points decide whether the model survives a hot, multiphase reactor:</p>
+<ul>
+<li><strong>Reference values bound the model.</strong> Titrate acid value consistently by one ISO 2114 method, since methods A and B treat free anhydride differently <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>; measure viscosity at a fixed solids content and temperature by one timing method <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>; time-stamp each sample against the spectrum taken at the moment of sampling.</li>
+<li><strong>Pre-processing and probe stability are not optional.</strong> Temperature swings, solids and bubbles were the dominant disturbances in the reactor study by Avila et al. <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>; the pre-processing is chosen for them <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>, and the probe must stay clean across many batches.</li>
+<li><strong>The endpoint is a multivariate decision.</strong> Because chain length rises steeply in the last few per cent of conversion, when few functional groups remain to be consumed <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>, a whole-spectrum end-point model such as the PCA approach of Avila et al. <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a> complements the predicted acid value rather than duplicating it.</li>
+</ul>
+<h2>How USTECH approaches it</h2>
+<p>For resin reactors USTECH uses the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550 process FT-NIR analyzer</a>, designed for inline installation on reactors, blenders and pipelines; the acid-value, viscosity and end-point models are built and maintained in the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics suite (PLS and PCA), and the predictions are passed to the plant control system through <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> for trending, alarms and setpoint control. Which parameters can be predicted on a given alkyd process, and how close to the gel point the end-point model can be trusted, is established in a feasibility study with your own samples and reference analyses.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>"In-situ Monitoring of Poly-Esterification Acid Value and Viscosity under High Temperatures," <em>Industrial & Engineering Chemistry Research</em>, 2024.</li>
+<li id="ref-1">[1] Jones, F.N. (2003). Alkyd Resins. In <em>Ullmann's Encyclopedia of Industrial Chemistry</em>. Wiley-VCH, Weinheim. <a href="https://doi.org/10.1002/14356007.a01_409" target="_blank" rel="noopener">doi:10.1002/14356007.a01_409</a></li>
+<li id="ref-2">[2] Dizman, C., Ozman, E. (2020). Preparation of rapid (chain-stopped) alkyds by incorporation of gum rosin and investigation of coating properties. <em>Turkish Journal of Chemistry</em>, 44(4), 932&ndash;940. <a href="https://doi.org/10.3906/kim-2001-56" target="_blank" rel="noopener">doi:10.3906/kim-2001-56</a></li>
+<li id="ref-3">[3] ISO 2114:2000. <em>Plastics (polyester resins) and paints and varnishes (binders) &mdash; Determination of partial acid value and total acid value.</em> ISO, Geneva. <a href="https://www.iso.org/standard/29827.html" target="_blank" rel="noopener">iso.org/standard/29827.html</a></li>
+<li id="ref-4">[4] ASTM D1545-13(2023). <em>Standard Test Method for Viscosity of Transparent Liquids by Bubble Time Method.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d1545-13r23.html" target="_blank" rel="noopener">store.astm.org/d1545-13r23.html</a></li>
+<li id="ref-5">[5] ISO 2431:2019. <em>Paints and varnishes &mdash; Determination of flow time by use of flow cups.</em> ISO, Geneva. <a href="https://www.iso.org/standard/73851.html" target="_blank" rel="noopener">iso.org/standard/73851.html</a></li>
+<li id="ref-6">[6] Carothers, W.H. (1936). Polymers and polyfunctionality. <em>Transactions of the Faraday Society</em>, 32, 39&ndash;49. <a href="https://doi.org/10.1039/tf9363200039" target="_blank" rel="noopener">doi:10.1039/tf9363200039</a></li>
+<li id="ref-7">[7] Flory, P.J. (1941). Molecular size distribution in three dimensional polymers. I. Gelation. <em>Journal of the American Chemical Society</em>, 63(11), 3083&ndash;3090. <a href="https://doi.org/10.1021/ja01856a061" target="_blank" rel="noopener">doi:10.1021/ja01856a061</a></li>
+<li id="ref-8">[8] Odian, G. (2004). <em>Principles of Polymerization</em>, 4th ed., Chapter 2: Step Polymerization. Wiley, Hoboken, NJ. <a href="https://doi.org/10.1002/047147875X" target="_blank" rel="noopener">doi:10.1002/047147875X</a></li>
+<li id="ref-9">[9] Siesler, H.W., Ozaki, Y., Kawata, S., Heise, H.M. (eds.) (2002). <em>Near-Infrared Spectroscopy: Principles, Instruments, Applications.</em> Wiley-VCH, Weinheim. <a href="https://doi.org/10.1002/9783527612666" target="_blank" rel="noopener">doi:10.1002/9783527612666</a></li>
+<li id="ref-10">[10] Blanco, M., Castillo, M., Beneyto, R. (2007). Study of reaction processes by in-line near-infrared spectroscopy in combination with multivariate curve resolution: Esterification of myristic acid with isopropanol. <em>Talanta</em>, 72(2), 519&ndash;525. <a href="https://doi.org/10.1016/j.talanta.2006.11.046" target="_blank" rel="noopener">doi:10.1016/j.talanta.2006.11.046</a></li>
+<li id="ref-11">[11] Marengo, E., Bobba, M., Robotti, E., Lenti, M. (2004). Hydroxyl and acid number prediction in polyester resins by near infrared spectroscopy and artificial neural networks. <em>Analytica Chimica Acta</em>, 511(2), 313&ndash;322. <a href="https://doi.org/10.1016/j.aca.2004.01.053" target="_blank" rel="noopener">doi:10.1016/j.aca.2004.01.053</a></li>
+<li id="ref-12">[12] Avila, C., Mantzaridis, C., Ferr&eacute;, J., de Oliveira, R.R., Kantoj&auml;rvi, U., Rissanen, A., Krassa, P., de Juan, A., Muller, F.L., Hunter, T.N., Bourne, R.A. (2021). Acid number, viscosity and end-point detection in a multiphase high temperature polymerisation process using an online miniaturised MEMS Fabry&ndash;P&eacute;rot interferometer. <em>Talanta</em>, 224, 121735. <a href="https://doi.org/10.1016/j.talanta.2020.121735" target="_blank" rel="noopener">doi:10.1016/j.talanta.2020.121735</a></li>
+<li id="ref-13">[13] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -284,7 +305,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -303,6 +323,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

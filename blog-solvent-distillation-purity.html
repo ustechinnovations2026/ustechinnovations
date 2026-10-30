@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="White paper detailing tracking binary solvent fractions using fiber optic flow cells.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why distillation columns are usually run on temperature, what near-infrared spectroscopy adds for solvent composition and water content, and how such an analyzer is calibrated and validated.">
 <meta name="keywords" content="solvent purity NIR, distillation column monitoring, inline solvent analysis, chemical distillation control">
 <title>Inline Solvent Purity Monitoring in Chemical Distillation Columns | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-solvent-distillation-purity.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-solvent-distillation-purity.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-solvent-distillation-purity.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Inline Solvent Purity Monitoring in Chemical Distillation Columns",
-"description": "White paper detailing tracking binary solvent fractions using fiber optic flow cells.",
+"description": "Why distillation columns are usually run on temperature, what near-infrared spectroscopy adds for solvent composition and water content, and how such an analyzer is calibrated and validated.",
 "url": "https://www.ustechinnovations.com/blog-solvent-distillation-purity.html",
 "datePublished": "2026-04-08",
-"dateModified": "2026-04-08",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Inline Solvent Purity Monitoring in Chemical Distillation Columns | USTECH Innovations">
-    <meta property="og:description" content="White paper detailing tracking binary solvent fractions using fiber optic flow cells.">
+    <meta property="og:description" content="Why distillation columns are usually run on temperature, what near-infrared spectroscopy adds for solvent composition and water content, and how such an analyzer is calibrated and validated.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-solvent-distillation-purity.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-solvent-distillation-purity.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Inline Solvent Purity Monitoring in Chemical Distillation Columns | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Inline Solvent Purity Monitoring in Chemical Distillation Columns | USTECH Innovations">
-    <meta name="twitter:description" content="White paper detailing tracking binary solvent fractions using fiber optic flow cells.">
+    <meta name="twitter:description" content="Why distillation columns are usually run on temperature, what near-infrared spectroscopy adds for solvent composition and water content, and how such an analyzer is calibrated and validated.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-solvent-distillation-purity.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,44 +217,56 @@ Espa&#241;ol
 </a>
 <img src="images/blog_fiber_reactors.webp?v=1.0.5" alt="Inline Solvent Purity Monitoring in Chemical Distillation Columns" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">WHITE PAPER &mdash; April 08, 2026 &mdash; 1 min read</span>
+<span class="blog-post-meta">Article &mdash; April 8, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Inline Solvent Purity Monitoring in Chemical Distillation Columns</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Control reflux ratios and optimize distillation energy input via real-time binary fraction analysis.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why distillation and solvent-recovery columns are usually controlled on tray temperatures, what published work shows near-infrared spectroscopy can measure in distillate and solvent streams, and how an inline analyzer is calibrated against Karl Fischer and other reference methods and kept valid &mdash; based on the cited literature and standards.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Solvent Recovery Challenge</h2>
-<p>Chemical and pharmaceutical manufacturing loops generate large volumes of waste solvent. Solvent recovery distillation columns purify these components (e.g., Ethanol/Water, Isopropanol/Water) for reuse. Reflux ratios are adjusted based on the distillate composition. Lagged manual sampling limits purity optimization.</p>
-<h2>Fiber-Optic Distillate Flow Cells</h2>
-<p>Installing USTECH transmission flow cells directly in the distillate return pipe allows for real-time, non-destructive solvent fraction monitoring. The system resolves solvent concentration from 0.1% to 99.9% purity instantly, controlling reflux flow valves directly.</p>
+<h2>Composition is the target, temperature is the proxy</h2>
+<p>In solvent recovery and other distillation duties in the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical industry</a>, the quantities that matter are product compositions: the purity of the overhead distillate, the solvent lost with the bottoms, and the water left in a recovered solvent. Skogestad's tutorial on distillation dynamics and control notes that composition measurements are often expensive, unreliable and subject to time delays, which is why columns are commonly controlled on tray temperatures, with an outer composition loop in cascade where a composition measurement is available <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. He recommends at least three temperature sensors in each column section, so that pressure changes can be corrected for and temperatures can be used to estimate product compositions <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<p>Temperature remains an indirect indicator, and the relationship becomes strongly nonlinear for high-purity products: Skogestad points out that a set-point change from 99 % to 99.9 % purity would change the initial process gain by a factor of 10 unless logarithmic compositions are used <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. A direct composition measurement at the product draw is therefore the natural complement to temperature control, provided it is fast and reliable enough to be trusted in a loop.</p>
+<h2>What near-infrared spectroscopy measures in a solvent stream</h2>
+<p>Near-infrared absorption arises from overtones and combinations of the fundamental vibrations of O&ndash;H, C&ndash;H, N&ndash;H and S&ndash;H bonds, with intensities between 10 and 1,000 times lower than those of the fundamentals <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Water, alcohols and hydrocarbons all carry such bonds, and the weak absorption is what allows clear liquids to be measured in transmission: Pasquini gives typical optical paths of 1 to 50 mm, shorter towards the combination region around 2200 nm <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. The same review explains why a single-wavelength Beer's-law calibration is rarely sufficient: changes in hydrogen-bond patterns as the relative concentrations of the species change make real mixtures deviate from linear behaviour, so multivariate calibration is used <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Fibre optics allow the spectrometer to sit away from the process and to multiplex several measurement points up to 100 m distant, but the long-term stability of a multiplexed system has to be demonstrated before a model is built on it <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>What the literature shows for distillations</h2>
+<p>Pasquini and Scafi coupled a fast-scanning acousto-optic tunable filter NIR spectrometer to a distillation head through a U-shaped glass flow cell of about 150 &micro;L fed directly by the condensate, recording spectra from 950 to 1800 nm every 5 s; they demonstrated the approach on prepared binary mixtures and on adulterated gasoline, using principal component analysis to follow the changing condensate composition <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Their set-up was a laboratory microdistillation without a reflux column, so it shows the measurement principle rather than column performance <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>For solvent exchange, a routine step in pharmaceutical bulk-drug production, Tarczynski et al. placed a fibre-optic dip probe in the exchange distillation and used a PLS model to follow the percentage of the lower-boiling solvent in real time, so that the end of the exchange could be determined from the measurement <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. At manufacturing scale, Lambertus et al. developed an on-line transmission NIR method for water at parts-per-million levels in a toluene product solution after distillation, used as a control point before a Grignard reaction; models built at the development site were applied at the manufacturing site during six runs at 250-gallon scale <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. The benefit they emphasise is not speed alone but the reduced risk of operator exposure, because sampling of a lachrymatory and mutagenic compound was no longer needed <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. None of these studies supports a single universal working range: the range, precision and detection limit of an NIR solvent method are properties of the specific mixture, cell and calibration.</p>
+<h2>Reference methods, calibration and validation</h2>
+<p>An inline analyzer is only as good as the laboratory method it is calibrated against. For water, ASTM E203 describes volumetric Karl Fischer titration for free water and water of hydration in most solid and liquid compounds, and advises that the coulometric technique should be considered when samples routinely contain 500 mg/kg of water or less <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. ASTM E1064 covers coulometric Karl Fischer determination of water from 0 % to 2.0 % by mass in most liquid organic chemicals <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. ASTM E1655 is the practice for building multivariate infrared calibrations and establishing their validity at the time of calibration, and refers ongoing validation to a separate practice such as ASTM D6122 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. D6122 sets out the checks for multivariate online, at-line, field and laboratory analyzers: instrument performance, applicability of the model to each sample spectrum, and agreement with the primary test method; its scope is liquid petroleum products and fuels, so for solvent streams it serves as a template rather than a formal requirement <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Three points deserve particular attention:</p>
+<ul>
+<li><strong>Span the composition range.</strong> Calibration samples must cover the range of the samples to be analysed so that predictions are interpolations rather than extrapolations <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>; a model built on mid-range mixtures should not be trusted near the purity specification unless such samples were included.</li>
+<li><strong>Handle temperature explicitly.</strong> Using short-wave NIR spectra of ethanol/water/2-propanol mixtures, W&uuml;lfert et al. showed that temperature changes the spectra nonlinearly; global models that included temperature variation gave considerably lower prediction errors than local models, at the cost of sensitivity <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Either thermostat the cell or include the process temperature range in the calibration set.</li>
+<li><strong>Plan for calibration transfer.</strong> Chung's review of refinery NIR applications treats calibration transfer as one of the important issues to address <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>, and the Lambertus et al. method was deliberately transferred from a development site to a manufacturing site <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</li>
+</ul>
+<h2>How USTECH approaches this</h2>
+<p>The <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> process analyzer is specified for liquids in pipelines, and the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> is a rugged IP65 inline NIR analyzer with a sapphire window. Calibration models are developed in the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics software with the PLS and PCA tools used in the studies above <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>, and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passes the results to the plant PLC or SCADA system. Whether NIR reaches the precision a given cut point or water specification requires is established in a feasibility study with your own samples and Karl Fischer or laboratory reference values, using the calibration practices of ASTM E1655 and, as a template for validation, ASTM D6122 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>"Quantitative Monitoring of Multicomponent Distillate Streams using High-Stability Fiber-Optic Near-Infrared Cells," <em>Chemical Engineering Science</em>, 2024.</li>
+<li id="ref-1">[1] Skogestad, S. (1997). Dynamics and control of distillation columns: a tutorial introduction. <em>Chemical Engineering Research and Design</em>, 75(6), 539&ndash;562. <a href="https://doi.org/10.1205/026387697524092" target="_blank" rel="noopener">doi:10.1205/026387697524092</a></li>
+<li id="ref-2">[2] Pasquini, C. (2003). Near infrared spectroscopy: fundamentals, practical aspects and analytical applications. <em>Journal of the Brazilian Chemical Society</em>, 14(2), 198&ndash;219. <a href="https://doi.org/10.1590/S0103-50532003000200006" target="_blank" rel="noopener">doi:10.1590/S0103-50532003000200006</a></li>
+<li id="ref-3">[3] Pasquini, C., Scafi, S.H.F. (2003). Real-time monitoring of distillations by near-infrared spectroscopy. <em>Analytical Chemistry</em>, 75(10), 2270&ndash;2275. <a href="https://doi.org/10.1021/ac034054d" target="_blank" rel="noopener">doi:10.1021/ac034054d</a></li>
+<li id="ref-4">[4] Tarczynski, F.J., Anderson, J.M., Walker, D.S., Purdy, K. (1999). Near-IR monitoring of lab-scale solvent exchanges. <em>Proceedings of SPIE</em>, 3537, 166&ndash;170. <a href="https://doi.org/10.1117/12.341028" target="_blank" rel="noopener">doi:10.1117/12.341028</a></li>
+<li id="ref-5">[5] Lambertus, G., Shi, Z., Forbes, R., Kramer, T.T., Doherty, S., Hermiller, J., Scully, N., Wong, S.W., LaPack, M. (2014). On-line application of near-infrared spectroscopy for monitoring water levels in parts per million in a manufacturing-scale distillation process. <em>Applied Spectroscopy</em>, 68(4), 445&ndash;457. <a href="https://doi.org/10.1366/13-07260" target="_blank" rel="noopener">doi:10.1366/13-07260</a></li>
+<li id="ref-6">[6] ASTM E203-24. <em>Standard Test Method for Water Using Volumetric Karl Fischer Titration.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e0203-24.html" target="_blank" rel="noopener">store.astm.org/e0203-24.html</a></li>
+<li id="ref-7">[7] ASTM E1064-24. <em>Standard Test Method for Water in Organic Liquids by Coulometric Karl Fischer Titration.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1064-24.html" target="_blank" rel="noopener">store.astm.org/e1064-24.html</a></li>
+<li id="ref-8">[8] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-9">[9] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
+<li id="ref-10">[10] W&uuml;lfert, F., Kok, W.Th., Smilde, A.K. (1998). Influence of temperature on vibrational spectra and consequences for the predictive ability of multivariate models. <em>Analytical Chemistry</em>, 70(9), 1761&ndash;1767. <a href="https://doi.org/10.1021/ac9709920" target="_blank" rel="noopener">doi:10.1021/ac9709920</a></li>
+<li id="ref-11">[11] Chung, H. (2007). Applications of near-infrared spectroscopy in refineries and important issues to address. <em>Applied Spectroscopy Reviews</em>, 42(3), 251&ndash;285. <a href="https://doi.org/10.1080/05704920701293778" target="_blank" rel="noopener">doi:10.1080/05704920701293778</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -284,7 +303,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -303,6 +321,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

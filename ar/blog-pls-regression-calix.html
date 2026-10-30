@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="دليل USTECH Innovations - مقدمة إلى انحدار PLS في مجموعة caliX." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="جولة عملية في معايرة PLS: كيف تُقسَّم البيانات، وكيف تُختار المعالجة المسبقة وعدد المتغيرات الكامنة بالتحقق من الصحة، وأي التشخيصات ينبغي قراءتها، وكيف يُحافَظ على النموذج حياً في الإنتاج." name="description"/>
 <meta content="PLS الانحدار NIR، caliX معايرة المجموعة، التحليل الطيفي الجزئي للمربعات الصغرى، بناء النموذج الكيميائي" name="keywords"/>
 <title>مقدمة إلى انحدار PLS في مجموعة caliX | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/ar/blog-pls-regression-calix.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "ar",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "ar",
   "headline": "مقدمة إلى انحدار PLS في مجموعة caliX",
-  "description": "دليل USTECH Innovations - مقدمة إلى انحدار PLS في مجموعة caliX.",
+  "description": "جولة عملية في معايرة PLS: كيف تُقسَّم البيانات، وكيف تُختار المعالجة المسبقة وعدد المتغيرات الكامنة بالتحقق من الصحة، وأي التشخيصات ينبغي قراءتها، وكيف يُحافَظ على النموذج حياً في الإنتاج.",
   "url": "https://www.ustechinnovations.com/ar/blog-pls-regression-calix.html",
   "datePublished": "2026-05-12",
-  "dateModified": "2026-05-12",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="مقدمة إلى انحدار PLS في مجموعة caliX | USTECH Innovations" property="og:title"/>
-<meta content="دليل USTECH Innovations - مقدمة إلى انحدار PLS في مجموعة caliX." property="og:description"/>
+<meta content="جولة عملية في معايرة PLS: كيف تُقسَّم البيانات، وكيف تُختار المعالجة المسبقة وعدد المتغيرات الكامنة بالتحقق من الصحة، وأي التشخيصات ينبغي قراءتها، وكيف يُحافَظ على النموذج حياً في الإنتاج." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/ar/blog-pls-regression-calix.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="مقدمة إلى انحدار PLS في مجموعة caliX | USTECH Innovations" property="og:image:alt"/>
 <meta content="ar_SA" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="مقدمة إلى انحدار PLS في مجموعة caliX | USTECH Innovations" name="twitter:title"/>
-<meta content="دليل USTECH Innovations - مقدمة إلى انحدار PLS في مجموعة caliX." name="twitter:description"/>
+<meta content="جولة عملية في معايرة PLS: كيف تُقسَّم البيانات، وكيف تُختار المعالجة المسبقة وعدد المتغيرات الكامنة بالتحقق من الصحة، وأي التشخيصات ينبغي قراءتها، وكيف يُحافَظ على النموذج حياً في الإنتاج." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 <link href="../rtl.css" rel="stylesheet"/></head>
@@ -209,75 +216,58 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← العودة إلى جميع المدونات والمقالات</a>
-<img alt="Spectroscopy Calibration Software cali<span class="calix-x">X</span> Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
+<img alt="Spectroscopy Calibration Software caliX Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Technical Guide — May 12, 2026 — 4 دقائق قراءة</span>
+<span class="blog-post-meta">دليل — 12 مايو 2026 — 7 دقائق قراءة</span>
 <h1 class="blog-post-title">مقدمة إلى انحدار PLS في مجموعة cali<span class="calix-x">X</span></h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">دليل خطوة بخطوة لتطوير نماذج المعايرة النوعية ومعالجتها مسبقًا والتحقق من صحتها باستخدام محرك AutoML الخاص بـ USTECH.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">جولة على مستوى الممارس في معايرة انحدار PLS &mdash; تقسيم البيانات، واختيار المعالجة المسبقة وعدد المتغيرات الكامنة بالتحقق من الصحة، وقراءة RMSECV وRMSEP والانحياز وتشخيصات القيم الشاذة، وصيانة النموذج بعد دخوله الاستخدام &mdash; مع الأدبيات الإحصائية والكيمومترية وراء كل خطوة، والخطوات المقابلة في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 </div>
 <div class="blog-post-content">
-<h2>ما هو انحدار المربعات الصغرى الجزئية (PLS)؟</h2>
-<p>يتكون أطياف الأشعة تحت الحمراء القريبة (NIR) من آلاف نقاط الطول الموجي الفردية. نظرًا لأن امتصاص ضوء NIR يظهر على شكل نغمات اهتزازية واسعة ومتداخلة بدلاً من قمم حادة، نادرًا ما يكون طول موجة واحد كافيًا للتنبؤ بالتركيز الكيميائي. نحن بحاجة إلى إحصاءات متعددة المتغيرات، وخاصة بالنسبة للمعقدة <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">التطبيقات الكيميائية والصيدلانية</a>.</p>
-<p><strong>انحدار المربعات الصغرى الجزئية (PLS).</strong>هي الخوارزمية الكيميائية القياسية الذهبية. فهو يقلل من آلاف المتغيرات الطيفية المترابطة بشكل كبير إلى عدد قليل من العوامل المتعامدة (تسمى <strong>المتغيرات الكامنة (LVs)</strong>أو المكونات الرئيسية) التي تزيد من التباين بين البيانات الطيفية والتركيزات المرجعية المختبرية المستهدفة.</p>
-<p>تطوير نموذج يستخدم لطلب البرمجة النصية اليدوية في MATLAB أو R. ضمن <strong>cali<span class="calix-x">X</span>AutoML Suite</strong>  (الذي يبني ملفات دقيقة للغاية <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>نماذج AutoML</a>)، تم تبسيط سير العمل هذا إلى خمس مراحل واضحة.</p>
----
-<h2>الخطوة 1: محاذاة البيانات واستيرادها</h2>
-<p>أولاً، قم بإعداد جدول بيانات معايرة (CSV أو Excel) يطابق أسماء الملفات الطيفية الخاصة بك مع نتائج مختبر الكيمياء الرطبة. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>يدعم الاستيراد المباشر لتنسيقات قاعدة بيانات المطياف الخام وتنسيقات التبادل الطيفي القياسية مثل JCAMP-DX.</p>
-<p>بمجرد استيرادها، cali<span class="calix-x" style="color: #38b6ff !important;">X</span>يقسم مجموعة البيانات الخاصة بك تلقائيًا:<strong>75% للمعايرة والتحقق المتبادل</strong>(لتدريب النموذج) و <strong>25% كمجموعة تحقق مستقلة</strong>(يظل منفصلاً تمامًا لاختبار الأداء التنبئي النهائي).</p>
-<h2>الخطوة 2: اختيار المعالجة الطيفية</h2>
-<p>تحتوي إشارات الضوء NIR الخام على ضوضاء مبعثرة مادية ناجمة عن اختلافات حجم الجسيمات، أو كثافة تعبئة العينة، أو مسافة المسبار. تعمل المعالجة الطيفية المسبقة على إزالة خطوط الأساس الفيزيائية هذه رياضيًا، لذا يركز نموذج PLS بشكل كامل على الامتصاص الكيميائي.</p>
-<p>في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>خط الأنابيب، يمكنك تطبيق وسلسلة خطوات المعالجة المسبقة القياسية:</p>
+<h2>ما هي معايرة PLS، ولماذا تحتاج كل خطوة إلى التحقق من الصحة</h2>
+<p>يربط انحدار المربعات الصغرى الجزئية مصفوفة طيفية <em>X</em> بالقيم المرجعية <em>Y</em> عبر عدد صغير من المتغيرات الكامنة، ويدين بمكانته في معايرة الأشعة تحت الحمراء القريبة لقدرته على التعامل مع متغيرات كثيرة مشوشة ومتعددة الخطية بل وغير مكتملة <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. ويبيّن الدليل التعليمي لـ Geladi وKowalski مواضع إخفاق الانحدار العادي في مثل هذه البيانات، ويطوّر PLS علاجاً لذلك، ويقدّم خوارزمية مع إرشادات عملية لاستخدامها <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. أما الطريقة نفسها فمشروحة في المقال المصاحب <a href="blog-pls-calibration-explained.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">كيف تعمل معايرة NIR: شرح PLS</a>؛ ويتناول هذا الدليل القرارات التي يتخذها الممارس أثناء بناء المعايرة. فكل قرار منها &mdash; كيفية تقسيم العينات، وأي معالجة مسبقة تُطبَّق، وكم متغيراً كامناً يُحتفظ به، وأي العينات تُحذف &mdash; يغيّر مؤشرات الأداء، ويبيّن Westad وMarini أن المستوى الذي يُتحقق عنده من صحة النموذج يؤثر في خطئه المُبلَّغ عنه وفي الأبعاد المختارة له معاً <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>تقسيم البيانات</h2>
+<p>تخلص مراجعة Snee للتحقق من صحة الانحدار إلى أن تقسيم البيانات، الذي يُقدَّر فيه النموذج من جزء من البيانات ويُقاس بالباقي دقة تنبؤه، طريقة فعالة للتحقق من صحة النموذج حين لا يكون جمع بيانات جديدة عملياً، وتوصي بخوارزمية DUPLEX لـ Kennard لإجراء التقسيم حين لا يوجد متغير واضح، كالزمن، يُبنى عليه <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. وتختار طريقة Kennard&ndash;Stone ذات الصلة النقاط تتابعياً بحيث تغطي كل خطوة المنطقة التجريبية بانتظام <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>، ولهذا تُستخدم على نطاق واسع لانتقاء عينات معايرة تمتد على الفضاء الطيفي. والتقسيم العشوائي البحت ليس سليماً تلقائياً: إذ يحذّر Westad وMarini من أن تقسيم مجموعة البيانات عشوائياً بشكل متكرر إلى مجموعتي معايرة واختبار لا يمكن تبريره إلا حين لا يوجد تقسيم طبقي منهجي للعينات، ويميّزان بين مستويات التحقق &mdash; التكرارية، وقابلية الاستنساخ، وتباين الجهاز، وتباين المواد الخام &mdash; التي ينبغي أن يحترمها التقسيم إذا أُريد لتقدير الخطأ أن يقول شيئاً عن العينات المستقبلية <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>وحجم المجموعة المحجوزة قرار أيضاً لا عُرف. ففي دراسة Monte Carlo على أطياف NIR لنباتات ذرة كاملة، سحب Martens وDardenne مجموعات معايرة صغيرة من 40 إلى 120 عينة من قاعدة بيانات تضم 922 عينة، ووجدا أن حجز مجموعة اختبار مستقلة من مجمّع صغير أصلاً قلّل من الأداء التنبؤي، في حين أعطى التحقق المتقاطع الكامل تنبؤات أفضل ولم يكن متفائلاً إلا قليلاً <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. والقراءة العملية هي أن مجموعة الاختبار المنفصلة تكون أعظم قيمةً حين تكون العينات وفيرة أو حين تمثّل مجتمعاً لاحقاً أو مختلفاً فعلاً؛ أما مع قلة العينات فإن التحقق المتقاطع يستفيد منها بشكل أفضل <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>اختيار المعالجة المسبقة</h2>
+<p>يصنّف Rinnan وآخرون طرق المعالجة المسبقة الشائعة لأطياف NIR إلى تصحيحات التشتت (MSC وSNV والتطبيع) والمشتقات الطيفية، ويقارنون آثارها على بيانات حقيقية <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>؛ وتُشرح آلياتها في <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">دليل MSC/SNV</a> و<a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">دليل Savitzky-Golay</a>. وبالنسبة إلى سير عمل المعايرة فالنقطة إجرائية: إعدادات المعالجة المسبقة معاملات فائقة للنموذج، ولذا ينبغي مقارنة سلاسل المعالجة المرشحة بتصميم التحقق نفسه المستخدم لعدد المتغيرات الكامنة، وليس أبداً بملاءمة المعايرة. ويلاحظ Wiklund وآخرون أن اختبارهم لاختيار المكونات يعمل أيضاً مؤشراً على أن البيانات تتطلب معالجة مسبقة، وهو تحقق متقاطع مفيد حين يحتاج نموذج الطيف الخام إلى مكونات أكثر بكثير من نموذج المشتقة <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>كم متغيراً كامناً</h2>
+<p>عدد المتغيرات الكامنة هو أهم إعداد منفرد في PLS: فالقليل منها يترك معلومات كيميائية دون نمذجة، والكثير منها يلائم ضجيجاً لن يتكرر في العينات الجديدة <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. والأداة المعيارية هي التحقق المتقاطع، الذي قدّم Stone صيغته العامة لاختيار المتنبئات وتقييمها <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>؛ وفي PLS يُعاد تقدير النموذج مع استبعاد أجزاء من البيانات، ويُرسم الخطأ في التحقق المتقاطع مقابل عدد المكونات <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. والقاعدة المتعارف عليها هي التوقف عند الحد الأدنى لهذا المنحنى أو قبله بقليل، لكن اختيار المقاطع مهم. فقد بيّن Shao أن التحقق المتقاطع بترك عينة واحدة غير متسق تقاربياً في اختيار النموذج ذي القدرة التنبؤية الفضلى، وأن عدم الاتساق هذا يُصحَّح بترك كتل أكبر من المشاهدات <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>؛ وعملياً يرجّح ذلك التحقق المتقاطع المقطعي أو المجمّع، مع إبقاء القياسات المكررة وعينات الدفعة الواحدة في المقطع نفسه، على ترك أطياف منفردة. ويقدم Wiklund وآخرون اختبار عشوائية مكمّلاً لا يتطلب استبعاد أي بيانات، وقد أدى أداءً جيداً، على بيانات محاكاة معلومة الأبعاد وعشر مجموعات بيانات حقيقية، حين اقترن بقواعد اختيار أخرى <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>قراءة التشخيصات</h2>
+<p>تظهر ثلاثة أرقام للخطأ في كل تقرير نموذج. فخطأ المعايرة (RMSEC) يصف الملاءمة وهو دائماً الأصغر؛ وخطأ التحقق المتقاطع (RMSECV) يقدّر التنبؤ داخل مجتمع المعايرة؛ وخطأ التنبؤ على مجموعة مستقلة (RMSEP) هو الوحيد الذي يختبر عينات لم يرها النموذج قط، ومستوى التحقق لتلك المجموعة هو ما يحدد معناه <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. وتعرض ISO 12099 الإحصاءات الخاصة بقياس الأداء، بما في ذلك الخطأ المعياري للتنبؤ والانحياز، وتقدّم أمثلة على القيم الشاذة ومخططات الضبط في ملحقها الإعلامي <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. ووجود فجوة كبيرة بين RMSECV وRMSEP، أو انحياز على مجموعة الاختبار، يعني عادةً أن عينات الاختبار تختلف بشكل منهجي عن مجتمع المعايرة، لا أن النموذج خاطئ في حد ذاته <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>وتكمل تشخيصات العينات الصورة. إذ يستعرض Wold وآخرون تشخيصات PLS المعيارية &mdash; الدرجات والتحميلات والبواقي والمسافة إلى النموذج &mdash; المستخدمة للعثور على العينات البعيدة عن غيرها في الفضاء الطيفي أو ضعيفة الملاءمة <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. ويبيّن Hubert وVanden Branden أن خوارزمية SIMPLS الشائعة، لأنها مبنية على مصفوفة التغاير المتقاطع التجريبية والمربعات الصغرى العادية، تتأثر نتائجها بالمشاهدات الشاذة؛ ويقدمان صيغاً متينة مع قيم RMSECV وRMSEP متينة، ومخططات تشخيصية تُظهر القيم الشاذة وتصنّفها <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. وأياً كانت الأداة، لا ينبغي حذف عينة من المعايرة إلا لسبب موثق: قيمة مرجعية خاطئة، أو طيف لمادة مختلفة، أو خلل في القياس. وثلاث عادات تُبقي التشخيصات نزيهة:</p>
 <ul>
-<li><strong>المتغير العادي القياسي (SNV):</strong>توسيط وتوسيع نطاق كل طيف فردي لإزالة الاختلافات في القياس والإزاحة.</li>
-<li><strong>تصحيح التشتت المضاعف (MSC):</strong>يتراجع كل طيف مقابل متوسط ​​الطيف لعزل وإزالة المنحدرات المبعثرة.</li>
-<li><strong>Savitzky-Golay المشتقات (الأولى أو الثانية):</strong>يحسب تناسبات متعددة الحدود المحلية للحصول على المشتقات وحل النطاقات المتداخلة وإزالة التحولات الأساسية.</li>
+<li><strong>قرّر تصميم التحقق أولاً.</strong> ثبّت التقسيم ومقاطع التحقق المتقاطع قبل أي مسح للمعالجة المسبقة أو للمكونات، واستخدم التصميم نفسه لكل مرشح كي تكون المقارنة عادلة <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>أبلِغ عن RMSECV وRMSEP مع مستوى التحقق الخاص بكل منهما.</strong> فالخطأ المقدَّر على أطياف مكررة للعينات نفسها لا يُقارن بخطأ مقدَّر على دفعة إنتاج لاحقة <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>عامِل حذف القيم الشاذة بوصفه قراراً يخص النموذج.</strong> سجّل العينات التي حُذفت وسبب حذفها؛ فعلامة البواقي أو الرفع دعوة إلى التحقيق، لا ترخيص بالحذف <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
 </ul>
-<p><em>نصيحة: cali<span class="calix-x" style="color: #38b6ff !important;">X</span>سيقوم محرك AutoML الخاص بـ AutoML تلقائيًا بإجراء بحث شبكي عبر العشرات من مجموعات المعالجة المسبقة لاقتراح التسلسل الأمثل للمصفوفة الخاصة بك.</em></p>
-<h2>الخطوة 3: اختيار المتغيرات الكامنة (LVs)</h2>
-<p>يعد تحديد العدد الصحيح من المتغيرات الكامنة أمرًا بالغ الأهمية لمنع <strong>التركيب الزائد</strong>. إذا قمت بتحديد عدد قليل جدًا من LVs، فإن النموذج الخاص بك غير مناسب ويفتقد الارتباطات الكيميائية. إذا قمت بتحديد عدد كبير جدًا من LVs، فسيبدأ النموذج الخاص بك في احتواء الضوضاء الطيفية العشوائية، والتي ستفشل عند مسح عينات جديدة.</p>
-<p>أنظر إلى <strong>جذر متوسط ​​مربع خطأ التحقق من الصحة (RMSECV)</strong>منحنى. حدد عدد LVs عند "مرفق" المنحنى، حيث يتوقف الخطأ عن الانخفاض بشكل ملحوظ. إن إضافة المزيد من المكونات بعد هذه النقطة يناسب الضوضاء فقط.</p>
-<pre>
-# Sample Model Statistics Output in cali<span class="calix-x">X</span>
----------------------------------------------
-Target Parameter: Crude Protein
-Preprocessing: SNV + S-G 1st Derivative (15pt)
-Selected Latent Variables (LVs): 6
-Calibration R²: 0.982
-Calibration RMSEC: 0.09%
-Cross-Validation RMSECV: 0.11%
-Validation RMSEP: 0.12%
-Bias: -0.01%
----------------------------------------------
-</pre>
-<h2>الخطوة 4: التحقق المستقل</h2>
-<p>لتأهيل النموذج للنشر في المصنع، قم بتشغيل التنبؤات على مجموعة الاختبار المستقلة بنسبة 25%. ال <strong>جذر متوسط ​​مربع خطأ التنبؤ (RMSEP)</strong>يقيس الدقة الحقيقية التي ستراها عند استخدام المستشعر المضمن. يجب أن يعرض النموذج القوي RMSEP وهو قريب جدًا من خطأ التحقق المتبادل (RMSECV).</p>
-<h2>الخطوة 5: التصدير إلى ProChem</h2>
-<p>بمجرد رضاك ​​عن أداء النموذج، انقر فوق<strong>"تصدير الحزمة النموذجية"</strong>. يؤدي هذا إلى إنشاء ملف نموذج `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>` آمن. قم بتحميل هذا الملف مباشرة إلى <strong>ProChem برنامج التحكم في العمليات</strong> على خط الإنتاج الخاص بك. سيقوم ProChem تلقائيًا بتطبيق خطوات المعالجة المسبقة المكونة مسبقًا على الأطياف المضمنة والتنبؤ بالتركيزات في الوقت الفعلي، وإرسال النتائج مباشرة إلى مصنعك PLC.</p>
-<h2>ملخص</h2>
-<p>من خلال الجمع بين منطق الانحدار الصارم PLS والتحسين الآلي للمعالجة المسبقة، فإن cali<span class="calix-x" style="color: #38b6ff !important;">X</span>يجعل Suite القياسات الكيميائية في متناول مهندسي مراقبة الجودة دون التضحية بالعمق العلمي. يمكنك الحصول على نماذج موثوقة وقوية وجاهزة لحماية هوامش B2B الخاصة بك في اليوم الأول.</p>
+<h2>الحفاظ على النموذج حياً</h2>
+<p>يُتحقق من صحة المعايرة للمجتمع ولحالة الجهاز اللذين بُنيت عليهما. وتحدد ASTM E1655 ممارسات جمع البيانات ومعالجتها لمعايرات الأشعة تحت الحمراء، وتصف تقنيات المعايرة ومعايير التحقق من أداء النموذج، وتفترض أن المحلل يعمل وفق الظروف التي حددها المصنّع في أوقات المعايرة والتحقق، وتوفر استبياناً يمكن فحص المعايرة متعددة المتغيرات على أساسه <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. وتضيف ISO 12099 الجانب التشغيلي: فحص استقرار الجهاز وفحص أداء مستمر للمعايرة، مع مخططات الضبط أداةً للمراقبة <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. ويؤكد Westad وMarini أن متانة النموذج في التنبؤ بالعينات المستقبلية أهم من أي مؤشر أداء منفرد <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>؛ وعملياً يعني ذلك روتيناً من الفحوص المرجعية على عينات الإنتاج، ومخططات ضبط للانحياز وخطأ التنبؤ، وتحديثاً مخططاً لمجموعة المعايرة عند ظهور مواد خام أو مواسم أو ظروف عملية جديدة.</p>
+<h2>سير العمل في cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h2>
+<p>تنظّم <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">حزمة cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> الخطوات المذكورة أعلاه في سير عمل من ثماني وحدات لأطياف NIR وFTIR وRaman. إذ تستورد وحدة البيانات الأطياف والقيم المرجعية من ملفات Excel أو CSV وتدعم تنظيف البيانات بمقاييس الرفع في PCA وPLS؛ وتوفر خطوة المعالجة المسبقة SNV وMSC وإزالة الاتجاه والتقييس التلقائي ومشتقات Savitzky-Golay <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>؛ وتبني وحدتا الانحدار اليدوي والتلقائي نماذج PLS وPLS المتين وPCR والنماذج المنتظمة، مع تحديد المستخدم للحد الأقصى لعدد المتغيرات الكامنة ولعدد طيّات التحقق المتقاطع، في حين يمسح الوضع التلقائي توليفات سلاسل المعالجة ويحدد نقطة الانعطاف في منحنى التحقق <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. وتشمل تشخيصات القيم الشاذة Hotelling T&sup2; وبواقي Q والرفع في PLS ومسافة Mahalanobis <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>، وتطبّق وحدة التنبؤ النموذج المكتمل على العينات المجهولة، وتتولى وحدتا نقل البيانات ومحوّل النماذج توحيد الأجهزة وتصدير النموذج لنشره عبر <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>. أما أي تقسيم ومعالجة مسبقة وعدد مكونات هو الصحيح لمنتج معين، فيُحدَّد في دراسة جدوى باستخدام عيناتكم وتحاليلكم المرجعية.</p>
 <div class="blog-post-references">
-<h3>مراجع</h3>
+<h3>المراجع</h3>
 <ul>
-<li>مارتنز، H.، &amp; N-s، T. (1989).<em>معايرة متعددة المتغيرات</em>. جون وايلي وأولاده.</li>
-<li>"تقنيات المعالجة المسبقة في التحليل الطيفي للأشعة تحت الحمراء القريبة: دليل قياس كيميائي للممارسين الصناعيين،"<em>أناليتيكا كيميكا أكتا</em>، 2022.</li>
-<li>جيلادي، بي، وكوالسكي، بي آر (1986). "الانحدار الجزئي للمربعات الصغرى: برنامج تعليمي"<em>أناليتيكا كيميكا أكتا</em>، 185، 1-17.</li>
+<li id="ref-1">[1] Wold, S., Sj&ouml;str&ouml;m, M., Eriksson, L. (2001). PLS-regression: a basic tool of chemometrics. <em>Chemometrics and Intelligent Laboratory Systems</em>, 58(2), 109&ndash;130. <a href="https://doi.org/10.1016/S0169-7439(01)00155-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(01)00155-1</a></li>
+<li id="ref-2">[2] Geladi, P., Kowalski, B.R. (1986). Partial least-squares regression: a tutorial. <em>Analytica Chimica Acta</em>, 185, 1&ndash;17. <a href="https://doi.org/10.1016/0003-2670(86)80028-9" target="_blank" rel="noopener">doi:10.1016/0003-2670(86)80028-9</a></li>
+<li id="ref-3">[3] Westad, F., Marini, F. (2015). Validation of chemometric models &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 893, 14&ndash;24. <a href="https://doi.org/10.1016/j.aca.2015.06.056" target="_blank" rel="noopener">doi:10.1016/j.aca.2015.06.056</a></li>
+<li id="ref-4">[4] Snee, R.D. (1977). Validation of Regression Models: Methods and Examples. <em>Technometrics</em>, 19(4), 415&ndash;428. <a href="https://doi.org/10.1080/00401706.1977.10489581" target="_blank" rel="noopener">doi:10.1080/00401706.1977.10489581</a></li>
+<li id="ref-5">[5] Kennard, R.W., Stone, L.A. (1969). Computer Aided Design of Experiments. <em>Technometrics</em>, 11(1), 137&ndash;148. <a href="https://doi.org/10.1080/00401706.1969.10490666" target="_blank" rel="noopener">doi:10.1080/00401706.1969.10490666</a></li>
+<li id="ref-6">[6] Martens, H.A., Dardenne, P. (1998). Validation and verification of regression in small data sets. <em>Chemometrics and Intelligent Laboratory Systems</em>, 44(1&ndash;2), 99&ndash;121. <a href="https://doi.org/10.1016/S0169-7439(98)00167-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(98)00167-1</a></li>
+<li id="ref-7">[7] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-8">[8] Wiklund, S., Nilsson, D., Eriksson, L., Sj&ouml;str&ouml;m, M., Wold, S., Faber, K. (2007). A randomization test for PLS component selection. <em>Journal of Chemometrics</em>, 21(10&ndash;11), 427&ndash;439. <a href="https://doi.org/10.1002/cem.1086" target="_blank" rel="noopener">doi:10.1002/cem.1086</a></li>
+<li id="ref-9">[9] Stone, M. (1974). Cross-Validatory Choice and Assessment of Statistical Predictions. <em>Journal of the Royal Statistical Society: Series B (Methodological)</em>, 36(2), 111&ndash;133. <a href="https://doi.org/10.1111/j.2517-6161.1974.tb00994.x" target="_blank" rel="noopener">doi:10.1111/j.2517-6161.1974.tb00994.x</a></li>
+<li id="ref-10">[10] Shao, J. (1993). Linear Model Selection by Cross-Validation. <em>Journal of the American Statistical Association</em>, 88(422), 486&ndash;494. <a href="https://doi.org/10.1080/01621459.1993.10476299" target="_blank" rel="noopener">doi:10.1080/01621459.1993.10476299</a></li>
+<li id="ref-11">[11] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-12">[12] Hubert, M., Vanden Branden, K. (2003). Robust methods for partial least squares regression. <em>Journal of Chemometrics</em>, 17(10), 537&ndash;549. <a href="https://doi.org/10.1002/cem.822" target="_blank" rel="noopener">doi:10.1002/cem.822</a></li>
+<li id="ref-13">[13] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://www.astm.org/e1655-17r24.html" target="_blank" rel="noopener">astm.org/e1655-17r24.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">تحميل التقرير الفني الكامل</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">قم بالوصول إلى الورقة التقنية الكاملة غير المحررة مع الصيغ الطيفية الكاملة ومجموعات بيانات المعايرة ومعلمات الأجهزة.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>أوافق على استلام ملف PDF الفني والاشتراك في تحديثات USTECH Innovations المتوافقة مع <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">سياسة الخصوصية</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">قيّم هذا التطبيق لعمليتك الإنتاجية</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">يمكن لفريق التطبيقات لدينا شرح الطريقة ومشاركة المراجع العلمية الداعمة وترتيب دراسة جدوى باستخدام عيناتكم الخاصة.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">اتصل بنا</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -285,22 +275,22 @@ Bias: -0.01%
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- Calibration Transfer Card -->
 <div class="card" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="جدوى نقل المعايرة على مقاييس الطيف MEMS" decoding="async" loading="lazy" src="../images/blog_mems_sensor.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="نقل المعايرة بين مطيافات NIR: الأساليب وتقييم الجدوى" decoding="async" loading="lazy" src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورق أبيض</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">جدوى نقل المعايرة على مقاييس الطيف MEMS</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">يناقش كيف تتيح الطباعة الحجرية الضوئية للسيليكون إمكانية نقل المعايرة المباشرة دون توحيد الوحدة.</p>
-<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">قراءة الورقة البيضاء</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">نقل المعايرة بين مطيافات NIR: الأساليب وتقييم الجدوى</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">لماذا نادراً ما تعمل معايرة NIR المبنية على مطياف واحد دون تغيير على مطياف آخر، وما طرائق التوحيد القياسي وتعديل النماذج التي تصفها الأدبيات، وكيف تُقيَّم جدوى النقل لعائلة من الأجهزة.</p>
+<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Cattle Feed Waste Card -->
 <div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="الحد من هدر المكونات في إنتاج أعلاف الماشية" decoding="async" loading="lazy" src="../images/blog_cattle_feed.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة الحالة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">الحد من هدر المكونات في إنتاج أعلاف الماشية</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">دراسة إحصائية توضح تحسن متوسط ​​إنتاجية المنتج بنسبة 1.2% من خلال نشر أجهزة استشعار NIR المضمنة.</p>
-<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">لماذا تُركَّب أعلاف الماشية بزيادة تحسّباً لتباين المكوّنات، وما تقوله الأدبيات عن مصادر هذا التباين، وكيف يضيّق قياس NIR عند الاستلام وعند الخلاط هامشَ الأمان.</p>
+<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 </div>
@@ -358,6 +348,6 @@ Bias: -0.01%
 <p>مصمم للدقة العلمية والصناعية.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

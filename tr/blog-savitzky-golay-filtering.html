@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations Kılavuzu - Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Savitzky-Golay filtresinin bir spektruma gerçekte ne yaptığı, türevlerin taban çizgilerini neden kaldırdığı ve pencere uzunluğu ile polinom derecesinin nasıl seçilmesi gerektiği; orijinal ve sonraki literatürle birlikte." name="description"/>
 <meta content="Savitzky-Golay filtre NIR, spektral yumuşatma ön işleme, türev spektroskopisi, NIR veri ön işleme" name="keywords"/>
 <title>Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/tr/blog-savitzky-golay-filtering.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-savitzky-golay-filtering.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-savitzky-golay-filtering.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "tr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "tr",
   "headline": "Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak",
-  "description": "USTECH Innovations Kılavuzu - Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak.",
+  "description": "Savitzky-Golay filtresinin bir spektruma gerçekte ne yaptığı, türevlerin taban çizgilerini neden kaldırdığı ve pencere uzunluğu ile polinom derecesinin nasıl seçilmesi gerektiği; orijinal ve sonraki literatürle birlikte.",
   "url": "https://www.ustechinnovations.com/tr/blog-savitzky-golay-filtering.html",
   "datePublished": "2026-06-04",
-  "dateModified": "2026-06-04",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations Kılavuzu - Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak." property="og:description"/>
+<meta content="Savitzky-Golay filtresinin bir spektruma gerçekte ne yaptığı, türevlerin taban çizgilerini neden kaldırdığı ve pencere uzunluğu ile polinom derecesinin nasıl seçilmesi gerektiği; orijinal ve sonraki literatürle birlikte." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/tr/blog-savitzky-golay-filtering.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-savitzky-golay-filtering.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak | USTECH Innovations" property="og:image:alt"/>
 <meta content="tr_TR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations Kılavuzu - Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak." name="twitter:description"/>
+<meta content="Savitzky-Golay filtresinin bir spektruma gerçekte ne yaptığı, türevlerin taban çizgilerini neden kaldırdığı ve pencere uzunluğu ile polinom derecesinin nasıl seçilmesi gerektiği; orijinal ve sonraki literatürle birlikte." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-savitzky-golay-filtering.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,81 +218,47 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Tüm Bloglara ve Yayınlara Dön</a>
 <img alt="Spectroscopy Software Preprocessing Interfaces" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_spectral_math.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 04, 2026 — 4 dk okuma</span>
+<span class="blog-post-meta">Rehber — 4 Haziran 2026 — 3 dk okuma</span>
 <h1 class="blog-post-title">Ön İşlemede Savitzky-Golay Filtrelemeyi Anlamak</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> içinde spektral veri kümesi hizalaması için yumuşatma algoritmalarını, polinom sıralarını ve türev matematiğini açıklayan ayrıntılı bir inceleme.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Savitzky-Golay filtresinin bir spektruma gerçekte ne yaptığı, türevlerin taban çizgileri ve örtüşen bantlar konusunda neden yardımcı olduğu ve pencere uzunluğu ile polinom derecesinin nasıl seçilmesi gerektiği &mdash; orijinal ve sonraki literatürle birlikte.</p>
 </div>
 <div class="blog-post-content">
-<h2>Kemometride Ön İşlemin Rolü</h2>
-<p>Yakın kızılötesi (NIR) spektrumları, özellikle <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">kimyasal ve farmasötik spektrumlar</a>, oldukça karmaşıktır ve sıklıkla üst üste binen soğurma bantları, temel sapmalar ve yüksek frekanslı gürültü ile karakterize edilir. Kantitatif kalibrasyon modellerini (PLS regresyonu gibi) yerleştirmeden önce kemometristlerin ham spektral verileri ön işlemesi gerekir. Amaç, ilgilenilen kimyasal sinyalleri korurken, farklı parçacık boyutlarından saçılma veya ışık yolu uzunluğundaki değişikliklerden kaynaklanan taban çizgisi kaymaları gibi fiziksel yapaylıkları ortadan kaldırmaktır.</p>
-<p>Ön işleme cephaneliğindeki araçlar arasında <strong>Savitzky-Golay (SG) algoritması</strong>, yumuşatma ve farklılaştırma için endüstri standardıdır. 1964 yılında Abraham Savitzky ve Marcel J. E. Golay tarafından geliştirilen bu sistem, modern kemometrik veri hatlarının temelini oluşturmaya devam ediyor.</p>
-<blockquote>"Spektral özellikleri bulanıklaştıran standart hareketli ortalama filtrelerinin aksine, Savitzky-Golay filtreleme, yerel düşük dereceli polinomları verilere uydurarak tepe yüksekliklerini, genişliklerini ve yerel şekilleri korur."</blockquote>
-<h2>Savitzky-Golay Algoritması Nasıl Çalışır?</h2>
-<p>Temel konsept, sabit sayıda veri noktasından (tek bir tam sayı olması gereken $w$) oluşan bir pencereyi spektrum boyunca kaydırmaktır. Her adımda, doğrusal en küçük kareler kullanılarak pencere içindeki veri noktalarına $k$ dereceli bir polinom (genellikle $k = 2$ veya $3$, ikinci dereceden veya kübik modelleri temsil eder) yerleştirilir. Pencerenin merkez noktasına yerleştirilen polinomun değeri, o dalga boyu için yeni, düzeltilmiş değer haline gelir.</p>
-<p>En küçük kareler uyum katsayıları yalnızca pencere boyutuna $w$ ve polinom derecesine $k$ bağlı olduğundan, sabit ağırlıklar (evrişim olarak bilinir) olarak önceden hesaplanabilirler. Bu, SG filtresinin binlerce uzun spektrum için bile son derece hızlı hesaplanmasını sağlar.</p>
-<h2>Türevler ve Temel Düzeltme</h2>
-<p>Savitzky-Golay yönteminin en güçlü özelliklerinden biri yumuşatma işlemi sırasında sayısal türevleri hesaplayabilmesidir. Türevler, taban çizgisi sapmalarını düzeltmede ve çakışan tepe noktalarını çözmede oldukça etkilidir:</p>
+<h2>Spektrumlar neden ön işlemden geçirilir</h2>
+<p>Proses numunelerinin yakın kızılötesi spektrumları, kimyasal absorpsiyon sinyalinin üzerinde numuneden numuneye değişen fiziksel etkiler taşır: parçacık boyutuna ve sıkışmaya bağlı ışık saçılması, toplamsal taban çizgisi kaymaları ve etkin yol uzunluğundaki çarpımsal değişimler <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Dağınık yansıma ölçümlerinde bu etkiler spektral varyansa hâkimdir <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; bu nedenle PLS regresyonu gibi nicel bir model kurulmadan önce, kimyasal bilgiyi korurken bu etkileri gidermek için ön işlem uygulanır. Rinnan ve ark., yaygın NIR ön işlem yöntemlerini saçılma düzeltmeleri (MSC, SNV, normalizasyon) ve spektral türevler olmak üzere iki aileye ayırır ve Savitzky-Golay türevinin ikinci grubun en yaygın kullanılanlarından biri olduğunu belirtir <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>Savitzky-Golay filtresi ne yapar</h2>
+<p>Savitzky ve Golay 1964'te, kayan bir pencere içindeki noktalara en küçük kareler yöntemiyle düşük dereceli bir polinom uydurmanın ve bu polinomun pencere merkezindeki değerini almanın, veriyi sabit bir tam sayı ağırlık kümesiyle evriştirmeye eşdeğer olduğunu göstermiş; bu ağırlıkları 5 ile 25 noktalı pencereler ve ikinci/üçüncü ile dördüncü/beşinci dereceden polinomlar için hem yumuşatma hem de türev amacıyla tablolaştırmıştır <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Orijinal tablolardaki bazı hatalar sonraki makalelerde düzeltilmiş <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, Gorry ise ağırlıkları pencerenin her konumunda hesaplamak için genel bir yöntem vermiş ve böylece spektrumun uçlarındaki ilk ve son noktaların kaybı sorununu da çözmüştür <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>Bundan iki sonuç çıkar. Birincisi, ağırlıklar yalnızca pencere uzunluğuna ve polinom derecesine bağlı olduğundan filtre sabit bir sonlu dürtü yanıtlı işlemdir ve uygulanması ucuzdur <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. İkincisi, aynı uzunluktaki bir hareketli ortalamaya kıyasla Savitzky-Golay filtresi pik yüksekliğini ve genişliğini daha iyi korur; bunun bedeli biraz daha az gürültü bastırmasıdır <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Klasik formülasyonda pencere, tahmin edilen noktaya ortalanabilmesi için tek sayıda nokta içerir, <em>2m&nbsp;+&nbsp;1</em>, ve verinin eşit aralıklı olması gerekir <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Türevler, taban çizgileri ve örtüşen bantlar</h2>
+<p>Aynı en küçük kareler uydurması spektrumun türevlerini de verir: uydurulan polinomun pencere merkezindeki birinci ve ikinci türevleri yine sabit ağırlıklı evrişimlerdir <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Türevler, kaldırdıkları ve ortaya çıkardıkları şeyler nedeniyle kullanılır <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>:</p>
 <ul>
-<li><strong>Birinci Türev (SG 1.):</strong>Sabit taban çizgisi uzaklıklarını (Y ekseni boyunca kaymalar) kaldırır ve eğimdeki değişiklikleri vurgular.</li>
-<li><strong>İkinci Türev (SG 2.):</strong>Doğrusal taban çizgisi kaymasını (spektrum boyunca eğimler) kaldırır ve örtüşen özellikleri izole eder. İkinci bir türev spektrumunda, soğurma tepe noktaları aşağı doğru bakan çukurlar olarak görünür ve bunların tanımlanmasını kolaylaştırır.</li>
+<li><strong>Birinci türev:</strong> sabit (toplamsal) taban çizgisi kaymasını kaldırır ve spektrumun yerel eğimini gösterir.</li>
+<li><strong>İkinci türev:</strong> hem sabit kaymayı hem de doğrusal taban çizgisi eğimini kaldırır; absorpsiyon maksimumları negatif bantlar olarak görünür, bu da örtüşen özelliklerin ayrılmasına yardımcı olur <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
 </ul>
-<h2>Parametre Seçim Yönergeleri</h2>
-<p>Doğru parametrelerin ayarlanması, yetersiz yumuşatmayı (gürültünün korunması) veya aşırı yumuşatmayı (gerçek tepe çözünürlüğünün bozulması) önlemek için çok önemlidir. Aşağıdaki tablo spektrometre çözünürlüğüne dayalı standart önerileri özetlemektedir:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Parametre Seti</th>
-<th>Pencere Boyutu ($w$)</th>
-<th>Polinom Sıralaması ($k$)</th>
-<th>Önerilen Uygulama</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Hafif Düzleştirme</strong></td>
-<td>5 veya 7 puan</td>
-<td>2 (ikinci dereceden)</td>
-<td>Yüksek çözünürlüklü gaz fazı NIR, düşük gürültülü sistemler</td>
-</tr>
-<tr>
-<td><strong>Standart Temel Düzeltme</strong></td>
-<td>15 puan</td>
-<td>2 (İkinci Dereceden, 1. Türev)</td>
-<td>Tipik sıvı kimyasal işlemler, tozlardaki nem</td>
-</tr>
-<tr>
-<td><strong>Derin Ayrılık</strong></td>
-<td>25 puan</td>
-<td>3 (Kübik, 2. Türev)</td>
-<td>Oldukça heterojen katılar (yem yemekleri, yem bitkileri)</td>
-</tr>
-</tbody>
-</table>
-<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Süit'te SG'nin Uygulanması</h2>
-<p>içinde <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Paket yazılımı</a> Ön işleme hattında SG algoritması, AutoML modelinin doğrulanması sırasında otomatik olarak uygulanır. Kullanıcılar, ön işleme düzenleyicisinde pencere boyutunu ve türev sıralarını yapılandırabilir ve farklı ayarlar test edilirken çapraz doğrulama hatası (RMSECV) güncellemesini gerçek zamanlı olarak izleyebilir. Bu etkileşimli geri bildirim döngüsü, model doğruluğunu ve birimlerden birime aktarılabilirliği en üst düzeye çıkaran matematiksel ön işleme parametrelerini seçmenizi garanti eder.</p>
+<p>Türev alma yüksek frekanslı gürültüyü yükseltir; türevin yumuşatmayla birlikte tek adımda hesaplanmasının ve pencere uzunluğunun önemli olmasının nedeni budur. Luo ve ark., bir Savitzky-Golay türev alıcısından elde edilebilecek kontrast ve çözünürlüğün özellik genişliğinin filtre uzunluğuna oranına bağlı olduğunu ve küçük türev ayrıntılarının uzun filtrelerle iyi korunmadığını göstermektedir <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
+<h2>Pencere uzunluğu ve polinom derecesinin seçimi</h2>
+<p>Evrensel bir ayar yoktur. Zimmermann ve Kohler, benzetimle üretilmiş ve ölçülmüş kızılötesi verileri üzerinde PLS modelleriyle çalışarak, en uygun pencerenin miktarı belirlenen bileşene bağlı olduğunu, spektral gürültü düzeyinin pencere uzunluğu için kaba bir kılavuz sunduğunu ve hem pencerenin hem de polinom derecesinin varsayılan bir değerden kopyalanmak yerine her uygulama için ayrıca optimize edilmesi gerektiğini bulmuştur <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Dolayısıyla pratik bir yol; pencere uzunluğunu, polinom derecesini ve türev mertebesini model hiperparametreleri olarak ele almak, aday ayarları çapraz doğrulama hatasıyla karşılaştırmak ve seçilen türevin modelin dayandığı dar bantları silmediğini denetlemektir <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Yumuşatma ve çift mertebeli türevler için ikinci ve üçüncü dereceden polinomların özdeş Savitzky-Golay ağırlıkları verdiğini, dolayısıyla ikinci türev için &ldquo;kübik&rdquo; ayarının &ldquo;kuadratik&rdquo; ayarına göre hiçbir şey eklemediğini unutmayın <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> içinde Savitzky-Golay</h2>
+<p><a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> paketinde</a> Savitzky-Golay yumuşatma ve türev filtreleri, model geliştirmenin ön işlem adımında yapılandırılır; burada pencere uzunluğu, polinom derecesi ve türev mertebesi ayarlanır ve aday ayarlar, Zimmermann ve Kohler'in tanımladığı yaklaşım izlenerek çapraz doğrulama hatasıyla karşılaştırılır <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
 <div class="blog-post-references">
-<h3>Referanslar</h3>
+<h3>Kaynaklar</h3>
 <ul>
-<li>Savitzky, A. ve Golay, M.J.E. (1964). "Basitleştirilmiş En Küçük Kareler Prosedürleriyle Verilerin Düzleştirilmesi ve Farklılaştırılması"<em>Analitik Kimya</em>, 36(8), 1627-1639.</li>
-<li>"Polinom Türevlerini Kullanarak NIR Spectra'da Dalga Boyu Seçimi ve Gürültü Filtreleme"<em>Kemometri ve Akıllı Laboratuvar Sistemleri</em>, 2019.</li>
-<li>"Endüstriyel Proses Spektrometreleri için Temel Düzeltme Protokolleri"<em>Uygulamalı Spektroskopi İncelemeleri</em>, 2021.</li>
+<li id="ref-1">[1] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-2">[2] Barnes, R.J., Dhanoa, M.S., Lister, S.J. (1989). Standard Normal Variate Transformation and De-trending of Near-Infrared Diffuse Reflectance Spectra. <em>Applied Spectroscopy</em>, 43(5), 772&ndash;777. <a href="https://doi.org/10.1366/0003702894202201" target="_blank" rel="noopener">doi:10.1366/0003702894202201</a></li>
+<li id="ref-3">[3] Savitzky, A., Golay, M.J.E. (1964). Smoothing and Differentiation of Data by Simplified Least Squares Procedures. <em>Analytical Chemistry</em>, 36(8), 1627&ndash;1639. <a href="https://doi.org/10.1021/ac60214a047" target="_blank" rel="noopener">doi:10.1021/ac60214a047</a></li>
+<li id="ref-4">[4] Steinier, J., Termonia, Y., Deltour, J. (1972). Smoothing and differentiation of data by simplified least square procedure. <em>Analytical Chemistry</em>, 44(11), 1906&ndash;1909. <a href="https://doi.org/10.1021/ac60319a045" target="_blank" rel="noopener">doi:10.1021/ac60319a045</a></li>
+<li id="ref-5">[5] Madden, H.H. (1978). Comments on the Savitzky-Golay convolution method for least-squares-fit smoothing and differentiation of digital data. <em>Analytical Chemistry</em>, 50(9), 1383&ndash;1386. <a href="https://doi.org/10.1021/ac50031a048" target="_blank" rel="noopener">doi:10.1021/ac50031a048</a></li>
+<li id="ref-6">[6] Gorry, P.A. (1990). General least-squares smoothing and differentiation by the convolution (Savitzky-Golay) method. <em>Analytical Chemistry</em>, 62(6), 570&ndash;573. <a href="https://doi.org/10.1021/ac00205a007" target="_blank" rel="noopener">doi:10.1021/ac00205a007</a></li>
+<li id="ref-7">[7] Schafer, R.W. (2011). What Is a Savitzky-Golay Filter? [Lecture Notes]. <em>IEEE Signal Processing Magazine</em>, 28(4), 111&ndash;117. <a href="https://doi.org/10.1109/MSP.2011.941097" target="_blank" rel="noopener">doi:10.1109/MSP.2011.941097</a></li>
+<li id="ref-8">[8] Zimmermann, B., Kohler, A. (2013). Optimizing Savitzky-Golay Parameters for Improving Spectral Resolution and Quantification in Infrared Spectroscopy. <em>Applied Spectroscopy</em>, 67(8), 892&ndash;902. <a href="https://doi.org/10.1366/12-06723" target="_blank" rel="noopener">doi:10.1366/12-06723</a></li>
+<li id="ref-9">[9] Luo, J., Ying, K., He, P., Bai, J. (2005). Properties of Savitzky&ndash;Golay digital differentiators. <em>Digital Signal Processing</em>, 15(2), 122&ndash;136. <a href="https://doi.org/10.1016/j.dsp.2004.09.008" target="_blank" rel="noopener">doi:10.1016/j.dsp.2004.09.008</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Tam Teknik Raporu İndirin</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Tam spektroskopik formüller, kalibrasyon veri kümeleri ve enstrümantasyon parametrelerini içeren, düzenlenmemiş teknik makalenin tamamına erişin.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Teknik PDF'yi almayı ve USTECH Innovations güncellemelerine abone olmayı kabul ediyorum.<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Gizlilik Politikası</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Bu uygulamayı kendi prosesiniz için değerlendirin</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Uygulama ekibimiz yöntemi anlatabilir, destekleyici literatürü paylaşabilir ve kendi numunelerinizle bir fizibilite çalışması planlayabilir.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Bize Ulaşın</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,20 +268,20 @@
 <div class="card" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Aktif Farmasötik Harmanlamada Karışım Tekdüzelik Doğrulaması" decoding="async" loading="lazy" src="../images/blog_pharma_blending.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">VAKA ÇALIŞMASI</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-blend-uniformity-pharma.html" style="color: var(--accent-black); text-decoration: none;">Aktif Farmasötik Harmanlamada Karışım Tekdüzelik Doğrulaması</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">FDA uyumlu bir tesis, silo karıştırıcılarını durdurmadan kuru toz homojenliğini doğrulamak için dinamik RSD değerlerini nasıl kullanır?</p>
-<a class="btn-text" href="blog-blend-uniformity-pharma.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Örnek Olayı Okuyun</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Karışım homojenliği neden düzenlemeye tabi bir proses içi niteliktir, sonda (thief) örneklemesi neyi söyleyebilir ve neyi söyleyemez, literatür toz karıştırmanın bir PAT aracı olarak hat içi NIR ile izlenmesi hakkında neler gösterir.</p>
+<a class="btn-text" href="blog-blend-uniformity-pharma.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- MEMS Durability Card -->
 <div class="card" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="MEMS Endüstriyel Ortamlarda Tarak Tahrikli Mekanik Dayanıklılık" decoding="async" loading="lazy" src="../images/blog_mems_durability.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ KAĞIT</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-mems-durability-industrial.html" style="color: var(--accent-black); text-decoration: none;">MEMS Endüstriyel Ortamlarda Tarak Tahrikli Mekanik Dayanıklılık</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">USTECH'nin çevrimiçi üretim kurulumları için silikon çip ölçekli tarak aktüatör stres testlerini ve şok direnci sınırlarını belgeler.</p>
-<a class="btn-text" href="blog-mems-durability-industrial.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Teknik Raporu Okuyun</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Güvenilirlik literatürünün silisyum yaylar ve tarak sürücüler hakkında darbe, titreşim, sıcaklık çevrimi ve yorulma altında neler söylediği ve askerî ile IEC çevresel test yöntemlerinin gerçekte neyi tanımladığı.</p>
+<a class="btn-text" href="blog-mems-durability-industrial.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 </div>
@@ -366,6 +339,6 @@
 <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

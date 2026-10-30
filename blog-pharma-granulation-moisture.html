@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Case study on endpoint determination in active granulate drying.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why residual moisture is the critical attribute of a fluid-bed granulation, what the reference methods measure, what in-line NIR studies have shown, and why sampling, probe fouling and temperature decide whether the method holds up.">
 <meta name="keywords" content="fluid bed granulation NIR, moisture monitoring pharma, pharmaceutical granulation process, inline moisture control">
 <title>Moisture Monitoring in Fluid Bed Granulation | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-pharma-granulation-moisture.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pharma-granulation-moisture.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pharma-granulation-moisture.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Moisture Monitoring in Fluid Bed Granulation",
-"description": "Case study on endpoint determination in active granulate drying.",
+"description": "Why residual moisture is the critical attribute of a fluid-bed granulation, what the reference methods measure, what in-line NIR studies have shown, and why sampling, probe fouling and temperature decide whether the method holds up.",
 "url": "https://www.ustechinnovations.com/blog-pharma-granulation-moisture.html",
 "datePublished": "2026-06-12",
-"dateModified": "2026-06-12",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Moisture Monitoring in Fluid Bed Granulation | USTECH Innovations">
-    <meta property="og:description" content="Case study on endpoint determination in active granulate drying.">
+    <meta property="og:description" content="Why residual moisture is the critical attribute of a fluid-bed granulation, what the reference methods measure, what in-line NIR studies have shown, and why sampling, probe fouling and temperature decide whether the method holds up.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-pharma-granulation-moisture.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-pharma-granulation-moisture.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Moisture Monitoring in Fluid Bed Granulation | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Moisture Monitoring in Fluid Bed Granulation | USTECH Innovations">
-    <meta name="twitter:description" content="Case study on endpoint determination in active granulate drying.">
+    <meta name="twitter:description" content="Why residual moisture is the critical attribute of a fluid-bed granulation, what the reference methods measure, what in-line NIR studies have shown, and why sampling, probe fouling and temperature decide whether the method holds up.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-pharma-granulation-moisture.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,45 +217,59 @@ Espa&#241;ol
 </a>
 <img src="images/blog_pharma_blending.webp?v=1.0.5" alt="Moisture Monitoring in Fluid Bed Granulation" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">CASE STUDY &mdash; June 12, 2026 &mdash; 1 min read</span>
+<span class="blog-post-meta">Article &mdash; June 12, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Moisture Monitoring in Fluid Bed Granulation</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Achieve consistent active pharmaceutical powder granulation drying cycles using inline moisture probes.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why residual moisture is the critical quality attribute of a fluid-bed granulation, how loss on drying and Karl Fischer titration differ as reference methods, what peer-reviewed in-line NIR studies have shown for drying end-point determination, and why sampling, probe fouling and temperature decide whether the method holds up in production.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Importance of Granulation Moisture</h2>
-<p>Fluid bed granulation combines active pharmaceutical ingredients (APIs) and excipients into stable granules. The drying phase must be closely monitored. Over-drying creates static electricity and ruins granule integrity; under-drying causes sticky powder clogs and tablet press issues. Moisture must be monitored continuously inside the product bowl.</p>
-<h2>Fluid Bed Insertion Probes</h2>
-<p>USTECH designed a custom reflectance probe with a blow-back clean purge nozzle, mounted directly inside the fluid bed granulator bowl. The probe scans the tumbling granules through the fluidization air stream. Real-time moisture content (LOD) is updated every 3 seconds.</p>
+<h2>Why moisture is the critical attribute</h2>
+<p>Fluid-bed granulation is a widely used wet-granulation step in the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">pharmaceutical industry</a>: a binder liquid is sprayed onto fluidising powder, the wetted particles collide and form permanent aggregates, and the wet granules are then dried in the same vessel <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. The European NIRS guideline names granule drying and control of moisture content among the critical process parameters and quality attributes to be considered for tablets <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; in ICH Q8(R2) terms, residual moisture is a critical quality attribute that should stay within an appropriate limit, range or distribution <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. ICH Q8(R2) and the FDA's PAT framework both define process analytical technology as controlling manufacturing through timely measurements, made during processing, of such attributes <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>; in-line NIR moisture measurement in the granulator bowl is among the most studied implementations of that idea <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>What the reference methods measure</h2>
+<p>A granulate's moisture is reported against one of two pharmacopoeial procedures, and they do not measure the same thing. Loss on drying, USP general chapter &lt;731&gt;, determines the amount of volatile matter of any kind driven off under the specified conditions, so residual solvents count as well as water; where water is the only volatile constituent the chapter itself points to Water Determination &lt;921&gt; <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Chapter &lt;921&gt; provides titrimetric (Karl Fischer), azeotropic and gravimetric methods, with titrimetric Method Ia as the default unless the monograph specifies otherwise <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. The distinction matters for NIR, which responds to the O&ndash;H overtone and combination bands rather than to total volatiles: a model trained on loss-on-drying values of a granulate wetted with an alcohol-containing binder inherits whatever solvent is still present in the reference samples. The EMA guideline requires calibration and validation samples to be analysed by the reference method and keeps that method in the authorised specification <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>What in-line NIR studies have shown</h2>
+<p>Frake et al. tracked granule moisture and particle-size change in-line by NIR during fluid-bed granulation and used the real-time trace to adjust process conditions and identify the end-point <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Rantanen et al., evaluating a four-wavelength in-line sensor, found that a few wavelengths around the water band give reliable, high-speed detection, provided that the binder bands (near 1700 nm and 2200 nm for the binders studied, plus an N&ndash;H band near 1500 nm for gelatin) and the baseline rise caused by growing particle size are considered when the wavelengths are chosen <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Findlay, Peck and Morris monitored moisture and particle size through a window into the bed; both correlated well with off-line measurements, and with predefined peak-moisture, final-moisture and final-size values the system could decide when to stop binder addition and when drying was complete <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Peinado et al. took the method into commercial production: a PLS model on in-line spectra was validated by adapting ICH Q2(R1) to a method built exclusively from in-line samples, was reviewed and approved by FDA and EMA, and is used as the primary in-line control of the drying end-point to a limit of not more than 1.2 % w/w <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Burggraeve et al. review these and the other in-line analysers applied to fluid-bed granulation <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>Sampling, probe fouling and temperature</h2>
+<p>Three effects separate a promising development study from a robust production method. The first is sampling. Green et al., working at 65-, 300- and 600-L drying scale, showed that process heterogeneity plays a major role in the apparent prediction accuracy of in-line NIR moisture methods, that the sampling configuration with the smallest apparent error is not necessarily the best for process control, and that the configuration also determines how many samples a calibration set needs <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. The reference value comes from a thief sample while the probe sees a different portion of the bed, so part of any disagreement is sampling error rather than spectroscopic error <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</p>
+<p>The second is the sampling interface: wet granules adhere to surfaces, and a window coated with product reports the coating, not the bed. The EMA guideline lists, among the risk-assessment items for an in-line procedure, optimisation of the sampling-device location, assurance that the window is covered with sample, and controls to ensure that there is no fouling on the device <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. The third is temperature, which the guideline names among the variables whose effect on the spectral response must be shown to be insignificant or controlled with data <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. W&uuml;lfert, Kok and Smilde showed on short-wave NIR spectra of water-containing mixtures that temperature changes the spectra non-linearly, that PLS models calibrated without temperature variation lose predictive ability when it appears, and that global models which include temperature variation in the calibration set predict considerably better, at the cost of sensitivity <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</p>
+<h2>A workflow consistent with the guidance</h2>
+<p>The EMA guideline describes an NIRS procedure as a defined scope, a method (sampling interface, probe position, sampling plan) and a model, managed under lifecycle change control <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>, and USP &lt;856&gt; is the compendial chapter governing qualification, validation and verification of NIR systems <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Three practical consequences follow:</p>
+<ul>
+<li><strong>Calibrate along the whole drying trajectory.</strong> Reference samples drawn at the wet start, during drying and at the dry end should span the bed temperatures and particle sizes the probe will see <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
+<li><strong>Define the end-point as a rule, not a reading.</strong> A prediction below the limit, confirmed by the reference method, is the pattern accepted in a regulated application <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>; the reference method stays in the specification <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</li>
+<li><strong>Treat the probe as part of the method.</strong> Probe position, window coverage and fouling control belong in the method description and the risk assessment <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</li>
+</ul>
+<h2>How USTECH approaches this</h2>
+<p>For the granulator bowl USTECH offers the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> and <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> inline NIR analyzers, rugged IP65 units with a sapphire sample window and an InGaAs array detector. Spectral pre-processing, PLS regression and validation against the loss-on-drying or Karl Fischer reference are done in the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics software, and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passes the predicted moisture to the PLC or SCADA system so that the end-point rule can be acted on in the control layer. Whether an in-line method reaches the accuracy a given granulation step requires, and how probe position and fouling control must be set for that product, is established in a feasibility study with your own granulate samples <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>USP Chapter <1119> - Near-Infrared Spectroscopy for Pharmaceutical Applications.</li>
-<li>"Continuous Inline Monitoring of Granulation Moisture Dynamics in Fluidized Bed Dryers," <em>Pharmaceutical Technology Journal</em>, 2024.</li>
+<li id="ref-1">[1] Burggraeve, A., Monteyne, T., Vervaet, C., Remon, J.P., De Beer, T. (2013). Process analytical tools for monitoring, understanding, and control of pharmaceutical fluidized bed granulation: A review. <em>European Journal of Pharmaceutics and Biopharmaceutics</em>, 83(1), 2&ndash;15. <a href="https://doi.org/10.1016/j.ejpb.2012.09.008" target="_blank" rel="noopener">doi:10.1016/j.ejpb.2012.09.008</a></li>
+<li id="ref-2">[2] European Medicines Agency (2014). <em>Guideline on the use of near infrared spectroscopy by the pharmaceutical industry and the data requirements for new submissions and variations.</em> EMEA/CHMP/CVMP/QWP/17760/2009 Rev2, 27 January 2014. EMA, London. <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-and-data-requirements-new-submissions-and-variations_en.pdf" target="_blank" rel="noopener">ema.europa.eu (PDF)</a></li>
+<li id="ref-3">[3] ICH (2009). <em>Pharmaceutical Development Q8(R2).</em> ICH Harmonised Tripartite Guideline, Step 4 version, August 2009. <a href="https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf" target="_blank" rel="noopener">database.ich.org (PDF)</a></li>
+<li id="ref-4">[4] U.S. Food and Drug Administration (2004). <em>Guidance for Industry: PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> FDA, Rockville, MD. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance" target="_blank" rel="noopener">fda.gov</a></li>
+<li id="ref-5">[5] United States Pharmacopeia (2020). General Chapter &lt;731&gt; <em>Loss on Drying.</em> USP&ndash;NF. USP, Rockville, MD. <a href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M99510_02_01.html</a></li>
+<li id="ref-6">[6] United States Pharmacopeia (2025). General Chapter &lt;921&gt; <em>Water Determination.</em> USP&ndash;NF. USP, Rockville, MD. <a href="https://doi.usp.org/USPNF/USPNF_M99710_05_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M99710_05_01.html</a></li>
+<li id="ref-7">[7] Frake, P., Greenhalgh, D., Grierson, S.M., Hempenstall, J.M., Rudd, D.R. (1997). Process control and end-point determination of a fluid bed granulation by application of near infra-red spectroscopy. <em>International Journal of Pharmaceutics</em>, 151(1), 75&ndash;80. <a href="https://doi.org/10.1016/S0378-5173(97)04894-1" target="_blank" rel="noopener">doi:10.1016/S0378-5173(97)04894-1</a></li>
+<li id="ref-8">[8] Rantanen, J., R&auml;s&auml;nen, E., Tenhunen, J., K&auml;ns&auml;koski, M., Mannermaa, J.-P., Yliruusi, J. (2000). In-line moisture measurement during granulation with a four-wavelength near infrared sensor: an evaluation of particle size and binder effects. <em>European Journal of Pharmaceutics and Biopharmaceutics</em>, 50(2), 271&ndash;276. <a href="https://doi.org/10.1016/S0939-6411(00)00096-5" target="_blank" rel="noopener">doi:10.1016/S0939-6411(00)00096-5</a></li>
+<li id="ref-9">[9] Findlay, W.P., Peck, G.R., Morris, K.R. (2005). Determination of fluidized bed granulation end point using near-infrared spectroscopy and phenomenological analysis. <em>Journal of Pharmaceutical Sciences</em>, 94(3), 604&ndash;612. <a href="https://doi.org/10.1002/jps.20276" target="_blank" rel="noopener">doi:10.1002/jps.20276</a></li>
+<li id="ref-10">[10] Peinado, A., Hammond, J., Scott, A. (2011). Development, validation and transfer of a near infrared method to determine in-line the end point of a fluidised drying process for commercial production batches of an approved oral solid dose pharmaceutical product. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 54(1), 13&ndash;20. <a href="https://doi.org/10.1016/j.jpba.2010.07.036" target="_blank" rel="noopener">doi:10.1016/j.jpba.2010.07.036</a></li>
+<li id="ref-11">[11] Green, R.L., Thurau, G., Pixley, N.C., Mateos, A., Reed, R.A., Higgins, J.P. (2005). In-line monitoring of moisture content in fluid bed dryers using near-IR spectroscopy with consideration of sampling effects on method accuracy. <em>Analytical Chemistry</em>, 77(14), 4515&ndash;4522. <a href="https://doi.org/10.1021/ac050272q" target="_blank" rel="noopener">doi:10.1021/ac050272q</a></li>
+<li id="ref-12">[12] W&uuml;lfert, F., Kok, W.Th., Smilde, A.K. (1998). Influence of temperature on vibrational spectra and consequences for the predictive ability of multivariate models. <em>Analytical Chemistry</em>, 70(9), 1761&ndash;1767. <a href="https://doi.org/10.1021/ac9709920" target="_blank" rel="noopener">doi:10.1021/ac9709920</a></li>
+<li id="ref-13">[13] United States Pharmacopeia (2020). General Chapter &lt;856&gt; <em>Near-Infrared Spectroscopy.</em> USP&ndash;NF. USP, Rockville, MD. <a href="https://doi.usp.org/USPNF/USPNF_M8189_03_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M8189_03_01.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -285,7 +306,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -304,6 +324,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

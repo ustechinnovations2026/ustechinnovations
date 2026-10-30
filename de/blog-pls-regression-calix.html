@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations-Leitfaden – Einführung in die PLS-Regression in der caliX Suite." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Ein praxisnaher Gang durch eine PLS-Kalibrierung: wie die Daten aufgeteilt, wie Vorbehandlung und Anzahl latenter Variablen per Validierung gewählt werden, welche Diagnosen zu lesen sind und wie das Modell in der Produktion am Leben gehalten wird." name="description"/>
 <meta content="PLS Regression NIR, caliX Suite-Kalibrierung, partielle Kleinste-Quadrate-Spektroskopie, chemometrische Modellbildung" name="keywords"/>
 <title>Einführung in die PLS-Regression in der caliX Suite | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/de/blog-pls-regression-calix.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "de",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "de",
   "headline": "Einführung in die PLS-Regression in der caliX Suite",
-  "description": "USTECH Innovations-Leitfaden – Einführung in die PLS-Regression in der caliX Suite.",
+  "description": "Ein praxisnaher Gang durch eine PLS-Kalibrierung: wie die Daten aufgeteilt, wie Vorbehandlung und Anzahl latenter Variablen per Validierung gewählt werden, welche Diagnosen zu lesen sind und wie das Modell in der Produktion am Leben gehalten wird.",
   "url": "https://www.ustechinnovations.com/de/blog-pls-regression-calix.html",
   "datePublished": "2026-05-12",
-  "dateModified": "2026-05-12",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Einführung in die PLS-Regression in der caliX Suite | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations-Leitfaden – Einführung in die PLS-Regression in der caliX Suite." property="og:description"/>
+<meta content="Ein praxisnaher Gang durch eine PLS-Kalibrierung: wie die Daten aufgeteilt, wie Vorbehandlung und Anzahl latenter Variablen per Validierung gewählt werden, welche Diagnosen zu lesen sind und wie das Modell in der Produktion am Leben gehalten wird." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/de/blog-pls-regression-calix.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Einführung in die PLS-Regression in der caliX Suite | USTECH Innovations" property="og:image:alt"/>
 <meta content="de_DE" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Einführung in die PLS-Regression in der caliX Suite | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations-Leitfaden – Einführung in die PLS-Regression in der caliX Suite." name="twitter:description"/>
+<meta content="Ein praxisnaher Gang durch eine PLS-Kalibrierung: wie die Daten aufgeteilt, wie Vorbehandlung und Anzahl latenter Variablen per Validierung gewählt werden, welche Diagnosen zu lesen sind und wie das Modell in der Produktion am Leben gehalten wird." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -209,75 +216,58 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← Zurück zu Allen Blogs und Publikationen</a>
-<img alt="Spectroscopy Calibration Software cali<span class="calix-x">X</span> Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
+<img alt="Spectroscopy Calibration Software caliX Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Technical Guide — May 12, 2026 — 4 Min. Lesezeit</span>
+<span class="blog-post-meta">Leitfaden — 12. Mai 2026 — 7 Min. Lesezeit</span>
 <h1 class="blog-post-title">Einführung in die PLS-Regression in der cali<span class="calix-x">X</span> Suite</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Eine Schritt-für-Schritt-Anleitung zur Entwicklung, Vorverarbeitung und Validierung qualitativer Kalibrierungsmodelle mit der AutoML-Engine von USTECH.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Ein praxisnaher Gang durch eine PLS-Regressionskalibrierung &mdash; Aufteilen der Daten, Wahl der Vorbehandlung und der Anzahl latenter Variablen per Validierung, Lesen von RMSECV, RMSEP, Bias und Ausreißerdiagnosen sowie Pflege des Modells im Einsatz &mdash; mit der statistischen und chemometrischen Literatur hinter jedem Schritt und den entsprechenden Schritten in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
 </div>
 <div class="blog-post-content">
-<h2>Was ist die partielle Regression der kleinsten Quadrate (PLS)?</h2>
-<p>Nahinfrarotspektren (NIR) bestehen aus Tausenden einzelner Wellenlängenpunkte. Da sich die NIR-Lichtabsorption als breite, überlappende Schwingungsobertöne und nicht als scharfe Spitzen manifestiert, reicht eine einzelne Wellenlänge selten aus, um eine chemische Konzentration vorherzusagen. Wir brauchen multivariate Statistiken, insbesondere für komplexe <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemische und pharmazeutische Anwendungen</a>.</p>
-<p><strong>Partielle Regression der kleinsten Quadrate (PLS).</strong>ist der chemometrische Goldstandardalgorithmus. Es reduziert die Tausenden hochgradig kollinearer Spektralvariablen in einige orthogonale Faktoren (genannt).<strong>Latente Variablen (LVs)</strong>oder Hauptkomponenten), die die Kovarianz zwischen den Spektraldaten und den Ziellabor-Referenzkonzentrationen maximieren.</p>
-<p>Die Entwicklung eines Modells erforderte früher manuelle Skripterstellung in MATLAB oder R. Innerhalb des <strong>cali<span class="calix-x">X</span>AutoML Suite</strong> (die hochpräzise Konstruktionen erstellt).<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML-Modelle</a>) wird dieser Arbeitsablauf in fünf klare Phasen vereinfacht.</p>
----
-<h2>Schritt 1: Datenabgleich und -import</h2>
-<p>Bereiten Sie zunächst eine Kalibrierungstabelle (CSV oder Excel) vor, in der Sie die Namen Ihrer Spektraldateien mit den Ergebnissen Ihres Nasschemielabors abgleichen. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>unterstützt den direkten Import von Rohspektrometer-Datenbankformaten und standardmäßigen spektroskopischen Austauschformaten wie JCAMP-DX.</p>
-<p>Einmal importiert, cali<span class="calix-x">X</span>teilt Ihren Datensatz automatisch auf:<strong>75 % für Kalibrierung und Kreuzvalidierung</strong>(um das Modell zu trainieren) und <strong>25 % als unabhängiges Validierungsset</strong>(völlig getrennt gehalten, um die endgültige Vorhersageleistung zu testen).</p>
-<h2>Schritt 2: Auswahl der spektralen Vorverarbeitung</h2>
-<p>Rohe NIR-Lichtsignale enthalten physikalisches Streurauschen, das durch Variationen der Partikelgröße, der Packungsdichte der Probe oder des Sondenabstands verursacht wird. Durch die spektrale Vorverarbeitung werden diese physikalischen Grundlinien mathematisch eliminiert, sodass sich das PLS-Modell ausschließlich auf die chemische Absorption konzentriert.</p>
-<p>Im cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Pipeline können Sie Standard-Vorverarbeitungsschritte anwenden und verketten:</p>
+<h2>Was eine PLS-Kalibrierung ist und warum jeder Schritt validiert werden muss</h2>
+<p>Die Partial-Least-Squares-Regression verknüpft eine Spektralmatrix <em>X</em> über eine kleine Zahl latenter Variablen mit Referenzwerten <em>Y</em>, und ihren Platz in der Nahinfrarotkalibrierung verdankt sie ihrer Fähigkeit, viele verrauschte, kollineare und sogar unvollständige Variablen zu verarbeiten <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Das Tutorial von Geladi und Kowalski zeigt, wo die gewöhnliche Regression bei solchen Daten versagt, entwickelt PLS als Abhilfe und liefert einen Algorithmus samt praktischen Hinweisen zu seiner Anwendung <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Die Methode selbst wird im Begleitartikel <a href="blog-pls-calibration-explained.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Wie NIR-Kalibrierung funktioniert: PLS erklärt</a> erläutert; dieser Leitfaden befasst sich mit den Entscheidungen, die ein Anwender beim Aufbau einer Kalibrierung trifft. Jede davon &mdash; wie die Proben aufgeteilt werden, welche Vorbehandlung angewendet wird, wie viele latente Variablen behalten werden, welche Proben entfernt werden &mdash; verändert die Gütekennzahlen, und Westad und Marini zeigen, dass die Ebene, auf der ein Modell validiert wird, sowohl seinen angegebenen Fehler als auch seine gewählte Dimensionalität beeinflusst <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Aufteilen der Daten</h2>
+<p>Snees Übersicht zur Regressionsvalidierung kommt zu dem Schluss, dass die Datenaufteilung, bei der ein Teil der Daten das Modell schätzt und der Rest seine Vorhersagegenauigkeit misst, ein wirksamer Weg zur Validierung eines Modells ist, wenn das Sammeln neuer Daten nicht praktikabel ist, und empfiehlt Kennards DUPLEX-Algorithmus für die Aufteilung, wenn es keine offensichtliche Variable wie die Zeit gibt, auf die sie sich stützen kann <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Das verwandte Kennard&ndash;Stone-Verfahren wählt Punkte sequenziell so aus, dass jeder Schritt den Versuchsraum gleichmäßig abdeckt <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, weshalb es häufig verwendet wird, um Kalibrierproben auszuwählen, die den Spektralraum aufspannen. Eine rein zufällige Aufteilung ist nicht automatisch stichhaltig: Westad und Marini warnen, dass die wiederholte zufällige Aufteilung eines Datensatzes in Kalibrier- und Testsätze nur dann zu rechtfertigen ist, wenn keine systematische Schichtung der Proben vorliegt, und sie unterscheiden Validierungsebenen &mdash; Wiederholbarkeit, Reproduzierbarkeit, Geräte- und Rohstoffvariation &mdash;, die eine Aufteilung respektieren sollte, wenn die Fehlerschätzung etwas über künftige Proben aussagen soll <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>Auch die Größe des zurückgehaltenen Satzes ist eine Entscheidung und keine Konvention. In einer Monte-Carlo-Studie an NIR-Spektren ganzer Maispflanzen zogen Martens und Dardenne kleine Kalibriersätze von 40 bis 120 Proben aus einer Datenbank von 922 und stellten fest, dass das Zurückhalten eines unabhängigen Testsatzes aus einem ohnehin kleinen Bestand die Vorhersageleistung verringerte, während die vollständige Kreuzvalidierung bessere Vorhersagen lieferte und nur geringfügig zu optimistisch war <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Praktisch bedeutet das: Ein separater Testsatz ist am wertvollsten, wenn Proben reichlich vorhanden sind oder wenn er eine tatsächlich spätere oder andere Population repräsentiert; bei wenigen Proben nutzt die Kreuzvalidierung sie besser <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>Wahl der Vorbehandlung</h2>
+<p>Rinnan et al. gliedern die gängigen NIR-Vorbehandlungsmethoden in Streukorrekturen (MSC, SNV, Normierung) und spektrale Ableitungen und vergleichen ihre Wirkung an realen Daten <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>; die Mechanik wird im <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC/SNV-Leitfaden</a> und im <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay-Leitfaden</a> behandelt. Für den Kalibrierablauf ist der Punkt verfahrenstechnischer Natur: Vorbehandlungseinstellungen sind Hyperparameter des Modells, daher sollten Kandidaten-Pipelines mit demselben Validierungsdesign verglichen werden wie die Anzahl latenter Variablen, niemals anhand der Kalibrieranpassung. Wiklund et al. merken an, dass ihr Test zur Komponentenauswahl zugleich anzeigt, ob die Daten eine Vorbehandlung erfordern; das ist eine nützliche Gegenprobe, wenn ein Modell auf Rohspektren deutlich mehr Komponenten benötigt als ein Ableitungsmodell <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Wie viele latente Variablen</h2>
+<p>Die Anzahl latenter Variablen ist die wichtigste einzelne Einstellung bei PLS: Zu wenige lassen chemische Information unmodelliert, zu viele passen Rauschen an, das in neuen Proben nicht wiederkehrt <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Das Standardwerkzeug ist die Kreuzvalidierung, deren allgemeine Form Stone für die Wahl und Beurteilung von Prädiktoren einführte <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>; bei PLS wird das Modell unter Auslassung von Teilen der Daten neu angepasst, und der kreuzvalidierte Fehler wird gegen die Anzahl der Komponenten aufgetragen <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Die übliche Regel ist, am Minimum dieser Kurve oder knapp davor aufzuhören, doch die Wahl der Segmente ist entscheidend. Shao zeigte, dass die Leave-One-Out-Kreuzvalidierung zur Auswahl des Modells mit der besten Vorhersagefähigkeit asymptotisch inkonsistent ist und dass sich die Inkonsistenz durch das Auslassen größerer Beobachtungsblöcke beheben lässt <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>; in der Praxis spricht das für eine segmentierte oder gruppierte Kreuzvalidierung, bei der Wiederholmessungen und Proben derselben Charge im selben Segment bleiben, statt für das Auslassen einzelner Spektren. Wiklund et al. bieten einen ergänzenden Randomisierungstest, der ohne Ausschluss von Daten auskommt und an simulierten Daten bekannter Dimensionalität sowie zehn realen Datensätzen in Kombination mit anderen Auswahlregeln gut funktionierte <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Lesen der Diagnosen</h2>
+<p>In jedem Modellbericht erscheinen drei Fehlerkennzahlen. Der Kalibrierfehler (RMSEC) beschreibt die Anpassung und ist stets der kleinste; der Kreuzvalidierungsfehler (RMSECV) schätzt die Vorhersage innerhalb der Kalibrierpopulation; der Vorhersagefehler an einem unabhängigen Satz (RMSEP) ist der einzige, der Proben prüft, die das Modell nie gesehen hat, und die Validierungsebene dieses Satzes bestimmt, was er bedeutet <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. ISO 12099 legt die Statistik zur Leistungsmessung dar, einschließlich des Standardfehlers der Vorhersage und des Bias, und gibt in ihrem informativen Anhang Beispiele für Ausreißer und Regelkarten <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Eine große Lücke zwischen RMSECV und RMSEP oder ein Bias am Testsatz bedeutet meist, dass sich die Testproben systematisch von der Kalibrierpopulation unterscheiden, und nicht, dass das Modell an sich falsch ist <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>Probendiagnosen vervollständigen das Bild. Wold et al. beschreiben die üblichen PLS-Diagnosen &mdash; Scores, Loadings, Residuen und Abstand zum Modell &mdash;, mit denen Proben gefunden werden, die im Spektralraum weit von den übrigen entfernt liegen oder schlecht angepasst sind <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Hubert und Vanden Branden zeigen, dass die Ergebnisse des verbreiteten SIMPLS-Algorithmus, da er auf der empirischen Kreuzkovarianzmatrix und gewöhnlichen kleinsten Quadraten beruht, durch abweichende Beobachtungen beeinflusst werden; sie führen robuste Varianten mit robusten RMSECV- und RMSEP-Werten sowie Diagnosegrafiken ein, die die Ausreißer sichtbar machen und klassifizieren <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Unabhängig vom Werkzeug sollte eine Probe nur mit dokumentiertem Grund aus der Kalibrierung entfernt werden: ein falscher Referenzwert, ein Spektrum eines anderen Materials oder ein Messfehler. Drei Gewohnheiten halten die Diagnosen ehrlich:</p>
 <ul>
-<li><strong>Standardnormalvariable (SNV):</strong>Zentrieren und Skalieren jedes einzelnen Spektrums, um multiplikative Skalierung und Offset-Variationen zu entfernen.</li>
-<li><strong>Multiplikative Streukorrektur (MSC):</strong>Regression jedes Spektrums gegenüber dem Durchschnittsspektrum, um Streusteigungen zu isolieren und zu entfernen.</li>
-<li><strong>Savitzky-Golay Derivate (1. oder 2.):</strong>Berechnet lokale Polynomanpassungen, um Ableitungen vorzunehmen, überlappende Bänder aufzulösen und Basislinienverschiebungen zu entfernen.</li>
+<li><strong>Zuerst das Validierungsdesign festlegen.</strong> Legen Sie Aufteilung und Kreuzvalidierungssegmente vor jedem Durchlauf über Vorbehandlungen oder Komponenten fest und verwenden Sie für jeden Kandidaten dasselbe Design, damit der Vergleich fair ist <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>RMSECV und RMSEP zusammen mit ihrer Validierungsebene angeben.</strong> Ein an Wiederholspektren derselben Proben geschätzter Fehler ist nicht mit einem an einer späteren Produktionscharge geschätzten vergleichbar <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>Das Entfernen von Ausreißern als Modellentscheidung behandeln.</strong> Halten Sie fest, welche Proben entfernt wurden und warum; eine Markierung durch Residuum oder Hebelwert ist ein Anlass zur Untersuchung, keine Erlaubnis zum Löschen <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
 </ul>
-<p><em>Tipp: cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Die AutoML-Engine führt automatisch eine Rastersuche über Dutzende von Vorverarbeitungskombinationen durch, um die optimale Reihenfolge für Ihre Matrix vorzuschlagen.</em></p>
-<h2>Schritt 3: Auswahl latenter Variablen (LVs)</h2>
-<p>Die Auswahl der richtigen Anzahl latenter Variablen ist entscheidend, um eine <strong>Überanpassung</strong> zu verhindern. Wenn Sie zu wenige LVs auswählen, ist Ihr Modell unzureichend angepasst und es fehlen chemische Korrelationen. Wenn Sie zu viele LVs auswählen, beginnt Ihr Modell mit der Anpassung zufälligen spektralen Rauschens, was beim Scannen neuer Proben fehlschlägt.</p>
-<p>Schauen Sie sich das an <strong>Mittlerer quadratischer Fehler der Kreuzvalidierung (RMSECV)</strong>Kurve. Wählen Sie die Anzahl der LVs am „Kurvenbogen“ aus, bei dem der Fehler nicht mehr signifikant abfällt. Das Hinzufügen weiterer Komponenten über diesen Punkt hinaus passt nur zum Rauschen.</p>
-<pre>
-# Sample Model Statistics Output in cali<span class="calix-x">X</span>
----------------------------------------------
-Target Parameter: Crude Protein
-Preprocessing: SNV + S-G 1st Derivative (15pt)
-Selected Latent Variables (LVs): 6
-Calibration R²: 0.982
-Calibration RMSEC: 0.09%
-Cross-Validation RMSECV: 0.11%
-Validation RMSEP: 0.12%
-Bias: -0.01%
----------------------------------------------
-</pre>
-<h2>Schritt 4: Unabhängige Validierung</h2>
-<p>Um das Modell für den Werkseinsatz zu qualifizieren, führen Sie Vorhersagen für den 25 % unabhängigen Testsatz durch. Der <strong>Mittlerer quadratischer Fehler der Vorhersage (RMSEP)</strong>misst die tatsächliche Genauigkeit, die Sie bei der Inline-Nutzung des Sensors erhalten. Ein robustes Modell sollte einen RMSEP anzeigen, der Ihrem Kreuzvalidierungsfehler (RMSECV) sehr nahe kommt.</p>
-<h2>Schritt 5: Exportieren nach ProChem</h2>
-<p>Wenn Sie mit der Modellleistung zufrieden sind, klicken Sie auf<strong>„Modellpaket exportieren“</strong>. Dadurch wird eine sichere `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>`-Modelldatei generiert. Laden Sie diese Datei direkt in die <strong>ProChem Prozesssteuerungssoftware</strong> an Ihrer Produktionslinie. ProChem wendet die vorkonfigurierten Vorverarbeitungsschritte automatisch auf Inline-Spektren an, prognostiziert Konzentrationen in Echtzeit und sendet die Ergebnisse direkt an Ihre Anlage PLC.</p>
-<h2>Zusammenfassung</h2>
-<p>Durch die Kombination einer strengen PLS-Regressionslogik mit automatisierter Vorverarbeitungsoptimierung wird die cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite macht die Chemometrie für Qualitätskontrollingenieure zugänglich, ohne auf wissenschaftliche Tiefe zu verzichten. Sie erhalten zuverlässige, robuste Modelle, die Ihre B2B-Margen vom ersten Tag an schützen.</p>
+<h2>Das Modell am Leben halten</h2>
+<p>Eine Kalibrierung ist für die Population und den Gerätezustand validiert, auf denen sie aufgebaut wurde. ASTM E1655 legt Verfahren zum Erfassen und Behandeln von Daten für Infrarotkalibrierungen dar, beschreibt Kalibriertechniken und Kriterien zur Validierung der Modellleistung, setzt voraus, dass der Analysator zu den Zeitpunkten von Kalibrierung und Validierung unter den vom Hersteller spezifizierten Bedingungen arbeitet, und stellt einen Fragenkatalog bereit, anhand dessen eine multivariate Kalibrierung geprüft werden kann <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. ISO 12099 ergänzt die betriebliche Seite: Prüfung der Gerätestabilität und laufende Leistungskontrolle der Kalibrierung mit Regelkarten als Überwachungswerkzeug <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Westad und Marini betonen, dass die Robustheit eines Modells für die Vorhersage künftiger Proben wichtiger ist als jede einzelne Gütekennzahl <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>; in der Praxis bedeutet das eine Routine von Referenzprüfungen an Produktionsproben, Regelkarten für Bias und Vorhersagefehler und eine geplante Erweiterung des Kalibriersatzes, wenn neue Rohstoffe, Jahreszeiten oder Prozessbedingungen auftreten.</p>
+<h2>Der Arbeitsablauf in cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h2>
+<p>Die <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>-Suite</a> bildet die obigen Schritte als Arbeitsablauf aus acht Modulen für NIR-, FTIR- und Raman-Spektren ab. Das Datenmodul importiert Spektren und Referenzwerte aus Excel- oder CSV-Dateien und unterstützt die Datenbereinigung mit PCA- und PLS-Hebelwertkennzahlen; der Vorbehandlungsschritt bietet SNV, MSC, Trendbereinigung, Autoskalierung und Savitzky-Golay-Ableitungen <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>; die manuellen und automatischen Regressionsmodule erstellen PLS-, robuste PLS-, PCR- und regularisierte Modelle, wobei die maximale Anzahl latenter Variablen und die Anzahl der Kreuzvalidierungsfalten vom Anwender festgelegt werden und der automatische Modus Pipeline-Kombinationen durchläuft und den Knickpunkt der Validierungskurve markiert <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Die Ausreißerdiagnosen umfassen Hotelling-T&sup2; und Q-Residuen, PLS-Hebelwert und Mahalanobis-Abstand <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>, ein Vorhersagemodul wendet das fertige Modell auf unbekannte Proben an, und die Module Data Transfer und Model Converter übernehmen die Gerätestandardisierung und den Export des Modells für den Einsatz über <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>. Welche Aufteilung, Vorbehandlung und Komponentenzahl für ein bestimmtes Produkt richtig sind, wird in einer Machbarkeitsstudie mit Ihren eigenen Proben und Referenzanalysen ermittelt.</p>
 <div class="blog-post-references">
-<h3>Referenzen</h3>
+<h3>Quellen</h3>
 <ul>
-<li>Martens, H. &amp; N-s, T. (1989).<em>Multivariate Kalibrierung</em>. John Wiley &amp; Söhne.</li>
-<li>„Vorverarbeitungstechniken in der Nahinfrarotspektroskopie: Ein chemometrischer Leitfaden für Industriepraktiker“<em>Analytica Chimica Acta</em>, 2022.</li>
-<li>Geladi, P. &amp; Kowalski, B. R. (1986). „Partielle Regression der kleinsten Quadrate: Ein Tutorial“<em>Analytica Chimica Acta</em>, 185, 1-17.</li>
+<li id="ref-1">[1] Wold, S., Sj&ouml;str&ouml;m, M., Eriksson, L. (2001). PLS-regression: a basic tool of chemometrics. <em>Chemometrics and Intelligent Laboratory Systems</em>, 58(2), 109&ndash;130. <a href="https://doi.org/10.1016/S0169-7439(01)00155-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(01)00155-1</a></li>
+<li id="ref-2">[2] Geladi, P., Kowalski, B.R. (1986). Partial least-squares regression: a tutorial. <em>Analytica Chimica Acta</em>, 185, 1&ndash;17. <a href="https://doi.org/10.1016/0003-2670(86)80028-9" target="_blank" rel="noopener">doi:10.1016/0003-2670(86)80028-9</a></li>
+<li id="ref-3">[3] Westad, F., Marini, F. (2015). Validation of chemometric models &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 893, 14&ndash;24. <a href="https://doi.org/10.1016/j.aca.2015.06.056" target="_blank" rel="noopener">doi:10.1016/j.aca.2015.06.056</a></li>
+<li id="ref-4">[4] Snee, R.D. (1977). Validation of Regression Models: Methods and Examples. <em>Technometrics</em>, 19(4), 415&ndash;428. <a href="https://doi.org/10.1080/00401706.1977.10489581" target="_blank" rel="noopener">doi:10.1080/00401706.1977.10489581</a></li>
+<li id="ref-5">[5] Kennard, R.W., Stone, L.A. (1969). Computer Aided Design of Experiments. <em>Technometrics</em>, 11(1), 137&ndash;148. <a href="https://doi.org/10.1080/00401706.1969.10490666" target="_blank" rel="noopener">doi:10.1080/00401706.1969.10490666</a></li>
+<li id="ref-6">[6] Martens, H.A., Dardenne, P. (1998). Validation and verification of regression in small data sets. <em>Chemometrics and Intelligent Laboratory Systems</em>, 44(1&ndash;2), 99&ndash;121. <a href="https://doi.org/10.1016/S0169-7439(98)00167-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(98)00167-1</a></li>
+<li id="ref-7">[7] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-8">[8] Wiklund, S., Nilsson, D., Eriksson, L., Sj&ouml;str&ouml;m, M., Wold, S., Faber, K. (2007). A randomization test for PLS component selection. <em>Journal of Chemometrics</em>, 21(10&ndash;11), 427&ndash;439. <a href="https://doi.org/10.1002/cem.1086" target="_blank" rel="noopener">doi:10.1002/cem.1086</a></li>
+<li id="ref-9">[9] Stone, M. (1974). Cross-Validatory Choice and Assessment of Statistical Predictions. <em>Journal of the Royal Statistical Society: Series B (Methodological)</em>, 36(2), 111&ndash;133. <a href="https://doi.org/10.1111/j.2517-6161.1974.tb00994.x" target="_blank" rel="noopener">doi:10.1111/j.2517-6161.1974.tb00994.x</a></li>
+<li id="ref-10">[10] Shao, J. (1993). Linear Model Selection by Cross-Validation. <em>Journal of the American Statistical Association</em>, 88(422), 486&ndash;494. <a href="https://doi.org/10.1080/01621459.1993.10476299" target="_blank" rel="noopener">doi:10.1080/01621459.1993.10476299</a></li>
+<li id="ref-11">[11] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-12">[12] Hubert, M., Vanden Branden, K. (2003). Robust methods for partial least squares regression. <em>Journal of Chemometrics</em>, 17(10), 537&ndash;549. <a href="https://doi.org/10.1002/cem.822" target="_blank" rel="noopener">doi:10.1002/cem.822</a></li>
+<li id="ref-13">[13] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://www.astm.org/e1655-17r24.html" target="_blank" rel="noopener">astm.org/e1655-17r24.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Laden Sie den vollständigen technischen Bericht herunter</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Greifen Sie auf das vollständige, unbearbeitete Fachpapier mit vollständigen spektroskopischen Formeln, Kalibrierungsdatensätzen und Instrumentierungsparametern zu.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Bewerten Sie diese Anwendung für Ihren Prozess</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Unser Applikationsteam erläutert die Methode, stellt die zugrunde liegende Literatur bereit und organisiert eine Machbarkeitsstudie mit Ihren eigenen Proben.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Kontakt aufnehmen</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -285,22 +275,22 @@ Bias: -0.01%
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- Calibration Transfer Card -->
 <div class="card" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="Machbarkeit der Kalibrierungsübertragung auf MEMS-Spektrometern" decoding="async" loading="lazy" src="../images/blog_mems_sensor.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="Kalibriertransfer zwischen NIR-Spektrometern: Methoden und Machbarkeit" decoding="async" loading="lazy" src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITEPAPER</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">Machbarkeit der Kalibrierungsübertragung auf MEMS-Spektrometern</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Erläutert, wie die Silizium-Photolithographie eine direkte Kalibrierungsportabilität ohne Standardisierung der Einheiten ermöglicht.</p>
-<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lesen Sie das Whitepaper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">LEITFADEN</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">Kalibriertransfer zwischen NIR-Spektrometern: Methoden und Machbarkeit</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Warum eine auf einem Spektrometer erstellte NIR-Kalibrierung selten unverändert auf einem anderen läuft, welche Standardisierungs- und Modellanpassungsverfahren die Literatur beschreibt und wie die Machbarkeit eines Transfers für eine Gerätefamilie beurteilt wird.</p>
+<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leitfaden lesen</a>
 </div>
 </div>
 <!-- Cattle Feed Waste Card -->
 <div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Reduzierung der Zutatenverschwendung bei der Viehfutterproduktion" decoding="async" loading="lazy" src="../images/blog_cattle_feed.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">FALLSTUDIE</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTIKEL</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">Reduzierung der Zutatenverschwendung bei der Viehfutterproduktion</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Eine statistische Studie, die eine durchschnittliche Verbesserung des Produktertrags um 1,2 % durch den Einsatz von Inline-NIR-Sensoren zeigt.</p>
-<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Fallstudie lesen</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Warum Rinderfutter gegen die Variabilität der Rohstoffe überformuliert wird, was die Literatur über die Ursachen dieser Variabilität sagt und wie NIR bei der Annahme und am Mischer die Sicherheitsmarge verringert.</p>
+<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Artikel lesen</a>
 </div>
 </div>
 </div>
@@ -358,6 +348,6 @@ Bias: -0.01%
 <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

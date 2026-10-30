@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="description" content="Analitik cihazlar için endüstriyel kullanımlar hakkında bilgi edinin. USTECH uzmanlarından vaka çalışmaları, makaleler ve beyaz kitaplar okuyun.">
 <title>NIR Spektroskopisi Blogu ve Teknik İncelemeler | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.2">
+<link rel="stylesheet" href="../index.css?v=1.1.3">
 <style>
 .toolbar-btn:hover {
 border-color: var(--accent-gold) !important;
-color: var(--accent-gold) !important;
+color: var(--accent-gold-text) !important;
 background: rgba(213, 178, 121, 0.05) !important;
 }
 .dropdown-menu-list {
@@ -45,14 +46,14 @@ background: var(--bg-secondary);
 color: var(--accent-black);
 }
 .dropdown-menu-item.active {
-color: var(--accent-gold) !important;
+color: var(--accent-gold-text) !important;
 font-weight: 600;
 background: rgba(213, 178, 121, 0.05);
 }
 .dropdown-menu-item.active::after {
 content: "?";
 font-weight: bold;
-color: var(--accent-gold);
+color: var(--accent-gold-text);
 font-size: 0.75rem;
 margin-left: 0.5rem;
 }
@@ -63,7 +64,7 @@ margin-left: 0.5rem;
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -88,7 +89,7 @@ margin-left: 0.5rem;
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "tr",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -254,7 +255,7 @@ margin-left: 0.5rem;
 <div class="blog-toolbar" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem;">
 <!-- Active status / item count -->
 <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold);">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold-text);">
 <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
 <polyline points="14 2 14 8 20 8"></polyline>
 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -321,523 +322,523 @@ margin-left: 0.5rem;
 </div>
 <div class="grid grid-3" id="blog-grid">
 <!-- Blog: How NIR Calibration Works: PLS Explained -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-pls-calibration-explained.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-pls-calibration-explained.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pls_explained.webp?v=1.0.5" alt="NIR Kalibrasyonu Nasıl Çalışır: PLS Açıklaması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 25 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Kalibrasyonu Nasıl Çalışır: PLS Açıklaması</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Ham spektrumdan kompozisyon değerine kadar - kemometrik PLS modelleri, NIR verilerini doğru, eyleme dönüştürülebilir ölçümlere nasıl dönüştürür?</p>
-<a href="blog-pls-calibration-explained.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir PLS kalibrasyonunun NIR spektrumlarını bileşim değerlerine nasıl dönüştürdüğüne dair sade bir rehber: gizli değişkenler, faktör sayısı, validasyon istatistikleri ve referans yöntemin koyduğu sınırlar.</p>
+<a href="blog-pls-calibration-explained.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: The Power of In-Line FT-NIR Analysis -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-06-25" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.5" alt="Hat İçi FT-NIR Analizinin Gücü" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-25" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.6" alt="Hat İçi Analizin Gücü: Kalite Kontrolde Paradigma Değişimi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 25 HAZİRAN 2026 - 4 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hat İçi FT-NIR Analizinin Gücü: Kalite Kontrolde Bir Paradigma Değişimi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Laboratuvar sonuçlarının beklenmesinden kaynaklanan üretim kayıplarını ortadan kaldırın. FT-NIR teknolojisinin kalite parametrelerini saniyeler içinde nasıl analiz ettiğini keşfedin.</p>
-<a href="blog-inline-ftnir-paradigm.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 5 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hat İçi Analizin Gücü: Kalite Kontrolde Paradigma Değişimi</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Laboratuvara dayalı, reaktif kalite kontrolünden hat içi ölçüm ve kontrole geçişin gerçekte neleri kapsadığı: PAT çerçevesi, ICH terminolojisi, gerçek zamanlı serbest bırakma testi ve çok değişkenli kontrol döngüleri.</p>
+<a href="blog-inline-ftnir-paradigm.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog: What Is NIR Spectroscopy? -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_what_is_nir.webp?v=1.0.5" alt="NIR Spektroskopisi Nedir?" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 25 HAZİRAN 2026 — 4 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Spektroskopisi Nedir?</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yakın kızılötesi spektroskopinin nasıl çalıştığına ve neden en çok yönlü, tahribatsız analitik teknik olduğuna dair sade bir dille açıklama.</p>
-<a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yakın kızılötesi spektroskopiye giriş: NIR ışığı nedir, nerede keşfedildi, üst ton ve kombinasyon bantları neyi ortaya koyar, kalibrasyon neden vazgeçilmezdir ve teknik sınırlarına nerede ulaşır.</p>
+<a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: The 1,350-2,550 nm Spectral Advantage -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-spectral-range-advantage.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_spectral_advantage.webp?v=1.0.5" alt="1350-2550nm Spektral Avantajı" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-spectral-range-advantage.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_spectral_advantage.webp?v=1.0.5" alt="Yakın Kızılötesi Spektral Bölgenin Seçimi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 2 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">1.350–2.550 nm Spektral Avantajı</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir NIR analizörü seçerken spektral aralığın neden en önemli spesifikasyon olduğu ve ProLine2550'nin 1.200 nm aralığının ne sağladığı.</p>
-<a href="blog-spectral-range-advantage.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 25 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Yakın Kızılötesi Spektral Bölgenin Seçimi</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yakın kızılötesinin kısa dalga, üst ton ve kombinasyon bölgelerinin her birinin ne taşıdığı, bunlara hangi dedektörlerin ulaştığı ve doğru bölgenin neden en geniş aralığa değil numuneye bağlı olduğu.</p>
+<a href="blog-spectral-range-advantage.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: ProChem: Closing the Loop -->
 <div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-prochem-measurement-control.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_prochem_control.webp?v=1.0.5" alt="ProChem Yazılım Kontrolü" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 7 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">ProChem: Ölçüm ve Kontrol Arasındaki Döngüyü Kapatmak</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ProChem yazılımı, ham NIR spektrumlarını gerçek zamanlı proses kontrol sinyallerine, toplu kayıtlara ve eyleme dönüştürülebilir kalite verilerine nasıl dönüştürür?</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir spektrumun analizörden çıkmasıyla PLC'deki bir ayar noktasının değişmesi arasında olması gerekenler: sonuç doğrulama, kontrol yapısı, alarm yönetimi ve kararı izlenebilir kılan kayıt.</p>
 <a href="blog-prochem-measurement-control.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog: How to Build the Business Case for Inline NIR -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-business-case-inline-nir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-business-case-inline-nir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_business_case_nir.webp?v=1.0.5" alt="Hat İçi NIR için İş Gerekçesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 25 HAZİRAN 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 25 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hat İçi NIR İçin İş Gerekçesi Nasıl Oluşturulur</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Süt ürünleri, yem, kimya ve ilaç sektörüne yönelik sektöre özel maliyet modelleriyle finansal getiriyi ölçmek için pratik bir çerçeve.</p>
-<a href="blog-business-case-inline-nir.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hat içi NIR yatırımının iş gerekçesini kendi tesis verilerinizden kurmak için bir yöntem: hangi değer kaldıraçlarının sayısallaştırılacağı, varyans azalmasının nasıl bir hedef kaymasına dönüştüğü ve terazinin öbür kefesine hangi maliyet ve risklerin konacağı.</p>
+<a href="blog-business-case-inline-nir.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog calibration -->
-<div class="card blog-card" data-category="whitepaper" data-industry="general-tech" data-date="2026-01-15" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_sensor.webp?v=1.0.5" alt="MEMS Spektrometrelerinde Kalibrasyon Transferi Fizibilitesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-02-18" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="NIR Spektrometreleri Arasında Kalibrasyon Transferi: Yöntemler ve Fizibilite" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 15 OCAK 2026 - 4 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">MEMS Spektrometrelerinde Kalibrasyon Transferi Fizibilitesi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">MEMS üretiminin birimlerden birime optik farklılıkları nasıl sınırladığını ve karmaşık model ayarlamaları olmadan anında kalibrasyon taşınabilirliğine nasıl olanak sağladığını tartışıyor.</p>
-<a href="blog-calibration-transfer.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 18 ŞUBAT 2026 — 5 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Spektrometreleri Arasında Kalibrasyon Transferi: Yöntemler ve Fizibilite</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir spektrometrede kurulan NIR kalibrasyonunun neden bir başkasında nadiren değiştirilmeden çalıştığı, literatürün hangi standardizasyon ve model ayarlama yöntemlerini tanımladığı ve bir cihaz ailesi için transfer fizibilitesinin nasıl değerlendirildiği.</p>
+<a href="blog-calibration-transfer.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog cattle -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-03-12" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-03-05" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_cattle_feed.webp?v=1.0.5" alt="Sığır Yemi Üretiminde Bileşen İsrafını Azaltmak" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 12 MART 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 05 MART 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Sığır Yemi Üretiminde Bileşen İsrafını Azaltmak</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yem mikseri çıkışları üzerine hat içi NIR sensörlerinin yerleştirilmesiyle ortalama %1,2'lik ürün verimi artışı gösteren istatistiksel bir çalışma.</p>
-<a href="blog-cattle-feed-waste.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Sığır yeminin neden hammadde değişkenliğine karşı fazla formüle edildiği, literatürün bu değişkenliğin kaynakları hakkında ne söylediği ve kabulde ve mikserde NIR ölçümünün güvenlik payını nasıl daralttığı.</p>
+<a href="blog-cattle-feed-waste.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog pls -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-05" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-05-12" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pls_regression.webp?v=1.0.5" alt="caliX Paketinde PLS Regresyonuna Giriş" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 05 NİSAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 12 MAYIS 2026 — 7 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">PLS Regresyonuna Giriş: cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite kullanarak referans ıslak kimya değerlerinden kalibrasyon modellerinin nasıl derleneceğini açıklayan adım adım eğitim.</p>
-<a href="blog-pls-regression-calix.html" class="btn-text" style="margin-top: auto;">Öğreticiyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir PLS kalibrasyonunun uygulayıcı gözüyle adım adım anlatımı: verinin nasıl bölündüğü, ön işlemenin ve gizli değişken sayısının doğrulamayla nasıl seçildiği, hangi tanılamaların okunacağı ve modelin üretimde nasıl canlı tutulduğu.</p>
+<a href="blog-pls-regression-calix.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog hydroxyl -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-05-15" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-01" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_polyol_reactors.webp?v=1.0.5" alt="Poliol Üretiminde Gerçek Zamanlı Hidroksil Değeri İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 15 MAYIS 2026 - 3 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 01 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Poliol Üretiminde Gerçek Zamanlı Hidroksil Değeri İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">NIR spektroskopisi kullanılarak kimyasal polimerizasyon döngülerinde OHV'nin gerçek zamanlı hat içi takibini açıklayan ayrıntılı teknik rapor.</p>
-<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hidroksil sayısının poliol üretiminde neden bitiş noktası değişkeni olduğu, titrasyon referans yöntemlerinin ve NIR standartlarının neler gerektirdiği ve reaktör içi bir kalibrasyonun önündeki başlıca engelin neden sıcaklık olduğu.</p>
+<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog moisture -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-06-18" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-03" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_powder.webp?v=1.0.5" alt="Süt Tozu Sprey Kurutmasında Nemi Standartlaştırma" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY - 18 HAZİRAN 2026 - 3 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 03 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Süt Tozu Sprey Kurutmasında Nemi Standartlaştırma</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Küresel bir süt ürünleri tesisi, ham madde verimini optimize etmek ve yapışkan toz tıkanmalarını önlemek için sprey kurutucularda hat içi nem izlemeyi nasıl kullandı?</p>
-<a href="blog-moisture-milk-powder.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Süt tozu sprey kurutucusunun çıkış nemi neden yapışkanlığı, topaklanmayı, raf ömrünü ve verimi belirler, operatör hangi değişkenleri ayarlayabilir ve hat içi bir NIR nem değeri kontrol döngüsünü nasıl besler.</p>
+<a href="blog-moisture-milk-powder.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog savitzky -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-10" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-04" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_spectral_math.webp?v=1.0.5" alt="Ön İşlemede (Preprocessing) Savitzky-Golay Filtrelemesini Anlamak" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 10 NİSAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 04 HAZİRAN 2026 — 3 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Ön İşlemede (Preprocessing) Savitzky-Golay Filtrelemesini Anlamak</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">caliX'de spektral ön işleme matematiği, yumuşatma parametre seçimi ve türev konfigürasyonları hakkında eğitim kılavuzu.</p>
-<a href="blog-savitzky-golay-filtering.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Savitzky-Golay filtresinin bir spektruma gerçekte ne yaptığı, türevlerin taban çizgilerini neden kaldırdığı ve pencere uzunluğu ile polinom derecesinin nasıl seçilmesi gerektiği; orijinal ve sonraki literatürle birlikte.</p>
+<a href="blog-savitzky-golay-filtering.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog blend -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-05-20" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-05" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pharma_blending.webp?v=1.0.5" alt="Aktif İlaç Karışımlarında Karışım Tekdüzelik Doğrulaması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 20 MAYIS 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 05 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Aktif İlaç Karışımlarında Karışım Tekdüzelik Doğrulaması</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">FDA uyumlu bir tesis, silo karıştırıcılarını durdurmadan kuru toz homojenliğini doğrulamak için dinamik RSD değerlerini nasıl kullanıyor?</p>
-<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Karışım homojenliği neden düzenlemeye tabi bir proses içi niteliktir, sonda (thief) örneklemesi neyi söyleyebilir ve neyi söyleyemez, literatür toz karıştırmanın bir PAT aracı olarak hat içi NIR ile izlenmesi hakkında neler gösterir.</p>
+<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog mems -->
-<div class="card blog-card" data-category="whitepaper" data-industry="general-tech" data-date="2026-02-10" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-06" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_mems_durability.webp?v=1.0.5" alt="Endüstriyel Ortamlarda MEMS Tarak-Sürücü Mekanik Dayanıklılığı" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 10 ŞUBAT 2026 - 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 06 HAZİRAN 2026 — 6 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Endüstriyel Ortamlarda MEMS Tarak-Sürücü Mekanik Dayanıklılığı</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Çevrimiçi üretim kurulumları için USTECH'nin silikon çip ölçekli tarak aktüatör stres testlerini ve şok direnci sınırlarını belgeler.</p>
-<a href="blog-mems-durability-industrial.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Güvenilirlik literatürünün silisyum yaylar ve tarak sürücüler hakkında darbe, titreşim, sıcaklık çevrimi ve yorulma altında neler söylediği ve askerî ile IEC çevresel test yöntemlerinin gerçekte neyi tanımladığı.</p>
+<a href="blog-mems-durability-industrial.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog pca -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-03-20" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-07" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pca_chemometrics.webp?v=1.0.5" alt="PCA ile Sağlam Kemometrik Sınıflandırma Modelleri Geliştirme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 20 MART 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 07 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">PCA ile Sağlam Kemometrik Sınıflandırma Modelleri Geliştirme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hammaddelerin niteliksel tanımlanması için Temel Bileşen Analizini açıklayan adım adım bir metodoloji.</p>
-<a href="blog-pca-classification-models.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">PCA skorlarının, yüklerinin ve artıklarının nasıl bir sınıflandırma modeline dönüştüğü, Hotelling ve Q sınırlarının nereden geldiği, sınıf modellemenin PLS-DA'dan neden farklı olduğu ve düzenleyicilerin nitel bir NIR modelinin nasıl doğrulanmasını beklediği.</p>
+<a href="blog-pca-classification-models.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog starch -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-06-02" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-08" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_starch_milling.webp?v=1.0.5" alt="Islak Mısır Değirmenciliğinde Nişasta Çıkarma Verimliliğini Optimize Etme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 02 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 08 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Islak Mısır Değirmenciliğinde Nişasta Çıkarma Verimliliğini Optimize Etme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir mısır işleme tesisinin, hat içi test kullanarak nişasta ayırıcı akışlarındaki verimi nasıl maksimuma çıkardığını ayrıntılarıyla anlatan istatistiksel bir çalışma.</p>
-<a href="blog-starch-extraction-milling.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Mısır yaş öğütmesinde nişastanın nerede kaybedildiği, ayırma performansının nasıl ölçüldüğü ve yayımlanmış çalışmalara göre spektroskopinin bulamaç akışlarında neyi izleyip neyi izleyemeyeceği.</p>
+<a href="blog-starch-extraction-milling.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog fiber -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-01-28" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="chemical-pharma" data-date="2026-06-09" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_fiber_reactors.webp?v=1.0.5" alt="Aşındırıcı Kimyasal Reaktörler için Optik Fiber Arayüz Tasarımları" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 28 OCAK 2026 - 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 09 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Aşındırıcı Kimyasal Reaktörler için Optik Fiber Arayüz Tasarımları</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Agresif kimyasal döngülerdeki safir optikler ve Hastelloy prob konfigürasyonları için teknik özellikler ve yapı ayrıntıları.</p>
-<a href="blog-fiber-interface-reactors.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Sonda geometrisinin, silika fiberin, safir pencerenin, ıslanan alaşımın ve contanın, aşındırıcı veya sıcak bir reaktörün içinde bir NIR spektrometresinin gerçekte ne gördüğünü nasıl belirlediği; her seçimin ardındaki literatürle birlikte.</p>
+<a href="blog-fiber-interface-reactors.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog opc -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-02-25" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_opc_ua_plc.webp?v=1.0.5" alt="Kapalı Döngü Dozaj Valfleri için OPC-UA Entegrasyonlarını Standartlaştırma" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_opc_ua_plc.webp?v=1.0.5" alt="OPC UA ile Analizör Sonuçlarına Dayalı Kapalı Çevrim Dozaj Kontrolü" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 25 ŞUBAT 2026 — 4 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Kapalı Döngü Dozaj Valfleri için OPC-UA Entegrasyonlarını Standartlaştırma</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Kılavuz haritalama süreci OPC UA, otomatik içerik dozu standartlaştırıcıları için doğrudan spektrometre tahminlerine etiketler.</p>
-<a href="blog-opc-ua-dosing-valves.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 10 HAZİRAN 2026 — 5 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">OPC UA ile Analizör Sonuçlarına Dayalı Kapalı Çevrim Dozaj Kontrolü</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir PLC'nin bir analizör sonucuna göre işlem yapabilmesi için o sonucun OPC UA üzerinden neleri taşıması gerekir, ölü zaman ve örnekleme aralığı PID döngüsünü nasıl şekillendirir ve güvenlik kilitlemeleri nerede yer almalıdır; her noktanın ardındaki standartlarla birlikte.</p>
+<a href="blog-opc-ua-dosing-valves.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog milk -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-04-18" onclick="window.location.href='blog-milk-powder-analysis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="FT-NIR Kullanarak Süt Tozunda Hızlı Nem ve Protein Analizi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-10" onclick="window.location.href='blog-milk-powder-analysis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="NIR Spektroskopisi ile Süt Tozunda Nem ve Protein Analizi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 18 NİSAN 2026 - 3 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">FT-NIR Kullanarak Süt Tozunda Hızlı Nem ve Protein Analizi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">MEMS FT-NIR teknolojisini kullanarak sprey kurutucu deşarjında ​​nem ve protein parametrelerinin gerçek zamanlı izlenmesi.</p>
-<a href="blog-milk-powder-analysis.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 5 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Spektroskopisi ile Süt Tozunda Nem ve Protein Analizi</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Süt tozunda nem, protein, yağ ve laktozun referans yöntemlerle nasıl belirlendiği, yayımlanmış NIR kalibrasyonlarının bunlar için neler bildirdiği ve hat başı ya da hat içi bir NIR adımının nasıl kalibre edilip doğrulandığı.</p>
+<a href="blog-milk-powder-analysis.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog ground -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-28" onclick="window.location.href='blog-ground-beef-fat.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-ground-beef-fat.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_ground_beef.webp?v=1.0.5" alt="Kıyma İşlemede Gerçek Zamanlı Yağ Analizi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN — 28 MAYIS 2026 — 3 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Kıyma İşlemede Gerçek Zamanlı Yağ Analizi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hat içi ve proses FT-NIR sistemlerini kullanarak kıyma hatlarındaki yağ ve nem konsantrasyonunun hat içi ölçümü.</p>
-<a href="blog-ground-beef-fat.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yağ içeriği sığır kıyması için neden belirleyici spesifikasyondur, referans yöntemler neleri içerir ve kıyma makinesi çıkışlarında ve konveyörlerde yapılan hakemli çevrim içi NIR çalışmaları gerçekte neler bildirir.</p>
+<a href="blog-ground-beef-fat.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog feed -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-03-05" onclick="window.location.href='blog-feed-fiber-ash.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_feed_analysis.webp?v=1.0.5" alt="FT-NIR Kullanılarak Yem Rasyonlarında Ham Lif ve Kül İçeriği Tayini" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-feed-fiber-ash.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_feed_analysis.webp?v=1.0.6" alt="NIR Spektroskopisi ile Yem Rasyonlarında Ham Lif ve Kül Tayini" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 05 MART 2026 - 3 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">FT-NIR Kullanılarak Yem Rasyonlarında Ham Lif ve Kül İçeriği Tayini</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hayvan yemi tesislerinde ham lif, kül ve nem parametrelerinin hat içi ve hat içi yakın kızılötesi spektroskopi kullanılarak kontrol edilmesi.</p>
-<a href="blog-feed-fiber-ash.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Spektroskopisi ile Yem Rasyonlarında Ham Lif ve Kül Tayini</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Ham lif ve ham kül referans yöntemlerle nasıl belirlenir, yayımlanmış NIR kalibrasyonları karma yemde bu iki parametre için neye ulaşır ve hat yanı bir ölçüm adımı yem fabrikasının kalite rutinine nasıl oturur.</p>
+<a href="blog-feed-fiber-ash.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog semolina -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-01-10" onclick="window.location.href='blog-semolina-starch-gluten.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_semolina_gluten.webp?v=1.0.5" alt="FT-NIR Kullanılarak Buğday İrmiğinde Nişasta Hasarı ve Gluten Doğrulaması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-semolina-starch-gluten.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_semolina_gluten.webp?v=1.0.6" alt="Durum Buğdayı İrmiğinde Nişasta Hasarı ve Gluten Kalitesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 10 OCAK 2026 - 3 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">FT-NIR Kullanılarak Buğday İrmiğinde Nişasta Hasarı ve Gluten Doğrulaması</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Değirmen tesislerinde ıslak gluten, indeks ve nişasta hasarı dahil irmik parametrelerinin hat içi kalite takibi.</p>
-<a href="blog-semolina-starch-gluten.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 5 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Durum Buğdayı İrmiğinde Nişasta Hasarı ve Gluten Kalitesi</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Nişasta hasarı, yaş gluten ve gluten indeksinin makarna kalitesi için ne anlama geldiği, referans yöntemlerin nasıl çalıştığı ve yayımlanmış NIR çalışmalarının durum buğdayı irmiğinde neyi tahmin edip neyi edemediği.</p>
+<a href="blog-semolina-starch-gluten.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog polymerization -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-02-18" onclick="window.location.href='blog-polymerization-hydroxyl.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-10" onclick="window.location.href='blog-polymerization-hydroxyl.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_hydroxyl_value.webp?v=1.0.5" alt="Polimerizasyon Süreçlerinde Hidroksil Değeri İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN — 18 ŞUBAT 2026 — 3 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 6 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Polimerizasyon Süreçlerinde Hidroksil Değeri İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Fiber optik bağlantılı FT-NIR kullanılarak kimyasal reaktörlerdeki hidroksil değerinin (OHV) ve reaksiyon uç noktalarının gerçek zamanlı takibi.</p>
-<a href="blog-polymerization-hydroxyl.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hidroksil sayısı ve asit sayısının basamaklı büyüme ile üretilen bir poliester partisi hakkında ne söylediği, titrasyona dayalı referans yöntemlerin nasıl işlediği, O&ndash;H bantlarının reaksiyonu NIR için neden görünür kıldığı ve reaktör içi çalışmaların ne gösterdiği.</p>
+<a href="blog-polymerization-hydroxyl.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog olive -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-02" onclick="window.location.href='blog-olive-oil-acidity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_olive_oil_acidity.webp?v=1.0.5" alt="Zeytinyağı İşlemede Serbest Yağ Asitliği (FFA) İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-olive-oil-acidity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_olive_oil_acidity.webp?v=1.0.6" alt="Zeytinyağı İşlemede Serbest Yağ Asitliği (FFA) İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 02 MAYIS 2026 - 3 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Zeytinyağı İşlemede Serbest Yağ Asitliği (FFA) İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yağ ekstraksiyonu sırasında dekantör çıkışında serbest yağ asitliği, nem ve peroksit değerinin eş zamanlı belirlenmesi.</p>
-<a href="blog-olive-oil-acidity.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Serbest asitlik ve peroksit değeri zeytinyağı sınıflarını nasıl tanımlar, sıkım öncesinde ve yağhanede nasıl oluşur, yayımlanmış NIR kalibrasyonları bu parametrelerde ne başarır ve bir ölçüm noktası nereye yerleşir.</p>
+<a href="blog-olive-oil-acidity.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog cell culture -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-06-25" onclick="window.location.href='blog-bioreactor-cell-culture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-11" onclick="window.location.href='blog-bioreactor-cell-culture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_bioreactor_cell.webp?v=1.0.5" alt="Memeli Hücre Kültüründe Biyoreaktör Besleme Optimizasyonu" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY - 25 HAZİRAN 2026 - 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 11 HAZİRAN 2026 — 4 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Memeli Hücre Kültüründe Biyoreaktör Besleme Optimizasyonu</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Safir daldırma probları kullanılarak biyoreaktörlerdeki glikoz, laktat ve canlı hücre yoğunluğunun gerçek zamanlı hat içi izlenmesi.</p>
-<a href="blog-bioreactor-cell-culture.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">CHO beslemeli kesikli kültürde glukoz ve laktat kontrolünün neden önemli olduğu, NIR'ın sulu kültür ortamlarında neden zorlandığı ve literatürün yerinde Raman ve orta kızılötesi ile besleme kontrolü hakkında neler gösterdiği.</p>
+<a href="blog-bioreactor-cell-culture.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog milk adulteration -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-06-08" onclick="window.location.href='blog-milk-adulteration-receiving.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_adulteration.webp?v=1.0.5" alt="Çiğ Süt Alımında Hızlı Tağşiş Tespiti" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-11" onclick="window.location.href='blog-milk-adulteration-receiving.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_adulteration.webp?v=1.0.6" alt="Çiğ Süt Alımında Hızlı Tağşiş Tespiti" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY - 08 HAZİRAN 2026 - 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 11 HAZİRAN 2026 — 4 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Çiğ Süt Alımında Hızlı Tağşiş Tespiti</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Otomatik transmisyon hücre analizörleri kullanılarak gelen çiğ süt tankeri teslimatlarının ilave su, üre ve melamin açısından taranması.</p>
-<a href="blog-milk-adulteration-receiving.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hakemli çalışmalara göre kızılötesi spektroskopinin çiğ sütte neleri tespit edebildiği ve önce tarama, sonra doğrulama adımının bir süt kabul hattına nasıl yerleştiği.</p>
+<a href="blog-milk-adulteration-receiving.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog outlier detection -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-03-28" onclick="window.location.href='blog-outlier-detection-mahalanobis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-11" onclick="window.location.href='blog-outlier-detection-mahalanobis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_outlier_detection.webp?v=1.0.5" alt="Kemometrik Aykırı Değer Tespiti: Mahalanobis Uzaklığı ve Hotelling T²" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 28 MART 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 11 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Kemometrik Aykırı Değer Tespiti: Mahalanobis Uzaklığı ve Hotelling T²</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Regresyon ve sınıflandırma kalibrasyonları için aykırı değer eşik sınırlarının nasıl hesaplanacağını ve ayarlanacağını açıklayan ayrıntılı bir kılavuz.</p>
-<a href="blog-outlier-detection-mahalanobis.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Mahalanobis uzaklığı, Hotelling T-kare istatistiği, kaldıraç (leverage) ve Q artıkları bir proses analizörüne bir spektrumun kalibrasyonuna ait olup olmadığını nasıl söyler, sınırları nasıl belirlenir ve aynı istatistik yazılımlarda neden birkaç farklı adla anılır.</p>
+<a href="blog-outlier-detection-mahalanobis.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog wavelength selection -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-22" onclick="window.location.href='blog-wavelength-selection-ipls.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-11" onclick="window.location.href='blog-wavelength-selection-ipls.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_wavelength_selection.webp?v=1.0.5" alt="NIR Spektral Modeller için Dalga Boyu Seçimi ve Özellik Mühendisliği" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 22 NİSAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 11 HAZİRAN 2026 — 4 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Spektral Modeller için Dalga Boyu Seçimi ve Özellik Mühendisliği</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite içinde Genetik Algoritmalar ve iPLS kullanarak optimum dalga boyu bantlarını nasıl seçeceğinizi ve model taşınabilirliğini nasıl artıracağınızı öğrenin.</p>
-<a href="blog-wavelength-selection-ipls.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir NIR kalibrasyonunu seçilmiş dalga boylarıyla sınırlamanın neden yararlı olabileceği, iPLS, genetik algoritmalar, UVE, CARS, VIP ve jackknife yöntemlerinin bunları nasıl seçtiği ve seçimin neden bağımsız olarak valide edilmesi gerektiği.</p>
+<a href="blog-wavelength-selection-ipls.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog cheese yield -->
-<div class="card blog-card" data-category="guide" data-industry="dairy" data-date="2026-05-10" onclick="window.location.href='blog-cheese-yield-prediction.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_sensor.webp?v=1.0.5" alt="caliX Kullanarak Peynir Verimi Tahmin Modellerini Değerlendirme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-05-10" onclick="window.location.href='blog-cheese-yield-prediction.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_powder.webp?v=1.0.5" alt="Peynir Verimi Tahmin Modellerinin Değerlendirilmesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 10 MAYIS 2026 — 2 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">caliX Kullanarak Peynir Verimi Tahmin Modellerini Değerlendirme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite'te çok değişkenli modeller oluşturarak fıçı pıhtılaşması sırasında telemedeki nemin nasıl tahmin edileceğini adım adım anlatan bir inceleme.</p>
-<a href="blog-cheese-yield-prediction.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 MAYIS 2026 — 5 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Peynir Verimi Tahmin Modellerinin Değerlendirilmesi</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Peynir veriminin süt yağı ve proteininden nasıl tahmin edildiği, kızılötesi spektroskopinin süt kabulünde ve teknede neler kattığı ve bir verim modelinin nasıl kurulup doğrulandığı.</p>
+<a href="blog-cheese-yield-prediction.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog liquid milk -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-02-05" onclick="window.location.href='blog-liquid-milk-standardization.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-02-05" onclick="window.location.href='blog-liquid-milk-standardization.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="Sıvı Sütte Yağ ve Protein Standardizasyonunu Optimize Etme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN — 05 ŞUBAT 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 05 ŞUBAT 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Sıvı Sütte Yağ ve Protein Standardizasyonunu Optimize Etme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Standardizasyon valf bloğundaki hat içi FT-NIR sensörleri, yağ değişimini %50 oranında azaltarak gerçek zamanlı krema ekleme kontrolüne nasıl olanak tanıyor?</p>
-<a href="blog-liquid-milk-standardization.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">İçme sütünde hat içi yağ standardizasyonunun nasıl işlediği, yoğunluğa dayalı krema kontrolünün sınırlarına nerede ulaştığı ve yayımlanmış çalışmaların yağ ve proteinin hat içi NIR ölçümü için neler gösterdiği.</p>
+<a href="blog-liquid-milk-standardization.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog soybean-crush-yield -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-soybean-crush-yield.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_feed_analysis.webp?v=1.0.5" alt="Soya Fasulyesi Kırma Tesislerinde Yağ ve Protein Ekstraksiyonunun Optimize Edilmesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-soybean-crush-yield.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_feed_analysis.webp?v=1.0.6" alt="Soya Fasulyesi Kırma Tesislerinde Yağ ve Protein Ekstraksiyonunun Optimize Edilmesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY - 10 HAZİRAN 2026 - 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Soya Fasulyesi Kırma Tesislerinde Yağ ve Protein Ekstraksiyonunun Optimize Edilmesi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hat içi FT-NIR, soya küspesi deşarjındaki nemi, yağı ve proteini nasıl izliyor?</p>
-<a href="blog-soybean-crush-yield.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Solvent ekstraksiyonu ve desolventizer-tostlayıcının soya küspesinin yağ, nem ve protein kalitesini nasıl belirlediği, bunları hangi referans yöntemlerin tanımladığı ve NIR ölçümünün nereye oturduğu.</p>
+<a href="blog-soybean-crush-yield.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog petfood-extrusion-moisture -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-24" onclick="window.location.href='blog-petfood-extrusion-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-05-24" onclick="window.location.href='blog-petfood-extrusion-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_cattle_feed.webp?v=1.0.5" alt="Evcil Hayvan Maması Ekstrüzyonunda Nem ve Yağ Standardizasyonu" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN — 24 MAYIS 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 24 MAYIS 2026 — 6 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Evcil Hayvan Maması Ekstrüzyonunda Nem ve Yağ Standardizasyonu</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Öğütülmüş küflenmeyi önlemek ve yağ kaplamasını düzenlemek için ekstruder çıkış kanalları üzerinde hat içi sensörlerin kullanılması.</p>
-<a href="blog-petfood-extrusion-moisture.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Kurutucu çıkışındaki kibble neminin ve kaplayıcıdaki yağın raf ömrünü ve etiket uygunluğunu neden belirlediği ve ekstrüde evcil hayvan maması üzerine yayımlanmış NIR çalışmalarının gerçekte ne gösterdiği.</p>
+<a href="blog-petfood-extrusion-moisture.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog corn-gluten-dryer -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-04-28" onclick="window.location.href='blog-corn-gluten-dryer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-04-28" onclick="window.location.href='blog-corn-gluten-dryer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_starch_milling.webp?v=1.0.5" alt="Mısır Gluteni Yem Kurutucularında Gerçek Zamanlı Nem Kontrolü" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 28 NİSAN 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 28 NİSAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Mısır Gluteni Yem Kurutucularında Gerçek Zamanlı Nem Kontrolü</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Mısır glüteni unu nemini tam olarak %10,5'te tutmak için kurutucu ısı döngülerinin optimize edilmesine ilişkin örnek olay çalışması.</p>
-<a href="blog-corn-gluten-dryer.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Gluten yemi kurutucusunun neden mısır yaş öğütme tesisindeki en büyük enerji tüketicilerinden biri olduğu, aşırı ve yetersiz kurutmanın maliyeti ve çevrim içi NIR nem ölçümünün kurutucu kontrol döngüsünü nasıl kapatabileceği.</p>
+<a href="blog-corn-gluten-dryer.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog flour-ash-milling -->
-<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-03-18" onclick="window.location.href='blog-flour-ash-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_semolina_gluten.webp?v=1.0.5" alt="Buğday Unu Değirmenciliğinde Sürekli Kül ve Protein İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-03-18" onclick="window.location.href='blog-flour-ash-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_semolina_gluten.webp?v=1.0.6" alt="Buğday Unu Değirmenciliğinde Sürekli Kül ve Protein İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 18 MART 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 18 MART 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Buğday Unu Değirmenciliğinde Sürekli Kül ve Protein İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Buğday ekstraksiyon oranlarını dinamik olarak sınıflandırmak için un akışlarında hat içi ve hat içi NIR kullanımına ilişkin kılavuz.</p>
-<a href="blog-flour-ash-milling.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Un akışlarında külün neden kepeği izlediği, yakma ve Kjeldahl referans yöntemlerinin neleri kapsadığı, yayımlanmış NIR çalışmalarının kül ve protein için neler gösterdiği ve akış izlemenin bir değirmene nasıl yerleştiği.</p>
+<a href="blog-flour-ash-milling.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog whey-permeate-evaporator -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-04-15" onclick="window.location.href='blog-whey-permeate-evaporator.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-04-15" onclick="window.location.href='blog-whey-permeate-evaporator.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_powder.webp?v=1.0.5" alt="Peynir Altı Suyu Permeat Evaporatörlerinde Toplam Katı Madde Kontrolü" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 15 NİSAN 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 15 NİSAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Peynir Altı Suyu Permeat Evaporatörlerinde Toplam Katı Madde Kontrolü</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Püskürterek kurutmadan önce peynir altı suyu konsantresinin hat içi refraktometre/spektrometre standardizasyonuna ilişkin örnek olay çalışması.</p>
-<a href="blog-whey-permeate-evaporator.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Peynir altı suyu veya permeat evaporatöründen çıkan katı madde içeriğinin kirlenme, laktoz kristalizasyonu ve kurutma açısından neden önemli olduğu ve nasıl ölçülüp kontrol edilebileceği.</p>
+<a href="blog-whey-permeate-evaporator.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog butter-fat-moisture -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-03-28" onclick="window.location.href='blog-butter-fat-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-03-28" onclick="window.location.href='blog-butter-fat-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="Sürekli Tereyağı Yapımında Hat İçi Yağ ve Nem Standardizasyonu" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 28 Mart 2026 - 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 28 MART 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Sürekli Tereyağı Yapımında Hat İçi Yağ ve Nem Standardizasyonu</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Su dozajını kontrol etmek için tereyağı yayık boşaltma boruları içindeki NIR problarının kullanımına ilişkin teknik belge.</p>
-<a href="blog-butter-fat-moisture.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Tereyağı standartlarının yağ, su ve tuz için neyi sabitlediği, sürekli bir tereyağı makinesinin bunları nerede belirlediği ve yayımlanmış hat içi sensör ve NIR çalışmalarının bunları hatta kontrol etmek hakkında ne gösterdiği.</p>
+<a href="blog-butter-fat-moisture.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog yogurt-fermentation-lactic -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-01-26" onclick="window.location.href='blog-yogurt-fermentation-lactic.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_adulteration.webp?v=1.0.5" alt="Yoğurt Fermantasyonunda Laktik Asit ve pH İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-01-26" onclick="window.location.href='blog-yogurt-fermentation-lactic.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_adulteration.webp?v=1.0.6" alt="Yoğurt Fermantasyonunda Laktik Asit ve pH İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN - 26 OCAK 2026 - 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 26 OCAK 2026 — 4 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Yoğurt Fermantasyonunda Laktik Asit ve pH İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Tam kazan soğutma sürelerini belirlemek için hat içi probları kullanarak canlı kültür fermantasyonunu izleyen teknik belge.</p>
-<a href="blog-yogurt-fermentation-lactic.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yoğurt fermantasyonunun bitiş noktasının neden önemli olduğu, pH ve titrasyon asitliğinin nasıl ölçüldüğü ve hat içi NIR çalışmalarının asitleşmenin izlenmesi hakkında neler bildirdiği.</p>
+<a href="blog-yogurt-fermentation-lactic.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog cheese-moisture-milling -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-02-15" onclick="window.location.href='blog-cheese-moisture-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_sensor.webp?v=1.0.5" alt="Cheddar Peyniri Öğütmede Nem ve Tuz İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-02-15" onclick="window.location.href='blog-cheese-moisture-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="Cheddar Peyniri Öğütmede Nem ve Tuz İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 15 ŞUBAT 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 15 ŞUBAT 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Cheddar Peyniri Öğütmede Nem ve Tuz İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Kaşar bandıyla preslemeden önce hat üzerinde nemdeki tuz oranının ölçülmesine ilişkin örnek olay çalışması.</p>
-<a href="blog-cheese-moisture-milling.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Tuzlama bandında belirlenen nemdeki tuz oranının Cheddar olgunlaşmasını neden yönettiği, nem ve tuzun referans yöntemlerle nasıl tayin edildiği ve yayımlanmış NIR çalışmalarının peynir için ne gösterdiği.</p>
+<a href="blog-cheese-moisture-milling.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog dairy-receiving-total-solids -->
-<div class="card blog-card" data-category="guide" data-industry="dairy" data-date="2026-01-08" onclick="window.location.href='blog-dairy-receiving-total-solids.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_adulteration.webp?v=1.0.5" alt="Kabul Rıhtımlarında Gelen Süt Yağı ve Toplam Katı Madde Derecelendirmesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-01-08" onclick="window.location.href='blog-dairy-receiving-total-solids.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_adulteration.webp?v=1.0.6" alt="Kabul Rıhtımlarında Gelen Süt Yağı ve Toplam Katı Madde Derecelendirmesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 08 OCAK 2026 — 2 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 08 OCAK 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Kabul Rıhtımlarında Gelen Süt Yağı ve Toplam Katı Madde Derecelendirmesi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">İletim hücrelerini kullanarak gelen çiğ süt tankı teslimatlarının taranmasına ilişkin kılavuz.</p>
-<a href="blog-dairy-receiving-total-solids.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Çiğ sütün bedeli neden yağ, protein ve katı madde içeriğine göre ödenir, referans yöntemler ile orta kızılötesi analiz cihazları bu değerleri nasıl belirler ve yayımlanmış NIR çalışmaları çiğ süt bileşimi için neler gösterir.</p>
+<a href="blog-dairy-receiving-total-solids.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog pharma-granulation-moisture -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-06-12" onclick="window.location.href='blog-pharma-granulation-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-12" onclick="window.location.href='blog-pharma-granulation-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pharma_blending.webp?v=1.0.5" alt="Akışkan Yataklı Granülasyonda Nem İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY - 12 HAZİRAN 2026 - 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 12 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Akışkan Yataklı Granülasyonda Nem İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Aktif granül kurutmasında bitiş noktası belirleme vaka çalışması.</p>
-<a href="blog-pharma-granulation-moisture.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Kalıntı nemin akışkan yatak granülasyonunun neden kritik niteliği olduğu, referans yöntemlerin neyi ölçtüğü, hat içi NIR çalışmalarının ne gösterdiği ve yöntemin ayakta kalıp kalmayacağını numune alma, prob kirlenmesi ve sıcaklığın neden belirlediği.</p>
+<a href="blog-pharma-granulation-moisture.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog solvent-distillation-purity -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-04-08" onclick="window.location.href='blog-solvent-distillation-purity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-04-08" onclick="window.location.href='blog-solvent-distillation-purity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_fiber_reactors.webp?v=1.0.5" alt="Kimyasal Damıtma Kolonlarında Hat İçi Çözücü Saflığı İzleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN — 08 NİSAN 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 08 NİSAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Kimyasal Damıtma Kolonlarında Hat İçi Çözücü Saflığı İzleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Fiber optik akış hücrelerini kullanarak ikili solvent fraksiyonlarının izlenmesini ayrıntılarıyla anlatan teknik belge.</p>
-<a href="blog-solvent-distillation-purity.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Distilasyon kolonlarının neden genellikle sıcaklıkla işletildiği, yakın kızılötesi spektroskopinin solvent bileşimi ve su içeriği için neler kattığı ve böyle bir analiz cihazının nasıl kalibre edilip doğrulandığı.</p>
+<a href="blog-solvent-distillation-purity.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog packaging-polymer-density -->
-<div class="card blog-card" data-category="guide" data-industry="chemical-pharma" data-date="2026-03-20" onclick="window.location.href='blog-packaging-polymer-density.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-03-20" onclick="window.location.href='blog-packaging-polymer-density.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_polyol_reactors.webp?v=1.0.5" alt="Polietilen Ambalajların Yoğunluk ve Kristallik Derecelendirmesi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 20 MART 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 20 MART 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Polietilen Ambalajların Yoğunluk ve Kristallik Derecelendirmesi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yüksek yoğunluklu ve düşük yoğunluklu PE kalınlığının ve bariyer özelliklerinin doğrulanmasına ilişkin kılavuz.</p>
-<a href="blog-packaging-polymer-density.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">LDPE, LLDPE ve HDPE'nin yoğunluğu ile kristalliğinin referans yöntemlerle nasıl belirlendiği, polietilenin yakın kızılötesi spektrumunun gerçekte neyi taşıdığı ve yayımlanmış NIR yoğunluk kalibrasyonlarının granül, film ve eriyikte neler başardığı.</p>
+<a href="blog-packaging-polymer-density.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog pharma-raw-material-id -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-01-18" onclick="window.location.href='blog-pharma-raw-material-id.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-03-28" onclick="window.location.href='blog-pharma-raw-material-id.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pharma_blending.webp?v=1.0.5" alt="İlaç Depolarında Gelen Hammadde Tanımlaması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ÖRNEK OLAY — 18 OCAK 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 28 MART 2026 — 6 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">İlaç Depolarında Gelen Hammadde Tanımlaması</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> sınıflandırma modellerini kullanarak depo girişinde anında hammadde doğrulamasına ilişkin örnek olay çalışması.</p>
-<a href="blog-pharma-raw-material-id.html" class="btn-text" style="margin-top: auto;">Vaka Çalışmasını Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">GMP'nin başlangıç maddesinin her kabında neden bir kimlik testi beklediği, EMA'nın ve farmakopelerin nitel bir NIR yönteminden ne istediği ve spektral kütüphanelerin ve kap içinden ölçümün nasıl kurulup doğrulandığı.</p>
+<a href="blog-pharma-raw-material-id.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog chemical-alkyd-resin -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-02-12" onclick="window.location.href='blog-chemical-alkyd-resin.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-02-12" onclick="window.location.href='blog-chemical-alkyd-resin.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_polyol_reactors.webp?v=1.0.5" alt="Alkid Reçine Pişirmede Asit Değeri ve Viskozite Takibi" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ BÜLTEN — 12 ŞUBAT 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 12 ŞUBAT 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Alkid Reçine Pişirmede Asit Değeri ve Viskozite Takibi</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Jelleşmeyi önlemek için reçine esterifikasyon reaksiyonlarının sürekli takibini ayrıntılarıyla anlatan teknik belge.</p>
-<a href="blog-chemical-alkyd-resin.html" class="btn-text" style="margin-top: auto;">Teknik İncelemeyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Alkid pişirmeleri neden asit sayısı ve viskoziteyle izlenir, titrasyon ve viskozite referans yöntemleri neleri içerir, jel noktası zamanlamayı neden kritik kılar ve yayımlanmış hat içi NIR çalışmaları neler gösterir.</p>
+<a href="blog-chemical-alkyd-resin.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog msc-snv-preprocessing -->
 <div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-02" onclick="window.location.href='blog-msc-snv-preprocessing.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_spectral_math.webp?v=1.0.5" alt="Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 02 HAZİRAN 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 02 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Yansıma NIR'deki ışık yolu değişimleri için dağılım düzeltme matematiğini karşılaştıran eğitim.</p>
-<a href="blog-msc-snv-preprocessing.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Çarpımsal saçılma düzeltmesi ve standart normal değişken dönüşümü bir difüz yansıma NIR spektrumuna ne yapar, ikisi birbiriyle nasıl ilişkilidir ve hangisi ne zaman daha iyi seçimdir.</p>
+<a href="blog-msc-snv-preprocessing.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog spectrometer-reference-bg -->
 <div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-02" onclick="window.location.href='blog-spectrometer-reference-bg.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_durability.webp?v=1.0.5" alt="Proses Spektroskopisinde Referans Arka Plan Ölçüm Aralıklarının Standartlaştırılması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<img src="../images/blog_what_is_nir.webp?v=1.0.5" alt="Proses Spektroskopisinde Referans Arka Plan Ölçüm Aralıklarının Standartlaştırılması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">KILAVUZ — 02 NİSAN 2026 — 1 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 02 NİSAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Proses Spektroskopisinde Referans Arka Plan Ölçüm Aralıklarının Standartlaştırılması</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Çevresel sürüklenmeyi yönetmek için otomatik dahili altın bayrak arka planlarına ilişkin kılavuz.</p>
-<a href="blog-spectrometer-reference-bg.html" class="btn-text" style="margin-top: auto;">Kılavuzu Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Bir proses NIR spektrometresinin neden referans ölçümlerine ihtiyaç duyduğu, hangi etkilerin yanıtında kaymaya yol açtığı ve performans testleri ile rutin kontrollerin kaymayı sonuçlara ulaşmadan nasıl ortaya çıkardığı.</p>
+<a href="blog-spectrometer-reference-bg.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: What Is FT-NIR Spectroscopy? -->
-<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-20" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-06-20" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_ftnir_guide.webp?v=1.0.5" alt="FT-NIR Spektroskopisi Nedir?" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 20 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 20 HAZİRAN 2026 — 5 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">FT-NIR Spektroskopisi Nedir? Gıda ve Yem Üreticileri için Sade Dilde Kılavuz</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Fourier Dönüşümü Yakın Kızılötesi teknolojisinin net, jargondan uzak bir açıklaması ve bunun hat içi kalite kontrol için neden önemli olduğu.</p>
-<a href="blog-what-is-ftnir.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Fourier dönüşümlü NIR'a sade bir giriş: bir interferometrenin ışığı nasıl spektruma dönüştürdüğü, bantların su, protein, yağ ve karbonhidrat hakkında ne söylediği ve kalibrasyonun neden gerekli olduğu.</p>
+<a href="blog-what-is-ftnir.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: NIR vs. FT-NIR -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-18" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-18" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="NIR ve FT-NIR Karşılaştırması" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 18 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 18 HAZİRAN 2026 — 7 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR vs. FT-NIR: Fark Nedir — ve Hat İçi Proses Kontrolü İçin Neden Önemlidir</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Dağıtıcı NIR ve Fourier Dönüşümü NIR'nin spektral çözünürlük, dalga boyu kararlılığı ve sinyal-gürültü performansını kapsayan teknik karşılaştırması.</p>
-<a href="blog-nir-vs-ftnir.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Taramalı ızgaralı, diyot dizili ve Fourier dönüşümlü NIR analizörleri spektrumu nasıl üretir, verim (throughput), çoğullama ve dalga boyu ekseni avantajları gerçekte ne kazandırır ve hat içi bir uygulamada hangi ödünleşimler belirleyicidir.</p>
+<a href="blog-nir-vs-ftnir.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: Inline vs. At-Line vs. Off-Line -->
-<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-15" onclick="window.location.href='blog-inline-atline-offline.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-06-15" onclick="window.location.href='blog-inline-atline-offline.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_inline_atline.webp?v=1.0.5" alt="Hat İçi (Inline) vs Hat Yanı (At-Line) vs Çevrimdışı (Off-Line) Analiz" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 15 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 15 HAZİRAN 2026 — 6 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hat İçi, Hat İçi ve Çevrimdışı Analiz: Üretim Hattınız için Hangi Yaklaşım Doğru?</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Üç ölçüm stratejisinin yanıt süresi, kapsam, operatör bağımlılığı ve toplam sahip olma maliyetine göre karşılaştırılması.</p>
-<a href="blog-inline-atline-offline.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">FDA PAT kılavuzunun hat başı, hat üzeri ve hat içi ölçümü nasıl tanımladığı, her konumun gecikme, numune alma hatası ve doğrulama emeği açısından nelerden vazgeçtiği ve bir üretim hattının gerçekte ihtiyaç duyduğu düzenin nasıl seçileceği.</p>
+<a href="blog-inline-atline-offline.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: Hidden Costs of Lab-Based QC -->
 <div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-12" onclick="window.location.href='blog-hidden-costs-lab-qc.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_hidden_costs.webp?v=1.0.5" alt="Laboratuvar Tabanlı Kalite Kontrolün Gizli Maliyetleri" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 12 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 12 HAZİRAN 2026 — 6 dakikalık okuma</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Gıda ve Yem Üretiminde Laboratuvar Tabanlı Kalite Kontrolün Gizli Maliyetleri</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Analitik gecikme, yeniden çalışma, verim kaybı ve uyumluluk ek yükü nasıl doğrudan laboratuvar masraflarını gölgede bırakan görünmez maliyetler yaratıyor?</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Sonuç gecikmesi, numune alma hatası, fazla formülasyon ve referans yöntem kimyasının her biri laboratuvar bütçesinde hiç görünmeyen bir maliyet taşır; literatürün bu konuda söyledikleri ve proses NIR'in yeri.</p>
 <a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 <!-- Blog: PLC and SCADA Integration -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_plc_scada.webp?v=1.0.5" alt="FT-NIR PLC ve SCADA Entegrasyonu" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_plc_scada.webp?v=1.0.5" alt="NIR Analizörleri PLC ve SCADA Sistemleriyle Nasıl Entegre Olur: Pratik Bir Genel Bakış" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE — 10 HAZİRAN 2026 — 4 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">FT-NIR Analizörleri PLC ve SCADA Sistemleri ile Nasıl Entegre Olur</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hat içi proses analizörleri için Ethernet TCP/IP, OPC-UA ve Modbus entegrasyon mimarilerine pratik genel bakış.</p>
-<a href="blog-plc-scada-integration.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 10 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR Analizörleri PLC ve SCADA Sistemleriyle Nasıl Entegre Olur: Pratik Bir Genel Bakış</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hat içi NIR sonuçları için entegrasyon tablosu: akım döngüsünden OPC UA'ya saha protokolleri, değer-durum-zaman damgası kaydı, gecikmenin kaynakları ve alarmların, veri arşivleyicilerin (historian) ve siber güvenliğin nasıl ele alındığı.</p>
+<a href="blog-plc-scada-integration.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Blog: 5 Questions Before Buying -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-08" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_buying_guide.webp?v=1.0.5" alt="Hat İçi FT-NIR Analizörü Almadan Önce Sorulması Gereken 5 Soru" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-08" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_buying_guide.webp?v=1.0.5" alt="Hat İçi NIR Analizörü Satın Almadan Önce Sorulması Gereken 5 Soru" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE – 08 HAZİRAN 2026 – 4 dakikalık okuma</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hat İçi FT-NIR Analizörü Almadan Önce Sorulması Gereken 5 Soru</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Üretim koşullarını, kalibrasyonu, otomasyon entegrasyonunu, kurulumu ve satış sonrası desteği kapsayan bir satın alma kontrol listesi.</p>
-<a href="blog-5-questions-buying-ftnir.html" class="btn-text" style="margin-top: auto;">Makaleyi Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER — 08 HAZİRAN 2026 — 4 dakikalık okuma</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hat İçi NIR Analizörü Satın Almadan Önce Sorulması Gereken 5 Soru</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Hat içi bir NIR analizörü satın alırken markadan bağımsız bir kontrol listesi: ölçülebilirlik ve doğruluk, numune arayüzü, kalibrasyonun sahipliği, veri entegrasyonu ve yaşam döngüsü boyunca validasyon.</p>
+<a href="blog-5-questions-buying-ftnir.html" class="btn-text" style="margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 </div>
@@ -956,11 +957,10 @@ visibleCount++;
 card.style.display = 'none';
 }
 });
-if (activeType === 'all' && activeIndustry === 'all') {
-activeFiltersCount.textContent = `Showing all ${visibleCount} publications`;
-} else {
-activeFiltersCount.textContent = `Showing ${visibleCount} of ${blogCards.length} publications`;
-}
+// sayac metni sayfa dilinde: cevrilmis statik metin sablon, yalniz sayi degisir (30.10.2026)
+if (!activeFiltersCount.dataset.tpl) activeFiltersCount.dataset.tpl = activeFiltersCount.textContent;
+const countText = (activeType === 'all' && activeIndustry === 'all') ? String(visibleCount) : visibleCount + ' / ' + blogCards.length;
+activeFiltersCount.textContent = activeFiltersCount.dataset.tpl.replace(/\d+/, countText);
 const sortedCards = [...blogCards].sort((a, b) => {
 const dateA = new Date(a.dataset.date);
 const dateB = new Date(b.dataset.date);
@@ -983,7 +983,7 @@ filterAndSortBlogs();
 <div class="container" style="max-width: 800px; padding: 4rem 2rem;">
 <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">Üretim Hatlarınızı Optimize Etmek İster misiniz?</h2>
 <p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
-Özel kalibrasyon yöntemlerimizin ve MEMS FT-NIR sensörlerimizin tesisinize nasıl uyum sağlayabileceğini öğrenin. Keşfedebilirsin <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ürün portföyümüzü</a> tüm cihaz ve yazılım serimizi görmek için, veya inceleyin <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">iletişim bilgilerimiz</a> üzerinden satış mühendislerimize ulaşabilirsiniz.
+Özel kalibrasyon yöntemlerimizin ve MEMS FT-NIR sensörlerimizin tesisinize nasıl uyum sağlayabileceğini öğrenin. Keşfedebilirsin <a href="products.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ürün portföyümüzü</a> tüm cihaz ve yazılım serimizi görmek için, veya inceleyin <a href="contact.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">iletişim bilgilerimiz</a> üzerinden satış mühendislerimize ulaşabilirsiniz.
 </p>
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
 <a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">Ürün Portföyüne Göz Atın</a>
@@ -1042,6 +1042,6 @@ filterAndSortBlogs();
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

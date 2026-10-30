@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="ProChem 软件如何将原始 NIR 光谱转化为实时过程控制信号和批次记录。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="从光谱离开分析仪到 PLC 中设定值发生改变，中间必须完成哪些环节：结果验证、控制结构、报警处理，以及使决策可追溯的记录。" name="description"/>
 <meta content="ProChem 软件 NIR，过程控制光谱，实时质量监控，PLC 集成 NIR，批次记录光谱" name="keywords"/>
-<title>ProChem：关闭测量和控制之间的循环| USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<title>ProChem：关闭测量和控制之间的循环 | USTECH Innovations</title>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-prochem-measurement-control.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-prochem-measurement-control.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-prochem-measurement-control.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "ProChem：关闭测量和控制之间的循环",
-  "description": "ProChem 软件如何将原始 NIR 光谱转化为实时过程控制信号和批次记录。",
+  "description": "从光谱离开分析仪到 PLC 中设定值发生改变，中间必须完成哪些环节：结果验证、控制结构、报警处理，以及使决策可追溯的记录。",
   "url": "https://www.ustechinnovations.com/zh/blog-prochem-measurement-control.html",
   "datePublished": "2026-06-25",
-  "dateModified": "2026-06-25",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -113,17 +114,23 @@
 <link href="../apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
-<meta content="ProChem：关闭测量和控制之间的循环| USTECH Innovations" property="og:title"/>
-<meta content="ProChem 软件如何将原始 NIR 光谱转化为实时过程控制信号和批次记录。" property="og:description"/>
+<meta content="ProChem：关闭测量和控制之间的循环 | USTECH Innovations" property="og:title"/>
+<meta content="从光谱离开分析仪到 PLC 中设定值发生改变，中间必须完成哪些环节：结果验证、控制结构、报警处理，以及使决策可追溯的记录。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-prochem-measurement-control.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-prochem-measurement-control.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="ProChem：关闭测量和控制之间的循环| USTECH Innovations" property="og:image:alt"/>
+<meta content="ProChem：关闭测量和控制之间的循环 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="ProChem：关闭测量和控制之间的循环| USTECH Innovations" name="twitter:title"/>
-<meta content="ProChem 软件如何将原始 NIR 光谱转化为实时过程控制信号和批次记录。" name="twitter:description"/>
+<meta content="ProChem：关闭测量和控制之间的循环 | USTECH Innovations" name="twitter:title"/>
+<meta content="从光谱离开分析仪到 PLC 中设定值发生改变，中间必须完成哪些环节：结果验证、控制结构、报警处理，以及使决策可追溯的记录。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-prochem-measurement-control.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,56 +218,61 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="ProChem Software Industrial Control Room" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_prochem_control.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Article — June 25, 2026 — 2 分钟阅读</span>
+<span class="blog-post-meta">文章 — 2026年6月25日 — 7 分钟阅读</span>
 <h1 class="blog-post-title">ProChem：关闭测量和控制之间的循环</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">ProChem 软件如何将原始 NIR 光谱转化为实时过程控制信号、完整的批次记录和可操作的质量数据。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">从光谱离开分析仪到 PLC 中设定值发生改变，中间必须完成哪些环节：结果验证、反馈与前馈结构、限值与报警，以及使每一项决策都能被重建的记录&mdash;&mdash;依据 PAT 与 ICH 指南、控制工程著作及报警管理标准。</p>
 </div>
 <div class="blog-post-content">
-<h2>30 秒内从频谱到决策</h2>
-<p>这<a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a>硬件收集 NIR 频谱。<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem</a>是软件层，可将原始光谱数据转换为成分值，将其与规格限值进行比较，触发警报，使用完整元数据存档结果，并向工厂 PLC 提供实时信号 - 所有这些都在同一个 30 秒测量周期内连续、全天候进行。</p>
-<blockquote>“ProChem 将每次 NIR 扫描转换为可操作的质量数据 - 从原始频谱到 PLC 控制信号，只需 30 秒，24/7。”</blockquote>
-<h2>ProChem 功能概述</h2>
-<div style="overflow-x: auto;">
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-<thead><tr style="background: var(--accent-black); color: #fff;">
-<th style="padding: 0.75rem 1rem; text-align: left;">功能</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">描述</th>
-</tr></thead>
-<tbody>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; font-weight: 600;">测量管理</td><td style="padding: 0.75rem 1rem;">配置ProLine2550，管理产品配置文件和校准模型，触发自动扫描</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; font-weight: 600;">实时监控</td><td style="padding: 0.75rem 1rem;">带有趋势图的实时成分值、可配置的规格限制警报、即时超出规格标记</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; font-weight: 600;">PLC 自动化</td><td style="padding: 0.75rem 1rem;">HTTP 以太网接口 — 每次扫描后提供结果，接受远程产品/方法切换</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; font-weight: 600;">数据管理</td><td style="padding: 0.75rem 1rem;">每次测量都带有时间戳并存档 — CSV 导出用于 ERP/LIMS 集成</td></tr>
-<tr><td style="padding: 0.75rem 1rem; font-weight: 600;">ProChem Viewer</td><td style="padding: 0.75rem 1rem;">任何联网工作站上的只读监控 - 两种型号均包含</td></tr>
-</tbody>
-</table>
+<h2>测量尚不等于控制动作</h2>
+<p>FDA 的 PAT 指南将过程分析技术描述为一个通过及时测量关键质量属性和性能属性来设计、分析和控制生产的系统，且测量在加工过程中而非事后进行<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。其中的关键词是<em>控制</em>：一台在每个测量周期报告组成的近红外分析仪，只完成了链条的第一环。ICH Q8(R2) 和 ICH Q10 将控制策略定义为基于对产品和工艺的理解而制定的一套有计划的控制措施，包括过程控制以及相关的方法和监测与控制频率<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。在这一框架下，分析仪只是其中一个要素；其余部分是对其结果的有效性检查、限值、所采取的措施以及该措施的记录。本文沿着从光谱到执行器的链条展开，探讨每一环需要具备什么才能被信任。所用术语来自<a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">化工与制药</a>行业的法规，但其工程原理在饲料厂或乳品生产线上同样适用。</p>
+<h2>从光谱到可据以行动的结果</h2>
+<p>首要要求是分析仪输出的数值必须有效。ASTM D6122 针对多元红外分析仪明确指出：必须证明样品光谱落在建立定标模型所用的样本总体之内，因为适用性不能想当然，而由离群光谱计算出的结果是无效的<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。该规程还将仪器性能验证与模型对样品适用性的验证区分开来，并将二者都视为持续性检查，而非一次性验证<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。Vargas 等描述了这在一条商业化连续压片生产线上的实际情形：先由诊断测试确认采集光谱时探头窗口处确有粉末，再由 PCA 模型检查混合物是否与定标混合物相似，之后 PLS 模型才报告浓度；这三个步骤集成在一个实时采集光谱并应用模型的软件平台中，在一次历时 28 小时、共 12,633 条光谱的运行中，PCA 检查发现了一次仅凭浓度值无法暴露的设备故障<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</p>
+<p>Kourti 认为，只有当实时分析仪的输出与常规过程测量值&mdash;&mdash;温度、流量、压力&mdash;&mdash;在多元监测方案中结合使用时，其全部价值才得以体现，这既能改善对异常工况的检测，也能加深对过程的理解<a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。因此，控制系统接收的不应只是一个组成数值，还应附带状态：是否有效；若无效，原因为何。</p>
+<h2>反馈、前馈与监督层</h2>
+<p>有了有效结果之后，问题在于由何种结构据此动作。&Aring;str&ouml;m 和 Murray 作了基本区分：反馈测量输出并在偏差出现后进行校正，因而对过程模型的不确定性具有鲁棒性；前馈则测量扰动并在其到达输出之前采取动作，这需要一个描述扰动传播方式的模型<a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。Seborg 等将二者视为互补，并描述了常见的组合方式，即基于上游可测扰动的前馈加上对被控变量的反馈微调，以及比值控制和串级控制配置<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。位于原料进厂处的 NIR 分析仪，是下游配料或计量步骤的前馈传感器；而同一台分析仪安装在产品物流上时，则是反馈传感器。</p>
+<p>实际上，分析仪很少直接驱动阀门。过程控制著作描述了一种层级结构：PLC 或 DCS 中的快速基础调节回路维持流量、液位和温度，而较慢的监督层则调整这些回路的设定值<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。每个测量周期才到达一次、且叠加了采样和分析滞后时间的组成结果，属于这一外层：串级控制&mdash;&mdash;即由分析仪回路设定内层流量回路的设定值&mdash;&mdash;是自然的安排，而它引入的时间滞后必须在外环的设计和整定中加以考虑<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。Singh 等在一条连续制粒生产线的流程模拟中展示了如何在串级和比值方案中布置嵌套 PID 回路，以控制组成、颗粒和片剂属性<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。PAT 指南还为间歇操作补充了一个推论：在其框架内，过程终点是达到所需的物料属性，而不是固定的时间<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。设定值的变化如何传送到控制器、内环如何整定，另见配套文章<a href="blog-plc-scada-integration.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">PLC 与 SCADA 集成</a>和<a href="blog-opc-ua-dosing-valves.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">闭环计量阀</a>。</p>
+<h2>限值、报警与不合格结果</h2>
+<p>将结果与规格限值比较很简单，但决定这一比较应触发什么却不简单。ANSI/ISA-18.2 将报警定义为向操作人员发出的、提示设备故障、过程偏差或需要及时响应的异常状况的声光指示，并要求有一份书面的报警原则，每一项拟设报警都须据此合理化：说明其必要性，记录其设定值、原因、后果和操作人员应对措施，然后确定优先级并分类<a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。Seborg 等将报警管理置于工厂的保护层之中，并将其与异常事件检测分开论述<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。对分析仪而言，这意味着超规格结果、无效光谱标志和仪器故障是三种不同的事件，需要三种不同的响应，而且只有需要操作人员采取措施的事件才应成为报警。</p>
+<p>即便在制药行业之外，关于实时放行检验（RTRT）的法规指南也颇具启发。EMA 指南规定，当 RTRT 结果不合格或呈现不合格趋势时，必须对其进行调查，并依据调查结果作出放行决定，而不是退回到成品检验；指南还指出，该策略可基于工艺参数、产品属性或二者兼有，且必须建立在对二者关系的理解之上<a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。由此得出三项做法：</p>
+<ul>
+<li><strong>先把关，再动作。</strong>结果只有附带有效性状态才能到达控制器；对无效结果如何处理&mdash;&mdash;保持上一个有效值，或将回路交还操作人员&mdash;&mdash;须事先决定并形成书面规定<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</li>
+<li><strong>合理化各项限值。</strong>规格限、控制限和报警设定值并非同一个数值；每一项都须单独论证，报警应遵循 ISA-18.2 原则，以免操作人员被报警淹没<a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。</li>
+<li><strong>确保内环自身安全。</strong>若监督层设定值停止更新，PLC 中的基础调节回路必须仍能合理运行；这正是分层结构的意义所在<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</li>
+</ul>
+<h2>记录：审计追踪与知识</h2>
+<p>链条中的每一步事后都应可以重建。FDA 的数据完整性指南将审计追踪定义为一种安全的、由计算机生成并带有时间戳的电子记录，可据以重建与记录的创建、修改或删除相关的事件过程；该指南强调，数据值脱离其元数据&mdash;&mdash;时间戳、用户、仪器、单位、所用模型&mdash;&mdash;便毫无意义<a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。对于由分析仪驱动的回路，这意味着光谱、模型版本、有效性标志、报告值、当时有效的限值以及发送的设定值应一并存储，而不是分散在事后无法关联的不同系统中。ICH Q10 将此类过程数据的系统获取与分析视为知识管理，用以推动持续改进<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>；PAT 指南也将在产品生命周期内通过数据收集实现持续学习描述为其框架的组成部分<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。</p>
+<h2>USTECH 的做法</h2>
+<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件将其 NIR 分析仪&mdash;&mdash;在线型 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>&mdash;&mdash;与工厂 PLC 或 SCADA 系统相连，在实时看板上显示结果，按已配置的限值发出报警，并可根据测量值自动调整设定值；其运行的定标模型在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 中建立。哪些参数可以承载控制动作、有效性检查和限值如何配置、分析仪在控制层级中处于什么位置，均需通过使用贵方样品和贵方工艺的可行性研究来确定。</p>
+<div class="blog-post-references">
+<h3>参考文献</h3>
+<ul>
+<li id="ref-1">[1] U.S. Food and Drug Administration (2004). <em>Guidance for Industry. PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> FDA, Rockville, MD. <a href="https://www.fda.gov/media/71012/download" target="_blank" rel="noopener">fda.gov/media/71012/download</a></li>
+<li id="ref-2">[2] ICH (2009). <em>Pharmaceutical Development Q8(R2).</em> ICH Harmonised Tripartite Guideline, Step 4 version, August 2009. <a href="https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf" target="_blank" rel="noopener">database.ich.org/sites/default/files/Q8(R2) Guideline.pdf</a></li>
+<li id="ref-3">[3] ICH (2008). <em>Pharmaceutical Quality System Q10.</em> ICH Harmonised Tripartite Guideline, Step 4 version, 4 June 2008. <a href="https://database.ich.org/sites/default/files/Q10%20Guideline.pdf" target="_blank" rel="noopener">database.ich.org/sites/default/files/Q10 Guideline.pdf</a></li>
+<li id="ref-4">[4] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
+<li id="ref-5">[5] Vargas, J.M., Nielsen, S., C&aacute;rdenas, V., Gonzalez, A., Aymat, E.Y., Almodovar, E., Classe, G., Col&oacute;n, Y., Sanchez, E., Roma&ntilde;ach, R.J. (2018). Process analytical technology in continuous manufacturing of a commercial pharmaceutical product. <em>International Journal of Pharmaceutics</em>, 538(1&ndash;2), 167&ndash;178. <a href="https://doi.org/10.1016/j.ijpharm.2018.01.003" target="_blank" rel="noopener">doi:10.1016/j.ijpharm.2018.01.003</a></li>
+<li id="ref-6">[6] Kourti, T. (2006). The Process Analytical Technology initiative and multivariate process analysis, monitoring and control. <em>Analytical and Bioanalytical Chemistry</em>, 384(5), 1043&ndash;1048. <a href="https://doi.org/10.1007/s00216-006-0303-y" target="_blank" rel="noopener">doi:10.1007/s00216-006-0303-y</a></li>
+<li id="ref-7">[7] &Aring;str&ouml;m, K.J., Murray, R.M. (2021). <em>Feedback Systems: An Introduction for Scientists and Engineers</em>, 2nd ed. Princeton University Press, Princeton, NJ. ISBN 978-0-691-19398-4. <a href="https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems" target="_blank" rel="noopener">press.princeton.edu/books/hardcover/9780691193984/feedback-systems</a></li>
+<li id="ref-8">[8] Seborg, D.E., Edgar, T.F., Mellichamp, D.A., Doyle, F.J. (2016). <em>Process Dynamics and Control</em>, 4th ed. Wiley, Hoboken, NJ. ISBN 978-1-119-28591-5. <a href="https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915" target="_blank" rel="noopener">wiley.com/en-us/Process+Dynamics+and+Control,+4th+Edition-p-9781119285915</a></li>
+<li id="ref-9">[9] Singh, R., Barrasso, D., Chaudhury, A., Sen, M., Ierapetritou, M., Ramachandran, R. (2014). Closed-Loop Feedback Control of a Continuous Pharmaceutical Tablet Manufacturing Process via Wet Granulation. <em>Journal of Pharmaceutical Innovation</em>, 9(1), 16&ndash;37. <a href="https://doi.org/10.1007/s12247-014-9170-9" target="_blank" rel="noopener">doi:10.1007/s12247-014-9170-9</a></li>
+<li id="ref-10">[10] ANSI/ISA-18.2-2016. <em>Management of Alarm Systems for the Process Industries.</em> International Society of Automation, Research Triangle Park, NC. <a href="https://www.isa.org/products/ansi-isa-18-2-2016-management-of-alarm-systems-for" target="_blank" rel="noopener">isa.org/products/ansi-isa-18-2-2016-management-of-alarm-systems-for</a></li>
+<li id="ref-11">[11] European Medicines Agency (2012). <em>Guideline on Real Time Release Testing (formerly Guideline on Parametric Release).</em> EMA/CHMP/QWP/811210/2009-Rev1, Committee for Medicinal Products for Human Use, London; in effect 1 October 2012. <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-real-time-release-testing-formerly-guideline-parametric-release-revision-1_en.pdf" target="_blank" rel="noopener">ema.europa.eu/.../guideline-real-time-release-testing-formerly-guideline-parametric-release-revision-1_en.pdf</a></li>
+<li id="ref-12">[12] U.S. Food and Drug Administration (2018). <em>Data Integrity and Compliance With Drug CGMP: Questions and Answers. Guidance for Industry.</em> FDA, Silver Spring, MD. <a href="https://www.fda.gov/media/119267/download" target="_blank" rel="noopener">fda.gov/media/119267/download</a></li>
+</ul>
 </div>
-<h2>ProChem Viewer：透明无风险</h2>
-<p>ProChem Viewer 将可视性扩展到任何联网工作站上的主管和 QC 经理。只读访问可防止意外配置更改，同时为每个团队成员提供全面的质量状态透明度。查看器包含在 ProLine2550 Advanced 和 Essential 型号中，无需额外付费。</p>
-<blockquote>“ProChem Viewer 为从工厂车间到角落办公室的每个利益相关者提供实时质量可见性，而不会带来意外配置更改的风险。”</blockquote>
-<p>有关将 ProChem 连接到工厂自动化系统的详细信息，请参阅我们的指南<a href="blog-plc-scada-integration.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">PLC 和 SCADA 集成</a>和<a href="blog-opc-ua-dosing-valves.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">OPC UA 通信协议</a>。构建和管理您的校准模型<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>.</p>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、流程图和 ROI 计算。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">阅读下一步</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<div class="card" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="PLC SCADA Integration" decoding="async" loading="lazy" src="../images/blog_plc_scada.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-plc-scada-integration.html" style="color: var(--accent-black); text-decoration: none;">PLC 和 SCADA 集成指南</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">如何将 NIR 光谱数据连接到工业自动化系统。</p><a class="btn-text" href="blog-plc-scada-integration.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a></div></div>
-<div class="card" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="Power of In-Line FT-NIR" decoding="async" loading="lazy" src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">白皮书</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-inline-ftnir-paradigm.html" style="color: var(--accent-black); text-decoration: none;">在线 FT-NIR 分析的力量</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">通过 FT-NIR 技术实现质量控制的范式转变。</p><a class="btn-text" href="blog-inline-ftnir-paradigm.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读白皮书</a></div></div>
+<div class="card" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="近红外分析仪如何与PLC和SCADA系统集成：实用概述" decoding="async" loading="lazy" src="../images/blog_plc_scada.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-plc-scada-integration.html" style="color: var(--accent-black); text-decoration: none;">近红外分析仪如何与PLC和SCADA系统集成：实用概述</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">在线 NIR 结果的集成全景：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。</p><a class="btn-text" href="blog-plc-scada-integration.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a></div></div>
+<div class="card" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="在线分析的力量：质量控制的范式转变" decoding="async" loading="lazy" src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.6" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-inline-ftnir-paradigm.html" style="color: var(--accent-black); text-decoration: none;">在线分析的力量：质量控制的范式转变</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">从以实验室为基础的被动式质量控制转向线内测量与控制，究竟涉及哪些内容：PAT 框架、ICH 术语、实时放行检验和多变量控制回路。</p><a class="btn-text" href="blog-inline-ftnir-paradigm.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a></div></div>
 </div>
 </div>
 </article>
@@ -316,6 +328,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

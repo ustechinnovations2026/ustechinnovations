@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="White paper on using NIR probes inside butter churn discharge pipes to control water dosing.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="What the butter standards fix for fat, water and salt, where a continuous buttermaker sets them, and what published inline-sensor and NIR studies show about controlling them at the line.">
 <meta name="keywords" content="butter fat moisture NIR, inline butter analysis, continuous butter making, dairy process control">
 <title>Inline Fat and Moisture Standardization in Continuous Butter Making | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-butter-fat-moisture.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-butter-fat-moisture.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-butter-fat-moisture.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Inline Fat and Moisture Standardization in Continuous Butter Making",
-"description": "White paper on using NIR probes inside butter churn discharge pipes to control water dosing.",
+"description": "What the butter standards fix for fat, water and salt, where a continuous buttermaker sets them, and what published inline-sensor and NIR studies show about controlling them at the line.",
 "url": "https://www.ustechinnovations.com/blog-butter-fat-moisture.html",
 "datePublished": "2026-03-28",
-"dateModified": "2026-03-28",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Inline Fat and Moisture Standardization in Continuous Butter Making | USTECH Innovations">
-    <meta property="og:description" content="White paper on using NIR probes inside butter churn discharge pipes to control water dosing.">
+    <meta property="og:description" content="What the butter standards fix for fat, water and salt, where a continuous buttermaker sets them, and what published inline-sensor and NIR studies show about controlling them at the line.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-butter-fat-moisture.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-butter-fat-moisture.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Inline Fat and Moisture Standardization in Continuous Butter Making | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Inline Fat and Moisture Standardization in Continuous Butter Making | USTECH Innovations">
-    <meta name="twitter:description" content="White paper on using NIR probes inside butter churn discharge pipes to control water dosing.">
+    <meta name="twitter:description" content="What the butter standards fix for fat, water and salt, where a continuous buttermaker sets them, and what published inline-sensor and NIR studies show about controlling them at the line.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-butter-fat-moisture.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,45 +217,61 @@ Espa&#241;ol
 </a>
 <img src="images/blog_milk_spray_drying.webp?v=1.0.5" alt="Inline Fat and Moisture Standardization in Continuous Butter Making" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">WHITE PAPER &mdash; March 28, 2026 &mdash; 2 min read</span>
+<span class="blog-post-meta">Article &mdash; March 28, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Inline Fat and Moisture Standardization in Continuous Butter Making</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Maximize weight yield and maintain strict legal water limits (16.0% max) in continuous butter churns.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why water and salt in continuous butter making are controlled to a fraction of a percent, where in the buttermaker they are set, what the reference methods involve, and what peer-reviewed sensor and near-infrared studies show about measuring them at the line.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Legal Limits of Butter Water Content</h2>
-<p>International dairy regulations mandate that butter must contain at least 80% fat and no more than 16% moisture. Butter manufacturers aim to keep moisture as close to 15.90% as possible. Under-moisturized butter loses sellable weight; over-moisturized batches are rejected. Continuous butter churns make manual adjustments extremely difficult due to the product's solid, sticky phase.</p>
-<h2>Direct Churn Probe Measurement</h2>
-<p>Using a USTECH reflectance probe mounted inside the churning barrel extrusion cone, the butter was scanned continuously. The sensor measures moisture and salt levels, feeding a PLC water-dosing pump loop.</p>
+<h2>Why water and salt are controlled so tightly</h2>
+<p>Butter is sold against a compositional definition. The Codex Standard for Butter requires a minimum milkfat content of 80 % m/m, a maximum water content of 16 % m/m and a maximum milk solids-not-fat content of 2 % m/m <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>; Regulation (EU) No 1308/2013 sets the same water and non-fat limits and a milk-fat content of not less than 80 % but less than 90 % <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Milk fat is the costly component, so a <a href="industry-dairy.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">dairy</a> wants to run as close to the water limit as its process variability allows &mdash; and that variability is not small. Surveying four continuous churning operations, Packard found a churn-induced standard deviation under constant adjustment of &plusmn;0.087 % for moisture and &plusmn;0.058 % for salt, against an analytical error of &plusmn;0.074 % and &plusmn;0.015 %, and butter at the printer averaging 0.11 % lower in moisture than butter leaving the churn <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Where composition is set in a continuous buttermaker</h2>
+<p>Most continuous buttermakers follow the Fritz principle: cream is churned, separated from buttermilk and worked in a single machine <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. In the layout described in the Tetra Pak Dairy Processing Handbook, cream enters a cooled churning cylinder; grains and buttermilk pass through separation and squeeze-drying sections; screw-driven working sections disperse the water phase; salt may be added by a high-pressure injector; and the final working stage contains an injector for the final adjustment of the moisture content <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Once regulated, the handbook states, moisture deviates by less than about 0.1 % provided the characteristics of the cream remain the same, and transmitters for moisture, salt, density and temperature can be fitted in the outlet and used for automatic control <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<p>Those transmitters are the whole case for an inline analyser: the injectors are dosing points, and a loop around them needs the outlet composition measured often enough and with a known delay. The qualification &mdash; provided the cream stays the same &mdash; is also why the loop is needed, since churning recovery varies over the year <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>The reference methods</h2>
+<p>The reference methods are gravimetric and sequential. ISO 3727-1 | IDF 80-1 specifies the reference method for the moisture content of butter <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, ISO 3727-2 | IDF 80-2 the reference method for non-fat solids <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>, and ISO 3727-3 | IDF 80-3 the calculation of fat content from those two results <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>; salt is determined by ISO 1738 | IDF 12 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. These methods define what the label terms mean, and any rapid method is calibrated and judged against them. They are laboratory procedures, so they confirm a lot after the fact but cannot steer the injectors.</p>
+<h2>What the sensor and NIR literature shows</h2>
+<p>Shiinoki et al. monitored moisture and salt on-line in a continuous salted butter-making process by microwave transmission, relating phase shift and attenuation at 3 GHz to the two contents by linear regression over about 15.5&ndash;17.5 % moisture and 1.0&ndash;2.0 % salt <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Near-infrared spectroscopy measures water through its two broad absorption bands near 1,440 and 1,930 nm; B&uuml;ning-Pfaue notes that this suits NIR to in-line water analysis, but that hydrogen bonding and sample temperature affect the reliability of the result <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</p>
+<p>For butter specifically, Hermida et al. calibrated an NIR instrument on 102 samples by modified partial least squares and, on an independent set of 24 samples, obtained standard errors of validation of 0.255 for moisture, 0.071 for solids-non-fat and 0.377 for fat (R&sup2; 0.83, 0.94 and 0.72), with paired t-tests showing no significant difference from the reference methods <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. The weaker fat statistics matter less than they look: fat in butter is obtained by calculation from moisture and non-fat solids <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>, so an inline strategy controls water, and where relevant salt, directly and lets fat follow.</p>
+<p>In-line NIR has been demonstrated on a closely related plastic fat spread: Isaksson et al. measured 36 pilot-plant batches of margarine spanning 14.28&ndash;21.91 % moisture with diffuse-transmittance fibre-optic probes in the 780&ndash;1,100 nm region and obtained a cross-validation error of 0.13 % moisture in-line, essentially the same as the 0.14 % obtained off-line <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Guidance on applying NIR to milk and milk products is given in ISO 21543 | IDF 201, whose 2006 edition listed moisture, fat, non-fat solids and salt in butter among its applications <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</p>
+<h2>Putting an analyser into the water-dosing loop</h2>
+<p>Three points decide whether such a loop improves on manual adjustment:</p>
+<ul>
+<li><strong>Calibrate against the reference methods.</strong> The NIR model inherits the error of its training values; ISO 3727-1, -2, -3 and ISO 1738 analyses on the scanned samples are the basis of calibration and validation <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
+<li><strong>Control temperature and presentation.</strong> The water bands respond to temperature and hydrogen bonding <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>, and butter leaving the final working stage carries a temperature and density the sensor sees with its composition <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>; build the calibration under the conditions the analyser will see in production.</li>
+<li><strong>Separate sensor noise from process variability.</strong> Packard found analytical error and churn-induced variability of the same order for moisture <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>; a loop that chases sensor noise doses water against noise, so control limits should come from a repeatability study on the line.</li>
+</ul>
+<h2>How USTECH approaches this</h2>
+<p>For the outlet of a continuous buttermaker USTECH uses the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>, a rugged IP65 inline NIR analyser with a 316 stainless-steel body and sapphire window, or the <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> where a higher measurement rate is required. Calibrations are developed in <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> against ISO 3727 and ISO 1738 reference results <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>, and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passes moisture and salt values to the PLC or SCADA for alarms and setpoint control of the water and brine injectors. Which accuracy an inline model reaches on a given plant's butter, and whether salt can be modelled as well as moisture, is established in a feasibility study with your own samples.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>ISO 3727 (IDF 80) - Butter - Determination of moisture, non-fat solids, and fat contents.</li>
-<li>"Moisture and Salt Standardization inside Continuous Butter Churns using High-Sensitivity Near-Infrared Probes," <em>Dairy Food Engineering Journal</em>, 2023.</li>
+<li id="ref-1">[1] Codex Alimentarius Commission. <em>Standard for Butter, CXS 279-1971</em> (formerly CODEX STAN A-1-1971; adopted 1971, revised 1999, amended 2003, 2006, 2010, 2018). FAO/WHO, Rome. <a href="https://codex.fao.org/codex-texts/find-a-codex-text" target="_blank" rel="noopener">codex.fao.org/codex-texts/find-a-codex-text</a></li>
+<li id="ref-2">[2] Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013 establishing a common organisation of the markets in agricultural products, Annex VII, Part VII, Appendix II (spreadable fats). <em>Official Journal of the European Union</em>, L 347, 20.12.2013 (as amended). <a href="https://eur-lex.europa.eu/eli/reg/2013/1308/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2013/1308/oj</a></li>
+<li id="ref-3">[3] Packard, V.S. (1972). Composition control in continuous buttermaking operations. <em>Journal of Milk and Food Technology</em>, 35(5), 276&ndash;278. <a href="https://doi.org/10.4315/0022-2747-35.5.276" target="_blank" rel="noopener">doi:10.4315/0022-2747-35.5.276</a></li>
+<li id="ref-4">[4] Tetra Pak Processing Systems AB. <em>Dairy Processing Handbook</em>, Chapter 14: Butter and dairy spreads (online edition). Lund, Sweden. <a href="https://dairyprocessinghandbook.tetrapak.com/chapter/butter-and-dairy-spreads" target="_blank" rel="noopener">dairyprocessinghandbook.tetrapak.com/chapter/butter-and-dairy-spreads</a></li>
+<li id="ref-5">[5] ISO 3727-1 | IDF 80-1:2001. <em>Butter &mdash; Determination of moisture, non-fat solids and fat contents &mdash; Part 1: Determination of moisture content (Reference method).</em> ISO, Geneva. <a href="https://www.iso.org/standard/35212.html" target="_blank" rel="noopener">iso.org/standard/35212.html</a></li>
+<li id="ref-6">[6] ISO 3727-2 | IDF 80-2:2001. <em>Butter &mdash; Determination of moisture, non-fat solids and fat contents &mdash; Part 2: Determination of non-fat solids content (Reference method).</em> ISO, Geneva. <a href="https://www.iso.org/standard/29474.html" target="_blank" rel="noopener">iso.org/standard/29474.html</a></li>
+<li id="ref-7">[7] ISO 3727-3 | IDF 80-3:2003. <em>Butter &mdash; Determination of moisture, non-fat solids and fat contents &mdash; Part 3: Calculation of fat content.</em> ISO, Geneva. <a href="https://www.iso.org/standard/29475.html" target="_blank" rel="noopener">iso.org/standard/29475.html</a></li>
+<li id="ref-8">[8] ISO 1738 | IDF 12:2004. <em>Butter &mdash; Determination of salt content.</em> ISO, Geneva. <a href="https://www.iso.org/standard/40470.html" target="_blank" rel="noopener">iso.org/standard/40470.html</a></li>
+<li id="ref-9">[9] Shiinoki, Y., Motouri, Y., Ito, K. (1998). On-line monitoring of moisture and salt contents by the microwave transmission method in a continuous salted butter-making process. <em>Journal of Food Engineering</em>, 38(2), 153&ndash;167. <a href="https://doi.org/10.1016/S0260-8774(98)00118-6" target="_blank" rel="noopener">doi:10.1016/S0260-8774(98)00118-6</a></li>
+<li id="ref-10">[10] B&uuml;ning-Pfaue, H. (2003). Analysis of water in food by near infrared spectroscopy. <em>Food Chemistry</em>, 82(1), 107&ndash;115. <a href="https://doi.org/10.1016/S0308-8146(02)00583-6" target="_blank" rel="noopener">doi:10.1016/S0308-8146(02)00583-6</a></li>
+<li id="ref-11">[11] Hermida, M., Gonzalez, J.M., Sanchez, M., Rodriguez-Otero, J.L. (2001). Moisture, solids-non-fat and fat analysis in butter by near infrared spectroscopy. <em>International Dairy Journal</em>, 11(1&ndash;2), 93&ndash;98. <a href="https://doi.org/10.1016/S0958-6946(01)00039-5" target="_blank" rel="noopener">doi:10.1016/S0958-6946(01)00039-5</a></li>
+<li id="ref-12">[12] Isaksson, T., N&aelig;rb&oslash;, G., Rukke, E.O., Sahni, N.S. (2001). In-line determination of moisture in margarine, using near infrared diffuse transmittance. <em>Journal of Near Infrared Spectroscopy</em>, 9(1), 11&ndash;18. <a href="https://doi.org/10.1255/jnirs.289" target="_blank" rel="noopener">doi:10.1255/jnirs.289</a></li>
+<li id="ref-13">[13] ISO 21543 | IDF 201:2020. <em>Milk and milk products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/77606.html" target="_blank" rel="noopener">iso.org/standard/77606.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -285,7 +308,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -304,6 +326,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

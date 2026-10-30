@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Guía USTECH Innovations: Desarrollo de modelos robustos de clasificación quimiométrica a través de PCA." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Cómo las puntuaciones, cargas y residuos del PCA se convierten en un modelo de clasificación, de dónde proceden los límites de Hotelling y Q, por qué el modelado de clases difiere del PLS-DA y cómo esperan los reguladores que se valide un modelo NIR cualitativo." name="description"/>
 <meta content="Clasificación PCA NIR, clasificación quimiométrica, espectroscopía de análisis de componentes principales, identificación de materiales NIR" name="keywords"/>
 <title>PCA Modelos de clasificación quimiométrica | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/es/blog-pca-classification-models.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pca-classification-models.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pca-classification-models.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "es",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "es",
   "headline": "Desarrollo de modelos robustos de clasificación quimiométrica mediante PCA",
-  "description": "Guía USTECH Innovations: Desarrollo de modelos robustos de clasificación quimiométrica a través de PCA.",
+  "description": "Cómo las puntuaciones, cargas y residuos del PCA se convierten en un modelo de clasificación, de dónde proceden los límites de Hotelling y Q, por qué el modelado de clases difiere del PLS-DA y cómo esperan los reguladores que se valide un modelo NIR cualitativo.",
   "url": "https://www.ustechinnovations.com/es/blog-pca-classification-models.html",
   "datePublished": "2026-06-07",
-  "dateModified": "2026-06-07",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="PCA Modelos de clasificación quimiométrica | USTECH Innovations" property="og:title"/>
-<meta content="Guía USTECH Innovations: Desarrollo de modelos robustos de clasificación quimiométrica a través de PCA." property="og:description"/>
+<meta content="Cómo las puntuaciones, cargas y residuos del PCA se convierten en un modelo de clasificación, de dónde proceden los límites de Hotelling y Q, por qué el modelado de clases difiere del PLS-DA y cómo esperan los reguladores que se valide un modelo NIR cualitativo." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/es/blog-pca-classification-models.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pca-classification-models.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="PCA Modelos de clasificación quimiométrica | USTECH Innovations" property="og:image:alt"/>
 <meta content="es_ES" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="PCA Modelos de clasificación quimiométrica | USTECH Innovations" name="twitter:title"/>
-<meta content="Guía USTECH Innovations: Desarrollo de modelos robustos de clasificación quimiométrica a través de PCA." name="twitter:description"/>
+<meta content="Cómo las puntuaciones, cargas y residuos del PCA se convierten en un modelo de clasificación, de dónde proceden los límites de Hotelling y Q, por qué el modelado de clases difiere del PLS-DA y cómo esperan los reguladores que se valide un modelo NIR cualitativo." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pca-classification-models.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,78 +218,53 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Volver a Todos los Blogs y Publicaciones</a>
 <img alt="Chemometric Modeling Software PCA Interface" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pca_chemometrics.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 07, 2026 — 4 min de lectura</span>
+<span class="blog-post-meta">Guía — 7 de junio de 2026 — 5 min de lectura</span>
 <h1 class="blog-post-title">Desarrollo de modelos robustos de clasificación quimiométrica mediante PCA</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una metodología paso a paso que explica el Análisis de Componentes Principales. Usando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>herramientas quimiométricas</a>. Usando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>Suite espectral</a>, Los modelos PCA se construyen fácilmente (PCA) para la identificación cualitativa de materias primas y detección de adulteración industrial.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Cómo un modelo PCA de espectros de referencia se convierte en una regla de clasificación, de dónde proceden los límites de T&sup2; de Hotelling y de residuos Q, cuándo el modelado de clases de tipo SIMCA es la elección correcta en lugar del PLS-DA y cómo se valida la especificidad y la robustez de un modelo NIR cualitativo &mdash; con las fuentes quimiométricas y regulatorias.</p>
 </div>
 <div class="blog-post-content">
-<h2>Introducción a la espectroscopia cualitativa</h2>
-<p>Mientras que la quimiometría cuantitativa se centra en predecir concentraciones numéricas (como porcentajes de humedad, grasa o proteína), la quimiometría cualitativa tiene como objetivo responder preguntas de clasificación estructural: <strong>¿Qué es este material? ¿Coincide con las especificaciones de la etiqueta? ¿Ha sido adulterado o diluido?</strong></p>
-<p>En plantas de fabricación de alto rendimiento y almacenes de materias primas, verificar la identidad del material en el muelle de recepción es la primera línea de defensa en <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cribado químico y farmacéutico</a> contra errores de producción. <strong>Análisis de Componentes Principales. Usando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>herramientas quimiométricas</a>. Usando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>Suite espectral</a>, Los modelos PCA se construyen fácilmente (PCA)</strong> es la principal herramienta matemática utilizada para crear bibliotecas espectrales sólidas y no destructivas para una identificación cualitativa instantánea.</p>
-<h2>Cómo funciona PCA con conjuntos de datos espectrales</h2>
-<p>Un espectro típico de NIR contiene cientos de canales de longitud de onda altamente correlacionados. Las proyecciones de estos canales son difíciles de analizar en forma cruda. PCA es una técnica de reducción de dimensionalidad que proyecta el espacio espectral de alta dimensión en un pequeño conjunto de ejes ortogonales llamados <strong>Componentes principales (PC)</strong>.</p>
+<h2>Las preguntas cualitativas requieren otro tipo de modelo</h2>
+<p>Los modelos NIR cuantitativos predicen un número: humedad, proteína, grasa. Los modelos cualitativos responden a otra pregunta: ¿es este material lo que dice la etiqueta, y es el grado que se pidió? En las <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">industrias química y farmacéutica</a> esta es la tarea de identificación en la recepción de mercancías. La directriz de la Agencia Europea de Medicamentos sobre NIRS utiliza <em>identificación</em> para confirmar la identidad de una sustancia y <em>cualificación</em> para distinguir además sus grados, como el tamaño de partícula o la forma polimórfica; la muestra desconocida se compara con una biblioteca espectral de referencia construida con varios lotes de varias sustancias, y los criterios de coincidencia/no coincidencia deben justificarse <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. La guía de la FDA estadounidense define un ensayo de identificación del mismo modo <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>De las puntuaciones del PCA a un límite de clase</h2>
+<p>El análisis de componentes principales comprime los cientos de canales de absorbancia correlacionados de un espectro en unos pocos componentes ortogonales; cada espectro se describe por sus puntuaciones en esos componentes, las cargas muestran qué longitudes de onda utiliza cada componente, y lo que el modelo no capta queda en los residuos <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Una clase de referencia modelada así tiene dos medidas de distancia: la distancia de puntuación, o apalancamiento, indica lo lejos que está una muestra del centro de la clase dentro del espacio del modelo, y la distancia ortogonal indica qué parte de su espectro queda fuera del modelo, es decir, su varianza residual <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. La primera se expresa convencionalmente como la T&sup2; de Hotelling, la generalización multivariante de la <em>t</em> de Student <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>; la segunda como el estadístico Q, para el que Jackson y Mudholkar propusieron, pensando en el control de calidad, un procedimiento que contrasta los residuos de una única observación frente a un modelo reducido de componentes principales <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>Pomerantsev demostró que ambas distancias pueden modelarse mediante distribuciones chi-cuadrado escaladas cuyos grados de libertad se estiman a partir de los datos de entrenamiento, y lo utilizó para construir áreas de aceptación SIMCA para un nivel de significación elegido <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Por tanto, un límite de clase es una decisión estadística, no un número fijo: el nivel de significación, el número de componentes y el pretratamiento desplazan el límite, y por eso la directriz de la EMA exige que los umbrales, límites de confianza o tolerancias se declaren y se justifiquen <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>¿Modelado de clases o análisis discriminante?</h2>
+<p>El tutorial de Oliveri divide el modelado cualitativo en dos familias: los métodos discriminantes, adecuados cuando hay al menos dos clases definidas con sentido, y los métodos de modelado de clases (de una clase), la elección correcta cuando el foco es una sola clase &mdash; la situación habitual cuando un material se acepta o se rechaza frente a su propia especificación. Forzar un método discriminante sobre un problema de una clase sesga el resultado <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. SIMCA es el método arquetípico de modelado de clases; la directriz de la EMA lo enumera junto con el PCA, el análisis discriminante, el análisis de conglomerados y la comparación por correlación, y aconseja utilizar el algoritmo más sencillo que dé resultados satisfactorios <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<p>Cuando hay que separar varias clases conocidas, el PLS-DA es de uso generalizado. Barker y Rayens aportaron la razón formal de su funcionamiento &mdash; el PLS está ligado, a través del análisis de correlación canónica, al análisis discriminante lineal &mdash; y concluyeron que el PLS es preferible al PCA cuando el objetivo es la discriminación <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Brereton y Lloyd demostraron, sin embargo, que con dos clases del mismo tamaño el PLS-DA de un componente equivale a la distancia euclídea a los centroides y el PLS-DA de rango completo equivale al análisis discriminante lineal, advirtieron de los escollos con clases de tamaño desigual, varias clases y sobreajuste, y concluyeron que el PLS-DA es un paso dentro de un procedimiento de clasificación, no un método en sí mismo <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
+<h2>Construcción de la biblioteca</h2>
+<p>Una biblioteca es una estructura de modelos más que un único modelo. Blanco y Romero construyeron una biblioteca NIR de 125 materias primas farmacéuticas utilizando el coeficiente de correlación como criterio discriminante y resolvieron los materiales con espectros muy similares mediante subbibliotecas en cascada que se ramifican de la principal y emplean procedimientos quimiométricos de mayor poder discriminante <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. La directriz de la EMA describe la misma arquitectura: una biblioteca para todo el centro puede no ofrecer una especificidad adecuada, por lo que se utilizan subbibliotecas que contienen todas las muestras de una clase, y las muestras de todos los proveedores pertinentes deben figurar en una biblioteca de recepción <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Se esperan tres conjuntos de muestras: un conjunto de calibración que forma la biblioteca, un conjunto de prueba de calibración o una validación cruzada para la optimización interna, y un conjunto de validación independiente con muestras positivas y negativas, no extraído de la misma población histórica de lotes <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>Validación de un modelo de clasificación</h2>
+<p>Tanto la EMA como la FDA exigen que los procedimientos NIR cualitativos se validen, como mínimo, en cuanto a especificidad y robustez <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. La especificidad se demuestra de forma operativa: las muestras independientes de materiales de la biblioteca deben superar el ensayo y las muestras de desafío deben fallar, incluidos entre los desafíos los análogos de nombre y de estructura y, para la cualificación, otros grados, hidratos, polimorfos, tamaños de partícula o proveedores <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. La FDA lo formula como controles positivos de identidad confirmada y controles negativos como placebos o materiales espectralmente similares <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. La robustez abarca la temperatura, la humedad, la posición y la presentación de la muestra, y los cambios en el instrumento, como una lámpara nueva <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. En términos de modelado de clases, la fracción de miembros verdaderos aceptados es la sensibilidad y la fracción de no miembros rechazados es la especificidad; el tutorial de Ballabio y Consonni recorre los pasos de calibración y validación de un modelo PLS-DA y lo que debe evaluarse en cada uno <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Tres puntos merecen destacarse:</p>
 <ul>
-<li><strong>PC1:</strong>Capta la mayor dirección de variación en los datos espectrales (a menudo asociada con diferencias físicas, como el tamaño de las partículas).</li>
-<li><strong>PC2:</strong>Capta la segunda dirección de variación más grande, ortogonal a PC1 (normalmente asociada con variaciones químicas, como cambios de concentración química).</li>
-<li><strong>CP3, CP4...:</strong>Capture grados de variación decrecientes, aislando variaciones químicas finas del ruido aleatorio de los instrumentos.</li>
+<li><strong>La validación cruzada por sí sola sobrestima el rendimiento.</strong> Westerhuis et al. demostraron que el PLS-DA se sobreajusta con facilidad y que la validación debe combinar la validación cruzada de modelos con pruebas de permutación <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
+<li><strong>Los gráficos de puntuaciones no son una prueba.</strong> Westerhuis et al. y Brereton y Lloyd desaconsejan inferir diferencias entre clases a partir de los gráficos de puntuaciones del PLS-DA <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
+<li><strong>El conjunto externo debe ser externo.</strong> Un conjunto de prueba de los mismos lotes históricos no es una validación independiente; el conjunto de validación debe proceder de lotes diferentes <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</li>
 </ul>
-<p>Al mapear cada espectro como una coordenada (llamada "puntuación") a lo largo de estas PC, un espectro complejo se simplifica a un solo punto en un gráfico de puntuación 2D o 3D. Los espectros de materiales similares se agrupan, mientras que los valores atípicos se destacan.</p>
-<blockquote>"PCA aísla las características significativas de un espectro del ruido aleatorio, convirtiendo cientos de mediciones de longitud de onda en un conjunto compacto de coordenadas que definen grupos de materiales".</blockquote>
-<h2>Construyendo un límite de clasificación</h2>
-<p>Para clasificar los materiales entrantes, debemos definir límites matemáticos alrededor de nuestros grupos de referencia en el gráfico de puntuación. la <strong>cali<span class="calix-x">X</span>Suite</strong> utiliza una prueba estadística doble:</p>
-<ol>
-<li><strong>T² de Hotelling (Distancia interior Modelo):</strong>Mide la distancia desde el centro del clúster dentro del espacio modelo de PC. Representa qué tan típica es una muestra de la población de referencia.</li>
-<li><strong>Q Residuales (Distancia exterior Modelo):</strong>Mide la varianza residual que no captura el modelo PCA. Si una muestra entrante tiene Q residuales altos, contiene características químicas (por ejemplo, un adulterante o una sustancia diferente) que el modelo nunca ha visto.</li>
-</ol>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Métrico</th>
-<th>Límite estadístico</th>
-<th>Criterio de aprobación</th>
-<th>Acción indicada en caso de error</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>T² de Hotelling</strong></td>
-<td>Elipse de confianza del 95%</td>
-<td>Las coordenadas de muestra se encuentran dentro del límite elíptico.</td>
-<td><strong>Fuera de especificaciones:</strong>El material coincide con la clase de referencia pero tiene propiedades atípicas (por ejemplo, humedad o densidad incorrecta).</td>
-</tr>
-<tr>
-<td><strong>Q residuos</strong></td>
-<td>Límite de umbral del 99%</td>
-<td>El ruido residual cae por debajo del techo acústico</td>
-<td><strong>Material desconocido:</strong>Se detectó una estructura química inexplicable. Marcar por contaminación, sustitución o error del proveedor.</td>
-</tr>
-</tbody>
-</table>
-<h2>Implementación de modelos de clasificación PCA</h2>
-<p>Una vez que se construye un modelo de clasificación en <strong>cali<span class="calix-x">X</span>Suite</strong>, se puede exportar directamente al software <strong>ProChem</strong> que se ejecuta en los terminales de muelle de recepción. Cuando un operador coloca una bolsa de materia prima debajo de un sensor en línea, el sistema escanea el material, proyecta el espectro en el modelo PCA, calcula las estadísticas T² y Q y muestra un resultado simple <strong>PASA/FALLA</strong> en menos de tres segundos. Esto reemplaza horas de ensayos de cromatografía, evitando que materiales incorrectos ingresen a la línea de producción.</p>
+<h2>El enfoque de USTECH para la clasificación</h2>
+<p>En el software de quimiometría <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>, los modelos de clase PCA y los modelos discriminantes basados en PLS se construyen sobre espectros de referencia, y los límites T&sup2; y Q, el número de componentes y el pretratamiento se eligen y documentan como se ha descrito <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Los espectros de la biblioteca se adquieren at-line en el <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> o en línea en el <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>, y <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> transmite el resultado conforme/no conforme a la capa de PLC o SCADA. Si se necesita una biblioteca o una cascada de subbibliotecas, y cuántos lotes por material requiere la especificidad exigida, se establece en un estudio de viabilidad con sus propias muestras.</p>
 <div class="blog-post-references">
 <h3>Referencias</h3>
 <ul>
-<li>Hotelling, H. (1931). "La generalización de la proporción de estudiantes"<em>Anales de estadística matemática</em>, 2(3), 360-378.</li>
-<li>"Análisis Cualitativo e Identificación de Materias Primas mediante Análisis de Componentes Principales. Utilizando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>herramientas quimiométricas</a>. Usando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>Suite espectral</a>, Los modelos PCA se construyen fácilmente en espectroscopia NIR",<em>Revista de quimiometría</em>, 2021.</li>
-<li>Jackson, JE y Mudholkar, GS (1979). "Procedimientos de Control de Residuales Asociados al Análisis de Componentes Principales. Utilizando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>herramientas quimiométricas</a>. Usando las herramientas de quimiometría en el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>Suite espectral</a>, Los modelos PCA se construyen fácilmente",<em>Tecnometria</em>, 21(3), 341-349.</li>
+<li id="ref-1">[1] European Medicines Agency (2014). <em>Guideline on the use of near infrared spectroscopy by the pharmaceutical industry and the data requirements for new submissions and variations</em>, EMEA/CHMP/CVMP/QWP/17760/2009 Rev2, Sections 5.1&ndash;5.4. EMA, London. <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-and-data-requirements-new-submissions-and-variations_en.pdf" target="_blank" rel="noopener">ema.europa.eu (PDF)</a></li>
+<li id="ref-2">[2] U.S. Food and Drug Administration, CDER (2021). <em>Development and Submission of Near Infrared Analytical Procedures. Guidance for Industry</em>, Section V.A and Glossary. FDA, Silver Spring. <a href="https://www.fda.gov/media/91343/download" target="_blank" rel="noopener">fda.gov/media/91343/download</a></li>
+<li id="ref-3">[3] Bro, R., Smilde, A.K. (2014). Principal component analysis. <em>Analytical Methods</em>, 6(9), 2812&ndash;2831. <a href="https://doi.org/10.1039/C3AY41907J" target="_blank" rel="noopener">doi:10.1039/C3AY41907J</a></li>
+<li id="ref-4">[4] Pomerantsev, A.L. (2008). Acceptance areas for multivariate classification derived by projection methods. <em>Journal of Chemometrics</em>, 22(11&ndash;12), 601&ndash;609. <a href="https://doi.org/10.1002/cem.1147" target="_blank" rel="noopener">doi:10.1002/cem.1147</a></li>
+<li id="ref-5">[5] Hotelling, H. (1931). The Generalization of Student's Ratio. <em>The Annals of Mathematical Statistics</em>, 2(3), 360&ndash;378. <a href="https://doi.org/10.1214/aoms/1177732979" target="_blank" rel="noopener">doi:10.1214/aoms/1177732979</a></li>
+<li id="ref-6">[6] Jackson, J.E., Mudholkar, G.S. (1979). Control Procedures for Residuals Associated With Principal Component Analysis. <em>Technometrics</em>, 21(3), 341&ndash;349. <a href="https://doi.org/10.1080/00401706.1979.10489779" target="_blank" rel="noopener">doi:10.1080/00401706.1979.10489779</a></li>
+<li id="ref-7">[7] Oliveri, P. (2017). Class-modelling in food analytical chemistry: Development, sampling, optimisation and validation issues &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 982, 9&ndash;19. <a href="https://doi.org/10.1016/j.aca.2017.05.013" target="_blank" rel="noopener">doi:10.1016/j.aca.2017.05.013</a></li>
+<li id="ref-8">[8] Barker, M., Rayens, W. (2003). Partial least squares for discrimination. <em>Journal of Chemometrics</em>, 17(3), 166&ndash;173. <a href="https://doi.org/10.1002/cem.785" target="_blank" rel="noopener">doi:10.1002/cem.785</a></li>
+<li id="ref-9">[9] Brereton, R.G., Lloyd, G.R. (2014). Partial least squares discriminant analysis: taking the magic away. <em>Journal of Chemometrics</em>, 28(4), 213&ndash;225. <a href="https://doi.org/10.1002/cem.2609" target="_blank" rel="noopener">doi:10.1002/cem.2609</a></li>
+<li id="ref-10">[10] Blanco, M., Romero, M.A. (2001). Near-infrared libraries in the pharmaceutical industry: a solution for identity confirmation. <em>The Analyst</em>, 126(12), 2212&ndash;2217. <a href="https://doi.org/10.1039/b105012p" target="_blank" rel="noopener">doi:10.1039/b105012p</a></li>
+<li id="ref-11">[11] Ballabio, D., Consonni, V. (2013). Classification tools in chemistry. Part 1: linear models. PLS-DA. <em>Analytical Methods</em>, 5(16), 3790. <a href="https://doi.org/10.1039/c3ay40582f" target="_blank" rel="noopener">doi:10.1039/c3ay40582f</a></li>
+<li id="ref-12">[12] Westerhuis, J.A., Hoefsloot, H.C.J., Smit, S., Vis, D.J., Smilde, A.K., van Velzen, E.J.J., van Duijnhoven, J.P.M., van Dorsten, F.A. (2008). Assessment of PLSDA cross validation. <em>Metabolomics</em>, 4(1), 81&ndash;89. <a href="https://doi.org/10.1007/s11306-007-0099-6" target="_blank" rel="noopener">doi:10.1007/s11306-007-0099-6</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Descargar Informe Técnico Completo</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Acceda al documento técnico completo y sin editar con fórmulas espectroscópicas completas, conjuntos de datos de calibración y parámetros de instrumentación.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Evalúe esta aplicación para su proceso</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Nuestro equipo de aplicaciones puede explicar el método, compartir la bibliografía de referencia y organizar un estudio de viabilidad con sus propias muestras.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contáctenos</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -292,20 +274,20 @@
 <div class="card" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Optimización de la eficiencia de extracción de almidón en la molienda húmeda de maíz" decoding="async" loading="lazy" src="../images/blog_starch_milling.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ESTUDIO DE CASO</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTÍCULO</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-starch-extraction-milling.html" style="color: var(--accent-black); text-decoration: none;">Optimización de la eficiencia de extracción de almidón en la molienda húmeda de maíz</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Descubra cómo una instalación de molienda de maíz maximizó el rendimiento de los separadores de almidón mediante pruebas en línea.</p>
-<a class="btn-text" href="blog-starch-extraction-milling.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer estudio de caso</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Dónde se pierde almidón en una molienda húmeda de maíz, cómo se mide el rendimiento de la separación y qué dicen los trabajos publicados sobre lo que la espectroscopía puede y no puede seguir en corrientes de suspensión.</p>
+<a class="btn-text" href="blog-starch-extraction-milling.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer el artículo</a>
 </div>
 </div>
 <!-- Optical Fiber Interface Card -->
 <div class="card" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Diseños de interfaz de fibra óptica para reactores químicos corrosivos" decoding="async" loading="lazy" src="../images/blog_fiber_reactors.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">LIBRO BLANCO</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUÍA</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-fiber-interface-reactors.html" style="color: var(--accent-black); text-decoration: none;">Diseños de interfaz de fibra óptica para reactores químicos corrosivos</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Especificaciones técnicas y detalles de construcción para ópticas de zafiro y configuraciones de sondas Hastelloy en circuitos químicos agresivos.</p>
-<a class="btn-text" href="blog-fiber-interface-reactors.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer el documento técnico</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Cómo la geometría de la sonda, la fibra de sílice, la ventana de zafiro, la aleación en contacto con el medio y el sellado deciden lo que realmente ve un espectrómetro NIR dentro de un reactor corrosivo o caliente, con la literatura que respalda cada elección.</p>
+<a class="btn-text" href="blog-fiber-interface-reactors.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer la guía</a>
 </div>
 </div>
 </div>
@@ -363,6 +345,6 @@
 <p>Diseñado para la precisión científica e industrial.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

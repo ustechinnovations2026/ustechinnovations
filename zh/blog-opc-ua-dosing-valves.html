@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations 指南 - 闭环计量阀的标准化 OPC UA 集成。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="在 PLC 依据分析仪结果采取动作之前，该结果需通过 OPC UA 携带哪些信息；死区时间和采样间隔如何影响 PID 回路；安全联锁应设在何处；以及每一点背后的标准依据。" name="description"/>
 <meta content="OPC UA 集成 NIR，闭环计量阀，过程自动化 NIR，工业协议集成" name="keywords"/>
-<title>OPC UA 闭环集成 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<title>借助OPC UA基于分析仪结果实现计量闭环控制 | USTECH Innovations</title>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-opc-ua-dosing-valves.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "闭环计量阀的标准化 OPC UA 集成",
-  "description": "USTECH Innovations 指南 - 闭环计量阀的标准化 OPC UA 集成。",
+  "@type": "BlogPosting", "inLanguage": "zh",
+  "headline": "借助OPC UA基于分析仪结果实现计量闭环控制",
+  "description": "在 PLC 依据分析仪结果采取动作之前，该结果需通过 OPC UA 携带哪些信息；死区时间和采样间隔如何影响 PID 回路；安全联锁应设在何处；以及每一点背后的标准依据。",
   "url": "https://www.ustechinnovations.com/zh/blog-opc-ua-dosing-valves.html",
   "datePublished": "2026-06-10",
-  "dateModified": "2026-06-10",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -113,17 +114,23 @@
 <link href="../apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
-<meta content="OPC UA 闭环集成 | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations 指南 - 闭环计量阀的标准化 OPC UA 集成。" property="og:description"/>
+<meta content="借助OPC UA基于分析仪结果实现计量闭环控制 | USTECH Innovations" property="og:title"/>
+<meta content="在 PLC 依据分析仪结果采取动作之前，该结果需通过 OPC UA 携带哪些信息；死区时间和采样间隔如何影响 PID 回路；安全联锁应设在何处；以及每一点背后的标准依据。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-opc-ua-dosing-valves.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-opc-ua-dosing-valves.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="OPC UA 闭环集成 | USTECH Innovations" property="og:image:alt"/>
+<meta content="借助OPC UA基于分析仪结果实现计量闭环控制 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="OPC UA 闭环集成 | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations 指南 - 闭环计量阀的标准化 OPC UA 集成。" name="twitter:description"/>
+<meta content="借助OPC UA基于分析仪结果实现计量闭环控制 | USTECH Innovations" name="twitter:title"/>
+<meta content="在 PLC 依据分析仪结果采取动作之前，该结果需通过 OPC UA 携带哪些信息；死区时间和采样间隔如何影响 PID 回路；安全联锁应设在何处；以及每一点背后的标准依据。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-opc-ua-dosing-valves.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -209,103 +216,57 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
-<img alt="Industrial Automation Control Integration Software Interface" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_opc_ua_plc.webp?v=1.0.5"/>
+<img alt="借助OPC UA基于分析仪结果实现计量闭环控制" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_opc_ua_plc.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 10, 2026 — 4 分钟阅读</span>
-<h1 class="blog-post-title">闭环计量阀的标准化 OPC UA 集成</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">如何映射过程标签、确保稳健的网络通信以及使用以下命令配置 PID 反馈回路<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem 人机界面</a>和标准工厂 PLC。</p>
+<span class="blog-post-meta">指南 — 2026年6月10日 — 5 分钟阅读</span>
+<h1 class="blog-post-title">借助OPC UA基于分析仪结果实现计量闭环控制</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">在 PLC 依据分析仪结果采取动作之前，该结果必须通过 OPC UA 携带哪些信息 &mdash; 数值、单位、量程、质量和时间戳；死区时间和采样间隔如何影响由分析仪提供反馈的 PID 回路；以及安全联锁应置于何处。依据 OPC UA、NAMUR 和 IEC 文件以及控制领域文献。</p>
 </div>
 <div class="blog-post-content">
-<h2>闭环过程自动化的力量</h2>
-<p>工业加工厂（例如乳品标准化机、<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和制药自动化</a>反应器和饲料混合机）依赖于精确的化学平衡。传统上，控制系统以开环方式运行：操作员每小时运行离线实验室测定，并根据结果手动调整计量泵速度或控制阀。该手动循环会带来滞后时间、操作员错误以及产品规格的较大变化。</p>
-<p>通过将内联 FT-NIR 光谱仪直接与可编程逻辑控制器 (PLCs) 集成，工厂可以闭合控制回路。实时预测直接输入 PLC 控制寄存器，实现对计量阀的亚秒级自动调整，最大限度地减少偏差并最大限度地提高产量稳定性。</p>
-<blockquote>“通过用直接、经过验证的光谱仪反馈取代手动设定点调整，闭环系统可以将产品输出稳定在严格的公差范围内。”</blockquote>
-<h2>OPC UA：工业通信骨干网</h2>
-<p>为了在光谱软件和工厂自动化硬件之间建立通信，USTECH 使用 <strong>OPC 统一架构 (OPC UA)</strong> 标准。 OPC UA 是一种独立于平台、面向服务的架构，可提供安全、可靠的通信。它取代了旧版仅限 Windows 的 OPC DA 协议，支持内置 SSL 加密、用户身份验证和数据冗余。</p>
-<p>在标准安装中，<strong><a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem 人机界面</a></strong> 运行 FT-NIR 光谱仪充当 OPC UA 服务器，将预测浓度值、传感器状态和诊断标志作为其地址空间中的节点（标签）公开。工厂的 SCADA 系统或 PLC 充当 OPC UA 客户端，定期订阅这些标签。</p>
-<h2>映射标准 OPC UA 节点 ID</h2>
-<p>为了简化集成，USTECH 的 <strong>ProChem 平台</strong> 采用标准化的 OPC UA 命名空间结构。下表列出了闭环安装期间映射的主要数据标签：</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>OPC UA 节点路径/标签 ID</th>
-<th>数据类型</th>
-<th>接入方式</th>
-<th>功能说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>nsens/device/status</code></td>
-<td>整数32</td>
-<td>只读</td>
-<td>仪器健康状态（0 = 健康、1 = 灯故障、2 = 正在校准、3 = 错误）</td>
-</tr>
-<tr>
-<td><code>nsens/measurement/timestamp</code></td>
-<td>日期时间</td>
-<td>只读</td>
-<td>最新光谱扫描和预测周期的时间戳</td>
-</tr>
-<tr>
-<td><code>nsens/predict/param1/value</code></td>
-<td>双倍的</td>
-<td>只读</td>
-<td>参数 1 的预测浓度值（例如水分 %、黄油脂肪 %）</td>
-</tr>
-<tr>
-<td><code>nsens/predict/param1/mahalanobis</code></td>
-<td>双倍的</td>
-<td>只读</td>
-<td>距离度量检查样本是否符合校准模型边界（异常值检查）</td>
-</tr>
-<tr>
-<td><code>nsens/plc/trigger_scan</code></td>
-<td>布尔值</td>
-<td>只写</td>
-<td>可选的硬件握手标签。允许 PLC 触发扫描周期。</td>
-</tr>
-</tbody>
-</table>
-<h2>PLC 反馈回路配置 (PID)</h2>
-<p>一旦 PLC（例如西门子 S7-1500 或罗克韦尔 ControlLogix）订阅了预测浓度值（例如“nsens/predict/param1/value”），它就会通过 PID（比例积分微分）块处理数据：</p>
-<ol>
-<li><strong>异常值验证：</strong>PLC 首先检查马哈拉诺比斯距离标签。如果距离超过阈值，样品将被标记为异常值（非典型材料），PLC 会冻结 PID 回路以防止不正确的剂量变化。</li>
-<li><strong>误差计算：</strong>如果有效，PID 块会计算目标设定值（例如，黄油脂肪目标 = 3.25%）与预测的光谱仪值之间的差值。</li>
-<li><strong>控制阀调节：</strong>PID 算法计算所需的输出信号（4-20 mA 或以太网/IP 命令）以调整剂量控制阀（例如，打开奶油注射阀以增加脂肪浓度）。</li>
-</ol>
-<h2>标准化 OPC UA 集成的好处</h2>
-<p>通过 OPC UA 将 ProChem 与工厂 PLC 集成可提供明显的运营优势：</p>
+<h2>为什么要基于分析仪结果闭环控制</h2>
+<p>在<a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">化工、制药</a>、乳品和饲料行业，仅靠实验室获知的组成只能滞后地、人工地加以纠正。FDA 的 PAT 指南则描述了通过加工过程中的及时测量来控制生产，并借助过程控制工具监测过程状态并主动加以调节 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。Kourti 认为，实时分析仪的价值在其输出进入过程控制时才得以体现 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>；Simon 等综述了工业实例 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。本指南介绍当加药阀由在线 NIR 预测值驱动时，接口和控制器中哪些方面必须正确。</p>
+<h2>OPC UA 为接口带来什么</h2>
+<p>OPC 统一架构（Unified Architecture）由 OPC 基金会发布，并标准化为 IEC 62541 系列，其第 1 部分介绍基本概念以及其他各部分的阅读顺序 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。第 1 部分列出的设计目标包括平台无关性、集成的安全模型和可扩展的信息模型 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。对分析仪而言，信息模型是最有用的部分：第 8 部分（数据访问）定义了 <em>AnalogItemType</em> 类型族，它带有 <em>EURange</em>（正常运行中的预期量程）和 <em>EngineeringUnits</em>；基础类型 <em>DataItemType</em> 还增加了描述数值计算方式的 <em>Definition</em> 字符串和 <em>ValuePrecision</em> 属性 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。以这种方式发布的脂肪或水分预测值，会随身携带其单位、量程和含义。</p>
+<p>每个数值都以 <em>DataValue</em> 的形式传输：包括数值、<em>StatusCode</em>、由数据源写入且此后永不更改的 <em>sourceTimestamp</em>，以及由每个转发服务器设置的 <em>serverTimestamp</em> <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。对控制而言重要的是源时间戳 &mdash; 它是预测所依据的光谱的采集时间 &mdash; 而服务器时间戳仅表明服务器最后一次确认该值的时间 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</p>
+<h2>数据质量与设备健康状态</h2>
+<p>PLC 不得将 OPC UA 数值当作单纯的数字处理。StatusCode 是一个 32 位字段，其严重性位将数值划分为 Good、Uncertain 或 Bad；第 4 部分要求每个客户端在使用结果之前对其进行检查，并规定状态为 Bad 的结果绝不得使用 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。第 8 部分还增加了与分析仪相关的子代码，如 <em>Bad_SensorFailure</em>、数据源停止更新时的 <em>Uncertain_LastUsableValue</em>、数值超出定义量程时的 <em>Uncertain_EngineeringUnitsExceeded</em>，以及强制写入手动值时的 <em>Good_LocalOverride</em>，并指出数值是否过时应根据时间戳而非代码来判断 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</p>
+<p>仪器状况则单独建模。第 100 部分（设备）定义了 <em>DeviceHealth</em> 接口，其枚举值 &mdash; NORMAL、FAILURE、CHECK_FUNCTION、OFF_SPEC 和 MAINTENANCE_REQUIRED &mdash; 明确用于表示 NAMUR 推荐标准 NE 107 所定义的状态 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>；NE 107 是流程工业中自监测现场设备的通用术语，2017 年修订时增加了状态信号的优先级划分 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。因此，参比扫描（CHECK_FUNCTION）或超出定标样品总体的光谱（OFF_SPEC）便成为与供应商无关的暂停回路的理由 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。访问权限由第 2 部分的安全模型管理 &mdash; 身份认证、仅限于功能所需的授权、机密性、完整性和可审计性 &mdash; 因此对设定值或扫描触发的写权限也相应受到限制 <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。</p>
+<h2>带分析仪反馈的 PID 回路</h2>
+<p>由分析仪反馈的回路是一个死区时间问题。Normey-Rico 等将传感器的处理时间列为死区时间的成因之一，并解释说：由于控制器纠正的是更早时刻产生的偏差，简单回路若按短调节时间整定就会振荡，若为避免振荡而整定则响应迟缓 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。对加药阀而言，死区时间等于从注入点到测量点的输送时间加上分析仪的测量和预测间隔。当死区时间相对于过程时间常数较大时，常用的对策是死区时间补偿器：1957 年提出的 Smith 预估器使用无延迟模型，使主控制器所面对的是无死区时间或死区时间较小的等效系统 &mdash; 这一性质在标称情况下成立，并随装置与模型失配而退化 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。主控制器一般是按 IEC 61131-3 编程的 PLC 中的 PI 或 PID 功能块 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。</p>
+<p>采样间隔遵循同样的逻辑。在 OPC UA 中，订阅的采样间隔是服务器对其数据源采样的最快速率，第 4 部分指出，解耦的底层系统的更新速度可能远低于这一速率 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。以快于分析仪测量速度的频率订阅只会得到重复值，而非新信息；回路应在新的源时间戳到达时执行，而不是按订阅时钟执行 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</p>
+<h2>安全、联锁与职责归属</h2>
+<p>由分析仪驱动的加药属于基本过程控制。保护功能 &mdash; 过量加药限值、泵干转、试剂高液位 &mdash; 属于 IEC 61511-1 规定的安全仪表系统，其设计应确保能够独立于控制层可靠地实现或保持安全状态 <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。由此得出三点实践要求：</p>
 <ul>
-<li><strong>零操作员干预：</strong>剂量调整在后台自动进行，消除了操作员错误。</li>
-<li><strong>平台独立性：</strong>连接到任何现代 PLC 或 SCADA 系统（Siemens、Allen-Bradley、Beckhoff、ABB、Aveva）。</li>
-<li><strong>增强的网络安全：</strong>内置证书交换和用户身份验证确保只有授权的控制网络才能读取光谱仪标签或触发扫描。</li>
+<li><strong>在整定之前定义保持策略。</strong>当出现 Bad 质量、源时间戳过时、设备健康状态为 FAILURE 或 OFF_SPEC，或化学计量学模型给出离群标志时，PID 输出应保持或回到安全默认值，并实现无扰恢复 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</li>
+<li><strong>将阀门的硬限值置于回路之外。</strong>执行器的速率和位置限值以及任何基于加药量的跳闸均位于 PLC 逻辑或安全系统中，而不在分析仪软件中 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。</li>
+<li><strong>记录节点语义。</strong>EngineeringUnits、EURange、Definition 以及每个状态子代码由供应商与系统集成商商定，并固化在信息模型中，从而使日后的定标变更以语义变更的形式显现出来 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</li>
 </ul>
-<h2>结论</h2>
-<p>OPC UA 上的标准化通信允许光谱仪预测成为主动过程控制标签。使用自动配料控制阀闭合回路可以稳定产品质量，减少成分浪费，并通过一致的自动化质量控制实现快速的投资回报。</p>
+<h2>USTECH 的做法</h2>
+<p>USTECH 的在线分析仪 &mdash; 用于液体、浆料和简单固体物流的 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 过程 FT-NIR 分析仪，以及可直接安装在管道和容器上的 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> &mdash; 运行在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 中建立的定标；<a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 将预测值和状态传送至工厂 PLC，并允许 PLC 选择产品和方法。保持条件、死区时间补偿和联锁与工厂的自动化及安全工程师共同确定。起点是在您自己的工艺条件下、使用您自己样品的可行性研究。</p>
 <div class="blog-post-references">
-<h3>参考</h3>
+<h3>参考文献</h3>
 <ul>
-<li>IEC 62541-1 - OPC 统一架构 - 第 1 部分：概述和概念。</li>
-<li>“闭环工业控制和带有光谱反馈的 PID 自动调节”<em>IEEE 控制系统技术汇刊</em>，2023。</li>
-<li>“连续制造中基于 OPC UA 的过程分析技术 (PAT) 集成”<em>计算机与化学工程</em>，2022 年。</li>
+<li id="ref-1">[1] U.S. Food and Drug Administration (2004). <em>Guidance for Industry: PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> CDER/CVM/ORA, Rockville, MD. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance" target="_blank" rel="noopener">fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance</a></li>
+<li id="ref-2">[2] Kourti, T. (2006). Process Analytical Technology Beyond Real-Time Analyzers: The Role of Multivariate Analysis. <em>Critical Reviews in Analytical Chemistry</em>, 36(3&ndash;4), 257&ndash;278. <a href="https://doi.org/10.1080/10408340600969957" target="_blank" rel="noopener">doi:10.1080/10408340600969957</a></li>
+<li id="ref-3">[3] Simon, L.L., Pataki, H., Marosi, G., Meemken, F., Hungerb&uuml;hler, K., Baiker, A., et al. (2015). Assessment of Recent Process Analytical Technology (PAT) Trends: A Multiauthor Review. <em>Organic Process Research &amp; Development</em>, 19(1), 3&ndash;62. <a href="https://doi.org/10.1021/op500261y" target="_blank" rel="noopener">doi:10.1021/op500261y</a></li>
+<li id="ref-4">[4] IEC 62541-1:2025. <em>OPC Unified Architecture &mdash; Part 1: Overview and concepts.</em> IEC, Geneva. <a href="https://webstore.iec.ch/en/publication/81513" target="_blank" rel="noopener">webstore.iec.ch/en/publication/81513</a></li>
+<li id="ref-5">[5] OPC Foundation (2025). <em>OPC 10000-1: OPC Unified Architecture &mdash; Part 1: Overview and Concepts</em>, release 1.05.06, clause 4.3 Design goals. <a href="https://reference.opcfoundation.org/Core/Part1/v105/docs/4.3" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part1/v105/docs/4.3</a></li>
+<li id="ref-6">[6] OPC Foundation (2026). <em>OPC 10000-8: OPC Unified Architecture &mdash; Part 8: Data Access</em>, release 1.05.07, clauses 5.3.1 DataItemType, 5.3.2 AnalogItem VariableTypes and 7.3 Data Access status codes. <a href="https://reference.opcfoundation.org/Core/Part8/v105/docs/" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part8/v105/docs</a></li>
+<li id="ref-7">[7] OPC Foundation (2026). <em>OPC 10000-4: OPC Unified Architecture &mdash; Part 4: Services</em>, release 1.05.07, clauses 5.13.1.2 Sampling interval, 7.11 DataValue and 7.38 StatusCode. <a href="https://reference.opcfoundation.org/Core/Part4/v105/docs/" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part4/v105/docs</a></li>
+<li id="ref-8">[8] OPC Foundation (2025). <em>OPC 10000-100: OPC Unified Architecture &mdash; Part 100: Devices</em>, release 1.05.0, clause 4.5.4 DeviceHealth Interface. <a href="https://reference.opcfoundation.org/specs/OPC-10000-100/4.5.4" target="_blank" rel="noopener">reference.opcfoundation.org/specs/OPC-10000-100/4.5.4</a></li>
+<li id="ref-9">[9] NAMUR NE 107 (2017). <em>Self-Monitoring and Diagnosis of Field Devices.</em> NAMUR, Leverkusen. <a href="https://www.namur.net/en/publications/news-archive/ne-107-has-been-revised.html" target="_blank" rel="noopener">namur.net/en/publications/news-archive/ne-107-has-been-revised.html</a></li>
+<li id="ref-10">[10] OPC Foundation (2025). <em>OPC 10000-2: OPC Unified Architecture &mdash; Part 2: Security Model</em>, release 1.05.06, clause 4.2 Security objectives. <a href="https://reference.opcfoundation.org/Core/Part2/v105/docs/4.2" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part2/v105/docs/4.2</a></li>
+<li id="ref-11">[11] Normey-Rico, J.E., Santos, T.L.M., Flesch, R.C.C., Torrico, B.C. (2022). Control of dead-time process: From the Smith predictor to general multi-input multi-output dead-time compensators. <em>Frontiers in Control Engineering</em>, 3, 953768. <a href="https://doi.org/10.3389/fcteg.2022.953768" target="_blank" rel="noopener">doi:10.3389/fcteg.2022.953768</a></li>
+<li id="ref-12">[12] IEC 61131-3:2025. <em>Programmable controllers &mdash; Part 3: Programming languages.</em> IEC, Geneva. <a href="https://webstore.iec.ch/en/publication/68533" target="_blank" rel="noopener">webstore.iec.ch/en/publication/68533</a></li>
+<li id="ref-13">[13] IEC 61511-1:2016+AMD1:2017. <em>Functional safety &mdash; Safety instrumented systems for the process industry sector &mdash; Part 1: Framework, definitions, system, hardware and application programming requirements.</em> IEC, Geneva. <a href="https://webstore.iec.ch/en/publication/24241" target="_blank" rel="noopener">webstore.iec.ch/en/publication/24241</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、校准数据集和仪器参数。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -315,20 +276,20 @@
 <div class="card" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="多元醇生产中的实时羟值监测" decoding="async" loading="lazy" src="../images/blog_polyol_reactors.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">白皮书</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hydroxyl-value-polyol.html" style="color: var(--accent-black); text-decoration: none;">多元醇生产中的实时羟值监测</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">在线 FT-NIR 光谱如何取代湿化学滴定以在聚合过程中提供连续的终点测定。</p>
-<a class="btn-text" href="blog-hydroxyl-value-polyol.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读白皮书</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">为什么羟值是多元醇生产中的终点变量，滴定参考方法和 NIR 标准有哪些要求，以及为什么温度是反应器内定标的主要障碍。</p>
+<a class="btn-text" href="blog-hydroxyl-value-polyol.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
 </div>
 </div>
 <!-- Milk Powder Card -->
 <div class="card" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="奶粉喷雾干燥中的水分标准化" decoding="async" loading="lazy" src="../images/blog_milk_powder.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">案例研究</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-moisture-milk-powder.html" style="color: var(--accent-black); text-decoration: none;">奶粉喷雾干燥中的水分标准化</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">乳品厂如何使用在线出口水分标准化器来防止喷雾干燥机堵塞并优化粉末产量。</p>
-<a class="btn-text" href="blog-moisture-milk-powder.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读案例研究</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">为什么奶粉喷雾干燥塔的出口水分决定了粘结、结块、货架期和得率，操作人员可以调节哪些变量，以及在线 NIR 水分值如何进入控制回路。</p>
+<a class="btn-text" href="blog-moisture-milk-powder.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
 </div>
 </div>
 </div>
@@ -386,6 +347,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Guide USTECH Innovations - Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Comment la distance de Mahalanobis, le T-carré de Hotelling, le levier (leverage) et les résidus Q indiquent à un analyseur de procédé si un spectre appartient à son étalonnage, comment leurs limites sont fixées, et pourquoi une même statistique porte plusieurs noms selon les logiciels." name="description"/>
 <meta content="chimiométrie de détection des valeurs aberrantes, distance de Mahalanobis NIR, T-carré de Hotelling, analyse spectrale des valeurs aberrantes" name="keywords"/>
 <title>Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "fr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "fr",
   "headline": "Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling",
-  "description": "Guide USTECH Innovations - Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling.",
+  "description": "Comment la distance de Mahalanobis, le T-carré de Hotelling, le levier (leverage) et les résidus Q indiquent à un analyseur de procédé si un spectre appartient à son étalonnage, comment leurs limites sont fixées, et pourquoi une même statistique porte plusieurs noms selon les logiciels.",
   "url": "https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html",
   "datePublished": "2026-06-11",
-  "dateModified": "2026-06-11",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling | USTECH Innovations" property="og:title"/>
-<meta content="Guide USTECH Innovations - Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling" property="og:description"/>
+<meta content="Comment la distance de Mahalanobis, le T-carré de Hotelling, le levier (leverage) et les résidus Q indiquent à un analyseur de procédé si un spectre appartient à son étalonnage, comment leurs limites sont fixées, et pourquoi une même statistique porte plusieurs noms selon les logiciels." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/fr/blog-outlier-detection-mahalanobis.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling | USTECH Innovations" property="og:image:alt"/>
 <meta content="fr_FR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling | USTECH Innovations" name="twitter:title"/>
-<meta content="Guide USTECH Innovations - Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling" name="twitter:description"/>
+<meta content="Comment la distance de Mahalanobis, le T-carré de Hotelling, le levier (leverage) et les résidus Q indiquent à un analyseur de procédé si un spectre appartient à son étalonnage, comment leurs limites sont fixées, et pourquoi une même statistique porte plusieurs noms selon les logiciels." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,83 +218,52 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Retour à Tous les Blogs et Publications</a>
 <img alt="Outlier detection statistical plot on screen" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_outlier_detection.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 11, 2026 — 4 min de lecture</span>
+<span class="blog-post-meta">Guide — 11 juin 2026 — 5 min de lecture</span>
 <h1 class="blog-post-title">Détection chimiométrique des valeurs aberrantes : distance de Mahalanobis par rapport au T² de Hotelling</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Un guide analytique détaillant les mathématiques multivariées utilisées pour identifier les anomalies spectrales, les dérives des instruments et les matières premières hors spécifications dans cali<span class="calix-x">X</span>Suite.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Comment la distance de Mahalanobis, le T&sup2; de Hotelling, le levier et les résidus Q indiquent à un analyseur NIR de procédé si un spectre appartient à l'étalonnage qu'il s'apprête à utiliser, comment les limites de ces statistiques sont établies, et pourquoi une même grandeur apparaît sous des noms et des échelles différents selon les logiciels &mdash; avec les articles statistiques originaux et les pratiques ASTM pertinentes.</p>
 </div>
 <div class="blog-post-content">
-<h2>Le rôle de la détection des valeurs aberrantes en spectroscopie</h2>
-<p>Lors du déploiement de modèles d'étalonnage quantitatifs (construits via la régression des moindres carrés partiels ou PLS) sur une ligne de production active, le système repose sur l'hypothèse que les échantillons numérisés sont similaires à la base de données d'étalonnage. Si un échantillon analysé contient un contaminant inattendu, présente une variation de température extrême ou présente une matrice de matière première complètement différente, le modèle génère une prédiction. Cependant, cette prédiction sera mathématiquement invalide.</p>
-<p>Pour éviter que de mauvaises prédictions n'écrivent des données corrompues dans votre système SCADA, les spectromètres de processus doivent évaluer si chaque spectre analysé est une « valeur aberrante multivariée » avant de générer des prédictions. Ceci est accompli en projetant le spectre de l'échantillon dans l'espace multidimensionnel du modèle d'étalonnage et en calculant les limites de distance statistique.</p>
-<blockquote>"La détection des valeurs aberrantes agit comme le système immunitaire d'un analyseur de processus. Elle garantit que les prédictions ne sont émises que lorsque l'échantillon correspond à l'espace d'étalonnage."</blockquote>
-<h2>Distance de Mahalanobis : mesure de la covariance</h2>
-<p>La distance euclidienne simple mesure la distance en ligne droite entre un spectre d'échantillon et la moyenne d'étalonnage. Cependant, la distance euclidienne échoue en chimiométrie car elle ignore la forte corrélation (covariance) entre les longueurs d'onde adjacentes dans les spectres NIR.</p>
-<p><strong>Mahalanobis Distance (MD)</strong> résout ce problème en mettant à l'échelle la distance par la matrice de covariance de l'ensemble de données d'étalonnage. En effet, MD tient compte de la direction de la variance, en attribuant moins de poids aux variations dans les directions de variance d'étalonnage normale élevée, et un poids plus élevé aux écarts dans les directions où les données d'étalonnage sont étroitement liées.</p>
-<h2>T² de Hotelling : seuils de confiance</h2>
-<p>Bien que la distance de Mahalanobis fournisse une valeur de distance brute, nous avons besoin d'un seuil statistiquement solide pour signaler les valeurs aberrantes. <strong>Le T²</strong> de Hotelling normalise la distance de Mahalanobis dans un espace de projection à composante principale (PC), en calculant un score multivarié. Étant donné que T² suit une distribution F, nous pouvons établir des limites de confiance statistiques formelles (généralement 95 % ou 99 %) :</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Paramètre</th>
-<th>Mahalanobis Distance (MD)</th>
-<th>Le T² d'Hôtelling</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Focus mathématique</strong></td>
-<td>Mesure la distance généralisée dans l’espace de longueur d’onde brut ou à l’échelle de covariance.</td>
-<td>Mesure la distance des scores dans l’espace des composantes principales (scores PC).</td>
-</tr>
-<tr>
-<td><strong>Mise à l'échelle de la covariance</strong></td>
-<td>Échelle selon la matrice de covariance de longueur d'onde complète.</td>
-<td>Échelles en fonction de la variance des scores PC individuels.</td>
-</tr>
-<tr>
-<td><strong>Limite de seuil</strong></td>
-<td>Distribution heuristique ou chi carré ($\chi^2$).</td>
-<td>Intervalles de confiance stricts de la distribution F ($1-\alpha$, où $\alpha = 0,05$ ou $0,01$).</td>
-</tr>
-<tr>
-<td><strong>Meilleur cas d'utilisation</strong></td>
-<td>Signalement des matières premières défectueuses, des dérives d’instrumentation ou des défauts matériels.</td>
-<td>Validation de l'appartenance à une classe et marquage des échantillons en dehors de l'espace modèle.</td>
-</tr>
-</tbody>
-</table>
-<h2>Définition des limites des valeurs aberrantes dans cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</h2>
-<p>Pour implémenter des limites de valeurs aberrantes dans vos étalonnages, suivez ces étapes dans <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
-<ol>
-<li><strong>Compiler les scores PCA/PLS :</strong>Ouvrez votre fichier d'étalonnage et calculez les vecteurs de chargement des composants principaux.</li>
-<li><strong>Définir l'intervalle de confiance :</strong>Accédez à l'onglet Valeurs aberrantes et sélectionnez « Hotelling T² ». Choisissez un seuil de confiance de 99 % ($\alpha = 0,01$) pour les points de contrôle critiques, ou de 95 % ($\alpha = 0,05$) pour la surveillance de routine.</li>
-<li><strong>Activer les alarmes ProChem :</strong>Synchronisez le modèle avec le spectromètre de processus. Dans <strong>ProChem</strong>, mappez la sortie de l'indicateur de valeur aberrante à votre registre PLC pour contenir la dernière prédiction valide lorsqu'une valeur aberrante est déclenchée.</li>
-</ol>
-<h2>Conclusion</h2>
-<p>Le déploiement d'une détection robuste des valeurs aberrantes à l'aide de Mahalanobis Distance et de Hotelling's T² garantit l'intégrité de l'analyseur de processus. En identifiant et en isolant les spectres anormaux, les fabricants peuvent éviter les échecs d’étalonnage et sécuriser les boucles de processus automatisés.</p>
+<h2>Pourquoi chaque prédiction nécessite un contrôle de validité</h2>
+<p>Un étalonnage multivarié, qu'il fonctionne sur un analyseur en ligne dans l'<a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">industrie chimique et pharmaceutique</a> ou sur un instrument de paillasse dans une usine d'aliments pour animaux, est un modèle empirique des échantillons sur lesquels il a été construit, et Martens et N&aelig;s comptent la détection automatique des valeurs aberrantes parmi les fonctions qu'un tel étalonnage doit assurer <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. L'ASTM E1655 indique que les procédures d'étalonnage définissent le domaine dans lequel les mesures sont valides et considère le traitement des valeurs aberrantes comme partie intégrante d'un étalonnage conforme <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Pour l'exploitation de routine, l'ASTM D6122 est explicite&nbsp;: l'applicabilité d'un modèle à un échantillon ne peut être présumée, la détection des valeurs aberrantes démontre que l'étalonnage s'applique au spectre mesuré, et si le spectre est aberrant, le résultat de l'analyseur est invalide, même si l'essai ne dit pas si la cause est l'échantillon, le modèle ou l'instrument <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Distance de Mahalanobis&nbsp;: une distance qui respecte la covariance</h2>
+<p>La distance généralisée introduite par Mahalanobis en 1936 mesure l'éloignement d'un point par rapport au centre d'une population en unités de la variance et de la covariance propres à cette population <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Le tutoriel de De Maesschalck, Jouan-Rimbaud et Massart explique pourquoi cela importe pour les spectres&nbsp;: les longueurs d'onde voisines sont fortement corrélées, si bien qu'une distance euclidienne traite une variation normale le long de la direction principale de variation spectrale exactement comme une variation de même ampleur dans une direction que le jeu d'étalonnage n'a jamais présentée, alors que la distance de Mahalanobis pondère chaque direction par sa variance <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Comme la matrice de covariance d'un jeu de données NIR sur toutes les longueurs d'onde ne peut pas être inversée de façon fiable, la distance est calculée dans l'espace des scores de l'analyse en composantes principales ou de la PLS, sur les composantes effectivement utilisées par le modèle, cas que le tutoriel traite à côté de celui de l'espace des variables d'origine <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<h2>T&sup2; de Hotelling, levier et GH&nbsp;: une seule grandeur sur plusieurs échelles</h2>
+<p>Hotelling a généralisé en 1931 le rapport de Student à plusieurs variables corrélées&nbsp;; son T&sup2; est un vecteur d'écart pondéré par l'inverse de la matrice de covariance, c'est-à-dire le carré de la distance de Mahalanobis sous un autre nom <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Garrido-Varo, Garc&iacute;a-Olmo et Fearn établissent que le carré de la distance de Mahalanobis D&sup2;, le T&sup2; de Hotelling, le levier <em>L</em> de The Unscrambler et la distance GH de WinISI sont liés par D&sup2; = T&sup2; &asymp; <em>L</em>&middot;<em>n</em> &asymp; GH&middot;<em>k</em>, où <em>n</em> et <em>k</em> sont les nombres d'échantillons et de variables des données qui définissent la distance&nbsp;; un seuil recopié d'un logiciel à l'autre sans cette conversion est donc faux d'un facteur qui dépend des données <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. L'échelle GH vient de Shenk et Westerhaus, qui utilisaient une distance standardisée de 3,0 par rapport à la moyenne de la population comme limite d'exclusion des spectres aberrants, tandis qu'une distance de voisinage minimale de 0,6 entre échantillons fournissait un jeu d'étalonnage adéquat dans leur étude <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Résidus Q&nbsp;: ce que le modèle n'a pas expliqué</h2>
+<p>Une distance dans l'espace des scores ne demande que si l'échantillon est extrême selon les directions que le modèle connaît. Un spectre peut se situer à l'intérieur de ces limites et contenir malgré tout une structure que le modèle n'a jamais vue, par exemple une bande due à un contaminant ou un artefact instrumental. Jackson et Mudholkar ont abordé ce problème par des tests sur les résidus d'un modèle en composantes principales, c'est-à-dire la différence entre une observation et sa reconstruction à partir d'un nombre de composantes inférieur au nombre total, pour un vecteur d'observation unique et pour un groupe, en vue de la détection des valeurs aberrantes en contrôle qualité <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. La somme des carrés des résidus est la statistique Q ou erreur quadratique de prédiction (SPE)&nbsp;; l'ouvrage de Jackson traite Q et T&sup2; ensemble <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Nomikos et MacGregor ont construit des cartes de contrôle multivariées sur ces deux statistiques, avec des limites de contrôle établies à partir de la distribution de référence historique des lots réussis <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Les deux sont complémentaires&nbsp;: un échantillon signalé par T&sup2; est inhabituel dans une direction couverte par l'étalonnage, un échantillon signalé par Q se trouve hors du plan du modèle, et seul le second révèle un nouvel interférent <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</p>
+<h2>Fixer les limites&nbsp;: F, bêta et khi-deux</h2>
+<p>Les limites de T&sup2; dépendent de l'appartenance ou non de l'échantillon testé aux données qui ont défini la distance. Tracy, Young et Mason soulignent que les limites approchées F et khi-deux habituellement utilisées sont conservatrices lorsque seules des observations individuelles sont disponibles au stade de démarrage, et établissent pour ce cas une limite exacte fondée sur la loi bêta <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Dans un projet d'étalonnage, c'est la différence entre le criblage des échantillons d'étalonnage eux-mêmes et l'évaluation d'un nouveau spectre de procédé par rapport à un modèle figé, cas où s'applique la limite fondée sur F <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Pour Q, la distribution approchée établie par Jackson et Mudholkar donne une limite à un niveau de signification choisi <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Un autre danger concerne le stade de l'étalonnage&nbsp;: Rousseeuw et van Zomeren montrent que la moyenne et la covariance classiques sont elles-mêmes faussées par les valeurs aberrantes qu'elles sont censées détecter, si bien que plusieurs valeurs aberrantes se masquent mutuellement, et proposent des distances calculées à partir d'estimations robustes de la position et de la covariance <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Trois points en découlent&nbsp;:</p>
+<ul>
+<li><strong>Nettoyez le jeu d'étalonnage avec la bonne limite&nbsp;:</strong> la limite de T&sup2; fondée sur la loi bêta ou une distance robuste, car l'approximation F est conservatrice à ce stade et une covariance classique peut être masquée par plusieurs valeurs aberrantes <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</li>
+<li><strong>Utilisez T&sup2; et Q ensemble en prédiction de routine,</strong> complétés par le test facultatif du plus proche voisin que recommande la D6122 lorsque les spectres d'étalonnage sont très regroupés <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
+<li><strong>Consignez la statistique et l'échelle auxquelles se rapporte une limite,</strong> car GH, levier et T&sup2; diffèrent de facteurs <em>n</em> et <em>k</em> <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+</ul>
+<h2>Statistiques de valeurs aberrantes dans cali<span class="calix-x" style="color: #38b6ff !important;">X</span> et ProChem</h2>
+<p>La suite <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> compte le T&sup2; de Hotelling et les résidus Q, le levier PLS et la distance de Mahalanobis parmi ses méthodes de détection des valeurs aberrantes et propose des seuils GH/NH pour nettoyer un jeu d'étalonnage&nbsp;; <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> exécute les modèles exportés sur les analyseurs USTECH et les relie aux systèmes PLC ou SCADA avec tableaux de bord et alarmes, de sorte qu'un spectre situé hors de l'espace d'étalonnage soit signalé au lieu d'être converti silencieusement en valeur. Les limites adaptées à un produit et à un instrument donnés sont établies par une étude de faisabilité réalisée avec vos propres échantillons.</p>
 <div class="blog-post-references">
 <h3>Références</h3>
 <ul>
-<li>ASTM E1655 -<em>Pratiques standard pour l’analyse quantitative multivariée infrarouge</em>.</li>
-<li>Hotelling, H., "La généralisation du ratio d'étudiants",<em>Annales de statistiques mathématiques</em>, 1931.</li>
-<li>Martens, H. et Næs, T.,<em>Calibrage multivarié</em>, John Wiley et fils, 1989.</li>
+<li id="ref-1">[1] Martens, H., N&aelig;s, T. (1989). <em>Multivariate Calibration.</em> John Wiley &amp; Sons, Chichester. <a href="https://www.wiley.com/en-us/Multivariate+Calibration-p-9780471930471" target="_blank" rel="noopener">wiley.com/en-us/Multivariate+Calibration-p-9780471930471</a></li>
+<li id="ref-2">[2] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-3">[3] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
+<li id="ref-4">[4] Mahalanobis, P.C. (2018). Reprint of: Mahalanobis, P.C. (1936) &ldquo;On the generalised distance in statistics.&rdquo; <em>Sankhya A</em>, 80(S1), 1&ndash;7; originally <em>Proceedings of the National Institute of Sciences of India</em>, 2(1), 49&ndash;55. <a href="https://doi.org/10.1007/s13171-019-00164-5" target="_blank" rel="noopener">doi:10.1007/s13171-019-00164-5</a></li>
+<li id="ref-5">[5] De Maesschalck, R., Jouan-Rimbaud, D., Massart, D.L. (2000). The Mahalanobis distance. <em>Chemometrics and Intelligent Laboratory Systems</em>, 50(1), 1&ndash;18. <a href="https://doi.org/10.1016/S0169-7439(99)00047-7" target="_blank" rel="noopener">doi:10.1016/S0169-7439(99)00047-7</a></li>
+<li id="ref-6">[6] Hotelling, H. (1931). The generalization of Student&rsquo;s ratio. <em>The Annals of Mathematical Statistics</em>, 2(3), 360&ndash;378. <a href="https://doi.org/10.1214/aoms/1177732979" target="_blank" rel="noopener">doi:10.1214/aoms/1177732979</a></li>
+<li id="ref-7">[7] Garrido-Varo, A., Garc&iacute;a-Olmo, J., Fearn, T. (2019). A note on Mahalanobis and related distance measures in WinISI and The Unscrambler. <em>Journal of Near Infrared Spectroscopy</em>, 27(4), 253&ndash;258. <a href="https://doi.org/10.1177/0967033519848296" target="_blank" rel="noopener">doi:10.1177/0967033519848296</a></li>
+<li id="ref-8">[8] Shenk, J.S., Westerhaus, M.O. (1991). Population definition, sample selection, and calibration procedures for near infrared reflectance spectroscopy. <em>Crop Science</em>, 31(2), 469&ndash;474. <a href="https://doi.org/10.2135/cropsci1991.0011183X003100020049x" target="_blank" rel="noopener">doi:10.2135/cropsci1991.0011183X003100020049x</a></li>
+<li id="ref-9">[9] Jackson, J.E., Mudholkar, G.S. (1979). Control procedures for residuals associated with principal component analysis. <em>Technometrics</em>, 21(3), 341&ndash;349. <a href="https://doi.org/10.1080/00401706.1979.10489779" target="_blank" rel="noopener">doi:10.1080/00401706.1979.10489779</a></li>
+<li id="ref-10">[10] Jackson, J.E. (1991). <em>A User&rsquo;s Guide to Principal Components.</em> John Wiley &amp; Sons, New York. <a href="https://doi.org/10.1002/0471725331" target="_blank" rel="noopener">doi:10.1002/0471725331</a></li>
+<li id="ref-11">[11] Nomikos, P., MacGregor, J.F. (1995). Multivariate SPC charts for monitoring batch processes. <em>Technometrics</em>, 37(1), 41&ndash;59. <a href="https://doi.org/10.1080/00401706.1995.10485888" target="_blank" rel="noopener">doi:10.1080/00401706.1995.10485888</a></li>
+<li id="ref-12">[12] Tracy, N.D., Young, J.C., Mason, R.L. (1992). Multivariate control charts for individual observations. <em>Journal of Quality Technology</em>, 24(2), 88&ndash;95. <a href="https://doi.org/10.1080/00224065.1992.12015232" target="_blank" rel="noopener">doi:10.1080/00224065.1992.12015232</a></li>
+<li id="ref-13">[13] Rousseeuw, P.J., van Zomeren, B.C. (1990). Unmasking multivariate outliers and leverage points. <em>Journal of the American Statistical Association</em>, 85(411), 633&ndash;639. <a href="https://doi.org/10.1080/01621459.1990.10474920" target="_blank" rel="noopener">doi:10.1080/01621459.1990.10474920</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Télécharger le rapport technique complet</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Accédez au document technique complet et non édité avec les dérivations mathématiques de la distance de Mahalanobis, les formules de covariance et les matrices de distribution F d'Hotelling.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Évaluez cette application pour votre procédé</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Notre équipe applications peut détailler la méthode, partager la littérature de référence et organiser une étude de faisabilité avec vos propres échantillons.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contactez-nous</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,21 +271,21 @@
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="Introduction à la régression PLS dans la suite cali<span class="calix-x">X</span>" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="Introduction à la régression PLS dans la suite caliX" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction à la régression PLS en cali<span class="calix-x">X</span>Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un didacticiel étape par étape expliquant comment compiler des modèles d'étalonnage à partir de valeurs de chimie humide de référence à l'aide du cali<span class="calix-x">X</span>plate-forme.</p>
-<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire le didacticiel</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un parcours pratique d'un étalonnage PLS&nbsp;: comment les données sont partagées, comment le prétraitement et le nombre de variables latentes sont choisis par validation, quels diagnostics lire, et comment maintenir le modèle en vie en production.</p>
+<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire le guide</a>
 </div>
 </div>
 <!-- PCA Classification Card -->
 <div class="card" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Développement de modèles de classification chimométrique robustes via PCA" decoding="async" loading="lazy" src="../images/blog_pca_chemometrics.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pca-classification-models.html" style="color: var(--accent-black); text-decoration: none;">Développement de modèles de classification chimométrique robustes via PCA</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Une méthodologie étape par étape expliquant l'analyse en composantes principales pour l'identification qualitative des matières premières.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Comment les scores, les loadings et les résidus d'une PCA deviennent un modèle de classification, d'où viennent les limites de Hotelling et Q, pourquoi la modélisation de classe diffère de la PLS-DA, et comment les autorités attendent qu'un modèle NIR qualitatif soit validé.</p>
 <a class="btn-text" href="blog-pca-classification-models.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire le guide</a>
 </div>
 </div>
@@ -368,6 +344,6 @@
 <p>Conçu pour la précision scientifique et industrielle.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

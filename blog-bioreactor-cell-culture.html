@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations Case Study - Bioreactor Feeding Optimization in Mammalian Cell Culture.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why glucose and lactate control matters in CHO fed-batch culture, why NIR struggles in aqueous culture media, and what the literature shows for in-situ Raman and mid-infrared feed control.">
 <meta name="keywords" content="bioreactor cell culture NIR, mammalian cell culture monitoring, fed-batch bioreactor optimization, inline process analytics pharma">
 <title>Bioreactor Feeding Optimization in Mammalian Cell Culture | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-bioreactor-cell-culture.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-bioreactor-cell-culture.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-bioreactor-cell-culture.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Bioreactor Feeding Optimization in Mammalian Cell Culture",
-"description": "USTECH Innovations Case Study - Bioreactor Feeding Optimization in Mammalian Cell Culture.",
+"description": "Why glucose and lactate control matters in CHO fed-batch culture, why NIR struggles in aqueous culture media, and what the literature shows for in-situ Raman and mid-infrared feed control.",
 "url": "https://www.ustechinnovations.com/blog-bioreactor-cell-culture.html",
 "datePublished": "2026-06-11",
-"dateModified": "2026-06-11",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Bioreactor Feeding Optimization in Mammalian Cell Culture | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations Case Study - Bioreactor Feeding Optimization in Mammalian Cell Culture.">
+    <meta property="og:description" content="Why glucose and lactate control matters in CHO fed-batch culture, why NIR struggles in aqueous culture media, and what the literature shows for in-situ Raman and mid-infrared feed control.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-bioreactor-cell-culture.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-bioreactor-cell-culture.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Bioreactor Feeding Optimization in Mammalian Cell Culture | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bioreactor Feeding Optimization in Mammalian Cell Culture | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations Case Study - Bioreactor Feeding Optimization in Mammalian Cell Culture.">
+    <meta name="twitter:description" content="Why glucose and lactate control matters in CHO fed-batch culture, why NIR struggles in aqueous culture media, and what the literature shows for in-situ Raman and mid-infrared feed control.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-bioreactor-cell-culture.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,92 +217,51 @@ Espa&#241;ol
 </a>
 <img src="images/blog_bioreactor_cell.webp?v=1.0.5" alt="Bioreactor cell culture monitoring probe setup" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">Case Study &mdash; June 11, 2026 &mdash; 4 min read</span>
+<span class="blog-post-meta">Article &mdash; June 11, 2026 &mdash; 4 min read</span>
 <h1 class="blog-post-title">Bioreactor Feeding Optimization in Mammalian Cell Culture</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How a leading biopharmaceutical producer transitioned from offline analyzer checks to real-time, online FT-NIR spectroscopy, achieving automated glucose feeding loops and a 15% increase in monoclonal antibody (mAb) yield.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why glucose and lactate control matters in mammalian (CHO) fed-batch culture, why near-infrared spectroscopy is challenging in aqueous culture media, and what the published work on in-situ NIR, Raman and mid-infrared monitoring and feedback feeding actually shows.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Challenge of Bioprocess Monitoring</h2>
-<p>In biomanufacturing processes utilizing mammalian cells (such as Chinese Hamster Ovary or CHO cells), maintaining tight control over nutrient concentrations is critical for cell health, growth, and protein expression. The primary carbon source, glucose, must be kept within a strict concentration range. Depletion causes cell starvation and limits productivity, whereas an excess of glucose triggers a metabolic shift, leading to the accumulation of toxic byproducts like lactate and ammonium, which inhibit cell growth and degrade product quality.</p>
-<p>Traditionally, cell culture monitoring relies on offline analysis. Operators manually draw samples from the bioreactor vessel every 12 to 24 hours, running them through wet chemistry analyzers or HPLC systems. This offline method has severe limitations:</p>
+<h2>Why feeding control matters in CHO culture</h2>
+<p>Therapeutic proteins in the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">pharmaceutical industry</a> are largely produced in Chinese hamster ovary (CHO) cell cultures fed with glucose <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. In the usual fed-batch mode, glucose is delivered as a large bolus at set time points chosen from prior process knowledge and off-line analysis; Esmonde-White et al. describe this practice as labour- and resource-intensive, note that sampling increases the risk of contamination, and conclude that it does not adequately control glucose and lactate <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Lactate matters because its accumulation often impairs culture performance and the production of the therapeutic protein <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. The FDA's 2004 PAT guidance supplies the regulatory frame: a system for designing, analysing and controlling manufacturing through timely measurements of critical quality and performance attributes of raw and in-process materials and processes <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. In-situ spectroscopy is the obvious candidate for such measurements, but the choice of technique is not neutral.</p>
+<h2>Why NIR is challenging in culture media</h2>
+<p>Near-infrared absorptions are overtones and combinations of C&ndash;H, N&ndash;H and O&ndash;H fundamentals; the bands are broad and strongly overlapped, and in submerged processes the spectrum is dominated by the overwhelming presence of water, with the region around 1450 nm completely covered by the first O&ndash;H overtone <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Glucose, lactate, glutamine and ammonia sit at gram-per-litre or millimolar levels on top of that water background and alongside many other medium components.</p>
+<p>It can nevertheless be done. Arnold et al. placed a steam-sterilisable in-situ fibre-optic NIR probe in a CHO-K1 culture and built models for glucose, lactate, glutamine and ammonia with standard errors of prediction of 0.072 g/L, 0.0144 g/L, 0.308 mM and 0.036 mM, respectively; the calibration used large data sets so that all likely variation in stoichiometry was included <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Rhiel et al. identified a second, subtler problem: during a cultivation the analytes change together, because metabolism consumes nutrients and produces by-products, so a calibration built on culture samples can learn that covariance rather than the analyte itself <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Their adaptive calibration removed the metabolism-induced covariance, used the 4800&ndash;4200 cm<sup>-1</sup> combination region, and reached standard errors of prediction of 0.82 mM for glucose and 0.94 mM for lactate in undiluted serum-based medium, measured off-line <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>Where Raman and mid-infrared are used</h2>
+<p>Abu-Absi et al. reported the technical feasibility of an in-line Raman probe in a mammalian cell culture bioreactor, predicting glutamine, glutamate, glucose, lactate, ammonium, viable cell density and total cell density simultaneously <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Because NADH and flavins in CHO cells autofluoresce in the visible range, bioprocess Raman is run with near-infrared excitation at 785 or 830 nm <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Raman has since been used to close the feeding loop. Berry et al. built a PLS glucose model from spiking studies and eight bench-scale calibration batches and fed glucose on demand; holding glucose at a low constant target reduced product glycation from about 9 % to 4 %, whereas a stepwise-decreasing target did not reduce it relative to bolus feeding <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Matthews et al. fed glucose only when Raman-predicted lactate was below a setpoint (4.0 or 2.5 g/L) and glucose was below 0.5 g/L; their PLS models had RMSEP of 0.27 g/L for glucose and 0.20 g/L for lactate, culture duration rose from 11 to 13 days, and harvest titre increased by 85 % over the historical process <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. These are results for specific processes and cell lines, not general expectations.</p>
+<p>Mid-infrared measures fundamental vibrations rather than overtones. Rhiel et al. monitored glucose and lactate in situ in CHO bioreactor cultures with PLS models that were applied unchanged after 2.3 years, with standard errors of estimate of 1 to 3 mM for lactate; the glucose model showed a constant offset that had to be adjusted before inoculation, and the detector required daily liquid-nitrogen filling <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Reviews of mammalian cell culture monitoring list NIR, mid-infrared, 2D fluorescence and dielectric capacitance among the in-situ techniques already tested, each relying on chemometric methods such as PCR, PLS or neural networks to extract the information <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</p>
+<h2>From prediction to feed control</h2>
+<p>Whatever the technique, the spectrum becomes a feeding decision only through a chemometric model, and the review literature treats wavelength selection, pre-processing, principal component analysis and PLS as the core steps <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Three practical points follow from the studies above:</p>
 <ul>
-<li><strong>Sampling Risk:</strong> Opening the sterile barrier of the bioreactor increases the risk of vessel contamination.</li>
-<li><strong>Low Temporal Resolution:</strong> Sharp metabolite spikes or drops occurring between sampling intervals remain completely undetected.</li>
-<li><strong>Manual Delay:</strong> Feeding adjustments are always reactive, based on historical sample values rather than the actual, real-time demand.</li>
+<li><strong>Design the calibration to break metabolic covariance.</strong> Spiking experiments and batches deliberately run over a wide concentration range give the model independent variation in the target analyte <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
+<li><strong>Decide the control logic before the model.</strong> The feeding rule determines which analyte must be predicted and at what level; Matthews et al. needed both glucose and lactate predictions to restrict feeding <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</li>
+<li><strong>Validate for the intended use.</strong> ASTM E2898 gives a risk-based approach to validating analytical methods for PAT applications, so the validation effort matches the role the prediction plays in control <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
 </ul>
-<blockquote>
-"Real-time tracking of critical process parameters (CPPs) allows bioprocess engineers to switch from manual recipe-driven feeds to feedback-controlled feeding loops, directly stabilizing cell metabolism."
-</blockquote>
-<h2>Hygienic Inline FT-NIR Implementation</h2>
-<p>To establish a continuous monitoring loop, the manufacturer integrated a <strong>ProLine2550 FT-NIR Analyzer</strong> equipped with a sanitary, autoclave-safe sapphire immersion probe. The probe was inserted directly into the bioreactor headplate, using a standard PG13.5 port with EPDM seals compliant with EHEDG guidelines. </p>
-<p>Near-infrared light traveled through fiber optics to the probe tip, where it passed through the cell culture broth. A high-resolution InGaAs detector read the transmission spectra every 15 minutes. The spectral data was fed into the <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</strong> for chemometric prediction of Critical Process Parameters (CPPs).</p>
-<h2>Model Validation and Closed-Loop Control</h2>
-<p>Using the <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</strong>, calibration models were constructed by correlating inline FT-NIR spectra with reference values from offline biochemistry analyzers. The cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML engine applied Savitzky-Golay first-derivative preprocessing and Standard Normal Variate (SNV) filtering to eliminate light scattering caused by varying cell density (turbidity). The validation statistics demonstrate laboratory-grade accuracy:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Analyte Parameter</th>
-<th>Calibration Range</th>
-<th>Validation Error (RMSEP)</th>
-<th>Correlation (R&sup2;)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Glucose</td>
-<td>0.5 &ndash; 8.0 g/L</td>
-<td><strong>&le; 0.22 g/L</strong></td>
-<td>0.991</td>
-</tr>
-<tr>
-<td>Lactate</td>
-<td>0.0 &ndash; 6.0 g/L</td>
-<td><strong>&le; 0.18 g/L</strong></td>
-<td>0.987</td>
-</tr>
-<tr>
-<td>Viable Cell Density (VCD)</td>
-<td>1.0 &ndash; 120.0 x 10<sup>5</sup> cells/mL</td>
-<td><strong>&plusmn; 4.5 x 10<sup>5</sup> cells/mL</strong></td>
-<td>0.994</td>
-</tr>
-</tbody>
-</table>
-<p>The predicted glucose concentration was outputted via <strong>ProChem</strong> using an OPC UA interface directly to the SCADA system. When the predicted glucose fell below 2.0 g/L, the SCADA controller automatically activated feed pumps, standardizing glucose at a steady 2.5 g/L without operator intervention.</p>
-<h2>Operational Benefits & Quality Improvements</h2>
-<p>By implementing real-time closed-loop feeding, the facility realized the following benefits:</p>
-<ul>
-<li><strong>Yield Increase:</strong> Monoclonal antibody (mAb) yield increased by 15.2% due to consistent nutrient supply and minimal byproduct toxicity.</li>
-<li><strong>Reduced Toxic Accumulation:</strong> Peak lactate levels were suppressed by 40% compared to historical manual batches.</li>
-<li><strong>Sterility Assurance:</strong> Manual sample draws were reduced by 85%, significantly lowering contamination events.</li>
-</ul>
-<h2>Conclusion</h2>
-<p>Deploying inline FT-NIR spectroscopy in bioreactors changes biopharma operations from retrogressive sampling to active control. By utilizing cali<span class="calix-x" style="color: #38b6ff !important;">X</span>'s chemometric models to automate feeding, biomanufacturers can optimize cell growth, secure sterility, and maximize batch yields.</p>
+<h2>How USTECH approaches this</h2>
+<p>USTECH's contribution to bioreactor monitoring is on the data side. The <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics suite provides the PCA and PLS tools described above for NIR, FTIR and Raman spectral data <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Whether a given technique and model reach the accuracy a feeding strategy needs is established in a feasibility study with your own samples and reference analyses, validated in line with ASTM E2898 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>FDA Guidance: <em>PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance</em>, September 2004.</li>
-<li>"Online Monitoring of Glucose and Lactate in Mammalian Cell Cultures Using Immersion Near-Infrared Probes," <em>Biotechnology and Bioengineering</em>, 2021.</li>
-<li>ASTM E2898 - Standard Guide for Risk-Based Technology Selection and Development of Process Analytical Technology (PAT) Applications.</li>
+<li id="ref-1">[1] Esmonde-White, K.A., Cuellar, M., Uerpmann, C., Lenain, B., Lewis, I.R. (2017). Raman spectroscopy as a process analytical technology for pharmaceutical manufacturing and bioprocessing. <em>Analytical and Bioanalytical Chemistry</em>, 409(3), 637&ndash;649. <a href="https://doi.org/10.1007/s00216-016-9824-1" target="_blank" rel="noopener">doi:10.1007/s00216-016-9824-1</a></li>
+<li id="ref-2">[2] Matthews, T.E., Berry, B.N., Smelko, J., Moretto, J., Moore, B., Wiltberger, K. (2016). Closed loop control of lactate concentration in mammalian cell culture by Raman spectroscopy leads to improved cell density, viability, and biopharmaceutical protein production. <em>Biotechnology and Bioengineering</em>, 113(11), 2416&ndash;2424. <a href="https://doi.org/10.1002/bit.26018" target="_blank" rel="noopener">doi:10.1002/bit.26018</a></li>
+<li id="ref-3">[3] U.S. Food and Drug Administration (2004). <em>Guidance for Industry: PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> CDER, CVM and ORA, Rockville, MD. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance" target="_blank" rel="noopener">fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance</a></li>
+<li id="ref-4">[4] Tamburini, E., Marchetti, M., Pedrini, P. (2014). Monitoring key parameters in bioprocesses using near-infrared technology. <em>Sensors</em>, 14(10), 18941&ndash;18959. <a href="https://doi.org/10.3390/s141018941" target="_blank" rel="noopener">doi:10.3390/s141018941</a></li>
+<li id="ref-5">[5] Arnold, S.A., Crowley, J., Woods, N., Harvey, L.M., McNeil, B. (2003). In-situ near infrared spectroscopy to monitor key analytes in mammalian cell cultivation. <em>Biotechnology and Bioengineering</em>, 84(1), 13&ndash;19. <a href="https://doi.org/10.1002/bit.10738" target="_blank" rel="noopener">doi:10.1002/bit.10738</a></li>
+<li id="ref-6">[6] Rhiel, M., Cohen, M.B., Murhammer, D.W., Arnold, M.A. (2002). Nondestructive near-infrared spectroscopic measurement of multiple analytes in undiluted samples of serum-based cell culture media. <em>Biotechnology and Bioengineering</em>, 77(1), 73&ndash;82. <a href="https://doi.org/10.1002/bit.10093" target="_blank" rel="noopener">doi:10.1002/bit.10093</a></li>
+<li id="ref-7">[7] Abu-Absi, N.R., Kenty, B.M., Cuellar, M.E., Borys, M.C., Sakhamuri, S., Strachan, D.J., Hausladen, M.C., Li, Z.J. (2011). Real time monitoring of multiple parameters in mammalian cell culture bioreactors using an in-line Raman spectroscopy probe. <em>Biotechnology and Bioengineering</em>, 108(5), 1215&ndash;1221. <a href="https://doi.org/10.1002/bit.23023" target="_blank" rel="noopener">doi:10.1002/bit.23023</a></li>
+<li id="ref-8">[8] Berry, B.N., Dobrowsky, T.M., Timson, R.C., Kshirsagar, R., Ryll, T., Wiltberger, K. (2016). Quick generation of Raman spectroscopy based in-process glucose control to influence biopharmaceutical protein product quality during mammalian cell culture. <em>Biotechnology Progress</em>, 32(1), 224&ndash;234. <a href="https://doi.org/10.1002/btpr.2205" target="_blank" rel="noopener">doi:10.1002/btpr.2205</a></li>
+<li id="ref-9">[9] Rhiel, M., Ducommun, P., Bolzonella, I., Marison, I., von Stockar, U. (2002). Real-time in situ monitoring of freely suspended and immobilized cell cultures based on mid-infrared spectroscopic measurements. <em>Biotechnology and Bioengineering</em>, 77(2), 174&ndash;185. <a href="https://doi.org/10.1002/bit.10134" target="_blank" rel="noopener">doi:10.1002/bit.10134</a></li>
+<li id="ref-10">[10] Teixeira, A.P., Oliveira, R., Alves, P.M., Carrondo, M.J.T. (2009). Advances in on-line monitoring and control of mammalian cell cultures: Supporting the PAT initiative. <em>Biotechnology Advances</em>, 27(6), 726&ndash;732. <a href="https://doi.org/10.1016/j.biotechadv.2009.05.003" target="_blank" rel="noopener">doi:10.1016/j.biotechadv.2009.05.003</a></li>
+<li id="ref-11">[11] Louren&ccedil;o, N.D., Lopes, J.A., Almeida, C.F., Sarragu&ccedil;a, M.C., Pinheiro, H.M. (2012). Bioreactor monitoring with spectroscopy and chemometrics: a review. <em>Analytical and Bioanalytical Chemistry</em>, 404(4), 1211&ndash;1237. <a href="https://doi.org/10.1007/s00216-012-6073-9" target="_blank" rel="noopener">doi:10.1007/s00216-012-6073-9</a></li>
+<li id="ref-12">[12] ASTM E2898-20a. <em>Standard Guide for Risk-Based Validation of Analytical Methods for PAT Applications.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e2898-20a.html" target="_blank" rel="noopener">store.astm.org/e2898-20a.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, bioreactor calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -305,20 +271,20 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="card" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_pharma_blending.webp?v=1.0.5" alt="Blend Uniformity Verification in Active Pharmaceutical Blending" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-blend-uniformity-pharma.html" style="color: var(--accent-black); text-decoration: none;">Blend Uniformity Verification in Active Pharmaceutical Blending</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">How an FDA-compliant plant uses dynamic RSD values to verify dry powder homogeneity without stopping bin blenders.</p>
-<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Case Study</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why blend uniformity is a regulated in-process attribute, what thief sampling can and cannot tell you, and what the literature shows about in-line NIR monitoring of powder blending as a PAT tool.</p>
+<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- MEMS Durability Card -->
 <div class="card" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_mems_durability.webp?v=1.0.5" alt="MEMS Comb-Drive Mechanical Durability in Industrial Environments" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-mems-durability-industrial.html" style="color: var(--accent-black); text-decoration: none;">MEMS Comb-Drive Mechanical Durability in Industrial Environments</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Documents USTECH's silicon chip-scale comb actuator stress tests and shock resistance limits for online production installations.</p>
-<a href="blog-mems-durability-industrial.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read White Paper</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">What the reliability literature says about silicon springs and comb drives under shock, vibration, temperature cycling and fatigue, and what the military and IEC environmental test methods actually specify.</p>
+<a href="blog-mems-durability-industrial.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 </div>
@@ -357,7 +323,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -376,6 +341,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

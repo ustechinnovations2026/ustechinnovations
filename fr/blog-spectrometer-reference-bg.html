@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Guide sur les arrière-plans internes automatiques avec drapeau d'or pour gérer la dérive environnementale." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Pourquoi un spectromètre NIR de procédé a besoin de mesures de référence, quels effets font dériver sa réponse, et comment les essais de performance et les contrôles de routine révèlent la dérive avant qu'elle n'atteigne les résultats." name="description"/>
 <meta content="contexte de référence du spectromètre, mesure de référence NIR, étalonnage de la spectroscopie de processus, normalisation des instruments" name="keywords"/>
 <title>Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/fr/blog-spectrometer-reference-bg.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-spectrometer-reference-bg.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-spectrometer-reference-bg.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "fr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,21 +61,21 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "fr",
   "headline": "Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus",
-  "description": "Guide sur les arrière-plans internes automatiques avec drapeau d'or pour gérer la dérive environnementale.",
+  "description": "Pourquoi un spectromètre NIR de procédé a besoin de mesures de référence, quels effets font dériver sa réponse, et comment les essais de performance et les contrôles de routine révèlent la dérive avant qu'elle n'atteigne les résultats.",
   "url": "https://www.ustechinnovations.com/fr/blog-spectrometer-reference-bg.html",
   "datePublished": "2026-04-02",
-  "dateModified": "2026-04-02",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
   "publisher": {
     "@id": "https://www.ustechinnovations.com/#org"
   },
-  "image": "https://www.ustechinnovations.com/images/blog_mems_durability.webp"
+  "image": "https://www.ustechinnovations.com/images/blog_what_is_nir.webp"
 }</script>
 <!-- BreadcrumbList Schema -->
 <script type="application/ld+json">{
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus | USTECH Innovations" property="og:title"/>
-<meta content="Guide sur les arrière-plans internes automatiques avec drapeau d'or pour gérer la dérive environnementale." property="og:description"/>
+<meta content="Pourquoi un spectromètre NIR de procédé a besoin de mesures de référence, quels effets font dériver sa réponse, et comment les essais de performance et les contrôles de routine révèlent la dérive avant qu'elle n'atteigne les résultats." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/fr/blog-spectrometer-reference-bg.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-spectrometer-reference-bg.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus | USTECH Innovations" property="og:image:alt"/>
 <meta content="fr_FR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus | USTECH Innovations" name="twitter:title"/>
-<meta content="Guide sur les arrière-plans internes automatiques avec drapeau d'or pour gérer la dérive environnementale." name="twitter:description"/>
+<meta content="Pourquoi un spectromètre NIR de procédé a besoin de mesures de référence, quels effets font dériver sa réponse, et comment les essais de performance et les contrôles de routine révèlent la dérive avant qu'elle n'atteigne les résultats." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-spectrometer-reference-bg.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -209,45 +216,59 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← Retour à Tous les Blogs et Publications</a>
-<img alt="Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_mems_durability.webp?v=1.0.5"/>
+<img alt="Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_what_is_nir.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">GUIDE — April 02, 2026 — 1 min de lecture</span>
+<span class="blog-post-meta">Guide — 2 avril 2026 — 5 min de lecture</span>
 <h1 class="blog-post-title">Standardisation des intervalles de mesure de fond de référence dans la spectroscopie de processus</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Comment les capteurs FT-NIR en ligne sur le bloc de vannes de normalisation permettent de contrôler l'ajout de crème en temps réel.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Pourquoi un spectromètre proche infrarouge de procédé a besoin d'une mesure de référence (fond), ce qui fait dériver sa réponse, comment sont définis les essais de performance de l'instrument et comment la dérive est détectée en utilisation de routine &mdash; d'après la littérature publiée et les pratiques ASTM applicables.</p>
 </div>
 <div class="blog-post-content">
-<h2>La cause de la dérive d’étalonnage des instruments</h2>
-<p>Les spectromètres industriels sont confrontés à des changements environnementaux extrêmes (par exemple, des changements de température et d'humidité ambiantes). Ces changements affectent la réponse du détecteur à diode et la sortie de la source lumineuse, provoquant une dérive des modèles d'étalonnage au fil du temps. Des mesures de fond de référence régulières sont nécessaires pour maintenir la précision.</p>
-<h2>Étalons de référence internes automatisés</h2>
-<p>Les spectromètres USTECH disposent d'étalons de référence internes automatisés (tels qu'un miroir drapeau doré). Le système mesure automatiquement le fond de référence à intervalles programmés, éliminant ainsi les tâches d'étalonnage manuel et garantissant la stabilité du modèle à long terme.</p>
+<h2>Pourquoi la mesure de référence compte</h2>
+<p>Un analyseur proche infrarouge installé sur un <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">procédé chimique ou pharmaceutique</a> ne mesure pas directement l'absorbance. Il enregistre un spectre d'intensité brut qui contient le profil d'émission de la source, la transmission de l'optique et la réponse du détecteur, et la réflectance ou la transmittance s'obtient en divisant ce spectre par une mesure de référence. Un étalonnage multivarié construit sur de tels spectres suppose que la part instrumentale du signal reste identique d'un jour à l'autre. Workman note qu'obtenir des résultats identiques dans le temps à partir d'un même étalonnage reste difficile, et cite la reproductibilité et la répétabilité de l'instrument ainsi que la présentation de l'échantillon parmi les facteurs en jeu <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Wise et Roginski décrivent la maintenance des modèles d'étalonnage comme nécessaire précisément parce que la matrice de l'échantillon ou la réponse de l'instrument évolue avec le temps <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>Matériaux de référence&nbsp;: ce que l'on mesure comme &ldquo;&nbsp;fond&nbsp;&rdquo;</h2>
+<p>En réflexion diffuse, la référence habituelle est un matériau blanc très réfléchissant, quasi lambertien. La poudre de polytétrafluoroéthylène (PTFE) pressée a été caractérisée au National Bureau of Standards américain comme étalon de réflexion diffuse, avec une réflectance absolue rapportée de 200 à 2500 nm, et ces mêmes travaux ont montré que sa réflectance dépend de la densité de préparation et de l'épaisseur, et que des contaminants peuvent provoquer une fluorescence <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Des matériaux en PTFE fritté tels que le Spectralon sont largement utilisés dans le même but&nbsp;; Stiegman et al. ont mis en évidence dans le Spectralon commercial une impureté hydrocarbonée intrinsèque qui dégradait la réflectance sous exposition UV et pouvait être éliminée par étuvage sous vide <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. La référence est donc elle-même un composant optique dont la propreté et l'état doivent être maîtrisés. La référence de longueur d'onde est une autre question&nbsp;: le NIST SRM 2036 est un verre d'oxydes de terres rares au contact de PTFE fritté, certifié pour les positions de sept bandes entre 975 nm et 1946 nm, et destiné à la vérification de l'échelle des longueurs d'onde des spectromètres NIR en mode réflexion diffuse ou transréflexion <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<h2>Sources de dérive</h2>
+<p>La dérive a des causes côté instrument et côté procédé, et une mesure de référence n'en corrige qu'une partie&nbsp;:</p>
+<ul>
+<li><strong>Réponse de l'instrument.</strong> Le chapitre de Workman consacré aux performances des instruments traite la dérive à court, moyen et long terme, l'exactitude et la précision en longueur d'onde, l'exactitude photométrique, la linéarité et le bruit comme des grandeurs distinctes à tester <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Un nouveau rapport à la référence compense les variations d'intensité de la source et de réponse du détecteur communes à l'échantillon et à la référence, mais pas un décalage de l'axe des longueurs d'onde, qui nécessite un étalon de longueur d'onde <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</li>
+<li><strong>Température.</strong> La température modifie de façon non linéaire la forme des spectres vibrationnels&nbsp;; W&uuml;lfert et al. ont montré, sur des spectres NIR à ondes courtes de mélanges éthanol/eau/2-propanol, que cela dégrade la capacité prédictive des modèles PLS locaux, tandis que des modèles globaux intégrant la variation de température sont plus robustes, au prix d'une certaine perte de sensibilité <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Hageman et al. passent en revue les méthodes de construction d'étalonnages robustes vis-à-vis de la température <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Il s'agit d'un effet lié à l'échantillon, que l'on n'élimine pas en refaisant la référence.</li>
+<li><strong>Interface de procédé.</strong> Dans les installations en ligne, les dépôts sur la fenêtre de la sonde font partie du trajet optique. Dans une étude en ligne sur le séchage en lit fluidisé, Bogomolov et al. ont constaté que l'encrassement de la sonde n'avait qu'un effet mineur sur l'exactitude de prédiction de l'humidité, la sonde étant périodiquement nettoyée et réétalonnée sans interrompre le procédé <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>&nbsp;; l'ampleur de l'effet dépend de l'application et doit être vérifiée plutôt que présumée.</li>
+</ul>
+<h2>Essais de performance de l'instrument</h2>
+<p>L'ASTM E1866 fournit les procédures de base pour concevoir des essais de performance de spectrophotomètres dans l'UV, le visible, le NIR et le moyen IR, dont des essais univariés Level Zero et Level One et des essais multivariés Level A et Level B pour des contrôles de routine rapides&nbsp;; elle s'applique aussi aux spectrophotomètres de procédé en ligne <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. De tels essais signalent un dysfonctionnement ou une modification du fonctionnement, mais ne le diagnostiquent ni ne le quantifient, et ne sont pas destinés à comparer des instruments de fabricants différents <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. L'ASTM E1944 définit des essais Level Zero et Level One pour les spectromètres FT-NIR de laboratoire, permettant à un analyste de comparer les performances d'un instrument un jour donné avec ses performances antérieures à l'aide d'un échantillon de contrôle compatible&nbsp;; elle n'est explicitement pas destinée aux analyseurs FT-NIR de procédé dédiés <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Les vérifications de l'échelle des longueurs d'onde s'appuient sur des étalons certifiés tels que le SRM 2036 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, et les essais photométriques et de bruit ainsi que leurs étalons sont décrits dans la littérature des manuels de NIR <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>À quelle fréquence refaire la référence et comment détecter la dérive</h2>
+<p>Aucune des sources ci-dessus ne prescrit d'intervalle universel de prise de référence&nbsp;; la fréquence découle de la rapidité avec laquelle l'instrument et son environnement évoluent et de ce que montrent les essais de performance. L'ASTM D6122-25, qui couvre les analyseurs infrarouges et Raman en ligne, at-line et de laboratoire utilisant des modèles multivariés, exige que les performances de l'instrument soient vérifiées, que chaque spectre soit contrôlé par rapport à l'espace d'étalonnage par détection des valeurs aberrantes, et que les résultats concordent avec la méthode d'essai primaire dans des limites définies par l'utilisateur <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Elle note que les essais de performance de l'instrument peuvent montrer si les méthodes de détection des aberrants réagissent aux variations de la réponse de l'instrument <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. En routine, cela fournit trois signaux complémentaires&nbsp;: une tendance dans les résultats des essais de performance, une hausse des statistiques d'aberrance spectrale et un écart croissant par rapport aux valeurs de référence du laboratoire. Wise et Roginski proposent une feuille de route pour décider, à partir de tels éléments, quand une maintenance est nécessaire et si la cause réside dans l'instrument ou dans les échantillons <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>&nbsp;; si la réponse de l'instrument elle-même a changé, les méthodes de standardisation et de transfert d'étalonnage s'appliquent <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>L'approche d'USTECH</h2>
+<p>L'analyseur FT-NIR de procédé <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">USTECH ProLine2550</a> associe une régulation de température intégrée à un étalonnage automatique sur une référence de longueur d'onde interne et est livré avec une plaque d'étalonnage de référence&nbsp;; le <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> surveille l'état de la source et l'intégrité de la fenêtre optique&nbsp;; et l'analyseur at-line <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> utilise un étalon de référence Spectralon. Des contrôles de performance du type décrit dans l'ASTM E1866 et la D6122 <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a> peuvent être combinés à la surveillance des aberrants dans le modèle de procédé. Le calendrier de référence et les contrôles nécessaires à une installation donnée sont établis lors d'une étude de faisabilité réalisée avec vos propres échantillons et conditions de procédé.</p>
 <div class="blog-post-references">
 <h3>Références</h3>
 <ul>
-<li>ASTM E1790 - Pratique standard pour l'analyse qualitative dans le proche infrarouge.</li>
-<li>"Automatisation des normes de référence dans l'analyse des processus pour atténuer la dérive du modèle d'étalonnage",<em>Journal de chimiométrie</em>, 2023.</li>
+<li id="ref-1">[1] Workman, J.J. Jr. (2018). A review of calibration transfer practices and instrument differences in spectroscopy. <em>Applied Spectroscopy</em>, 72(3), 340&ndash;365. <a href="https://doi.org/10.1177/0003702817736064" target="_blank" rel="noopener">doi:10.1177/0003702817736064</a></li>
+<li id="ref-2">[2] Wise, B.M., Roginski, R.T. (2015). A calibration model maintenance roadmap. <em>IFAC-PapersOnLine</em>, 48(8), 260&ndash;265. <a href="https://doi.org/10.1016/j.ifacol.2015.08.191" target="_blank" rel="noopener">doi:10.1016/j.ifacol.2015.08.191</a></li>
+<li id="ref-3">[3] Weidner, V.R., Hsia, J.J. (1981). Reflection properties of pressed polytetrafluoroethylene powder. <em>Journal of the Optical Society of America</em>, 71(7), 856&ndash;861. <a href="https://doi.org/10.1364/JOSA.71.000856" target="_blank" rel="noopener">doi:10.1364/JOSA.71.000856</a></li>
+<li id="ref-4">[4] Stiegman, A.E., Bruegge, C.J., Springsteen, A.W. (1993). Ultraviolet stability and contamination analysis of Spectralon diffuse reflectance material. <em>Optical Engineering</em>, 32(4), 799&ndash;804. <a href="https://doi.org/10.1117/12.132374" target="_blank" rel="noopener">doi:10.1117/12.132374</a></li>
+<li id="ref-5">[5] Choquette, S.J., Duewer, D.L., Hanssen, L.M., Early, E.A. (2005). Standard Reference Material 2036 near-infrared reflection wavelength standard. <em>Applied Spectroscopy</em>, 59(4), 496&ndash;504. <a href="https://doi.org/10.1366/0003702053641414" target="_blank" rel="noopener">doi:10.1366/0003702053641414</a></li>
+<li id="ref-6">[6] Workman, J. Jr. (2021). Instrument performance calibration. In: Ciurczak, E.W., Igne, B., Workman, J. Jr., Burns, D.A. (Eds.), <em>Handbook of Near-Infrared Analysis</em>, 4th ed., 163&ndash;185. CRC Press, Boca Raton. <a href="https://doi.org/10.1201/b22513-11" target="_blank" rel="noopener">doi:10.1201/b22513-11</a></li>
+<li id="ref-7">[7] W&uuml;lfert, F., Kok, W.Th., Smilde, A.K. (1998). Influence of temperature on vibrational spectra and consequences for the predictive ability of multivariate models. <em>Analytical Chemistry</em>, 70(9), 1761&ndash;1767. <a href="https://doi.org/10.1021/ac9709920" target="_blank" rel="noopener">doi:10.1021/ac9709920</a></li>
+<li id="ref-8">[8] Hageman, J.A., Westerhuis, J.A., Smilde, A.K. (2005). Temperature robust multivariate calibration: an overview of methods for dealing with temperature influences on near infrared spectra. <em>Journal of Near Infrared Spectroscopy</em>, 13(2), 53&ndash;62. <a href="https://doi.org/10.1255/jnirs.457" target="_blank" rel="noopener">doi:10.1255/jnirs.457</a></li>
+<li id="ref-9">[9] Bogomolov, A., Mannhardt, J., Heinzerling, O. (2018). Accuracy improvement of in-line near-infrared spectroscopic moisture monitoring in a fluidized bed drying process. <em>Frontiers in Chemistry</em>, 6, 388. <a href="https://doi.org/10.3389/fchem.2018.00388" target="_blank" rel="noopener">doi:10.3389/fchem.2018.00388</a></li>
+<li id="ref-10">[10] ASTM E1866-97(2021). <em>Standard Guide for Establishing Spectrophotometer Performance Tests.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1866-97r21.html" target="_blank" rel="noopener">store.astm.org/e1866-97r21.html</a></li>
+<li id="ref-11">[11] ASTM E1944-98(2021). <em>Standard Practice for Describing and Measuring Performance of Laboratory Fourier Transform Near-Infrared (FT-NIR) Spectrometers: Level Zero and Level One Tests.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1944-98r21.html" target="_blank" rel="noopener">store.astm.org/e1944-98r21.html</a></li>
+<li id="ref-12">[12] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Télécharger le rapport technique complet</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Accédez au document technique complet et non édité avec des formules spectroscopiques complètes, des ensembles de données d'étalonnage et des paramètres d'instrumentation.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Évaluez cette application pour votre procédé</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Notre équipe applications peut détailler la méthode, partager la littérature de référence et organiser une étude de faisabilité avec vos propres échantillons.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contactez-nous</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Lire ensuite</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -303,6 +324,6 @@
 <p>Conçu pour la précision scientifique et industrielle.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

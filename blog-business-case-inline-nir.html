@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A practical framework for quantifying the financial return of inline NIR with industry-specific cost models.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="A method for building the business case for inline NIR from your own plant data: which value levers to quantify, how variance reduction becomes a target shift, and which costs and risks belong on the other side.">
 <meta name="keywords" content="inline NIR ROI, business case spectroscopy, NIR investment payback, cost-benefit NIR analyzer, process analytics ROI">
 <title>How to Build the Business Case for Inline NIR | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-business-case-inline-nir.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-business-case-inline-nir.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-business-case-inline-nir.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "How to Build the Business Case for Inline NIR",
-"description": "A practical framework for quantifying the financial return of inline NIR with industry-specific cost models.",
+"description": "A method for building the business case for inline NIR from your own plant data: which value levers to quantify, how variance reduction becomes a target shift, and which costs and risks belong on the other side.",
 "url": "https://www.ustechinnovations.com/blog-business-case-inline-nir.html",
 "datePublished": "2026-06-25",
-"dateModified": "2026-06-25",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="How to Build the Business Case for Inline NIR | USTECH Innovations">
-    <meta property="og:description" content="A practical framework for quantifying the financial return of inline NIR with industry-specific cost models.">
+    <meta property="og:description" content="A method for building the business case for inline NIR from your own plant data: which value levers to quantify, how variance reduction becomes a target shift, and which costs and risks belong on the other side.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-business-case-inline-nir.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-business-case-inline-nir.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="How to Build the Business Case for Inline NIR | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Build the Business Case for Inline NIR | USTECH Innovations">
-    <meta name="twitter:description" content="A practical framework for quantifying the financial return of inline NIR with industry-specific cost models.">
+    <meta name="twitter:description" content="A method for building the business case for inline NIR from your own plant data: which value levers to quantify, how variance reduction becomes a target shift, and which costs and risks belong on the other side.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-business-case-inline-nir.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,77 +217,57 @@ Espa&#241;ol
 </a>
 <img src="images/blog_business_case_nir.webp?v=1.0.5" alt="Business Case for Inline NIR" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">Article &mdash; June 25, 2026 &mdash; 2 min read</span>
+<span class="blog-post-meta">Guide &mdash; June 25, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">How to Build the Business Case for Inline NIR</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">A practical framework for quantifying the financial return of inline NIR &mdash; with industry-specific cost models for dairy, feed, chemical, and pharmaceutical applications.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">A method, not a promise: which value levers an inline NIR analyzer can move, how to quantify each one from your own process data using process-capability and target-setting statistics, and which costs and risks belong on the other side of the ledger &mdash; with the quality-engineering and process-analytical literature behind each step.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Three Sources of ROI</h2>
-<p>The financial return from inline NIR investment comes from three distinct value streams. Most operations capture at least two simultaneously, and the combined impact typically delivers a <strong>payback period of 6&ndash;24 months</strong> depending on throughput and product value.</p>
-<blockquote>&ldquo;Most inline NIR installations pay for themselves in 6&ndash;24 months by simultaneously reducing give-away, eliminating off-spec batches, and cutting lab costs by 60&ndash;80%.&rdquo;</blockquote>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-<div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; padding: 1.5rem; border-left: 4px solid var(--accent-gold);"><h3 style="font-size: 1rem; margin: 0 0 0.5rem 0; color: var(--accent-black);">Stream 1: Give-Away Reduction</h3><p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">Eliminate systematic over-addition of expensive ingredients</p></div>
-<div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; padding: 1.5rem; border-left: 4px solid var(--accent-gold);"><h3 style="font-size: 1rem; margin: 0 0 0.5rem 0; color: var(--accent-black);">Stream 2: Off-Spec Reduction</h3><p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">Catch deviations mid-batch, not at batch release</p></div>
-<div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; padding: 1.5rem; border-left: 4px solid var(--accent-gold);"><h3 style="font-size: 1rem; margin: 0 0 0.5rem 0; color: var(--accent-black);">Stream 3: Lab Cost Reduction</h3><p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">60&ndash;80% fewer manual samples per shift</p></div>
+<h2>What the business case has to show</h2>
+<p>A request for an inline analyzer in the <a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">food and feed industry</a> or in chemical and pharmaceutical production competes with other capital projects and needs numbers that belong to the plant. The FDA's process analytical technology (PAT) guidance lists where the gains are likely to come from &mdash; shorter cycle times through on-, in- or at-line measurement and control, fewer rejects, less scrap and re-processing, real-time release, more automation and fewer human errors, better use of energy and materials, and more capacity &mdash; and states explicitly that these gains will vary with the process and the product <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. A business case is therefore a calculation on your own data, lever by lever. Where the costs of the existing laboratory routine arise is discussed in a separate article on <a href="blog-hidden-costs-lab-qc.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">the hidden costs of lab-based quality control</a>.</p>
+<h2>Lever one: variability, target setting and giveaway</h2>
+<p>The largest lever is usually the margin between the process target and its specification limit. Begin with a capability study on historical data: the indices Cp, CPU, CPL and Cpk relate the spread and the centring of the process to its tolerances and can be used with one-sided limits such as a protein minimum or a moisture maximum <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Hunter and Kartha showed that the further the target is set on the safe side, the fewer items fall outside the limit but the higher the give-away cost, with the most profitable target depending on the process variability <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>; Golhar gave a simple linear expression for the optimum process mean when underweight units must be reprocessed <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. For packed goods the regulator fixes part of the problem: Directive 76/211/EEC requires that the average content is not less than the nominal quantity and limits the proportion of packages below the tolerable negative error, so the target a packer must run depends on its standard deviation <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>The method follows directly. Estimate the current mean and standard deviation of the critical attribute from your own records, compute the target your current spread requires, then repeat the calculation with the spread you expect under closer measurement and control; the value is the difference in target multiplied by throughput and by the cost of the constituent or the energy involved. Two corrections keep this honest. First, the observed variance is the sum of the process variance and the measurement-system (gauge) variance, so a gauge capability study of the analyzer itself belongs in the calculation <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Second, a faster measurement reduces variability only if someone or something acts on it; the value comes from process monitoring and control, of which the analyzer is one part <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>The other levers, quantified the same way</h2>
+<p>Each remaining lever in the FDA list maps to a record the plant already keeps <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Rejects and re-processing: count the off-spec batches or lots over a representative period, with their disposition cost, and estimate which of them an earlier result would have allowed to be corrected. Release time: measure how long product waits for a laboratory result and what the wait costs. Laboratory workload: list the routine samples per shift the analyzer could cover, while keeping the reference analyses needed to build and check the calibration <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Energy: where a drying or evaporation step is run to a conservative moisture target, the target-setting models developed for fill quantities <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a> can be adapted to the moisture specification. Wider uses of process data, such as fault diagnosis <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>, are harder to price and better listed than counted.</p>
+<h2>The cost side</h2>
+<p>Beyond the purchase price, the main items are the sample interface and installation, integration into the control system, and calibration. A multivariate calibration needs a calibration set of samples with reference values that spans the variation expected in use, followed by validation and ongoing checks of performance <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>; each of these consumes reference analyses and analyst time. Calibrations also need maintenance when raw materials, the process or the instrument change, and Workman notes that obtaining identical results from several instruments with one calibration still eludes technologists, so replacing or adding a unit is a project in its own right <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. These costs recur and belong in the case as annual figures.</p>
+<h2>Risks to put in the case</h2>
+<ul>
+<li><strong>The measurement may not represent the stream.</strong> The Theory of Sampling treats sample selection as an error source in its own right, and an inline probe sees only part of a moving stream <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>; validate the interface against representative reference samples before trusting the variance figures.</li>
+<li><strong>Published on-line evidence is thinner than it looks.</strong> Porep et al. caution that many studies claiming on-line NIR application in food production were in fact laboratory work <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>; benefits should be estimated from trials on the actual line.</li>
+<li><strong>Count only the variance reduction you will act on.</strong> A target shift is justified by the measured process distribution under the new control scheme <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>, not by the presence of a faster instrument.</li>
+</ul>
+<h2>How USTECH approaches this</h2>
+<p>USTECH supports the calculation with measurements: the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> process FT-NIR analyzer for inline use in blenders, reactors and pipelines, the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> and <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> rugged inline NIR analyzers, and the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> at-line analyzer provide the data; calibrations are developed and maintained in <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>; and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> links the analyzer to PLC/SCADA so that a result can drive setpoint control. The spread an analyzer achieves on a given product, and therefore the size of the target shift, is established in a feasibility study with your own samples and reference analyses.</p>
+<div class="blog-post-references">
+<h3>References</h3>
+<ul>
+<li id="ref-1">[1] U.S. Food and Drug Administration (2004). <em>Guidance for Industry: PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> FDA, Rockville, MD. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance" target="_blank" rel="noopener">fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance</a></li>
+<li id="ref-2">[2] Kane, V.E. (1986). Process capability indices. <em>Journal of Quality Technology</em>, 18(1), 41&ndash;52. <a href="https://doi.org/10.1080/00224065.1986.11978984" target="_blank" rel="noopener">doi:10.1080/00224065.1986.11978984</a></li>
+<li id="ref-3">[3] Montgomery, D.C. (2019). <em>Introduction to Statistical Quality Control</em>, 8th ed. Wiley, Hoboken, NJ, Chapter 8: Process and Measurement System Capability Analysis. ISBN 978-1-119-39930-8. <a href="https://www.wiley.com/en-us/Introduction+to+Statistical+Quality+Control%2C+8th+Edition-p-9781119399308" target="_blank" rel="noopener">wiley.com/en-us/Introduction+to+Statistical+Quality+Control,+8th+Edition-p-9781119399308</a></li>
+<li id="ref-4">[4] Hunter, W.G., Kartha, C.P. (1977). Determining the most profitable target value for a production process. <em>Journal of Quality Technology</em>, 9(4), 176&ndash;181. <a href="https://doi.org/10.1080/00224065.1977.11980794" target="_blank" rel="noopener">doi:10.1080/00224065.1977.11980794</a></li>
+<li id="ref-5">[5] Golhar, D.Y. (1987). Determination of the Best Mean Contents for a "Canning Problem". <em>Journal of Quality Technology</em>, 19(2), 82&ndash;84. <a href="https://doi.org/10.1080/00224065.1987.11979042" target="_blank" rel="noopener">doi:10.1080/00224065.1987.11979042</a></li>
+<li id="ref-6">[6] Council Directive 76/211/EEC of 20 January 1976 on the approximation of the laws of the Member States relating to the making-up by weight or by volume of certain prepackaged products, Annex I. <em>Official Journal of the European Communities</em>, L 46, 21.2.1976 (as amended). <a href="https://eur-lex.europa.eu/eli/dir/1976/211/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/dir/1976/211/oj</a></li>
+<li id="ref-7">[7] Kourti, T. (2006). Process analytical technology beyond real-time analyzers: the role of multivariate analysis. <em>Critical Reviews in Analytical Chemistry</em>, 36(3&ndash;4), 257&ndash;278. <a href="https://doi.org/10.1080/10408340600969957" target="_blank" rel="noopener">doi:10.1080/10408340600969957</a></li>
+<li id="ref-8">[8] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-9">[9] Workman, J.J. Jr. (2018). A review of calibration transfer practices and instrument differences in spectroscopy. <em>Applied Spectroscopy</em>, 72(3), 340&ndash;365. <a href="https://doi.org/10.1177/0003702817736064" target="_blank" rel="noopener">doi:10.1177/0003702817736064</a></li>
+<li id="ref-10">[10] Petersen, L., Minkkinen, P., Esbensen, K.H. (2005). Representative sampling for reliable data analysis: Theory of Sampling. <em>Chemometrics and Intelligent Laboratory Systems</em>, 77(1&ndash;2), 261&ndash;277. <a href="https://doi.org/10.1016/j.chemolab.2004.09.013" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2004.09.013</a></li>
+<li id="ref-11">[11] Porep, J.U., Kammerer, D.R., Carle, R. (2015). On-line application of near infrared (NIR) spectroscopy in food production. <em>Trends in Food Science &amp; Technology</em>, 46(2), 211&ndash;230. <a href="https://doi.org/10.1016/j.tifs.2015.10.002" target="_blank" rel="noopener">doi:10.1016/j.tifs.2015.10.002</a></li>
+</ul>
 </div>
-<h2>Industry-Specific ROI Models</h2>
-<div style="overflow-x: auto;">
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-<thead><tr style="background: var(--accent-black); color: #fff;">
-<th style="padding: 0.75rem 1rem; text-align: left;">Industry</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">Cost of the Problem</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">NIR Solution Impact</th>
-</tr></thead>
-<tbody>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; font-weight: 600;"><a href="industry-dairy.html" style="color: var(--accent-gold);">Dairy</a></td><td style="padding: 0.75rem 1rem;">0.20% fat give-away on 500,000 L/day &asymp; &euro;213,000/year</td><td style="padding: 0.75rem 1rem;">Reduces to &lt;0.05% | Payback: 12&ndash;18 months</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; font-weight: 600;"><a href="industry-food-feed.html" style="color: var(--accent-gold);">Feed</a></td><td style="padding: 0.75rem 1rem;">0.30% protein give-away on 200 t/day &asymp; &euro;90,000&ndash;180,000/year</td><td style="padding: 0.75rem 1rem;">Reduces to &lt;0.08% | Payback: 8&ndash;14 months</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; font-weight: 600;"><a href="industry-chemical-pharma.html" style="color: var(--accent-gold);">Chemical</a></td><td style="padding: 0.75rem 1rem;">1&ndash;2 off-spec batches/month &times; &euro;15,000 rework &asymp; &euro;360,000/year</td><td style="padding: 0.75rem 1rem;">Batch failure rate reduced 40%</td></tr>
-<tr><td style="padding: 0.75rem 1rem; font-weight: 600;"><a href="industry-chemical-pharma.html" style="color: var(--accent-gold);">Pharma</a></td><td style="padding: 0.75rem 1rem;">Single blend failure &asymp; &euro;50,000&ndash;500,000</td><td style="padding: 0.75rem 1rem;">MBSD endpoint eliminates over/under-blending</td></tr>
-</tbody>
-</table>
 </div>
-<h2>Five-Step Calculation Framework</h2>
-<div style="overflow-x: auto;">
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-<thead><tr style="background: var(--accent-black); color: #fff;">
-<th style="padding: 0.75rem 1rem; text-align: center; width: 60px;">Step</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">Description</th>
-</tr></thead>
-<tbody>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">1</td><td style="padding: 0.75rem 1rem;">Identify your primary value stream: give-away, off-spec, or lab cost</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">2</td><td style="padding: 0.75rem 1rem;">Quantify current annual cost using your own production data</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">3</td><td style="padding: 0.75rem 1rem;">Apply conservative reduction factor: 30&ndash;50% for give-away, 40% for off-spec</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">4</td><td style="padding: 0.75rem 1rem;">Compare with <a href="product-proline-2550.html" style="color: var(--accent-gold);">ProLine2550</a> investment cost</td></tr>
-<tr><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">5</td><td style="padding: 0.75rem 1rem;">Add secondary benefits: traceability, regulatory documentation, lab headcount</td></tr>
-</tbody>
-</table>
-</div>
-<blockquote>&ldquo;A dairy plant processing 500,000 litres per day can save over &euro;200,000 annually by reducing fat give-away from 0.20% to below 0.05% &mdash; paying back the instrument in 12&ndash;18 months.&rdquo;</blockquote>
-<p>Ready to build your business case? <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Contact USTECH Innovations</a> for a tailored ROI analysis, or explore <a href="blog-hidden-costs-lab-qc.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">the hidden costs of lab-based QC</a> and our <a href="blog-cattle-feed-waste.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cattle feed waste reduction case study</a>.</p>
-</div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, process diagrams, and ROI calculations.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<div class="card" onclick="window.location.href='blog-hidden-costs-lab-qc.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_hidden_costs.webp?v=1.0.5" alt="Hidden Costs of Lab QC" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hidden-costs-lab-qc.html" style="color: var(--accent-black); text-decoration: none;">The Hidden Costs of Lab-Based Quality Control</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Discover the true financial impact of lab-based QC.</p><a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a></div></div>
-<div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_cattle_feed.webp?v=1.0.5" alt="Cattle Feed Waste" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">Reducing Ingredient Waste in Cattle Feed</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A statistical study demonstrating 1.2% average yield improvement.</p><a href="blog-cattle-feed-waste.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Case Study</a></div></div>
+<div class="card" onclick="window.location.href='blog-hidden-costs-lab-qc.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_hidden_costs.webp?v=1.0.5" alt="Hidden Costs of Lab QC" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hidden-costs-lab-qc.html" style="color: var(--accent-black); text-decoration: none;">The Hidden Costs of Lab-Based Quality Control</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Result latency, sampling error, over-formulation and reference-method chemistry each carry a cost that never appears on the laboratory budget; what the literature says, and where process NIR fits.</p><a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a></div></div>
+<div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_cattle_feed.webp?v=1.0.5" alt="Cattle Feed Waste" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">Reducing Ingredient Waste in Cattle Feed</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.</p><a href="blog-cattle-feed-waste.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a></div></div>
 </div>
 </div>
 </article>
@@ -317,7 +304,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0;">
@@ -336,6 +322,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

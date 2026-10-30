@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="description" content="52 مقالة وورقة بيضاء ودليلاً حول معايرة NIR ونمذجة PLS والتحكم في العمليات المضمنة وضمان الجودة في الأغذية والألبان والكيماويات.">
 <title>مدونة التحليل الطيفي بالأشعة تحت الحمراء القريبة والأوراق البيضاء | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.2">
+<link rel="stylesheet" href="../index.css?v=1.1.3">
 <style>
 .toolbar-btn:hover {
 border-color: var(--accent-gold) !important;
-color: var(--accent-gold) !important;
+color: var(--accent-gold-text) !important;
 background: rgba(213, 178, 121, 0.05) !important;
 }
 .dropdown-menu-list {
@@ -45,14 +46,14 @@ background: var(--bg-secondary);
 color: var(--accent-black);
 }
 .dropdown-menu-item.active {
-color: var(--accent-gold) !important;
+color: var(--accent-gold-text) !important;
 font-weight: 600;
 background: rgba(213, 178, 121, 0.05);
 }
 .dropdown-menu-item.active::after {
 content: "?";
 font-weight: bold;
-color: var(--accent-gold);
+color: var(--accent-gold-text);
 font-size: 0.75rem;
 margin-left: 0.5rem;
 }
@@ -63,12 +64,12 @@ margin-left: 0.5rem;
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
 "logo": "https://www.ustechinnovations.com/images/logo.svg",
-"description": "Manufacturer of inline FT-NIR spectroscopy systems, chemometrics software and calibration models for food, feed, dairy and chemical processing.",
+"description": "الشركة المصنعة لأنظمة التحليل الطيفي المضمنة FT-NIR وبرامج القياس الكيميائي ونماذج المعايرة للأغذية والأعلاف ومنتجات الألبان والمعالجة الكيميائية.",
 "foundingDate": "2023",
 "address": {
 "@type": "PostalAddress",
@@ -88,7 +89,7 @@ margin-left: 0.5rem;
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "ar",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -255,7 +256,7 @@ margin-left: 0.5rem;
 <div class="blog-toolbar" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem;">
 <!-- Active status / item count -->
 <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold);">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold-text);">
 <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
 <polyline points="14 2 14 8 20 8"></polyline>
 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -322,523 +323,523 @@ margin-left: 0.5rem;
 </div>
 <div class="grid grid-3" id="blog-grid">
 <!-- Blog: How NIR Calibration Works: PLS Explained -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-pls-calibration-explained.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-pls-calibration-explained.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pls_explained.webp?v=1.0.5" alt="كيف تعمل معايرة NIR: شرح PLS" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 25 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">كيف تعمل معايرة NIR: شرح PLS</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">من الطيف الخام إلى قيمة التركيب — كيف تحول نماذج PLS الكيميائية بيانات NIR إلى قياسات دقيقة وقابلة للتنفيذ.</p>
-<a href="blog-pls-calibration-explained.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل بلغة مبسّطة لكيفية تحويل معايرة PLS أطياف NIR إلى قيم للتركيب: المتغيرات الكامنة، وعدد العوامل، وإحصاءات المصادقة، والحدود التي تفرضها الطريقة المرجعية.</p>
+<a href="blog-pls-calibration-explained.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: The Power of In-Line FT-NIR Analysis -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-06-25" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.5" alt="قوة تحليل FT-NIR المدمج" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-25" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.6" alt="قوة التحليل على الخط: نقلة نوعية في مراقبة الجودة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 25 يونيو 2026 — قراءة لمدة 4 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">قوة تحليل FT-NIR المدمج: نقلة نوعية في مراقبة الجودة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">تخلص من خسائر الإنتاج الناتجة عن انتظار نتائج المختبر. اكتشف كيف تحلل تقنية FT-NIR معايير الجودة في غضون ثوانٍ.</p>
-<a href="blog-inline-ftnir-paradigm.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة 5 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">قوة التحليل على الخط: نقلة نوعية في مراقبة الجودة</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي ينطوي عليه فعلًا الانتقال من مراقبة الجودة التفاعلية القائمة على المختبر إلى القياس والتحكم في الخط: إطار PAT، ومصطلحات ICH، واختبار الإفراج في الزمن الحقيقي، وحلقات التحكم متعددة المتغيرات.</p>
+<a href="blog-inline-ftnir-paradigm.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog: What Is NIR Spectroscopy? -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_what_is_nir.webp?v=1.0.5" alt="ما هو التحليل الطيفي NIR؟" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 25 يونيو 2026 — قراءة لمدة 4 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">ما هو التحليل الطيفي NIR؟</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">شرح مبسط لكيفية عمل التحليل الطيفي للأشعة تحت الحمراء القريبة ولماذا يعد التقنية التحليلية غير المدمرة الأكثر تنوعاً.</p>
-<a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">مقدمة إلى مطيافية الأشعة تحت الحمراء القريبة: ما ضوء NIR، وأين اكتُشف، وما الذي تكشفه نطاقات النغمات التوافقية والتركيب، ولماذا تُعدّ المعايرة أساسية، وأين تبلغ التقنية حدودها.</p>
+<a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: The 1,350-2,550 nm Spectral Advantage -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-spectral-range-advantage.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_spectral_advantage.webp?v=1.0.5" alt="الميزة الطيفية 1350-2550 نانومتر" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-spectral-range-advantage.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_spectral_advantage.webp?v=1.0.5" alt="اختيار المنطقة الطيفية في الأشعة تحت الحمراء القريبة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة دقيقتين</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">الميزة الطيفية 1,350–2,550 نانومتر</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يعتبر النطاق الطيفي أهم مواصفة عند اختيار محلل NIR — وما يوفره نطاق ProLine2550 البالغ 1,200 نانومتر.</p>
-<a href="blog-spectral-range-advantage.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 25 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">اختيار المنطقة الطيفية في الأشعة تحت الحمراء القريبة</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي تحمله كل من مناطق الموجة القصيرة والنغمات التوافقية والتراكيب في الأشعة تحت الحمراء القريبة، وأيّ الكواشف تبلغها، ولماذا تتوقف المنطقة المناسبة على العينة لا على أوسع مدى.</p>
+<a href="blog-spectral-range-advantage.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: ProChem: Closing the Loop -->
 <div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-prochem-measurement-control.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_prochem_control.webp?v=1.0.5" alt="التحكم ببرنامج ProChem" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة 7 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">ProChem: إغلاق الحلقة بين القياس والتحكم</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يحول برنامج ProChem أطياف NIR الخام إلى إشارات تحكم في العملية في الوقت الفعلي، وسجلات الدفعات، وبيانات جودة قابلة للتنفيذ.</p>
-<a href="blog-prochem-measurement-control.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي يجب أن يحدث بين خروج الطيف من المحلّل وتغيّر نقطة الضبط في PLC: التحقق من صحة النتيجة، وبنية التحكم، ومعالجة الإنذارات، والسجل الذي يجعل القرار قابلاً للتتبع.</p>
+<a href="blog-prochem-measurement-control.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog: How to Build the Business Case for Inline NIR -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-business-case-inline-nir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-business-case-inline-nir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_business_case_nir.webp?v=1.0.5" alt="دراسة الجدوى لتقنية NIR المدمجة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 25 يونيو 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 25 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">كيفية بناء دراسة الجدوى لتقنية NIR المدمجة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">إطار عملي لتحديد العائد المالي باستخدام نماذج التكلفة الخاصة بصناعات الألبان والأعلاف والكيماويات والأدوية.</p>
-<a href="blog-business-case-inline-nir.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">طريقة لبناء دراسة الجدوى الاقتصادية لـ NIR في الخط انطلاقًا من بيانات مصنعكم: أي روافع القيمة ينبغي قياسها كميًا، وكيف يتحول خفض التباين إلى إزاحة في القيمة المستهدفة، وأي التكاليف والمخاطر تقع في الجانب الآخر.</p>
+<a href="blog-business-case-inline-nir.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog calibration -->
-<div class="card blog-card" data-category="whitepaper" data-industry="general-tech" data-date="2026-01-15" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_sensor.webp?v=1.0.5" alt="جدوى نقل المعايرة على مقاييس الطيف MEMS" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-02-18" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="نقل المعايرة بين مطيافات NIR: الأساليب وتقييم الجدوى" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 15 يناير 2026 — قراءة لمدة 4 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">جدوى نقل المعايرة على مقاييس الطيف MEMS</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">يناقش كيف يحد تصنيع MEMS من الاختلافات البصرية بين الأجهزة، مما يتيح إمكانية نقل المعايرة الفورية دون الحاجة إلى تعديلات معقدة على النموذج.</p>
-<a href="blog-calibration-transfer.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 18 فبراير 2026 — قراءة لمدة 5 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">نقل المعايرة بين مطيافات NIR: الأساليب وتقييم الجدوى</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا نادراً ما تعمل معايرة NIR المبنية على مطياف واحد دون تغيير على مطياف آخر، وما طرائق التوحيد القياسي وتعديل النماذج التي تصفها الأدبيات، وكيف تُقيَّم جدوى النقل لعائلة من الأجهزة.</p>
+<a href="blog-calibration-transfer.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog cattle -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-03-12" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-03-05" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_cattle_feed.webp?v=1.0.5" alt="تقليل هدر المكونات في إنتاج أعلاف الماشية" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 12 مارس 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 05 مارس 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تقليل هدر المكونات في إنتاج أعلاف الماشية</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة إحصائية توضح تحسناً بنسبة 1.2٪ في متوسط إنتاجية المنتج من خلال نشر مستشعرات NIR المدمجة فوق مخارج خلاط الأعلاف.</p>
-<a href="blog-cattle-feed-waste.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تُركَّب أعلاف الماشية بزيادة تحسّباً لتباين المكوّنات، وما تقوله الأدبيات عن مصادر هذا التباين، وكيف يضيّق قياس NIR عند الاستلام وعند الخلاط هامشَ الأمان.</p>
+<a href="blog-cattle-feed-waste.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog pls -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-05" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-05-12" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pls_regression.webp?v=1.0.5" alt="مقدمة عن انحدار PLS في حزمة caliX" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 05 أبريل 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 12 مايو 2026 — قراءة لمدة 7 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مقدمة عن انحدار PLS في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> الحزمة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">برنامج تعليمي خطوة بخطوة يشرح كيفية تجميع نماذج المعايرة من قيم الكيمياء الرطبة المرجعية باستخدام cali<span class="calix-x" style="color: #38b6ff !important;">X</span> المنصة.</p>
-<a href="blog-pls-regression-calix.html" class="btn-text" style="margin-top: auto;">قراءة البرنامج التعليمي</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">جولة عملية في معايرة PLS: كيف تُقسَّم البيانات، وكيف تُختار المعالجة المسبقة وعدد المتغيرات الكامنة بالتحقق من الصحة، وأي التشخيصات ينبغي قراءتها، وكيف يُحافَظ على النموذج حياً في الإنتاج.</p>
+<a href="blog-pls-regression-calix.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog hydroxyl -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-05-15" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-01" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_polyol_reactors.webp?v=1.0.5" alt="مراقبة قيمة الهيدروكسيل في الوقت الفعلي في إنتاج البوليول" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 15 مايو 2026 — قراءة لمدة 3 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 01 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة قيمة الهيدروكسيل في الوقت الفعلي في إنتاج البوليول</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ورقة بيضاء مفصلة تشرح التتبع المدمج في الوقت الفعلي لقيمة الهيدروكسيل في حلقات البلمرة الكيميائية باستخدام التحليل الطيفي NIR.</p>
-<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يُعدّ رقم الهيدروكسيل متغير نقطة النهاية في إنتاج البوليولات، وما الذي تشترطه طرائق المعايرة المرجعية ومواصفات NIR، ولماذا تمثل درجة الحرارة العائق الرئيسي أمام معايرة داخل المفاعل.</p>
+<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog moisture -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-06-18" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-03" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_powder.webp?v=1.0.5" alt="توحيد الرطوبة في التجفيف بالرذاذ لمسحوق الحليب" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 18 يونيو 2026 — قراءة لمدة 3 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 03 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">توحيد الرطوبة في التجفيف بالرذاذ لمسحوق الحليب</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف استخدم مصنع ألبان عالمي مراقبة الرطوبة المدمجة على مجففات الرذاذ لتحسين غلة المواد الخام ومنع انسداد المسحوق اللزج.</p>
-<a href="blog-moisture-milk-powder.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تحدّد رطوبة المخرج في مجفّف رذاذ الحليب البودرة الالتصاقَ والتكتّل ومدة الصلاحية والمردود، وأيّ المتغيّرات يستطيع المشغّل تحريكها، وكيف تغذّي قيمة رطوبة NIR المباشرة حلقة التحكّم.</p>
+<a href="blog-moisture-milk-powder.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog savitzky -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-10" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-04" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_spectral_math.webp?v=1.0.5" alt="فهم تصفية Savitzky-Golay في المعالجة المسبقة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 10 أبريل 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 04 يونيو 2026 — قراءة لمدة 3 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">فهم تصفية Savitzky-Golay في المعالجة المسبقة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل تعليمي حول حسابات المعالجة المسبقة الطيفية، واختيار معامل التنعيم، وتكوينات المشتقات في cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
-<a href="blog-savitzky-golay-filtering.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي يفعله مرشح سافيتزكي-غولاي (Savitzky-Golay) فعليًا بالطيف، ولماذا تزيل المشتقات خط الأساس، وكيف ينبغي اختيار طول النافذة ودرجة كثير الحدود، مع الأدبيات الأصلية واللاحقة.</p>
+<a href="blog-savitzky-golay-filtering.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog blend -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-05-20" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-05" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pharma_blending.webp?v=1.0.5" alt="التحقق من تجانس المزيج في الخلط الدوائي الفعال" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 20 مايو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 05 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التحقق من تجانس المزيج في الخلط الدوائي الفعال</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يستخدم مصنع متوافق مع إدارة الغذاء والدواء (FDA) قيم RSD الديناميكية للتحقق من تجانس المسحوق الجاف دون إيقاف خلاطات الصناديق.</p>
-<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يُعدّ تجانس الخلطة سمة منظَّمة أثناء العملية، وما الذي يمكن لأخذ العينات بالمسبار أن يخبرك به وما لا يمكنه، وما الذي تُظهره الأدبيات بشأن مراقبة خلط المساحيق داخل الخط بتقنية NIR بوصفها أداة PAT.</p>
+<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog mems -->
-<div class="card blog-card" data-category="whitepaper" data-industry="general-tech" data-date="2026-02-10" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-06" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_mems_durability.webp?v=1.0.5" alt="المتانة الميكانيكية لمحرك المشط MEMS في البيئات الصناعية" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 10 فبراير 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 06 يونيو 2026 — قراءة لمدة 6 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">المتانة الميكانيكية لمحرك المشط MEMS في البيئات الصناعية</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">يوثق اختبارات إجهاد مشغل المشط على مقياس رقاقة السيليكون الخاص بشركة USTECH وحدود مقاومة الصدمات لتركيبات الإنتاج عبر الإنترنت.</p>
-<a href="blog-mems-durability-industrial.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما تقوله أدبيات الموثوقية عن النوابض السيليكونية ومحرّكات المشط تحت الصدمات والاهتزاز والتدوير الحراري والكلل، وما تنصّ عليه فعلًا طرائق الاختبار البيئي العسكرية وطرائق IEC.</p>
+<a href="blog-mems-durability-industrial.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog pca -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-03-20" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-07" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pca_chemometrics.webp?v=1.0.5" alt="تطوير نماذج تصنيف كيميائية قوية عبر PCA" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 20 مارس 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 07 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تطوير نماذج تصنيف كيميائية قوية عبر PCA</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">منهجية خطوة بخطوة تشرح تحليل المكونات الرئيسية (PCA) لتحديد جودة المواد الخام.</p>
-<a href="blog-pca-classification-models.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تتحول درجات PCA وتحميلاته وبواقيه إلى نموذج تصنيف، ومن أين تأتي حدود Hotelling وQ، ولماذا تختلف نمذجة الفئات عن PLS-DA، وكيف تتوقع الجهات التنظيمية التحقق من صحة نموذج NIR نوعي.</p>
+<a href="blog-pca-classification-models.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog starch -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-06-02" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-08" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_starch_milling.webp?v=1.0.5" alt="تحسين كفاءة استخراج النشا في الطحن الرطب للذرة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 02 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 08 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحسين كفاءة استخراج النشا في الطحن الرطب للذرة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة إحصائية تفصل كيف تمكنت منشأة معالجة الذرة من زيادة الغلة في تيارات فاصل النشا باستخدام الاختبار على الخط.</p>
-<a href="blog-starch-extraction-milling.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">أين يُفقد النشا في مطحنة الذرة الرطبة، وكيف يُقاس أداء الفصل، وما الذي تقوله الأبحاث المنشورة عمّا يستطيع التحليل الطيفي رصده في تيارات الملاط وما لا يستطيعه.</p>
+<a href="blog-starch-extraction-milling.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog fiber -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-01-28" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="chemical-pharma" data-date="2026-06-09" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_fiber_reactors.webp?v=1.0.5" alt="تصميمات واجهة الألياف البصرية للمفاعلات الكيميائية المسببة للتآكل" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 28 يناير 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 09 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تصميمات واجهة الألياف البصرية للمفاعلات الكيميائية المسببة للتآكل</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">المواصفات الفنية وتفاصيل البناء لبصريات الياقوت وتكوينات مجسات Hastelloy في الحلقات الكيميائية القوية.</p>
-<a href="blog-fiber-interface-reactors.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تحدّد هندسة المسبار وألياف السيليكا ونافذة الياقوت والسبيكة الملامسة للوسط والختم ما يراه مطياف NIR فعلاً داخل مفاعل أكّال أو ساخن، مع الأدبيات التي تستند إليها كل خيار.</p>
+<a href="blog-fiber-interface-reactors.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog opc -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-02-25" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_opc_ua_plc.webp?v=1.0.5" alt="توحيد تكاملات OPC UA لصمامات الجرعات ذات الحلقة المغلقة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_opc_ua_plc.webp?v=1.0.5" alt="التحكم في الجرعات بحلقة مغلقة اعتمادًا على نتائج المحلل عبر OPC UA" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 25 فبراير 2026 — قراءة لمدة 4 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">توحيد تكاملات OPC UA لصمامات الجرعات ذات الحلقة المغلقة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل يربط علامات OPC UA للعملية مباشرة بتنبؤات مقياس الطيف لمعايرة جرعات المكونات المؤتمتة.</p>
-<a href="blog-opc-ua-dosing-valves.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 10 يونيو 2026 — قراءة لمدة 5 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التحكم في الجرعات بحلقة مغلقة اعتمادًا على نتائج المحلل عبر OPC UA</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي ينبغي أن تحمله نتيجة المحلِّل عبر OPC UA قبل أن يُسمح لوحدة PLC بالتصرّف بناءً عليها، وكيف يشكّل الزمن الميت وفاصل أخذ العيّنات حلقة PID، وأين يجب أن تقع أقفال الأمان، مع المواصفات التي تستند إليها كل نقطة.</p>
+<a href="blog-opc-ua-dosing-valves.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog milk -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-04-18" onclick="window.location.href='blog-milk-powder-analysis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="التحليل السريع للرطوبة والبروتين في مسحوق الحليب باستخدام FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-10" onclick="window.location.href='blog-milk-powder-analysis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="تحليل الرطوبة والبروتين في الحليب المجفف بمطيافية NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 18 أبريل 2026 — قراءة لمدة 3 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التحليل السريع للرطوبة والبروتين في مسحوق الحليب باستخدام FT-NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">المراقبة في الوقت الفعلي لبارامترات الرطوبة والبروتين في تفريغ مجفف الرذاذ باستخدام تقنية MEMS FT-NIR.</p>
-<a href="blog-milk-powder-analysis.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 5 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحليل الرطوبة والبروتين في الحليب المجفف بمطيافية NIR</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تُحدَّد الرطوبة والبروتين والدهن واللاكتوز في حليب البودرة بالطرائق المرجعية، وما الذي تفيد به معايرات NIR المنشورة بشأنها، وكيف تُعايَر خطوة NIR بجانب الخط أو في الخط ويُتحقق منها.</p>
+<a href="blog-milk-powder-analysis.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog ground -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-28" onclick="window.location.href='blog-ground-beef-fat.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-ground-beef-fat.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_ground_beef.webp?v=1.0.5" alt="تحليل الدهون في الوقت الفعلي في معالجة اللحم المفروم" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 28 مايو 2026 — قراءة لمدة 3 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحليل الدهون في الوقت الفعلي في معالجة اللحم المفروم</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">القياس المدمج لتركيز الدهون والرطوبة في خطوط اللحم المفروم باستخدام أنظمة FT-NIR للعمليات وعلى الخط.</p>
-<a href="blog-ground-beef-fat.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يكون محتوى الدهن هو المواصفة الحاكمة للحم البقر المفروم، وما الذي تنطوي عليه الطرائق المرجعية، وما الذي تورده فعلياً دراسات NIR على الخط المحكَّمة عند مخارج المفارم وعلى الناقلات.</p>
+<a href="blog-ground-beef-fat.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog feed -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-03-05" onclick="window.location.href='blog-feed-fiber-ash.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_feed_analysis.webp?v=1.0.5" alt="تحديد محتوى الألياف الخام والرماد في حصص الأعلاف باستخدام FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-feed-fiber-ash.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_feed_analysis.webp?v=1.0.6" alt="تحديد محتوى الألياف الخام والرماد في حصص العلف بمطيافية NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 05 مارس 2026 — قراءة لمدة 3 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحديد محتوى الألياف الخام والرماد في حصص الأعلاف باستخدام FT-NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">التحكم في الألياف الخام والرماد والرطوبة في مصانع أعلاف الحيوانات باستخدام التحليل الطيفي للأشعة تحت الحمراء القريبة المدمج وعلى الخط.</p>
-<a href="blog-feed-fiber-ash.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحديد محتوى الألياف الخام والرماد في حصص العلف بمطيافية NIR</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يُحدَّد محتوى الألياف الخام والرماد الخام بالطرائق المرجعية، وما الذي تحققه معايرات NIR المنشورة لهما في الأعلاف المركبة، وكيف تندمج خطوة تحليل بجانب خط الإنتاج في روتين الجودة لمصنع الأعلاف.</p>
+<a href="blog-feed-fiber-ash.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog semolina -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-01-10" onclick="window.location.href='blog-semolina-starch-gluten.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_semolina_gluten.webp?v=1.0.5" alt="تلف النشا والتحقق من الجلوتين في سميد القمح باستخدام FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-semolina-starch-gluten.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_semolina_gluten.webp?v=1.0.6" alt="تضرر النشا وجودة الغلوتين في سميد القمح القاسي" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 10 يناير 2026 — قراءة لمدة 3 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تلف النشا والتحقق من الجلوتين في سميد القمح باستخدام FT-NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">مراقبة الجودة المدمجة لبارامترات السميد بما في ذلك الجلوتين الرطب، والمؤشر، وتلف النشا في منشآت الطحن.</p>
-<a href="blog-semolina-starch-gluten.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 5 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تضرر النشا وجودة الغلوتين في سميد القمح القاسي</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي يعنيه تلف النشا والغلوتين الرطب ومؤشر الغلوتين لجودة المعكرونة، وكيف تعمل الطرائق المرجعية، وما الذي تستطيع دراسات NIR المنشورة التنبؤ به وما لا تستطيعه في سميد القمح القاسي.</p>
+<a href="blog-semolina-starch-gluten.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog polymerization -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-02-18" onclick="window.location.href='blog-polymerization-hydroxyl.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-10" onclick="window.location.href='blog-polymerization-hydroxyl.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_hydroxyl_value.webp?v=1.0.5" alt="مراقبة قيمة الهيدروكسيل في عمليات البلمرة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 18 فبراير 2026 — قراءة لمدة 3 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 6 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة قيمة الهيدروكسيل في عمليات البلمرة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">التتبع في الوقت الفعلي لقيمة الهيدروكسيل ونقاط نهاية التفاعل في المفاعلات الكيميائية باستخدام FT-NIR المقترن بالألياف البصرية.</p>
-<a href="blog-polymerization-hydroxyl.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي يخبرك به رقم الهيدروكسيل ورقم الحموضة عن دفعة بوليستر متدرجة النمو، وكيف تعمل الطرق المرجعية بالمعايرة الحجمية، ولماذا تجعل نطاقات O&ndash;H التفاعل مرئياً لتقنية NIR، وما الذي أظهرته الدراسات داخل المفاعل.</p>
+<a href="blog-polymerization-hydroxyl.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog olive -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-02" onclick="window.location.href='blog-olive-oil-acidity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_olive_oil_acidity.webp?v=1.0.5" alt="مراقبة حموضة الأحماض الدهنية الحرة (FFA) في معالجة زيت الزيتون" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-olive-oil-acidity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_olive_oil_acidity.webp?v=1.0.6" alt="مراقبة حموضة الأحماض الدهنية الحرة (FFA) في معالجة زيت الزيتون" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 02 مايو 2026 — قراءة لمدة 3 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة حموضة الأحماض الدهنية الحرة (FFA) في معالجة زيت الزيتون</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">تحديد متزامن لحموضة الأحماض الدهنية الحرة والرطوبة وقيمة البيروكسيد عند تفريغ المصفق أثناء استخراج الزيت.</p>
-<a href="blog-olive-oil-acidity.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تحدّد الحموضة الحرّة ورقم البيروكسيد درجات زيت الزيتون، وكيف تنشآن قبل المعصرة وفيها، وما الذي تحقّقه معايرات NIR المنشورة لهما، وأين تُوضع نقطة القياس.</p>
+<a href="blog-olive-oil-acidity.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog cell culture -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-06-25" onclick="window.location.href='blog-bioreactor-cell-culture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-11" onclick="window.location.href='blog-bioreactor-cell-culture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_bioreactor_cell.webp?v=1.0.5" alt="تحسين تغذية المفاعل الحيوي في زراعة خلايا الثدييات" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 25 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 11 يونيو 2026 — قراءة لمدة 4 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحسين تغذية المفاعل الحيوي في زراعة خلايا الثدييات</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">المراقبة المدمجة في الوقت الفعلي للجلوكوز واللاكتات وكثافة الخلايا الحية داخل المفاعلات الحيوية باستخدام مجسات الغمر من الياقوت.</p>
-<a href="blog-bioreactor-cell-culture.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يُعدّ التحكم في الغلوكوز واللاكتات مهمًا في مزارع خلايا CHO بنظام التغذية الدفعية، ولماذا تواجه NIR صعوبات في أوساط الاستزراع المائية، وما الذي تُظهره الأدبيات العلمية بشأن مطيافية رامان والأشعة تحت الحمراء المتوسطة في الموقع للتحكم في التغذية.</p>
+<a href="blog-bioreactor-cell-culture.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog milk adulteration -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-06-08" onclick="window.location.href='blog-milk-adulteration-receiving.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_adulteration.webp?v=1.0.5" alt="الاكتشاف السريع للغش عند استلام الحليب الخام" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-11" onclick="window.location.href='blog-milk-adulteration-receiving.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_adulteration.webp?v=1.0.6" alt="الاكتشاف السريع للغش عند استلام الحليب الخام" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 08 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 11 يونيو 2026 — قراءة لمدة 4 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">الاكتشاف السريع للغش عند استلام الحليب الخام</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">فحص تسليمات صهاريج الحليب الخام الواردة للكشف عن الماء المضاف واليوريا والميلامين باستخدام أجهزة تحليل خلايا النقل المؤتمتة.</p>
-<a href="blog-milk-adulteration-receiving.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما تُظهره الدراسات المحكَّمة بشأن ما يمكن للتحليل الطيفي بالأشعة تحت الحمراء كشفه في الحليب الخام، وكيف تندرج خطوة «افحص ثم أكِّد» ضمن خط استلام الحليب في معمل الألبان.</p>
+<a href="blog-milk-adulteration-receiving.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog outlier detection -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-03-28" onclick="window.location.href='blog-outlier-detection-mahalanobis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-11" onclick="window.location.href='blog-outlier-detection-mahalanobis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_outlier_detection.webp?v=1.0.5" alt="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 28 مارس 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 11 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">اكتشاف القيم المتطرفة الكيميائية: مسافة Mahalanobis مقابل Hotelling's T²</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل مفصل يشرح كيفية حساب وتعيين حدود عتبة القيم المتطرفة لمعايرة الانحدار والتصنيف.</p>
-<a href="blog-outlier-detection-mahalanobis.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تُخبر مسافة Mahalanobis وإحصائية T-squared لـ Hotelling والرافعة وبواقي Q محلِّلَ العمليات ما إذا كان الطيف ينتمي إلى معايرته، وكيف تُحدَّد حدودها، ولماذا تحمل إحصائية واحدة عدّة أسماء في البرمجيات.</p>
+<a href="blog-outlier-detection-mahalanobis.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog wavelength selection -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-22" onclick="window.location.href='blog-wavelength-selection-ipls.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-11" onclick="window.location.href='blog-wavelength-selection-ipls.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_wavelength_selection.webp?v=1.0.5" alt="اختيار الطول الموجي وهندسة الميزات لنماذج الطيف NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 22 أبريل 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 11 يونيو 2026 — قراءة لمدة 4 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">اختيار الطول الموجي وهندسة الميزات لنماذج الطيف NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيفية استخدام الخوارزميات الجينية و iPLS في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> حزمة لاختيار نطاقات الطول الموجي المثلى وتحسين قابلية نقل النموذج.</p>
-<a href="blog-wavelength-selection-ipls.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا قد يفيد قصر معايرة NIR على أطوال موجية مختارة، وكيف تختارها طرائق iPLS والخوارزميات الجينية وUVE وCARS وVIP وطريقة jackknife، ولماذا يجب المصادقة على الاختيار مصادقةً مستقلة.</p>
+<a href="blog-wavelength-selection-ipls.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog cheese yield -->
-<div class="card blog-card" data-category="guide" data-industry="dairy" data-date="2026-05-10" onclick="window.location.href='blog-cheese-yield-prediction.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_sensor.webp?v=1.0.5" alt="تقييم نماذج التنبؤ بإنتاجية الجبن باستخدام caliX" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-05-10" onclick="window.location.href='blog-cheese-yield-prediction.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_powder.webp?v=1.0.5" alt="تقييم نماذج التنبؤ بمردود الجبن" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 10 مايو 2026 — قراءة لمدة دقيقتين</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تقييم نماذج التنبؤ بإنتاجية الجبن باستخدام cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">إرشادات خطوة بخطوة حول بناء نماذج متعددة المتغيرات في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> حزمة للتنبؤ برطوبة الخثارة أثناء تخثر الحوض.</p>
-<a href="blog-cheese-yield-prediction.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 مايو 2026 — قراءة لمدة 5 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تقييم نماذج التنبؤ بمردود الجبن</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يُتنبأ بغلة الجبن من دهن الحليب وبروتينه، وما الذي تضيفه مطيافية الأشعة تحت الحمراء عند استلام الحليب وفي حوض التجبين، وكيف يُبنى نموذج الغلة ويُتحقق منه.</p>
+<a href="blog-cheese-yield-prediction.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog liquid milk -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-02-05" onclick="window.location.href='blog-liquid-milk-standardization.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-02-05" onclick="window.location.href='blog-liquid-milk-standardization.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="تحسين توحيد الدهون والبروتين في الحليب السائل" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 05 فبراير 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 05 فبراير 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحسين توحيد الدهون والبروتين في الحليب السائل</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تتيح مستشعرات FT-NIR المدمجة في كتلة صمام التوحيد القياسي التحكم في إضافة الكريمة في الوقت الفعلي، مما يقلل من تباين الدهون بنسبة 50٪.</p>
-<a href="blog-liquid-milk-standardization.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يعمل تقييس دهن حليب الشرب في الخط، وأين تبلغ مراقبة القشدة القائمة على الكثافة حدودها، وما الذي تُظهره الأعمال المنشورة حول القياس بـ NIR في الخط للدهن والبروتين.</p>
+<a href="blog-liquid-milk-standardization.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog soybean-crush-yield -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-soybean-crush-yield.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_feed_analysis.webp?v=1.0.5" alt="تحسين استخراج الزيت والبروتين في مصانع سحق فول الصويا" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-soybean-crush-yield.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_feed_analysis.webp?v=1.0.6" alt="تحسين استخراج الزيت والبروتين في مصانع سحق فول الصويا" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 10 يونيو 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحسين استخراج الزيت والبروتين في مصانع سحق فول الصويا</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يراقب FT-NIR المدمج الرطوبة والدهون والبروتين عند تفريغ وجبة الصويا.</p>
-<a href="blog-soybean-crush-yield.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يحدد الاستخلاص بالمذيب وجهاز إزالة المذيب والتحميص (DT) جودةَ الزيت والرطوبة والبروتين في كُسب فول الصويا، وأيّ الطرائق المرجعية تعرّفها، وأين يندرج قياس NIR.</p>
+<a href="blog-soybean-crush-yield.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog petfood-extrusion-moisture -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-24" onclick="window.location.href='blog-petfood-extrusion-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-05-24" onclick="window.location.href='blog-petfood-extrusion-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_cattle_feed.webp?v=1.0.5" alt="توحيد الرطوبة والدهون في بثق أغذية الحيوانات الأليفة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 24 مايو 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 24 مايو 2026 — قراءة لمدة 6 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">توحيد الرطوبة والدهون في بثق أغذية الحيوانات الأليفة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">استخدام مستشعرات مدمجة فوق قنوات خروج الطارد لمنع عفن الحبيبات وتنظيم طلاء الدهون.</p>
-<a href="blog-petfood-extrusion-moisture.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تحدد رطوبة حبيبات الأغذية عند مخرج المجفف والدهون عند وحدة التغليف مدة الصلاحية والامتثال لبيانات البطاقة، وما الذي تُظهره فعلاً دراسات NIR المنشورة على أغذية الحيوانات الأليفة المبثوقة.</p>
+<a href="blog-petfood-extrusion-moisture.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog corn-gluten-dryer -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-04-28" onclick="window.location.href='blog-corn-gluten-dryer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-04-28" onclick="window.location.href='blog-corn-gluten-dryer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_starch_milling.webp?v=1.0.5" alt="التحكم بالرطوبة في الوقت الفعلي في مجففات أعلاف جلوتين الذرة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 28 أبريل 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 28 أبريل 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التحكم بالرطوبة في الوقت الفعلي في مجففات أعلاف جلوتين الذرة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة حالة حول تحسين حلقات حرارة المجفف للحفاظ على رطوبة وجبة جلوتين الذرة عند 10.5٪ بالضبط.</p>
-<a href="blog-corn-gluten-dryer.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يُعدّ مجفف علف غلوتين الذرة من أكبر مستهلكي الطاقة في مطحنة الذرة الرطبة، وما كلفة الإفراط في التجفيف ونقصه، وكيف يمكن لقياس الرطوبة بـ NIR في الخط أن يغلق حلقة التحكم في المجفف.</p>
+<a href="blog-corn-gluten-dryer.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog flour-ash-milling -->
-<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-03-18" onclick="window.location.href='blog-flour-ash-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_semolina_gluten.webp?v=1.0.5" alt="المراقبة المستمرة للرماد والبروتين في طحن دقيق القمح" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-03-18" onclick="window.location.href='blog-flour-ash-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_semolina_gluten.webp?v=1.0.6" alt="المراقبة المستمرة للرماد والبروتين في طحن دقيق القمح" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 18 مارس 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 18 مارس 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">المراقبة المستمرة للرماد والبروتين في طحن دقيق القمح</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل حول استخدام تقنية NIR على الخط والمدمجة في تيارات الدقيق لتصنيف معدلات استخراج القمح ديناميكياً.</p>
-<a href="blog-flour-ash-milling.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يتتبّع الرماد النخالةَ في تيارات الدقيق، وما الذي تنطوي عليه طريقتا الترميد وكيلدال المرجعيتان، وما الذي تُظهره الأعمال المنشورة حول NIR للرماد والبروتين، وكيف تندمج مراقبة التيارات في المطحنة.</p>
+<a href="blog-flour-ash-milling.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog whey-permeate-evaporator -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-04-15" onclick="window.location.href='blog-whey-permeate-evaporator.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-04-15" onclick="window.location.href='blog-whey-permeate-evaporator.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_powder.webp?v=1.0.5" alt="التحكم في إجمالي المواد الصلبة في مبخرات نفاذة مصل اللبن" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 15 أبريل 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 15 أبريل 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التحكم في إجمالي المواد الصلبة في مبخرات نفاذة مصل اللبن</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة حالة حول توحيد مقياس الانكسار/مقياس الطيف المدمج لمركز مصل اللبن قبل التجفيف بالرذاذ.</p>
-<a href="blog-whey-permeate-evaporator.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يُعدّ محتوى المواد الصلبة عند مخرج مبخر مصل اللبن أو الراشح حاسمًا للترسبات وتبلور اللاكتوز والتجفيف، وكيف يمكن قياسه والتحكم فيه.</p>
+<a href="blog-whey-permeate-evaporator.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog butter-fat-moisture -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-03-28" onclick="window.location.href='blog-butter-fat-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-03-28" onclick="window.location.href='blog-butter-fat-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="توحيد الدهون والرطوبة المدمج في صناعة الزبدة المستمرة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 28 مارس 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 28 مارس 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">توحيد الدهون والرطوبة المدمج في صناعة الزبدة المستمرة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ورقة بيضاء حول استخدام مجسات NIR داخل أنابيب تفريغ مخض الزبدة للتحكم في جرعات الماء.</p>
-<a href="blog-butter-fat-moisture.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي تحدّده معايير الزبدة للدهن والماء والملح، وأين يضبطها صانع الزبدة المستمر، وما تُظهره الدراسات المنشورة عن المستشعرات في الخط وNIR بشأن التحكم فيها على خط الإنتاج.</p>
+<a href="blog-butter-fat-moisture.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog yogurt-fermentation-lactic -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-01-26" onclick="window.location.href='blog-yogurt-fermentation-lactic.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_adulteration.webp?v=1.0.5" alt="مراقبة حمض اللاكتيك ودرجة الحموضة في تخمير الزبادي" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-01-26" onclick="window.location.href='blog-yogurt-fermentation-lactic.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_adulteration.webp?v=1.0.6" alt="مراقبة حمض اللاكتيك ودرجة الحموضة في تخمير الزبادي" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 26 يناير 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 26 يناير 2026 — قراءة لمدة 4 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة حمض اللاكتيك ودرجة الحموضة في تخمير الزبادي</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ورقة بيضاء تتعقب تخمير المزارع الحية باستخدام مجسات مدمجة لتحديد أوقات تبريد الحوض بدقة.</p>
-<a href="blog-yogurt-fermentation-lactic.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تهمّ نقطة نهاية تخمير الزبادي، وكيف يُقاس الرقم الهيدروجيني والحموضة القابلة للمعايرة، وما الذي تذكره دراسات NIR في الخط عن تتبّع التحمّض.</p>
+<a href="blog-yogurt-fermentation-lactic.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog cheese-moisture-milling -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-02-15" onclick="window.location.href='blog-cheese-moisture-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_sensor.webp?v=1.0.5" alt="مراقبة الرطوبة والملح في طحن جبن الشيدر" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-02-15" onclick="window.location.href='blog-cheese-moisture-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_spray_drying.webp?v=1.0.5" alt="مراقبة الرطوبة والملح في طحن جبن الشيدر" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 15 فبراير 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 15 فبراير 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة الرطوبة والملح في طحن جبن الشيدر</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة حالة حول قياس نسبة الملح في الرطوبة على الخط قبل ضغط حزام الشيدر.</p>
-<a href="blog-cheese-moisture-milling.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تتحكّم نسبة الملح إلى الرطوبة المحدَّدة على سير التمليح في تسوية جبن الشيدر، وكيف تُحدَّد الرطوبة والملح بالطرائق المرجعية، وما تُظهره دراسات NIR المنشورة على الجبن.</p>
+<a href="blog-cheese-moisture-milling.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog dairy-receiving-total-solids -->
-<div class="card blog-card" data-category="guide" data-industry="dairy" data-date="2026-01-08" onclick="window.location.href='blog-dairy-receiving-total-solids.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_milk_adulteration.webp?v=1.0.5" alt="تصنيف دهون الحليب الوارد والمواد الصلبة الكلية في أرصفة الاستلام" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-01-08" onclick="window.location.href='blog-dairy-receiving-total-solids.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_milk_adulteration.webp?v=1.0.6" alt="تصنيف دهون الحليب الوارد والمواد الصلبة الكلية في أرصفة الاستلام" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 08 يناير 2026 — قراءة لمدة دقيقتين</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 08 يناير 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تصنيف دهون الحليب الوارد والمواد الصلبة الكلية في أرصفة الاستلام</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل حول فحص تسليمات خزانات الحليب الخام الواردة باستخدام خلايا النقل.</p>
-<a href="blog-dairy-receiving-total-solids.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يُدفع ثمن الحليب الخام بحسب محتواه من الدهن والبروتين والمواد الصلبة، وكيف تحدد الطرائق المرجعية ومحللات الأشعة تحت الحمراء المتوسطة هذه القيم، وما الذي تُظهره دراسات NIR المنشورة بشأن تركيب الحليب الخام.</p>
+<a href="blog-dairy-receiving-total-solids.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog pharma-granulation-moisture -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-06-12" onclick="window.location.href='blog-pharma-granulation-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-12" onclick="window.location.href='blog-pharma-granulation-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pharma_blending.webp?v=1.0.5" alt="مراقبة الرطوبة في تحبيب القاعدة المتميعة" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 12 يونيو 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 12 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة الرطوبة في تحبيب القاعدة المتميعة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة حالة حول تحديد نقطة النهاية في تجفيف الحبيبات النشطة.</p>
-<a href="blog-pharma-granulation-moisture.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تُعدّ الرطوبة المتبقية السمة الحرجة في التحبيب بالطبقة المميعة، وما الذي تقيسه الطرق المرجعية، وما الذي أظهرته دراسات NIR داخل الخط، ولماذا تحدد عمليات أخذ العينات واتساخ المجس ودرجة الحرارة ما إذا كانت الطريقة ستصمد.</p>
+<a href="blog-pharma-granulation-moisture.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog solvent-distillation-purity -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-04-08" onclick="window.location.href='blog-solvent-distillation-purity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-04-08" onclick="window.location.href='blog-solvent-distillation-purity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_fiber_reactors.webp?v=1.0.5" alt="مراقبة نقاء المذيبات المدمجة في أعمدة التقطير الكيميائي" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 08 أبريل 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 08 أبريل 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مراقبة نقاء المذيبات المدمجة في أعمدة التقطير الكيميائي</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ورقة بيضاء تفصل تتبع أجزاء المذيبات الثنائية باستخدام خلايا تدفق الألياف البصرية.</p>
-<a href="blog-solvent-distillation-purity.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تُشغَّل أعمدة التقطير عادةً على أساس درجة الحرارة، وما الذي تضيفه مطيافية الأشعة تحت الحمراء القريبة لقياس تركيب المذيب ومحتواه من الماء، وكيف يُعايَر مثل هذا المحلّل ويُتحقق من صلاحيته.</p>
+<a href="blog-solvent-distillation-purity.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog packaging-polymer-density -->
-<div class="card blog-card" data-category="guide" data-industry="chemical-pharma" data-date="2026-03-20" onclick="window.location.href='blog-packaging-polymer-density.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-03-20" onclick="window.location.href='blog-packaging-polymer-density.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_polyol_reactors.webp?v=1.0.5" alt="تصنيف الكثافة والتبلور لتعبئة البولي إيثيلين" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 20 مارس 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 20 مارس 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تصنيف الكثافة والتبلور لتعبئة البولي إيثيلين</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل حول التحقق من سمك البولي إيثيلين عالي الكثافة مقابل منخفض الكثافة وخصائص الحاجز.</p>
-<a href="blog-packaging-polymer-density.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تُحدَّد كثافة وتبلور كلٍّ من LDPE وLLDPE وHDPE بالطرق المرجعية، وما الذي يحمله فعلاً طيف الأشعة تحت الحمراء القريبة للبولي إيثيلين، وما الذي حققته معايرات الكثافة المنشورة بتقنية NIR على الحبيبات والأغشية والمصهور.</p>
+<a href="blog-packaging-polymer-density.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog pharma-raw-material-id -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-01-18" onclick="window.location.href='blog-pharma-raw-material-id.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-03-28" onclick="window.location.href='blog-pharma-raw-material-id.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_pharma_blending.webp?v=1.0.5" alt="تحديد المواد الخام الواردة في مستودعات الأدوية" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دراسة حالة — 18 يناير 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 28 مارس 2026 — قراءة لمدة 6 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تحديد المواد الخام الواردة في مستودعات الأدوية</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دراسة حالة حول التحقق الفوري من المواد الخام عند الاستلام في المستودع باستخدام cali<span class="calix-x" style="color: #38b6ff !important;">X</span> نماذج التصنيف.</p>
-<a href="blog-pharma-raw-material-id.html" class="btn-text" style="margin-top: auto;">قراءة دراسة الحالة</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تتوقع ممارسات التصنيع الجيد (GMP) اختبار هوية على كل عبوة من المواد الأولية، وما الذي تشترطه EMA والدساتير الدوائية في طريقة NIR النوعية، وكيف تُبنى المكتبات الطيفية والقياس عبر العبوة ويُتحقق من صحتها.</p>
+<a href="blog-pharma-raw-material-id.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog chemical-alkyd-resin -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-02-12" onclick="window.location.href='blog-chemical-alkyd-resin.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-02-12" onclick="window.location.href='blog-chemical-alkyd-resin.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_polyol_reactors.webp?v=1.0.5" alt="تتبع قيمة الحمض واللزوجة في طبخ راتنج الألكيد" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ورقة بيضاء — 12 فبراير 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 12 فبراير 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تتبع قيمة الحمض واللزوجة في طبخ راتنج الألكيد</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ورقة بيضاء تفصل التتبع المستمر لتفاعلات أسترة الراتنج لمنع التبلور.</p>
-<a href="blog-chemical-alkyd-resin.html" class="btn-text" style="margin-top: auto;">قراءة الورقة البيضاء</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا تُتابع طبخات الألكيد بالرقم الحمضي واللزوجة، وما الذي تنطوي عليه الطرائق المرجعية للتسحيح واللزوجة، ولماذا تجعل نقطة التهلم التوقيت حرجاً، وما الذي تُظهره دراسات NIR داخل الخط المنشورة.</p>
+<a href="blog-chemical-alkyd-resin.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog msc-snv-preprocessing -->
 <div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-02" onclick="window.location.href='blog-msc-snv-preprocessing.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_spectral_math.webp?v=1.0.5" alt="تصحيح التشتت المضاعف والمعالجة المسبقة للمتغير العادي القياسي (SNV و MSC)" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 02 يونيو 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 02 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">تصحيح التشتت المضاعف والمعالجة المسبقة للمتغير العادي القياسي (SNV و MSC)</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">برنامج تعليمي يقارن حسابات تصحيح التشتت لتغيرات مسار الضوء في انعكاس NIR.</p>
-<a href="blog-msc-snv-preprocessing.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">ما الذي يفعله تصحيح التشتّت المضاعِف وتحويل المتغيّر الطبيعي المعياري بطيف NIR للانعكاس المنتشر، وكيف يرتبط أحدهما بالآخر، ومتى يكون كلٌّ منهما الخيار الأفضل.</p>
+<a href="blog-msc-snv-preprocessing.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog spectrometer-reference-bg -->
 <div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-02" onclick="window.location.href='blog-spectrometer-reference-bg.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_mems_durability.webp?v=1.0.5" alt="توحيد فترات قياس الخلفية المرجعية في التحليل الطيفي للعمليات" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<img src="../images/blog_what_is_nir.webp?v=1.0.5" alt="توحيد فترات قياس الخلفية المرجعية في التحليل الطيفي للعمليات" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 02 أبريل 2026 — قراءة لمدة دقيقة واحدة</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 02 أبريل 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">توحيد فترات قياس الخلفية المرجعية في التحليل الطيفي للعمليات</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">دليل حول خلفيات العلم الذهبي الداخلي التلقائية لإدارة الانحراف البيئي.</p>
-<a href="blog-spectrometer-reference-bg.html" class="btn-text" style="margin-top: auto;">قراءة الدليل</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لماذا يحتاج مطياف NIR العملياتي إلى قياسات مرجعية، وما التأثيرات التي تجعل استجابته تنجرف، وكيف تكشف اختبارات الأداء والفحوص الروتينية الانجرافَ قبل أن يبلغ النتائج.</p>
+<a href="blog-spectrometer-reference-bg.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: What Is FT-NIR Spectroscopy? -->
-<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-20" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-06-20" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_ftnir_guide.webp?v=1.0.5" alt="ما هو التحليل الطيفي FT-NIR؟" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 20 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 20 يونيو 2026 — قراءة لمدة 5 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">ما هو التحليل الطيفي FT-NIR؟ دليل مبسط لمصنعي الأغذية والأعلاف</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">شرح واضح وخالٍ من المصطلحات المعقدة لتقنية FT-NIR ولماذا تعتبر مهمة لمراقبة الجودة المدمجة.</p>
-<a href="blog-what-is-ftnir.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">مقدمة مبسّطة إلى NIR بتحويل فورييه: كيف يحوّل مقياس التداخل الضوء إلى طيف، وما الذي تكشفه النطاقات عن الماء والبروتين والدهن والكربوهيدرات، ولماذا تلزم المعايرة.</p>
+<a href="blog-what-is-ftnir.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: NIR vs. FT-NIR -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-18" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-18" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="مقارنة بين NIR و FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 18 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 18 يونيو 2026 — قراءة لمدة 7 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">مقارنة بين NIR و FT-NIR: ما الفرق — ولماذا هو مهم للتحكم في العمليات المدمجة</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">مقارنة تقنية بين تقنية NIR المشتتة وتقنية FT-NIR، تشمل الدقة الطيفية واستقرار الطول الموجي وأداء نسبة الإشارة إلى الضوضاء.</p>
-<a href="blog-nir-vs-ftnir.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تُنتج محلِّلات NIR ذات المحزّز الماسح ومصفوفة الثنائيات وتحويل فورييه طيفًا، وما الذي تحقّقه فعلًا مزايا الإنتاجية والتعدّد ومحور الطول الموجي، وأيّ المفاضلات تحسم تطبيقًا مباشرًا على الخط.</p>
+<a href="blog-nir-vs-ftnir.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: Inline vs. At-Line vs. Off-Line -->
-<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-15" onclick="window.location.href='blog-inline-atline-offline.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-06-15" onclick="window.location.href='blog-inline-atline-offline.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_inline_atline.webp?v=1.0.5" alt="التحليل المدمج مقابل التحليل على الخط مقابل التحليل غير المتصل" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 15 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 15 يونيو 2026 — قراءة لمدة 6 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التحليل المدمج مقابل التحليل على الخط مقابل التحليل غير المتصل: ما هو النهج المناسب لخط الإنتاج الخاص بك؟</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">مقارنة ثلاث استراتيجيات قياس حسب وقت الاستجابة والتغطية والاعتماد على المشغل والتكلفة الإجمالية للملكية.</p>
-<a href="blog-inline-atline-offline.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف تعرّف إرشادات PAT الصادرة عن FDA القياس بجانب الخط وعلى الخط وفي الخط، وما الذي يتنازل عنه كل موقع من حيث التأخير وخطأ أخذ العينات وجهد التحقق، وكيف يُختار الترتيب الذي يحتاجه خط الإنتاج فعلًا.</p>
+<a href="blog-inline-atline-offline.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: Hidden Costs of Lab-Based QC -->
 <div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-12" onclick="window.location.href='blog-hidden-costs-lab-qc.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="../images/blog_hidden_costs.webp?v=1.0.5" alt="التكاليف الخفية لمراقبة الجودة في المختبرات" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 12 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 12 يونيو 2026 — قراءة لمدة 6 دقائق</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">التكاليف الخفية لمراقبة الجودة المعتمدة على المختبرات في تصنيع الأغذية والأعلاف</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">كيف يؤدي التأخير التحليلي وإعادة العمل والتنازل عن العائد ونفقات الامتثال إلى تكاليف خفية تفوق نفقات المختبر المباشرة.</p>
-<a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">لكلٍّ من تأخر النتائج وخطأ أخذ العينات والإفراط في التركيبة وكيمياء الطرائق المرجعية تكلفة لا تظهر أبدًا في ميزانية المختبر؛ ماذا تقول الأدبيات العلمية، وأين يقع NIR للعمليات.</p>
+<a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="margin-top: auto;">اقرأ المقال</a>
 </div>
 </div>
 <!-- Blog: PLC and SCADA Integration -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_plc_scada.webp?v=1.0.5" alt="تكامل FT-NIR مع PLC و SCADA" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_plc_scada.webp?v=1.0.5" alt="كيف تتكامل محللات NIR مع أنظمة PLC وSCADA: نظرة عملية" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 10 يونيو 2026 — قراءة لمدة 4 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">كيف تتكامل أجهزة تحليل FT-NIR مع أنظمة PLC و SCADA</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">نظرة عامة عملية على بنيات تكامل Ethernet TCP/IP و OPC-UA و Modbus لمحللات العمليات المدمجة.</p>
-<a href="blog-plc-scada-integration.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 10 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">كيف تتكامل محللات NIR مع أنظمة PLC وSCADA: نظرة عملية</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">مشهد التكامل لنتائج NIR المدمجة في الخط: البروتوكولات الميدانية من حلقة التيار إلى OPC UA، وسجل القيمة والحالة والختم الزمني، ومصادر زمن التأخر، وكيفية التعامل مع الإنذارات وسجلات البيانات التاريخية والأمن السيبراني.</p>
+<a href="blog-plc-scada-integration.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 <!-- Blog: 5 Questions Before Buying -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-08" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="../images/blog_buying_guide.webp?v=1.0.5" alt="5 أسئلة قبل شراء محلل FT-NIR المدمج" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-08" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="../images/blog_buying_guide.webp?v=1.0.5" alt="5 أسئلة يجب طرحها قبل شراء محلل NIR على الخط" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">مقال — 08 يونيو 2026 — قراءة لمدة 4 دقائق</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">5 أسئلة يجب طرحها قبل شراء محلل FT-NIR مدمج</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">قائمة مرجعية للمشتريات تغطي ظروف الإنتاج، والمعايرة، وتكامل الأتمتة، والتركيب، ودعم ما بعد البيع.</p>
-<a href="blog-5-questions-buying-ftnir.html" class="btn-text" style="margin-top: auto;">قراءة المقال</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">دليل — 08 يونيو 2026 — قراءة لمدة 4 دقائق</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">5 أسئلة يجب طرحها قبل شراء محلل NIR على الخط</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">قائمة تحقق محايدة تجاه الموردين لشراء محلل NIR مضمَّن في الخط: قابلية القياس والدقة، وواجهة العينة، وملكية المعايرة، وتكامل البيانات، والتحقق من الصلاحية على امتداد دورة الحياة.</p>
+<a href="blog-5-questions-buying-ftnir.html" class="btn-text" style="margin-top: auto;">اقرأ الدليل</a>
 </div>
 </div>
 </div>
@@ -957,11 +958,10 @@ visibleCount++;
 card.style.display = 'none';
 }
 });
-if (activeType === 'all' && activeIndustry === 'all') {
-activeFiltersCount.textContent = `Showing all ${visibleCount} publications`;
-} else {
-activeFiltersCount.textContent = `Showing ${visibleCount} of ${blogCards.length} publications`;
-}
+// sayac metni sayfa dilinde: cevrilmis statik metin sablon, yalniz sayi degisir (30.10.2026)
+if (!activeFiltersCount.dataset.tpl) activeFiltersCount.dataset.tpl = activeFiltersCount.textContent;
+const countText = (activeType === 'all' && activeIndustry === 'all') ? String(visibleCount) : visibleCount + ' / ' + blogCards.length;
+activeFiltersCount.textContent = activeFiltersCount.dataset.tpl.replace(/\d+/, countText);
 const sortedCards = [...blogCards].sort((a, b) => {
 const dateA = new Date(a.dataset.date);
 const dateB = new Date(b.dataset.date);
@@ -984,7 +984,7 @@ filterAndSortBlogs();
 <div class="container" style="max-width: 800px; padding: 4rem 2rem;">
 <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">هل ترغب في تحسين خطوط الإنتاج الخاصة بك؟</h2>
 <p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
-تعرف على كيفية تناسب طرق المعايرة المخصصة ومستشعرات MEMS FT-NIR مع منشأتك. يمكنك استكشاف <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">مجموعة منتجاتنا</a> لرؤية مجموعتنا الكاملة من الأجهزة والبرامج، أو تصفح <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">تفاصيل الاتصال بنا</a> للتواصل مع مهندسي المبيعات لدينا.
+تعرف على كيفية تناسب طرق المعايرة المخصصة ومستشعرات MEMS FT-NIR مع منشأتك. يمكنك استكشاف <a href="products.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">مجموعة منتجاتنا</a> لرؤية مجموعتنا الكاملة من الأجهزة والبرامج، أو تصفح <a href="contact.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">تفاصيل الاتصال بنا</a> للتواصل مع مهندسي المبيعات لدينا.
 </p>
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
 <a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">تصفح مجموعة المنتجات</a>
@@ -1043,6 +1043,6 @@ filterAndSortBlogs();
             <p>مصمم للدقة العلمية والصناعية.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="description" content="Parlez à un ingénieur d'application USTECH : devis, démonstration ou analyse d'échantillon gratuite, et calculateur de ROI pour vos économies annuelles.">
 <title>Contacter USTECH | Demander une démo ou une analyse d'échantillon NIR</title>
-<link rel="stylesheet" href="../index.css?v=1.1.2">
+<link rel="stylesheet" href="../index.css?v=1.1.3">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -37,7 +38,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "fr",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -252,7 +253,7 @@
 <div class="form-group sales-field">
 <label for="form-budget">Calendrier de mise en œuvre/Budget</label>
 <select id="form-budget" name="budget" class="form-input">
-<option value="Immediate (< 1 month)">Immédiat (< 1 month)</option>
+<option value="Immediate (< 1 month)">Immédiat (moins d'un mois)</option>
 <option value="Q1-Q2 (1-6 months)">1 à 6 mois</option>
 <option value="Budgetary / Exploratory">Planification budgétaire / exploratoire</option>
 </select>
@@ -540,7 +541,7 @@ Suivez-nous sur LinkedIn
             <p>Conçu pour la précision scientifique et industrielle.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 <script>
 // Contact Page ROI Calculator (mirrors homepage logic with c- prefixed IDs)
 (function() {
@@ -621,6 +622,7 @@ let paybackMonths = (equipmentCost / annualSavings) * 12;
 if (paybackMonths < 1.0) paybackMonths = 1.0;
 valPayback.textContent = paybackMonths.toFixed(1) + ' Months';
 valYield.textContent = qualityYield.toFixed(1) + '%';
+}
 updateRoi();
 })();
 // Automatically open Privacy Policy Modal if query parameter showPrivacy=1 is present

@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="description" content="52 articles, whitepapers and guides on NIR calibration, PLS modeling, inline process control and ROI - practical reading for QC and process engineers.">
 <title>NIR Spectroscopy Blog & Whitepapers | USTECH</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <style>
 .toolbar-btn:hover {
 border-color: var(--accent-gold) !important;
-color: var(--accent-gold) !important;
+color: var(--accent-gold-text) !important;
 background: rgba(213, 178, 121, 0.05) !important;
 }
 .dropdown-menu-list {
@@ -45,14 +46,14 @@ background: var(--bg-secondary);
 color: var(--accent-black);
 }
 .dropdown-menu-item.active {
-color: var(--accent-gold) !important;
+color: var(--accent-gold-text) !important;
 font-weight: 600;
 background: rgba(213, 178, 121, 0.05);
 }
 .dropdown-menu-item.active::after {
 content: "?";
 font-weight: bold;
-color: var(--accent-gold);
+color: var(--accent-gold-text);
 font-size: 0.75rem;
 margin-left: 0.5rem;
 }
@@ -63,7 +64,7 @@ margin-left: 0.5rem;
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -88,7 +89,7 @@ margin-left: 0.5rem;
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -254,7 +255,7 @@ margin-left: 0.5rem;
 <div class="blog-toolbar" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem;">
 <!-- Active status / item count -->
 <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold);">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold-text);">
 <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
 <polyline points="14 2 14 8 20 8"></polyline>
 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -321,523 +322,523 @@ margin-left: 0.5rem;
 </div>
 <div class="grid grid-3" id="blog-grid">
 <!-- Blog: How NIR Calibration Works: PLS Explained -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-pls-calibration-explained.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-pls-calibration-explained.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_pls_explained.webp?v=1.0.5" alt="How NIR Calibration Works: PLS Explained" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 25, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">How NIR Calibration Works: PLS Explained</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">From raw spectrum to composition value &mdash; how chemometric PLS models turn NIR data into accurate, actionable measurements.</p>
-<a href="blog-pls-calibration-explained.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A plain-language guide to how a PLS calibration turns NIR spectra into composition values: latent variables, the number of factors, validation statistics and the limits set by the reference method.</p>
+<a href="blog-pls-calibration-explained.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: The Power of In-Line FT-NIR Analysis -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-06-25" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_inline_ftnir_paradigm.webp?v=1.0.5" alt="The Power of In-Line FT-NIR Analysis" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-25" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_inline_ftnir_paradigm.webp?v=1.0.6" alt="The Power of In-Line Analysis: A Paradigm Shift in Quality Control" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; JUN 25, 2026 &mdash; 4 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">The Power of In-Line FT-NIR Analysis: A Paradigm Shift in Quality Control</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Eliminate production losses caused by waiting for laboratory results. Discover how FT-NIR technology analyzes quality parameters within seconds.</p>
-<a href="blog-inline-ftnir-paradigm.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 5 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">The Power of In-Line Analysis: A Paradigm Shift in Quality Control</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What the shift from laboratory-based, reactive quality control to in-line measurement and control actually involves: the PAT framework, ICH vocabulary, real-time release testing and multivariate control loops.</p>
+<a href="blog-inline-ftnir-paradigm.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog: What Is NIR Spectroscopy? -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_what_is_nir.webp?v=1.0.5" alt="What Is NIR Spectroscopy?" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 25, 2026 &mdash; 4 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">What Is NIR Spectroscopy?</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A plain-language explanation of how near-infrared spectroscopy works and why it is the most versatile non-destructive analytical technique.</p>
-<a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">An introduction to near-infrared spectroscopy: what NIR light is, where it was discovered, what overtone and combination bands reveal, why calibration is essential and where the technique reaches its limits.</p>
+<a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: The 1,350-2,550 nm Spectral Advantage -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-spectral-range-advantage.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_spectral_advantage.webp?v=1.0.5" alt="The 1350-2550nm Spectral Advantage" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-spectral-range-advantage.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_spectral_advantage.webp?v=1.0.5" alt="Choosing the Near-Infrared Spectral Region" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 2 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">The 1,350&ndash;2,550 nm Spectral Advantage</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why spectral range is the most important specification when selecting an NIR analyser &mdash; and what ProLine2550&rsquo;s 1,200 nm span delivers.</p>
-<a href="blog-spectral-range-advantage.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 25, 2026 &mdash; 4 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Choosing the Near-Infrared Spectral Region</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What the short-wave, overtone and combination regions of the near-infrared each carry, which detectors reach them, and why the right region depends on the sample rather than on the widest range.</p>
+<a href="blog-spectral-range-advantage.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: ProChem: Closing the Loop -->
 <div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-prochem-measurement-control.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_prochem_control.webp?v=1.0.5" alt="ProChem Software Control" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 7 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">ProChem: Closing the Loop Between Measurement and Control</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How ProChem software turns raw NIR spectra into real-time process control signals, batch records, and actionable quality data.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What has to happen between a spectrum leaving an analyzer and a set point changing in the PLC: result validation, control structure, alarm handling and the record that makes the decision traceable.</p>
 <a href="blog-prochem-measurement-control.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog: How to Build the Business Case for Inline NIR -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-business-case-inline-nir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-25" onclick="window.location.href='blog-business-case-inline-nir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_business_case_nir.webp?v=1.0.5" alt="Business Case for Inline NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 25, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 25, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">How to Build the Business Case for Inline NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A practical framework for quantifying the financial return with industry-specific cost models for dairy, feed, chemical, and pharma.</p>
-<a href="blog-business-case-inline-nir.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A method for building the business case for inline NIR from your own plant data: which value levers to quantify, how variance reduction becomes a target shift, and which costs and risks belong on the other side.</p>
+<a href="blog-business-case-inline-nir.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog calibration -->
-<div class="card blog-card" data-category="whitepaper" data-industry="general-tech" data-date="2026-01-15" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_mems_sensor.webp?v=1.0.5" alt="Calibration Transfer Feasibility on MEMS Spectrometers" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-02-18" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="Calibration Transfer Between NIR Spectrometers: Methods and Feasibility" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; JAN 15, 2026 &mdash; 4 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Calibration Transfer Feasibility on MEMS Spectrometers</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Discusses how MEMS fabrication limits unit-to-unit optical differences, enabling immediate calibration portability without complex model adjustments.</p>
-<a href="blog-calibration-transfer.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; FEB 18, 2026 &mdash; 5 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Calibration Transfer Between NIR Spectrometers: Methods and Feasibility</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family.</p>
+<a href="blog-calibration-transfer.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog cattle -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-03-12" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-03-05" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_cattle_feed.webp?v=1.0.5" alt="Reducing Ingredient Waste in Cattle Feed Production" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; MAR 12, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; MAR 05, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Reducing Ingredient Waste in Cattle Feed Production</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A statistical study demonstrating a 1.2% average product yield improvement by deploying inline NIR sensors over feed mixer exits.</p>
-<a href="blog-cattle-feed-waste.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.</p>
+<a href="blog-cattle-feed-waste.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog pls -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-05" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-05-12" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_pls_regression.webp?v=1.0.5" alt="Introduction to PLS Regression in caliX Suite" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; APR 05, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; MAY 12, 2026 &mdash; 7 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A step-by-step tutorial explaining how to compile calibration models from reference wet chemistry values using the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> platform.</p>
-<a href="blog-pls-regression-calix.html" class="btn-text" style="margin-top: auto;">Read Tutorial</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A practitioner's walk through a PLS calibration: how the data are split, how the pre-processing and the number of latent variables are chosen by validation, which diagnostics to read, and how the model is kept alive in production.</p>
+<a href="blog-pls-regression-calix.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog hydroxyl -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-05-15" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-01" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Real-Time Hydroxyl Value Monitoring in Polyol Production" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; MAY 15, 2026 &mdash; 3 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 01, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Real-Time Hydroxyl Value Monitoring in Polyol Production</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Detailed white paper explaining the real-time inline tracking of OHV in chemical polymerization loops using NIR spectroscopy.</p>
-<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.</p>
+<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog moisture -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-06-18" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-03" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_milk_powder.webp?v=1.0.5" alt="Standardizing Moisture in Milk Powder Spray Drying" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JUN 18, 2026 &mdash; 3 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 03, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Standardizing Moisture in Milk Powder Spray Drying</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How a global dairy plant used inline moisture monitoring on spray dryers to optimize raw material yields and prevent sticky powder clogs.</p>
-<a href="blog-moisture-milk-powder.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why the outlet moisture of a milk-powder spray dryer decides stickiness, caking, shelf life and yield, which variables the operator can move, and how an inline NIR moisture value feeds the control loop.</p>
+<a href="blog-moisture-milk-powder.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog savitzky -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-10" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-04" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_spectral_math.webp?v=1.0.5" alt="Understanding Savitzky-Golay Filtering in Preprocessing" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; APR 10, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 04, 2026 &mdash; 3 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Understanding Savitzky-Golay Filtering in Preprocessing</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">An educational guide on spectral preprocessing math, smoothing parameter selection, and derivative configurations in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What the Savitzky-Golay filter actually does to a spectrum, why derivatives remove baselines, and how window length and polynomial order should be chosen, with the original and follow-up literature.</p>
 <a href="blog-savitzky-golay-filtering.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog blend -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-05-20" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-05" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_pharma_blending.webp?v=1.0.5" alt="Blend Uniformity Verification in Active Pharmaceutical Blending" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; MAY 20, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 05, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Blend Uniformity Verification in Active Pharmaceutical Blending</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How an FDA-compliant plant uses dynamic RSD values to verify dry powder homogeneity without stopping bin blenders.</p>
-<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why blend uniformity is a regulated in-process attribute, what thief sampling can and cannot tell you, and what the literature shows about in-line NIR monitoring of powder blending as a PAT tool.</p>
+<a href="blog-blend-uniformity-pharma.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog mems -->
-<div class="card blog-card" data-category="whitepaper" data-industry="general-tech" data-date="2026-02-10" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-06" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_mems_durability.webp?v=1.0.5" alt="MEMS Comb-Drive Mechanical Durability in Industrial Environments" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; FEB 10, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 06, 2026 &mdash; 6 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">MEMS Comb-Drive Mechanical Durability in Industrial Environments</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Documents USTECH's silicon chip-scale comb actuator stress tests and shock resistance limits for online production installations.</p>
-<a href="blog-mems-durability-industrial.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What the reliability literature says about silicon springs and comb drives under shock, vibration, temperature cycling and fatigue, and what the military and IEC environmental test methods actually specify.</p>
+<a href="blog-mems-durability-industrial.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog pca -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-03-20" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-07" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_pca_chemometrics.webp?v=1.0.5" alt="Developing Robust Chemometric Classification Models via PCA" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; MAR 20, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 07, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Developing Robust Chemometric Classification Models via PCA</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A step-by-step methodology explaining Principal Component Analysis for qualitative identification of raw materials.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How PCA scores, loadings and residuals become a classification model, where the Hotelling and Q limits come from, why class-modelling differs from PLS-DA, and how regulators expect a qualitative NIR model to be validated.</p>
 <a href="blog-pca-classification-models.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog starch -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-06-02" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-08" onclick="window.location.href='blog-starch-extraction-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_starch_milling.webp?v=1.0.5" alt="Optimizing Starch Extraction Efficiency in Wet Corn Milling" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JUN 02, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 08, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Optimizing Starch Extraction Efficiency in Wet Corn Milling</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A statistical study detailing how a corn processing facility maximized yields on starch separator streams using at-line testing.</p>
-<a href="blog-starch-extraction-milling.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Where starch is lost in a corn wet mill, how separation performance is measured, and what published work says spectroscopy can and cannot monitor in slurry streams.</p>
+<a href="blog-starch-extraction-milling.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog fiber -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-01-28" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="chemical-pharma" data-date="2026-06-09" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_fiber_reactors.webp?v=1.0.5" alt="Optical Fiber Interface Designs for Corrosive Chemical Reactors" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; JAN 28, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 09, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Optical Fiber Interface Designs for Corrosive Chemical Reactors</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Technical specifications and build details for sapphire optics and Hastelloy probe configurations in aggressive chemical loops.</p>
-<a href="blog-fiber-interface-reactors.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice.</p>
+<a href="blog-fiber-interface-reactors.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog opc -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-02-25" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_opc_ua_plc.webp?v=1.0.5" alt="Standardizing OPC UA Integrations for Closed-Loop Dosing Valves" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_opc_ua_plc.webp?v=1.0.5" alt="Closing the Dosing Loop on Analyzer Results with OPC UA" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; FEB 25, 2026 &mdash; 4 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Standardizing OPC UA Integrations for Closed-Loop Dosing Valves</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A guide mapping process OPC UA tags directly to spectrometer predictions for automated ingredient dose standardizers.</p>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 10, 2026 &mdash; 5 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Closing the Dosing Loop on Analyzer Results with OPC UA</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point.</p>
 <a href="blog-opc-ua-dosing-valves.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog milk -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-04-18" onclick="window.location.href='blog-milk-powder-analysis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_milk_spray_drying.webp?v=1.0.5" alt="Rapid Moisture and Protein Analysis in Milk Powder using FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-10" onclick="window.location.href='blog-milk-powder-analysis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_milk_spray_drying.webp?v=1.0.5" alt="Moisture and Protein Analysis in Milk Powder by NIR Spectroscopy" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; APR 18, 2026 &mdash; 3 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Rapid Moisture and Protein Analysis in Milk Powder using FT-NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Real-time monitoring of moisture and protein parameters in spray dryer discharge using MEMS FT-NIR technology.</p>
-<a href="blog-milk-powder-analysis.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 5 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Moisture and Protein Analysis in Milk Powder by NIR Spectroscopy</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How moisture, protein, fat and lactose in milk powder are determined by the reference methods, what published NIR calibrations report for them, and how an at-line or inline NIR step is calibrated and validated.</p>
+<a href="blog-milk-powder-analysis.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog ground -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-28" onclick="window.location.href='blog-ground-beef-fat.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-ground-beef-fat.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_ground_beef.webp?v=1.0.5" alt="Real-Time Fat Analysis in Ground Beef Processing" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; MAY 28, 2026 &mdash; 3 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Real-Time Fat Analysis in Ground Beef Processing</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Inline measurement of fat and moisture concentration in ground beef lines using at-line and process FT-NIR systems.</p>
-<a href="blog-ground-beef-fat.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why fat content is the controlling specification for ground beef, what the reference methods involve, and what peer-reviewed on-line NIR studies at grinder outlets and on conveyors actually report.</p>
+<a href="blog-ground-beef-fat.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog feed -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-03-05" onclick="window.location.href='blog-feed-fiber-ash.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_feed_analysis.webp?v=1.0.5" alt="Crude Fiber and Ash Content Determination in Feed Rations using FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-feed-fiber-ash.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_feed_analysis.webp?v=1.0.6" alt="Crude Fiber and Ash Content Determination in Feed Rations by NIR Spectroscopy" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; MAR 05, 2026 &mdash; 3 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Crude Fiber and Ash Content Determination in Feed Rations using FT-NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Controlling crude fiber, ash, and moisture parameters in animal feed plants using inline and at-line near-infrared spectroscopy.</p>
-<a href="blog-feed-fiber-ash.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 4 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Crude Fiber and Ash Content Determination in Feed Rations by NIR Spectroscopy</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How crude fibre and ash are determined by the reference methods, what published NIR calibrations achieve for them in compound feed, and how an at-line step fits into a mill's quality routine.</p>
+<a href="blog-feed-fiber-ash.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog semolina -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-01-10" onclick="window.location.href='blog-semolina-starch-gluten.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_semolina_gluten.webp?v=1.0.5" alt="Starch Damage and Gluten Verification in Wheat Semolina using FT-NIR" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-semolina-starch-gluten.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_semolina_gluten.webp?v=1.0.6" alt="Starch Damage and Gluten Quality in Durum Wheat Semolina" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; JAN 10, 2026 &mdash; 3 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Starch Damage and Gluten Verification in Wheat Semolina using FT-NIR</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Inline quality monitoring of semolina parameters including wet gluten, index, and starch damage in milling facilities.</p>
-<a href="blog-semolina-starch-gluten.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 5 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Starch Damage and Gluten Quality in Durum Wheat Semolina</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What starch damage, wet gluten and gluten index mean for pasta quality, how the reference methods work, and what published NIR studies can and cannot predict in durum semolina.</p>
+<a href="blog-semolina-starch-gluten.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog polymerization -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-02-18" onclick="window.location.href='blog-polymerization-hydroxyl.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-10" onclick="window.location.href='blog-polymerization-hydroxyl.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_hydroxyl_value.webp?v=1.0.5" alt="Hydroxyl Value Monitoring in Polymerization Processes" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; FEB 18, 2026 &mdash; 3 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 6 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Hydroxyl Value Monitoring in Polymerization Processes</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Real-time tracking of hydroxyl value (OHV) and reaction endpoints in chemical reactors using fiber-optic-coupled FT-NIR.</p>
-<a href="blog-polymerization-hydroxyl.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What hydroxyl value and acid value tell you about a step-growth polyester batch, how the titration reference methods work, why the O&ndash;H bands make the reaction visible to NIR, and what in-reactor studies have shown.</p>
+<a href="blog-polymerization-hydroxyl.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog olive -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-02" onclick="window.location.href='blog-olive-oil-acidity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_olive_oil_acidity.webp?v=1.0.5" alt="Free Fatty Acidity (FFA) Monitoring in Olive Oil Processing" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-olive-oil-acidity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_olive_oil_acidity.webp?v=1.0.6" alt="Free Fatty Acidity (FFA) Monitoring in Olive Oil Processing" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; MAY 02, 2026 &mdash; 3 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Free Fatty Acidity (FFA) Monitoring in Olive Oil Processing</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Simultaneous determination of free fatty acidity, moisture, and peroxide value at the decanter discharge during oil extraction.</p>
-<a href="blog-olive-oil-acidity.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How free acidity and peroxide value define olive oil grades, how they arise before and in the mill, what published NIR calibrations achieve for them, and where a measurement point fits.</p>
+<a href="blog-olive-oil-acidity.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog cell culture -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-06-25" onclick="window.location.href='blog-bioreactor-cell-culture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-11" onclick="window.location.href='blog-bioreactor-cell-culture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_bioreactor_cell.webp?v=1.0.5" alt="Bioreactor Feeding Optimization in Mammalian Cell Culture" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JUN 25, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 11, 2026 &mdash; 4 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Bioreactor Feeding Optimization in Mammalian Cell Culture</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Real-time inline monitoring of glucose, lactate, and viable cell density inside bioreactors using sapphire immersion probes.</p>
-<a href="blog-bioreactor-cell-culture.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why glucose and lactate control matters in CHO fed-batch culture, why NIR struggles in aqueous culture media, and what the literature shows for in-situ Raman and mid-infrared feed control.</p>
+<a href="blog-bioreactor-cell-culture.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog milk adulteration -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-06-08" onclick="window.location.href='blog-milk-adulteration-receiving.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_milk_adulteration.webp?v=1.0.5" alt="Rapid Adulteration Detection in Raw Milk Receiving" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-06-11" onclick="window.location.href='blog-milk-adulteration-receiving.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_milk_adulteration.webp?v=1.0.6" alt="Rapid Adulteration Detection in Raw Milk Receiving" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JUN 08, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 11, 2026 &mdash; 4 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Rapid Adulteration Detection in Raw Milk Receiving</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Screening incoming raw milk tanker deliveries for added water, urea, and melamine using automated transmission cell analyzers.</p>
-<a href="blog-milk-adulteration-receiving.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What peer-reviewed studies show infrared spectroscopy can detect in raw milk, and how a screen-then-confirm step fits into a dairy intake line.</p>
+<a href="blog-milk-adulteration-receiving.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog outlier detection -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-03-28" onclick="window.location.href='blog-outlier-detection-mahalanobis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-11" onclick="window.location.href='blog-outlier-detection-mahalanobis.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_outlier_detection.webp?v=1.0.5" alt="Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; MAR 28, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 11, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Chemometric Outlier Detection: Mahalanobis Distance vs. Hotelling's T&sup2;</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A detailed guide explaining how to calculate and set outlier threshold limits for regression and classification calibrations.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How Mahalanobis distance, Hotelling's T-squared, leverage and Q residuals tell a process analyzer whether a spectrum belongs to its calibration, how their limits are set, and why one statistic carries several names in software.</p>
 <a href="blog-outlier-detection-mahalanobis.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog wavelength selection -->
-<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-22" onclick="window.location.href='blog-wavelength-selection-ipls.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-11" onclick="window.location.href='blog-wavelength-selection-ipls.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_wavelength_selection.webp?v=1.0.5" alt="Wavelength Selection & Feature Engineering for NIR Spectral Models" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; APR 22, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 11, 2026 &mdash; 4 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Wavelength Selection & Feature Engineering for NIR Spectral Models</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How to use Genetic Algorithms and iPLS in the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> suite to select optimal wavelength bands and improve model portability.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why restricting a NIR calibration to selected wavelengths can help, how iPLS, genetic algorithms, UVE, CARS, VIP and jackknifing choose them, and why the selection must be validated independently.</p>
 <a href="blog-wavelength-selection-ipls.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog cheese yield -->
-<div class="card blog-card" data-category="guide" data-industry="dairy" data-date="2026-05-10" onclick="window.location.href='blog-cheese-yield-prediction.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_mems_sensor.webp?v=1.0.5" alt="Evaluating Cheese Yield Prediction Models Using caliX" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-05-10" onclick="window.location.href='blog-cheese-yield-prediction.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_milk_powder.webp?v=1.0.5" alt="Evaluating Cheese Yield Prediction Models" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; MAY 10, 2026 &mdash; 2 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Evaluating Cheese Yield Prediction Models Using cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A step-by-step walk-through on building multivariate models in the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> suite to predict moisture-in-curd during vat coagulation.</p>
-<a href="blog-cheese-yield-prediction.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; MAY 10, 2026 &mdash; 5 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Evaluating Cheese Yield Prediction Models</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How cheese yield is predicted from milk fat and protein, what infrared spectroscopy adds at milk intake and in the vat, and how a yield model is built and validated.</p>
+<a href="blog-cheese-yield-prediction.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog liquid milk -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-02-05" onclick="window.location.href='blog-liquid-milk-standardization.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-02-05" onclick="window.location.href='blog-liquid-milk-standardization.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_milk_spray_drying.webp?v=1.0.5" alt="Optimizing Fat and Protein Standardization in Liquid Milk" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; FEB 05, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; FEB 05, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Optimizing Fat and Protein Standardization in Liquid Milk</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How inline FT-NIR sensors at the standardization valve block allow real-time cream addition control, cutting fat variation by 50%.</p>
-<a href="blog-liquid-milk-standardization.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How in-line fat standardisation of drinking milk works, where density-based cream control reaches its limits, and what published work shows for in-line NIR measurement of fat and protein.</p>
+<a href="blog-liquid-milk-standardization.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog soybean-crush-yield -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-soybean-crush-yield.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_feed_analysis.webp?v=1.0.5" alt="Optimizing Oil and Protein Extraction in Soybean Crush Plants" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-10" onclick="window.location.href='blog-soybean-crush-yield.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_feed_analysis.webp?v=1.0.6" alt="Optimizing Oil and Protein Extraction in Soybean Crush Plants" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JUN 10, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Optimizing Oil and Protein Extraction in Soybean Crush Plants</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How inline FT-NIR monitors moisture, fat, and protein on soy meal discharge.</p>
-<a href="blog-soybean-crush-yield.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How solvent extraction and the desolventiser-toaster set the oil, moisture and protein quality of soybean meal, which reference methods define them, and where NIR measurement fits.</p>
+<a href="blog-soybean-crush-yield.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog petfood-extrusion-moisture -->
-<div class="card blog-card" data-category="whitepaper" data-industry="food-feed" data-date="2026-05-24" onclick="window.location.href='blog-petfood-extrusion-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-05-24" onclick="window.location.href='blog-petfood-extrusion-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_cattle_feed.webp?v=1.0.5" alt="Moisture and Fat Standardization in Pet Food Extrusion" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; MAY 24, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; MAY 24, 2026 &mdash; 6 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Moisture and Fat Standardization in Pet Food Extrusion</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Using inline sensors over extruder exit chutes to prevent kibble mold and regulate fat coating.</p>
-<a href="blog-petfood-extrusion-moisture.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why kibble moisture at the dryer exit and fat at the coater decide shelf life and label compliance, and what published NIR studies on extruded pet food actually show.</p>
+<a href="blog-petfood-extrusion-moisture.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog corn-gluten-dryer -->
-<div class="card blog-card" data-category="casestudy" data-industry="food-feed" data-date="2026-04-28" onclick="window.location.href='blog-corn-gluten-dryer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-04-28" onclick="window.location.href='blog-corn-gluten-dryer.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_starch_milling.webp?v=1.0.5" alt="Real-Time Moisture Control in Corn Gluten Feed Dryers" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; APR 28, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; APR 28, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Real-Time Moisture Control in Corn Gluten Feed Dryers</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Case study on optimizing dryer heat loops to keep corn gluten meal moisture at exactly 10.5%.</p>
-<a href="blog-corn-gluten-dryer.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why the gluten feed dryer is one of the largest energy users in a corn wet mill, what over-drying and under-drying cost, and how on-line NIR moisture measurement can close the dryer control loop.</p>
+<a href="blog-corn-gluten-dryer.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog flour-ash-milling -->
-<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-03-18" onclick="window.location.href='blog-flour-ash-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_semolina_gluten.webp?v=1.0.5" alt="Continuous Ash and Protein Monitoring in Wheat Flour Milling" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-03-18" onclick="window.location.href='blog-flour-ash-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_semolina_gluten.webp?v=1.0.6" alt="Continuous Ash and Protein Monitoring in Wheat Flour Milling" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; MAR 18, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; MAR 18, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Continuous Ash and Protein Monitoring in Wheat Flour Milling</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Guide on using at-line and inline NIR on flour streams to grade wheat extraction rates dynamically.</p>
-<a href="blog-flour-ash-milling.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why ash tracks bran in flour streams, what the incineration and Kjeldahl reference methods involve, what published NIR work shows for ash and protein, and how stream monitoring fits into a mill.</p>
+<a href="blog-flour-ash-milling.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog whey-permeate-evaporator -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-04-15" onclick="window.location.href='blog-whey-permeate-evaporator.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-04-15" onclick="window.location.href='blog-whey-permeate-evaporator.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_milk_powder.webp?v=1.0.5" alt="Total Solids Control in Whey Permeate Evaporators" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; APR 15, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; APR 15, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Total Solids Control in Whey Permeate Evaporators</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Case study on inline refractometer/spectrometer standardization of whey concentrate before spray drying.</p>
-<a href="blog-whey-permeate-evaporator.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why the solids content leaving a whey or permeate evaporator matters for fouling, lactose crystallisation and drying, and how it can be measured and controlled.</p>
+<a href="blog-whey-permeate-evaporator.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog butter-fat-moisture -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-03-28" onclick="window.location.href='blog-butter-fat-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-03-28" onclick="window.location.href='blog-butter-fat-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_milk_spray_drying.webp?v=1.0.5" alt="Inline Fat and Moisture Standardization in Continuous Butter Making" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; MAR 28, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; MAR 28, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Inline Fat and Moisture Standardization in Continuous Butter Making</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">White paper on using NIR probes inside butter churn discharge pipes to control water dosing.</p>
-<a href="blog-butter-fat-moisture.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What the butter standards fix for fat, water and salt, where a continuous buttermaker sets them, and what published inline-sensor and NIR studies show about controlling them at the line.</p>
+<a href="blog-butter-fat-moisture.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog yogurt-fermentation-lactic -->
-<div class="card blog-card" data-category="whitepaper" data-industry="dairy" data-date="2026-01-26" onclick="window.location.href='blog-yogurt-fermentation-lactic.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_milk_adulteration.webp?v=1.0.5" alt="Monitoring Lactic Acid and pH in Yogurt Fermentation" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-01-26" onclick="window.location.href='blog-yogurt-fermentation-lactic.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_milk_adulteration.webp?v=1.0.6" alt="Monitoring Lactic Acid and pH in Yogurt Fermentation" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; JAN 26, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JAN 26, 2026 &mdash; 4 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Monitoring Lactic Acid and pH in Yogurt Fermentation</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">White paper tracking live culture fermentation using inline probes to determine exact vat cooling times.</p>
-<a href="blog-yogurt-fermentation-lactic.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why the end-point of yogurt fermentation matters, how pH and titratable acidity are measured, and what in-line NIR studies report about following acidification.</p>
+<a href="blog-yogurt-fermentation-lactic.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog cheese-moisture-milling -->
-<div class="card blog-card" data-category="casestudy" data-industry="dairy" data-date="2026-02-15" onclick="window.location.href='blog-cheese-moisture-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_mems_sensor.webp?v=1.0.5" alt="Moisture and Salt Monitoring in Cheddar Cheese Milling" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-02-15" onclick="window.location.href='blog-cheese-moisture-milling.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_milk_spray_drying.webp?v=1.0.5" alt="Moisture and Salt Monitoring in Cheddar Cheese Milling" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; FEB 15, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; FEB 15, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Moisture and Salt Monitoring in Cheddar Cheese Milling</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Case study on measuring salt-in-moisture ratio at-line before cheddaring belt pressing.</p>
-<a href="blog-cheese-moisture-milling.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why the salt-in-moisture ratio fixed at the salting belt governs Cheddar ripening, how moisture and salt are determined by the reference methods, and what published NIR studies show for cheese.</p>
+<a href="blog-cheese-moisture-milling.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog dairy-receiving-total-solids -->
-<div class="card blog-card" data-category="guide" data-industry="dairy" data-date="2026-01-08" onclick="window.location.href='blog-dairy-receiving-total-solids.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_milk_adulteration.webp?v=1.0.5" alt="Incoming Milk Fat and Total Solids Grading at Receiving Docks" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="article" data-industry="dairy" data-date="2026-01-08" onclick="window.location.href='blog-dairy-receiving-total-solids.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_milk_adulteration.webp?v=1.0.6" alt="Incoming Milk Fat and Total Solids Grading at Receiving Docks" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JAN 08, 2026 &mdash; 2 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JAN 08, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Incoming Milk Fat and Total Solids Grading at Receiving Docks</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Guide on scanning incoming raw milk tank deliveries using transmission cells.</p>
-<a href="blog-dairy-receiving-total-solids.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why raw milk is paid for by its fat, protein and solids, how the reference methods and mid-infrared analysers establish those values, and what published NIR studies show for raw-milk composition.</p>
+<a href="blog-dairy-receiving-total-solids.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog pharma-granulation-moisture -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-06-12" onclick="window.location.href='blog-pharma-granulation-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-06-12" onclick="window.location.href='blog-pharma-granulation-moisture.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_pharma_blending.webp?v=1.0.5" alt="Moisture Monitoring in Fluid Bed Granulation" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JUN 12, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 12, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Moisture Monitoring in Fluid Bed Granulation</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Case study on endpoint determination in active granulate drying.</p>
-<a href="blog-pharma-granulation-moisture.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why residual moisture is the critical attribute of a fluid-bed granulation, what the reference methods measure, what in-line NIR studies have shown, and why sampling, probe fouling and temperature decide whether the method holds up.</p>
+<a href="blog-pharma-granulation-moisture.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog solvent-distillation-purity -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-04-08" onclick="window.location.href='blog-solvent-distillation-purity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-04-08" onclick="window.location.href='blog-solvent-distillation-purity.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_fiber_reactors.webp?v=1.0.5" alt="Inline Solvent Purity Monitoring in Chemical Distillation Columns" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; APR 08, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; APR 08, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Inline Solvent Purity Monitoring in Chemical Distillation Columns</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">White paper detailing tracking binary solvent fractions using fiber optic flow cells.</p>
-<a href="blog-solvent-distillation-purity.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why distillation columns are usually run on temperature, what near-infrared spectroscopy adds for solvent composition and water content, and how such an analyzer is calibrated and validated.</p>
+<a href="blog-solvent-distillation-purity.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog packaging-polymer-density -->
-<div class="card blog-card" data-category="guide" data-industry="chemical-pharma" data-date="2026-03-20" onclick="window.location.href='blog-packaging-polymer-density.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-03-20" onclick="window.location.href='blog-packaging-polymer-density.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Density and Crystallinity Grading of Polyethylene Packaging" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; MAR 20, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; MAR 20, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Density and Crystallinity Grading of Polyethylene Packaging</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Guide on verifying high-density vs low-density PE thickness and barrier properties.</p>
-<a href="blog-packaging-polymer-density.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How density and crystallinity of LDPE, LLDPE and HDPE are determined by the reference methods, what the near-infrared spectrum of polyethylene actually encodes, and what published NIR density calibrations have achieved on pellets, film and melt.</p>
+<a href="blog-packaging-polymer-density.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog pharma-raw-material-id -->
-<div class="card blog-card" data-category="casestudy" data-industry="chemical-pharma" data-date="2026-01-18" onclick="window.location.href='blog-pharma-raw-material-id.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-01-18" onclick="window.location.href='blog-pharma-raw-material-id.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_pharma_blending.webp?v=1.0.5" alt="Incoming Raw Material Identification in Pharmaceutical Warehouses" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY &mdash; JAN 18, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JAN 18, 2026 &mdash; 6 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Incoming Raw Material Identification in Pharmaceutical Warehouses</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Case study on instant raw material validation at warehouse receiving using cali<span class="calix-x" style="color: #38b6ff !important;">X</span> classification models.</p>
-<a href="blog-pharma-raw-material-id.html" class="btn-text" style="margin-top: auto;">Read Case Study</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why GMP expects an identity test on every container of starting material, what the EMA and the pharmacopoeias require of a qualitative NIR method, and how spectral libraries and through-container measurement are built and validated.</p>
+<a href="blog-pharma-raw-material-id.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog chemical-alkyd-resin -->
-<div class="card blog-card" data-category="whitepaper" data-industry="chemical-pharma" data-date="2026-02-12" onclick="window.location.href='blog-chemical-alkyd-resin.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="article" data-industry="chemical-pharma" data-date="2026-02-12" onclick="window.location.href='blog-chemical-alkyd-resin.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Acid Value and Viscosity Tracking in Alkyd Resin Cooking" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER &mdash; FEB 12, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; FEB 12, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Acid Value and Viscosity Tracking in Alkyd Resin Cooking</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">White paper detailing continuous tracking of resin esterification reactions to prevent gelling.</p>
-<a href="blog-chemical-alkyd-resin.html" class="btn-text" style="margin-top: auto;">Read White Paper</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why alkyd cooks are followed by acid value and viscosity, what the titration and viscosity reference methods involve, why the gel point makes timing critical, and what published in-line NIR studies show.</p>
+<a href="blog-chemical-alkyd-resin.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog msc-snv-preprocessing -->
 <div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-02" onclick="window.location.href='blog-msc-snv-preprocessing.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_spectral_math.webp?v=1.0.5" alt="Multiplicative Scatter Correction and Standard Normal Variate Preprocessing" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 02, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 02, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Multiplicative Scatter Correction and Standard Normal Variate Preprocessing</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Tutorial comparing scatter correction math for light path variations in reflectance NIR.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">What multiplicative scatter correction and the standard normal variate transform do to a diffuse-reflectance NIR spectrum, how the two are related, and when each is the better choice.</p>
 <a href="blog-msc-snv-preprocessing.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog spectrometer-reference-bg -->
 <div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-04-02" onclick="window.location.href='blog-spectrometer-reference-bg.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_mems_durability.webp?v=1.0.5" alt="Standardizing Reference Background Measurement Intervals in Process Spectroscopy" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<img src="images/blog_what_is_nir.webp?v=1.0.5" alt="Standardizing Reference Background Measurement Intervals in Process Spectroscopy" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; APR 02, 2026 &mdash; 1 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; APR 02, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Standardizing Reference Background Measurement Intervals in Process Spectroscopy</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Guide on automatic internal gold-flag backgrounds to manage environmental drift.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Why a process NIR spectrometer needs reference measurements, which effects make its response drift, and how performance tests and routine checks reveal drift before it reaches the results.</p>
 <a href="blog-spectrometer-reference-bg.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: What Is FT-NIR Spectroscopy? -->
-<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-20" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-06-20" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_ftnir_guide.webp?v=1.0.5" alt="What Is FT-NIR Spectroscopy?" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 20, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 20, 2026 &mdash; 5 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">What Is FT-NIR Spectroscopy? A Plain-Language Guide for Food and Feed Manufacturers</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A clear, jargon-free explanation of Fourier Transform Near-Infrared technology and why it matters for inline quality control.</p>
-<a href="blog-what-is-ftnir.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A plain-language introduction to Fourier-transform NIR: how an interferometer turns light into a spectrum, what the bands say about water, protein, fat and carbohydrate, and why calibration is needed.</p>
+<a href="blog-what-is-ftnir.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: NIR vs. FT-NIR -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-18" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-18" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="NIR vs. FT-NIR Comparison" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 18, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 18, 2026 &mdash; 7 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">NIR vs. FT-NIR: What&rsquo;s the Difference &mdash; and Why It Matters for Inline Process Control</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Technical comparison of dispersive NIR and Fourier Transform NIR, covering spectral resolution, wavelength stability, and signal-to-noise performance.</p>
-<a href="blog-nir-vs-ftnir.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How scanning-grating, diode-array and Fourier-transform NIR analyzers produce a spectrum, what the throughput, multiplex and wavelength-axis advantages really buy, and which trade-offs decide an inline application.</p>
+<a href="blog-nir-vs-ftnir.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: Inline vs. At-Line vs. Off-Line -->
-<div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-15" onclick="window.location.href='blog-inline-atline-offline.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<div class="card blog-card" data-category="guide" data-industry="food-feed" data-date="2026-06-15" onclick="window.location.href='blog-inline-atline-offline.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_inline_atline.webp?v=1.0.5" alt="Inline vs At-Line vs Off-Line Analysis" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 15, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 15, 2026 &mdash; 6 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line?</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Comparing three measurement strategies by response time, coverage, operator dependency, and total cost of ownership.</p>
-<a href="blog-inline-atline-offline.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How the FDA PAT guidance defines at-line, on-line and in-line measurement, what each location trades away in delay, sampling error and validation effort, and how to choose the arrangement a production line actually needs.</p>
+<a href="blog-inline-atline-offline.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: Hidden Costs of Lab-Based QC -->
 <div class="card blog-card" data-category="article" data-industry="food-feed" data-date="2026-06-12" onclick="window.location.href='blog-hidden-costs-lab-qc.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
 <img src="images/blog_hidden_costs.webp?v=1.0.5" alt="Hidden Costs of Lab-Based Quality Control" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 12, 2026 &mdash; 4 min read</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 12, 2026 &mdash; 6 min read</span>
 <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">The Hidden Costs of Lab-Based Quality Control in Food and Feed Manufacturing</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">How analytical lag, rework, yield giveaway, and compliance overhead create invisible costs that dwarf direct lab expenses.</p>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Result latency, sampling error, over-formulation and reference-method chemistry each carry a cost that never appears on the laboratory budget; what the literature says, and where process NIR fits.</p>
 <a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Blog: PLC and SCADA Integration -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_plc_scada.webp?v=1.0.5" alt="FT-NIR PLC and SCADA Integration" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-10" onclick="window.location.href='blog-plc-scada-integration.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_plc_scada.webp?v=1.0.5" alt="How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 10, 2026 &mdash; 4 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">How FT-NIR Analyzers Integrate with PLC and SCADA Systems</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Practical overview of Ethernet TCP/IP, OPC-UA, and Modbus integration architectures for inline process analyzers.</p>
-<a href="blog-plc-scada-integration.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 10, 2026 &mdash; 4 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">The integration landscape for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.</p>
+<a href="blog-plc-scada-integration.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- Blog: 5 Questions Before Buying -->
-<div class="card blog-card" data-category="article" data-industry="general-tech" data-date="2026-06-08" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
-<img src="images/blog_buying_guide.webp?v=1.0.5" alt="5 Questions Before Buying an Inline FT-NIR Analyzer" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<div class="card blog-card" data-category="guide" data-industry="general-tech" data-date="2026-06-08" onclick="window.location.href='blog-5-questions-buying-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden;">
+<img src="images/blog_buying_guide.webp?v=1.0.5" alt="5 Questions to Ask Before Buying an Inline NIR Analyzer" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE &mdash; JUN 08, 2026 &mdash; 4 min read</span>
-<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">5 Questions to Ask Before Buying an Inline FT-NIR Analyzer</h3>
-<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A procurement checklist covering production conditions, calibration, automation integration, installation, and after-sales support.</p>
-<a href="blog-5-questions-buying-ftnir.html" class="btn-text" style="margin-top: auto;">Read Article</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE &mdash; JUN 08, 2026 &mdash; 4 min read</span>
+<h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.4; color: var(--accent-black);">5 Questions to Ask Before Buying an Inline NIR Analyzer</h3>
+<p style="margin-bottom: 1.5rem; flex-grow: 1; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">A vendor-neutral checklist for buying an inline NIR analyzer: measurability and accuracy, the sample interface, calibration ownership, data integration and lifecycle validation.</p>
+<a href="blog-5-questions-buying-ftnir.html" class="btn-text" style="margin-top: auto;">Read Guide</a>
 </div>
 </div>
 </div>
@@ -956,11 +957,10 @@ visibleCount++;
 card.style.display = 'none';
 }
 });
-if (activeType === 'all' && activeIndustry === 'all') {
-activeFiltersCount.textContent = `Showing all ${visibleCount} publications`;
-} else {
-activeFiltersCount.textContent = `Showing ${visibleCount} of ${blogCards.length} publications`;
-}
+// sayac metni sayfa dilinde: cevrilmis statik metin sablon, yalniz sayi degisir (30.10.2026)
+if (!activeFiltersCount.dataset.tpl) activeFiltersCount.dataset.tpl = activeFiltersCount.textContent;
+const countText = (activeType === 'all' && activeIndustry === 'all') ? String(visibleCount) : visibleCount + ' / ' + blogCards.length;
+activeFiltersCount.textContent = activeFiltersCount.dataset.tpl.replace(/\d+/, countText);
 const sortedCards = [...blogCards].sort((a, b) => {
 const dateA = new Date(a.dataset.date);
 const dateB = new Date(b.dataset.date);
@@ -983,7 +983,7 @@ filterAndSortBlogs();
 <div class="container" style="max-width: 800px; padding: 4rem 2rem;">
 <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">Want to Optimize Your Production Lines?</h2>
 <p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
-Learn how our custom calibration methods and MEMS FT-NIR sensors can fit into your facility. You can explore <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our product portfolio</a> to see our full line of devices and software, or browse <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our contact details</a> to reach our sales engineers.
+Learn how our custom calibration methods and MEMS FT-NIR sensors can fit into your facility. You can explore <a href="products.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">our product portfolio</a> to see our full line of devices and software, or browse <a href="contact.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">our contact details</a> to reach our sales engineers.
 </p>
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
 <a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">Browse Product Portfolio</a>
@@ -1042,6 +1042,6 @@ Learn how our custom calibration methods and MEMS FT-NIR sensors can fit into yo
             <p>Designed for scientific and industrial precision.</p>
         </div>
     </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="逐步介绍如何在 caliX 套件中构建多变量模型来预测凝乳凝结过程中的凝乳水分。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="如何由牛奶的脂肪和蛋白质预测奶酪得率，红外光谱在收奶和奶酪槽中能带来什么，以及如何建立和验证得率模型。" name="description"/>
 <meta content="奶酪产量预测、caliX NIR 校准、乳制品产量优化、FT-NIR 奶酪分析" name="keywords"/>
-<title>使用 caliX 评估奶酪产量预测模型 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<title>奶酪产率预测模型的评估 | USTECH Innovations</title>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-cheese-yield-prediction.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-cheese-yield-prediction.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-cheese-yield-prediction.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,21 +61,21 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "使用 caliX 评估奶酪产量预测模型",
-  "description": "逐步介绍如何在 caliX 套件中构建多变量模型来预测凝乳凝结过程中的凝乳水分。",
+  "@type": "BlogPosting", "inLanguage": "zh",
+  "headline": "奶酪产率预测模型的评估",
+  "description": "如何由牛奶的脂肪和蛋白质预测奶酪得率，红外光谱在收奶和奶酪槽中能带来什么，以及如何建立和验证得率模型。",
   "url": "https://www.ustechinnovations.com/zh/blog-cheese-yield-prediction.html",
   "datePublished": "2026-05-10",
-  "dateModified": "2026-05-10",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
   "publisher": {
     "@id": "https://www.ustechinnovations.com/#org"
   },
-  "image": "https://www.ustechinnovations.com/images/blog_mems_sensor.webp"
+  "image": "https://www.ustechinnovations.com/images/blog_milk_powder.webp"
 }</script>
 <!-- BreadcrumbList Schema -->
 <script type="application/ld+json">{
@@ -113,17 +114,23 @@
 <link href="../apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
-<meta content="使用 caliX 评估奶酪产量预测模型 | USTECH Innovations" property="og:title"/>
-<meta content="逐步介绍如何在 caliX 套件中构建多变量模型来预测凝乳凝结过程中的凝乳水分。" property="og:description"/>
+<meta content="奶酪产率预测模型的评估 | USTECH Innovations" property="og:title"/>
+<meta content="如何由牛奶的脂肪和蛋白质预测奶酪得率，红外光谱在收奶和奶酪槽中能带来什么，以及如何建立和验证得率模型。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-cheese-yield-prediction.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-cheese-yield-prediction.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="使用 caliX 评估奶酪产量预测模型 | USTECH Innovations" property="og:image:alt"/>
+<meta content="奶酪产率预测模型的评估 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="使用 caliX 评估奶酪产量预测模型 | USTECH Innovations" name="twitter:title"/>
-<meta content="逐步介绍如何在 caliX 套件中构建多变量模型来预测凝乳凝结过程中的凝乳水分。" name="twitter:description"/>
+<meta content="奶酪产率预测模型的评估 | USTECH Innovations" name="twitter:title"/>
+<meta content="如何由牛奶的脂肪和蛋白质预测奶酪得率，红外光谱在收奶和奶酪槽中能带来什么，以及如何建立和验证得率模型。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-cheese-yield-prediction.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -209,65 +216,62 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
-<img alt="使用 cali<span class="calix-x">X</span> 评估奶酪产量预测模型" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_mems_sensor.webp?v=1.0.5"/>
+<img alt="奶酪产率预测模型的评估" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_milk_powder.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">GUIDE — May 10, 2026 — 2 分钟阅读</span>
-<h1 class="blog-post-title">使用 cali<span class="calix-x">X</span> 评估奶酪产量预测模型</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">通过使用化学计量学模型预测发酵结果，最大限度地提高奶酪生产产量。</p>
+<span class="blog-post-meta">文章 — 2026年5月10日 — 5 分钟阅读</span>
+<h1 class="blog-post-title">奶酪产率预测模型的评估</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">如何由牛奶成分预测奶酪得率，经典得率公式在哪些方面存在不足，近红外和中红外光谱在收奶以及奶酪槽中凝乳和排乳清过程中能带来什么，以及应当如何建立和验证得率模型 &mdash; 并附每一论点所依据的同行评审文献。</p>
 </div>
 <div class="blog-post-content">
-<h2>为什么奶酪产量预测很重要</h2>
-<p>牛奶成分（脂肪、酪蛋白、乳糖）和凝固参数的微小变化会导致最终奶酪产量的显着差异。过度滞留水分会导致软缺陷；过度挤压会导致乳清排出物中的脂肪流失。在压制前预测最终的凝乳产量可以让奶酪制造商调整在大桶中的切割、加热和腌制时间。</p>
-<h2>在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中构建 PLS 产量模型</h2>
-<p>通过使用 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Spectral Intelligence 套件编译缸内牛奶的光谱扫描和相应的实验室结果，乳品厂构建了稳健的 PLS 回归模型。该模型可以高精度预测凝乳中的水分，从而能够自动决定缸的抽水时间。</p>
-<table class="doc-table">
-<thead>
-<tr>
-<th>范围</th>
-<th>范围</th>
-<th>交叉验证的均方根误差 (RMSECV)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>凝乳水分</strong></td>
-<td>38.0% — 46.0%</td>
-<td><strong>±0.18%</strong></td>
-</tr>
-<tr>
-<td><strong>干物质中的脂肪 (FDM)</strong></td>
-<td>48.0% — 54.0%</td>
-<td><strong>±0.25%</strong></td>
-</tr>
-</tbody>
-</table>
-<div class="blog-post-references">
-<h3>参考</h3>
+<h2>为何奶酪得率重要</h2>
+<p>奶酪是<a href="industry-dairy.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">乳品行业</a>中非常重要的贸易商品；Fox 等估计其约占牛奶总用量的 35 % <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。得率以标准化脂肪和蛋白质水平下每 100 kg 牛奶所得奶酪的千克数表示，工厂跟踪得率效率，即实际得率占由牛奶成分预测的得率的百分比 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。影响得率的因素已有详尽归纳 &mdash; 牛奶成分和质量、标准化、热处理、切割时的凝胶硬度、切割和搅拌方式、凝乳粒度和奶酪槽设计 &mdash; 它们通过影响牛奶凝胶的成分，以及从凝乳颗粒中排出多少水分、损失多少脂肪而起作用 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。</p>
+<h2>由牛奶成分预测得率</h2>
+<p>得率预测公式源自 1895 年发表的一个仅基于酪蛋白和脂肪的公式；Van Slyke 公式是这一系列中最著名的，后来的改进加入了奶酪的水分和盐分、乳清固形物，并以副酪蛋白代替酪蛋白 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。Emmons 和 Modler 在 22 槽切达奶酪上检验了 General、Barbano 和 Van Slyke 公式，发现未经调整的公式不能准确预测得率：平均预测得率为实际值的 99.17 %，而所测奶酪各组分之和不足 100 % <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。按观测到的组分之和进行调整后，平均值达到实际值的 99.99 %，因此推荐使用调整后的公式计算目标得率和得率效率；值得注意的是，此时牛奶总蛋白给出的预测得率与酪蛋白相同，故酪蛋白测定未必总是必要 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。</p>
+<p>输入量是槽奶的脂肪和蛋白质，而这些数值的质量取决于其背后的参考方法：重量法脂肪参考方法是取代了 ISO 1211 的 ISO 23318 | IDF 249 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>，ISO 8968-1 | IDF 20-1 则按凯氏定氮原理测定氮并由此计算粗蛋白 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。</p>
+<h2>红外光谱在收奶环节的贡献</h2>
+<p>相对于奶酪制作的节奏，参考方法是缓慢的，因此对照参考方法建立的光谱定标提供了日常数据。Laporte 和 Paquin 用近红外透射法和基于 96 份样品的 PLS 定标测定了牛乳中的脂肪、粗蛋白、真蛋白和酪蛋白；独立验证给出的预测标准误差为脂肪 0.07 %、粗蛋白和酪蛋白 0.06 %、真蛋白 0.05 %，并发现均质会影响脂肪的测定 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</p>
+<p>更直接的途径是将光谱直接对得率本身进行定标。Ferragina 等按固定的实验室规程用单头奶牛的牛奶制作了 1,264 个模型奶酪，并将未经处理牛奶的中红外（FTIR）光谱与所测得率性状相关联；交叉验证给出的决定系数为总固形物奶酪得率 0.95、鲜奶酪得率 0.83，但凝乳中保留的水分仅为 0.65，脂肪回收率仅为 0.41 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。光谱携带着驱动固形物得率的成分信息；而水分保留和脂肪损失是在奶酪槽中决定的，在牛奶光谱中看不到。这正是槽内监测所要解决的那部分问题。</p>
+<h2>监测奶酪槽中的凝乳和排乳清</h2>
+<p>O'Callaghan 等综述了监测凝乳形成的在线技术 &mdash; 热线探头、振动探头和光学探头 &mdash; 并根据跨越牛奶季节性变化的工厂试验得出结论：在线监测可以提高切割时凝乳的一致性 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。光学方法依赖于酪蛋白胶束聚集时光散射的上升。Castillo 等用 880 nm 漫反射传感器监测山羊奶的凝固；反射参数 <em>T</em><sub>max</sub> 与 Berridge 凝乳时间相关（R&sup2; = 0.9913），在不同 pH、温度和酶浓度条件下，基于 <em>T</em><sub>max</sub> 的切割时间方程预测切割时间的标准误差为 84.5 s（R&sup2; = 0.9785）<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。Lyndgaard 等将此扩展到在线记录的全 NIR 光谱（1,000&ndash;2,500 nm），经主成分分析压缩后用一个区分 &kappa;-酪蛋白水解、胶束聚集和网络形成的动力学模型拟合；该模型对 12 个批次的拟合 R&sup2; 高于 0.99，并可实时估计以自动确定切割时间 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</p>
+<p>同一信号在切割后仍携带信息。Fagan 等用响应面法表明，脂肪保留是切割时间和温度的函数，凝乳得率还取决于氯化钙的添加，并且切割时存在一个最佳凝胶硬度，应在避免凝胶迅速粗化和微观排乳清的前提下使其最大化 <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。在后续研究中，结合牛奶成分与背散射参数的方程预测脂肪损失的预测标准误差为 &plusmn;2.65 g/100 g（R&sup2; = 0.93），凝乳得率为 &plusmn;0.95 %（R&sup2; = 0.90），凝乳水分为 &plusmn;1.43 %（R&sup2; = 0.94）<a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。这些是在刻意变化的条件下进行的中试槽研究；它们表明信号中包含了这些信息，而非生产槽将达到的水平。</p>
+<h2>建立站得住脚的得率模型</h2>
+<p>奶酪得率模型实际上是两个模型：一个是基于成分预测牛奶应当给出的得率，另一个是槽内模型，描述这一潜力有多少得以实现。三项做法可使两者都站得住脚：</p>
 <ul>
-<li>“切达奶酪制作中凝固动力学的多元化学计量校准”<em>乳制品研究通讯</em>，2024 年。</li>
+<li><strong>明确所预测的得率。</strong>Ferragina 等区分了鲜奶酪得率、总固形物得率和凝乳中保留的水分，以及脂肪、蛋白质和总固形物的回收率 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>；针对其中一种定标的模型不能当作另一种来解读。</li>
+<li><strong>将定标锚定于参考方法。</strong>脂肪和蛋白质值应来自 ISO 23318 和 ISO 8968-1 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>，乳制品上的 NIR 定标和验证遵循 ISO 21543 | IDF 201 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。</li>
+<li><strong>跨季节验证。</strong>切割时间和排乳清响应取决于 pH、温度、钙和酶水平 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>，工厂综述也强调季节性变化 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>；在信赖模型用于下一季牛奶之前应重新验证。</li>
+</ul>
+<h2>USTECH 的解决思路</h2>
+<p><a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 过程分析仪专为管道和容器中的液体和浆料设计，涵盖为基于成分的得率预测提供数据的槽奶测量；<a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 软件套件提供上述研究所用的 PLS 回归和 PCA 工具 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。通过 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>，预测值可传送至工厂的 PLC 或 SCADA 系统，用于仪表板和报警。工厂所关心的得率性状能否预测到所需的精度，须按照 ISO 21543 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>，通过使用您自己的样品的可行性研究来确定，而不是根据已发表的数据来假定。</p>
+<div class="blog-post-references">
+<h3>参考文献</h3>
+<ul>
+<li id="ref-1">[1] Fox, P.F., Guinee, T.P., Cogan, T.M., McSweeney, P.L.H. (2017). Cheese Yield. In: <em>Fundamentals of Cheese Science</em>, 2nd ed. Springer, Boston, pp. 279&ndash;331. <a href="https://doi.org/10.1007/978-1-4899-7681-9_10" target="_blank" rel="noopener">doi:10.1007/978-1-4899-7681-9_10</a></li>
+<li id="ref-2">[2] Emmons, D.B., Modler, H.W. (2010). Invited review: A commentary on predictive cheese yield formulas. <em>Journal of Dairy Science</em>, 93(12), 5517&ndash;5537. <a href="https://doi.org/10.3168/jds.2010-3262" target="_blank" rel="noopener">doi:10.3168/jds.2010-3262</a></li>
+<li id="ref-3">[3] ISO 23318 | IDF 249:2022. <em>Milk, dried milk products and cream &mdash; Determination of fat content &mdash; Gravimetric method.</em> ISO, Geneva. <a href="https://www.iso.org/standard/75226.html" target="_blank" rel="noopener">iso.org/standard/75226.html</a></li>
+<li id="ref-4">[4] ISO 8968-1 | IDF 20-1:2014. <em>Milk and milk products &mdash; Determination of nitrogen content &mdash; Part 1: Kjeldahl principle and crude protein calculation.</em> ISO, Geneva. <a href="https://www.iso.org/standard/61020.html" target="_blank" rel="noopener">iso.org/standard/61020.html</a></li>
+<li id="ref-5">[5] Laporte, M.-F., Paquin, P. (1999). Near-infrared analysis of fat, protein, and casein in cow's milk. <em>Journal of Agricultural and Food Chemistry</em>, 47(7), 2600&ndash;2605. <a href="https://doi.org/10.1021/jf980929r" target="_blank" rel="noopener">doi:10.1021/jf980929r</a></li>
+<li id="ref-6">[6] Ferragina, A., Cipolat-Gotet, C., Cecchinato, A., Bittante, G. (2013). The use of Fourier-transform infrared spectroscopy to predict cheese yield and nutrient recovery or whey loss traits from unprocessed bovine milk samples. <em>Journal of Dairy Science</em>, 96(12), 7980&ndash;7990. <a href="https://doi.org/10.3168/jds.2013-7036" target="_blank" rel="noopener">doi:10.3168/jds.2013-7036</a></li>
+<li id="ref-7">[7] O'Callaghan, D.J., O'Donnell, C.P., Payne, F.A. (2002). Review of systems for monitoring curd setting during cheesemaking. <em>International Journal of Dairy Technology</em>, 55(2), 65&ndash;74. <a href="https://doi.org/10.1046/j.1471-0307.2002.00043.x" target="_blank" rel="noopener">doi:10.1046/j.1471-0307.2002.00043.x</a></li>
+<li id="ref-8">[8] Castillo, M., Payne, F.A., Hicks, C.L., L&oacute;pez, M.B. (2000). Predicting cutting and clotting time of coagulating goat's milk using diffuse reflectance: effect of pH, temperature and enzyme concentration. <em>International Dairy Journal</em>, 10(8), 551&ndash;562. <a href="https://doi.org/10.1016/S0958-6946(00)00086-8" target="_blank" rel="noopener">doi:10.1016/S0958-6946(00)00086-8</a></li>
+<li id="ref-9">[9] Lyndgaard, C.B., Engelsen, S.B., van den Berg, F.W.J. (2012). Real-time modeling of milk coagulation using in-line near infrared spectroscopy. <em>Journal of Food Engineering</em>, 108(2), 345&ndash;352. <a href="https://doi.org/10.1016/j.jfoodeng.2011.07.029" target="_blank" rel="noopener">doi:10.1016/j.jfoodeng.2011.07.029</a></li>
+<li id="ref-10">[10] Fagan, C.C., Castillo, M., Payne, F.A., O'Donnell, C.P., O'Callaghan, D.J. (2007). Effect of cutting time, temperature, and calcium on curd moisture, whey fat losses, and curd yield by response surface methodology. <em>Journal of Dairy Science</em>, 90(10), 4499&ndash;4512. <a href="https://doi.org/10.3168/jds.2007-0329" target="_blank" rel="noopener">doi:10.3168/jds.2007-0329</a></li>
+<li id="ref-11">[11] Fagan, C.C., Castillo, M., O'Donnell, C.P., O'Callaghan, D.J., Payne, F.A. (2008). On-line prediction of cheese making indices using backscatter of near infrared light. <em>International Dairy Journal</em>, 18(2), 120&ndash;128. <a href="https://doi.org/10.1016/j.idairyj.2007.09.007" target="_blank" rel="noopener">doi:10.1016/j.idairyj.2007.09.007</a></li>
+<li id="ref-12">[12] ISO 21543 | IDF 201:2020. <em>Milk and milk products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/77606.html" target="_blank" rel="noopener">iso.org/standard/77606.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、校准数据集和仪器参数。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">阅读下一步</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -323,6 +327,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

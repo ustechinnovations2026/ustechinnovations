@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Étude de cas sur la validation instantanée des matières premières à la réception en entrepôt à l'aide des modèles de classification caliX." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Pourquoi les BPF attendent un test d'identification sur chaque contenant de matière première, ce que l'EMA et les pharmacopées exigent d'une méthode NIR qualitative, et comment les bibliothèques spectrales et la mesure à travers le contenant sont construites et validées." name="description"/>
 <meta content="identification des matières premières NIR, contrôle qualité de l'entrepôt pharmaceutique, vérification des matières entrantes, test d'identité NIR" name="keywords"/>
 <title>Identification des matières premières entrantes dans les entrepôts pharmaceutiques | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/fr/blog-pharma-raw-material-id.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pharma-raw-material-id.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pharma-raw-material-id.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "fr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "fr",
   "headline": "Identification des matières premières entrantes dans les entrepôts pharmaceutiques",
-  "description": "",
+  "description": "Pourquoi les BPF attendent un test d'identification sur chaque contenant de matière première, ce que l'EMA et les pharmacopées exigent d'une méthode NIR qualitative, et comment les bibliothèques spectrales et la mesure à travers le contenant sont construites et validées.",
   "url": "https://www.ustechinnovations.com/fr/blog-pharma-raw-material-id.html",
   "datePublished": "2026-03-28",
-  "dateModified": "2026-03-28",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -113,16 +114,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Identification des matières premières entrantes dans les entrepôts pharmaceutiques | USTECH Innovations" property="og:title"/>
-<meta content="Étude de cas sur la validation instantanée des matières premières à la réception en entrepôt à l'aide des modèles de classification caliX." property="og:description"/>
+<meta content="Pourquoi les BPF attendent un test d'identification sur chaque contenant de matière première, ce que l'EMA et les pharmacopées exigent d'une méthode NIR qualitative, et comment les bibliothèques spectrales et la mesure à travers le contenant sont construites et validées." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/fr/blog-pharma-raw-material-id.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pharma-raw-material-id.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Identification des matières premières entrantes dans les entrepôts pharmaceutiques | USTECH Innovations" property="og:image:alt"/>
 <meta content="fr_FR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Identification des matières premières entrantes dans les entrepôts pharmaceutiques | USTECH Innovations" name="twitter:title"/>
-<meta content="Étude de cas sur la validation instantanée des matières premières à la réception en entrepôt à l'aide des modèles de classification caliX." name="twitter:description"/>
+<meta content="Pourquoi les BPF attendent un test d'identification sur chaque contenant de matière première, ce que l'EMA et les pharmacopées exigent d'une méthode NIR qualitative, et comment les bibliothèques spectrales et la mesure à travers le contenant sont construites et validées." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pharma-raw-material-id.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -210,43 +217,58 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Retour à Tous les Blogs et Publications</a>
 <img alt="Identification des matières premières entrantes dans les entrepôts pharmaceutiques" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pharma_blending.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">CASE STUDY — January 18, 2026 — 1 min de lecture</span>
+<span class="blog-post-meta">Article — 28 mars 2026 — 6 min de lecture</span>
 <h1 class="blog-post-title">Identification des matières premières entrantes dans les entrepôts pharmaceutiques</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Vérifiez 100 % des sacs de matières premières entrants aux portes des quais pour éliminer les risques de contamination chimique.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Pourquoi les BPF européennes et américaines attendent un test d'identification sur chaque contenant de matière première reçu, ce que les pharmacopées et l'EMA exigent d'une méthode proche infrarouge qualitative, et ce que montre la littérature publiée sur les bibliothèques spectrales, les grades, les fournisseurs et la mesure à travers l'emballage.</p>
 </div>
 <div class="blog-post-content">
-<h2>L’exigence réglementaire d’une identification à 100 % des matières premières</h2>
-<p>La réglementation GMP exige que les sociétés pharmaceutiques vérifient l’identité de chaque contenant d’ingrédients actifs et d’excipients entrants. Les tests de laboratoire traditionnels nécessitent d'ouvrir des sacs, de collecter des échantillons et d'attendre la validation HPLC, ce qui entraîne des coûts de main-d'œuvre et des risques de contamination élevés.</p>
-<h2>Scans instantanés des portes de quai</h2>
-<p>Utilisation des spectromètres portables USTECH et des modèles de classification PCA cali<span class="calix-x" style="color: #38b6ff !important;">X</span>, les opérateurs scannent les sacs de poudre chimique directement à travers l'emballage transparent aux portes des quais de l'entrepôt. Le système valide instantanément l’identité du matériau par rapport à une base de données de profils chimiques vérifiés.</p>
+<h2>Pourquoi chaque contenant est testé</h2>
+<p>Dans l'<a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">industrie chimique et pharmaceutique</a>, l'identité d'une matière première reçue est une exigence des BPF, et non une préférence qualité. L'annexe 8 des BPF de l'UE indique que l'identité d'un lot complet de matières premières ne peut normalement être garantie que si des échantillons individuels sont prélevés dans tous les contenants et qu'un test d'identification est effectué sur chacun d'eux&nbsp;; l'échantillonnage d'une partie seulement des contenants n'est admis que si une procédure validée garantit qu'aucun contenant n'a été mal étiqueté, et l'annexe juge une telle validation improbable pour les matières achetées auprès de courtiers d'origine inconnue ou destinées à des produits parentéraux <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Les BPF américaines raisonnent par composant plutôt que par contenant&nbsp;: le 21 CFR 211,84(d)(1) exige au moins un test permettant de vérifier l'identité de chaque composant d'un médicament, et le certificat d'analyse d'un fournisseur ne peut remplacer les autres essais du fabricant que si celui-ci réalise au moins un test d'identification spécifique et valide les résultats du fournisseur à intervalles appropriés <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Pour les substances actives, l'ICH Q7 exige au moins un test permettant de vérifier l'identité de chaque lot de matière, avec des analyses complètes sur au moins trois lots avant toute réduction des contrôles internes <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>Pour l'entrepôt, il en résulte une charge d'échantillonnage et d'analyse qui croît avec le nombre de contenants, et un test d'identification en laboratoire qui oblige à ouvrir chaque contenant et maintient le lot en quarantaine jusqu'au retour du résultat. C'est pourquoi l'identification et la qualification des matières premières comptent parmi les applications pharmaceutiques les plus anciennes de la spectroscopie proche infrarouge (NIR), qui ne demande aucune préparation d'échantillon et fournit un résultat au point de réception <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>Ce que les pharmacopées et l'EMA exigent d'une méthode NIR qualitative</h2>
+<p>La spectroscopie NIR est une technique pharmacopéenne. Le chapitre général 2.2.40 de la Ph. Eur. la décrit pour l'identification et la qualification, y compris la comparaison directe du spectre d'une substance avec des spectres de référence <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, et l'USP &lt;856&gt; fixe les exigences de qualification, de validation et de vérification des instruments et procédures NIR <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Les attentes détaillées pour une méthode qualitative figurent dans la ligne directrice de l'EMA sur l'utilisation de la NIRS par l'industrie pharmaceutique (EMEA/CHMP/CVMP/QWP/17760/2009 Rev2), qui distingue l'identification &mdash; simple confirmation de l'identité &mdash; de la qualification, qui distingue en outre différents grades d'une même substance, comme la granulométrie ou la forme polymorphe <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Selon cette ligne directrice, une identification compare le spectre de l'échantillon aux spectres de plusieurs échantillons de plusieurs lots des substances contenues dans une bibliothèque spectrale de référence, avec des critères d'acceptation de concordance/non-concordance justifiés&nbsp;; pour les matières identifiées ou qualifiées à réception, des échantillons de tous les fournisseurs concernés doivent être inclus dans la bibliothèque&nbsp;; et la procédure doit être validée au moins en termes de spécificité et de robustesse <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. La spécificité signifie que des lots indépendants des substances de la bibliothèque doivent être acceptés, tandis que les analogues de nom et de structure pertinents, les autres grades, les formes anhydres et hydratées, les polymorphes et les matières d'autres fournisseurs doivent être refusés&nbsp;; la robustesse couvre la température, l'humidité, la position de l'échantillon, les flacons d'échantillon et, le cas échéant, les différents matériaux d'emballage <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Après approbation, la maintenance de la bibliothèque spectrale est traitée comme une modification dans le domaine d'application de la procédure, relevant des BPF et non d'une variation réglementaire <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Comment les bibliothèques spectrales sont construites</h2>
+<p>L'approche par bibliothèque a été exposée par Blanco et Romero, qui ont construit une bibliothèque de spectres NIR pour 125 matières premières en utilisant le coefficient de corrélation comme critère de discrimination et ont résolu les composés aux spectres très proches au moyen de sous-bibliothèques en cascade construites avec des méthodes chimiométriques de plus grand pouvoir discriminant <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Candolfi et al. ont appliqué SIMCA à dix excipients, avec au moins 15 échantillons par classe issus de lots différents et, dans certains cas, de fournisseurs différents&nbsp;; aux niveaux de confiance de 95 % et 99 %, sur spectres bruts, corrigés par SNV et en dérivée seconde, aucun échantillon n'a été affecté à une mauvaise classe, même si les taux de rejet d'échantillons authentiques variaient selon le prétraitement <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Dans une étude complémentaire, le même groupe a comparé 32 combinaisons de prétraitement (aucun, correction d'offset, suppression de tendance, SNV, MSC, dérivées) et de méthode de classification (distance de Mahalanobis, SIMCA, distance en longueurs d'onde, fonctions potentielles), en construisant les modèles sur des spectres mesurés en 1994 et en les testant sur des spectres recueillis de 1994 à 1997&nbsp;; pour leurs données, la méthode de distance en longueurs d'onde avec suppression de tendance s'est révélée la meilleure <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Ce qui vaut pour tout entrepôt, c'est qu'une bibliothèque doit contenir la variabilité qu'elle rencontrera &mdash; lots, fournisseurs, grades, dérive instrumentale au fil des années &mdash; avant que l'on puisse attendre d'elle qu'elle accepte la matière authentique et rejette tout le reste, ce que la ligne directrice de l'EMA demande précisément à l'ensemble de validation de démontrer <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Mesurer à travers le contenant</h2>
+<p>Le rayonnement NIR traversant le verre et de nombreux polymères, l'identité peut être confirmée sans ouvrir le contenant. Ulmschneider et P&eacute;nigault ont identifié des intermédiaires de substances actives à travers leur emballage primaire en polyéthylène au moyen d'une sonde à fibre optique en réflexion diffuse appliquée contre la surface emballée, ont affiné les critères par analyse en composantes principales et analyse de regroupement, et ont testé la méthode sur un ensemble de validation distinct de l'ensemble d'étalonnage <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. La présentation de l'échantillon n'est toutefois pas neutre&nbsp;: Yoon, Jee et Moffat ont montré que le diamètre de la coupelle, l'épaisseur de l'échantillon, le matériau de la coupelle ou du flacon et le mode de remplissage déforment suffisamment les spectres NIR pour faire passer les résultats d'identification par coefficient de corrélation et par distance maximale au-delà des seuils habituels et provoquer des erreurs d'identification, tandis que les flacons standard en verre sodocalcique et en verre neutre se sont révélés adaptés à toutes les applications sauf les plus exigeantes <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. C'est pourquoi la ligne directrice de l'EMA range les flacons et les matériaux d'emballage parmi les variables de robustesse à tester et à documenter <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. La mesure à travers le contenant garde la matière scellée et supprime l'étape d'échantillonnage&nbsp;; elle ne supprime pas l'obligation de valider l'emballage utilisé comme partie intégrante de la méthode <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Un mode opératoire de réception</h2>
+<p>En pratique, le contrôle d'identité NIR se situe entre la réception et la libération&nbsp;: chaque contenant est mesuré, le spectre est comparé à la bibliothèque, et seul un résultat de non-concordance ou incertain est envoyé au laboratoire pour le test d'identification pharmacopéen. Trois décisions déterminent si un tel mode opératoire résiste à une inspection&nbsp;:</p>
+<ul>
+<li><strong>Définissez le domaine d'application par matière.</strong> Décidez si l'identité seule est requise ou une qualification par grade, polymorphe ou fournisseur&nbsp;; la ligne directrice de l'EMA attend que la discrimination au niveau du grade soit validée en tant que spécificité, avec des échantillons de défi issus de grades, de polymorphes et de fournisseurs différents <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+<li><strong>Maintenez la bibliothèque sous maîtrise des changements.</strong> Un nouveau fournisseur, grade ou format d'emballage impose des ajouts à la bibliothèque et une revalidation&nbsp;; la ligne directrice traite la maintenance de la bibliothèque comme une modification BPF dans le domaine d'application de la procédure <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>, et l'essai à long terme de Candolfi et al. montre pourquoi des modèles construits sur les spectres d'une année doivent être vérifiés sur des spectres ultérieurs <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</li>
+<li><strong>Mettez la solution de repli par écrit.</strong> Lorsque le NIR sert à tester chaque contenant, le plan d'échantillonnage doit préciser ce qui se passe en cas de non-concordance &mdash; quarantaine et test d'identification de référence &mdash; afin que l'exigence d'identité des BPF soit satisfaite conjointement par le NIR et la méthode de référence <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+</ul>
+<h2>L'approche d'USTECH</h2>
+<p>Le <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine d'USTECH</a> est un analyseur FT-NIR de paillasse/at-line pour échantillons solides et liquides, et la suite de chimiométrie <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> assure l'identification par bibliothèque spectrale, la PCA, la PLS-DA et la classification par distance de Mahalanobis, ainsi que les prétraitements SNV, suppression de tendance et dérivées utilisés dans les études ci-dessus <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Les matières identifiables à travers leur emballage, la manière dont grades et fournisseurs se séparent, et les seuils d'acceptation qui résistent aux analogues rencontrés à la réception s'établissent lors d'une étude de faisabilité avec vos propres échantillons.</p>
 <div class="blog-post-references">
 <h3>Références</h3>
 <ul>
-<li>Pharmacopée Européenne 2.2.40 - Spectroscopie proche infrarouge.</li>
-<li>"Mise en œuvre d'une vérification à 100 % des matières premières au quai de réception à l'aide de spectromètres portables MEMS",<em>Journal de l'innovation pharmaceutique</em>, 2023.</li>
+<li id="ref-1">[1] European Commission. <em>EudraLex Volume 4 &mdash; EU Guidelines to Good Manufacturing Practice, Annex 8: Sampling of Starting and Packaging Materials.</em> Directorate-General for Health and Food Safety. <a href="https://health.ec.europa.eu/document/download/22d03c04-8512-4336-89dd-556771fca388_en?filename=anx08_en.pdf" target="_blank" rel="noopener">health.ec.europa.eu/.../anx08_en.pdf</a></li>
+<li id="ref-2">[2] 21 CFR &sect; 211.84. <em>Testing and approval or rejection of components, drug product containers, and closures.</em> Code of Federal Regulations, Title 21, Part 211, Subpart E. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-E/section-211.84" target="_blank" rel="noopener">ecfr.gov/current/title-21/.../section-211.84</a></li>
+<li id="ref-3">[3] ICH (2000). <em>Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients Q7</em>, Section 7.3 Sampling and Testing of Incoming Production Materials. ICH Harmonised Tripartite Guideline, Step 4, November 2000. <a href="https://database.ich.org/sites/default/files/Q7%20Guideline.pdf" target="_blank" rel="noopener">database.ich.org/sites/default/files/Q7 Guideline.pdf</a></li>
+<li id="ref-4">[4] Reich, G. (2005). Near-infrared spectroscopy and imaging: Basic principles and pharmaceutical applications. <em>Advanced Drug Delivery Reviews</em>, 57(8), 1109&ndash;1143. <a href="https://doi.org/10.1016/j.addr.2005.01.020" target="_blank" rel="noopener">doi:10.1016/j.addr.2005.01.020</a></li>
+<li id="ref-5">[5] European Pharmacopoeia, general chapter 2.2.40. <em>Near-infrared spectroscopy.</em> EDQM, Council of Europe, Strasbourg. <a href="https://pheur.edqm.eu/" target="_blank" rel="noopener">pheur.edqm.eu</a></li>
+<li id="ref-6">[6] USP General Chapter &lt;856&gt;. <em>Near-Infrared Spectroscopy.</em> United States Pharmacopeia &ndash; National Formulary, Rockville. <a href="https://doi.usp.org/USPNF/USPNF_M8189_03_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M8189_03_01.html</a></li>
+<li id="ref-7">[7] European Medicines Agency (2014). <em>Guideline on the use of near infrared spectroscopy by the pharmaceutical industry and the data requirements for new submissions and variations.</em> EMEA/CHMP/CVMP/QWP/17760/2009 Rev2, 27 January 2014. <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-and-data-requirements-new-submissions-and-variations_en.pdf" target="_blank" rel="noopener">ema.europa.eu/.../guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-..._en.pdf</a></li>
+<li id="ref-8">[8] Blanco, M., Romero, M.A. (2001). Near-infrared libraries in the pharmaceutical industry: a solution for identity confirmation. <em>The Analyst</em>, 126(12), 2212&ndash;2217. <a href="https://doi.org/10.1039/b105012p" target="_blank" rel="noopener">doi:10.1039/b105012p</a></li>
+<li id="ref-9">[9] Candolfi, A., De Maesschalck, R., Massart, D.L., Hailey, P.A., Harrington, A.C.E. (1999). Identification of pharmaceutical excipients using NIR spectroscopy and SIMCA. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 19(6), 923&ndash;935. <a href="https://doi.org/10.1016/S0731-7085(98)00234-9" target="_blank" rel="noopener">doi:10.1016/S0731-7085(98)00234-9</a></li>
+<li id="ref-10">[10] Candolfi, A., De Maesschalck, R., Jouan-Rimbaud, D., Hailey, P.A., Massart, D.L. (1999). The influence of data pre-processing in the pattern recognition of excipients near-infrared spectra. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 21(1), 115&ndash;132. <a href="https://doi.org/10.1016/S0731-7085(99)00125-9" target="_blank" rel="noopener">doi:10.1016/S0731-7085(99)00125-9</a></li>
+<li id="ref-11">[11] Ulmschneider, M., P&eacute;nigault, E. (2000). Direct identification of key intermediates in containers using Fourier-transform near-infrared spectroscopy through the protective polyethylene primary packaging. <em>Analusis</em>, 28(2), 136&ndash;140. <a href="https://doi.org/10.1051/analusis:2000106" target="_blank" rel="noopener">doi:10.1051/analusis:2000106</a></li>
+<li id="ref-12">[12] Yoon, W.L., Jee, R.D., Moffat, A.C. (1998). Optimisation of sample presentation for the near-infrared spectra of pharmaceutical excipients. <em>The Analyst</em>, 123(5), 1029&ndash;1034. <a href="https://doi.org/10.1039/a800358k" target="_blank" rel="noopener">doi:10.1039/a800358k</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Télécharger le rapport technique complet</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Accédez au document technique complet et non édité avec des formules spectroscopiques complètes, des ensembles de données d'étalonnage et des paramètres d'instrumentation.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Évaluez cette application pour votre procédé</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Notre équipe applications peut détailler la méthode, partager la littérature de référence et organiser une étude de faisabilité avec vos propres échantillons.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contactez-nous</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Lire ensuite</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -302,6 +324,6 @@
 <p>Conçu pour la précision scientifique et industrielle.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

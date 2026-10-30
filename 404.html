@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="robots" content="noindex, follow">
 <title>Page Not Found | USTECH Innovations</title>
 <!--
@@ -15,7 +16,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/index.css?v=1.1.2">
+<link rel="stylesheet" href="/index.css?v=1.1.3">
 <style>
   .nf-wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 3rem 1.25rem; background: var(--bg-primary, #fff); color: var(--text-primary, #111); }
   .nf-logo { height: 44px; margin-bottom: 2.5rem; }
@@ -83,6 +84,25 @@
     </div>
   </div>
 
+  <div class="nf-msg" data-lang="ar" dir="rtl">
+    <h1 class="nf-title">الصفحة غير موجودة</h1>
+    <p class="nf-text">الصفحة المطلوبة غير موجودة أو تم نقلها. استخدم الروابط أدناه للمتابعة، أو ابحث من أي صفحة في الموقع.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/ar/">الرئيسية</a>
+      <a class="btn btn-secondary" href="/ar/products.html">المنتجات</a>
+      <a class="btn btn-secondary" href="/ar/contact.html">اتصل بنا</a>
+    </div>
+  </div>
+  <div class="nf-msg" data-lang="zh">
+    <h1 class="nf-title">页面未找到</h1>
+    <p class="nf-text">您请求的页面不存在或已被移动。请使用下方链接继续浏览，或在任意页面使用搜索功能。</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/zh/">首页</a>
+      <a class="btn btn-secondary" href="/zh/products.html">产品</a>
+      <a class="btn btn-secondary" href="/zh/contact.html">联系我们</a>
+    </div>
+  </div>
+
   <p class="nf-path" id="nf-path"></p>
 
   <nav class="nf-lang" aria-label="Language">
@@ -91,13 +111,15 @@
     <a href="#" data-pick="fr">Français</a>
     <a href="#" data-pick="de">Deutsch</a>
     <a href="#" data-pick="es">Español</a>
+    <a href="#" data-pick="ar" lang="ar" dir="rtl">العربية</a>
+    <a href="#" data-pick="zh" lang="zh">中文</a>
   </nav>
 </main>
 
 <script>
 (function () {
   var path = (location.pathname || '/').replace(/\/+/g, '/');
-  var m = path.match(/^\/(tr|fr|de|es)(\/|$)/i);
+  var m = path.match(/^\/(tr|fr|de|es|ar|zh)(\/|$)/i);
   var lang = m ? m[1].toLowerCase() : null;
   var rest = m ? path.slice(m[0].length) : path.replace(/^\//, '');   // dil oneki atilmis dosya adi
 
@@ -116,7 +138,8 @@
     return;
   }
 
-  // 2) Dil klasorunden istenen blog (bloglar yalnizca kokte) -> koke tasi (varsa)
+  // 2) Dil klasorunde bulunamayan blog -> kokteki EN surumu (varsa). 27.10'dan beri
+  //    52 blog 7 dilde var; bu adim yalniz cevirisi olmayan eski/yeni blog adresleri icin.
   if (lang && /^blog-[\w-]+\.html$/i.test(rest)) {
     var target = '/' + rest;
     try {
@@ -130,11 +153,12 @@
   var pick = lang;
   if (!pick) { try { pick = localStorage.getItem('ustech-lang'); } catch (e) {} }
   if (!pick) { pick = ((navigator.language || 'en').slice(0, 2)).toLowerCase(); }
-  if (['en', 'tr', 'fr', 'de', 'es'].indexOf(pick) === -1) pick = 'en';
+  if (['en', 'tr', 'fr', 'de', 'es', 'ar', 'zh'].indexOf(pick) === -1) pick = 'en';
 
   function show(l) {
     document.documentElement.lang = l;
-    var titles = { en: 'Page Not Found', tr: 'Sayfa Bulunamadı', fr: 'Page introuvable', de: 'Seite nicht gefunden', es: 'Página no encontrada' };
+    document.documentElement.dir = (l === 'ar') ? 'rtl' : 'ltr';
+    var titles = { en: 'Page Not Found', tr: 'Sayfa Bulunamadı', fr: 'Page introuvable', de: 'Seite nicht gefunden', es: 'Página no encontrada', ar: 'الصفحة غير موجودة', zh: '页面未找到' };
     document.title = titles[l] + ' | USTECH Innovations';
     var msgs = document.querySelectorAll('.nf-msg');
     for (var i = 0; i < msgs.length; i++) {

@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations Guide - Standardizing OPC UA Integrations for Closed-Loop Dosing Valves.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point.">
 <meta name="keywords" content="OPC UA integration NIR, closed-loop dosing valve, process automation NIR, industrial protocol integration">
-<title>OPC UA Closed-Loop Integrations | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<title>Closing the Dosing Loop on Analyzer Results with OPC UA | USTECH Innovations</title>
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
-"headline": "Standardizing OPC UA Integrations for Closed-Loop Dosing Valves",
-"description": "USTECH Innovations Guide - Standardizing OPC UA Integrations for Closed-Loop Dosing Valves.",
+"@type": "BlogPosting", "inLanguage": "en",
+"headline": "Closing the Dosing Loop on Analyzer Results with OPC UA",
+"description": "What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point.",
 "url": "https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html",
 "datePublished": "2026-06-10",
-"dateModified": "2026-06-10",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -118,17 +119,23 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
-    <meta property="og:title" content="OPC UA Closed-Loop Integrations | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations Guide - Standardizing OPC UA Integrations for Closed-Loop Dosing Valves.">
+    <meta property="og:title" content="Closing the Dosing Loop on Analyzer Results with OPC UA | USTECH Innovations">
+    <meta property="og:description" content="What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-opc-ua-dosing-valves.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-opc-ua-dosing-valves.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="OPC UA Closed-Loop Integrations | USTECH Innovations">
+    <meta property="og:image:alt" content="Closing the Dosing Loop on Analyzer Results with OPC UA | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OPC UA Closed-Loop Integrations | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations Guide - Standardizing OPC UA Integrations for Closed-Loop Dosing Valves.">
+    <meta name="twitter:title" content="Closing the Dosing Loop on Analyzer Results with OPC UA | USTECH Innovations">
+    <meta name="twitter:description" content="What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-opc-ua-dosing-valves.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -208,107 +215,57 @@ Espa&#241;ol
 <a href="knowledge-blogs.html" class="blog-back-link">
 &mdash; Back to Blogs & Publications
 </a>
-<img src="images/blog_opc_ua_plc.webp?v=1.0.5" alt="Industrial Automation Control Integration Software Interface" class="blog-post-banner" fetchpriority="high" decoding="async">
+<img src="images/blog_opc_ua_plc.webp?v=1.0.5" alt="Closing the Dosing Loop on Analyzer Results with OPC UA" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide &mdash; June 10, 2026 &mdash; 4 min read</span>
-<h1 class="blog-post-title">Standardizing OPC UA Integrations for Closed-Loop Dosing Valves</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How to map process tags, ensure robust network communications, and configure PID feedback loops using <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem HMI interface</a> and standard factory PLCs.</p>
+<span class="blog-post-meta">Guide &mdash; June 10, 2026 &mdash; 5 min read</span>
+<h1 class="blog-post-title">Closing the Dosing Loop on Analyzer Results with OPC UA</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">What an analyzer result has to carry over OPC UA &mdash; value, units, range, quality and timestamps &mdash; before a PLC may act on it; how dead time and sampling interval shape a PID loop fed by an analyzer; and where safety interlocks belong. Based on the OPC UA, NAMUR and IEC documents and the control literature.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Power of Closed-Loop Process Automation</h2>
-<p>Industrial processing plants (such as dairy standardizers, <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical automation</a> reactors, and feed compounders) rely on precise chemical balances. Traditionally, control systems operate in an open-loop fashion: operators run offline laboratory assays every hour and manually adjust dosing pump speeds or control valves based on the results. This manual loop introduces lag times, operator error, and high variation in product specs.</p>
-<p>By integrating inline FT-NIR spectrometers directly with Programmable Logic Controllers (PLCs), plants can close the control loop. Real-time predictions feed directly into PLC control registers, enabling automated, sub-second adjustments to dosing valves, minimizing deviations and maximizing yield stability.</p>
-<blockquote>
-"By replacing manual setpoint adjustments with direct, authenticated spectrometer feedback, closed-loop systems stabilize product outputs within strict tolerances."
-</blockquote>
-<h2>OPC UA: The Industrial Communication Backbone</h2>
-<p>To establish communication between spectroscopy software and factory automation hardware, USTECH uses the <strong>OPC Unified Architecture (OPC UA)</strong> standard. OPC UA is a platform-independent, service-oriented architecture that provides secure, reliable communications. It replaces legacy Windows-only OPC DA protocols, supporting built-in SSL encryption, user authentication, and data redundancy.</p>
-<p>In a standard installation, the <strong><a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem HMI interface</a></strong> running the FT-NIR spectrometer acts as an OPC UA Server, exposing predicted concentration values, sensor status, and diagnostic flags as nodes (tags) in its address space. The plant's SCADA system or PLC acts as an OPC UA Client, subscribing to these tags at regular intervals.</p>
-<h2>Mapping Standard OPC UA Node IDs</h2>
-<p>To simplify integration, USTECH's <strong>ProChem platform</strong> utilizes a standardized OPC UA namespace structure. The table below lists the primary data tags mapped during a closed-loop installation:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>OPC UA Node Path / Tag ID</th>
-<th>Data Type</th>
-<th>Access Mode</th>
-<th>Functional Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>nsens/device/status</code></td>
-<td>Int32</td>
-<td>Read-Only</td>
-<td>Instrument health status (0 = Healthy, 1 = Lamp Fail, 2 = Calibrating, 3 = Error)</td>
-</tr>
-<tr>
-<td><code>nsens/measurement/timestamp</code></td>
-<td>DateTime</td>
-<td>Read-Only</td>
-<td>Timestamp of the latest spectral scan and prediction cycle</td>
-</tr>
-<tr>
-<td><code>nsens/predict/param1/value</code></td>
-<td>Double</td>
-<td>Read-Only</td>
-<td>Predicted concentration value of Parameter 1 (e.g., Moisture %, Butter Fat %)</td>
-</tr>
-<tr>
-<td><code>nsens/predict/param1/mahalanobis</code></td>
-<td>Double</td>
-<td>Read-Only</td>
-<td>Distance metric checking if sample fits the calibration model boundary (Outlier check)</td>
-</tr>
-<tr>
-<td><code>nsens/plc/trigger_scan</code></td>
-<td>Boolean</td>
-<td>Write-Only</td>
-<td>Optional hardware handshake tag. Allows the PLC to trigger a scan cycle.</td>
-</tr>
-</tbody>
-</table>
-<h2>PLC Feedback Loop Configuration (PID)</h2>
-<p>Once the PLC (such as a Siemens S7-1500 or Rockwell ControlLogix) subscribes to the predicted concentration value (e.g., `nsens/predict/param1/value`), it processes the data through a PID (Proportional-Integral-Derivative) block:</p>
-<ol>
-<li><strong>Outlier Verification:</strong> The PLC first checks the Mahalanobis distance tag. If the distance exceeds the threshold, the sample is flagged as an outlier (atypical material), and the PLC freezes the PID loop to prevent incorrect dosing changes.</li>
-<li><strong>Error Calculation:</strong> If valid, the PID block calculates the difference between the target setpoint (e.g., Butter Fat target = 3.25%) and the predicted spectrometer value.</li>
-<li><strong>Control Valve Adjustment:</strong> The PID algorithm computes the required output signal (4-20 mA or Ethernet/IP command) to adjust the dosing control valve (e.g., opening a cream injection valve to increase fat concentration).</li>
-</ol>
-<h2>Benefits of Standardized OPC UA Integrations</h2>
-<p>Integrating ProChem with plant PLCs via OPC UA provides clear operational advantages:</p>
+<h2>Why close the loop on an analyzer result</h2>
+<p>In the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical, pharmaceutical</a>, dairy and feed industries a composition known only from the laboratory is corrected late and by hand. The FDA's PAT guidance instead describes controlling manufacturing through timely measurements during processing, with process control tools that monitor the state of a process and actively manipulate it <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Kourti argues that a real-time analyzer earns its value when its output enters process control <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; Simon et al. review industrial examples <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. This guide covers what has to be right in the interface and in the controller when a dosing valve is driven from an inline NIR prediction.</p>
+<h2>What OPC UA brings to the interface</h2>
+<p>OPC Unified Architecture is published by the OPC Foundation and standardised as the IEC 62541 series, whose Part 1 presents the concepts and a reading order for the other parts <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Part 1 names platform independence, an integrated security model and extensible information models among its design goals <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. For an analyzer the information model is the useful part: Part 8 (Data Access) defines the <em>AnalogItemType</em> family, which carries an <em>EURange</em> (the range expected in normal operation) and <em>EngineeringUnits</em>, and the base <em>DataItemType</em> adds a <em>Definition</em> string describing how the value is calculated and a <em>ValuePrecision</em> property <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. A predicted fat or moisture value exposed this way carries its unit, range and meaning with it.</p>
+<p>Every value travels as a <em>DataValue</em>: the value, a <em>StatusCode</em>, a <em>sourceTimestamp</em> applied by the data source and never changed afterwards, and a <em>serverTimestamp</em> set by each relaying server <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. The source timestamp is the one that matters for control &mdash; it is the time of the spectrum behind the prediction &mdash; whereas the server timestamp only says when the server last confirmed the value <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Data quality and device health</h2>
+<p>A PLC must not treat an OPC UA value as a plain number. The StatusCode is a 32-bit field whose severity bits classify the value as Good, Uncertain or Bad; Part 4 requires every client to check it before using a result and states that results with a bad status shall never be used <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Part 8 adds analyzer-relevant sub-codes such as <em>Bad_SensorFailure</em>, <em>Uncertain_LastUsableValue</em> when the source has stopped updating, <em>Uncertain_EngineeringUnitsExceeded</em> when the value lies outside its defined range and <em>Good_LocalOverride</em> when a manual value has been forced, and notes that staleness is to be judged from the timestamps, not from the code <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>Instrument condition is modelled separately. Part 100 (Devices) defines a <em>DeviceHealth</em> interface whose enumeration &mdash; NORMAL, FAILURE, CHECK_FUNCTION, OFF_SPEC and MAINTENANCE_REQUIRED &mdash; is stated to indicate the status as defined by NAMUR Recommendation NE 107 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>, the process industry's common vocabulary for self-monitoring field devices, revised in 2017 with a prioritisation of status signals <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. A reference scan (CHECK_FUNCTION) or a spectrum outside the calibration population (OFF_SPEC) thus becomes a vendor-independent reason to hold the loop <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Access is governed by the Part 2 security model &mdash; authentication, authorization limited to what the function requires, confidentiality, integrity and auditability &mdash; so write access to a setpoint or scan trigger is restricted accordingly <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</p>
+<h2>The PID loop with analyzer feedback</h2>
+<p>An analyzer-fed loop is a dead-time problem. Normey-Rico et al. count the processing time of sensors among the causes of dead time and explain that, because the controller corrects an error that originated earlier, a simple loop either oscillates when tuned for a short settling time or responds sluggishly when tuned to avoid oscillation <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. For a dosing valve the dead time is the transport from injection point to measurement point plus the analyzer's measurement and prediction interval. Where it is large relative to the process time constant, the usual remedy is a dead-time compensator: the Smith predictor, proposed in 1957, uses a delay-free model so that the primary controller sees an equivalent system with no, or a smaller, dead time &mdash; a property that holds in the nominal case and degrades with plant-model mismatch <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. The primary controller is in general a PI or PID block in a PLC programmed under IEC 61131-3 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</p>
+<p>The sampling interval follows from the same logic. In OPC UA the subscription's sampling interval is the fastest rate at which the server samples its source, and Part 4 notes that a decoupled underlying system may update much more slowly than that rate <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Subscribing faster than the analyzer measures yields repeated values, not new information; the loop should execute on the arrival of a new source timestamp rather than on the subscription clock <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Safety, interlocks and ownership</h2>
+<p>Analyzer-driven dosing is basic process control. Protective functions &mdash; overdosing limits, pump dry-run, reagent high level &mdash; belong to a safety instrumented system under IEC 61511-1, designed so that it can be relied on to achieve or maintain a safe state independently of the control layer <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Three practice points follow:</p>
 <ul>
-<li><strong>Zero Operator Intervention:</strong> Dosing adjustments occur automatically in the background, eliminating operator error.</li>
-<li><strong>Platform Independence:</strong> Connects to any modern PLC or SCADA system (Siemens, Allen-Bradley, Beckhoff, ABB, Aveva).</li>
-<li><strong>Enhanced Cybersecurity:</strong> Built-in certificate exchange and user authentication ensure that only authorized control networks can read spectrometer tags or trigger scans.</li>
+<li><strong>Define the hold strategy before tuning.</strong> On Bad quality, a stale source timestamp, FAILURE or OFF_SPEC device health, or an outlier flag from the chemometric model, the PID output is held or returned to a safe default, with bumpless resumption <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
+<li><strong>Keep the valve's hard limits outside the loop.</strong> Actuator rate and position limits and any trip on dosed quantity live in the PLC logic or the safety system, not in the analyzer software <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</li>
+<li><strong>Document the node semantics.</strong> EngineeringUnits, EURange, Definition and each status sub-code are agreed between supplier and integrator and frozen in the information model, so that a later calibration change is visible as a semantics change <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</li>
 </ul>
-<h2>Conclusion</h2>
-<p>Standardizing communications on OPC UA allows spectrometer predictions to become active process control tags. Closing the loop with automated dosing control valves stabilizes product quality, reduces ingredient giveaways, and delivers rapid ROI through consistent, automated quality control.</p>
+<h2>How USTECH approaches this</h2>
+<p>USTECH's inline analyzers, the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> process FT-NIR for liquids, slurries and simple solid flows and the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> for direct pipe and vessel mounting, run calibrations built in <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>; <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> delivers predictions and status to the plant PLC and lets the PLC select product and method. Hold conditions, dead-time compensation and interlocks are settled with the plant's automation and safety engineers. The starting point is a feasibility study with your own samples under your own process conditions.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>IEC 62541-1 - OPC Unified Architecture &mdash; Part 1: Overview and Concepts.</li>
-<li>"Closed-Loop Industrial Control and PID Autotuning with Spectroscopy Feedbacks," <em>IEEE Transactions on Control Systems Technology</em>, 2023.</li>
-<li>"OPC UA-based Integration of Process Analytical Technology (PAT) in Continuous Manufacturing," <em>Computers & Chemical Engineering</em>, 2022.</li>
+<li id="ref-1">[1] U.S. Food and Drug Administration (2004). <em>Guidance for Industry: PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> CDER/CVM/ORA, Rockville, MD. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance" target="_blank" rel="noopener">fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance</a></li>
+<li id="ref-2">[2] Kourti, T. (2006). Process Analytical Technology Beyond Real-Time Analyzers: The Role of Multivariate Analysis. <em>Critical Reviews in Analytical Chemistry</em>, 36(3&ndash;4), 257&ndash;278. <a href="https://doi.org/10.1080/10408340600969957" target="_blank" rel="noopener">doi:10.1080/10408340600969957</a></li>
+<li id="ref-3">[3] Simon, L.L., Pataki, H., Marosi, G., Meemken, F., Hungerb&uuml;hler, K., Baiker, A., et al. (2015). Assessment of Recent Process Analytical Technology (PAT) Trends: A Multiauthor Review. <em>Organic Process Research &amp; Development</em>, 19(1), 3&ndash;62. <a href="https://doi.org/10.1021/op500261y" target="_blank" rel="noopener">doi:10.1021/op500261y</a></li>
+<li id="ref-4">[4] IEC 62541-1:2025. <em>OPC Unified Architecture &mdash; Part 1: Overview and concepts.</em> IEC, Geneva. <a href="https://webstore.iec.ch/en/publication/81513" target="_blank" rel="noopener">webstore.iec.ch/en/publication/81513</a></li>
+<li id="ref-5">[5] OPC Foundation (2025). <em>OPC 10000-1: OPC Unified Architecture &mdash; Part 1: Overview and Concepts</em>, release 1.05.06, clause 4.3 Design goals. <a href="https://reference.opcfoundation.org/Core/Part1/v105/docs/4.3" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part1/v105/docs/4.3</a></li>
+<li id="ref-6">[6] OPC Foundation (2026). <em>OPC 10000-8: OPC Unified Architecture &mdash; Part 8: Data Access</em>, release 1.05.07, clauses 5.3.1 DataItemType, 5.3.2 AnalogItem VariableTypes and 7.3 Data Access status codes. <a href="https://reference.opcfoundation.org/Core/Part8/v105/docs/" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part8/v105/docs</a></li>
+<li id="ref-7">[7] OPC Foundation (2026). <em>OPC 10000-4: OPC Unified Architecture &mdash; Part 4: Services</em>, release 1.05.07, clauses 5.13.1.2 Sampling interval, 7.11 DataValue and 7.38 StatusCode. <a href="https://reference.opcfoundation.org/Core/Part4/v105/docs/" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part4/v105/docs</a></li>
+<li id="ref-8">[8] OPC Foundation (2025). <em>OPC 10000-100: OPC Unified Architecture &mdash; Part 100: Devices</em>, release 1.05.0, clause 4.5.4 DeviceHealth Interface. <a href="https://reference.opcfoundation.org/specs/OPC-10000-100/4.5.4" target="_blank" rel="noopener">reference.opcfoundation.org/specs/OPC-10000-100/4.5.4</a></li>
+<li id="ref-9">[9] NAMUR NE 107 (2017). <em>Self-Monitoring and Diagnosis of Field Devices.</em> NAMUR, Leverkusen. <a href="https://www.namur.net/en/publications/news-archive/ne-107-has-been-revised.html" target="_blank" rel="noopener">namur.net/en/publications/news-archive/ne-107-has-been-revised.html</a></li>
+<li id="ref-10">[10] OPC Foundation (2025). <em>OPC 10000-2: OPC Unified Architecture &mdash; Part 2: Security Model</em>, release 1.05.06, clause 4.2 Security objectives. <a href="https://reference.opcfoundation.org/Core/Part2/v105/docs/4.2" target="_blank" rel="noopener">reference.opcfoundation.org/Core/Part2/v105/docs/4.2</a></li>
+<li id="ref-11">[11] Normey-Rico, J.E., Santos, T.L.M., Flesch, R.C.C., Torrico, B.C. (2022). Control of dead-time process: From the Smith predictor to general multi-input multi-output dead-time compensators. <em>Frontiers in Control Engineering</em>, 3, 953768. <a href="https://doi.org/10.3389/fcteg.2022.953768" target="_blank" rel="noopener">doi:10.3389/fcteg.2022.953768</a></li>
+<li id="ref-12">[12] IEC 61131-3:2025. <em>Programmable controllers &mdash; Part 3: Programming languages.</em> IEC, Geneva. <a href="https://webstore.iec.ch/en/publication/68533" target="_blank" rel="noopener">webstore.iec.ch/en/publication/68533</a></li>
+<li id="ref-13">[13] IEC 61511-1:2016+AMD1:2017. <em>Functional safety &mdash; Safety instrumented systems for the process industry sector &mdash; Part 1: Framework, definitions, system, hardware and application programming requirements.</em> IEC, Geneva. <a href="https://webstore.iec.ch/en/publication/24241" target="_blank" rel="noopener">webstore.iec.ch/en/publication/24241</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -318,20 +275,20 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="card" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Real-Time Hydroxyl Value Monitoring in Polyol Production" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hydroxyl-value-polyol.html" style="color: var(--accent-black); text-decoration: none;">Real-Time Hydroxyl Value Monitoring in Polyol Production</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">How online FT-NIR spectroscopy replaces wet chemical titrations to deliver continuous end-point determination during polymerization.</p>
-<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read White Paper</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.</p>
+<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Milk Powder Card -->
 <div class="card" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_milk_powder.webp?v=1.0.5" alt="Standardizing Moisture in Milk Powder Spray Drying" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-moisture-milk-powder.html" style="color: var(--accent-black); text-decoration: none;">Standardizing Moisture in Milk Powder Spray Drying</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">How dairy plants use inline exit moisture standardizers to prevent spray dryer clogging and optimize powder yield.</p>
-<a href="blog-moisture-milk-powder.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Case Study</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why the outlet moisture of a milk-powder spray dryer decides stickiness, caking, shelf life and yield, which variables the operator can move, and how an inline NIR moisture value feeds the control loop.</p>
+<a href="blog-moisture-milk-powder.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 </div>
@@ -370,7 +327,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -389,6 +345,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

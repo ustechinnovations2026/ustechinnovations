@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations Kılavuzu - caliX Suite'te PLS Regresyonuna Giriş." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Bir PLS kalibrasyonunun uygulayıcı gözüyle adım adım anlatımı: verinin nasıl bölündüğü, ön işlemenin ve gizli değişken sayısının doğrulamayla nasıl seçildiği, hangi tanılamaların okunacağı ve modelin üretimde nasıl canlı tutulduğu." name="description"/>
 <meta content="PLS regresyon NIR, caliX Paket kalibrasyonu, kısmi en küçük kareler spektroskopisi, kemometrik model oluşturma" name="keywords"/>
 <title>caliX Suite'te PLS Regresyona Giriş | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/tr/blog-pls-regression-calix.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "tr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "tr",
   "headline": "caliX Suite'te PLS Regresyona Giriş",
-  "description": "USTECH Innovations Kılavuzu - caliX Suite'te PLS Regresyonuna Giriş.",
+  "description": "Bir PLS kalibrasyonunun uygulayıcı gözüyle adım adım anlatımı: verinin nasıl bölündüğü, ön işlemenin ve gizli değişken sayısının doğrulamayla nasıl seçildiği, hangi tanılamaların okunacağı ve modelin üretimde nasıl canlı tutulduğu.",
   "url": "https://www.ustechinnovations.com/tr/blog-pls-regression-calix.html",
   "datePublished": "2026-05-12",
-  "dateModified": "2026-05-12",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="caliX Suite'te PLS Regresyona Giriş | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations Kılavuzu - caliX Suite'te PLS Regresyonuna Giriş." property="og:description"/>
+<meta content="Bir PLS kalibrasyonunun uygulayıcı gözüyle adım adım anlatımı: verinin nasıl bölündüğü, ön işlemenin ve gizli değişken sayısının doğrulamayla nasıl seçildiği, hangi tanılamaların okunacağı ve modelin üretimde nasıl canlı tutulduğu." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/tr/blog-pls-regression-calix.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="caliX Suite'te PLS Regresyona Giriş | USTECH Innovations" property="og:image:alt"/>
 <meta content="tr_TR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="caliX Suite'te PLS Regresyona Giriş | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations Kılavuzu - caliX Suite'te PLS Regresyonuna Giriş." name="twitter:description"/>
+<meta content="Bir PLS kalibrasyonunun uygulayıcı gözüyle adım adım anlatımı: verinin nasıl bölündüğü, ön işlemenin ve gizli değişken sayısının doğrulamayla nasıl seçildiği, hangi tanılamaların okunacağı ve modelin üretimde nasıl canlı tutulduğu." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -209,75 +216,58 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← Tüm Bloglara ve Yayınlara Dön</a>
-<img alt="Spectroscopy Calibration Software cali<span class="calix-x">X</span> Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
+<img alt="Spectroscopy Calibration Software caliX Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Technical Guide — May 12, 2026 — 4 dk okuma</span>
+<span class="blog-post-meta">Rehber — 12 Mayıs 2026 — 7 dk okuma</span>
 <h1 class="blog-post-title">cali<span class="calix-x">X</span> Suite'te PLS Regresyona Giriş</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">USTECH'nin AutoML motorunu kullanarak niteliksel kalibrasyon modellerini geliştirmeye, ön işlemeye ve doğrulamaya yönelik adım adım kılavuz.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Bir PLS regresyonu kalibrasyonunun uygulayıcı düzeyinde adım adım anlatımı &mdash; verinin bölünmesi, ön işlemenin ve gizli değişken sayısının doğrulamayla seçilmesi, RMSECV, RMSEP, sapma ve aykırı değer tanılamalarının okunması ve kullanıma alındıktan sonra modelin bakımı &mdash; her adımın arkasındaki istatistik ve kemometri literatürü ve cali<span class="calix-x" style="color: #38b6ff !important;">X</span> içindeki karşılık gelen adımlarla birlikte.</p>
 </div>
 <div class="blog-post-content">
-<h2>Kısmi En Küçük Kareler (PLS) Regresyon Nedir?</h2>
-<p>Yakın kızılötesi (NIR) spektrumları binlerce ayrı dalga boyu noktasından oluşur. NIR ışık absorpsiyonu, keskin tepe noktalarından ziyade geniş, örtüşen titreşim tonları olarak ortaya çıktığı için, tek bir dalga boyu, bir kimyasal konsantrasyonu tahmin etmek için nadiren yeterlidir. Özellikle karmaşık durumlar için çok değişkenli istatistiklere ihtiyacımız var.<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">kimyasal ve farmasötik uygulamalar</a>.</p>
-<p><strong>Kısmi En Küçük Kareler (PLS) Regresyon</strong> altın standart kemometrik algoritmadır. Binlerce yüksek düzeyde eşdoğrusal spektral değişkeni birkaç ortogonal faktöre (bunlara denir) indirger.<strong>Gizli Değişkenler (LV'ler)</strong>veya ana bileşenler), spektral veriler ile hedef laboratuvar referans konsantrasyonları arasındaki kovaryansı maksimuma çıkaran.</p>
-<p>MATLAB veya R'de manuel komut dosyası yazmayı gerektiren bir model geliştirmek. <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML Suite</strong> içinde (son derece hassas <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML modelleri</a>), bu iş akışı beş net aşamaya basitleştirilmiştir.</p>
----
-<h2>1. Adım: Veri Hizalama ve İçe Aktarma</h2>
-<p>Öncelikle, spektral dosya adlarınızı ıslak kimya laboratuvar sonuçlarıyla eşleştiren bir kalibrasyon elektronik tablosu (CSV veya Excel) hazırlayın. cali<span class="calix-x" style="color: #38b6ff !important;">X</span>ham spektrometre veritabanı formatlarının ve JCAMP-DX gibi standart spektroskopik değişim formatlarının doğrudan içe aktarılmasını destekler.</p>
-<p>Bir kez içe aktarıldığında, cali<span class="calix-x">X</span>veri kümenizi otomatik olarak böler:<strong>Kalibrasyon ve Çapraz Doğrulama için %75</strong>(modeli eğitmek için) ve <strong>Bağımsız Doğrulama Seti olarak %25</strong>(nihai tahmin performansını test etmek için tamamen ayrı tutulur).</p>
-<h2>Adım 2: Spektral Ön İşlemeyi Seçme</h2>
-<p>Ham NIR ışık sinyalleri, parçacık boyutu değişimlerinin, numune paketleme yoğunluğunun veya prob mesafesinin neden olduğu fiziksel dağılım gürültüsünü içerir. Spektral ön işleme, bu fiziksel temel çizgileri matematiksel olarak ortadan kaldırır, böylece PLS modeli yalnızca kimyasal absorpsiyona odaklanır.</p>
-<p>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> boru hattında standart ön işleme adımlarını uygulayabilir ve zincirleyebilirsiniz:</p>
+<h2>PLS kalibrasyonu nedir ve neden her adımın doğrulanması gerekir</h2>
+<p>Kısmi en küçük kareler (PLS) regresyonu, bir spektral matris <em>X</em>'i referans değerler <em>Y</em>'ye az sayıda gizli değişken aracılığıyla bağlar ve yakın kızılötesi kalibrasyonundaki yerini çok sayıda gürültülü, eşdoğrusal ve hatta eksik değişkeni işleyebilmesine borçludur <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Geladi ve Kowalski'nin eğitici makalesi, sıradan regresyonun bu tür verilerde nerede başarısız olduğunu ortaya koyar, çözüm olarak PLS'yi geliştirir ve kullanımı için pratik ipuçlarıyla birlikte bir algoritma verir <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Yöntemin kendisi tamamlayıcı makale <a href="blog-pls-calibration-explained.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">NIR Kalibrasyonu Nasıl Çalışır: PLS Açıklandı</a> içinde anlatılmaktadır; bu rehber ise bir uygulayıcının model kurarken verdiği kararlarla ilgilidir. Bu kararların her biri &mdash; numunelerin nasıl bölündüğü, hangi ön işlemenin uygulandığı, kaç gizli değişkenin tutulduğu, hangi numunelerin çıkarıldığı &mdash; başarım ölçütlerini değiştirir; Westad ve Marini de bir modelin hangi düzeyde doğrulandığının hem raporlanan hatasını hem de seçilen boyutluluğunu etkilediğini gösterir <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Verinin bölünmesi</h2>
+<p>Snee'nin regresyon doğrulamasına ilişkin derlemesi, verinin bir bölümünün modeli kestirdiği, geri kalanının ise tahmin doğruluğunu ölçtüğü veri bölmenin, yeni veri toplamanın pratik olmadığı durumlarda bir modeli doğrulamanın etkili bir yolu olduğu sonucuna varır ve bölmenin dayandırılabileceği zaman gibi belirgin bir değişken yoksa bölmeyi yapmak için Kennard'ın DUPLEX algoritmasını önerir <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. İlişkili Kennard&ndash;Stone prosedürü noktaları ardışık olarak seçer, böylece her adım deney bölgesini düzgün biçimde kapsar <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>; spektral uzayı kapsayan kalibrasyon numunelerini seçmek için yaygın olarak kullanılmasının nedeni budur. Tamamen rastgele bir bölme kendiliğinden sağlam değildir: Westad ve Marini, bir veri kümesini kalibrasyon ve test kümelerine tekrar tekrar rastgele bölmenin ancak numunelerde sistematik bir tabakalaşma olmadığında gerekçelendirilebileceği uyarısını yapar ve hata kestiriminin gelecekteki numuneler hakkında bir şey söylemesi isteniyorsa bölmenin gözetmesi gereken doğrulama düzeylerini &mdash; tekrarlanabilirlik, yeniden üretilebilirlik, cihaz ve hammadde değişkenliği &mdash; birbirinden ayırır <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>Ayrılan kümenin büyüklüğü de bir gelenek değil, bir karardır. Bütün mısır bitkilerinin NIR spektrumları üzerinde yaptıkları bir Monte Carlo çalışmasında Martens ve Dardenne, 922 numunelik bir veri tabanından 40 ila 120 numunelik küçük kalibrasyon kümeleri çekmiş ve zaten küçük olan bir havuzdan bağımsız bir test kümesi ayırmanın tahmin performansını düşürdüğünü, tam çapraz doğrulamanın ise daha iyi tahminler verdiğini ve yalnızca biraz iyimser kaldığını bulmuştur <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Pratikteki yorumu şudur: ayrı bir test kümesi en çok numuneler bol olduğunda ya da gerçekten daha sonraki veya farklı bir popülasyonu temsil ettiğinde değerlidir; numune az olduğunda çapraz doğrulama onları daha iyi kullanır <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>Ön işlemenin seçilmesi</h2>
+<p>Rinnan ve ark., yaygın NIR ön işleme yöntemlerini saçılma düzeltmeleri (MSC, SNV, normalizasyon) ve spektral türevler olarak gruplandırır ve bunların gerçek veriler üzerindeki etkilerini karşılaştırır <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>; işleyiş ayrıntıları <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC/SNV rehberinde</a> ve <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay rehberinde</a> ele alınmaktadır. Kalibrasyon iş akışı açısından mesele usule ilişkindir: ön işleme ayarları modelin hiperparametreleridir, bu nedenle aday işlem zincirleri hiçbir zaman kalibrasyon uyumu üzerinden değil, gizli değişken sayısıyla aynı doğrulama tasarımı üzerinden karşılaştırılmalıdır. Wiklund ve ark., bileşen seçim testlerinin aynı zamanda verinin bir ön işleme gerektirdiğinin göstergesi olarak da işlev gördüğünü belirtir; bu, ham spektrum modeli bir türev modelinden çok daha fazla bileşene ihtiyaç duyduğunda yararlı bir çapraz kontroldür <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Kaç gizli değişken</h2>
+<p>Gizli değişken sayısı PLS'deki en önemli tek ayardır: çok az olursa kimyasal bilgi modellenmeden kalır, çok fazla olursa yeni numunelerde tekrarlanmayacak gürültüye uyum sağlanır <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Standart araç, genel biçimini Stone'un tahmin edicilerin seçimi ve değerlendirilmesi için ortaya koyduğu çapraz doğrulamadır <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>; PLS'de model, verinin bölümleri dışarıda bırakılarak yeniden kurulur ve çapraz doğrulama hatası bileşen sayısına karşı çizilir <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Geleneksel kural bu eğrinin minimumunda ya da hemen öncesinde durmaktır, ancak segmentlerin seçimi önemlidir. Shao, birini dışarıda bırak çapraz doğrulamanın en iyi tahmin yeteneğine sahip modeli seçmede asimptotik olarak tutarsız olduğunu ve bu tutarsızlığın daha büyük gözlem blokları dışarıda bırakılarak giderildiğini göstermiştir <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>; pratikte bu, tek tek spektrumları dışarıda bırakmak yerine, tekrar ölçümlerin ve aynı partiden gelen numunelerin aynı segmentte tutulduğu segmentli veya gruplu çapraz doğrulamayı öne çıkarır. Wiklund ve ark., veri dışlaması gerektirmeyen ve boyutluluğu bilinen simüle veriler ile on gerçek veri kümesi üzerinde diğer seçim kurallarıyla birlikte iyi sonuç veren tamamlayıcı bir rastgeleleştirme testi önerir <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Tanılamaların okunması</h2>
+<p>Her model raporunda üç hata değeri yer alır. Kalibrasyon hatası (RMSEC) uyumu tanımlar ve her zaman en küçüğüdür; çapraz doğrulama hatası (RMSECV) kalibrasyon popülasyonu içindeki tahmini kestirir; bağımsız bir kümedeki tahmin hatası (RMSEP) ise modelin hiç görmediği numuneleri test eden tek değerdir ve ne anlama geldiğini o kümenin doğrulama düzeyi belirler <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. ISO 12099, tahmin standart hatası ve sapma dahil performans ölçümüne ilişkin istatistikleri ortaya koyar ve bilgi amaçlı ekinde aykırı değer ve kontrol grafiği örnekleri verir <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. RMSECV ile RMSEP arasındaki büyük bir fark ya da test kümesindeki bir sapma, genellikle modelin kendi başına yanlış olduğunu değil, test numunelerinin kalibrasyon popülasyonundan sistematik olarak farklı olduğunu gösterir <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>Numune tanılamaları tabloyu tamamlar. Wold ve ark., spektral uzayda diğerlerinden uzakta duran veya kötü uyum sağlanan numuneleri bulmak için kullanılan standart PLS tanılamalarını &mdash; skorlar, yükler, artıklar ve modele uzaklık &mdash; derler <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Hubert ve Vanden Branden, yaygın SIMPLS algoritmasının ampirik çapraz kovaryans matrisi ve sıradan en küçük kareler üzerine kurulu olması nedeniyle sonuçlarının anormal gözlemlerden etkilendiğini gösterir; sağlam RMSECV ve RMSEP değerlerine sahip sağlam varyantlar ile aykırı değerleri görselleştirip sınıflandıran tanılama grafikleri sunarlar <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Araç ne olursa olsun, bir numune kalibrasyondan ancak belgelenmiş bir gerekçeyle çıkarılmalıdır: yanlış bir referans değer, farklı bir malzemenin spektrumu ya da bir ölçüm hatası. Üç alışkanlık tanılamaları dürüst tutar:</p>
 <ul>
-<li><strong>Standart Normal Değişken (SNV):</strong>Çarpımsal ölçeklendirmeyi ve sapmaları dengelemek için her bir spektrumu ortalamak ve ölçeklendirmek.</li>
-<li><strong>Çarpımsal Dağılım Düzeltmesi (MSC):</strong>Dağılım eğimlerini izole etmek ve ortadan kaldırmak için her spektrumu ortalama spektruma göre regrese eder.</li>
-<li><strong>Savitzky-Golay Türevler (1. veya 2.):</strong>Türev almak, örtüşen bantları çözmek ve taban çizgisi kaymalarını kaldırmak için yerel polinom uyumlarını hesaplar.</li>
+<li><strong>Önce doğrulama tasarımına karar verin.</strong> Herhangi bir ön işleme veya bileşen taramasından önce bölmeyi ve çapraz doğrulama segmentlerini sabitleyin ve karşılaştırmanın adil olması için her aday için aynı tasarımı kullanın <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>RMSECV ve RMSEP'yi doğrulama düzeyleriyle birlikte raporlayın.</strong> Aynı numunelerin tekrar spektrumları üzerinde kestirilen bir hata, sonraki bir üretim partisi üzerinde kestirilen bir hatayla karşılaştırılamaz <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>Aykırı değer çıkarmayı bir model kararı olarak ele alın.</strong> Hangi numunelerin neden çıkarıldığını kaydedin; bir artık veya kaldıraç uyarısı silme izni değil, araştırma çağrısıdır <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
 </ul>
-<p><em>İpucu: cali<span class="calix-x">X</span>AutoML motoru, matrisiniz için en uygun sırayı önermek amacıyla düzinelerce ön işleme kombinasyonu üzerinde otomatik olarak bir ızgara araması çalıştıracaktır.</em></p>
-<h2>Adım 3: Gizli Değişkenlerin (LV'ler) Seçilmesi</h2>
-<p><strong>Fazla uyumu</strong> önlemek için doğru sayıda Gizli Değişkenin seçilmesi kritik öneme sahiptir. Çok az sayıda LV seçerseniz modeliniz yetersiz kalır ve kimyasal korelasyonları kaçırır. Çok fazla LV seçerseniz modeliniz rastgele spektral gürültüyü uydurmaya başlar ve bu, yeni örnekleri tararken başarısız olur.</p>
-<p>Şuna bak <strong>Çapraz Doğrulamanın Ortalama Karekök Hatası (RMSECV)</strong>eğri. Hatanın önemli ölçüde düşmeyi bıraktığı eğrinin "dirseğindeki" LV sayısını seçin. Bu noktanın ötesinde daha fazla bileşen eklemek yalnızca gürültüye uyum sağlar.</p>
-<pre>
-# Sample Model Statistics Output in cali<span class="calix-x">X</span>
----------------------------------------------
-Target Parameter: Crude Protein
-Preprocessing: SNV + S-G 1st Derivative (15pt)
-Selected Latent Variables (LVs): 6
-Calibration R²: 0.982
-Calibration RMSEC: 0.09%
-Cross-Validation RMSECV: 0.11%
-Validation RMSEP: 0.12%
-Bias: -0.01%
----------------------------------------------
-</pre>
-<h2>Adım 4: Bağımsız Doğrulama</h2>
-<p>Modeli fabrika dağıtımına uygun hale getirmek için tahminleri %25 bağımsız test setinde çalıştırın.<strong>Tahminin Ortalama Karekök Hatası (RMSEP)</strong>sensörü hat üzerinde kullanırken göreceğiniz gerçek doğruluğu ölçer. Sağlam bir model, çapraz doğrulama hatasına (RMSECV) çok yakın bir RMSEP görüntülemelidir.</p>
-<h2>Adım 5: ProChem'ye aktarma</h2>
-<p>Model performansından memnun kaldığınızda, öğesine tıklayın.<strong>"İhracat Modeli Paketi"</strong>. Bu, güvenli bir `.cali<span class="calix-x" style="color: #38b6ff !important;">X</span>` model dosyası oluşturur. Bu dosyayı üretim hattınızdaki <strong>ProChem Proses Kontrol Yazılımı</strong>'na doğrudan yükleyin. ProChem önceden yapılandırılmış ön işleme adımlarını satır içi spektrumlara otomatik olarak uygulayacak ve konsantrasyonları gerçek zamanlı olarak tahmin ederek sonuçları doğrudan tesisinize PLC gönderecektir.</p>
-<h2>Özet</h2>
-<p>Titiz PLS regresyon mantığını otomatik ön işleme optimizasyonuyla birleştiren cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, bilimsel derinlikten ödün vermeden kalite kontrol mühendislerinin kemometrik ölçümlere erişmesini sağlar. İlk günden B2B marjlarınızı korumaya hazır, güvenilir, sağlam modellere sahip olursunuz.</p>
+<h2>Modeli canlı tutmak</h2>
+<p>Bir kalibrasyon, üzerine kurulduğu popülasyon ve cihaz durumu için doğrulanmıştır. ASTM E1655, kızılötesi kalibrasyonlar için veri toplama ve işleme uygulamalarını ortaya koyar, kalibrasyon tekniklerini ve model performansını doğrulama ölçütlerini tanımlar, analizörün kalibrasyon ve doğrulama sırasında üreticinin belirttiği koşullarda çalıştığını varsayar ve çok değişkenli bir kalibrasyonun karşısında incelenebileceği bir soru listesi sunar <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. ISO 12099 işletme tarafını ekler: cihaz kararlılığının kontrolü ve kalibrasyonun sürekli performans kontrolü, izleme aracı olarak da kontrol grafikleri <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Westad ve Marini, bir modelin gelecekteki numuneleri tahmin etmedeki sağlamlığının herhangi bir tekil başarım ölçütünden daha önemli olduğunu vurgular <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>; pratikte bu, üretim numuneleri üzerinde düzenli referans kontrolleri, sapma ve tahmin hatası kontrol grafikleri ve yeni hammaddeler, mevsimler veya proses koşulları ortaya çıktığında kalibrasyon kümesinin planlı olarak güncellenmesi anlamına gelir.</p>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> içindeki iş akışı</h2>
+<p><a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> paketi</a> yukarıdaki adımları NIR, FTIR ve Raman spektrumları için sekiz modüllü bir iş akışı olarak düzenler. Veri modülü spektrumları ve referans değerleri Excel veya CSV dosyalarından içe aktarır ve PCA ve PLS kaldıraç ölçütleriyle veri temizlemeyi destekler; ön işleme adımı SNV, MSC, eğilim giderme, otomatik ölçekleme ve Savitzky-Golay türevleri sunar <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>; manuel ve otomatik regresyon modülleri PLS, sağlam PLS, PCR ve düzenlileştirilmiş modeller kurar; en fazla gizli değişken sayısı ve çapraz doğrulama katlama sayısı kullanıcı tarafından belirlenir, otomatik mod ise işlem zinciri kombinasyonlarını tarayarak doğrulama eğrisinin dirsek noktasını işaretler <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Aykırı değer tanılamaları Hotelling T&sup2; ve Q artıklarını, PLS kaldıracını ve Mahalanobis uzaklığını içerir <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>; Tahmin modülü bitmiş modeli bilinmeyen numunelere uygular, Veri Aktarımı ve Model Dönüştürücü modülleri ise cihaz standardizasyonunu ve modelin <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> üzerinden devreye alınmak üzere dışa aktarılmasını üstlenir. Belirli bir ürün için hangi bölmenin, ön işlemenin ve bileşen sayısının doğru olduğu, kendi numuneleriniz ve referans analizlerinizle yürütülen bir fizibilite çalışmasında belirlenir.</p>
 <div class="blog-post-references">
-<h3>Referanslar</h3>
+<h3>Kaynaklar</h3>
 <ul>
-<li>Martens, H. ve Næs, T. (1989).<em>Çok Değişkenli Kalibrasyon</em>. John Wiley ve Oğulları.</li>
-<li>"Yakın Kızılötesi Spektroskopide Ön İşleme Teknikleri: Endüstriyel Uygulayıcılar için Kemometrik Kılavuz"<em>Analytica Chimica Acta</em>, 2022.</li>
-<li>Geladi, P. ve Kowalski, B.R. (1986). "Kısmi En Küçük Kareler Regresyon: Bir Öğretici"<em>Analytica Chimica Acta</em>, 185, 1-17.</li>
+<li id="ref-1">[1] Wold, S., Sj&ouml;str&ouml;m, M., Eriksson, L. (2001). PLS-regression: a basic tool of chemometrics. <em>Chemometrics and Intelligent Laboratory Systems</em>, 58(2), 109&ndash;130. <a href="https://doi.org/10.1016/S0169-7439(01)00155-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(01)00155-1</a></li>
+<li id="ref-2">[2] Geladi, P., Kowalski, B.R. (1986). Partial least-squares regression: a tutorial. <em>Analytica Chimica Acta</em>, 185, 1&ndash;17. <a href="https://doi.org/10.1016/0003-2670(86)80028-9" target="_blank" rel="noopener">doi:10.1016/0003-2670(86)80028-9</a></li>
+<li id="ref-3">[3] Westad, F., Marini, F. (2015). Validation of chemometric models &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 893, 14&ndash;24. <a href="https://doi.org/10.1016/j.aca.2015.06.056" target="_blank" rel="noopener">doi:10.1016/j.aca.2015.06.056</a></li>
+<li id="ref-4">[4] Snee, R.D. (1977). Validation of Regression Models: Methods and Examples. <em>Technometrics</em>, 19(4), 415&ndash;428. <a href="https://doi.org/10.1080/00401706.1977.10489581" target="_blank" rel="noopener">doi:10.1080/00401706.1977.10489581</a></li>
+<li id="ref-5">[5] Kennard, R.W., Stone, L.A. (1969). Computer Aided Design of Experiments. <em>Technometrics</em>, 11(1), 137&ndash;148. <a href="https://doi.org/10.1080/00401706.1969.10490666" target="_blank" rel="noopener">doi:10.1080/00401706.1969.10490666</a></li>
+<li id="ref-6">[6] Martens, H.A., Dardenne, P. (1998). Validation and verification of regression in small data sets. <em>Chemometrics and Intelligent Laboratory Systems</em>, 44(1&ndash;2), 99&ndash;121. <a href="https://doi.org/10.1016/S0169-7439(98)00167-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(98)00167-1</a></li>
+<li id="ref-7">[7] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-8">[8] Wiklund, S., Nilsson, D., Eriksson, L., Sj&ouml;str&ouml;m, M., Wold, S., Faber, K. (2007). A randomization test for PLS component selection. <em>Journal of Chemometrics</em>, 21(10&ndash;11), 427&ndash;439. <a href="https://doi.org/10.1002/cem.1086" target="_blank" rel="noopener">doi:10.1002/cem.1086</a></li>
+<li id="ref-9">[9] Stone, M. (1974). Cross-Validatory Choice and Assessment of Statistical Predictions. <em>Journal of the Royal Statistical Society: Series B (Methodological)</em>, 36(2), 111&ndash;133. <a href="https://doi.org/10.1111/j.2517-6161.1974.tb00994.x" target="_blank" rel="noopener">doi:10.1111/j.2517-6161.1974.tb00994.x</a></li>
+<li id="ref-10">[10] Shao, J. (1993). Linear Model Selection by Cross-Validation. <em>Journal of the American Statistical Association</em>, 88(422), 486&ndash;494. <a href="https://doi.org/10.1080/01621459.1993.10476299" target="_blank" rel="noopener">doi:10.1080/01621459.1993.10476299</a></li>
+<li id="ref-11">[11] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-12">[12] Hubert, M., Vanden Branden, K. (2003). Robust methods for partial least squares regression. <em>Journal of Chemometrics</em>, 17(10), 537&ndash;549. <a href="https://doi.org/10.1002/cem.822" target="_blank" rel="noopener">doi:10.1002/cem.822</a></li>
+<li id="ref-13">[13] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://www.astm.org/e1655-17r24.html" target="_blank" rel="noopener">astm.org/e1655-17r24.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Tam Teknik Raporu İndirin</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Tam spektroskopik formüller, kalibrasyon veri kümeleri ve enstrümantasyon parametrelerini içeren, düzenlenmemiş teknik makalenin tamamına erişin.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Teknik PDF'yi almayı ve USTECH Innovations güncellemelerine abone olmayı kabul ediyorum.<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Gizlilik Politikası</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Bu uygulamayı kendi prosesiniz için değerlendirin</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Uygulama ekibimiz yöntemi anlatabilir, destekleyici literatürü paylaşabilir ve kendi numunelerinizle bir fizibilite çalışması planlayabilir.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Bize Ulaşın</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -285,22 +275,22 @@ Bias: -0.01%
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- Calibration Transfer Card -->
 <div class="card" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="MEMS Spektrometrelerde Kalibrasyon Transferi Fizibilitesi" decoding="async" loading="lazy" src="../images/blog_mems_sensor.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="NIR Spektrometreleri Arasında Kalibrasyon Transferi: Yöntemler ve Fizibilite" decoding="async" loading="lazy" src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">BEYAZ KAĞIT</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">MEMS Spektrometrelerde Kalibrasyon Transferi Fizibilitesi</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Silikon fotolitografinin ünite standardizasyonu olmadan doğrudan kalibrasyon taşınabilirliğini nasıl mümkün kıldığını tartışıyor.</p>
-<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Teknik Raporu Okuyun</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">REHBER</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">NIR Spektrometreleri Arasında Kalibrasyon Transferi: Yöntemler ve Fizibilite</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Bir spektrometrede kurulan NIR kalibrasyonunun neden bir başkasında nadiren değiştirilmeden çalıştığı, literatürün hangi standardizasyon ve model ayarlama yöntemlerini tanımladığı ve bir cihaz ailesi için transfer fizibilitesinin nasıl değerlendirildiği.</p>
+<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Rehberi Okuyun</a>
 </div>
 </div>
 <!-- Cattle Feed Waste Card -->
 <div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Sığır Yemi Üretiminde Hammadde İsrafının Azaltılması" decoding="async" loading="lazy" src="../images/blog_cattle_feed.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">VAKA ÇALIŞMASI</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">MAKALE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">Sığır Yemi Üretiminde Hammadde İsrafının Azaltılması</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Hat içi NIR sensörlerinin kullanılmasıyla ortalama %1,2 ürün verimi artışı gösteren istatistiksel bir çalışma.</p>
-<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Örnek Olayı Okuyun</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Sığır yeminin neden hammadde değişkenliğine karşı fazla formüle edildiği, literatürün bu değişkenliğin kaynakları hakkında ne söylediği ve kabulde ve mikserde NIR ölçümünün güvenlik payını nasıl daralttığı.</p>
+<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Makaleyi Okuyun</a>
 </div>
 </div>
 </div>
@@ -358,6 +348,6 @@ Bias: -0.01%
 <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

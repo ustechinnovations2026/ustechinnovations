@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Guide USTECH Innovations - Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Pourquoi restreindre un étalonnage NIR à des longueurs d'onde sélectionnées peut être utile, comment iPLS, les algorithmes génétiques, UVE, CARS, VIP et le jackknife les choisissent, et pourquoi la sélection doit être validée de manière indépendante." name="description"/>
 <meta content="sélection de longueur d'onde NIR, iPLS ingénierie des caractéristiques, sélection de variables spectrales, optimisation du modèle NIR" name="keywords"/>
 <title>Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/fr/blog-wavelength-selection-ipls.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-wavelength-selection-ipls.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-wavelength-selection-ipls.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "fr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "fr",
   "headline": "Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR",
-  "description": "Guide USTECH Innovations - Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR.",
+  "description": "Pourquoi restreindre un étalonnage NIR à des longueurs d'onde sélectionnées peut être utile, comment iPLS, les algorithmes génétiques, UVE, CARS, VIP et le jackknife les choisissent, et pourquoi la sélection doit être validée de manière indépendante.",
   "url": "https://www.ustechinnovations.com/fr/blog-wavelength-selection-ipls.html",
   "datePublished": "2026-06-11",
-  "dateModified": "2026-06-11",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR | USTECH Innovations" property="og:title"/>
-<meta content="Guide USTECH Innovations - Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR" property="og:description"/>
+<meta content="Pourquoi restreindre un étalonnage NIR à des longueurs d'onde sélectionnées peut être utile, comment iPLS, les algorithmes génétiques, UVE, CARS, VIP et le jackknife les choisissent, et pourquoi la sélection doit être validée de manière indépendante." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/fr/blog-wavelength-selection-ipls.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-wavelength-selection-ipls.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR | USTECH Innovations" property="og:image:alt"/>
 <meta content="fr_FR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR | USTECH Innovations" name="twitter:title"/>
-<meta content="Guide USTECH Innovations - Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR" name="twitter:description"/>
+<meta content="Pourquoi restreindre un étalonnage NIR à des longueurs d'onde sélectionnées peut être utile, comment iPLS, les algorithmes génétiques, UVE, CARS, VIP et le jackknife les choisissent, et pourquoi la sélection doit être validée de manière indépendante." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-wavelength-selection-ipls.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,92 +218,55 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Retour à Tous les Blogs et Publications</a>
 <img alt="Spectroscopic wavelength selection algorithm display" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_wavelength_selection.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 11, 2026 — 4 min de lecture</span>
+<span class="blog-post-meta">Guide — 11 juin 2026 — 4 min de lecture</span>
 <h1 class="blog-post-title">Sélection de longueur d'onde et ingénierie des fonctionnalités pour les modèles spectraux NIR</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Comment implémenter l'intervalle PLS (iPLS) et les algorithmes génétiques dans le cali<span class="calix-x">X</span>plate-forme pour éliminer le bruit, isoler les bandes d'absorption chimique et améliorer la portabilité du modèle.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Pourquoi restreindre un étalonnage proche infrarouge à des longueurs d'onde ou à des intervalles sélectionnés peut le rendre plus exact et plus facile à interpréter, comment fonctionnent les principales méthodes de sélection, et pourquoi la sélection elle-même doit être validée &mdash; d'après les articles originaux des méthodes et les revues publiées.</p>
 </div>
 <div class="blog-post-content">
-<h2>Pourquoi limiter la plage de longueurs d'onde ?</h2>
-<p>Les spectromètres de processus modernes (comme le <strong>ProLine2550</strong>) collectent des données sur toute la gamme du proche infrarouge (1 350 à 2 550 nm), produisant des centaines de variables de longueur d'onde hautement corrélées. Bien que l’ajustement d’un modèle de régression des moindres carrés partiels (PLS) sur l’ensemble du spectre soit standard, il s’agit rarement de l’approche la plus robuste. Le spectre complet comprend des régions qui ne contiennent aucune information chimique sur votre analyte cible, comme le bruit de fond, l'atténuation du capteur ou les fortes bandes d'absorption d'eau qui saturent le détecteur.</p>
-<p>Construire des étalonnages avec des longueurs d'onde inutiles augmente le risque de surajustement, rend les modèles sensibles aux changements de température ambiante et nécessite un nombre plus élevé de variables latentes (LV), ce qui dégrade la transférabilité de l'étalonnage entre les instruments.</p>
-<blockquote>"La sélection des longueurs d'onde optimales est une forme d'ingénierie de fonctionnalités multivariées. En supprimant les bandes dominées par le bruit, nous créons un étalonnage plus simple et plus robuste qui se généralise à différents spectromètres."</blockquote>
-<h2>Intervalle PLS (iPLS) : sélection systématique de la grille</h2>
-<p><strong>L'intervalle PLS (iPLS)</strong> est un algorithme systématique qui divise l'intégralité du spectre prétraité en un ensemble d'intervalles de longueur d'onde plus petits et sans chevauchement (généralement 10 à 40 intervalles). L'algorithme construit un modèle PLS local pour chaque intervalle individuel et calcule l'erreur quadratique moyenne de validation croisée (RMSECV).</p>
-<p>En comparant le RMSECV de tous les modèles locaux au modèle global à spectre complet, iPLS identifie l'intervalle spécifique (ou la combinaison d'intervalles) qui génère l'erreur de prédiction la plus faible. Ceci est très efficace pour isoler des nuances moléculaires distinctes (par exemple, les bandes N-H dans les protéines ou les bandes CH dans les graisses).</p>
-<h2>Algorithmes génétiques : sélection évolutive</h2>
-<p>Lorsque le produit chimique cible a des bandes d’absorption réparties sur plusieurs régions, les recherches de grille basées sur des intervalles sont insuffisantes. <strong>Les algorithmes génétiques (AG)</strong> utilisent une stratégie de recherche évolutive pour trouver des bandes optimales :</p>
+<h2>Pourquoi sélectionner des longueurs d'onde</h2>
+<p>Un spectre proche infrarouge est enregistré sur des centaines de longueurs d'onde régulièrement espacées, alors que le nombre d'échantillons de référence disponibles pour l'étalonnage dans l'<a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">agroalimentaire et l'alimentation animale</a> ou dans les industries de procédé est généralement bien plus faible. Zou Xiaobo et al. notent dans leur revue que ce grand nombre de variables spectrales rend souvent peu fiable la prédiction d'une variable dépendante, et que des efforts considérables ont été consacrés à des méthodes qui identifient les variables porteuses d'information utile ou éliminent celles qui contiennent surtout du bruit <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. La régression des moindres carrés partiels (PLS) gère de nombreuses variables corrélées, mais les régions dominées par le bruit ou par des absorbants sans rapport entrent tout de même dans le modèle. Les retirer peut améliorer la capacité prédictive et permet de mieux voir sur quelles parties du spectre le modèle s'appuie, mais l'étape de sélection introduit aussi de nouvelles possibilités de surajustement&nbsp;; c'est pourquoi Andersen et Bro mettent l'accent, dans leur tutoriel, sur la manière d'utiliser la sélection de variables en pratique et d'éviter les pièges les plus courants <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>Méthodes par intervalles&nbsp;: iPLS</h2>
+<p>La PLS par intervalles (iPLS), introduite par N&oslash;rgaard et al., divise le spectre en intervalles, construit un modèle PLS local sur chacun d'eux et compare les modèles locaux au modèle sur spectre complet dans une représentation graphique <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Sur un jeu de données NIR de 60 échantillons de bière corrélés à la concentration en extrait primitif, le meilleur modèle iPLS a divisé par quatre l'erreur de prédiction du modèle sur spectre complet, et les auteurs ont souligné que la sortie graphique aidait à interpréter le système chimique sous-jacent au modèle <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Comme l'iPLS conserve des blocs contigus de longueurs d'onde plutôt que des points isolés, la région sélectionnée suit la forme des bandes d'absorption&nbsp;; dans la même étude, les intervalles retenus couvraient les variables trouvées par sélection pas à pas ascendante et par deux autres méthodes de sélection <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Méthodes de recherche et de classement</h2>
+<p>Plusieurs autres familles de méthodes sont couramment utilisées&nbsp;; les revues de Zou Xiaobo et al. et d'Andersen et Bro les décrivent plus en détail <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
 <ul>
-<li><strong>Chromosomes :</strong>Les longueurs d'onde sont représentées sous forme de chaînes binaires (1 pour sélectionner, 0 pour exclure).</li>
-<li><strong>Population initiale :</strong>Un pool de départ de combinaisons de longueurs d'onde aléatoires est créé.</li>
-<li><strong>Fonction de remise en forme :</strong>Chaque combinaison construit un modèle PLS. L'adéquation est évaluée en minimisant RMSECV et en minimisant le nombre de variables latentes.</li>
-<li><strong>Sélection et mutation :</strong>Les combinaisons les plus performantes sont associées pour créer une progéniture, avec des mutations aléatoires introduites pour éviter les pièges des minima locaux.</li>
+<li><strong>Algorithmes génétiques (GA-PLS)&nbsp;:</strong> des sous-ensembles candidats de longueurs d'onde sont codés sous forme de chaînes binaires et évoluent par sélection, croisement et mutation, avec comme critère d'aptitude une erreur PLS en validation croisée. Leardi a montré qu'après des modifications appropriées, les variables sélectionnées par GA-PLS forment souvent des régions spectrales bien définies plutôt que des variables isolées dispersées dans le spectre, ce qui donne des modèles de meilleure capacité prédictive que le spectre complet <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</li>
+<li><strong>Élimination des variables non informatives (UVE)&nbsp;:</strong> Centner et al. ajoutent aux données des variables de bruit artificielles et éliminent toute variable expérimentale qui n'est pas plus importante que les variables de bruit, au vu des coefficients de régression PLS <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</li>
+<li><strong>Échantillonnage adaptatif compétitif repondéré (CARS)&nbsp;:</strong> Li et al. classent les longueurs d'onde selon la valeur absolue de leurs coefficients de régression PLS au fil de sous-échantillonnages Monte Carlo répétés, réduisent progressivement l'ensemble de variables et conservent le sous-ensemble présentant la plus faible erreur de validation croisée <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</li>
+<li><strong>Importance des variables dans la projection (VIP)&nbsp;:</strong> un score qui résume la contribution de chaque variable à un modèle PLS. Chong et Jun ont comparé la PLS avec VIP au lasso et à la régression pas à pas dans des simulations à prédicteurs corrélés, et ont discuté du choix du seuil VIP <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+<li><strong>Test de significativité par jackknife&nbsp;:</strong> Westad et Martens testent la significativité de chaque coefficient de régression à l'aide des sous-modèles de validation croisée et ne conservent que les variables significatives&nbsp;; sur des spectres NIR de bière, la méthode a fait aussi bien ou mieux que les autres méthodes de sélection testées et s'est montrée robuste vis-à-vis du schéma de validation croisée <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
 </ul>
-<p>Ce processus se répète pendant 50 à 100 générations, produisant une sélection de longueur d'onde clairsemée et hautement optimisée.</p>
-<h2>Impact de la sélection de la longueur d'onde</h2>
-<p>La sélection de bandes de longueurs d'onde optimales améliore considérablement les performances d'étalonnage, comme le démontre cette étude sur les étalonnages de la valeur d'hydroxyle des polyols (OHV) :</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Configuration du modèle</th>
-<th>Longueurs d'onde actives (nm)</th>
-<th>Variables latentes (LV)</th>
-<th>Erreur de validation (RMSEP)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Global PLS (gamme complète)</td>
-<td>1350 – 2550 nm (complet)</td>
-<td>10 LV</td>
-<td>± 2,45 mg KOH/g</td>
-</tr>
-<tr>
-<td><strong>iPLS Sélectionné</strong></td>
-<td>1680 – 1740 et 2200 – 2260 nm</td>
-<td><strong>5 LV</strong></td>
-<td><strong>≤ 1,12 mg KOH/g</strong></td>
-</tr>
-<tr>
-<td><strong>GA sélectionné</strong></td>
-<td>Bandes sélectionnées dans les régions C-H/O-H</td>
-<td><strong>4 LV</strong></td>
-<td><strong>≤ 1,05 mg KOH/g</strong></td>
-</tr>
-</tbody>
-</table>
-<h2>Optimisation de la longueur d'onde en cali<span class="calix-x">X</span>Suite</h2>
-<p>Pour optimiser vos modèles en <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
-<ol>
-<li>Ouvrez votre modèle d'étalonnage et accédez au menu « Sélection des fonctionnalités ».</li>
-<li>Sélectionnez « Intervalle PLS » pour exécuter une recherche dans la grille, ou « Algorithme génétique » pour une optimisation évolutive.</li>
-<li>Définissez votre limite cible de variable latente pour éviter le surajustement (par exemple, un maximum de 5 LV).</li>
-<li>Exécutez l'optimiseur. Une fois terminé, cliquez sur « Appliquer la sélection » et validez le calibrage simplifié avant le déploiement.</li>
-</ol>
-<h2>Conclusion</h2>
-<p>La sélection de bandes de longueurs d'onde à l'aide de iPLS et d'algorithmes génétiques fait passer la construction de modèles chimiométriques de la régression en boîte noire à l'ingénierie de fonctionnalités ciblées. En isolant les bandes harmoniques moléculaires clés, les ingénieurs peuvent réduire la complexité de l'étalonnage, éviter les dérives de température et créer des modèles qui se transfèrent de manière transparente sur plusieurs spectromètres.</p>
+<h2>Le risque de sursélection</h2>
+<p>Toute méthode de sélection explore un très grand nombre de sous-ensembles possibles, et plus on compare de sous-ensembles, plus il est probable que l'un d'eux s'ajuste aux données d'étalonnage par hasard. Jouan-Rimbaud et al. l'ont vérifié en ajoutant des variables aléatoires à des données NIR et ont constaté qu'un algorithme génétique pouvait encore sélectionner des variables non pertinentes malgré une procédure de validation soignée&nbsp;; appliquer une sélection ascendante aux sous-ensembles du GA réduisait cet effet <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. La conséquence pratique est que l'erreur utilisée pour choisir les variables n'est pas une estimation honnête des performances futures. Fern&aacute;ndez Pierna et al. ont donc utilisé l'erreur quadratique moyenne de prédiction sur un jeu de test indépendant comme critère de leur méthode de sélection descendante, et ont rapporté que les modèles sélectionnés amélioraient, ou du moins conservaient, les performances de prédiction de la PLS sur spectre complet tout en utilisant moins de variables <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Trois précautions découlent de cette littérature <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>&nbsp;:</p>
+<ul>
+<li><strong>Garder un jeu de test en dehors de la boucle de sélection.</strong> Les échantillons utilisés pour choisir les longueurs d'onde ou les intervalles ne doivent pas servir aussi à juger le modèle final.</li>
+<li><strong>Comparer au modèle sur spectre complet.</strong> Une sélection ne mérite d'être conservée que si elle améliore la prédiction sur des échantillons indépendants, ou si elle l'égale avec un modèle plus simple et plus interprétable.</li>
+<li><strong>Vérifier la chimie.</strong> Des régions sélectionnées qui ne peuvent être reliées à des bandes d'absorption de l'analyte ou de la matrice méritent la méfiance, surtout lorsque le jeu d'étalonnage est petit.</li>
+</ul>
+<h2>L'approche d'USTECH en matière de sélection de longueurs d'onde</h2>
+<p>Dans la <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">suite cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>, les outils de régression PLS, de prétraitement spectral et de validation de modèle servent à comparer une plage de longueurs d'onde restreinte au modèle sur spectre complet, sur des échantillons qui n'ont pas servi à faire ce choix, comme le recommande la littérature ci-dessus <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. La justification d'une plage restreinte pour un produit et un analyseur donnés est tranchée par les résultats de validation et non par la seule méthode de sélection, et elle est établie lors d'une étude de faisabilité réalisée avec vos propres échantillons et analyses de référence, conformément à l'ISO 12099 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</p>
 <div class="blog-post-references">
 <h3>Références</h3>
 <ul>
-<li>ISO 12099 -<em>Lignes directrices pour l’application de la spectrométrie proche infrarouge</em>.</li>
-<li>Nørgaard, L. et al., "Régression des moindres carrés partiels par intervalles (iPLS) : un outil pour la sélection de la longueur d'onde",<em>Spectroscopie appliquée</em>, 2000.</li>
-<li>Leardi, R., "Application d'un algorithme génétique à la sélection de longueur d'onde en spectroscopie proche infrarouge",<em>Journal de chimiométrie</em>, 2001.</li>
+<li id="ref-1">[1] Xiaobo, Z., Jiewen, Z., Povey, M.J.W., Holmes, M., Hanpin, M. (2010). Variables selection methods in near-infrared spectroscopy. <em>Analytica Chimica Acta</em>, 667(1&ndash;2), 14&ndash;32. <a href="https://doi.org/10.1016/j.aca.2010.03.048" target="_blank" rel="noopener">doi:10.1016/j.aca.2010.03.048</a></li>
+<li id="ref-2">[2] Andersen, C.M., Bro, R. (2010). Variable selection in regression &mdash; a tutorial. <em>Journal of Chemometrics</em>, 24(11&ndash;12), 728&ndash;737. <a href="https://doi.org/10.1002/cem.1360" target="_blank" rel="noopener">doi:10.1002/cem.1360</a></li>
+<li id="ref-3">[3] N&oslash;rgaard, L., Saudland, A., Wagner, J., Nielsen, J.P., Munck, L., Engelsen, S.B. (2000). Interval Partial Least-Squares Regression (iPLS): A Comparative Chemometric Study with an Example from Near-Infrared Spectroscopy. <em>Applied Spectroscopy</em>, 54(3), 413&ndash;419. <a href="https://doi.org/10.1366/0003702001949500" target="_blank" rel="noopener">doi:10.1366/0003702001949500</a></li>
+<li id="ref-4">[4] Leardi, R. (2000). Application of genetic algorithm&ndash;PLS for feature selection in spectral data sets. <em>Journal of Chemometrics</em>, 14(5&ndash;6), 643&ndash;655. <a href="https://doi.org/10.1002/1099-128X(200009/12)14:5/6%3C643::AID-CEM621%3E3.0.CO;2-E" target="_blank" rel="noopener">doi:10.1002/1099-128X(200009/12)14:5/6&lt;643::AID-CEM621&gt;3.0.CO;2-E</a></li>
+<li id="ref-5">[5] Centner, V., Massart, D.L., de Noord, O.E., de Jong, S., Vandeginste, B.M., Sterna, C. (1996). Elimination of Uninformative Variables for Multivariate Calibration. <em>Analytical Chemistry</em>, 68(21), 3851&ndash;3858. <a href="https://doi.org/10.1021/ac960321m" target="_blank" rel="noopener">doi:10.1021/ac960321m</a></li>
+<li id="ref-6">[6] Li, H., Liang, Y., Xu, Q., Cao, D. (2009). Key wavelengths screening using competitive adaptive reweighted sampling method for multivariate calibration. <em>Analytica Chimica Acta</em>, 648(1), 77&ndash;84. <a href="https://doi.org/10.1016/j.aca.2009.06.046" target="_blank" rel="noopener">doi:10.1016/j.aca.2009.06.046</a></li>
+<li id="ref-7">[7] Chong, I.-G., Jun, C.-H. (2005). Performance of some variable selection methods when multicollinearity is present. <em>Chemometrics and Intelligent Laboratory Systems</em>, 78(1&ndash;2), 103&ndash;112. <a href="https://doi.org/10.1016/j.chemolab.2004.12.011" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2004.12.011</a></li>
+<li id="ref-8">[8] Westad, F., Martens, H. (2000). Variable Selection in near Infrared Spectroscopy Based on Significance Testing in Partial Least Squares Regression. <em>Journal of Near Infrared Spectroscopy</em>, 8(2), 117&ndash;124. <a href="https://doi.org/10.1255/jnirs.271" target="_blank" rel="noopener">doi:10.1255/jnirs.271</a></li>
+<li id="ref-9">[9] Jouan-Rimbaud, D., Massart, D.L., de Noord, O.E. (1996). Random correlation in variable selection for multivariate calibration with a genetic algorithm. <em>Chemometrics and Intelligent Laboratory Systems</em>, 35(2), 213&ndash;220. <a href="https://doi.org/10.1016/S0169-7439(96)00062-7" target="_blank" rel="noopener">doi:10.1016/S0169-7439(96)00062-7</a></li>
+<li id="ref-10">[10] Fern&aacute;ndez Pierna, J.A., Abbas, O., Baeten, V., Dardenne, P. (2009). A Backward Variable Selection method for PLS regression (BVSPLS). <em>Analytica Chimica Acta</em>, 642(1&ndash;2), 89&ndash;93. <a href="https://doi.org/10.1016/j.aca.2008.12.002" target="_blank" rel="noopener">doi:10.1016/j.aca.2008.12.002</a></li>
+<li id="ref-11">[11] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Télécharger le rapport technique complet</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Accédez au document technique complet et non édité avec des scripts de code pour exécuter iPLS et des algorithmes génétiques en Python, ainsi que des ensembles de données d'étalonnage spectral complet.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>J'accepte de recevoir le PDF technique et de m'abonner aux mises à jour USTECH Innovations, conformes aux <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">politique de confidentialité</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Évaluez cette application pour votre procédé</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Notre équipe applications peut détailler la méthode, partager la littérature de référence et organiser une étude de faisabilité avec vos propres échantillons.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contactez-nous</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -308,18 +278,18 @@
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">Comprendre le filtrage Savitzky-Golay dans le prétraitement</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un guide pédagogique sur les mathématiques de prétraitement spectral, la sélection des paramètres de lissage et les configurations dérivées dans cali<span class="calix-x">X</span>.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Ce que le filtre de Savitzky-Golay fait réellement à un spectre, pourquoi les dérivées éliminent les lignes de base et comment choisir la longueur de fenêtre et l'ordre du polynôme, avec la littérature originale et les travaux qui ont suivi.</p>
 <a class="btn-text" href="blog-savitzky-golay-filtering.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire le guide</a>
 </div>
 </div>
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="Introduction à la régression PLS dans la suite cali<span class="calix-x">X</span>" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="Introduction à la régression PLS dans la suite caliX" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction à la régression PLS en cali<span class="calix-x">X</span>Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un didacticiel étape par étape expliquant comment compiler des modèles d'étalonnage à partir de valeurs de chimie humide de référence à l'aide du cali<span class="calix-x">X</span>plate-forme.</p>
-<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire le didacticiel</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un parcours pratique d'un étalonnage PLS&nbsp;: comment les données sont partagées, comment le prétraitement et le nombre de variables latentes sont choisis par validation, quels diagnostics lire, et comment maintenir le modèle en vie en production.</p>
+<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lire le guide</a>
 </div>
 </div>
 </div>
@@ -377,6 +347,6 @@
 <p>Conçu pour la précision scientifique et industrielle.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

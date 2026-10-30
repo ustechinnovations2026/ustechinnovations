@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="以通俗易懂的语言解释近红外光谱的工作原理以及为什么它是现代工业中最通用的无损分析技术。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="近红外光谱入门：什么是 NIR 光，它在何处被发现，倍频和合频谱带揭示了什么，为什么定标必不可少，以及该技术的局限在哪里。" name="description"/>
 <meta content="NIR光谱解释、近红外光谱、无损分析、NIR工业应用、光谱指纹" name="keywords"/>
 <title>什么是 NIR 光谱？ | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-what-is-nir-spectroscopy.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-what-is-nir-spectroscopy.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-what-is-nir-spectroscopy.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "什么是 NIR 光谱？",
-  "description": "以通俗易懂的语言解释近红外光谱的工作原理以及为什么它是现代工业中最通用的无损分析技术。",
+  "description": "近红外光谱入门：什么是 NIR 光，它在何处被发现，倍频和合频谱带揭示了什么，为什么定标必不可少，以及该技术的局限在哪里。",
   "url": "https://www.ustechinnovations.com/zh/blog-what-is-nir-spectroscopy.html",
   "datePublished": "2026-06-25",
-  "dateModified": "2026-06-25",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="什么是 NIR 光谱？ | USTECH Innovations" property="og:title"/>
-<meta content="以通俗易懂的语言解释近红外光谱的工作原理以及为什么它是现代工业中最通用的无损分析技术。" property="og:description"/>
+<meta content="近红外光谱入门：什么是 NIR 光，它在何处被发现，倍频和合频谱带揭示了什么，为什么定标必不可少，以及该技术的局限在哪里。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-what-is-nir-spectroscopy.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-what-is-nir-spectroscopy.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="什么是 NIR 光谱？ | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="什么是 NIR 光谱？ | USTECH Innovations" name="twitter:title"/>
-<meta content="以通俗易懂的语言解释近红外光谱的工作原理以及为什么它是现代工业中最通用的无损分析技术。" name="twitter:description"/>
+<meta content="近红外光谱入门：什么是 NIR 光，它在何处被发现，倍频和合频谱带揭示了什么，为什么定标必不可少，以及该技术的局限在哪里。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-what-is-nir-spectroscopy.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,62 +218,51 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="NIR Spectroscopy Light Beam Through Sample" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_what_is_nir.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Article — June 25, 2026 — 2 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年6月25日 — 4 分钟阅读</span>
 <h1 class="blog-post-title">什么是 NIR 光谱？</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">以通俗易懂的语言解释近红外光谱的工作原理以及为什么它是现代工业中最通用的无损分析技术。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">通俗介绍近红外光谱 &mdash; 光谱区域、从 Herschel 到 Norris 的历史、它所记录的倍频和合频谱带、为什么每一个定量结果都依赖于化学计量学定标，以及该方法的长处与短处 &mdash; 内容基于药典文本、标准和综述文献。</p>
 </div>
 <div class="blog-post-content">
-<h2>核心原则</h2>
-<p>每个分子都会吸收与其化学键振动相对应的特定波长的光。 C-H 键（脂肪、有机物）吸收的波长与 O-H 键（水、糖）或 N-H 键（蛋白质）不同。通过将 NIR 光 (700–2,500 nm) 照射到样品上并测量每个波长的吸收率，我们获得<strong>光谱指纹</strong>反映样品的化学成分。</p>
-<blockquote>“通过测量分子如何吸收近红外光，NIR 光谱可以立即、非破坏性且无需试剂地揭示任何样品的化学成分。”</blockquote>
-<h2>是什么让 NIR 独一无二</h2>
-<p>NIR 光谱法具有其他常用技术无法同时比拟的四个特性：非破坏性（测量后样品不变）、无需化学试剂、30 秒内即可获得结果以及单次扫描同时测量多个参数。这些特性使其成为唯一适用于连续<a href="blog-inline-ftnir-paradigm.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">在线监测</a>在工业生产中。</p>
-<h2>NIR 主要优势</h2>
-<ul style="list-style: none; padding: 0;">
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>非破坏性</strong>— 测量后样品未发生变化</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>无化学试剂</strong>— 零浪费，每次测试零成本</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>30 秒内得出结果</strong>湿化学则需要 15–60 分钟</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>同时多参数</strong>一次扫描的结果</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>适合内联部署</strong>— 无采样中断</li>
-<li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>适用于固体、液体、膏体、粉末、颗粒</strong></li>
+<h2>什么是近红外光</h2>
+<p>近红外（NIR）辐射是电磁波谱中介于可见光和中红外之间的部分。其边界因来源不同而略有差异：药典通则 USP &lt;856&gt; 将 NIR 范围定义为 780 至 2,500 nm，约合 12,821 至 4,000 cm<sup>&minus;1</sup><a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>，而光学与光子学标准 ISO 20473 将近红外波段定为 0.78&ndash;3 &micro;m<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。分析化学综述则给出 750&ndash;2,500 nm 或 800&ndash;2,500 nm<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。这些来源都没有把该区域的起点定得低至 700 nm，尽管这一下限有时会被非正式地引用<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。USP &lt;1856&gt; 进一步将该范围划分为约 780&ndash;1,100 nm 的短波 &ldquo;Herschel&rdquo; 区和 1,100 至 2,500 nm 的长波区<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</p>
+<h2>从 Herschel 到 Norris</h2>
+<p>近红外是人类发现的第一种不可见辐射<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。1800 年，William Herschel 用棱镜分散太阳光，并把温度计放在光谱可见红端之外；温度计仍然升温，他将这些不可见射线描述为&ldquo;具有很强的加热物体的能力，却完全不能照亮物体&rdquo;<a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。分析应用则晚得多。Pasquini 将其追溯到为农业开发仪器分析方法的努力，并指出 Karl Norris 是该技术史上最重要的人物，他在寻找测定农产品水分的新方法时开始研究 NIR<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<h2>NIR 光谱记录了什么</h2>
+<p>分子在其基频振动的频率处吸收中红外辐射。相比之下，NIR 区域以这些基频的倍频和合频为主<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。这类跃迁之所以被允许，是因为化学键振动具有非谐性；O&ndash;H、C&ndash;H、N&ndash;H 和 S&ndash;H 键具有高非谐性和高键能，因而产生最强的 NIR 特征<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。Be&#263; 和 Huck 将 X&ndash;H 谱带描述为 NIR 光谱中特征最为鲜明的部分，并指出其位置和强度受非谐效应支配<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。主要官能团的谱带归属汇集在 Workman 和 Weyer 等编写的解析图谱集中<a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</p>
+<p>倍频和合频谱带很弱：USP &lt;856&gt; 指出，NIR 的摩尔吸光系数远低于中红外，辐射可穿透物料数毫米<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。这一弱点在实践中反而是优势。样品可以按原样测量，通常采用漫反射而无需预处理<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>，测量探及的是物料整体而不仅仅是表面<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。光如何被色散或调制以记录光谱是另一个话题，详见<a href="blog-what-is-ftnir.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">什么是 FT-NIR？</a>以及<a href="blog-nir-vs-ftnir.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">NIR 与 FT-NIR 架构</a>的比较。</p>
+<h2>为什么 NIR 需要化学计量学</h2>
+<p>NIR 谱带宽且严重重叠，观测到的光谱通常是众多贡献的叠加<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。因此，单一波长很少能为定量模型提供足够的信息，Pasquini 称 NIR 是应用化学计量学最多的分析技术<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。其结果是，NIR 是一种间接的二级方法：它高度依赖良好且可接受的参考方法，稳健的模型可能需要数百乃至数千个经参考方法分析的样品<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。Be&#263; 和 Huck 警告说，分析用 NIR 因此很容易沦为只定量不解释的&ldquo;黑箱工具&rdquo;<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>，Pasquini 后来的综述讨论了该技术及其配套数学工具的缺陷和误用<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。对于饲料、谷物和谷物碾磨制品，ISO 12099 规定了定标、验证、异常值处理和仪器稳定性监控的指南<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</p>
+<h2>NIR 的应用领域及其局限</h2>
+<p>在<a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">食品工业</a>中，NIR 已应用于完整固体、自由流动固体、糊状物和液体，既用于成分的定量分析，也用于真实性鉴别等定性任务，包括在输送带上、管道中和发酵过程中的在线测量<a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。ISO 12099 涵盖了用 NIR 测定饲料和谷物中水分、脂肪、蛋白质、淀粉和粗纤维等成分<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。在制药技术中，NIR 用于固体、液体和生物技术剂型，应用于研发、生产中的过程监控以及质量控制实验室，既用于鉴别也用于定量<a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。该方法也有明显的局限：</p>
+<ul>
+<li><strong>间接方法。</strong>每个定量结果都继承了参考分析和定标集的质量；模型只对与建模样品相似的样品有效<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</li>
+<li><strong>痕量分析物。</strong>NIR 的灵敏度不高；Pasquini 给出的典型检测限约为 0.1 %（m/m），并指出大多数定量应用针对的是主要成分<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</li>
+<li><strong>矿物质和盐类。</strong>不含主导 NIR 光谱的 O&ndash;H、C&ndash;H、N&ndash;H 或 S&ndash;H 键的物质只能间接测定，例如通过浓水溶液中氯化钠对水谱带的影响来测定氯化钠<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</li>
 </ul>
-<p>类似的设备<a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a>利用这些优势<a href="industry-food-feed.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">食品和饲料</a>, <a href="industry-dairy.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">奶制品</a>， 和<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和制药</a>应用程序。</p>
-<h2>关键可测量参数</h2>
-<div style="overflow-x: auto;">
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-<thead><tr style="background: var(--accent-black); color: #fff;">
-<th style="padding: 0.75rem 1rem; text-align: left;">范围</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">行业应用</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">参考方法</th>
-</tr></thead>
-<tbody>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem;">胖的</td><td style="padding: 0.75rem 1rem;">乳制品、饲料、食品</td><td style="padding: 0.75rem 1rem;">ISO 1211，索氏提取</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem;">蛋白质</td><td style="padding: 0.75rem 1rem;">饲料、乳制品、食品</td><td style="padding: 0.75rem 1rem;">ISO 5983，凯氏定氮法</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem;">水分</td><td style="padding: 0.75rem 1rem;">所有行业</td><td style="padding: 0.75rem 1rem;">ISO 712，卡尔费休</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem;">淀粉</td><td style="padding: 0.75rem 1rem;">饲料、谷物、食品</td><td style="padding: 0.75rem 1rem;">ICC 168，酶促</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem;">API 浓度</td><td style="padding: 0.75rem 1rem;">医药、化工</td><td style="padding: 0.75rem 1rem;">高效液相色谱法、滴定法</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem;">NDF</td><td style="padding: 0.75rem 1rem;">饲料、草料</td><td style="padding: 0.75rem 1rem;">范·索斯特</td></tr>
-<tr><td style="padding: 0.75rem 1rem;">羟值</td><td style="padding: 0.75rem 1rem;">化学、聚合物</td><td style="padding: 0.75rem 1rem;">滴定</td></tr>
-</tbody>
-</table>
+<h2>USTECH 的 NIR 测量方案</h2>
+<p>USTECH 生产用于实验室、近线和在线的 NIR 分析仪。<a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> 是用于谷物、饲料原料和青粗饲料的台式及近线 FT-NIR 分析仪；<a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 是用于混合机、反应器和管道的在线 FT-NIR 分析仪；<a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> 和 <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> 是基于 InGaAs 阵列的坚固型在线 NIR 分析仪。由于每个 NIR 结果都依赖于针对参考方法的定标，模型在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 中开发和验证。NIR 能否测量某一产品中的某一参数、应使用哪台仪器，需要用您自己的样品和参考分析开展可行性研究来确定。</p>
+<div class="blog-post-references">
+<h3>参考文献</h3>
+<ul>
+<li id="ref-1">[1] USP General Chapter &lt;856&gt;. <em>Near-Infrared Spectroscopy.</em> United States Pharmacopeia &ndash; National Formulary, Rockville. <a href="https://doi.usp.org/USPNF/USPNF_M8189_03_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M8189_03_01.html</a></li>
+<li id="ref-2">[2] ISO 20473:2007. <em>Optics and photonics &mdash; Spectral bands.</em> ISO, Geneva. <a href="https://www.iso.org/standard/39482.html" target="_blank" rel="noopener">iso.org/standard/39482.html</a></li>
+<li id="ref-3">[3] Pasquini, C. (2003). Near infrared spectroscopy: fundamentals, practical aspects and analytical applications. <em>Journal of the Brazilian Chemical Society</em>, 14(2), 198&ndash;219. <a href="https://doi.org/10.1590/S0103-50532003000200006" target="_blank" rel="noopener">doi:10.1590/S0103-50532003000200006</a></li>
+<li id="ref-4">[4] Be&#263;, K.B., Huck, C.W. (2019). Breakthrough Potential in Near-Infrared Spectroscopy: Spectra Simulation. A Review of Recent Developments. <em>Frontiers in Chemistry</em>, 7, 48. <a href="https://doi.org/10.3389/fchem.2019.00048" target="_blank" rel="noopener">doi:10.3389/fchem.2019.00048</a></li>
+<li id="ref-5">[5] USP General Chapter &lt;1856&gt;. <em>Near-Infrared Spectroscopy &mdash; Theory and Practice.</em> United States Pharmacopeia &ndash; National Formulary, Rockville. <a href="https://doi.usp.org/USPNF/USPNF_M99838_02_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M99838_02_01.html</a></li>
+<li id="ref-6">[6] Herschel, W. (1800). Experiments on the refrangibility of the invisible rays of the sun. <em>Philosophical Transactions of the Royal Society of London</em>, 90, 284&ndash;292. <a href="https://doi.org/10.1098/rstl.1800.0015" target="_blank" rel="noopener">doi:10.1098/rstl.1800.0015</a></li>
+<li id="ref-7">[7] Workman, J., Jr., Weyer, L. (2012). <em>Practical Guide and Spectral Atlas for Interpretive Near-Infrared Spectroscopy</em>, 2nd ed. CRC Press, Boca Raton. <a href="https://doi.org/10.1201/b11894" target="_blank" rel="noopener">doi:10.1201/b11894</a></li>
+<li id="ref-8">[8] Pasquini, C. (2018). Near infrared spectroscopy: A mature analytical technique with new perspectives &ndash; A review. <em>Analytica Chimica Acta</em>, 1026, 8&ndash;36. <a href="https://doi.org/10.1016/j.aca.2018.04.004" target="_blank" rel="noopener">doi:10.1016/j.aca.2018.04.004</a></li>
+<li id="ref-9">[9] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-10">[10] Porep, J.U., Kammerer, D.R., Carle, R. (2015). On-line application of near infrared (NIR) spectroscopy in food production. <em>Trends in Food Science &amp; Technology</em>, 46(2), 211&ndash;230. <a href="https://doi.org/10.1016/j.tifs.2015.10.002" target="_blank" rel="noopener">doi:10.1016/j.tifs.2015.10.002</a></li>
+<li id="ref-11">[11] Roggo, Y., Chalus, P., Maurer, L., Lema-Martinez, C., Edmond, A., Jent, N. (2007). A review of near infrared spectroscopy and chemometrics in pharmaceutical technologies. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 44(3), 683&ndash;700. <a href="https://doi.org/10.1016/j.jpba.2007.03.023" target="_blank" rel="noopener">doi:10.1016/j.jpba.2007.03.023</a></li>
+</ul>
 </div>
-<blockquote>“NIR 是唯一能够同时提供无损、免试剂、30 秒内多参数结果的分析技术，使其特别适合在线工业监测。”</blockquote>
-<p>了解化学计量学模型如何<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>将这些光谱转换为可操作的成分值，探索我们的详细比较<a href="blog-nir-vs-ftnir.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">NIR 与 FT-NIR 技术</a>.</p>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、流程图和 ROI 计算。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -275,19 +271,19 @@
 <div class="card" onclick="window.location.href='blog-nir-vs-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="FT-NIR vs Conventional NIR" decoding="async" loading="lazy" src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-nir-vs-ftnir.html" style="color: var(--accent-black); text-decoration: none;">FT-NIR 与传统 NIR：有什么区别？</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">滤波器、色散和傅里叶变换 NIR 技术的并排比较。</p>
-<a class="btn-text" href="blog-nir-vs-ftnir.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">扫描光栅、二极管阵列和傅里叶变换 NIR 分析仪如何产生光谱，通量、多路和波长轴优势究竟带来什么，以及哪些权衡决定在线应用的选择。</p>
+<a class="btn-text" href="blog-nir-vs-ftnir.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a>
 </div>
 </div>
 <div class="card" onclick="window.location.href='blog-inline-ftnir-paradigm.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="Power of In-Line FT-NIR" decoding="async" loading="lazy" src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="在线分析的力量：质量控制的范式转变" decoding="async" loading="lazy" src="../images/blog_inline_ftnir_paradigm.webp?v=1.0.6" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">白皮书</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-inline-ftnir-paradigm.html" style="color: var(--accent-black); text-decoration: none;">在线 FT-NIR 分析的力量</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">通过直接在生产线上分析质量参数来消除生产损失。</p>
-<a class="btn-text" href="blog-inline-ftnir-paradigm.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读白皮书</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-inline-ftnir-paradigm.html" style="color: var(--accent-black); text-decoration: none;">在线分析的力量：质量控制的范式转变</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">从以实验室为基础的被动式质量控制转向线内测量与控制，究竟涉及哪些内容：PAT 框架、ICH 术语、实时放行检验和多变量控制回路。</p>
+<a class="btn-text" href="blog-inline-ftnir-paradigm.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
 </div>
 </div>
 </div>
@@ -345,6 +341,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

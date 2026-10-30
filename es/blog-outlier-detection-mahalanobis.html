@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Guía USTECH Innovations - Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a la T² de Hotelling" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Cómo la distancia de Mahalanobis, la T cuadrado de Hotelling, el leverage y los residuos Q indican a un analizador de proceso si un espectro pertenece a su calibración, cómo se fijan sus límites y por qué un mismo estadístico recibe varios nombres en el software." name="description"/>
 <meta content="quimiometría de detección de valores atípicos, distancia de Mahalanobis NIR, T-cuadrado de Hotelling, análisis espectral de valores atípicos" name="keywords"/>
 <title>Detección quimiométrica de valores atípicos: distancia de Mahalanobis frente a T² de Hotelling | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "es",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "es",
   "headline": "Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a T² de Hotelling",
-  "description": "Guía USTECH Innovations: Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a T² de Hotelling.",
+  "description": "Cómo la distancia de Mahalanobis, la T cuadrado de Hotelling, el leverage y los residuos Q indican a un analizador de proceso si un espectro pertenece a su calibración, cómo se fijan sus límites y por qué un mismo estadístico recibe varios nombres en el software.",
   "url": "https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html",
   "datePublished": "2026-06-11",
-  "dateModified": "2026-06-11",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Detección quimiométrica de valores atípicos: distancia de Mahalanobis frente a T² de Hotelling | USTECH Innovations" property="og:title"/>
-<meta content="Guía USTECH Innovations - Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a la T² de Hotelling" property="og:description"/>
+<meta content="Cómo la distancia de Mahalanobis, la T cuadrado de Hotelling, el leverage y los residuos Q indican a un analizador de proceso si un espectro pertenece a su calibración, cómo se fijan sus límites y por qué un mismo estadístico recibe varios nombres en el software." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/es/blog-outlier-detection-mahalanobis.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Detección quimiométrica de valores atípicos: distancia de Mahalanobis frente a T² de Hotelling | USTECH Innovations" property="og:image:alt"/>
 <meta content="es_ES" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Detección quimiométrica de valores atípicos: distancia de Mahalanobis frente a T² de Hotelling | USTECH Innovations" name="twitter:title"/>
-<meta content="Guía USTECH Innovations - Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a la T² de Hotelling" name="twitter:description"/>
+<meta content="Cómo la distancia de Mahalanobis, la T cuadrado de Hotelling, el leverage y los residuos Q indican a un analizador de proceso si un espectro pertenece a su calibración, cómo se fijan sus límites y por qué un mismo estadístico recibe varios nombres en el software." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,83 +218,52 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Volver a Todos los Blogs y Publicaciones</a>
 <img alt="Outlier detection statistical plot on screen" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_outlier_detection.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 11, 2026 — 4 min de lectura</span>
+<span class="blog-post-meta">Guía — 11 de junio de 2026 — 5 min de lectura</span>
 <h1 class="blog-post-title">Detección de valores atípicos quimiométricos: distancia de Mahalanobis frente a T² de Hotelling</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una guía analítica que detalla las matemáticas multivariadas utilizadas para identificar anomalías espectrales, derivas de instrumentos y materias primas fuera de especificación en cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Cómo la distancia de Mahalanobis, la T&sup2; de Hotelling, el leverage y los residuos Q indican a un analizador NIR de proceso si un espectro pertenece a la calibración que está a punto de usar, cómo se derivan los límites de estos estadísticos y por qué la misma magnitud aparece con nombres y escalas distintos en distintos programas &mdash; con los artículos estadísticos originales y las prácticas ASTM pertinentes.</p>
 </div>
 <div class="blog-post-content">
-<h2>El papel de la detección de valores atípicos en espectroscopia</h2>
-<p>Al implementar modelos de calibración cuantitativa (construidos mediante mínimos cuadrados parciales o regresión PLS) en una línea de producción activa, el sistema se basa en la suposición de que las muestras escaneadas son similares a la base de datos de calibración. Si se escanea una muestra que contiene un contaminante inesperado, muestra una variación extrema de temperatura o tiene una matriz de materia prima completamente diferente, el modelo generará una predicción. Sin embargo, esa predicción será matemáticamente inválida.</p>
-<p>Para evitar que las malas predicciones escriban datos corruptos en su sistema SCADA, los espectrómetros de proceso deben evaluar si cada espectro escaneado es un "valor atípico multivariado" antes de generar predicciones. Esto se logra proyectando el espectro de la muestra en el espacio multidimensional del modelo de calibración y calculando los límites de distancia estadísticos.</p>
-<blockquote>"La detección de valores atípicos actúa como el sistema inmunológico de un analizador de procesos. Garantiza que las predicciones sólo se generen cuando la muestra coincida con el espacio de calibración".</blockquote>
-<h2>Distancia de Mahalanobis: medición de la covarianza</h2>
-<p>La distancia euclidiana simple mide la distancia en línea recta entre un espectro de muestra y la media de calibración. Sin embargo, la distancia euclidiana falla en quimiometría porque ignora la fuerte correlación (covarianza) entre longitudes de onda adyacentes en los espectros NIR.</p>
-<p><strong>Distancia de Mahalanobis (MD)</strong> resuelve esto escalando la distancia mediante la matriz de covarianza del conjunto de datos de calibración. Efectivamente, MD tiene en cuenta la dirección de la varianza, asignando menos peso a las variaciones en direcciones de alta varianza de calibración normal y alto peso a las desviaciones en direcciones donde los datos de calibración están estrechamente vinculados.</p>
-<h2>T² de Hotelling: umbrales de confianza</h2>
-<p>Si bien la distancia de Mahalanobis proporciona un valor de distancia bruto, necesitamos un umbral estadísticamente sólido para señalar valores atípicos. <strong>T² de Hotelling</strong> normaliza la distancia de Mahalanobis en un espacio de proyección del componente principal (PC), calculando una puntuación multivariada. Debido a que T² sigue una distribución F, podemos establecer límites de confianza estadísticos formales (normalmente 95% o 99%):</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Parámetro</th>
-<th>Distancia de Mahalanobis (MD)</th>
-<th>T² de Hotelling</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Enfoque matemático</strong></td>
-<td>Mide la distancia generalizada en un espacio de longitud de onda sin formato o escalado por covarianza.</td>
-<td>Mide la distancia de puntuación dentro del espacio del componente principal (puntuaciones de PC).</td>
-</tr>
-<tr>
-<td><strong>Escalado de covarianza</strong></td>
-<td>Escala según la matriz de covarianza de longitud de onda completa.</td>
-<td>Escala según la varianza de las puntuaciones de PC individuales.</td>
-</tr>
-<tr>
-<td><strong>Límite de umbral</strong></td>
-<td>Distribución heurística o chi-cuadrado ($\chi^2$).</td>
-<td>Intervalos de confianza de distribución F estrictos ($1-\alpha$, donde $\alpha = 0,05$ o $0,01$).</td>
-</tr>
-<tr>
-<td><strong>Mejor caso de uso</strong></td>
-<td>Señalar materias primas defectuosas, desvíos de instrumentación o fallas de hardware.</td>
-<td>Validar la pertenencia a una clase y marcar muestras fuera del espacio modelo.</td>
-</tr>
-</tbody>
-</table>
-<h2>Establecer límites de valores atípicos en cali<span class="calix-x">X</span> Suite</h2>
-<p>Para implementar límites de valores atípicos en sus calibraciones, siga estos pasos en <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
-<ol>
-<li><strong>Compilar puntuaciones PCA/PLS:</strong>Abra su archivo de calibración y calcule los vectores de carga de los componentes principales.</li>
-<li><strong>Establecer intervalo de confianza:</strong>Navegue a la pestaña Valores atípicos y seleccione `Hotelling T²`. Elija un umbral de confianza del 99 % ($\alpha = 0,01 $) para los puntos de control críticos, o del 95 % ($\alpha = 0,05 $) para el monitoreo de rutina.</li>
-<li><strong>Habilitar alarmas ProChem:</strong>Sincronice el modelo con el espectrómetro de proceso. En <strong>ProChem</strong>, asigne la salida del indicador de valor atípico a su registro PLC para mantener la última predicción válida cuando se activa un valor atípico.</li>
-</ol>
-<h2>Conclusión</h2>
-<p>La implementación de una detección sólida de valores atípicos utilizando Mahalanobis Distance y T² de Hotelling garantiza la integridad del analizador de procesos. Al identificar y aislar espectros anómalos, los fabricantes pueden prevenir fallas de calibración y asegurar bucles de procesos automatizados.</p>
+<h2>Por qué cada predicción necesita una comprobación de validez</h2>
+<p>Una calibración multivariante, tanto si funciona en un analizador en línea de la <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">industria química y farmacéutica</a> como en un instrumento de sobremesa de una fábrica de piensos, es un modelo empírico de las muestras con las que se entrenó, y Martens y N&aelig;s incluyen la detección automática de valores atípicos entre lo que debe proporcionar una calibración así <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. ASTM E1655 establece que los procedimientos de calibración definen el intervalo en el que las mediciones son válidas y trata el manejo de los valores atípicos como parte de una calibración conforme <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Para el funcionamiento rutinario, ASTM D6122 es explícita: la aplicabilidad de un modelo a una muestra no puede darse por supuesta, la detección de valores atípicos demuestra que la calibración es aplicable al espectro medido y, si el espectro es atípico, el resultado del analizador no es válido, aunque la prueba no indica si la causa es la muestra, el modelo o el instrumento <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Distancia de Mahalanobis: una distancia que respeta la covarianza</h2>
+<p>La distancia generalizada introducida por Mahalanobis en 1936 mide lo lejos que está un punto del centro de una población en unidades de la propia varianza y covarianza de esa población <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. El tutorial de De Maesschalck, Jouan-Rimbaud y Massart explica por qué esto importa en los espectros: las longitudes de onda vecinas están fuertemente correlacionadas, de modo que una distancia euclídea trata un cambio normal a lo largo de la dirección principal de variación espectral exactamente igual que un cambio de igual magnitud en una dirección que el conjunto de calibración nunca mostró, mientras que la distancia de Mahalanobis escala cada dirección por su varianza <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Como la matriz de covarianza de un conjunto de datos NIR con todas las longitudes de onda no puede invertirse de forma fiable, la distancia se calcula en el espacio de puntuaciones de componentes principales o de PLS, sobre los componentes que el modelo utiliza realmente, un caso que el tutorial trata junto al espacio de variables original <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<h2>T&sup2; de Hotelling, leverage y GH: una magnitud en varias escalas</h2>
+<p>Hotelling generalizó en 1931 el cociente de Student a varias variables correlacionadas; su T&sup2; es un vector de desviaciones ponderado por la inversa de la matriz de covarianza, es decir, la distancia de Mahalanobis al cuadrado con otro nombre <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Garrido-Varo, Garc&iacute;a-Olmo y Fearn establecen que la distancia de Mahalanobis al cuadrado D&sup2;, la T&sup2; de Hotelling, el leverage <em>L</em> de The Unscrambler y la distancia GH de WinISI se relacionan como D&sup2; = T&sup2; &asymp; <em>L</em>&middot;<em>n</em> &asymp; GH&middot;<em>k</em>, donde <em>n</em> y <em>k</em> son el número de muestras y de variables de los datos que definen la distancia, de modo que un umbral copiado de un programa a otro sin esta conversión es erróneo en un factor que depende de los datos <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. La escala GH procede de Shenk y Westerhaus, que utilizaron una distancia estandarizada de 3,0 respecto a la media de la población como límite para excluir valores atípicos espectrales, mientras que en su estudio una distancia mínima de vecindad de 0,6 entre muestras dio un conjunto de calibración adecuado <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Residuos Q: lo que el modelo no explicó</h2>
+<p>Una distancia en el espacio de puntuaciones solo pregunta si la muestra es extrema en las direcciones que el modelo conoce. Un espectro puede situarse dentro de esos límites y contener aun así una estructura que el modelo nunca ha visto, como una banda de un contaminante o un artefacto del instrumento. Jackson y Mudholkar abordaron esto con pruebas sobre los residuos de un modelo de componentes principales, la diferencia entre una observación y su reconstrucción a partir de menos componentes que el total, para un único vector de observación y para un grupo, con la detección de valores atípicos en el control de calidad como uso previsto <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. La suma de los residuos al cuadrado es el estadístico Q o error de predicción al cuadrado (SPE); el libro de Jackson trata Q y T&sup2; conjuntamente <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Nomikos y MacGregor construyeron gráficos de control multivariantes sobre ambos estadísticos, con límites de control desarrollados a partir de la distribución histórica de referencia de lotes anteriores correctos <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Ambos son complementarios: una muestra señalada por T&sup2; es inusual en una dirección que abarca la calibración, una muestra señalada por Q queda fuera del plano del modelo, y solo la segunda revela un nuevo interferente <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</p>
+<h2>Fijación de los límites: F, beta y chi cuadrado</h2>
+<p>Los límites de T&sup2; dependen de si la muestra ensayada formaba parte de los datos que definieron la distancia. Tracy, Young y Mason señalan que los límites aproximados F y chi cuadrado que se usan habitualmente son conservadores cuando en la fase de arranque solo se dispone de observaciones individuales, y derivan para ese caso un límite exacto basado en la distribución beta <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. En un proyecto de calibración, esta es la diferencia entre depurar las propias muestras de calibración y juzgar un nuevo espectro de proceso frente a un modelo congelado, caso en el que se aplica el límite basado en F <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Para Q, la distribución aproximada derivada por Jackson y Mudholkar proporciona un límite a un nivel de significación elegido <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Un riesgo distinto afecta a la fase de calibración: Rousseeuw y van Zomeren muestran que la media y la covarianza clásicas quedan distorsionadas por los mismos valores atípicos que deben detectar, de modo que varios valores atípicos se enmascaran entre sí, y proponen distancias calculadas a partir de estimaciones robustas de posición y covarianza <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. De ello se derivan tres puntos:</p>
+<ul>
+<li><strong>Depure el conjunto de calibración con el límite adecuado:</strong> el límite de T&sup2; basado en la distribución beta o una distancia robusta, ya que la aproximación F es conservadora en esta fase y una covarianza clásica puede quedar enmascarada por varios valores atípicos <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</li>
+<li><strong>Utilice T&sup2; y Q conjuntamente en la predicción rutinaria,</strong> junto con la prueba opcional del vecino más próximo que recomienda D6122 cuando los espectros de calibración están muy agrupados <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
+<li><strong>Registre a qué estadístico y a qué escala se refiere un límite,</strong> porque GH, leverage y T&sup2; difieren en factores de <em>n</em> y <em>k</em> <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+</ul>
+<h2>Estadísticos de valores atípicos en cali<span class="calix-x" style="color: #38b6ff !important;">X</span> y ProChem</h2>
+<p>La suite <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> incluye la T&sup2; de Hotelling y los residuos Q, el leverage de PLS y la distancia de Mahalanobis entre sus métodos de detección de valores atípicos y ofrece umbrales GH/NH para depurar un conjunto de calibración; <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> ejecuta los modelos exportados en los analizadores de USTECH y los conecta a sistemas PLC o SCADA con paneles y alarmas, de modo que un espectro fuera del espacio de calibración se señala en lugar de convertirse silenciosamente en un valor. Qué límites convienen a un producto y un instrumento determinados se establece en un estudio de viabilidad con sus propias muestras.</p>
 <div class="blog-post-references">
 <h3>Referencias</h3>
 <ul>
-<li>ASTM E1655 -<em>Prácticas estándar para el análisis cuantitativo multivariado por infrarrojos</em>.</li>
-<li>Hotelling, H., "La generalización de la proporción de estudiantes",<em>Anales de estadística matemática</em>, 1931.</li>
-<li>Martens, H. y Næs, T.,<em>Calibración multivariada</em>, John Wiley e hijos, 1989.</li>
+<li id="ref-1">[1] Martens, H., N&aelig;s, T. (1989). <em>Multivariate Calibration.</em> John Wiley &amp; Sons, Chichester. <a href="https://www.wiley.com/en-us/Multivariate+Calibration-p-9780471930471" target="_blank" rel="noopener">wiley.com/en-us/Multivariate+Calibration-p-9780471930471</a></li>
+<li id="ref-2">[2] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-3">[3] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
+<li id="ref-4">[4] Mahalanobis, P.C. (2018). Reprint of: Mahalanobis, P.C. (1936) &ldquo;On the generalised distance in statistics.&rdquo; <em>Sankhya A</em>, 80(S1), 1&ndash;7; originally <em>Proceedings of the National Institute of Sciences of India</em>, 2(1), 49&ndash;55. <a href="https://doi.org/10.1007/s13171-019-00164-5" target="_blank" rel="noopener">doi:10.1007/s13171-019-00164-5</a></li>
+<li id="ref-5">[5] De Maesschalck, R., Jouan-Rimbaud, D., Massart, D.L. (2000). The Mahalanobis distance. <em>Chemometrics and Intelligent Laboratory Systems</em>, 50(1), 1&ndash;18. <a href="https://doi.org/10.1016/S0169-7439(99)00047-7" target="_blank" rel="noopener">doi:10.1016/S0169-7439(99)00047-7</a></li>
+<li id="ref-6">[6] Hotelling, H. (1931). The generalization of Student&rsquo;s ratio. <em>The Annals of Mathematical Statistics</em>, 2(3), 360&ndash;378. <a href="https://doi.org/10.1214/aoms/1177732979" target="_blank" rel="noopener">doi:10.1214/aoms/1177732979</a></li>
+<li id="ref-7">[7] Garrido-Varo, A., Garc&iacute;a-Olmo, J., Fearn, T. (2019). A note on Mahalanobis and related distance measures in WinISI and The Unscrambler. <em>Journal of Near Infrared Spectroscopy</em>, 27(4), 253&ndash;258. <a href="https://doi.org/10.1177/0967033519848296" target="_blank" rel="noopener">doi:10.1177/0967033519848296</a></li>
+<li id="ref-8">[8] Shenk, J.S., Westerhaus, M.O. (1991). Population definition, sample selection, and calibration procedures for near infrared reflectance spectroscopy. <em>Crop Science</em>, 31(2), 469&ndash;474. <a href="https://doi.org/10.2135/cropsci1991.0011183X003100020049x" target="_blank" rel="noopener">doi:10.2135/cropsci1991.0011183X003100020049x</a></li>
+<li id="ref-9">[9] Jackson, J.E., Mudholkar, G.S. (1979). Control procedures for residuals associated with principal component analysis. <em>Technometrics</em>, 21(3), 341&ndash;349. <a href="https://doi.org/10.1080/00401706.1979.10489779" target="_blank" rel="noopener">doi:10.1080/00401706.1979.10489779</a></li>
+<li id="ref-10">[10] Jackson, J.E. (1991). <em>A User&rsquo;s Guide to Principal Components.</em> John Wiley &amp; Sons, New York. <a href="https://doi.org/10.1002/0471725331" target="_blank" rel="noopener">doi:10.1002/0471725331</a></li>
+<li id="ref-11">[11] Nomikos, P., MacGregor, J.F. (1995). Multivariate SPC charts for monitoring batch processes. <em>Technometrics</em>, 37(1), 41&ndash;59. <a href="https://doi.org/10.1080/00401706.1995.10485888" target="_blank" rel="noopener">doi:10.1080/00401706.1995.10485888</a></li>
+<li id="ref-12">[12] Tracy, N.D., Young, J.C., Mason, R.L. (1992). Multivariate control charts for individual observations. <em>Journal of Quality Technology</em>, 24(2), 88&ndash;95. <a href="https://doi.org/10.1080/00224065.1992.12015232" target="_blank" rel="noopener">doi:10.1080/00224065.1992.12015232</a></li>
+<li id="ref-13">[13] Rousseeuw, P.J., van Zomeren, B.C. (1990). Unmasking multivariate outliers and leverage points. <em>Journal of the American Statistical Association</em>, 85(411), 633&ndash;639. <a href="https://doi.org/10.1080/01621459.1990.10474920" target="_blank" rel="noopener">doi:10.1080/01621459.1990.10474920</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Descargar Informe Técnico Completo</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Acceda al artículo técnico completo y sin editar con derivaciones matemáticas de la distancia de Mahalanobis, fórmulas de covarianza y matrices de distribución F de Hotelling.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Evalúe esta aplicación para su proceso</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Nuestro equipo de aplicaciones puede explicar el método, compartir la bibliografía de referencia y organizar un estudio de viabilidad con sus propias muestras.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contáctenos</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,22 +271,22 @@
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="Introducción a la regresión PLS en la suite cali<span class="calix-x">X</span>" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="Introducción a la regresión PLS en la suite caliX" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUÍA</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introducción a la regresión PLS en cali<span class="calix-x">X</span> Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un tutorial paso a paso que explica cómo compilar modelos de calibración a partir de valores de química húmeda de referencia utilizando el cali<span class="calix-x">X</span>plataforma.</p>
-<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer tutorial</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Un recorrido práctico por una calibración PLS: cómo se dividen los datos, cómo se eligen mediante validación el pretratamiento y el número de variables latentes, qué diagnósticos hay que leer y cómo se mantiene vivo el modelo en producción.</p>
+<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer la guía</a>
 </div>
 </div>
 <!-- PCA Classification Card -->
 <div class="card" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Desarrollo de modelos robustos de clasificación quimiométrica mediante PCA" decoding="async" loading="lazy" src="../images/blog_pca_chemometrics.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUÍA</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pca-classification-models.html" style="color: var(--accent-black); text-decoration: none;">Desarrollo de modelos robustos de clasificación quimiométrica mediante PCA</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Una metodología paso a paso que explica el Análisis de Componentes Principales para la identificación cualitativa de materias primas.</p>
-<a class="btn-text" href="blog-pca-classification-models.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer guía</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Cómo las puntuaciones, cargas y residuos del PCA se convierten en un modelo de clasificación, de dónde proceden los límites de Hotelling y Q, por qué el modelado de clases difiere del PLS-DA y cómo esperan los reguladores que se valide un modelo NIR cualitativo.</p>
+<a class="btn-text" href="blog-pca-classification-models.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer la guía</a>
 </div>
 </div>
 </div>
@@ -368,6 +344,6 @@
 <p>Diseñado para la precisión científica e industrial.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

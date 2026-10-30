@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Yansımadaki ışık yolu değişimleri için dağılım düzeltme matematiğini karşılaştıran eğitim NIR." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Çarpımsal saçılma düzeltmesi ve standart normal değişken dönüşümü bir difüz yansıma NIR spektrumuna ne yapar, ikisi birbiriyle nasıl ilişkilidir ve hangisi ne zaman daha iyi seçimdir." name="description"/>
 <meta content="MSC ön işleme NIR, SNV spektral düzeltme, çarpımsal dağılım düzeltmesi, NIR spektral ön işleme" name="keywords"/>
 <title>Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/tr/blog-msc-snv-preprocessing.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "tr",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "tr",
   "headline": "Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme",
-  "description": "Yansımadaki ışık yolu değişimleri için dağılım düzeltme matematiğini karşılaştıran eğitim NIR.",
+  "description": "Çarpımsal saçılma düzeltmesi ve standart normal değişken dönüşümü bir difüz yansıma NIR spektrumuna ne yapar, ikisi birbiriyle nasıl ilişkilidir ve hangisi ne zaman daha iyi seçimdir.",
   "url": "https://www.ustechinnovations.com/tr/blog-msc-snv-preprocessing.html",
   "datePublished": "2026-06-02",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme | USTECH Innovations" property="og:title"/>
-<meta content="Yansımadaki ışık yolu değişimleri için dağılım düzeltme matematiğini karşılaştıran eğitim NIR." property="og:description"/>
+<meta content="Çarpımsal saçılma düzeltmesi ve standart normal değişken dönüşümü bir difüz yansıma NIR spektrumuna ne yapar, ikisi birbiriyle nasıl ilişkilidir ve hangisi ne zaman daha iyi seçimdir." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/tr/blog-msc-snv-preprocessing.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-msc-snv-preprocessing.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme | USTECH Innovations" property="og:image:alt"/>
 <meta content="tr_TR" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme | USTECH Innovations" name="twitter:title"/>
-<meta content="Yansımadaki ışık yolu değişimleri için dağılım düzeltme matematiğini karşılaştıran eğitim NIR." name="twitter:description"/>
+<meta content="Çarpımsal saçılma düzeltmesi ve standart normal değişken dönüşümü bir difüz yansıma NIR spektrumuna ne yapar, ikisi birbiriyle nasıl ilişkilidir ve hangisi ne zaman daha iyi seçimdir." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-msc-snv-preprocessing.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,42 +218,57 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Tüm Bloglara ve Yayınlara Dön</a>
 <img alt="Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_spectral_math.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">GUIDE — June 02, 2026 — 1 dk okuma</span>
+<span class="blog-post-meta">Rehber — 2 Haziran 2026 — 5 dk okuma</span>
 <h1 class="blog-post-title">Çarpımsal Dağılım Düzeltme ve Standart Normal Değişken Ön İşleme</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">SNV ve MSC algoritmalarının fiziksel numune paketlemeyi ve parçacık boyutu değişikliklerini nasıl ortadan kaldırdığını öğrenin.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Çarpımsal saçılma düzeltmesi (MSC) ve standart normal değişken dönüşümü (SNV) bir yakın kızılötesi spektrumuna gerçekte ne yapar, ikisi matematiksel olarak nasıl ilişkilidir, uygulamada nerede ayrışır ve neler ters gidebilir &mdash; özgün makalelerden ve izleyen literatürden derlenmiştir.</p>
 </div>
 <div class="blog-post-content">
-<h2>Yansıma Spektroskopisinde Ön İşleme Neden Önemlidir?</h2>
-<p>Yansıma NIR spektroskopisinde numune yoğunluğu, tane boyutu ve prob mesafesi gibi fiziksel faktörler temel sapmaları oluşturur. Bu ofsetler kimyasal emilim zirvelerini maskeler. MSC ve SNV kimyasal emilimi fiziksel ışık dağılımından izole etmek için tasarlanmış matematiksel algoritmalardır.</p>
-<h2>SNV ve MSC karşılaştırması</h2>
-<p>SNV varyansı standartlaştırarak her spektrumu ayrı ayrı işler. MSC her spektrumu referans ortalama spektruma göre regrese eder. Her iki yöntem de cali<span class="calix-x" style="color: #38b6ff !important;">X</span> süitinde mevcuttur. Bu eğitimde her yöntemin avantajları açıklanmaktadır.</p>
-<div class="blog-post-references">
-<h3>Referanslar</h3>
+<h2>Saçılma düzeltmesi neden önce gelir</h2>
+<p><a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Gıda ve yem endüstrisindeki</a> tozların, tanelerin ve küspelerin difüz yansıma NIR spektrumları, kimyasal absorpsiyon sinyalinin yanında numuneden numuneye değişen fiziksel etkiler de taşır. Barnes ve ark., partikül boyutu ile ışık saçılmasının birleşik çarpımsal etkilerini bu tür spektrumların yorumlanmasının önündeki başlıca engel olarak tanımlar ve spektral varyansın büyük kısmını partikül boyutunun açıkladığını, kimyasal bileşimin katkısının ise görece küçük kaldığını belirtir <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Rinnan ve ark. yaygın NIR ön işleme yöntemlerini saçılma düzeltmeleri (MSC, SNV, normalizasyon) ve spektral türevler olarak ikiye ayırır ve bunların gerçek veriler üzerindeki etkilerini karşılaştırır <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Bu rehber ilk aileyi ele alır; türevler <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay rehberinde</a> işlenmektedir.</p>
+<h2>Çarpımsal saçılma düzeltmesi (MSC)</h2>
+<p>MSC, 1985'te Geladi, MacDougall ve Martens tarafından etin NIR yansıma spektrumları için, kimyasal absorpsiyonu fiziksel saçılmadan ayıran çok dalga boylu bir yöntem olarak tanıtılmıştır; saçılma, toplamsal artı çarpımsal bir bileşen olarak modellenir <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Her spektrum <em>x<sub>i</sub></em>, tüm dalga boyları üzerinden bir referans spektruma <em>x<sub>ref</sub></em> karşı regrese edilir: <em>x<sub>i</sub></em> &asymp; <em>a<sub>i</sub></em> + <em>b<sub>i</sub></em>&middot;<em>x<sub>ref</sub></em>; düzeltilmiş spektrum (<em>x<sub>i</sub></em> &minus; <em>a<sub>i</sub></em>)/<em>b<sub>i</sub></em> olur. Referans uygulamada kalibrasyon setinin ortalama spektrumudur; Dhanoa ve ark.'nın MSC'yi sete bağımlı bir dönüşüm olarak adlandırmasının nedeni budur <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Et çalışmasında MSC, düzeltilmiş log(1/R) ya da ters Kubelka-Munk gibi doğrusallaştırıcı bir dönüşümle birleştirildiğinde en iyi yağ tahminlerini ve daha basit kalibrasyon modellerini vermiştir <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Isaksson ve N&aelig;s ardından MSC'yi beş gıda ürününde protein, yağ, su ve karbonhidrat için temel bileşen regresyonuyla test etmiş ve tahmin hatasını her regresyonda, düzeltilmemiş absorbans spektrumlarına göre %7 ile %68 arasında düşürdüğünü bulmuştur <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<p>Sete bağımlılığın pratik bir sonucu vardır: referans spektrum kalibrasyon modelinin bir parçasıdır, her yeni spektruma değiştirilmeden uygulanmalıdır ve yeni bir popülasyon üzerinde yeniden kalibrasyondan sonra referansın değiştirilmesi düzeltilmiş spektrumların tamamını değiştirir <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>Standart normal değişken (SNV) ve trend giderme</h2>
+<p>Barnes, Dhanoa ve Lister 1989'da SNV'yi her spektruma ayrı ayrı uygulanan bir dönüşüm olarak önermiştir: spektrumun tüm dalga boyları üzerindeki kendi ortalaması çıkarılır ve sonuç kendi standart sapmasına bölünür; böylece saçılmanın ve partikül boyutunun çarpımsal etkileri başka hiçbir numuneye başvurmadan giderilir <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Aynı makalede trend gidermeyi (de-trending) de tanıtmışlardır: SNV ile düzeltilmiş spektruma dalga boyunun ikinci dereceden bir polinomu uydurulur ve çıkarılır; böylece toz hâlindeki ya da sıkı paketlenmiş numunelerde yaygın olduğunu belirttikleri taban çizgisi kayması ve eğriliği giderilir. Sonucu, şekillerinin yorumlanmasını daha güç buldukları türev spektrumlara bir alternatif olarak sunarlar <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. SNV yalnızca düzeltilen spektrumu kullandığı için setten bağımsızdır: hiçbir referansın seçilmesi, saklanması ya da aktarılması gerekmez.</p>
+<h2>MSC ve SNV nasıl ilişkilidir, nasıl ayrışır</h2>
+<p>Dhanoa ve ark., bir spektrumun sete bağımlı MSC ve setten bağımsız SNV dönüşümlerinin teorinin öngördüğü gibi doğrusal olarak ilişkili olduğunu göstermiştir; bu bağ yalnızca set ortalaması spektrumunun ortalamasını ve standart sapmasını ve tekil spektrum ile bu set ortalaması arasındaki korelasyon katsayısını gerektirir; sete bağımlılık MSC'ye bu üç büyüklük üzerinden girer <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. İkisinin partikül boyutu etkilerini azaltmanın alternatif yolları olduğu ve birbirine dönüştürülebileceği sonucuna varırlar <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Homojen bir kalibrasyon setinde ikisi genellikle benzer spektrumlar ve benzer modeller verir; sıklıkla birbirinin yerine kullanılabilir sayılmalarının nedeni budur.</p>
+<p>Ancak özdeş değildirler. Fearn ve ark. iki dönüşümün spektral uzaydaki geometrisini incelemiş ve iki ayrı davranış bildirmiştir: SNV işlenmiş spektrumların skor grafiklerinde eğri yapılar oluşturabilirken MSC aykırı değerler üretme eğilimindedir; her iki etki NIR görüntüleme kamerası verileriyle gösterilmiş ve geometrik olarak açıklanmıştır <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Bu nedenle SNV sonrasında bir PCA skor grafiğinde görülen eğri bir bant ya da MSC sonrasındaki birkaç uç numune kimyasal bir özellik değil ön işlemenin bir yapaylığı olabilir ve yorumlanmadan ya da numune elemek için kullanılmadan önce kontrol edilmelidir <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. İkinci bir tuzak her ikisi için de geçerlidir: kimyasal sinyalin spektrumun küçük bir kısmı olduğunu ve fiziksel etkilerin her dalga boyunda aynı olduğunu varsayarlar. Analit spektral varyasyona hâkim olduğunda düzeltme analit sinyalinin bir kısmını da giderebilir; Martens, Nielsen ve Engelsen buğday gluteni ve nişasta tozu karışımlarının geçirgenlik spektrumlarında standart MSC için tam olarak bunu bulmuştur: yöntem fazla analit bilgisini gidermiştir <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Genişletilmiş MSC</h2>
+<p>Genişletilmiş çarpımsal sinyal düzeltmesi (EMSC), ön işlemeye önsel bilgi katmak amacıyla 1991'de Martens ve Stark tarafından önerilmiştir: kontrol edilmeyen optik yol uzunluğunun ve ışık saçılmasının etkilerini giderir; eşlikçisi olan spektral girişim çıkarma ise bilinen girişim yapıcıları giderir; her ikisi de simüle edilmiş, belirgin saçılma etkileri içeren benzen&ndash;ksilen karışımlarında toluen üzerinde gösterilmiştir <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Martens, Nielsen ve Engelsen daha sonra modeli toplamsal, çarpımsal ve dalga boyuna bağlı saçılma etkilerini birlikte düzeltecek şekilde genişletmiştir; EMSC sonrasında gluten&ndash;nişasta tozu spektrumları büyük ölçüde saydam çözeltilerin spektrumları gibi davranmış ve Beer yasasına uymuştur <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Düz MSC ya da SNV analit bantlarını gözle görülür biçimde bozduğunda veya saçılma etkisinin dalga boyuyla değiştiği bilindiğinde düşünülmesi gereken yöntem EMSC'dir.</p>
+<h2>Uygulamada aralarında seçim yapmak</h2>
+<p>Tek bir doğru seçim yoktur; literatür varsayılan bir tercihten çok kısa bir prosedürü destekler:</p>
 <ul>
-<li>"Yakın Kızılötesi Kalibrasyon Modelleri için Dağılım Düzeltme Ön İşleme Algoritmalarının İncelenmesi"<em>Kemometri ve Akıllı Laboratuvar Sistemleri</em>, 2023.</li>
+<li><strong>Gözle değil, modelle karar verin.</strong> MSC, SNV, trend gidermeli SNV ve EMSC'yi aday adımlar olarak ele alın, her birini değerlendirilen türev ayarıyla birleştirin ve Rinnan ve ark.'nın yaygın yöntemler için yaptığı gibi çapraz doğrulama hatasına göre karşılaştırın <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>Referansı modelle birlikte saklayın.</strong> MSC referans spektrumu tahmin sırasında değiştirilmeden uygulanmalıdır; kalibrasyon popülasyonunun değişmesi olasıysa SNV sete bağımlılığı tümüyle ortadan kaldırır <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</li>
+<li><strong>Düzeltmeden sonra skorları inceleyin.</strong> SNV sonrasındaki eğri yapılar ve MSC sonrasındaki yeni aykırı değerler, numunelerin değil dönüşümlerin bilinen davranışları olabilir <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>; analit spektruma hâkimse EMSC'yi değerlendirin <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+</ul>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> içinde saçılma düzeltmesi</h2>
+<p><a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> paketinde</a> MSC, SNV, trend giderme ve türev filtreleri model geliştirmenin ön işleme adımında yapılandırılır; burada aday kombinasyonlar bir PLS modeli sabitlenmeden önce çapraz doğrulamayla karşılaştırılır ve MSC referans spektrumu modelle birlikte saklanır. Aynı iş akışı, tahıllar ve yem hammaddeleri için <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> hat yanı analizöründen ve partikül boyutu ile paketlenmenin prosesle değiştiği <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> hat içi analizöründen gelen spektrumlara da hizmet eder. Belirli bir malzemeye hangi düzeltmenin uygun olduğu, sizin numunelerinizle yapılan bir fizibilite çalışmasında kararlaştırılır.</p>
+<div class="blog-post-references">
+<h3>Kaynaklar</h3>
+<ul>
+<li id="ref-1">[1] Barnes, R.J., Dhanoa, M.S., Lister, S.J. (1989). Standard Normal Variate Transformation and De-trending of Near-Infrared Diffuse Reflectance Spectra. <em>Applied Spectroscopy</em>, 43(5), 772&ndash;777. <a href="https://doi.org/10.1366/0003702894202201" target="_blank" rel="noopener">doi:10.1366/0003702894202201</a></li>
+<li id="ref-2">[2] Geladi, P., MacDougall, D., Martens, H. (1985). Linearization and Scatter-Correction for Near-Infrared Reflectance Spectra of Meat. <em>Applied Spectroscopy</em>, 39(3), 491&ndash;500. <a href="https://doi.org/10.1366/0003702854248656" target="_blank" rel="noopener">doi:10.1366/0003702854248656</a></li>
+<li id="ref-3">[3] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-4">[4] Dhanoa, M.S., Lister, S.J., Sanderson, R., Barnes, R.J. (1994). The Link between Multiplicative Scatter Correction (MSC) and Standard Normal Variate (SNV) Transformations of NIR Spectra. <em>Journal of Near Infrared Spectroscopy</em>, 2(1), 43&ndash;47. <a href="https://doi.org/10.1255/jnirs.30" target="_blank" rel="noopener">doi:10.1255/jnirs.30</a></li>
+<li id="ref-5">[5] Isaksson, T., N&aelig;s, T. (1988). The Effect of Multiplicative Scatter Correction (MSC) and Linearity Improvement in NIR Spectroscopy. <em>Applied Spectroscopy</em>, 42(7), 1273&ndash;1284. <a href="https://doi.org/10.1366/0003702884429869" target="_blank" rel="noopener">doi:10.1366/0003702884429869</a></li>
+<li id="ref-6">[6] Fearn, T., Riccioli, C., Garrido-Varo, A., Guerrero-Ginel, J.E. (2009). On the geometry of SNV and MSC. <em>Chemometrics and Intelligent Laboratory Systems</em>, 96(1), 22&ndash;26. <a href="https://doi.org/10.1016/j.chemolab.2008.11.006" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2008.11.006</a></li>
+<li id="ref-7">[7] Martens, H., Nielsen, J.P., Engelsen, S.B. (2003). Light Scattering and Light Absorbance Separated by Extended Multiplicative Signal Correction. Application to Near-Infrared Transmission Analysis of Powder Mixtures. <em>Analytical Chemistry</em>, 75(3), 394&ndash;404. <a href="https://doi.org/10.1021/ac020194w" target="_blank" rel="noopener">doi:10.1021/ac020194w</a></li>
+<li id="ref-8">[8] Martens, H., Stark, E. (1991). Extended multiplicative signal correction and spectral interference subtraction: new preprocessing methods for near infrared spectroscopy. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 9(8), 625&ndash;635. <a href="https://doi.org/10.1016/0731-7085(91)80188-F" target="_blank" rel="noopener">doi:10.1016/0731-7085(91)80188-F</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Tam Teknik Raporu İndirin</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Tam spektroskopik formüller, kalibrasyon veri kümeleri ve enstrümantasyon parametrelerini içeren, düzenlenmemiş teknik makalenin tamamına erişin.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Teknik PDF'yi almayı ve USTECH Innovations güncellemelerine abone olmayı kabul ediyorum.<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Gizlilik Politikası</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Bu uygulamayı kendi prosesiniz için değerlendirin</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Uygulama ekibimiz yöntemi anlatabilir, destekleyici literatürü paylaşabilir ve kendi numunelerinizle bir fizibilite çalışması planlayabilir.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Bize Ulaşın</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Sonrakini Oku</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -302,6 +324,6 @@
 <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

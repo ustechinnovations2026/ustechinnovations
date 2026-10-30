@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="教程比较反射率 NIR 光路变化的散射校正数学。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="多元散射校正和标准正态变量变换对漫反射 NIR 光谱有何作用，二者之间有何关系，以及各自在何种情况下是更好的选择。" name="description"/>
 <meta content="MSC 预处理 NIR、SNV 光谱校正、乘性散射校正、NIR 光谱预处理" name="keywords"/>
 <title>乘性散点校正和标准正态变量预处理 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-msc-snv-preprocessing.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "乘性散点校正和标准正态变量预处理",
-  "description": "教程比较反射率 NIR 光路变化的散射校正数学。",
+  "description": "多元散射校正和标准正态变量变换对漫反射 NIR 光谱有何作用，二者之间有何关系，以及各自在何种情况下是更好的选择。",
   "url": "https://www.ustechinnovations.com/zh/blog-msc-snv-preprocessing.html",
   "datePublished": "2026-06-02",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="乘性散点校正和标准正态变量预处理 | USTECH Innovations" property="og:title"/>
-<meta content="教程比较反射率 NIR 光路变化的散射校正数学。" property="og:description"/>
+<meta content="多元散射校正和标准正态变量变换对漫反射 NIR 光谱有何作用，二者之间有何关系，以及各自在何种情况下是更好的选择。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-msc-snv-preprocessing.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-msc-snv-preprocessing.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="乘性散点校正和标准正态变量预处理 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="乘性散点校正和标准正态变量预处理 | USTECH Innovations" name="twitter:title"/>
-<meta content="教程比较反射率 NIR 光路变化的散射校正数学。" name="twitter:description"/>
+<meta content="多元散射校正和标准正态变量变换对漫反射 NIR 光谱有何作用，二者之间有何关系，以及各自在何种情况下是更好的选择。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-msc-snv-preprocessing.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,42 +218,57 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="乘性散点校正和标准正态变量预处理" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_spectral_math.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">GUIDE — June 02, 2026 — 1 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年6月2日 — 5 分钟阅读</span>
 <h1 class="blog-post-title">乘性散点校正和标准正态变量预处理</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">在商业粗磨生产中实现批次间的一致性和保质期保护。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">多元散射校正（MSC）和标准正态变量变换（SNV）对近红外光谱究竟起什么作用，二者在数学上有何关系，在实践中有何差异以及可能出现哪些问题 &mdash; 基于原始论文和后续文献。</p>
 </div>
 <div class="blog-post-content">
-<h2>为什么预处理对于反射光谱至关重要</h2>
-<p>在反射 NIR 光谱中，样品密度、晶粒尺寸和探头距离等物理因素会产生基线偏移。这些偏移掩盖了化学吸收峰。 MSC 和 SNV 是数学算法，旨在将化学吸收与物理光散射隔离。</p>
-<h2>比较 SNV 和 MSC</h2>
-<p>SNV 单独处理每个频谱，标准化方差。 MSC 将每个光谱与参考平均光谱进行回归。这两种方法都可以在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中使用。本教程解释了每种方法的优点。</p>
-<div class="blog-post-references">
-<h3>参考</h3>
+<h2>为什么散射校正要放在首位</h2>
+<p><a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">食品与饲料行业</a>中粉末、谷物和粕类的漫反射 NIR 光谱，除化学吸收信号外，还叠加了随样品而变化的物理效应。Barnes 等将粒度和光散射共同造成的乘性效应描述为解释此类光谱的主要障碍，并指出粒度占光谱方差的大部分，而化学组成的贡献相对较小 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。Rinnan 等将常用的 NIR 预处理方法分为散射校正（MSC、SNV、归一化）和光谱导数两类，并在实际数据上比较了它们的效果 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。本指南介绍第一类；导数方法见<a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay 指南</a>。</p>
+<h2>多元散射校正（MSC）</h2>
+<p>MSC 由 Geladi、MacDougall 和 Martens 于 1985 年针对肉类的 NIR 反射光谱提出，是一种将化学吸收与物理散射分离的多波长方法，其中散射被建模为加性分量与乘性分量之和 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。每条光谱 <em>x<sub>i</sub></em> 在全部波长上对参考光谱 <em>x<sub>ref</sub></em> 进行回归：<em>x<sub>i</sub></em> &asymp; <em>a<sub>i</sub></em> + <em>b<sub>i</sub></em>&middot;<em>x<sub>ref</sub></em>；校正后的光谱为 (<em>x<sub>i</sub></em> &minus; <em>a<sub>i</sub></em>)/<em>b<sub>i</sub></em>。实践中参考光谱取定标集的平均光谱，因此 Dhanoa 等称 MSC 为依赖于样品集的变换 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。在该肉类研究中，MSC 与校正 log(1/R) 或逆 Kubelka-Munk 等线性化变换结合，得到了最佳的脂肪预测结果和更简单的定标模型 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。随后，Isaksson 和 N&aelig;s 在五种食品上用主成分回归对蛋白质、脂肪、水分和碳水化合物检验了 MSC，发现它在每一个回归中都降低了预测误差，相对于未校正的吸光度光谱降低 7 % 至 68 % <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</p>
+<p>这种对样品集的依赖带来一个实际后果：参考光谱是定标模型的一部分，必须原样应用于每条新光谱；若在新的样品总体上重新定标后更换参考光谱，则每条校正后的光谱都会随之改变 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。</p>
+<h2>标准正态变量（SNV）与去趋势</h2>
+<p>Barnes、Dhanoa 和 Lister 于 1989 年提出 SNV，作为对每条光谱单独施加的变换：减去该光谱自身在全部波长上的均值，再除以其自身的标准差，从而在不参照任何其他样品的情况下消除散射和粒度的乘性效应 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。在同一篇论文中，他们还提出了去趋势：对经 SNV 校正的光谱拟合一个关于波长的二次多项式并将其减去，以消除他们所述在粉状或紧密填充样品中常见的基线偏移和弯曲；他们将这一结果作为导数光谱的替代方案，认为导数光谱的形状更难解释 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。由于 SNV 只使用待校正的光谱本身，它与样品集无关：无需选择、存储或传递任何参考光谱。</p>
+<h2>MSC 与 SNV 的关系与差异</h2>
+<p>Dhanoa 等证明，正如理论所预言，依赖样品集的 MSC 变换与不依赖样品集的 SNV 变换之间存在线性关系；这一关系只需要样品集平均光谱的均值和标准差，以及单条光谱与该平均光谱之间的相关系数，而 MSC 对样品集的依赖正是通过这三个量引入的 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。他们的结论是，二者是降低粒度效应的两条可互换的替代途径 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。对于均匀的定标集，二者通常给出相似的光谱和相似的模型，因此常被视为可以互换。</p>
+<p>然而二者并不完全相同。Fearn 等在光谱空间中考察了两种变换的几何性质，报告了两种不同的行为：SNV 可能在处理后光谱的得分图中诱发弯曲结构，而 MSC 则倾向于产生离群点；两种效应均以 NIR 成像相机数据加以说明并作了几何解释 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。因此，SNV 之后 PCA 得分图中出现的弯曲条带，或 MSC 之后出现的少数极端样品，可能是预处理造成的假象而非化学特征，在解释或据此剔除样品之前应先加以核查 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。二者还有一个共同的陷阱：它们都假定化学信号只占光谱的一小部分，且物理效应在各波长上相同。当被测组分主导光谱变异时，校正可能会去除部分被测组分信号；Martens、Nielsen 和 Engelsen 在小麦面筋与淀粉粉末混合物的透射光谱上用标准 MSC 恰好发现了这种情况，它去除了过多的被测组分信息 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</p>
+<h2>扩展 MSC</h2>
+<p>扩展乘性信号校正（EMSC）由 Martens 和 Stark 于 1991 年提出，旨在将先验知识引入预处理：它消除不受控光程和光散射的影响，其配套方法光谱干扰扣除则去除已知干扰物；两者均以苯&ndash;二甲苯混合物中的甲苯、并施加了显著的模拟散射效应进行了演示 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。Martens、Nielsen 和 Engelsen 后来扩展了该模型，可同时校正加性、乘性和波长依赖的散射效应；经 EMSC 处理后，他们的面筋&ndash;淀粉粉末光谱表现得与透明溶液光谱非常相似，并遵循 Beer 定律 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。当普通 MSC 或 SNV 明显扭曲被测组分谱带，或已知散射效应随波长变化时，应考虑采用 EMSC。</p>
+<h2>实践中如何选择</h2>
+<p>不存在唯一正确的选择；文献支持的是一个简短的流程，而非某种默认设置：</p>
 <ul>
-<li>“近红外校准模型的散射校正预处理算法综述”<em>化学计量学和智能实验室系统</em>，2023。</li>
+<li><strong>由模型而非肉眼决定。</strong>将 MSC、SNV、SNV 加去趋势以及 EMSC 作为候选步骤，分别与拟采用的导数设置组合，并按交叉验证误差进行比较，正如 Rinnan 等对常用方法所做的那样 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</li>
+<li><strong>将参考光谱与模型一并保存。</strong>MSC 参考光谱在预测时必须原样应用；若定标样品总体可能发生变化，SNV 可完全避免对样品集的依赖 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。</li>
+<li><strong>校正后检查得分图。</strong>SNV 之后的弯曲结构和 MSC 之后新出现的离群点是变换本身已知的行为，未必反映样品 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>；若被测组分主导光谱，应考虑 EMSC <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</li>
+</ul>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中的散射校正</h2>
+<p>在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 软件套件</a>中，MSC、SNV、去趋势和导数滤波器在模型开发的预处理步骤中配置：在确定 PLS 模型之前，通过交叉验证比较各候选组合，MSC 参考光谱随模型一并存储。同一工作流程适用于来自 <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> 谷物和饲料原料近线分析仪的光谱，也适用于来自 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> 在线分析仪的光谱，后者的粒度和填充状态随工艺而变化。哪种校正适合特定物料，需通过使用您自己样品的可行性研究来确定。</p>
+<div class="blog-post-references">
+<h3>参考文献</h3>
+<ul>
+<li id="ref-1">[1] Barnes, R.J., Dhanoa, M.S., Lister, S.J. (1989). Standard Normal Variate Transformation and De-trending of Near-Infrared Diffuse Reflectance Spectra. <em>Applied Spectroscopy</em>, 43(5), 772&ndash;777. <a href="https://doi.org/10.1366/0003702894202201" target="_blank" rel="noopener">doi:10.1366/0003702894202201</a></li>
+<li id="ref-2">[2] Geladi, P., MacDougall, D., Martens, H. (1985). Linearization and Scatter-Correction for Near-Infrared Reflectance Spectra of Meat. <em>Applied Spectroscopy</em>, 39(3), 491&ndash;500. <a href="https://doi.org/10.1366/0003702854248656" target="_blank" rel="noopener">doi:10.1366/0003702854248656</a></li>
+<li id="ref-3">[3] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-4">[4] Dhanoa, M.S., Lister, S.J., Sanderson, R., Barnes, R.J. (1994). The Link between Multiplicative Scatter Correction (MSC) and Standard Normal Variate (SNV) Transformations of NIR Spectra. <em>Journal of Near Infrared Spectroscopy</em>, 2(1), 43&ndash;47. <a href="https://doi.org/10.1255/jnirs.30" target="_blank" rel="noopener">doi:10.1255/jnirs.30</a></li>
+<li id="ref-5">[5] Isaksson, T., N&aelig;s, T. (1988). The Effect of Multiplicative Scatter Correction (MSC) and Linearity Improvement in NIR Spectroscopy. <em>Applied Spectroscopy</em>, 42(7), 1273&ndash;1284. <a href="https://doi.org/10.1366/0003702884429869" target="_blank" rel="noopener">doi:10.1366/0003702884429869</a></li>
+<li id="ref-6">[6] Fearn, T., Riccioli, C., Garrido-Varo, A., Guerrero-Ginel, J.E. (2009). On the geometry of SNV and MSC. <em>Chemometrics and Intelligent Laboratory Systems</em>, 96(1), 22&ndash;26. <a href="https://doi.org/10.1016/j.chemolab.2008.11.006" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2008.11.006</a></li>
+<li id="ref-7">[7] Martens, H., Nielsen, J.P., Engelsen, S.B. (2003). Light Scattering and Light Absorbance Separated by Extended Multiplicative Signal Correction. Application to Near-Infrared Transmission Analysis of Powder Mixtures. <em>Analytical Chemistry</em>, 75(3), 394&ndash;404. <a href="https://doi.org/10.1021/ac020194w" target="_blank" rel="noopener">doi:10.1021/ac020194w</a></li>
+<li id="ref-8">[8] Martens, H., Stark, E. (1991). Extended multiplicative signal correction and spectral interference subtraction: new preprocessing methods for near infrared spectroscopy. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 9(8), 625&ndash;635. <a href="https://doi.org/10.1016/0731-7085(91)80188-F" target="_blank" rel="noopener">doi:10.1016/0731-7085(91)80188-F</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、校准数据集和仪器参数。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">阅读下一步</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -302,6 +324,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

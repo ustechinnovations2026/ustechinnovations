@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="马氏距离（Mahalanobis）、Hotelling T 平方、杠杆值和 Q 残差如何告诉过程分析仪一条光谱是否属于其定标范围，这些统计量的限值如何设定，以及为什么同一个统计量在软件中有多个名称。" name="description"/>
 <meta content="异常值检测化学计量学、马哈拉诺比斯距离 NIR、Hotelling T 方、光谱异常值分析" name="keywords"/>
 <title>化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²",
-  "description": "USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²。",
+  "description": "马氏距离（Mahalanobis）、Hotelling T 平方、杠杆值和 Q 残差如何告诉过程分析仪一条光谱是否属于其定标范围，这些统计量的限值如何设定，以及为什么同一个统计量在软件中有多个名称。",
   "url": "https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html",
   "datePublished": "2026-06-11",
-  "dateModified": "2026-06-11",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²" property="og:description"/>
+<meta content="马氏距离（Mahalanobis）、Hotelling T 平方、杠杆值和 Q 残差如何告诉过程分析仪一条光谱是否属于其定标范围，这些统计量的限值如何设定，以及为什么同一个统计量在软件中有多个名称。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-outlier-detection-mahalanobis.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T² | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations 指南 - 化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²" name="twitter:description"/>
+<meta content="马氏距离（Mahalanobis）、Hotelling T 平方、杠杆值和 Q 残差如何告诉过程分析仪一条光谱是否属于其定标范围，这些统计量的限值如何设定，以及为什么同一个统计量在软件中有多个名称。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,83 +218,52 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="Outlier detection statistical plot on screen" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_outlier_detection.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 11, 2026 — 4 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年6月11日 — 5 分钟阅读</span>
 <h1 class="blog-post-title">化学计量异常值检测：马哈拉诺比斯距离与 Hotelling 的 T²</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">分析指南，详细介绍了 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中用于识别光谱异常、仪器漂移和不合格原材料的多元数学。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">马氏距离（Mahalanobis）、Hotelling T&sup2;、杠杆值和 Q 残差如何告诉过程 NIR 分析仪一条光谱是否属于其即将使用的定标，这些统计量的限值如何推导，以及为什么同一个量在不同软件中以不同的名称和标度出现 &mdash; 依据原始统计学论文和相关 ASTM 规程。</p>
 </div>
 <div class="blog-post-content">
-<h2>异常值检测在光谱学中的作用</h2>
-<p>在活跃的生产线上部署定量校准模型（通过偏最小二乘法或 PLS 回归构建）时，系统依赖于扫描样本与校准数据库相似的假设。如果扫描的样品含有意外污染物、表现出极端的温度变化或具有完全不同的原材料基质，则模型将输出预测。然而，该预测在数学上是无效的。</p>
-<p>为了防止错误的预测将损坏的数据写入 SCADA 系统，过程光谱仪必须在输出预测之前评估每个扫描光谱是否是“多元异常值”。这是通过将样本光谱投影到校准模型的多维空间并计算统计距离限制来实现的。</p>
-<blockquote>“异常值检测充当过程分析仪的免疫系统。它保证仅当样本与校准空间匹配时才输出预测。”</blockquote>
-<h2>马哈拉诺比斯距离：测量协方差</h2>
-<p>简单欧几里德距离测量样本光谱与校准平均值之间的直线距离。然而，欧几里得距离在化学计量学中失败，因为它忽略了 NIR 光谱中相邻波长之间的强相关性（协方差）。</p>
-<p><strong>马哈拉诺比斯距离 (MD)</strong> 通过按校准数据集的协方差矩阵缩放距离来解决此问题。实际上，MD 考虑了方差的方向，对高正态校准方差方向的变化分配较小的权重，对校准数据紧密结合的方向的偏差分配较高的权重。</p>
-<h2>Hotelling 的 T²：置信阈值</h2>
-<p>虽然马哈拉诺比斯距离提供了原始距离值，但我们需要一个统计上合理的阈值来标记异常值。 <strong>Hotelling 的 T²</strong> 对主成分 (PC) 投影空间中的马哈拉诺比斯距离进行归一化，计算多元分数。由于 T² 遵循 F 分布，我们可以建立正式的统计置信限（通常为 95% 或 99%）：</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>范围</th>
-<th>马哈拉诺比斯距离 (MD)</th>
-<th>霍特林 T²</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>数学焦点</strong></td>
-<td>测量原始或协方差尺度波长空间中的广义距离。</td>
-<td>测量主成分空间内的分数距离（PC 分数）。</td>
-</tr>
-<tr>
-<td><strong>协方差缩放</strong></td>
-<td>按全波长协方差矩阵缩放。</td>
-<td>按个人 PC 分数的方差进行缩放。</td>
-</tr>
-<tr>
-<td><strong>阈值限制</strong></td>
-<td>启发式或卡方 ($\chi^2$) 分布。</td>
-<td>严格的 F 分布置信区间（$1-\alpha$，其中 $\alpha = 0.05$ 或 $0.01$）。</td>
-</tr>
-<tr>
-<td><strong>最佳用例</strong></td>
-<td>标记不良原材料、仪器漂移或硬件故障。</td>
-<td>验证类成员身份并标记模型空间外部的样本。</td>
-</tr>
-</tbody>
-</table>
-<h2>在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中设置离群值限制</h2>
-<p>要在校准中实施异常值限制，请按照 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件</strong> 中的以下步骤操作：</p>
-<ol>
-<li><strong>编译 PCA/PLS 分数：</strong>打开校准文件并计算主成分加载向量。</li>
-<li><strong>设置置信区间：</strong>导航到离群值选项卡并选择“Hotelling T²”。为关键控制点选择 99% 置信阈值 ($\alpha = 0.01$)，或为常规监控选择 95% ($\alpha = 0.05$)。</li>
-<li><strong>启用 ProChem 警报：</strong>将模型同步到过程光谱仪。在 <strong>ProChem</strong> 中，将异常值标志输出映射到 PLC 寄存器，以在触发异常值时保存最后的有效预测。</li>
-</ol>
-<h2>结论</h2>
-<p>使用马哈拉诺比斯距离和 Hotelling 的 T² 部署强大的异常值检测可确保过程分析仪的完整性。通过识别和隔离异常光谱，制造商可以防止校准失败并确保自动化过程循环。</p>
-<div class="blog-post-references">
-<h3>参考</h3>
+<h2>为什么每次预测都需要有效性检查</h2>
+<p>无论是运行在<a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">化工与制药行业</a>在线分析仪上，还是运行在饲料厂台式仪器上，多元定标都是基于其训练样品的经验模型；Martens 和 N&aelig;s 将自动离群点检测列为此类定标必须具备的功能之一 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。ASTM E1655 规定，定标程序界定了测量有效的范围，并将离群点的处理视为合规定标的组成部分 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。对于日常运行，ASTM D6122 说得很明确：不能假定模型适用于某一样品，离群点检测用以证明定标适用于所测光谱；若该光谱为离群点，则分析仪结果无效，尽管该检验并不能说明原因在于样品、模型还是仪器 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<h2>马氏距离：顾及协方差的距离</h2>
+<p>Mahalanobis 于 1936 年提出的广义距离，以总体自身的方差和协方差为单位，衡量一个点偏离总体中心的程度 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。De Maesschalck、Jouan-Rimbaud 和 Massart 的教程解释了这一点对光谱的重要性：相邻波长高度相关，因此欧氏距离会把沿光谱主要变异方向的正常变化，与定标集从未出现过的方向上同等大小的变化完全等同看待，而马氏距离则按各方向的方差对其进行标度 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。由于 NIR 数据集全波长协方差矩阵无法可靠求逆，距离是在主成分或 PLS 得分空间中、基于模型实际使用的成分计算的，教程将这种情形与原始变量空间并列讨论 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</p>
+<h2>Hotelling T&sup2;、杠杆值和 GH：同一个量的多种标度</h2>
+<p>Hotelling 于 1931 年将 Student 比推广到多个相关变量；他的 T&sup2; 是以协方差矩阵之逆加权的偏差向量，也就是换了个名称的马氏距离平方 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。Garrido-Varo、Garc&iacute;a-Olmo 和 Fearn 证明，马氏距离平方 D&sup2;、Hotelling T&sup2;、The Unscrambler 中的杠杆值 <em>L</em> 以及 WinISI 中的 GH 距离之间存在关系 D&sup2; = T&sup2; &asymp; <em>L</em>&middot;<em>n</em> &asymp; GH&middot;<em>k</em>，其中 <em>n</em> 和 <em>k</em> 分别为定义该距离的数据中的样品数和变量数；因此，在软件包之间照搬而不作这种换算的阈值，会相差一个依赖于数据的因子 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。GH 标度源自 Shenk 和 Westerhaus，他们以距总体均值 3.0 的标准化距离作为剔除光谱离群点的界限，而在其研究中，样品间 0.6 的最小邻域距离即可得到足够的定标集 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</p>
+<h2>Q 残差：模型未能解释的部分</h2>
+<p>得分空间中的距离只回答样品在模型已知方向上是否极端。一条光谱可能落在这些限值之内，却仍包含模型从未见过的结构，例如来自污染物的谱带或仪器伪影。Jackson 和 Mudholkar 为此提出了针对主成分模型残差的检验，即观测值与其用少于全部成分重构的结果之差，适用于单个观测向量和一组观测，目的是用于质量控制中的离群点检测 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。残差平方和即 Q 统计量或预测误差平方（SPE）；Jackson 的专著将 Q 与 T&sup2; 一并论述 <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。Nomikos 和 MacGregor 基于这两个统计量建立了多元控制图，其控制限由以往成功批次的历史参考分布得出 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。二者互为补充：被 T&sup2; 标记的样品在定标所涵盖的方向上异常，被 Q 标记的样品则偏离模型平面，只有后者能揭示新的干扰物 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。</p>
+<h2>设定限值：F 分布、Beta 分布与卡方分布</h2>
+<p>T&sup2; 的限值取决于被检验样品是否属于定义该距离的数据。Tracy、Young 和 Mason 指出，在启动阶段仅有单个观测值时，通常使用的近似 F 限和卡方限偏于保守，并为此推导出基于 Beta 分布的精确限值 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。在定标项目中，这正是筛查定标样品本身与用冻结模型评判新的过程光谱之间的区别，后者适用基于 F 分布的限值 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。对于 Q，Jackson 和 Mudholkar 推导的近似分布可给出选定显著性水平下的限值 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。定标阶段还存在另一种风险：Rousseeuw 和 van Zomeren 表明，经典均值和协方差本身会被其要检测的离群点所扭曲，致使多个离群点相互掩盖，因此他们提出基于位置和协方差稳健估计计算距离 <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。由此得出三点：</p>
 <ul>
-<li>ASTM E1655 -<em>红外多元定量分析的标准实践</em>.</li>
-<li>Hotelling, H.，“学生比例的概括”，<em>数理统计年鉴</em>，1931。</li>
-<li>Martens，H. 和 N-s，T.，<em>多变量校准</em>，约翰·威利父子公司，1989 年。</li>
+<li><strong>用正确的限值清理定标集：</strong>采用基于 Beta 分布的 T&sup2; 限值或稳健距离，因为在这一阶段 F 近似偏于保守，而经典协方差可能被多个离群点掩盖 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。</li>
+<li><strong>在日常预测中同时使用 T&sup2; 和 Q，</strong>并在定标光谱高度聚集时，增加 D6122 推荐的可选最近邻检验 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</li>
+<li><strong>记录限值所对应的统计量和标度，</strong>因为 GH、杠杆值和 T&sup2; 之间相差 <em>n</em> 和 <em>k</em> 的因子 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</li>
+</ul>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 和 ProChem 中的离群点统计量</h2>
+<p><a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 软件套件的离群点检测方法包括 Hotelling T&sup2; 与 Q 残差、PLS 杠杆值和马氏距离，并提供用于清理定标集的 GH/NH 截断值；<a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 在 USTECH 分析仪上运行导出的模型，并通过仪表板和报警将其与 PLC 或 SCADA 系统相连，从而使超出定标空间的光谱被标记出来，而不是被悄无声息地转换为一个数值。哪些限值适合特定产品和仪器，需通过使用您自己样品的可行性研究来确定。</p>
+<div class="blog-post-references">
+<h3>参考文献</h3>
+<ul>
+<li id="ref-1">[1] Martens, H., N&aelig;s, T. (1989). <em>Multivariate Calibration.</em> John Wiley &amp; Sons, Chichester. <a href="https://www.wiley.com/en-us/Multivariate+Calibration-p-9780471930471" target="_blank" rel="noopener">wiley.com/en-us/Multivariate+Calibration-p-9780471930471</a></li>
+<li id="ref-2">[2] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-3">[3] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
+<li id="ref-4">[4] Mahalanobis, P.C. (2018). Reprint of: Mahalanobis, P.C. (1936) &ldquo;On the generalised distance in statistics.&rdquo; <em>Sankhya A</em>, 80(S1), 1&ndash;7; originally <em>Proceedings of the National Institute of Sciences of India</em>, 2(1), 49&ndash;55. <a href="https://doi.org/10.1007/s13171-019-00164-5" target="_blank" rel="noopener">doi:10.1007/s13171-019-00164-5</a></li>
+<li id="ref-5">[5] De Maesschalck, R., Jouan-Rimbaud, D., Massart, D.L. (2000). The Mahalanobis distance. <em>Chemometrics and Intelligent Laboratory Systems</em>, 50(1), 1&ndash;18. <a href="https://doi.org/10.1016/S0169-7439(99)00047-7" target="_blank" rel="noopener">doi:10.1016/S0169-7439(99)00047-7</a></li>
+<li id="ref-6">[6] Hotelling, H. (1931). The generalization of Student&rsquo;s ratio. <em>The Annals of Mathematical Statistics</em>, 2(3), 360&ndash;378. <a href="https://doi.org/10.1214/aoms/1177732979" target="_blank" rel="noopener">doi:10.1214/aoms/1177732979</a></li>
+<li id="ref-7">[7] Garrido-Varo, A., Garc&iacute;a-Olmo, J., Fearn, T. (2019). A note on Mahalanobis and related distance measures in WinISI and The Unscrambler. <em>Journal of Near Infrared Spectroscopy</em>, 27(4), 253&ndash;258. <a href="https://doi.org/10.1177/0967033519848296" target="_blank" rel="noopener">doi:10.1177/0967033519848296</a></li>
+<li id="ref-8">[8] Shenk, J.S., Westerhaus, M.O. (1991). Population definition, sample selection, and calibration procedures for near infrared reflectance spectroscopy. <em>Crop Science</em>, 31(2), 469&ndash;474. <a href="https://doi.org/10.2135/cropsci1991.0011183X003100020049x" target="_blank" rel="noopener">doi:10.2135/cropsci1991.0011183X003100020049x</a></li>
+<li id="ref-9">[9] Jackson, J.E., Mudholkar, G.S. (1979). Control procedures for residuals associated with principal component analysis. <em>Technometrics</em>, 21(3), 341&ndash;349. <a href="https://doi.org/10.1080/00401706.1979.10489779" target="_blank" rel="noopener">doi:10.1080/00401706.1979.10489779</a></li>
+<li id="ref-10">[10] Jackson, J.E. (1991). <em>A User&rsquo;s Guide to Principal Components.</em> John Wiley &amp; Sons, New York. <a href="https://doi.org/10.1002/0471725331" target="_blank" rel="noopener">doi:10.1002/0471725331</a></li>
+<li id="ref-11">[11] Nomikos, P., MacGregor, J.F. (1995). Multivariate SPC charts for monitoring batch processes. <em>Technometrics</em>, 37(1), 41&ndash;59. <a href="https://doi.org/10.1080/00401706.1995.10485888" target="_blank" rel="noopener">doi:10.1080/00401706.1995.10485888</a></li>
+<li id="ref-12">[12] Tracy, N.D., Young, J.C., Mason, R.L. (1992). Multivariate control charts for individual observations. <em>Journal of Quality Technology</em>, 24(2), 88&ndash;95. <a href="https://doi.org/10.1080/00224065.1992.12015232" target="_blank" rel="noopener">doi:10.1080/00224065.1992.12015232</a></li>
+<li id="ref-13">[13] Rousseeuw, P.J., van Zomeren, B.C. (1990). Unmasking multivariate outliers and leverage points. <em>Journal of the American Statistical Association</em>, 85(411), 633&ndash;639. <a href="https://doi.org/10.1080/01621459.1990.10474920" target="_blank" rel="noopener">doi:10.1080/01621459.1990.10474920</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含马哈拉诺比斯距离的数学推导、协方差公式和霍特林 F 分布矩阵。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,21 +271,21 @@
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="cali<span class="calix-x">X</span> 套件中的 PLS 回归简介" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="caliX 套件中的 PLS 回归简介" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指导</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件 PLS 回归简介</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">分步教程解释了如何使用 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台从参考湿化学值编译校准模型。</p>
-<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读教程</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。</p>
+<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a>
 </div>
 </div>
 <!-- PCA Classification Card -->
 <div class="card" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="通过 PCA 开发稳健的化学计量分类模型" decoding="async" loading="lazy" src="../images/blog_pca_chemometrics.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指导</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pca-classification-models.html" style="color: var(--accent-black); text-decoration: none;">通过 PCA 开发稳健的化学计量分类模型</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">解释用于原材料定性识别的主成分分析的分步方法。</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">PCA 的得分、载荷和残差如何构成分类模型，Hotelling 限和 Q 限从何而来，类建模为何不同于 PLS-DA，以及监管机构期望如何验证定性 NIR 模型。</p>
 <a class="btn-text" href="blog-pca-classification-models.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a>
 </div>
 </div>
@@ -368,6 +344,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

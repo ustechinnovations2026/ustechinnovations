@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Compare inline, at-line, and off-line analysis approaches for production quality control. Learn which process analyzer strategy fits your facility.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="How the FDA PAT guidance defines at-line, on-line and in-line measurement, what each location trades away in delay, sampling error and validation effort, and how to choose the arrangement a production line actually needs.">
 <meta name="keywords" content="inline vs at-line analysis, inline NIR food industry, process analyzer selection">
 <title>Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line? | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-inline-atline-offline.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-inline-atline-offline.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-inline-atline-offline.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line?",
-"description": "Compare inline, at-line, and off-line analysis approaches for production quality control. Learn which process analyzer strategy fits your facility.",
+"description": "How the FDA PAT guidance defines at-line, on-line and in-line measurement, what each location trades away in delay, sampling error and validation effort, and how to choose the arrangement a production line actually needs.",
 "url": "https://www.ustechinnovations.com/blog-inline-atline-offline.html",
 "datePublished": "2026-06-15",
-"dateModified": "2026-06-15",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line? | USTECH Innovations">
-    <meta property="og:description" content="Compare inline, at-line, and off-line analysis approaches for production quality control. Learn which process analyzer strategy fits your facility.">
+    <meta property="og:description" content="How the FDA PAT guidance defines at-line, on-line and in-line measurement, what each location trades away in delay, sampling error and validation effort, and how to choose the arrangement a production line actually needs.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-inline-atline-offline.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-inline-atline-offline.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line? | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line? | USTECH Innovations">
-    <meta name="twitter:description" content="Compare inline, at-line, and off-line analysis approaches for production quality control. Learn which process analyzer strategy fits your facility.">
+    <meta name="twitter:description" content="How the FDA PAT guidance defines at-line, on-line and in-line measurement, what each location trades away in delay, sampling error and validation effort, and how to choose the arrangement a production line actually needs.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-inline-atline-offline.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,96 +217,54 @@ Espa&#241;ol
 </a>
 <img src="images/blog_inline_atline.webp?v=1.0.5" alt="Inline vs At-Line vs Off-Line Analysis Comparison" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">ARTICLE &mdash; June 15, 2026 &mdash; 4 min read</span>
+<span class="blog-post-meta">Guide &mdash; June 15, 2026 &mdash; 6 min read</span>
 <h1 class="blog-post-title">Inline vs. At-Line vs. Off-Line Analysis: Which Approach Is Right for Your Production Line?</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">One of the most consequential decisions in designing a process quality control strategy is where the measurement happens.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How the FDA PAT guidance defines at-line, on-line and in-line measurement, what each location trades away in delay, sampling error and validation effort, and how to decide which arrangement a production line actually needs &mdash; based on the regulatory texts, the Theory of Sampling and the NIR process literature.</p>
 </div>
 <div class="blog-post-content">
-<p>Analytical technology has advanced to the point where measurement can occur in several different locations relative to the production process &mdash; and each location comes with distinct implications for data latency, operational impact, capital cost, and quality outcomes. Understanding the difference between inline, at-line, and off-line analysis is foundational to making the right choice for your facility.</p>
-<h2>Off-Line Analysis: The Traditional Model</h2>
-<p>Off-line analysis is the oldest and most familiar approach. A sample is collected from the production line, transported to a laboratory &mdash; which may be in a different building or facility &mdash; and analyzed using dedicated laboratory equipment. Results are then communicated back to the production team.</p>
-<p>The advantages are well-known: laboratory conditions can be tightly controlled, certified reference methods can be applied, and highly specialized analytical equipment can be used. The disadvantages are equally well-known. The time between sample collection and result delivery can range from 30 minutes to several hours. During that window, the production line continues to run.</p>
+<h2>Why the location of the measurement matters</h2>
+<p>Where a measurement is made relative to the process decides what the result can be used for: a laboratory value that arrives after the batch has moved on documents quality, a value available while the material is still in the line can control it. Kowalski put it plainly: sampling errors and the time delays of sample transport and analysis made it nearly impossible to control complex chemical processes with the required degree of success <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. The FDA guidance on process analytical technology (PAT) defines PAT as a system for designing, analysing and controlling manufacturing through timely measurements, made during processing, of critical quality and performance attributes, and restates that quality cannot be tested into products but should be built in by design <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; ICH Q8(R2) carries the same definition into its glossary <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. For a <a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">food, feed or chemical plant</a> the question is which combination of measurement locations supports the decisions the process has to make.</p>
+<h2>Off-line, at-line, on-line, in-line: the definitions</h2>
+<p>The vocabulary is older than the PAT initiative, but the FDA guidance gives the definitions most often cited today. Under the heading &ldquo;Process Analyzers&rdquo; it states that measurements can be <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>:</p>
 <blockquote>
-"In a high-throughput production environment, even a 30-minute delay between sample collection and result delivery can mean tonnes of out-of-specification product advancing through the line before any corrective action is taken."
+&ldquo;at-line: Measurement where the sample is removed, isolated from, and analyzed in close proximity to the process stream. on-line: Measurement where the sample is diverted from the manufacturing process, and may be returned to the process stream. in-line: Measurement where the sample is not removed from the process stream and can be invasive or noninvasive.&rdquo; <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>
 </blockquote>
-<h2>At-Line Analysis: Closing the Loop Partially</h2>
-<p>At-line analysis moves the measurement instrument to the production floor &mdash; typically adjacent to the production line. Samples are still collected manually and brought to the instrument for measurement, but the instrument itself is located near the process rather than in a remote laboratory.</p>
-<p>This approach reduces the time from sample collection to result, typically to a range of 5 to 15 minutes depending on the method. The limitation remains: at-line analysis still depends on manual sampling. It provides a faster feedback loop than off-line analysis, but it does not provide continuous process monitoring. For facilities exploring at-line configurations, devices like the <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem</a> offer a versatile benchtop solution that bridges the gap between laboratory and production floor.</p>
-<h2>Inline Analysis: Continuous, Real-Time Process Intelligence</h2>
-<p>Inline analysis integrates the measurement instrument directly into the production line. The analyzer measures the product or material continuously as it flows through pipes, chutes, or conveyors &mdash; with no manual sampling and no measurement delay. The result is a continuous stream of analytical data reflecting actual process conditions in real time.</p>
-<p>Process deviations are detected as they occur, enabling immediate corrective action before out-of-specification product advances further in the line. The <a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a> is purpose-built for this integration mode, delivering continuous FT-NIR measurement directly within the process stream.</p>
-<h2>Comparing the Three Approaches</h2>
-<p>The following table summarizes the key differences across the three measurement strategies:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Criterion</th>
-<th>Off-Line</th>
-<th>At-Line</th>
-<th>Inline</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Response Time</strong></td>
-<td>30 min&ndash;hours</td>
-<td>5&ndash;15 min</td>
-<td><strong>Seconds (continuous)</strong></td>
-</tr>
-<tr>
-<td><strong>Coverage</strong></td>
-<td>Point-in-time snapshots</td>
-<td>Point-in-time snapshots</td>
-<td><strong>100% production stream</strong></td>
-</tr>
-<tr>
-<td><strong>Operator Dependency</strong></td>
-<td>High</td>
-<td>Medium</td>
-<td><strong>Autonomous</strong></td>
-</tr>
-<tr>
-<td><strong>Capital Cost</strong></td>
-<td>High (lab infrastructure)</td>
-<td>Medium</td>
-<td>Medium-High (instrument + integration)</td>
-</tr>
-<tr>
-<td><strong>Operating Cost</strong></td>
-<td>High (reagents, labor)</td>
-<td>Medium</td>
-<td><strong>Low (automated)</strong></td>
-</tr>
-</tbody>
-</table>
-<h2>Choosing the Right Approach for Your Operation</h2>
-<p>The right choice depends on your process, your quality requirements, and your operational context. Each approach has a valid role to play in a comprehensive quality control strategy:</p>
+<p>Off-line analysis is the case the guidance does not need to define: the sample is removed and carried to a laboratory, the traditional arrangement Kowalski describes <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Two points are easily overlooked. On-line differs from in-line in whether the material leaves the main stream, for example through a bypass loop; suppliers commonly say &ldquo;inline&rdquo; for both. And in-line measurement may be invasive, with a probe in the material, or non-invasive, through a window <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; the EMA guideline on near-infrared spectroscopy accordingly treats the sampling interface or probe as an essential component of an NIR method that must be described and controlled <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>What each location trades away</h2>
+<p>Off-line analysis offers controlled conditions and reference methods, and it remains the basis for calibration and for release decisions under a conventional control strategy <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Its costs are the delay and, less visibly, the sample itself. The Theory of Sampling holds that only correct, unbiased mass reduction yields a representative sample and that the total sampling error is by far the dominating contribution to all analytical endeavours, often more than 100 times larger than the total analytical error <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. A grab sample scooped from a conveyor carries that error into the result however precisely it is analysed, and non-representative sampling cannot be repaired afterwards by statistics or chemometrics <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>At-line analysis removes the transport and the laboratory queue, not the sampling: the instrument stands beside the line and an operator brings the sample to it. For solid raw materials this is where benchtop NIR fits; ISO 12099 gives guidelines for applying NIR spectrometry to feeding stuffs, cereals and milled cereal products, from calibration against reference methods to validation and monitoring in routine use <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Wherever the instrument stands, the performance of a quantitative NIR procedure depends on the performance of the reference method; poor reference data limit what the model can achieve <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<p>In-line and on-line measurement remove both the transport and the manual sample. Huang et al. list the resulting advantages in food processing: the instrument works in the line under realistic conditions, failures are detected early and the process is monitored permanently; NIR suits this role because it needs no sample preparation and measures several constituents at once <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Porep et al. describe the hardware, from fibre-optic and direct-contact probes to tube-integrated probes measuring through windows and measurements on conveyor belts, and note that in numerous studies an on-line application was claimed but not actually performed <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. The trade-off is that the sampling interface now defines the sample. Esbensen and Sivalingam argue that the interface must both define an appropriate sample volume and suit the analytical technique, and that most current process sampling interfaces do not comply with the Theory of Sampling, which puts representativity at risk for heterogeneous materials <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. The EMA guideline turns this into expectations for on-line NIR: optimise the location of the sampling device, estimate the effective sample size, keep the window covered with sample and control fouling <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>Choosing the arrangement for a given line</h2>
+<p>The FDA frames the choice as a design task: identify the critical attributes, design a measurement system that allows real-time or near-real-time monitoring of them, whether on-, in- or at-line, and design the controls that act on the measurements <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; ICH Q8(R2) calls the resulting planned set of controls the control strategy <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Three questions settle most cases:</p>
 <ul>
-<li><strong>Off-line analysis</strong> remains essential for regulatory compliance, method validation, and final product certification. It serves as the reference baseline against which other methods are calibrated.</li>
-<li><strong>At-line analysis</strong> is appropriate for lower-throughput operations where the cost of delayed results is manageable, or as a supplementary check alongside inline systems.</li>
-<li><strong>Inline analysis</strong> provides the highest value in high-throughput production environments, where the cost of out-of-specification product is significant and continuous process visibility drives measurable ROI.</li>
+<li><strong>What decision does the result feed, and how fast?</strong> A drying end-point or a moisture set-point calls for in-line or on-line data a control system can act on; the FDA notes that such measurements need not be absolute values, since relative differences within and between lots already support feed-forward and feed-back control <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Lot acceptance and disputes remain reference-method decisions.</li>
+<li><strong>Can a representative sample reach the analyzer?</strong> Establish how heterogeneous the material is and where a correct increment can be taken before choosing a probe or a bypass; a well-designed bypass or at-line arrangement can be more representative than a badly placed in-line window <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</li>
+<li><strong>How will the method be validated and maintained?</strong> Moving a laboratory method on-, in- or at-line is not in itself PAT, and method-validation guidance still applies <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; the EMA expects the reference method, sampling interface, probe position and sampling plans to be specified and the procedure re-appraised regularly <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</li>
 </ul>
-<p>Many facilities find that the optimal strategy is a combination: inline analyzers for real-time process control, with periodic off-line or at-line checks for regulatory verification.</p>
-<blockquote>
-"USTECH's <a href="product-proline-2550.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProLine2550</a> is designed exclusively for inline integration. <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">Contact us</a> to discuss how it fits your production environment."
-</blockquote>
+<p>Most plants end up with a combination. The FDA lists shorter cycle times through on-, in- and/or at-line measurements, and real-time release, among the gains expected from PAT, the latter justified by showing that real-time quality assurance is at least equivalent to laboratory testing of collected samples <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; ICH Q8(R2) adds that real-time release testing can replace end-product testing but not the GMP review steps needed to release the batch <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. The laboratory does not disappear; its role shifts to reference analysis, calibration maintenance and investigation.</p>
+<h2>How USTECH approaches this</h2>
+<p>USTECH supplies instruments for both locations. For in-line measurement, the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> process FT-NIR analyzer is specified for blenders, reactors and pipelines carrying liquids, slurries and simple solid flows, and the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> and <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> are rugged IP65 inline NIR analyzers with a stainless-steel body and sapphire window. For at-line measurement of grains, feed ingredients and forages the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> benchtop FT-NIR is used beside the line or in the plant laboratory. Calibrations are built and maintained in <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>, and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> links the analyzers to the PLC or SCADA system so that in-line results can drive set-points and alarms. Which arrangement suits a specific line is established in a feasibility study with your own samples.</p>
+<div class="blog-post-references">
+<h3>References</h3>
+<ul>
+<li id="ref-1">[1] Kowalski, B.R. (1988). Process analytical chemistry. <em>Journal of Research of the National Bureau of Standards</em>, 93(3), 207&ndash;208. <a href="https://doi.org/10.6028/jres.093.018" target="_blank" rel="noopener">doi:10.6028/jres.093.018</a></li>
+<li id="ref-2">[2] U.S. Food and Drug Administration (2004). <em>Guidance for Industry: PAT &mdash; A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance.</em> CDER, CVM and ORA, Rockville, MD. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance" target="_blank" rel="noopener">fda.gov/regulatory-information/search-fda-guidance-documents/pat-framework-innovative-pharmaceutical-development-manufacturing-and-quality-assurance</a></li>
+<li id="ref-3">[3] International Council for Harmonisation (2009). <em>ICH Harmonised Tripartite Guideline Q8(R2): Pharmaceutical Development.</em> Step 4 version, August 2009. <a href="https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf" target="_blank" rel="noopener">database.ich.org/sites/default/files/Q8(R2) Guideline.pdf</a></li>
+<li id="ref-4">[4] European Medicines Agency (2014). <em>Guideline on the use of near infrared spectroscopy by the pharmaceutical industry and the data requirements for new submissions and variations.</em> EMEA/CHMP/CVMP/QWP/17760/2009 Rev2, London. <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-and-data-requirements-new-submissions-and-variations_en.pdf" target="_blank" rel="noopener">ema.europa.eu/&hellip;/guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-and-data-requirements-new-submissions-and-variations_en.pdf</a></li>
+<li id="ref-5">[5] Petersen, L., Minkkinen, P., Esbensen, K.H. (2005). Representative sampling for reliable data analysis: Theory of Sampling. <em>Chemometrics and Intelligent Laboratory Systems</em>, 77(1&ndash;2), 261&ndash;277. <a href="https://doi.org/10.1016/j.chemolab.2004.09.013" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2004.09.013</a></li>
+<li id="ref-6">[6] Esbensen, K.H., Paasch-Mortensen, P. (2010). Process Sampling: Theory of Sampling &ndash; the Missing Link in Process Analytical Technologies (PAT). In: Bakeev, K.A. (ed.), <em>Process Analytical Technology: Spectroscopic Tools and Implementation Strategies for the Chemical and Pharmaceutical Industries</em>, 2nd ed., Wiley, Chichester, pp. 37&ndash;80. <a href="https://doi.org/10.1002/9780470689592.ch3" target="_blank" rel="noopener">doi:10.1002/9780470689592.ch3</a></li>
+<li id="ref-7">[7] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-8">[8] Huang, H., Yu, H., Xu, H., Ying, Y. (2008). Near infrared spectroscopy for on/in-line monitoring of quality in foods and beverages: A review. <em>Journal of Food Engineering</em>, 87(3), 303&ndash;313. <a href="https://doi.org/10.1016/j.jfoodeng.2007.12.022" target="_blank" rel="noopener">doi:10.1016/j.jfoodeng.2007.12.022</a></li>
+<li id="ref-9">[9] Porep, J.U., Kammerer, D.R., Carle, R. (2015). On-line application of near infrared (NIR) spectroscopy in food production. <em>Trends in Food Science &amp; Technology</em>, 46(2), 211&ndash;230. <a href="https://doi.org/10.1016/j.tifs.2015.10.002" target="_blank" rel="noopener">doi:10.1016/j.tifs.2015.10.002</a></li>
+<li id="ref-10">[10] Esbensen, K.H., Sivalingam, V. (2022). The sampling interface &mdash; A critical Theory of Sampling success factor in process sampling and PAT. <em>TOS Forum</em>, 11, 115. <a href="https://doi.org/10.1255/tosf.141" target="_blank" rel="noopener">doi:10.1255/tosf.141</a></li>
+</ul>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete guide on inline, at-line, and off-line analysis strategies with detailed ROI models, integration diagrams, and deployment recommendations.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
 </div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -311,7 +276,7 @@ Access the complete guide on inline, at-line, and off-line analysis strategies w
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hidden-costs-lab-qc.html" style="color: var(--accent-black); text-decoration: none;">The Hidden Costs of Lab-Based Quality Control</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">An in-depth look at the indirect costs of traditional laboratory quality control and how inline analysis reduces total cost of ownership.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Result latency, sampling error, over-formulation and reference-method chemistry each carry a cost that never appears on the laboratory budget; what the literature says, and where process NIR fits.</p>
 <a href="blog-hidden-costs-lab-qc.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
@@ -319,10 +284,10 @@ Access the complete guide on inline, at-line, and off-line analysis strategies w
 <div class="card" onclick="window.location.href='blog-what-is-ftnir.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_ftnir_guide.webp?v=1.0.5" alt="What Is FT-NIR Spectroscopy?" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-what-is-ftnir.html" style="color: var(--accent-black); text-decoration: none;">What Is FT-NIR Spectroscopy?</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A comprehensive guide to Fourier Transform Near-Infrared spectroscopy &mdash; the technology behind modern inline process analyzers.</p>
-<a href="blog-what-is-ftnir.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A plain-language introduction to Fourier-transform NIR: how an interferometer turns light into a spectrum, what the bands say about water, protein, fat and carbohydrate, and why calibration is needed.</p>
+<a href="blog-what-is-ftnir.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
 </div>
@@ -361,7 +326,6 @@ Access the complete guide on inline, at-line, and off-line analysis strategies w
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -380,6 +344,6 @@ Access the complete guide on inline, at-line, and off-line analysis strategies w
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

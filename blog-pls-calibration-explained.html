@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="From raw spectrum to composition value  how chemometric PLS models turn NIR data into accurate, actionable measurements.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="A plain-language guide to how a PLS calibration turns NIR spectra into composition values: latent variables, the number of factors, validation statistics and the limits set by the reference method.">
 <meta name="keywords" content="PLS regression NIR, chemometrics calibration, partial least squares spectroscopy, NIR calibration model, RMSEP validation">
 <title>How NIR Calibration Works: PLS Explained | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-pls-calibration-explained.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pls-calibration-explained.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pls-calibration-explained.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "How NIR Calibration Works: PLS Explained",
-"description": "From raw spectrum to composition value - how chemometric PLS models turn NIR data into accurate, actionable measurements.",
+"description": "A plain-language guide to how a PLS calibration turns NIR spectra into composition values: latent variables, the number of factors, validation statistics and the limits set by the reference method.",
 "url": "https://www.ustechinnovations.com/blog-pls-calibration-explained.html",
 "datePublished": "2026-06-25",
-"dateModified": "2026-06-25",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="How NIR Calibration Works: PLS Explained | USTECH Innovations">
-    <meta property="og:description" content="From raw spectrum to composition value  how chemometric PLS models turn NIR data into accurate, actionable measurements.">
+    <meta property="og:description" content="A plain-language guide to how a PLS calibration turns NIR spectra into composition values: latent variables, the number of factors, validation statistics and the limits set by the reference method.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-pls-calibration-explained.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-pls-calibration-explained.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="How NIR Calibration Works: PLS Explained | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How NIR Calibration Works: PLS Explained | USTECH Innovations">
-    <meta name="twitter:description" content="From raw spectrum to composition value  how chemometric PLS models turn NIR data into accurate, actionable measurements.">
+    <meta name="twitter:description" content="A plain-language guide to how a PLS calibration turns NIR spectra into composition values: latent variables, the number of factors, validation statistics and the limits set by the reference method.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-pls-calibration-explained.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,69 +217,59 @@ Espa&#241;ol
 </a>
 <img src="images/blog_pls_explained.webp?v=1.0.5" alt="PLS Regression Chemometrics Visualization" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">Article &mdash; June 25, 2026 &mdash; 2 min read</span>
+<span class="blog-post-meta">Guide &mdash; June 25, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">How NIR Calibration Works: PLS Explained</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">From raw spectrum to composition value &mdash; how chemometric models turn NIR data into accurate, actionable measurements.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">A plain-language explanation of how partial least squares (PLS) regression turns near-infrared spectra into composition values &mdash; why the method is multivariate, what latent variables are, how many factors to use, how calibrations are validated, and why the reference method limits what can be demonstrated &mdash; based on the chemometrics literature and the relevant standards.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Bridge Between Spectrum and Composition</h2>
-<p>An FT-NIR spectrometer measures an absorption spectrum &mdash; how much infrared light is absorbed at each wavelength. The spectrum does not directly tell you the fat or protein content; it is a raw physical measurement. A <strong>chemometric calibration model</strong> &mdash; a mathematical function mapping spectral features to composition values &mdash; is required to extract composition from the spectrum.</p>
-<blockquote>&ldquo;A calibration model is the mathematical bridge between what the spectrometer sees (light absorption) and what you need to know (composition values like protein, fat, or moisture).&rdquo;</blockquote>
-<h2>PLS Regression &mdash; The Industry Standard</h2>
-<p>Partial Least Squares (PLS) regression is the most widely used chemometric method for NIR calibration. PLS finds linear combinations of spectral variables &mdash; <strong>latent variables</strong> &mdash; that explain maximum variance in both the spectral data and the reference composition values simultaneously.</p>
-<p>Unlike simple linear regression, PLS handles the highly correlated nature of NIR spectral data and can model complex, overlapping absorption from multiple components at once. This is why it has become the gold standard in both <a href="industry-food-feed.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">food and feed</a>, <a href="industry-dairy.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">dairy</a>, and <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical</a> applications.</p>
-<h2>The Calibration Development Process</h2>
-<div style="overflow-x: auto;">
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-<thead><tr style="background: var(--accent-black); color: #fff;">
-<th style="padding: 0.75rem 1rem; text-align: center; width: 60px;">Step</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">Description</th>
-</tr></thead>
-<tbody>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">1</td><td style="padding: 0.75rem 1rem;">Collect representative samples spanning the full composition range expected in production</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">2</td><td style="padding: 0.75rem 1rem;">Analyse each sample with validated reference method (Kjeldahl, Soxhlet, Karl Fischer, etc.)</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">3</td><td style="padding: 0.75rem 1rem;">Collect NIR spectra from same samples using the <a href="product-proline-2550.html" style="color: var(--accent-gold);">ProLine2550</a></td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">4</td><td style="padding: 0.75rem 1rem;">Build PLS model in <a href="product-calix.html" style="color: var(--accent-gold);">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Spectral Suite</a> chemometric software</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">5</td><td style="padding: 0.75rem 1rem;">Validate model on independent sample set &mdash; calculate RMSEP</td></tr>
-<tr><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">6</td><td style="padding: 0.75rem 1rem;">Document validation for quality system or regulatory file</td></tr>
-</tbody>
-</table>
-</div>
-<h2>What Makes a Good Calibration</h2>
-<ul style="list-style: none; padding: 0;">
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">&#10003;</span> <strong>Representative sampling</strong> &mdash; covering all composition variation in your production</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">&#10003;</span> <strong>High-quality reference data</strong> &mdash; accurate, precise, traceable to validated method</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">&#10003;</span> <strong>Sufficient sample count</strong> &mdash; typically 80&ndash;200+ per matrix</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">&#10003;</span> <strong>Good spectral diversity</strong> &mdash; different particle sizes, temperatures, moisture levels</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">&#10003;</span> <strong>Independent validation set</strong> &mdash; never validate on calibration samples</li>
-<li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">&#10003;</span> <strong>Target RMSEP</strong>: protein &lt;0.12% (compound feed), fat &lt;0.06% (whole milk)</li>
+<h2>Why a spectrum needs a calibration</h2>
+<p>A near-infrared spectrometer records absorbance at many wavelengths, but no single wavelength is specific to protein, fat or moisture: the measurements are non-selective, and the information about one constituent is spread over many channels. Multivariate calibration is the family of methods that extracts quantitative information from such non-selective data by combining many channels at once, which also makes it possible to flag unusual samples as outliers <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. ASTM E1655 sets out practices for multivariate calibration of infrared spectrometers in both the near-infrared (about 780 to 2500 nm) and the mid-infrared region, including criteria for validating the performance of a calibration <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. This guide explains, without equations, how partial least squares (PLS) regression &mdash; the method at the centre of the standard calibration texts <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a> &mdash; works in applications such as those of the <a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">food and feed industry</a>, and how its performance is judged.</p>
+<h2>What PLS does: latent variables</h2>
+<p>The obvious approach, an ordinary multiple linear regression on every wavelength, breaks down because spectra contain far more variables than there are calibration samples and neighbouring wavelengths are strongly correlated with each other. Geladi and Kowalski&rsquo;s tutorial sets out these shortcomings of conventional regression methods and presents PLS as a way round them <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Wold et al. describe PLS regression as a linear model that relates the spectral matrix X to the reference values Y while also modelling the structure within X, and attribute its usefulness to its ability to handle many noisy, collinear and even incomplete variables <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<p>In practice PLS compresses each spectrum into a small number of scores on latent variables, also called factors or components. Each latent variable is a weighted combination of all wavelengths, chosen so that it describes systematic spectral variation that is also related to the reference value; the composition is then predicted from these few scores rather than from hundreds of raw absorbances <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Haaland and Thomas showed how PLS relates to classical least squares, inverse least squares and principal component regression, and that chemically interpretable spectral information can be read from the intermediate steps of the algorithm, more directly than from principal component regression <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>How many factors?</h2>
+<p>Each additional factor makes the model fit its own calibration samples more closely, but beyond a certain point the extra factors describe noise and sample-specific detail rather than chemistry. Gowen et al. summarise the consequence: too few latent variables under-fit and too many over-fit, and both lead to poor performance on future samples; one recognised sign of over-fitting is a noisy regression vector with sharp, oscillating peaks <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. The number of factors is therefore chosen from the prediction error on samples not used to fit the model, by cross-validation or a separate test set, together with inspection of the regression coefficients <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Haaland and Thomas already described procedures for selecting the optimal number of factors in order to limit over-fitting of the calibration data <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>Calibration, validation and the error statistics</h2>
+<p>Three root-mean-square errors are commonly reported <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. RMSEC is the error on the calibration samples themselves and is always optimistic. RMSECV comes from cross-validation, in which each sample (or segment of samples) is predicted by a model built without it. RMSEP is the error on an independent validation set of samples that played no part in building the model, and is the best estimate of performance in routine use. ISO 12099, the guideline for NIR analysis of feeds and cereals, has separate clauses on calibration and initial validation and on statistics for performance measurement, including bias, the standard error of prediction (SEP) and slope <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Westad and Marini caution that randomly splitting one data set into calibration and test parts is justified only when there is no systematic structure in the samples; when validation is carried out across repeatability, reproducibility, instrument and raw-material variation, both the error figures and the number of factors can change <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Three practical consequences:</p>
+<ul>
+<li><strong>Validate on genuinely new samples.</strong> Test samples should come from different batches, seasons or suppliers than the calibration set, so that the validation reflects the variation the analyzer will meet in use <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
+<li><strong>Stay inside the calibrated range.</strong> The calibration procedure defines the range over which predictions are valid; samples outside it, or flagged as spectral outliers, should not be reported as normal results <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</li>
+<li><strong>Do not judge a model by one index.</strong> Summary ratios such as the RPD (standard deviation of the reference values divided by the prediction error) are widely used, but Esbensen et al. criticise blind reliance on them as a tell-all measure of calibration quality <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</li>
 </ul>
-<blockquote>&ldquo;The quality of your calibration model is only as good as the quality of your reference data. Invest in accurate, traceable reference methods to build robust NIR predictions.&rdquo;</blockquote>
-<p>For a step-by-step operational tutorial on building calibrations in practice, see our guide on <a href="blog-pls-regression-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</a>. Once your models are validated, <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem</a> deploys them for real-time inline measurement.</p>
+<h2>The reference method sets the floor</h2>
+<p>A calibration is trained and tested against values from a laboratory reference method, and those values carry their own error. Faber and Kowalski point out that the prediction error estimated against measured reference values is an apparent error that is systematically larger than the true prediction error, because the random error of the reference measurement cannot be predicted by any model and is wrongly counted as an inadequacy of the calibration <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. The relationship is subtler than &ldquo;NIR can never be better than the reference&rdquo;: DiFoggio lists that statement among recurrent misconceptions about NIR analysis and gives counter-examples <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. What it means in practice is that a reported RMSEP cannot convincingly fall below the repeatability of the reference laboratory, so knowing that repeatability is part of interpreting any validation result <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</p>
+<h2>How USTECH approaches calibration</h2>
+<p>PLS models for USTECH analyzers such as the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> and the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> are developed in the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics software and deployed to the process through <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>. Spectral pre-processing is covered in the guides on <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC and SNV</a> and <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay filtering</a>, and the software workflow in <a href="blog-pls-regression-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">PLS regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>. Validation follows the principles above, with independent samples and the statistics defined in ISO 12099 and ASTM E1655 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Whether a parameter reaches the accuracy a process needs is established in a feasibility study with your own samples and reference analyses.</p>
+<div class="blog-post-references">
+<h3>References</h3>
+<ul>
+<li id="ref-1">[1] Martens, H., N&aelig;s, T. (1989). <em>Multivariate Calibration.</em> John Wiley &amp; Sons, Chichester (paperback edition 1992, ISBN 978-0-471-93047-1). <a href="https://www.wiley.com/en-us/Multivariate+Calibration-p-9780471930471" target="_blank" rel="noopener">wiley.com</a></li>
+<li id="ref-2">[2] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-3">[3] N&aelig;s, T., Isaksson, T., Fearn, T., Davies, T. (2017). <em>A User-Friendly Guide to Multivariate Calibration and Classification</em>, 2nd edition. IM Publications Open, Chichester. <a href="https://doi.org/10.1255/978-1-906715-25-0" target="_blank" rel="noopener">doi:10.1255/978-1-906715-25-0</a></li>
+<li id="ref-4">[4] Geladi, P., Kowalski, B.R. (1986). Partial least-squares regression: a tutorial. <em>Analytica Chimica Acta</em>, 185, 1&ndash;17. <a href="https://doi.org/10.1016/0003-2670(86)80028-9" target="_blank" rel="noopener">doi:10.1016/0003-2670(86)80028-9</a></li>
+<li id="ref-5">[5] Wold, S., Sj&ouml;str&ouml;m, M., Eriksson, L. (2001). PLS-regression: a basic tool of chemometrics. <em>Chemometrics and Intelligent Laboratory Systems</em>, 58(2), 109&ndash;130. <a href="https://doi.org/10.1016/S0169-7439(01)00155-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(01)00155-1</a></li>
+<li id="ref-6">[6] Haaland, D.M., Thomas, E.V. (1988). Partial least-squares methods for spectral analyses. 1. Relation to other quantitative calibration methods and the extraction of qualitative information. <em>Analytical Chemistry</em>, 60(11), 1193&ndash;1202. <a href="https://doi.org/10.1021/ac00162a020" target="_blank" rel="noopener">doi:10.1021/ac00162a020</a></li>
+<li id="ref-7">[7] Gowen, A.A., Downey, G., Esquerre, C., O&rsquo;Donnell, C.P. (2011). Preventing over-fitting in PLS calibration models of near-infrared (NIR) spectroscopy data using regression coefficients. <em>Journal of Chemometrics</em>, 25(7), 375&ndash;381. <a href="https://doi.org/10.1002/cem.1349" target="_blank" rel="noopener">doi:10.1002/cem.1349</a></li>
+<li id="ref-8">[8] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-9">[9] Westad, F., Marini, F. (2015). Validation of chemometric models &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 893, 14&ndash;24. <a href="https://doi.org/10.1016/j.aca.2015.06.056" target="_blank" rel="noopener">doi:10.1016/j.aca.2015.06.056</a></li>
+<li id="ref-10">[10] Esbensen, K.H., Geladi, P., Larsen, A. (2014). The RPD myth&hellip; <em>NIR news</em>, 25(5), 24&ndash;28. <a href="https://doi.org/10.1255/nirn.1462" target="_blank" rel="noopener">doi:10.1255/nirn.1462</a></li>
+<li id="ref-11">[11] Faber, K., Kowalski, B.R. (1997). Improved prediction error estimates for multivariate calibration by correcting for the measurement error in the reference values. <em>Applied Spectroscopy</em>, 51(5), 660&ndash;665. <a href="https://doi.org/10.1366/0003702971941061" target="_blank" rel="noopener">doi:10.1366/0003702971941061</a></li>
+<li id="ref-12">[12] DiFoggio, R. (1995). Examination of some misconceptions about near-infrared analysis. <em>Applied Spectroscopy</em>, 49(1), 67&ndash;75. <a href="https://doi.org/10.1366/0003702953963247" target="_blank" rel="noopener">doi:10.1366/0003702953963247</a></li>
+</ul>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, process diagrams, and ROI calculations.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
 </div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_pls_regression.webp?v=1.0.5" alt="PLS Regression in caliX" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A step-by-step tutorial on building calibration models using the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML platform.</p><a href="blog-pls-regression-calix.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Tutorial</a></div></div>
-<div class="card" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_what_is_nir.webp?v=1.0.5" alt="What Is NIR Spectroscopy?" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-what-is-nir-spectroscopy.html" style="color: var(--accent-black); text-decoration: none;">What Is NIR Spectroscopy?</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A plain-language guide to the most versatile non-destructive analytical technique.</p><a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a></div></div>
+<div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_pls_regression.webp?v=1.0.5" alt="PLS Regression in caliX" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A practitioner's walk through a PLS calibration: how the data are split, how the pre-processing and the number of latent variables are chosen by validation, which diagnostics to read, and how the model is kept alive in production.</p><a href="blog-pls-regression-calix.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a></div></div>
+<div class="card" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img src="images/blog_what_is_nir.webp?v=1.0.5" alt="What Is NIR Spectroscopy?" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async"><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-what-is-nir-spectroscopy.html" style="color: var(--accent-black); text-decoration: none;">What Is NIR Spectroscopy?</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">An introduction to near-infrared spectroscopy: what NIR light is, where it was discovered, what overtone and combination bands reveal, why calibration is essential and where the technique reaches its limits.</p><a href="blog-what-is-nir-spectroscopy.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a></div></div>
 </div>
 </div>
 </article>
@@ -309,7 +306,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0;">
@@ -328,6 +324,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

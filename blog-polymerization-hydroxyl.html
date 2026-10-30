@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations R&D Report - Hydroxyl Value Monitoring in Polymerization Processes.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="What hydroxyl value and acid value tell you about a step-growth polyester batch, how the titration reference methods work, why the O&ndash;H bands make the reaction visible to NIR, and what in-reactor studies have shown.">
 <meta name="keywords" content="polymerization hydroxyl value, NIR polymer monitoring, inline polymer analysis, reaction endpoint detection">
 <title>Hydroxyl Value Monitoring in Polymerization Processes | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-polymerization-hydroxyl.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-polymerization-hydroxyl.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-polymerization-hydroxyl.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Hydroxyl Value Monitoring in Polymerization Processes",
-"description": "USTECH Innovations R&D Report - Hydroxyl Value Monitoring in Polymerization Processes.",
+"description": "What hydroxyl value and acid value tell you about a step-growth polyester batch, how the titration reference methods work, why the O–H bands make the reaction visible to NIR, and what in-reactor studies have shown.",
 "url": "https://www.ustechinnovations.com/blog-polymerization-hydroxyl.html",
 "datePublished": "2026-06-10",
-"dateModified": "2026-06-10",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Hydroxyl Value Monitoring in Polymerization Processes | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations R&D Report - Hydroxyl Value Monitoring in Polymerization Processes.">
+    <meta property="og:description" content="What hydroxyl value and acid value tell you about a step-growth polyester batch, how the titration reference methods work, why the O&ndash;H bands make the reaction visible to NIR, and what in-reactor studies have shown.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-polymerization-hydroxyl.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-polymerization-hydroxyl.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Hydroxyl Value Monitoring in Polymerization Processes | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hydroxyl Value Monitoring in Polymerization Processes | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations R&D Report - Hydroxyl Value Monitoring in Polymerization Processes.">
+    <meta name="twitter:description" content="What hydroxyl value and acid value tell you about a step-growth polyester batch, how the titration reference methods work, why the O&ndash;H bands make the reaction visible to NIR, and what in-reactor studies have shown.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-polymerization-hydroxyl.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,88 +217,54 @@ Espa&#241;ol
 </a>
 <img src="images/blog_hydroxyl_value.webp?v=1.0.5" alt="Polymerization Hydroxyl Value" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">R&D Report &mdash; June 10, 2026 &mdash; 3 min read</span>
+<span class="blog-post-meta">Article &mdash; June 10, 2026 &mdash; 6 min read</span>
 <h1 class="blog-post-title">Hydroxyl Value Monitoring in Polymerization Processes</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Real-time tracking of hydroxyl values (OHV) and reaction end-points inside chemical reactors using fiber-optic coupled FT-NIR.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">What the hydroxyl value and the acid value say about a step-growth polyesterification, how the titrimetric reference methods are defined, why the reaction is visible in the near-infrared, what the kinetics mean for end-point detection, and what the published in-reactor NIR work shows &mdash; with the standards and literature behind each point.</p>
 </div>
 <div class="blog-post-content">
-<p>In polyol, polyester, and alkyd resin polymerization, the hydroxyl number (Hydroxyl Value - OHV) is the defining parameter for molecular weight distribution and cross-linking density. Pinpointing reaction end-points in <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical manufacturing</a> accurately determines final polymer elasticity and tensile properties. Traditional manual sampling followed by wet titration (phthalic anhydride or acetylation methods) takes 2 to 3 hours, leaving chemical processes vulnerable to over-reaction or gelling in the reactor.</p>
-<blockquote>
-"Hastelloy-sheathed sapphire window insertion probes dived directly into the reactor loop verify chemical composition every 15 seconds, tracking OHV reduction dynamically."
-</blockquote>
-<h2>Spectroscopic Mechanism and Thermal Stability</h2>
-<p>Hydroxyl (O-H) molecular configurations absorb NIR energy strongly at 1400 nm - 1450 nm and 2000 nm - 2100 nm. As esterification consumes alcohols, these characteristic peaks narrow. The ProLine2550 inline spectrometer running cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML calibrations and integrated with <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem Desktop software</a> calculates OHV continuously.</p>
-<p>Because reactor processes reach temperatures up to 200&deg;C, local calibration models must withstand temperature-induced spectral shifting. The cali<span class="calix-x" style="color: #38b6ff !important;">X</span> platform incorporates automated thermal correction algorithms, guaranteeing model stability throughout heating profiles.</p>
-<h3>FT-NIR vs. Laboratory Reference Methods</h3>
-<p>The table below summarizes system accuracy metrics (RMSEP) for key polymerization parameters compared to ASTM titrations:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Reference Method</th>
-<th>Calibration Range</th>
-<th>FT-NIR Accuracy (RMSEP)</th>
-<th>Correlation (R&sup2;)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Hydroxyl Number</strong></td>
-<td>ASTM D4274 (Titration)</td>
-<td>10 &ndash; 300 mg KOH/g</td>
-<td><strong>&le; 1.2 mg KOH/g</strong></td>
-<td>0.996</td>
-</tr>
-<tr>
-<td><strong>Acid Value</strong></td>
-<td>ISO 2114 (Titration)</td>
-<td>0.5 &ndash; 50 mg KOH/g</td>
-<td><strong>&le; 0.4 mg KOH/g</strong></td>
-<td>0.992</td>
-</tr>
-<tr>
-<td><strong>Viscosity</strong></td>
-<td>ASTM D445 (Kinematic)</td>
-<td>50 &ndash; 5000 cSt</td>
-<td><strong>Correlation curve</strong></td>
-<td>0.975</td>
-</tr>
-</tbody>
-</table>
-<h2>Key B2B Value Additions</h2>
-<p>Implementing inline FT-NIR inside chemical reactors secures valuable operational returns:</p>
+<h2>Two numbers that describe a polycondensation</h2>
+<p>Polyester resins and the polyester polyols used as polyurethane precursors are made by step-growth polycondensation of polycarboxylic acids or anhydrides with polyols, with water distilled out of the reactor as it forms <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. In the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical industry</a> the batch is followed by two titration numbers. The acid value, defined for polyester resins and binders in ISO 2114, counts the unreacted carboxyl groups <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; the hydroxyl value, defined for binders in ISO 4629-1, counts the free hydroxyl groups, which in a polyester are the chain-end hydroxyls of the diol <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. For a polyol destined for polyurethane, the hydroxyl number is also the figure against which the isocyanate stoichiometry is set, which is why ASTM D4274 states that the hydroxyl content of polyols must be known to formulate polyurethane systems <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>What the values mean and how they are measured</h2>
+<p>Both values are expressed in milligrams of potassium hydroxide per gram of sample: for the acid value, the KOH needed to neutralise the acidic groups; for the hydroxyl value, the KOH equivalent to the hydroxyl content of one gram <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. In a linear step-growth polymer every chain carries two end groups, so the sum of the acid and hydroxyl values counts chain ends and is inversely related to the number-average molecular weight; end-group analysis of this kind is one of the classical ways of measuring the molecular weight of condensation polymers <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. The two numbers therefore track the same conversion from opposite sides, and their ratio reflects the acid&ndash;diol excess chosen at the start of the batch.</p>
+<p>The reference methods are esterification&ndash;titration procedures. ISO 4629-1 acetylates the hydroxyl groups with acetic anhydride in pyridine without a catalyst and is written for binders that may carry hydroxyl as polyester end groups, partial esters or hydroxylated fatty acids; it excludes resins that also contain epoxy groups, which would be counted <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. ISO 4629-2 uses a catalyst, applies to resins, binders, primary alcohols, glycols and fats, and leaves hydroxycarboxylic acids and phenolic hydroxyls to be decided case by case <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. The former single-part ISO 4629 has been withdrawn and replaced by these two parts <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. ASTM E222 offers three acetic-anhydride methods: a pressure-bottle method for general use, a reflux method, and a perchloric-acid-catalysed method for rapid or ambient-temperature work, which reads up to about 4 % higher than the other two <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. ASTM D4274 adds five methods for polyester and polyether polyols, including imidazole-catalysed phthalic anhydride and pyromellitic dianhydride procedures <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Whichever is chosen, the result describes the sample at the moment it was drawn.</p>
+<h2>Kinetics: why the end point is slow to reach</h2>
+<p>Flory's 1939 study of the esterification of adipic acid with glycols, followed by titrating the unreacted carboxyl groups, showed that the reaction is third order when no catalyst is added, the carboxylic acid acting as its own catalyst, and second order in the presence of a strong acid catalyst, and that the rate constant does not fall as the chains grow longer, the basis of the equal-reactivity principle <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. The same principle underlies the Carothers relation between conversion and chain length: the number-average degree of polymerisation equals the reciprocal of the fraction of unreacted functional groups, so a high molecular weight is reached only at very high conversion <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Three consequences follow for the plant. First, the acid value falls quickly early in the cook and slowly at the end, exactly where the specification is set. Second, the reaction is reversible and is driven by removing water, so the late-stage rate depends on vacuum and sparging as much as on chemistry <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Third, a titration that takes an hour or more reports a state that the reactor has already left, and the batch may be stopped late or early on the strength of it.</p>
+<h2>Why the reaction is visible in the near-infrared</h2>
+<p>The groups consumed and formed in a polyesterification all have near-infrared signatures. Workman and Weyer tabulate the overtone and combination bands of alcohol hydroxyls, of the hydroxyl in carboxylic acids, and of carbonyl compounds including esters <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. In an in-reactor study of saturated polyester synthesis, Avila et al. found that the 1400&ndash;1500 nm region, assigned to the first overtone of the O&ndash;H stretch, carried most of the information for predicting acid number, while longer wavelengths helped mainly with outlier detection <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Because diol hydroxyl and carboxyl hydroxyl both absorb there, the spectrum changes as both end groups are consumed, and a multivariate calibration can separate the two contributions.</p>
+<p>Marengo et al. modelled the hydroxyl number and acid value of 62 polyester resin samples from their FT-NIR spectra, compared back-propagation neural networks with PCR and PLS, and concluded that the acid and hydroxyl numbers of a dicarboxylic-acid&ndash;diol polyesterification can be predicted directly on the process line <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Avila et al. went into the reactor: a MEMS Fabry&ndash;P&eacute;rot sensor covering 1350&ndash;1650 nm, with an immersion transmission probe, followed 12 batches of saturated polyester resin in a two-litre reactor run under industrial conditions, a 24-hour process at 220&ndash;240 &deg;C, and PLS models were built for acid number and viscosity alongside a PCA-based multivariate statistical process control model for end-point detection <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. In the first reaction stage the acid number ranged from 5 to 20 mg KOH/g, and the authors note that part of the prediction scatter reflected the variability of the manual titration itself <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. On the polyurethane side, Fage et al. used on-line NIR in a laboratory extruder to quantify isocyanate content from polyol&ndash;diisocyanate premixes, with at-line mid-infrared as verification <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>, and Benali et al. followed the conversion of a polyurethane formulation through gelation with fibre-optic FT-NIR coupled to a rheometer <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</p>
+<h2>Probe and calibration considerations</h2>
+<p>The in-reactor work also documents what makes the measurement hard. Avila et al. list temperature variation, solid particles and gas bubbles in a multiphase reaction fluid as disturbances that had to be handled by robust pre-processing and by long-term stability of the probe, and they state that calibration data must be representative of the process data the model will later see <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Three points follow:</p>
 <ul>
-<li><strong>Eliminating Gelling Hazards:</strong> Real-time tracking of hydroxyl and acid values prevents molecular weight overshoot, eliminating blockages or waste batches.</li>
-<li><strong>Shortening Batch Cycle Times:</strong> Bypassing wait times for lab titrations cuts overall batch processing time by approximately 20%.</li>
-<li><strong>Improved Safety:</strong> Limits manual sample collection, keeping operators safe from high-temperature solvents and reagents.</li>
+<li><strong>Build the calibration from in-process spectra, not from finished resins alone.</strong> The spectra change in optical properties as the reaction proceeds, and the end-point model should span both reaction stages of a two-stage esterification <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</li>
+<li><strong>The titration bounds the model.</strong> A calibration cannot be more accurate than the reference values behind it, so the acid and hydroxyl values should be determined by the standard procedures, with the same method throughout a project <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+<li><strong>Treat the end point as a multivariate decision.</strong> A PCA-based control chart on the spectra can flag the end point independently of the predicted acid value and catches batches that drift from normal operation <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</li>
 </ul>
-<h2>Conclusion</h2>
-<p>USTECH Innovations inline spectroscopy solutions give polymer manufacturers complete, real-time visibility into molecular growth phases, boosting safety and throughput.</p>
+<h2>How USTECH approaches it</h2>
+<p>The <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">USTECH ProLine2550</a> process FT-NIR analyzer is the inline instrument for reactors and pipelines carrying liquid resins and polyols; the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> suite provides the pre-processing, PLS and PCA tools with which acid-value and hydroxyl-value models and a spectral end-point model are built from reactor spectra and reference titrations; and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passes the predicted values to the PLC or SCADA with alarms and setpoints. Which acid-value and hydroxyl-value ranges a model holds for a given resin chemistry, and how it behaves through the temperature profile of the cook, is established in a feasibility study with your own samples and reference titrations.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>ASTM D4274 - Standard Test Methods for Testing Polyurethane Raw Materials: Determination of Hydroxyl Numbers of Polyols.</li>
-<li>ISO 4629 - Binders for paints and varnishes &mdash; Determination of hydroxyl value &mdash; Titrametric method.</li>
-<li>"Inline monitoring of hydroxyl and acid values in polyester synthesis using high-stability MEMS FT-NIR with sapphire probes," <em>Chemical Engineering & Automation</em>, 2024.</li>
+<li id="ref-1">[1] Avila, C., Mantzaridis, C., Ferr&eacute;, J., de Oliveira, R.R., Kantoj&auml;rvi, U., Rissanen, A., Krassa, P., de Juan, A., Muller, F.L., Hunter, T.N., Bourne, R.A. (2021). Acid number, viscosity and end-point detection in a multiphase high temperature polymerisation process using an online miniaturised MEMS Fabry&ndash;P&eacute;rot interferometer. <em>Talanta</em>, 224, 121735. <a href="https://doi.org/10.1016/j.talanta.2020.121735" target="_blank" rel="noopener">doi:10.1016/j.talanta.2020.121735</a></li>
+<li id="ref-2">[2] ISO 2114:2000. <em>Plastics (polyester resins) and paints and varnishes (binders) &mdash; Determination of partial acid value and total acid value.</em> ISO, Geneva. <a href="https://www.iso.org/standard/29827.html" target="_blank" rel="noopener">iso.org/standard/29827.html</a></li>
+<li id="ref-3">[3] ISO 4629-1:2016. <em>Binders for paints and varnishes &mdash; Determination of hydroxyl value &mdash; Part 1: Titrimetric method without using a catalyst.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67213.html" target="_blank" rel="noopener">iso.org/standard/67213.html</a></li>
+<li id="ref-4">[4] ASTM D4274-23. <em>Standard Test Methods for Testing Polyurethane Raw Materials: Determination of Hydroxyl Numbers of Polyols.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d4274-23.html" target="_blank" rel="noopener">store.astm.org/d4274-23.html</a></li>
+<li id="ref-5">[5] Odian, G. (2004). <em>Principles of Polymerization</em>, 4th ed., Chapter 2: Step Polymerization. Wiley, Hoboken, NJ. <a href="https://doi.org/10.1002/047147875X" target="_blank" rel="noopener">doi:10.1002/047147875X</a></li>
+<li id="ref-6">[6] ISO 4629-2:2016. <em>Binders for paints and varnishes &mdash; Determination of hydroxyl value &mdash; Part 2: Titrimetric method using a catalyst.</em> ISO, Geneva. <a href="https://www.iso.org/standard/63237.html" target="_blank" rel="noopener">iso.org/standard/63237.html</a></li>
+<li id="ref-7">[7] ASTM E222-23. <em>Standard Test Methods for Hydroxyl Groups Using Acetic Anhydride Acetylation.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e0222-23.html" target="_blank" rel="noopener">store.astm.org/e0222-23.html</a></li>
+<li id="ref-8">[8] Flory, P.J. (1939). Kinetics of Polyesterification: A Study of the Effects of Molecular Weight and Viscosity on Reaction Rate. <em>Journal of the American Chemical Society</em>, 61(12), 3334&ndash;3340. <a href="https://doi.org/10.1021/ja01267a030" target="_blank" rel="noopener">doi:10.1021/ja01267a030</a></li>
+<li id="ref-9">[9] Flory, P.J. (1953). <em>Principles of Polymer Chemistry.</em> Cornell University Press, Ithaca, NY. <a href="https://www.cornellpress.cornell.edu/book/9780801401343/principles-of-polymer-chemistry/" target="_blank" rel="noopener">cornellpress.cornell.edu/book/9780801401343</a></li>
+<li id="ref-10">[10] Workman, J. Jr., Weyer, L. (2007). <em>Practical Guide to Interpretive Near-Infrared Spectroscopy</em>, Chapters 5 (Hydroxyl-Containing Compounds) and 7 (Carbonyls). CRC Press, Boca Raton, FL. <a href="https://doi.org/10.1201/9781420018318" target="_blank" rel="noopener">doi:10.1201/9781420018318</a></li>
+<li id="ref-11">[11] Marengo, E., Bobba, M., Robotti, E., Lenti, M. (2004). Hydroxyl and acid number prediction in polyester resins by near infrared spectroscopy and artificial neural networks. <em>Analytica Chimica Acta</em>, 511(2), 313&ndash;322. <a href="https://doi.org/10.1016/j.aca.2004.01.053" target="_blank" rel="noopener">doi:10.1016/j.aca.2004.01.053</a></li>
+<li id="ref-12">[12] Fage, A.M., Backhaus, C.A., Becker, W., Lorenz, G., Lorenz, A., Rebner, K., Henning, F. (2025). Mid- and near-infrared spectroscopies for quantitative tracking of isocyanate content: Streamlined development of monitoring tools for reactive extrusion synthesis of specialty polyurethanes. <em>Polymer Testing</em>, 150, 108925. <a href="https://doi.org/10.1016/j.polymertesting.2025.108925" target="_blank" rel="noopener">doi:10.1016/j.polymertesting.2025.108925</a></li>
+<li id="ref-13">[13] Benali, S., Bouchet, J., Lachenal, G. (2004). Chemeorheology: A New Design for Simultaneous Rheological and Fourier Transform near Infrared Analysis. <em>Journal of Near Infrared Spectroscopy</em>, 12(1), 5&ndash;13. <a href="https://doi.org/10.1255/jnirs.403" target="_blank" rel="noopener">doi:10.1255/jnirs.403</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -300,19 +273,19 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="card" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Real-Time Hydroxyl Value Monitoring in Polyol Production" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hydroxyl-value-polyol.html" style="color: var(--accent-black); text-decoration: none;">Real-Time Hydroxyl Value Monitoring in Polyol Production</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Detailed white paper explaining the real-time inline tracking of OHV in chemical polymerization loops.</p>
-<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read White Paper</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.</p>
+<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 <div class="card" onclick="window.location.href='blog-fiber-interface-reactors.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_fiber_reactors.webp?v=1.0.5" alt="Optical Fiber Interface Designs for Corrosive Chemical Reactors" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-fiber-interface-reactors.html" style="color: var(--accent-black); text-decoration: none;">Optical Fiber Interface Designs for Corrosive Chemical Reactors</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Technical specifications and build details for sapphire optics and Hastelloy probe configurations.</p>
-<a href="blog-fiber-interface-reactors.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read White Paper</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice.</p>
+<a href="blog-fiber-interface-reactors.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
 </div>
@@ -351,7 +324,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -370,6 +342,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

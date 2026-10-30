@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A step-by-step walk-through on building multivariate models in the caliX suite to predict moisture-in-curd during vat coagulation.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="How cheese yield is predicted from milk fat and protein, what infrared spectroscopy adds at milk intake and in the vat, and how a yield model is built and validated.">
 <meta name="keywords" content="cheese yield prediction, caliX NIR calibration, dairy yield optimization, FT-NIR cheese analysis">
-<title>Evaluating Cheese Yield Prediction Models Using caliX | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<title>Evaluating Cheese Yield Prediction Models | USTECH Innovations</title>
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-cheese-yield-prediction.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-cheese-yield-prediction.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-cheese-yield-prediction.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,21 +63,21 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
-"headline": "Evaluating Cheese Yield Prediction Models Using caliX",
-"description": "A step-by-step walk-through on building multivariate models in the caliX suite to predict moisture-in-curd during vat coagulation.",
+"@type": "BlogPosting", "inLanguage": "en",
+"headline": "Evaluating Cheese Yield Prediction Models",
+"description": "How cheese yield is predicted from milk fat and protein, what infrared spectroscopy adds at milk intake and in the vat, and how a yield model is built and validated.",
 "url": "https://www.ustechinnovations.com/blog-cheese-yield-prediction.html",
 "datePublished": "2026-05-10",
-"dateModified": "2026-05-10",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
 "publisher": {
 "@id": "https://www.ustechinnovations.com/#org"
 },
-"image": "https://www.ustechinnovations.com/images/blog_mems_sensor.webp"
+"image": "https://www.ustechinnovations.com/images/blog_milk_powder.webp"
 }
 </script>
 <!-- BreadcrumbList Schema -->
@@ -118,17 +119,23 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
-    <meta property="og:title" content="Evaluating Cheese Yield Prediction Models Using caliX | USTECH Innovations">
-    <meta property="og:description" content="A step-by-step walk-through on building multivariate models in the caliX suite to predict moisture-in-curd during vat coagulation.">
+    <meta property="og:title" content="Evaluating Cheese Yield Prediction Models | USTECH Innovations">
+    <meta property="og:description" content="How cheese yield is predicted from milk fat and protein, what infrared spectroscopy adds at milk intake and in the vat, and how a yield model is built and validated.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-cheese-yield-prediction.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-cheese-yield-prediction.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Evaluating Cheese Yield Prediction Models Using caliX | USTECH Innovations">
+    <meta property="og:image:alt" content="Evaluating Cheese Yield Prediction Models | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Evaluating Cheese Yield Prediction Models Using caliX | USTECH Innovations">
-    <meta name="twitter:description" content="A step-by-step walk-through on building multivariate models in the caliX suite to predict moisture-in-curd during vat coagulation.">
+    <meta name="twitter:title" content="Evaluating Cheese Yield Prediction Models | USTECH Innovations">
+    <meta name="twitter:description" content="How cheese yield is predicted from milk fat and protein, what infrared spectroscopy adds at milk intake and in the vat, and how a yield model is built and validated.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-cheese-yield-prediction.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -208,67 +215,62 @@ Espa&#241;ol
 <a href="knowledge-blogs.html" class="blog-back-link">
 &mdash; Back to Blogs & Publications
 </a>
-<img src="images/blog_mems_sensor.webp?v=1.0.5" alt="Evaluating Cheese Yield Prediction Models Using caliX" class="blog-post-banner" fetchpriority="high" decoding="async">
+<img src="images/blog_milk_powder.webp?v=1.0.5" alt="Evaluating Cheese Yield Prediction Models" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">GUIDE &mdash; May 10, 2026 &mdash; 2 min read</span>
-<h1 class="blog-post-title">Evaluating Cheese Yield Prediction Models Using cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Maximize cheese manufacturing yield by predicting vat outcomes using chemometric modelling.</p>
+<span class="blog-post-meta">Article &mdash; May 10, 2026 &mdash; 5 min read</span>
+<h1 class="blog-post-title">Evaluating Cheese Yield Prediction Models</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How cheese yield is predicted from milk composition, where the classic yield formulas fall short, what near- and mid-infrared spectroscopy add at milk intake and during coagulation and syneresis in the vat, and how a yield model should be built and validated &mdash; with the peer-reviewed literature behind each point.</p>
 </div>
 <div class="blog-post-content">
-<h2>Why Cheese Yield Prediction Matters</h2>
-<p>Small variations in milk composition (fat, casein, lactose) and coagulation parameters lead to significant differences in final cheese yield. Over-retaining moisture leads to soft defects; over-pressing loses fat in the whey drainage. Predicting final curd yield before pressing allows cheese makers to adjust cutting, heating, and salting times in the vat.</p>
-<h2>Building PLS Yield Models in cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h2>
-<p>By compiling spectroscopic scans of vat milk and corresponding lab results using the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Spectral Intelligence suite, the dairy plant constructed a robust PLS regression model. The model predicts moisture-in-curd with high accuracy, enabling automated decisions on vat draw-down timings.</p>
-<table class="doc-table">
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Range</th>
-<th>Root Mean Square Error of Cross-Validation (RMSECV)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Curd Moisture</strong></td>
-<td>38.0% &mdash; 46.0%</td>
-<td><strong>&plusmn;0.18%</strong></td>
-</tr>
-<tr>
-<td><strong>Fat-in-Dry-Matter (FDM)</strong></td>
-<td>48.0% &mdash; 54.0%</td>
-<td><strong>&plusmn;0.25%</strong></td>
-</tr>
-</tbody>
-</table>
+<h2>Why cheese yield matters</h2>
+<p>Cheese is a very important trade item in the <a href="industry-dairy.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">dairy industry</a>; Fox et al. put it at about 35 % of total milk usage <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Yield is expressed as kilograms of cheese per 100 kg of milk at standardised fat and protein levels, and plants track yield efficiency, the actual yield as a percentage of the yield predicted from milk composition <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. The factors that move it are well catalogued &mdash; milk composition and quality, standardisation, heat treatment, gel firmness at cutting, cutting and stirring regime, curd particle size and vat design &mdash; and they act by influencing the composition of the milk gel and how much moisture is expelled and how much fat is lost from the curd particles <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>Predicting yield from milk composition</h2>
+<p>Predictive yield formulas descend from one based only on casein and fat, published in 1895; the Van Slyke formula is the best-known of the line, and later refinements added cheese moisture and salt, whey solids and paracasein in place of casein <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Emmons and Modler tested the General, Barbano and Van Slyke formulas on 22 vats of Cheddar and found that the unadjusted formulas did not predict yield accurately: the mean predicted yield was 99.17 % of actual, and the measured cheese components summed to less than 100 % <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Adjusting for the observed sum of components brought the mean to 99.99 % of actual, so adjusted formulas are recommended for target yields and yield efficiency; notably, total milk protein then gave the same predicted yields as casein, so a casein determination may not always be necessary <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<p>The inputs are the fat and protein of the vat milk, and those values are only as good as the reference methods behind them: the gravimetric fat reference is ISO 23318 | IDF 249, which replaced ISO 1211 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>, and ISO 8968-1 | IDF 20-1 determines nitrogen by the Kjeldahl principle and calculates crude protein from it <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>What infrared spectroscopy adds at milk intake</h2>
+<p>The reference methods are slow relative to the pace of cheese making, so spectroscopic calibrations against them supply the day-to-day numbers. Laporte and Paquin determined fat, crude protein, true protein and casein in cow's milk by near-infrared transmission with PLS calibrations on 96 samples; independent validation gave standard errors of prediction of 0.07 % for fat, 0.06 % for crude protein and casein and 0.05 % for true protein, and homogenisation was found to affect the fat determination <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<p>A more direct route is to calibrate the spectrum against yield itself. Ferragina et al. made 1,264 model cheeses from individual-cow milk under a fixed laboratory protocol and related mid-infrared (FTIR) spectra of the unprocessed milk to the measured yield traits; cross-validation gave coefficients of determination of 0.95 for total-solids cheese yield and 0.83 for fresh cheese yield, but only 0.65 for water retained in the curd and 0.41 for fat recovery <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. The spectrum carries the compositional information that drives solids yield; water retention and fat loss are decided in the vat and are not visible in the milk spectrum. That is the part of the problem in-vat monitoring addresses.</p>
+<h2>Monitoring coagulation and syneresis in the vat</h2>
+<p>O'Callaghan et al. reviewed the on-line techniques for monitoring coagulum formation &mdash; hot-wire, vibrating and optical probes &mdash; and concluded from factory trials spanning seasonal milk variation that on-line monitoring can improve the consistency of the coagulum at cutting <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. The optical approach relies on the rise in light scattering as casein micelles aggregate. Castillo et al. monitored goat's milk coagulation with a diffuse-reflectance sensor at 880 nm; the reflectance parameter <em>T</em><sub>max</sub> correlated with the Berridge clotting time (R&sup2; = 0.9913), and a cutting-time equation based on <em>T</em><sub>max</sub> predicted cutting time with a standard error of 84.5 s (R&sup2; = 0.9785) across varied pH, temperature and enzyme concentration <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Lyndgaard et al. extended this to full NIR spectra (1,000&ndash;2,500 nm) recorded in-line, compressed by principal component analysis and fitted with a kinetic model separating &kappa;-casein proteolysis, micelle aggregation and network formation; it fitted 12 batches with R&sup2; above 0.99 and allowed real-time estimation for automatic cutting-time determination <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
+<p>The same signal carries information after cutting. Fagan et al. showed by response surface methodology that fat retention is a function of cutting time and temperature, that curd yield also depends on calcium chloride addition, and that there is an optimum gel firmness at cutting, to be maximised while avoiding rapid coarsening of the gel and microsyneresis <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. In a follow-up, equations combining milk composition with backscatter parameters predicted fat losses with a standard error of prediction of &plusmn;2.65 g/100 g (R&sup2; = 0.93), curd yield with &plusmn;0.95 % (R&sup2; = 0.90) and curd moisture with &plusmn;1.43 % (R&sup2; = 0.94) <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. These were pilot-vat studies over deliberately varied conditions; they show that the signal contains the information, not what a production vat will achieve.</p>
+<h2>Building a yield model that holds up</h2>
+<p>A cheese-yield model is really two models: a composition-based prediction of the yield the milk should give, and an in-vat model of how much of that potential is realised. Three practices keep both defensible:</p>
+<ul>
+<li><strong>Define the yield you are predicting.</strong> Ferragina et al. distinguish fresh yield, total-solids yield and water retained in the curd, plus the recovery of fat, protein and total solids <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>; a model calibrated on one cannot be read as another.</li>
+<li><strong>Anchor the calibration to the reference methods.</strong> Fat and protein values should come from ISO 23318 and ISO 8968-1 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>, and NIR calibration and validation on milk products follows ISO 21543 | IDF 201 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
+<li><strong>Validate across seasons.</strong> Cutting time and the syneresis response depend on pH, temperature, calcium and enzyme level <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>, and the factory review stresses seasonal variation <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>; re-validate before trusting a model on the next season's milk.</li>
+</ul>
+<h2>How USTECH approaches this</h2>
+<p>The <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> process analyzer is specified for liquids and slurries in pipelines and vessels, which covers the vat-milk measurement feeding a composition-based yield prediction, and the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> suite provides the PLS regression and PCA tools used in the studies cited above <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Through <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> the predicted values can be passed to the plant PLC or SCADA system for dashboards and alarms. Whether the yield traits a plant cares about can be predicted to the accuracy it needs is established in a feasibility study with your own samples, following ISO 21543 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>, not assumed from published figures.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>"Multivariate Chemometric Calibrations for Coagulation Kinetics in Cheddar Cheesemaking," <em>Dairy Research Communications</em>, 2024.</li>
+<li id="ref-1">[1] Fox, P.F., Guinee, T.P., Cogan, T.M., McSweeney, P.L.H. (2017). Cheese Yield. In: <em>Fundamentals of Cheese Science</em>, 2nd ed. Springer, Boston, pp. 279&ndash;331. <a href="https://doi.org/10.1007/978-1-4899-7681-9_10" target="_blank" rel="noopener">doi:10.1007/978-1-4899-7681-9_10</a></li>
+<li id="ref-2">[2] Emmons, D.B., Modler, H.W. (2010). Invited review: A commentary on predictive cheese yield formulas. <em>Journal of Dairy Science</em>, 93(12), 5517&ndash;5537. <a href="https://doi.org/10.3168/jds.2010-3262" target="_blank" rel="noopener">doi:10.3168/jds.2010-3262</a></li>
+<li id="ref-3">[3] ISO 23318 | IDF 249:2022. <em>Milk, dried milk products and cream &mdash; Determination of fat content &mdash; Gravimetric method.</em> ISO, Geneva. <a href="https://www.iso.org/standard/75226.html" target="_blank" rel="noopener">iso.org/standard/75226.html</a></li>
+<li id="ref-4">[4] ISO 8968-1 | IDF 20-1:2014. <em>Milk and milk products &mdash; Determination of nitrogen content &mdash; Part 1: Kjeldahl principle and crude protein calculation.</em> ISO, Geneva. <a href="https://www.iso.org/standard/61020.html" target="_blank" rel="noopener">iso.org/standard/61020.html</a></li>
+<li id="ref-5">[5] Laporte, M.-F., Paquin, P. (1999). Near-infrared analysis of fat, protein, and casein in cow's milk. <em>Journal of Agricultural and Food Chemistry</em>, 47(7), 2600&ndash;2605. <a href="https://doi.org/10.1021/jf980929r" target="_blank" rel="noopener">doi:10.1021/jf980929r</a></li>
+<li id="ref-6">[6] Ferragina, A., Cipolat-Gotet, C., Cecchinato, A., Bittante, G. (2013). The use of Fourier-transform infrared spectroscopy to predict cheese yield and nutrient recovery or whey loss traits from unprocessed bovine milk samples. <em>Journal of Dairy Science</em>, 96(12), 7980&ndash;7990. <a href="https://doi.org/10.3168/jds.2013-7036" target="_blank" rel="noopener">doi:10.3168/jds.2013-7036</a></li>
+<li id="ref-7">[7] O'Callaghan, D.J., O'Donnell, C.P., Payne, F.A. (2002). Review of systems for monitoring curd setting during cheesemaking. <em>International Journal of Dairy Technology</em>, 55(2), 65&ndash;74. <a href="https://doi.org/10.1046/j.1471-0307.2002.00043.x" target="_blank" rel="noopener">doi:10.1046/j.1471-0307.2002.00043.x</a></li>
+<li id="ref-8">[8] Castillo, M., Payne, F.A., Hicks, C.L., L&oacute;pez, M.B. (2000). Predicting cutting and clotting time of coagulating goat's milk using diffuse reflectance: effect of pH, temperature and enzyme concentration. <em>International Dairy Journal</em>, 10(8), 551&ndash;562. <a href="https://doi.org/10.1016/S0958-6946(00)00086-8" target="_blank" rel="noopener">doi:10.1016/S0958-6946(00)00086-8</a></li>
+<li id="ref-9">[9] Lyndgaard, C.B., Engelsen, S.B., van den Berg, F.W.J. (2012). Real-time modeling of milk coagulation using in-line near infrared spectroscopy. <em>Journal of Food Engineering</em>, 108(2), 345&ndash;352. <a href="https://doi.org/10.1016/j.jfoodeng.2011.07.029" target="_blank" rel="noopener">doi:10.1016/j.jfoodeng.2011.07.029</a></li>
+<li id="ref-10">[10] Fagan, C.C., Castillo, M., Payne, F.A., O'Donnell, C.P., O'Callaghan, D.J. (2007). Effect of cutting time, temperature, and calcium on curd moisture, whey fat losses, and curd yield by response surface methodology. <em>Journal of Dairy Science</em>, 90(10), 4499&ndash;4512. <a href="https://doi.org/10.3168/jds.2007-0329" target="_blank" rel="noopener">doi:10.3168/jds.2007-0329</a></li>
+<li id="ref-11">[11] Fagan, C.C., Castillo, M., O'Donnell, C.P., O'Callaghan, D.J., Payne, F.A. (2008). On-line prediction of cheese making indices using backscatter of near infrared light. <em>International Dairy Journal</em>, 18(2), 120&ndash;128. <a href="https://doi.org/10.1016/j.idairyj.2007.09.007" target="_blank" rel="noopener">doi:10.1016/j.idairyj.2007.09.007</a></li>
+<li id="ref-12">[12] ISO 21543 | IDF 201:2020. <em>Milk and milk products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/77606.html" target="_blank" rel="noopener">iso.org/standard/77606.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -305,7 +307,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -324,6 +325,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

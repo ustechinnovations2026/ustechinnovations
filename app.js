@@ -74,22 +74,7 @@ try {
 
         // 8. Language Switcher — now visible (subdirectory-based i18n)
 
-        // 9. Hide Blogs section globally (dropdown menu, homepage slider, split panel)
-        document.querySelectorAll('a[href*="knowledge-blogs.html"]').forEach(function(el) {
-            el.style.display = 'none';
-        });
-        var homeBlogSec = document.getElementById('home-blog-section');
-        if (homeBlogSec) {
-            homeBlogSec.style.display = 'none';
-        }
-        var blogsSplitCol = document.querySelector('.knowledge-column-panel.blogs');
-        if (blogsSplitCol) {
-            blogsSplitCol.style.display = 'none';
-        }
-        var knowledgeSplitContainer = document.querySelector('.knowledge-split-container');
-        if (knowledgeSplitContainer && blogsSplitCol) {
-            knowledgeSplitContainer.style.gridTemplateColumns = '1fr';
-        }
+        // 9. Bloglar 30.10.2026'da kullanici karariyla yeniden gorunur (gizleme kaldirildi).
 
     });
 })();
@@ -126,7 +111,18 @@ var UI_I18N = {
     cta_badge: 'Live Demo & Feasibility',
     cta_title: 'Optimize Your Process with Real-Time NIR',
     cta_desc: 'Schedule a tailored live demo or send your raw samples for complimentary feasibility testing.',
-    cta_btn: 'Request Live Demo'
+    cta_btn: 'Request Live Demo',
+    form_sales_lbl: "Application Details / Message",
+    form_sales_ph: "Tell us about your parameters of interest, samples, or process requirements...",
+    form_support_lbl: "Describe the Technical Issue",
+    form_support_ph: "Please describe the symptoms, error messages, or calibration behavior in detail...",
+    form_general_lbl: "Your Inquiry / Message",
+    form_general_ph: "Please type your general question or partnership proposal details here...",
+    form_sending: "Sending...",
+    form_failed: "Submission failed:",
+    form_error: "An error occurred during submission. Please try again later or email us at info@ustechinnovations.com.",
+    open_search: "Open Search",
+    locale: "en-US"
   },
   tr: {
     search_ph: 'Sayfa, ürün, blog ara...', search_ph_short: 'Sitede ara...',
@@ -147,7 +143,18 @@ var UI_I18N = {
     cta_badge: 'Canlı Demo & Numune Analizi',
     cta_title: 'Üretiminizi Gerçek Zamanlı NIR ile Güçlendirin',
     cta_desc: 'Tesisinize özel canlı demo planlayın veya numunelerinizi ücretsiz laboratuvar fizibilite analizi için iletin.',
-    cta_btn: 'Canlı Demo Talep Edin'
+    cta_btn: 'Canlı Demo Talep Edin',
+    form_sales_lbl: "Uygulama Detayları / Mesaj",
+    form_sales_ph: "İlgilendiğiniz parametreleri, numunelerinizi veya proses gereksinimlerinizi anlatın...",
+    form_support_lbl: "Teknik Sorunu Açıklayın",
+    form_support_ph: "Belirtileri, hata mesajlarını veya kalibrasyon davranışını ayrıntılı olarak açıklayın...",
+    form_general_lbl: "Talebiniz / Mesajınız",
+    form_general_ph: "Genel sorunuzu veya iş birliği önerinizin ayrıntılarını buraya yazın...",
+    form_sending: "Gönderiliyor...",
+    form_failed: "Gönderim başarısız oldu:",
+    form_error: "Gönderim sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin ya da info@ustechinnovations.com adresine e-posta gönderin.",
+    open_search: "Aramayı aç",
+    locale: "tr-TR"
   },
   fr: {
     search_ph: 'Rechercher pages, produits, blogs...', search_ph_short: 'Rechercher sur le site...',
@@ -168,7 +175,18 @@ var UI_I18N = {
     cta_badge: 'Démo en direct & Essais',
     cta_title: 'Optimisez votre production avec le NIR',
     cta_desc: 'Planifiez une démo personnalisée ou envoyez vos échantillons pour un essai de faisabilité gratuit.',
-    cta_btn: 'Demander une démo'
+    cta_btn: 'Demander une démo',
+    form_sales_lbl: "Votre application de mesure / Message",
+    form_sales_ph: "Parlez-nous de vos paramètres d'intérêt, de vos échantillons ou des exigences de votre procédé...",
+    form_support_lbl: "Décrivez le problème technique",
+    form_support_ph: "Décrivez en détail les symptômes, les messages d'erreur ou le comportement de l'étalonnage...",
+    form_general_lbl: "Votre demande / Message",
+    form_general_ph: "Saisissez ici votre question générale ou les détails de votre proposition de partenariat...",
+    form_sending: "Envoi en cours...",
+    form_failed: "Échec de l'envoi :",
+    form_error: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer plus tard ou nous écrire à info@ustechinnovations.com.",
+    open_search: "Ouvrir la recherche",
+    locale: "fr-FR"
   },
   de: {
     search_ph: 'Seiten, Produkte, Blogs durchsuchen...', search_ph_short: 'Website durchsuchen...',
@@ -189,7 +207,18 @@ var UI_I18N = {
     cta_badge: 'Live-Demo & Machbarkeit',
     cta_title: 'Optimieren Sie Ihre Produktion mit NIR',
     cta_desc: 'Vereinbaren Sie eine Live-Demo oder senden Sie Ihre Rohstoffe für einen kostenlosen Machbarkeitstest ein.',
-    cta_btn: 'Live-Demo anfordern'
+    cta_btn: 'Live-Demo anfordern',
+    form_sales_lbl: "Ihre Messaufgabe / Nachricht",
+    form_sales_ph: "Erzählen Sie uns von den gewünschten Parametern, Ihren Proben oder Ihren Prozessanforderungen ...",
+    form_support_lbl: "Beschreiben Sie das technische Problem",
+    form_support_ph: "Bitte beschreiben Sie Symptome, Fehlermeldungen oder das Kalibrierverhalten im Detail ...",
+    form_general_lbl: "Ihre Anfrage / Nachricht",
+    form_general_ph: "Bitte geben Sie hier Ihre allgemeine Frage oder die Details Ihres Partnerschaftsvorschlags ein ...",
+    form_sending: "Wird gesendet ...",
+    form_failed: "Senden fehlgeschlagen:",
+    form_error: "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder schreiben Sie uns an info@ustechinnovations.com.",
+    open_search: "Suche öffnen",
+    locale: "de-DE"
   },
   es: {
     search_ph: 'Buscar páginas, productos, blogs...', search_ph_short: 'Buscar en el sitio...',
@@ -210,7 +239,18 @@ var UI_I18N = {
     cta_badge: 'Demo en Vivo y Factibilidad',
     cta_title: 'Optimice su producción con NIR',
     cta_desc: 'Programe una demo personalizada o envíe sus muestras para un ensayo de factibilidad gratuito.',
-    cta_btn: 'Solicitar Demostración'
+    cta_btn: 'Solicitar Demostración',
+    form_sales_lbl: "Su aplicación de medición / Mensaje",
+    form_sales_ph: "Cuéntenos qué parámetros le interesan, sus muestras o los requisitos de su proceso...",
+    form_support_lbl: "Describa el problema técnico",
+    form_support_ph: "Describa con detalle los síntomas, los mensajes de error o el comportamiento de la calibración...",
+    form_general_lbl: "Su consulta / Mensaje",
+    form_general_ph: "Escriba aquí su consulta general o los detalles de su propuesta de colaboración...",
+    form_sending: "Enviando...",
+    form_failed: "Error en el envío:",
+    form_error: "Se produjo un error durante el envío. Inténtelo de nuevo más tarde o escríbanos a info@ustechinnovations.com.",
+    open_search: "Abrir búsqueda",
+    locale: "es-ES"
   },
   ar: {
     search_ph: 'البحث في الصفحات والمنتجات...', search_ph_short: 'البحث في الموقع...',
@@ -231,7 +271,18 @@ var UI_I18N = {
     cta_badge: 'عرض حي وتحليل عينات',
     cta_title: 'عزز كفاءة إنتاجك مع تقنية NIR في الوقت الفعلي',
     cta_desc: 'حدد موعداً لعرض توضيحي مخصص أو أرسل عيناتك لإجراء اختبار مجاني لدراسة الجدوى في المختبر.',
-    cta_btn: 'طلب عرض توضيحي حي'
+    cta_btn: 'طلب عرض توضيحي حي',
+    form_sales_lbl: "تفاصيل تطبيق القياس / الرسالة",
+    form_sales_ph: "أخبرنا عن المعلمات التي تهمك أو العينات أو متطلبات العملية...",
+    form_support_lbl: "صف المشكلة التقنية",
+    form_support_ph: "يرجى وصف الأعراض أو رسائل الخطأ أو سلوك المعايرة بالتفصيل...",
+    form_general_lbl: "استفسارك / رسالتك",
+    form_general_ph: "يرجى كتابة سؤالك العام أو تفاصيل اقتراح الشراكة هنا...",
+    form_sending: "جارٍ الإرسال...",
+    form_failed: "تعذّر الإرسال:",
+    form_error: "حدث خطأ أثناء الإرسال. يرجى المحاولة لاحقًا أو مراسلتنا على info@ustechinnovations.com.",
+    open_search: "فتح البحث",
+    locale: "ar-u-nu-latn"
   },
   zh: {
     search_ph: '搜索页面、产品、技术博客...', search_ph_short: '搜索网站...',
@@ -252,7 +303,18 @@ var UI_I18N = {
     cta_badge: '实时演示与样品可行性测试',
     cta_title: '借助实时近红外光谱赋能生产工艺',
     cta_desc: '预约定制化现场演示，或寄送原料样品进行免费实验室可行性分析。',
-    cta_btn: '预约实时演示'
+    cta_btn: '预约实时演示',
+    form_sales_lbl: "测量应用详情 / 留言",
+    form_sales_ph: "告诉我们您感兴趣的参数、样品或工艺要求……",
+    form_support_lbl: "请描述技术问题",
+    form_support_ph: "请详细描述故障现象、错误信息或校准表现……",
+    form_general_lbl: "您的咨询 / 留言",
+    form_general_ph: "请在此输入您的一般问题或合作提案详情……",
+    form_sending: "正在发送……",
+    form_failed: "提交失败：",
+    form_error: "提交时出错。请稍后重试，或发送邮件至 info@ustechinnovations.com。",
+    open_search: "打开搜索",
+    locale: "zh-CN"
   }
 };
 function ui(key) {
@@ -1477,7 +1539,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         function formatCurrency(num) {
-            return '$' + Math.round(num).toLocaleString('en-US');
+            return new Intl.NumberFormat(ui('locale'), { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(Math.round(num));
         }
         
         [throughputInput, valInput, wasteInput, failsInput].forEach(input => {
@@ -1486,58 +1548,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Run initial calculation
         calculateROI();
-    }
-
-    // 7. Interactive Parameter Selector for Industry subpages
-    const paramList = document.getElementById('paramList');
-    if (paramList) {
-        // Master Parameter database
-        const paramsDb = {
-            // Food and Feed
-            protein: { t:'Crude Protein (CP)',          desc:'Crude protein is the single most important — and expensive — quality parameter in animal feed formulation. It directly determines both the nutritional value and the raw material cost of finished feed. ProLine2550 measures protein continuously on incoming raw materials and finished product, providing the real-time data that allows nutritionists to formulate precisely to specification and eliminate systematic protein give-away.', r:'5 – 65%', a:'±0.10% compound feed', m:'Grain, meal, compound feed, pellet', ref:'ISO 5983 (Kjeldahl)' },
-            moisture:{ t:'Moisture',                    desc:'Moisture is the most immediately actionable parameter at grain intake — determining safe storage routing, weight-adjusted pricing, and drying requirements. In pelleting, conditioner moisture governs die wear and pellet durability; post-cooler moisture determines storage safety. ProLine2550 measures moisture inline at every critical point in the process, enabling real-time decisions that protect margin and product quality simultaneously.', r:'5 – 40%', a:'±0.08% typical', m:'All grain and feed matrices', ref:'ISO 712 / 6496' },
-            fat:     { t:'Crude Fat (Ether Extract)',    desc:'Fat content is a major energy contributor and an important cost driver in poultry, aquaculture, and pet food formulations. ProLine2550 monitors fat continuously in ingredients and finished feeds, enabling formulation accuracy that reduces the over-addition of expensive fat sources used to guarantee minimum energy specifications. Particularly valuable in compound feeds, DDGS, and full-fat soybean where fat content is highly variable.', r:'0.5 – 30%', a:'±0.12% typical', m:'Feed, meal, grain, DDGS', ref:'ISO 6492' },
-            fiber:   { t:'Crude Fiber (CF)',             desc:'Crude fiber content governs energy availability and gut health in monogastric species, and is a regulatory label requirement in many markets. Real-time fiber monitoring enables formulation adjustments as high-fiber co-products like wheat bran, beet pulp, and sunflower meal enter the formulation — preventing inadvertent energy dilution in finished feeds.', r:'1 – 40%', a:'±0.20% typical', m:'Feed, grain, co-products, forage', ref:'ISO 6865' },
-            ash:     { t:'Ash / Mineral Content',        desc:'Ash (total minerals) is a key quality indicator for protein meals — elevated ash in soybean meal or fish meal signals adulteration or dilution with mineral-rich by-products. It is also a label requirement for many compound feed categories. Continuous ash monitoring enables early detection of ingredient quality deviations that would not be visible in protein or moisture measurements alone.', r:'0.5 – 20%', a:'±0.15% typical', m:'Meals, compound feed, grain', ref:'ISO 5984' },
-            starch:  { t:'Starch',                      desc:'Starch is the primary energy source in cereal-based diets and its measurement is directly relevant to both nutritional value and ingredient pricing. In brewing and distilling co-products (DDGS, wheat syrup), residual starch indicates the efficiency of fermentation. ProLine2550 delivers starch measurements alongside protein, moisture, and fiber simultaneously — giving a complete energy-protein picture in a single scan.', r:'5 – 80%', a:'±0.25% typical', m:'Grain, co-products, compound feed', ref:'ICC 168 / enzymatic' },
-            ndf:     { t:'NDF / ADF (Fibre Fractions)',  desc:'Neutral Detergent Fiber (NDF) and Acid Detergent Fiber (ADF) are the gold standard measures of fiber quality for ruminant nutrition — directly predictive of rumen fill, dry matter intake potential, and digestible energy. Inline NDF/ADF monitoring at forage intake and in TMR mixing enables precision ruminant formulation that traditional crude fiber measurement cannot support.', r:'5 – 75%', a:'±0.4% NDF typical', m:'Forage, silage, hay, TMR components', ref:'Van Soest method' },
-            
-            // Dairy
-            dairy_fat: { t:'Butter Fat', desc:'Fat content determines dairy yield value and texture. In cream standardization, continuous fat measurements enable direct closed-loop dosing valves to hit fat targets with high repeatabilities.', r:'0.5 – 55%', a:'±0.05% in liquids', m:'Raw milk, cream, whey concentrate', ref:'ISO 1211 / Gerber' },
-            dairy_protein: { t:'Total Protein', desc:'Total protein (caseins and whey proteins) is critical for milk pricing and cheese coagulation dynamics. Continuous monitoring at raw receiving provides standardized dairy inputs.', r:'1.5 – 15%', a:'±0.04% typical', m:'Milk, whey, liquid concentrates', ref:'ISO 8968 / Kjeldahl' },
-            dairy_lactose: { t:'Lactose', desc:'Lactose tracking supports standard milk powder calibrations and guides filtration runs (ultrafiltration/reverse osmosis) to optimize dry matter content.', r:'0.1 – 10%', a:'±0.06% typical', m:'Raw milk, permeate, retentate', ref:'HPLC / enzymatic' },
-            dairy_solids: { t:'Total Solids', desc:'Total solids represent the remaining dry mass after water is removed. Critical for milk powder evaporators and condensed milk processing yield calculations.', r:'5 – 60%', a:'±0.10% typical', m:'Liquid milk, evaporated milk, whey', ref:'ISO 6731 / Gravimetric' },
-            dairy_moisture: { t:'Moisture in Powder', desc:'Moisture content determines storage lifespan and weight yield of dairy powders. Real-time fluid bed sensor feed prevents over-drying, preserving product weight.', r:'1 – 15%', a:'±0.08% in powders', m:'Skim milk powder, WPC, whey powder', ref:'ISO 5537 / Oven' },
-            dairy_acidity: { t:'Titratable Acidity', desc:'Acidity levels indicate lactic fermentation progression in yogurt or cheese. Monitors product stability and raw milk freshness upon truck intake.', r:'0.1 – 2.5% Lactic Acid', a:'±0.02% typical', m:'Raw milk, liquid yogurt, whey', ref:'Soxhlet-Henkel / Titration' },
-            
-            // Chemical and Pharma
-            pharma_assay: { t:'Active Ingredient Assay', desc:'Ensures precise API concentration in powder blends and finished dosages. High optical stability identifies variations in active molecule strength.', r:'0.1 – 99%', a:'±0.15% typical', m:'Active powders, granulates, tablets', ref:'Ph. Eur. / HPLC' },
-            pharma_id: { t:'Raw Material Identification', desc:'Spectroscopic identification of excipients and raw APIs. Handheld or box scans verify incoming bags at dock doors in seconds with zero contamination.', r:'Classification Model', a:'&gt;99.8% specificity', m:'Cellulose, Lactose, active APIs', ref:'Ph. Eur. 2.2.40 / PCA' },
-            pharma_moisture: { t:'Moisture in Granulates', desc:'Water content monitoring during fluid bed granulation. Prevents static issues (from over-drying) or binding issues (from under-drying).', r:'0.2 – 15%', a:'±0.08% typical', m:'Drying granulates, powders', ref:'Loss on Drying (LOD)' },
-            pharma_uniformity: { t:'Blend Uniformity', desc:'Tracks standard deviations during powder bin blending. Tells operators exactly when the mix reaches homogeneity without stopping the blender.', r:'Continuous Deviation', a:'Correlation with reference RSD', m:'Rotating V-blender powder mixes', ref:'USP &lt;905&gt; / RSD' },
-            pharma_polymer: { t:'Polymer Identification', desc:'Differentiates polymer types and molecular weights (e.g., HDPE, LDPE, PP) in chemical packaging or reactor feedstock, ensuring material specifications.', r:'Classification Model', a:'&gt;99.5% classification', m:'Plastic pellets, raw resin feed', ref:'FTIR / Raman correlation' },
-            pharma_solvent: { t:'Solvent Composition', desc:'Measures alcohol-water or solvent ratio inside chemical reaction loops. Avoids manual sampling, ensuring pure conversions.', r:'1 – 99%', a:'±0.10% typical', m:'Liquid chemical loops, solvents', ref:'Gas Chromatography (GC)' }
-        };
-
-        const rows = paramList.querySelectorAll('.param-row');
-        rows.forEach(row => {
-            row.addEventListener('click', () => {
-                const key = row.dataset.param;
-                const p = paramsDb[key];
-                
-                if (p) {
-                    document.getElementById('detailTitle').textContent = p.t;
-                    document.getElementById('detailDesc').textContent = p.desc;
-                    document.getElementById('sv0').textContent = p.r;
-                    document.getElementById('sv1').textContent = p.a;
-                    document.getElementById('sv2').textContent = p.m;
-                    document.getElementById('sv3').textContent = p.ref;
-                    
-                    rows.forEach(r => r.classList.remove('active'));
-                    row.classList.add('active');
-                }
-            });
-        });
     }
 
     // 8. Interactive NIR Spectroscopy Simulator
@@ -2339,7 +2349,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const searchToggle = document.createElement('button');
             searchToggle.className = 'search-toggle-btn';
             searchToggle.id = 'search-toggle-btn';
-            searchToggle.setAttribute('aria-label', 'Open Search');
+            searchToggle.setAttribute('aria-label', ui('open_search'));
             searchToggle.innerHTML = `
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
@@ -2851,20 +2861,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     salesFields.forEach(f => f.style.display = 'block');
                     supportFields.forEach(f => f.style.display = 'none');
                     generalFields.forEach(f => f.style.display = 'none');
-                    if (messageLabel) messageLabel.textContent = 'Application Details / Message';
-                    if (messageTextarea) messageTextarea.placeholder = 'Briefly describe your measurement challenge (e.g. moisture control in corn feed)...';
+                    if (messageLabel) messageLabel.textContent = ui('form_sales_lbl');
+                    if (messageTextarea) messageTextarea.placeholder = ui('form_sales_ph');
                 } else if (target === 'support') {
                     salesFields.forEach(f => f.style.display = 'none');
                     supportFields.forEach(f => f.style.display = 'block');
                     generalFields.forEach(f => f.style.display = 'none');
-                    if (messageLabel) messageLabel.textContent = 'Describe the Technical Issue';
-                    if (messageTextarea) messageTextarea.placeholder = 'Please describe the symptoms, error messages, or calibration behavior in detail...';
+                    if (messageLabel) messageLabel.textContent = ui('form_support_lbl');
+                    if (messageTextarea) messageTextarea.placeholder = ui('form_support_ph');
                 } else if (target === 'general') {
                     salesFields.forEach(f => f.style.display = 'none');
                     supportFields.forEach(f => f.style.display = 'none');
                     generalFields.forEach(f => f.style.display = 'block');
-                    if (messageLabel) messageLabel.textContent = 'Your Inquiry / Message';
-                    if (messageTextarea) messageTextarea.placeholder = 'Please type your general question or partnership proposal details here...';
+                    if (messageLabel) messageLabel.textContent = ui('form_general_lbl');
+                    if (messageTextarea) messageTextarea.placeholder = ui('form_general_ph');
                 }
             });
         });
@@ -2877,11 +2887,27 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const submitBtn = leadForm.querySelector('button[type="submit"]');
+
+            // Hata mesaji: alert() yerine formun icinde, ekran okuyucuya duyurulan kutu
+            function showFormError(msg) {
+                let box = leadForm.querySelector('.form-error-msg');
+                if (!box) {
+                    if (!msg) return;
+                    box = document.createElement('div');
+                    box.className = 'form-error-msg';
+                    box.setAttribute('role', 'alert');
+                    box.style.cssText = 'margin-top: 1rem; padding: 0.75rem 1rem; border: 1px solid #c0392b; border-radius: 8px; color: #a5281b; background: #fdf0ee; font-size: 0.9rem;';
+                    submitBtn.insertAdjacentElement('afterend', box);
+                }
+                box.textContent = msg;
+                box.style.display = msg ? 'block' : 'none';
+            }
             const originalBtnText = submitBtn.textContent;
             
             // Set loading state
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = ui('form_sending');
+            showFormError('');
 
             const formData = new FormData(leadForm);
             
@@ -2917,12 +2943,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     leadForm.reset();
                 } else {
                     console.log(res);
-                    alert("Submission failed: " + (res.message || "Unknown error"));
+                    showFormError(ui('form_failed') + ' ' + (res.message || ui('form_error')));
                 }
             })
             .catch(error => {
                 console.log(error);
-                alert("An error occurred during submission. Please try again later.");
+                showFormError(ui('form_error'));
             })
             .finally(() => {
                 // Restore button state
@@ -3704,193 +3730,6 @@ function initLaserAnimation() {
 
 // Initialize when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', initLaserAnimation);
-
-/* ==========================================================================
-   Local Privacy Policy Modal for Blog Pages
-   ========================================================================= */
-document.addEventListener('DOMContentLoaded', () => {
-    // Look for any links with showPrivacy in href
-    const privacyLinks = document.querySelectorAll('a[href*="showPrivacy=1"]');
-    if (privacyLinks.length === 0) return;
-
-    // Check if we are not on contact.html (as contact.html has its own modal)
-    if (window.location.pathname.indexOf('contact.html') !== -1) return;
-
-    privacyLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            openLocalPrivacyModal();
-        });
-    });
-
-    function openLocalPrivacyModal() {
-        let modal = document.getElementById('local-privacy-modal');
-        if (!modal) {
-            modal = document.createElement('div');
-            modal.id = 'local-privacy-modal';
-            modal.style.position = 'fixed';
-            modal.style.inset = '0';
-            modal.style.zIndex = '100000';
-            modal.style.background = 'rgba(0,0,0,0.7)';
-            modal.style.backdropFilter = 'blur(6px)';
-            modal.style.webkitBackdropFilter = 'blur(6px)';
-            modal.style.display = 'flex';
-            modal.style.alignItems = 'center';
-            modal.style.justifyContent = 'center';
-            modal.style.padding = '2rem';
-
-            modal.innerHTML = `
-                <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 16px; max-width: 850px; width: 100%; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 24px 80px rgba(0,0,0,0.5); text-align: left; font-family: var(--font-body); color: var(--text-primary);">
-                    <!-- Modal Header -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1.75rem 2rem; border-bottom: 1px solid var(--border-color); flex-shrink: 0;">
-                        <div>
-                            <h2 style="font-size: 1.5rem; font-family: var(--font-title); font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px; margin: 0;">Privacy Policy & Data Protection Clarification Text</h2>
-                            <p style="margin: 0.25rem 0 0 0; font-size: 0.75rem; color: var(--text-muted);">Compliance Status: KVKK (No. 6698) | GDPR (EU 2016/679) | CCPA/CPRA</p>
-                        </div>
-                        <button id="close-local-privacy-btn" style="background: none; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 6px; transition: all 0.2s ease; line-height: 1;">&times;</button>
-                    </div>
-                    <!-- Modal Body -->
-                    <div style="padding: 2rem; overflow-y: auto; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">
-                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;"><strong>Document Reference:</strong> PP-KVKK-2026-V3 | <strong>Last Updated:</strong> June 30, 2026</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem; margin-top: 0;">1. Data Controller Identification</h3>
-                        <p style="margin-bottom: 1.25rem;">This Privacy Policy and Clarification Text has been prepared by <strong>USTECH Innovations LLC</strong> ("USTECH", "Company", "we", "us", or "our"), headquartered at 600 Park Offices Dr Ste 300, Durham, NC 27713, USA, in our capacity as the <strong>Data Controller</strong> under the Turkish Personal Data Protection Law No. 6698 ("KVKK"), the EU General Data Protection Regulation ("GDPR"), and the California Consumer Privacy Act ("CCPA/CPRA"). This document governs the processing of personal data collected through our B2B website, online service portals, contact channels, and marketing platforms.</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">2. Categorization of Processed Personal Data</h3>
-                        <p style="margin-bottom: 0.75rem;">In alignment with national and international data protection laws, we categorize the personal data we process as follows:</p>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-type: disc;">
-                            <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Identity Information:</strong> First name, last name.</li>
-                            <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Contact Information:</strong> Corporate email address, direct business telephone/mobile number, physical business address, and country of operation.</li>
-                            <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Professional & Employment Information:</strong> Job title, department, company name, industry sector, and technical areas of interest.</li>
-                            <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Transaction Security & Technical Information:</strong> IP address, device type and operating system, browser specifications, system activity logs, cookie IDs, and detailed website navigation paths.</li>
-                            <li style="margin-bottom: 0.4rem;"><strong style="color: var(--text-primary);">Customer Transaction Information:</strong> Quotation requests, details of analytical challenges submitted via forms, interest in specific spectrometer systems, and communication history.</li>
-                        </ul>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">3. Legal Bases and Purposes of Processing</h3>
-                        <p style="margin-bottom: 0.75rem;">Your personal data is collected and processed through automatic or semi-automatic means based on the legal grounds set forth in Article 5 of the KVKK and Article 6 of the GDPR:</p>
-                        
-                        <div style="margin-left: 1rem; margin-bottom: 1.25rem; border-left: 3px solid var(--border-color); padding-left: 1rem;">
-                            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">A. Performance and Execution of Contracts (KVKK Art. 5/2/c, GDPR Art. 6/1/b):</strong></p>
-                            <p style="margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">To evaluate B2B inquiries, formulate commercial quotations, deliver analytical hardware (such as ProLine or MasterLine spectrometers), manage licenses for caliX/ProChem software suites, and deliver post-sale calibration tune-ups and customer support services.</p>
-
-                            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">B. Data Controller's Legitimate Interests (KVKK Art. 5/2/f, GDPR Art. 6/1/f):</strong></p>
-                            <p style="margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">To maintain network security, perform diagnostics and debugging, analyze traffic trends to optimize website user experience, detect and prevent malicious activities, and protect our proprietary rights and intellectual assets.</p>
-
-                            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">C. Explicit Consent of the Data Subject (KVKK Art. 5/1, GDPR Art. 6/1/a):</strong></p>
-                            <p style="margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">To distribute technical whitepapers, send industry-specific newsletters, invite you to scientific webinars, and share promotional updates. You have the right to withdraw this consent instantly via subscription links in our emails.</p>
-
-                            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">D. Compliance with Legal Obligations (KVKK Art. 5/2/a, GDPR Art. 6/1/c):</strong></p>
-                            <p style="margin-bottom: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">To adhere to tax regulations, commercial accounting standards, international trade laws, export controls on dual-use analytical equipment, and binding requests from courts or judicial authorities.</p>
-                        </div>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">4. Cross-Border Data Transfers</h3>
-                        <p style="margin-bottom: 1.25rem;">To operate our B2B services, USTECH utilizes secured cloud infrastructure located in the United States. Consequently, personal data collected from users in Turkey, the European Union, and other global regions is transferred internationally to the US. We secure these transfers in compliance with GDPR (Chapter V) using Standard Contractual Clauses (SCCs) and seek your explicit consent when you submit web forms in compliance with KVKK Article 9 regulations.</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">5. Data Sharing & Sharing Categories</h3>
-                        <p style="margin-bottom: 1.25rem;">We enforce a strict policy against selling, sharing, or leasing personal data to third parties. We may disclose data only to: (a) local authorized USTECH sales and service partners in your jurisdiction to process regional requests directly; (b) cloud hosting, CRM (such as HubSpot/Salesforce), and security service providers bound by strict Data Processing Agreements (DPAs); (c) legally authorized public institutions when necessary to comply with legal mandates.</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">6. Data Retention and Deletion</h3>
-                        <p style="margin-bottom: 1.25rem;">We store your personal data only as long as necessary for the processing purposes detailed herein, or as mandated by applicable statutory limitation periods. Information submitted via contact or RFQ forms is retained for a maximum of 36 months following the last communication, unless it converts into a customer contract. Marketing consent data is stored until consent is explicitly withdrawn, after which it is securely destroyed or anonymized.</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">7. Technical and Organizational Security Measures</h3>
-                        <p style="margin-bottom: 0.75rem;">To protect personal data from unauthorized access, alteration, loss, or leakage, USTECH implements industry-standard controls:</p>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-type: disc;">
-                            <li style="margin-bottom: 0.3rem;">All data transit is encrypted using Secure Sockets Layer (SSL) / TLS 1.3 protocols.</li>
-                            <li style="margin-bottom: 0.3rem;">Access to database systems is restricted through zero-trust access controls and multi-factor authentication (MFA).</li>
-                            <li style="margin-bottom: 0.3rem;">Periodic vulnerability scanning, firewalls, and server-side threat detection systems are active.</li>
-                            <li style="margin-bottom: 0.3rem;">All staff handling client data undergo periodic data security and privacy training.</li>
-                        </ul>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">8. Global Privacy Rights</h3>
-                        <p style="margin-bottom: 0.75rem;">Depending on your legal residence, you are entitled to several specific rights regarding your personal data:</p>
-
-                        <p style="margin-bottom: 0.5rem; font-weight: 700; color: var(--text-primary); font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">A. Data Subject Rights Under Turkey's KVKK (Article 11):</p>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1rem; list-style-type: disc;">
-                            <li style="margin-bottom: 0.3rem;">To learn whether your personal data is being processed,</li>
-                            <li style="margin-bottom: 0.3rem;">To request information if your personal data has been processed,</li>
-                            <li style="margin-bottom: 0.3rem;">To learn the purpose of the processing and whether the data is used in line with this purpose,</li>
-                            <li style="margin-bottom: 0.3rem;">To know the third parties to whom your personal data has been transferred domestically or internationally,</li>
-                            <li style="margin-bottom: 0.3rem;">To request the rectification of personal data if it has been processed incompletely or inaccurately,</li>
-                            <li style="margin-bottom: 0.3rem;">To request the erasure or destruction of your personal data under the conditions laid down in Article 7 of the KVKK,</li>
-                            <li style="margin-bottom: 0.3rem;">To request that the third parties to whom your personal data was transferred be notified of the rectification, erasure, or destruction operations,</li>
-                            <li style="margin-bottom: 0.3rem;">To object to any outcome detrimental to you resulting from the analysis of your processed data exclusively through automated systems,</li>
-                            <li style="margin-bottom: 0.3rem;">To demand compensation for damages incurred due to the unlawful processing of your personal data.</li>
-                        </ul>
-
-                        <p style="margin-bottom: 0.5rem; font-weight: 700; color: var(--text-primary); font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">B. EU GDPR Rights:</p>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1rem; list-style-type: disc;">
-                            <li style="margin-bottom: 0.3rem;">Right to access, correct, update, or request deletion of your personal data.</li>
-                            <li style="margin-bottom: 0.3rem;">Right to object to processing, restrict processing, or request data portability.</li>
-                            <li style="margin-bottom: 0.3rem;">Right to withdraw consent at any time without affecting the lawfulness of prior processing.</li>
-                        </ul>
-
-                        <p style="margin-bottom: 0.5rem; font-weight: 700; color: var(--text-primary); font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">C. California CCPA/CPRA Rights:</p>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-type: disc;">
-                            <li style="margin-bottom: 0.3rem;">Right to know what categories of personal information we collect and disclose.</li>
-                            <li style="margin-bottom: 0.3rem;">Right to request deletion and correction of personal information.</li>
-                            <li style="margin-bottom: 0.3rem;">Right to opt out of the sale or sharing of your personal information (Do Not Sell/Share).</li>
-                            <li style="margin-bottom: 0.3rem;">Right to non-discrimination for exercising your privacy rights.</li>
-                        </ul>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">9. Application and Contact Procedure</h3>
-                        <p style="margin-bottom: 1.25rem;">You may submit requests to exercise your rights by emailing <strong style="color: var(--text-primary);">privacy@ustechinnovations.com</strong>. For applications originating from Turkey under the KVKK, requests must comply with the "Communiqué on Application Procedures and Principles to the Data Controller". Applications must contain: Name, Surname, wet signature (if written), Turkish ID number (or Passport Number/nationality for foreign nationals), physical address for response, contact email, and clear details of the request. Requests will be processed within 30 days free of charge.</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">10. Cookies</h3>
-                        <p style="margin-bottom: 1.25rem;">We use cookies to enable core website services and to collect anonymized telemetry. Essential cookies are loaded automatically. Functional and analytical cookies (such as tracking site usage) are disabled by default and will only run if you provide consent via our Cookie Banner. You can manage, alter, or reject these cookies at any time.</p>
-
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">11. Corporate Contact Details</h3>
-                        <p style="margin-bottom: 0;"><strong style="color: var(--text-primary);">USTECH Innovations LLC</strong><br>600 Park Offices Dr Ste 300, Durham, NC 27713, USA<br>Email: privacy@ustechinnovations.com</p>
-                    </div>
-                    <!-- Modal Footer -->
-                    <div style="padding: 1.25rem 2rem; border-top: 1px solid var(--border-color); flex-shrink: 0; text-align: right; display: flex; justify-content: flex-end; gap: 1rem;">
-                        <button id="decline-local-privacy-btn" class="btn btn-secondary" style="padding: 0.6rem 2rem; font-size: 0.9rem; border-radius: 4px; cursor: pointer;">Cancel</button>
-                        <button id="agree-local-privacy-btn" class="btn btn-primary" style="padding: 0.6rem 2rem; font-size: 0.9rem; border-radius: 4px; cursor: pointer; color: white;">I Agree & Accept</button>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(modal);
-
-            const closeBtn = document.getElementById('close-local-privacy-btn');
-            const agreeBtn = document.getElementById('agree-local-privacy-btn');
-            const declineBtn = document.getElementById('decline-local-privacy-btn');
-
-            closeBtn.onmouseover = () => {
-                closeBtn.style.color = 'var(--text-primary)';
-                closeBtn.style.background = 'var(--bg-secondary)';
-            };
-            closeBtn.onmouseout = () => {
-                closeBtn.style.color = 'var(--text-secondary)';
-                closeBtn.style.background = 'none';
-            };
-
-            const closeModal = () => {
-                modal.style.display = 'none';
-                document.body.style.overflow = '';
-            };
-
-            closeBtn.addEventListener('click', closeModal);
-            declineBtn.addEventListener('click', closeModal);
-
-            agreeBtn.addEventListener('click', () => {
-                const checkbox = document.querySelector('.lead-capture-card input[type="checkbox"]');
-                if (checkbox) {
-                    checkbox.checked = true;
-                }
-                closeModal();
-            });
-
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-        }
-
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-});
-
 
 // =====================================================================
 //  Talk to a Specialist — Floating Side Widget (auto-injected)

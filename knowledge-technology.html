@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="description" content="How FT-NIR spectroscopy works, from photons to predictions: measurement path, calibration science and the caliX + ProChem ecosystem, explained by USTECH.">
 <title>NIR Technology & Calibration Science | USTECH</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -37,7 +38,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -209,15 +210,15 @@
 <h4 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff;">Core Technology Advantages</h4>
 <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
 <div>
-<strong style="color: var(--accent-gold);">Industrial-Grade Design:</strong>
+<strong style="color: var(--accent-gold-text);">Industrial-Grade Design:</strong>
 <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Rugged analyzers engineered for harsh factory environments &mdash; vibrations, dust, temperature, and CIP cleaning.</p>
 </div>
 <div>
-<strong style="color: var(--accent-gold);">Ultra-Wide Range:</strong>
+<strong style="color: var(--accent-gold-text);">Ultra-Wide Range:</strong>
 <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Covers 1,350 to 2,550 nm, capturing both primary and combination chemical overtones.</p>
 </div>
 <div>
-<strong style="color: var(--accent-gold);">Calibration Portability:</strong>
+<strong style="color: var(--accent-gold-text);">Calibration Portability:</strong>
 <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">High unit-to-unit instrument similarity enables direct calibration transfer between devices without recalibration.</p>
 </div>
 </div>
@@ -355,42 +356,42 @@ caliX Chemometrics Suite – Deep Dive
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_automl.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
 <h4 style="color: #ffffff;">AutoML Engine</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Automated model building that tests hundreds of preprocessing &amp; regression combinations, ranking results by cross-validation performance (RMSECV, R&sup2;, RPD).</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_outlier.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line><circle cx="12" cy="12" r="4"></circle></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line><circle cx="12" cy="12" r="4"></circle></svg></div>
 <h4 style="color: #ffffff;">Advanced Outlier Detection</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Mahalanobis distance, leverage/residual analysis, Hotelling's T&sup2;, and spectral residual methods to automatically flag and isolate anomalous samples.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_preprocessing.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Spectral Preprocessing</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">MSC, SNV, Savitzky-Golay derivatives (1st/2nd), Norris-Williams smoothing, detrending, and wavelength region selection (iPLS) &mdash; all visually configurable.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_regression.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
 <h4 style="color: #ffffff;">Regression Algorithms</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Partial Least Squares (PLS), Principal Component Regression (PCR), Multiple Linear Regression (MLR), and Support Vector Regression (SVR).</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_classification.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
 <h4 style="color: #ffffff;">Classification Models</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">PCA-based classification, SIMCA, and discriminant analysis for raw material identification and authentication applications.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_transfer.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
 <h4 style="color: #ffffff;">Calibration Transfer</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">One-click model deployment across all units. USTECH's high unit-to-unit instrument similarity means zero slope/bias correction is needed.</p>
@@ -486,42 +487,42 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_multi_analyzer.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
 <h4 style="color: #ffffff;">Multi-Analyzer Management</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Connect and manage multiple USTECH analyzers from a single ProChem instance. Monitor all measurement points across your facility from one dashboard.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_trending.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Real-Time Trending &amp; Visualization</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Live trend charts for all measured constituents with configurable alarm limits, moving averages, and SPC (Statistical Process Control) overlays.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">Automatic Health Monitoring</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Continuous self-diagnostics including lamp intensity tracking, reference scan validation, spectral noise monitoring, and automatic dual-lamp failover.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
 <h4 style="color: #ffffff;">Batch &amp; Continuous Mode</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Configure measurement schedules for batch processes (blenders, reactors) or continuous flow (conveyors, pipelines) with adjustable scan averaging.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_access.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">User Access Control</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Multi-level user management (Operator, Supervisor, Admin) with audit logging. 21 CFR Part 11 compliant electronic records for pharmaceutical applications.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
-<div class="tech-step-num" style="color: var(--accent-gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+<div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
 <h4 style="color: #ffffff;">Remote Access &amp; Monitoring</h4>
 </div>
 <p style="color: rgba(255,255,255,0.85);">Secure remote dashboard access via web browser. Monitor instrument health, review trends, and receive alarm notifications from anywhere.</p>
@@ -530,7 +531,7 @@ ProChem Process Automation Platform – Deep Dive
 </div>
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
-<h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Typical Use Case</h4>
+<h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Typical Use Case</h4>
 <p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">A feed mill installs a ProLine2550 on the mixer discharge conveyor. ProChem receives spectral scans every 3 seconds, predicts protein, moisture, and fat using cali<span class="calix-x" style="color: #38b6ff !important;">X</span>-built models, and sends the values via OPC UA to the Siemens S7-1500 PLC. The PLC automatically adjusts raw material dosing gates to keep protein within &plusmn;0.15% of the target specification &mdash; eliminating expensive protein give-away and preventing out-of-spec batches.</p>
 </div>
 <div style="text-align: center;">
@@ -543,7 +544,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="container" style="max-width: 800px; padding: 0 2rem;">
 <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--bg-primary); font-family: var(--font-title); letter-spacing: -0.7px;">Want to Optimize Your Production Lines?</h2>
 <p style="font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.9; line-height: 1.6;">
-Learn how our custom calibration methods and FT-NIR process analyzers can fit into your facility. You can explore <a href="products.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our product portfolio</a> to see our full line of devices and software, or browse <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">our contact details</a> to reach our sales engineers.
+Learn how our custom calibration methods and FT-NIR process analyzers can fit into your facility. You can explore <a href="products.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">our product portfolio</a> to see our full line of devices and software, or browse <a href="contact.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">our contact details</a> to reach our sales engineers.
 </p>
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
 <a href="products.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--accent-black); border-color: var(--bg-primary);">Browse Product Portfolio</a>
@@ -602,6 +603,6 @@ Learn how our custom calibration methods and FT-NIR process analyzers can fit in
             <p>Designed for scientific and industrial precision.</p>
         </div>
     </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

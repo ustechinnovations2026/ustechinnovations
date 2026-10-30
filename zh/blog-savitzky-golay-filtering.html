@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations 指南 - 了解预处理中的 Savitzky-Golay 过滤。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Savitzky-Golay 滤波对光谱究竟做了什么，导数为何能消除基线，窗口宽度和多项式阶数应如何选择，并附原始文献与后续文献。" name="description"/>
 <meta content="Savitzky-Golay 滤波器 NIR、光谱平滑预处理、导数光谱、NIR 数据预处理" name="keywords"/>
 <title>了解预处理中的 Savitzky-Golay 过滤 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-savitzky-golay-filtering.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-savitzky-golay-filtering.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-savitzky-golay-filtering.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "了解预处理中的 Savitzky-Golay 过滤",
-  "description": "USTECH Innovations 指南 - 了解预处理中的 Savitzky-Golay 过滤。",
+  "description": "Savitzky-Golay 滤波对光谱究竟做了什么，导数为何能消除基线，窗口宽度和多项式阶数应如何选择，并附原始文献与后续文献。",
   "url": "https://www.ustechinnovations.com/zh/blog-savitzky-golay-filtering.html",
   "datePublished": "2026-06-04",
-  "dateModified": "2026-06-04",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="了解预处理中的 Savitzky-Golay 过滤 | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations 指南 - 了解预处理中的 Savitzky-Golay 过滤。" property="og:description"/>
+<meta content="Savitzky-Golay 滤波对光谱究竟做了什么，导数为何能消除基线，窗口宽度和多项式阶数应如何选择，并附原始文献与后续文献。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-savitzky-golay-filtering.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-savitzky-golay-filtering.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="了解预处理中的 Savitzky-Golay 过滤 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="了解预处理中的 Savitzky-Golay 过滤 | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations 指南 - 了解预处理中的 Savitzky-Golay 过滤。" name="twitter:description"/>
+<meta content="Savitzky-Golay 滤波对光谱究竟做了什么，导数为何能消除基线，窗口宽度和多项式阶数应如何选择，并附原始文献与后续文献。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-savitzky-golay-filtering.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,81 +218,47 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="Spectroscopy Software Preprocessing Interfaces" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_spectral_math.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 04, 2026 — 4 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年6月4日 — 3 分钟阅读</span>
 <h1 class="blog-post-title">了解预处理中的 Savitzky-Golay 过滤</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">深入解释 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 内光谱数据集对齐的平滑算法、多项式阶数和导数数学。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Savitzky-Golay 滤波对光谱究竟做了什么，导数为何有助于处理基线和重叠谱带，窗口宽度和多项式阶数应如何选择 &mdash; 并附原始文献与后续文献。</p>
 </div>
 <div class="blog-post-content">
-<h2>预处理在化学计量学中的作用</h2>
-<p>近红外 (NIR) 光谱，特别是<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和药物光谱</a>，非常复杂，通常具有重叠吸收带、基线偏移和高频噪声的特征。在拟合定量校准模型（如 PLS 回归）之前，化学计量学家必须预处理原始光谱数据。目标是消除物理伪影（例如不同粒径的散射或光路长度变化引起的基线偏移），同时保留感兴趣的化学信号。</p>
-<p>在预处理工具库中的工具中，<strong>Savitzky-Golay (SG) 算法</strong>是平滑和微分的行业标准。它由 Abraham Savitzky 和 ​​Marcel J. E. Golay 于 1964 年开发，至今仍然是现代化学计量数据管道的基础。</p>
-<blockquote>“与模糊光谱特征的标准移动平均滤波器不同，Savitzky-Golay 滤波通过将局部低次多项式拟合到数据来保留峰值高度、宽度和局部形状。”</blockquote>
-<h2>Savitzky-Golay 算法的工作原理</h2>
-<p>核心概念是在频谱上滑动固定数量数据点（$w$，必须是奇数）的窗口。在每个步骤中，使用线性最小二乘法将 $k$ 次数的多项式（通常 $k = 2$ 或 $3$，表示二次或三次模型）拟合到窗口内的数据点。窗口中心点处的拟合多项式的值成为该波长的新的平滑值。</p>
-<p>由于最小二乘拟合系数仅取决于窗口大小 $w$ 和多项式次数 $k$，因此可以将它们预先计算为固定权重（称为卷积）。这使得 SG 滤波器的计算速度极快，即使对于数千个长光谱也是如此。</p>
-<h2>导数和基线校正</h2>
-<p>Savitzky-Golay 方法最强大的功能之一是它能够在平滑过程中计算数值导数。导数在校正基线偏移和解决重叠峰方面非常有效：</p>
+<h2>光谱为何需要预处理</h2>
+<p>过程样品的近红外光谱在化学吸收信号之上还叠加着随样品而变的物理效应：取决于粒径和堆积状态的光散射、加性的基线偏移，以及有效光程长度的乘性变化 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。在漫反射测量中这些效应主导着光谱方差 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>，因此在拟合 PLS 回归等定量模型之前，需要通过预处理在保留化学信息的同时将其去除。Rinnan 等人将常用的 NIR 预处理方法分为两类，即散射校正（MSC、SNV、归一化）和光谱导数，并指出 Savitzky-Golay 导数是后者中应用最广的方法之一 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。</p>
+<h2>Savitzky-Golay 滤波做了什么</h2>
+<p>Savitzky 与 Golay 于 1964 年表明，对移动窗口内的数据点用最小二乘法拟合低阶多项式并取该多项式在窗口中心的值，等价于用一组固定的整数权重对数据作卷积；他们为 5 至 25 点的窗口以及二次/三次和四次/五次多项式列出了平滑和求导两种用途的权重表 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。原始表格中的若干错误在后来的论文中得到更正 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>，Gorry 则给出了计算窗口内每一位置处权重的通用方法，从而也解决了光谱两端首尾数据点丢失的问题 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</p>
+<p>由此得出两点结论。其一，由于权重只取决于窗口宽度和多项式阶数，该滤波器是一种固定的有限冲激响应运算，计算代价很低 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。其二，与同样长度的移动平均相比，Savitzky-Golay 滤波能更好地保留峰高和峰宽，代价是降噪能力略弱 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。在经典表述中，窗口包含奇数个点，即 <em>2m&nbsp;+&nbsp;1</em>，使其以待估计的点为中心，且数据必须等间距 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<h2>导数、基线与重叠谱带</h2>
+<p>同一最小二乘拟合还能给出光谱的导数：拟合多项式在窗口中心的一阶和二阶导数同样是以固定权重进行的卷积 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。使用导数是因为它所去除的和所揭示的内容 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>：</p>
 <ul>
-<li><strong>一阶导数（SG 1st）：</strong>删除恒定的基线偏移（沿 Y 轴移动）并突出显示斜率的变化。</li>
-<li><strong>二阶导数（SG 2nd）：</strong>消除线性基线漂移（沿频谱的斜率）并隔离重叠特征。在二阶导数光谱中，吸收峰显示为向下的波谷，使它们更容易识别。</li>
+<li><strong>一阶导数：</strong>消除恒定（加性）基线偏移，并显示光谱的局部斜率。</li>
+<li><strong>二阶导数：</strong>同时消除恒定偏移和线性基线斜率；吸收峰极大值表现为负向谱带，有助于分离重叠的谱峰特征 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</li>
 </ul>
-<h2>参数选择指南</h2>
-<p>设置正确的参数对于防止平滑不足（保留噪声）或过度平滑（破坏真实峰值分辨率）至关重要。下表概述了基于光谱仪分辨率的标准建议：</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>参数设置</th>
-<th>窗口大小（$w$）</th>
-<th>多项式阶数 ($k$)</th>
-<th>推荐应用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>温和平滑</strong></td>
-<td>5或7分</td>
-<td>2（二次）</td>
-<td>高分辨率气相NIR，低噪音系统</td>
-</tr>
-<tr>
-<td><strong>标准基线校正</strong></td>
-<td>15分</td>
-<td>2（二次，一阶导数）</td>
-<td>典型的液体化学过程，粉末中的水分</td>
-</tr>
-<tr>
-<td><strong>深深的分离</strong></td>
-<td>25分</td>
-<td>3（三次，二阶导数）</td>
-<td>高度异质固体（饲料粉、饲料作物）</td>
-</tr>
-</tbody>
-</table>
-<h2>在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中实施 SG</h2>
-<p>在<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>套件软件</a>预处理管道中，SG 算法在 AutoML 模型验证期间自动应用。用户可以在预处理编辑器中配置窗口大小和导数阶数，并在测试不同设置时实时观察交叉验证错误 (RMSECV) 更新。这种交互式反馈循环可确保您选择能够最大限度提高模型精度和单位间可转移性的数学预处理参数。</p>
+<p>求导会放大高频噪声，因此导数与平滑在同一步骤中一起计算，窗口宽度也因此至关重要。Luo 等人表明，Savitzky-Golay 微分器可获得的对比度和分辨率取决于谱峰特征宽度与滤波器长度之比，长滤波器不能很好地保留导数中的细小细节 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</p>
+<h2>窗口宽度与多项式阶数的选择</h2>
+<p>不存在通用的设置。Zimmermann 与 Kohler 在模拟和实测红外数据上使用 PLS 模型开展研究，发现最优窗口取决于所定量的组分，光谱噪声水平可为窗口宽度提供粗略参考，窗口和多项式阶数都应针对每个应用分别优化，而不是照搬默认值 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。因此，实用的做法是把窗口宽度、多项式阶数和导数阶数当作模型超参数，通过交叉验证误差比较候选设置，并检查所选导数不会抹去模型所依赖的窄谱带 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。需要注意，对于平滑和偶数阶导数，二次和三次多项式给出的 Savitzky-Golay 权重完全相同，因此对二阶导数而言，“三次”设置相比“二次”并无任何额外作用 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中的 Savitzky-Golay</h2>
+<p>在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 软件套件</a>中，Savitzky-Golay 平滑与导数滤波器在模型开发的预处理步骤中进行配置：在此设定窗口宽度、多项式阶数和导数阶数，并通过交叉验证误差比较候选设置，所遵循的即 Zimmermann 与 Kohler 所述的方法 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</p>
 <div class="blog-post-references">
-<h3>参考</h3>
+<h3>参考文献</h3>
 <ul>
-<li>Savitzky, A. 和 Golay, M. J. E. (1964)。 “通过简化的最小二乘法对数据进行平滑和微分”<em>分析化学</em>，36（8），1627-1639。</li>
-<li>“使用多项式导数在 NIR 光谱中进行波长选择和噪声过滤”<em>化学计量学和智能实验室系统</em>，2019。</li>
-<li>“工业过程光谱仪的基线校正协议”<em>应用光谱学评论</em>，2021 年。</li>
+<li id="ref-1">[1] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-2">[2] Barnes, R.J., Dhanoa, M.S., Lister, S.J. (1989). Standard Normal Variate Transformation and De-trending of Near-Infrared Diffuse Reflectance Spectra. <em>Applied Spectroscopy</em>, 43(5), 772&ndash;777. <a href="https://doi.org/10.1366/0003702894202201" target="_blank" rel="noopener">doi:10.1366/0003702894202201</a></li>
+<li id="ref-3">[3] Savitzky, A., Golay, M.J.E. (1964). Smoothing and Differentiation of Data by Simplified Least Squares Procedures. <em>Analytical Chemistry</em>, 36(8), 1627&ndash;1639. <a href="https://doi.org/10.1021/ac60214a047" target="_blank" rel="noopener">doi:10.1021/ac60214a047</a></li>
+<li id="ref-4">[4] Steinier, J., Termonia, Y., Deltour, J. (1972). Smoothing and differentiation of data by simplified least square procedure. <em>Analytical Chemistry</em>, 44(11), 1906&ndash;1909. <a href="https://doi.org/10.1021/ac60319a045" target="_blank" rel="noopener">doi:10.1021/ac60319a045</a></li>
+<li id="ref-5">[5] Madden, H.H. (1978). Comments on the Savitzky-Golay convolution method for least-squares-fit smoothing and differentiation of digital data. <em>Analytical Chemistry</em>, 50(9), 1383&ndash;1386. <a href="https://doi.org/10.1021/ac50031a048" target="_blank" rel="noopener">doi:10.1021/ac50031a048</a></li>
+<li id="ref-6">[6] Gorry, P.A. (1990). General least-squares smoothing and differentiation by the convolution (Savitzky-Golay) method. <em>Analytical Chemistry</em>, 62(6), 570&ndash;573. <a href="https://doi.org/10.1021/ac00205a007" target="_blank" rel="noopener">doi:10.1021/ac00205a007</a></li>
+<li id="ref-7">[7] Schafer, R.W. (2011). What Is a Savitzky-Golay Filter? [Lecture Notes]. <em>IEEE Signal Processing Magazine</em>, 28(4), 111&ndash;117. <a href="https://doi.org/10.1109/MSP.2011.941097" target="_blank" rel="noopener">doi:10.1109/MSP.2011.941097</a></li>
+<li id="ref-8">[8] Zimmermann, B., Kohler, A. (2013). Optimizing Savitzky-Golay Parameters for Improving Spectral Resolution and Quantification in Infrared Spectroscopy. <em>Applied Spectroscopy</em>, 67(8), 892&ndash;902. <a href="https://doi.org/10.1366/12-06723" target="_blank" rel="noopener">doi:10.1366/12-06723</a></li>
+<li id="ref-9">[9] Luo, J., Ying, K., He, P., Bai, J. (2005). Properties of Savitzky&ndash;Golay digital differentiators. <em>Digital Signal Processing</em>, 15(2), 122&ndash;136. <a href="https://doi.org/10.1016/j.dsp.2004.09.008" target="_blank" rel="noopener">doi:10.1016/j.dsp.2004.09.008</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、校准数据集和仪器参数。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,20 +268,20 @@
 <div class="card" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="活性药物混合中的混合均匀性验证" decoding="async" loading="lazy" src="../images/blog_pharma_blending.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">案例研究</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-blend-uniformity-pharma.html" style="color: var(--accent-black); text-decoration: none;">活性药物混合中的混合均匀性验证</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">符合 FDA 的工厂如何使用动态 RSD 值来验证干粉均匀性，而无需停止仓式搅拌机。</p>
-<a class="btn-text" href="blog-blend-uniformity-pharma.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读案例研究</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">为何混合均匀度是受法规监管的过程中属性，取样器取样能告诉你什么、不能告诉你什么，以及文献对作为 PAT 工具的粉末混合在线 NIR 监测表明了什么。</p>
+<a class="btn-text" href="blog-blend-uniformity-pharma.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
 </div>
 </div>
 <!-- MEMS Durability Card -->
 <div class="card" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="MEMS 梳齿驱动器在工业环境中的机械耐久性" decoding="async" loading="lazy" src="../images/blog_mems_durability.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">白皮书</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-mems-durability-industrial.html" style="color: var(--accent-black); text-decoration: none;">MEMS 梳齿驱动器在工业环境中的机械耐久性</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">记录 USTECH 的硅芯片级梳状执行器压力测试和在线生产安装的抗冲击限制。</p>
-<a class="btn-text" href="blog-mems-durability-industrial.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读白皮书</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">可靠性文献对硅弹簧和梳齿驱动器在冲击、振动、温度循环和疲劳条件下的表现有何结论，以及军用和 IEC 环境试验方法实际规定了什么。</p>
+<a class="btn-text" href="blog-mems-durability-industrial.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
 </div>
 </div>
 </div>
@@ -366,6 +339,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

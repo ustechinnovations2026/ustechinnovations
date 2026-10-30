@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations 指南 - caliX 套件中的 PLS 回归简介。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。" name="description"/>
 <meta content="PLS 回归 NIR、caliX 套件校准、偏最小二乘光谱、化学计量学模型构建" name="keywords"/>
 <title>caliX 套件中的 PLS 回归简介 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-pls-regression-calix.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pls-regression-calix.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "caliX 套件中的 PLS 回归简介",
-  "description": "USTECH Innovations 指南 - caliX 套件中的 PLS 回归简介。",
+  "description": "从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。",
   "url": "https://www.ustechinnovations.com/zh/blog-pls-regression-calix.html",
   "datePublished": "2026-05-12",
-  "dateModified": "2026-05-12",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="caliX 套件中的 PLS 回归简介 | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations 指南 - caliX 套件中的 PLS 回归简介。" property="og:description"/>
+<meta content="从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-pls-regression-calix.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="caliX 套件中的 PLS 回归简介 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="caliX 套件中的 PLS 回归简介 | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations 指南 - caliX 套件中的 PLS 回归简介。" name="twitter:description"/>
+<meta content="从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-regression-calix.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -209,75 +216,58 @@
 <main class="main-content">
 <article class="blog-post-container">
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
-<img alt="Spectroscopy Calibration Software cali<span class="calix-x">X</span> Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
+<img alt="Spectroscopy Calibration Software caliX Suite" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_regression.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Technical Guide — May 12, 2026 — 4 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年5月12日 — 7 分钟阅读</span>
 <h1 class="blog-post-title">cali<span class="calix-x">X</span> 套件中的 PLS 回归简介</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">使用 USTECH 的 AutoML 引擎开发、预处理和验证定性校准模型的分步指南。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">从实践者层面逐步讲解 PLS 回归定标 &mdash; 划分数据，通过验证选择预处理和潜变量数，解读 RMSECV、RMSEP、偏差和异常值诊断，以及模型投入使用后的维护 &mdash; 附每一步背后的统计学与化学计量学文献，以及 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中的相应步骤。</p>
 </div>
 <div class="blog-post-content">
-<h2>什么是偏最小二乘 (PLS) 回归？</h2>
-<p>近红外 (NIR) 光谱由数千个单独的波长点组成。由于近红外光吸收表现为宽广、重叠的振动泛音而不是尖锐的峰值，因此单个波长很少足以预测化学浓度。我们需要多元统计，特别是对于复杂的统计<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和制药应用</a>.</p>
-<p><strong>偏最小二乘 (PLS) 回归</strong>是金标准化学计量学算法。它将数千个高度共线性的光谱变量减少为几个正交因子（称为<strong>潜在变量 (LV)</strong>或主成分），最大化光谱数据和目标实验室参考浓度之间的协方差。</p>
-<p>开发模型过去需要在 MATLAB 或 R 中手动编写脚本。在 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML Suite</strong> 内（构建高度准确的<a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>AutoML 模型</a>），这个工作流程被简化为五个清晰的阶段。</p>
----
-<h2>第 1 步：数据对齐和导入</h2>
-<p>首先，准备一个校准电子表格（CSV 或 Excel），将您的光谱文件名与其湿化学实验室结果相匹配。cali<span class="calix-x" style="color: #38b6ff !important;">X</span>支持直接导入原始光谱仪数据库格式和标准光谱交换格式（如 JCAMP-DX）。</p>
-<p>导入后，cali<span class="calix-x">X</span>自动分割您的数据集：<strong>75% 用于校准和交叉验证</strong>（训练模型）和<strong>25% 作为独立验证集</strong>（完全分开以测试最终的预测性能）。</p>
-<h2>第 2 步：选择光谱预处理</h2>
-<p>原始 NIR 光信号包含由颗粒尺寸变化、样品填充密度或探头距离引起的物理散射噪声。光谱预处理在数学上消除了这些物理基线，因此 PLS 模型纯粹关注化学吸收。</p>
-<p>在cali<span class="calix-x" style="color: #38b6ff !important;">X</span>管道，您可以应用并链接标准预处理步骤：</p>
+<h2>什么是 PLS 定标，为何每一步都需要验证</h2>
+<p>偏最小二乘回归通过少量潜变量将光谱矩阵 <em>X</em> 与参考值 <em>Y</em> 联系起来，它之所以在近红外定标中占有一席之地，是因为它能够处理大量含噪声、共线甚至不完整的变量 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。Geladi 和 Kowalski 的教程阐明了普通回归在此类数据上失效之处，将 PLS 作为解决方案加以发展，并给出了算法及实际使用提示 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。方法本身在配套文章 <a href="blog-pls-calibration-explained.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">NIR 定标如何工作：PLS 详解</a> 中已有说明；本指南讨论的是实践者在建立定标过程中所做的决策。其中每一项 &mdash; 样品如何划分、采用何种预处理、保留多少潜变量、剔除哪些样品 &mdash; 都会改变性能指标，Westad 和 Marini 表明，模型验证所处的层次既影响其报告的误差，也影响所选的维数 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<h2>划分数据</h2>
+<p>Snee 关于回归验证的综述得出结论：在难以收集新数据时，数据划分 &mdash; 用一部分数据估计模型，用其余部分衡量其预测准确度 &mdash; 是验证模型的有效方法；并建议在没有可作为划分依据的明显变量（如时间）时，采用 Kennard 的 DUPLEX 算法进行划分 <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。与之相关的 Kennard&ndash;Stone 方法依次选取样本点，使每一步都均匀覆盖实验区域 <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>，因此被广泛用于挑选覆盖光谱空间的定标样品。纯随机划分并非天然可靠：Westad 和 Marini 警告说，只有在样品不存在系统性分层时，反复将数据集随机划分为定标集和测试集才是合理的；他们还区分了若干验证层次 &mdash; 重复性、再现性、仪器变异和原料变异 &mdash; 若要让误差估计对未来样品有所指示，划分就应遵循这些层次 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<p>保留集的大小同样是一项决策，而非惯例。在一项基于整株玉米 NIR 光谱的 Monte Carlo 研究中，Martens 和 Dardenne 从包含 922 个样品的数据库中抽取 40 至 120 个样品组成的小型定标集，发现从本已很小的样品池中再留出独立测试集会降低预测性能，而完全交叉验证给出的预测更好，且只略微偏乐观 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。实际的解读是：当样品充足，或测试集确实代表一个较晚或不同的总体时，单独的测试集最有价值；样品较少时，交叉验证能更充分地利用它们 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</p>
+<h2>选择预处理</h2>
+<p>Rinnan 等将常用的 NIR 预处理方法分为散射校正（MSC、SNV、归一化）和光谱导数两类，并在真实数据上比较了它们的效果 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>；其原理分别见 <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC/SNV 指南</a> 和 <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay 指南</a>。就定标工作流程而言，要点在于程序：预处理设置是模型的超参数，因此候选的预处理流程应与潜变量数采用相同的验证设计进行比较，绝不能依据定标拟合结果。Wiklund 等指出，他们的成分选择检验同时也可作为数据需要预处理的指示，当原始光谱模型所需成分远多于导数模型时，这是一项有用的交叉核对 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</p>
+<h2>潜变量数取多少</h2>
+<p>潜变量数是 PLS 中最重要的单项设置：过少会使化学信息得不到建模，过多则会拟合在新样品中不会重现的噪声 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。标准工具是交叉验证，其一般形式由 Stone 提出，用于预测变量的选择与评估 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>；在 PLS 中，每次留出部分数据重新拟合模型，并将交叉验证误差对成分数作图 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。惯常的规则是在该曲线最小值处或其稍前处停止，但分段方式至关重要。Shao 证明，留一法交叉验证在选择预测能力最佳的模型时是渐近不一致的，而留出更大的观测块可以纠正这种不一致 <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>；在实践中，这意味着应优先采用分段或分组交叉验证，并将重复测量和同一批次的样品置于同一分段中，而不是逐条留出单个光谱。Wiklund 等提出了一种无需剔除任何数据的互补性随机化检验，在已知维数的模拟数据和十个真实数据集上，该检验与其他选择规则结合使用时效果良好 <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</p>
+<h2>解读诊断指标</h2>
+<p>每份模型报告中都会出现三个误差指标。定标误差（RMSEC）描述拟合程度，总是最小；交叉验证误差（RMSECV）估计定标总体内部的预测能力；独立集上的预测误差（RMSEP）是唯一检验模型从未见过的样品的指标，而该集合的验证层次决定了它的含义 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。ISO 12099 列出了性能测量的统计量，包括预测标准误差和偏差，并在其资料性附录中给出了异常值和控制图的示例 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。RMSECV 与 RMSEP 之间差距较大，或测试集上存在偏差，通常意味着测试样品与定标总体存在系统性差异，而不是模型本身有误 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<p>样品诊断使整体情况趋于完整。Wold 等综述了标准的 PLS 诊断 &mdash; 得分、载荷、残差以及到模型的距离 &mdash; 用于找出在光谱空间中远离其他样品或拟合较差的样品 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。Hubert 和 Vanden Branden 指出，常用的 SIMPLS 算法建立在经验交叉协方差矩阵和普通最小二乘之上，因此其结果会受到异常观测的影响；他们提出了稳健变体，给出稳健的 RMSECV 和 RMSEP 值，以及用于可视化和分类异常值的诊断图 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。无论使用何种工具，只有在有书面记录的理由时才应从定标中剔除样品：参考值错误、属于其他物料的光谱或测量故障。以下三个习惯可确保诊断的可信度：</p>
 <ul>
-<li><strong>标准正态变量 (SNV)：</strong>对每个单独的光谱进行居中和缩放以消除乘法缩放和偏移变化。</li>
-<li><strong>乘性散射校正 (MSC)：</strong>将每个光谱与平均光谱进行回归，以隔离和消除散射斜率。</li>
-<li><strong>Savitzky-Golay 衍生物（一阶或二阶）：</strong>计算局部多项式拟合以获取导数，解决重叠带并消除基线偏移。</li>
+<li><strong>先确定验证设计。</strong>在进行任何预处理或成分扫描之前，先固定划分方式和交叉验证分段，并对每个候选方案采用相同的设计，以保证比较公平 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</li>
+<li><strong>报告 RMSECV 和 RMSEP 时一并说明其验证层次。</strong>基于同一样品重复光谱估计的误差，与基于后续生产批次估计的误差不可相提并论 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</li>
+<li><strong>将剔除异常值视为一项模型决策。</strong>记录剔除了哪些样品及其原因；残差或杠杆值标记是进行调查的提示，而不是删除的许可 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。</li>
 </ul>
-<p><em>提示：cali<span class="calix-x" style="color: #38b6ff !important;">X</span>的 AutoML 引擎将自动对数十种预处理组合运行网格搜索，以建议矩阵的最佳序列。</em></p>
-<h2>第 3 步：选择潜在变量 (LV)</h2>
-<p>选择正确数量的潜在变量对于防止<strong>过度拟合</strong>至关重要。如果您选择的 LV 太少，您的模型就会拟合不足并错过化学相关性。如果您选择太多 LV，您的模型将开始拟合随机光谱噪声，这在扫描新样本时将会失败。</p>
-<p>看看<strong>交叉验证的均方根误差 (RMSECV)</strong>曲线。选择曲线“弯头”处的 LV 数量，此时误差不再显着下降。超出这一点添加更多组件只会产生噪音。</p>
-<pre>
-# Sample Model Statistics Output in cali<span class="calix-x">X</span>
----------------------------------------------
-Target Parameter: Crude Protein
-Preprocessing: SNV + S-G 1st Derivative (15pt)
-Selected Latent Variables (LVs): 6
-Calibration R²: 0.982
-Calibration RMSEC: 0.09%
-Cross-Validation RMSECV: 0.11%
-Validation RMSEP: 0.12%
-Bias: -0.01%
----------------------------------------------
-</pre>
-<h2>第 4 步：独立验证</h2>
-<p>要使模型符合工厂部署的条件，请在 25% 独立测试集上运行预测。这<strong>预测均方根误差 (RMSEP)</strong>测量在线使用传感器时您将看到的真实精度。稳健的模型应该显示非常接近交叉验证错误 (RMSECV) 的 RMSEP。</p>
-<h2>第 5 步：导出到 ProChem</h2>
-<p>一旦您对模型性能感到满意，请单击<strong>《出口模型包》</strong>。这会生成一个安全的`.cali<span class="calix-x">X</span>` 模型文件。直接加载该文件到<strong>ProChem 过程控制软件</strong>在您的生产线上。 ProChem 将自动将预先配置的预处理步骤应用于在线光谱并实时预测浓度，将结果直接发送到您的工厂 PLC。</p>
-<h2>概括</h2>
-<p>通过将严格的 PLS 回归逻辑与自动预处理优化相结合，cali<span class="calix-x">X</span>Suite 使质量控制工程师能够在不牺牲科学深度的情况下使用化学计量学。您在第一天就可以获得可靠、强大的模型来保护您的 B2B 利润。</p>
+<h2>让模型持续有效</h2>
+<p>定标的验证仅针对其建立时所依据的样品总体和仪器状态。ASTM E1655 规定了红外定标数据采集和处理的规范，描述了定标技术和模型性能验证准则，假定分析仪在定标和验证时均在制造商规定的条件下运行，并提供了一份可据以审查多元定标的问卷 <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。ISO 12099 补充了操作层面的内容：检查仪器稳定性，持续检查定标性能，并以控制图作为监控工具 <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。Westad 和 Marini 强调，模型预测未来样品的稳健性比任何单项性能指标都更重要 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>；在实践中，这意味着对生产样品进行例行参考核查，绘制偏差和预测误差的控制图，并在出现新原料、新季节或新工艺条件时有计划地更新定标集。</p>
+<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中的工作流程</h2>
+<p><a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件</a> 将上述步骤组织为面向 NIR、FTIR 和 Raman 光谱的八模块工作流程。数据模块从 Excel 或 CSV 文件导入光谱和参考值，并支持利用 PCA 和 PLS 杠杆值指标进行数据清理；预处理步骤提供 SNV、MSC、去趋势、自动标度和 Savitzky-Golay 导数 <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>；手动和自动回归模块建立 PLS、稳健 PLS、PCR 和正则化模型，潜变量最大数目和交叉验证折数由用户设定，自动模式则遍历各种预处理流程组合，并标出验证曲线的拐点 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。异常值诊断包括 Hotelling T&sup2; 和 Q 残差、PLS 杠杆值以及 Mahalanobis 距离 <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>；预测模块将完成的模型应用于未知样品；数据传递和模型转换模块负责仪器标准化，并导出模型以通过 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 部署。对于特定产品，哪种划分方式、预处理和成分数是合适的，需要用您自己的样品和参考分析通过可行性研究来确定。</p>
 <div class="blog-post-references">
-<h3>参考</h3>
+<h3>参考文献</h3>
 <ul>
-<li>Martens, H., &amp; N-​​s, T. (1989)。<em>多变量校准</em>。约翰·威利父子。</li>
-<li>“近红外光谱的预处理技术：工业从业者化学计量指南”<em>分析化学学报</em>，2022 年。</li>
-<li>Geladi, P. 和 Kowalski, B. R. (1986)。 “偏最小二乘回归：教程”<em>分析化学学报</em>，185，1-17。</li>
+<li id="ref-1">[1] Wold, S., Sj&ouml;str&ouml;m, M., Eriksson, L. (2001). PLS-regression: a basic tool of chemometrics. <em>Chemometrics and Intelligent Laboratory Systems</em>, 58(2), 109&ndash;130. <a href="https://doi.org/10.1016/S0169-7439(01)00155-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(01)00155-1</a></li>
+<li id="ref-2">[2] Geladi, P., Kowalski, B.R. (1986). Partial least-squares regression: a tutorial. <em>Analytica Chimica Acta</em>, 185, 1&ndash;17. <a href="https://doi.org/10.1016/0003-2670(86)80028-9" target="_blank" rel="noopener">doi:10.1016/0003-2670(86)80028-9</a></li>
+<li id="ref-3">[3] Westad, F., Marini, F. (2015). Validation of chemometric models &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 893, 14&ndash;24. <a href="https://doi.org/10.1016/j.aca.2015.06.056" target="_blank" rel="noopener">doi:10.1016/j.aca.2015.06.056</a></li>
+<li id="ref-4">[4] Snee, R.D. (1977). Validation of Regression Models: Methods and Examples. <em>Technometrics</em>, 19(4), 415&ndash;428. <a href="https://doi.org/10.1080/00401706.1977.10489581" target="_blank" rel="noopener">doi:10.1080/00401706.1977.10489581</a></li>
+<li id="ref-5">[5] Kennard, R.W., Stone, L.A. (1969). Computer Aided Design of Experiments. <em>Technometrics</em>, 11(1), 137&ndash;148. <a href="https://doi.org/10.1080/00401706.1969.10490666" target="_blank" rel="noopener">doi:10.1080/00401706.1969.10490666</a></li>
+<li id="ref-6">[6] Martens, H.A., Dardenne, P. (1998). Validation and verification of regression in small data sets. <em>Chemometrics and Intelligent Laboratory Systems</em>, 44(1&ndash;2), 99&ndash;121. <a href="https://doi.org/10.1016/S0169-7439(98)00167-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(98)00167-1</a></li>
+<li id="ref-7">[7] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-8">[8] Wiklund, S., Nilsson, D., Eriksson, L., Sj&ouml;str&ouml;m, M., Wold, S., Faber, K. (2007). A randomization test for PLS component selection. <em>Journal of Chemometrics</em>, 21(10&ndash;11), 427&ndash;439. <a href="https://doi.org/10.1002/cem.1086" target="_blank" rel="noopener">doi:10.1002/cem.1086</a></li>
+<li id="ref-9">[9] Stone, M. (1974). Cross-Validatory Choice and Assessment of Statistical Predictions. <em>Journal of the Royal Statistical Society: Series B (Methodological)</em>, 36(2), 111&ndash;133. <a href="https://doi.org/10.1111/j.2517-6161.1974.tb00994.x" target="_blank" rel="noopener">doi:10.1111/j.2517-6161.1974.tb00994.x</a></li>
+<li id="ref-10">[10] Shao, J. (1993). Linear Model Selection by Cross-Validation. <em>Journal of the American Statistical Association</em>, 88(422), 486&ndash;494. <a href="https://doi.org/10.1080/01621459.1993.10476299" target="_blank" rel="noopener">doi:10.1080/01621459.1993.10476299</a></li>
+<li id="ref-11">[11] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-12">[12] Hubert, M., Vanden Branden, K. (2003). Robust methods for partial least squares regression. <em>Journal of Chemometrics</em>, 17(10), 537&ndash;549. <a href="https://doi.org/10.1002/cem.822" target="_blank" rel="noopener">doi:10.1002/cem.822</a></li>
+<li id="ref-13">[13] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://www.astm.org/e1655-17r24.html" target="_blank" rel="noopener">astm.org/e1655-17r24.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、校准数据集和仪器参数。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -285,22 +275,22 @@ Bias: -0.01%
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- Calibration Transfer Card -->
 <div class="card" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="MEMS 光谱仪上的校准传输可行性" decoding="async" loading="lazy" src="../images/blog_mems_sensor.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="NIR光谱仪之间的定标转移：方法与可行性" decoding="async" loading="lazy" src="../images/blog_nir_vs_ftnir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">白皮书</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">MEMS 光谱仪上的校准传输可行性</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">讨论硅光刻如何在无需单位标准化的情况下实现直接校准的可移植性。</p>
-<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读白皮书</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">NIR光谱仪之间的定标转移：方法与可行性</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">为什么在一台光谱仪上建立的 NIR 定标很少能原样运行于另一台仪器，文献中描述了哪些标准化与模型调整方法，以及如何评估某一仪器系列的传递可行性。</p>
+<a class="btn-text" href="blog-calibration-transfer.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a>
 </div>
 </div>
 <!-- Cattle Feed Waste Card -->
 <div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="减少牛饲料生产中的原料浪费" decoding="async" loading="lazy" src="../images/blog_cattle_feed.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">案例研究</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">减少牛饲料生产中的原料浪费</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">一项统计研究表明，通过部署内联 NIR 传感器，平均产品产量可提高 1.2%。</p>
-<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读案例研究</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">为什么牛饲料要针对原料波动进行超量配方，文献对这种波动来源有何论述，以及在原料入厂和混合机处进行 NIR 检测如何缩小安全余量。</p>
+<a class="btn-text" href="blog-cattle-feed-waste.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a>
 </div>
 </div>
 </div>
@@ -358,6 +348,6 @@ Bias: -0.01%
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

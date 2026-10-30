@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Guía USTECH Innovations: comprensión del filtrado Savitzky-Golay en el preprocesamiento." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Qué hace realmente el filtro de Savitzky-Golay con un espectro, por qué las derivadas eliminan las líneas base y cómo deben elegirse el ancho de ventana y el grado del polinomio, con la literatura original y la posterior." name="description"/>
 <meta content="Savitzky-Golay filtro NIR, preprocesamiento de suavizado espectral, espectroscopia derivada, preprocesamiento de datos NIR" name="keywords"/>
 <title>Comprender el filtrado Savitzky-Golay en el preprocesamiento | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/es/blog-savitzky-golay-filtering.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-savitzky-golay-filtering.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-savitzky-golay-filtering.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "es",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "es",
   "headline": "Comprender el filtrado Savitzky-Golay en el preprocesamiento",
-  "description": "Guía USTECH Innovations: comprensión del filtrado Savitzky-Golay en el preprocesamiento.",
+  "description": "Qué hace realmente el filtro de Savitzky-Golay con un espectro, por qué las derivadas eliminan las líneas base y cómo deben elegirse el ancho de ventana y el grado del polinomio, con la literatura original y la posterior.",
   "url": "https://www.ustechinnovations.com/es/blog-savitzky-golay-filtering.html",
   "datePublished": "2026-06-04",
-  "dateModified": "2026-06-04",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Comprender el filtrado Savitzky-Golay en el preprocesamiento | USTECH Innovations" property="og:title"/>
-<meta content="Guía USTECH Innovations: comprensión del filtrado Savitzky-Golay en el preprocesamiento." property="og:description"/>
+<meta content="Qué hace realmente el filtro de Savitzky-Golay con un espectro, por qué las derivadas eliminan las líneas base y cómo deben elegirse el ancho de ventana y el grado del polinomio, con la literatura original y la posterior." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/es/blog-savitzky-golay-filtering.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-savitzky-golay-filtering.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Comprender el filtrado Savitzky-Golay en el preprocesamiento | USTECH Innovations" property="og:image:alt"/>
 <meta content="es_ES" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Comprender el filtrado Savitzky-Golay en el preprocesamiento | USTECH Innovations" name="twitter:title"/>
-<meta content="Guía USTECH Innovations: comprensión del filtrado Savitzky-Golay en el preprocesamiento." name="twitter:description"/>
+<meta content="Qué hace realmente el filtro de Savitzky-Golay con un espectro, por qué las derivadas eliminan las líneas base y cómo deben elegirse el ancho de ventana y el grado del polinomio, con la literatura original y la posterior." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-savitzky-golay-filtering.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,81 +218,47 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Volver a Todos los Blogs y Publicaciones</a>
 <img alt="Spectroscopy Software Preprocessing Interfaces" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_spectral_math.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 04, 2026 — 4 min de lectura</span>
+<span class="blog-post-meta">Guía — 4 de junio de 2026 — 3 min de lectura</span>
 <h1 class="blog-post-title">Comprender el filtrado Savitzky-Golay en el preprocesamiento</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Una inmersión profunda que explica algoritmos de suavizado, órdenes polinomiales y matemáticas derivadas para la alineación de conjuntos de datos espectrales dentro de cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Qué hace realmente el filtro de Savitzky-Golay con un espectro, por qué las derivadas ayudan con las líneas base y las bandas solapadas, y cómo deben elegirse el ancho de ventana y el grado del polinomio &mdash; con la literatura original y la posterior.</p>
 </div>
 <div class="blog-post-content">
-<h2>El papel del preprocesamiento en quimiometría</h2>
-<p>Espectros de infrarrojo cercano (NIR), particularmente <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">espectros químicos y farmacéuticos</a>, son muy complejos y a menudo se caracterizan por bandas de absorción superpuestas, desplazamientos de la línea base y ruido de alta frecuencia. Antes de ajustar modelos de calibración cuantitativos (como la regresión PLS), los quimiometristas deben preprocesar los datos espectrales sin procesar. El objetivo es eliminar los artefactos físicos, como la dispersión de diferentes tamaños de partículas o los cambios en la línea de base debido a cambios en la longitud del camino de la luz, preservando al mismo tiempo las señales químicas de interés.</p>
-<p>Entre las herramientas del arsenal de preprocesamiento, el algoritmo <strong>Savitzky-Golay (SG)</strong> es el estándar de la industria para el suavizado y la diferenciación. Desarrollado en 1964 por Abraham Savitzky y Marcel J. E. Golay, sigue siendo la base de los sistemas de datos quimiométricos modernos.</p>
-<blockquote>"A diferencia de los filtros de promedio móvil estándar que difuminan las características espectrales, el filtrado Savitzky-Golay preserva las alturas, anchos y formas locales de los picos ajustando polinomios locales de bajo grado a los datos".</blockquote>
-<h2>Cómo funciona el algoritmo Savitzky-Golay</h2>
-<p>El concepto central es deslizar una ventana de un número fijo de puntos de datos ($w$, que debe ser un número entero impar) a través del espectro. En cada paso, se ajusta un polinomio de grado $k$ (normalmente $k = 2$ o $3$, que representa modelos cuadráticos o cúbicos) a los puntos de datos dentro de la ventana utilizando mínimos cuadrados lineales. El valor del polinomio ajustado en el punto central de la ventana se convierte en el nuevo valor suavizado para esa longitud de onda.</p>
-<p>Debido a que los coeficientes de ajuste de mínimos cuadrados dependen solo del tamaño de la ventana $w$ y del grado del polinomio $k$, se pueden calcular previamente como pesos fijos (conocidos como convoluciones). Esto hace que el filtro SG sea extremadamente rápido de calcular, incluso para miles de espectros largos.</p>
-<h2>Derivados y corrección de referencia</h2>
-<p>Una de las características más poderosas del método Savitzky-Golay es su capacidad para calcular derivadas numéricas durante el proceso de suavizado. Los derivados son muy eficaces para corregir compensaciones de referencia y resolver picos superpuestos:</p>
+<h2>Por qué se preprocesan los espectros</h2>
+<p>Los espectros de infrarrojo cercano de muestras de proceso contienen, además de la señal de absorción química, efectos físicos que varían de una muestra a otra: dispersión de la luz dependiente del tamaño de partícula y del empaquetamiento, desplazamientos aditivos de la línea base y cambios multiplicativos de la longitud de paso efectiva <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. En las medidas de reflectancia difusa estos efectos dominan la varianza espectral <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>, de modo que, antes de ajustar un modelo cuantitativo como la regresión PLS, se aplica un preprocesamiento para eliminarlos conservando la información química. Rinnan et al. dividen los métodos habituales de preprocesamiento NIR en dos familias, las correcciones de dispersión (MSC, SNV, normalización) y las derivadas espectrales, y señalan que la derivada de Savitzky-Golay es una de las más utilizadas entre estas últimas <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>Qué hace el filtro de Savitzky-Golay</h2>
+<p>Savitzky y Golay demostraron en 1964 que ajustar por mínimos cuadrados un polinomio de grado bajo a los puntos contenidos en una ventana móvil y tomar el valor de ese polinomio en el centro de la ventana equivale a convolucionar los datos con un conjunto fijo de pesos enteros; tabularon esos pesos para ventanas de 5 a 25 puntos y para polinomios cuadráticos/cúbicos y cuárticos/quínticos, tanto para el suavizado como para las derivadas <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Los errores de algunas de las tablas originales se corrigieron en trabajos posteriores <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, y Gorry propuso un método general para calcular los pesos en cualquier posición de la ventana, que además resuelve la pérdida de los primeros y últimos puntos en los extremos de un espectro <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>De ello se derivan dos consecuencias. En primer lugar, como los pesos dependen únicamente del ancho de ventana y del grado del polinomio, el filtro es una operación fija de respuesta finita al impulso y resulta barato de aplicar <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. En segundo lugar, frente a una media móvil de la misma longitud, un filtro de Savitzky-Golay conserva mejor la altura y la anchura de los picos, a costa de una supresión del ruido algo menor <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. En la formulación clásica la ventana tiene un número impar de puntos, <em>2m&nbsp;+&nbsp;1</em>, de modo que queda centrada en el punto que se estima, y los datos deben estar equiespaciados <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Derivadas, líneas base y bandas solapadas</h2>
+<p>El mismo ajuste por mínimos cuadrados proporciona las derivadas del espectro: la primera y la segunda derivada del polinomio ajustado en el centro de la ventana son de nuevo convoluciones con pesos fijos <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Las derivadas se utilizan por lo que eliminan y por lo que revelan <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>:</p>
 <ul>
-<li><strong>Primera derivada (SG 1.ª):</strong>Elimina los desplazamientos constantes de la línea de base (desplazamientos a lo largo del eje Y) y resalta los cambios en la pendiente.</li>
-<li><strong>Segunda Derivada (SG 2da):</strong>Elimina la deriva lineal de la línea de base (pendientes a lo largo del espectro) y aísla las características superpuestas. En un espectro de segunda derivada, los picos de absorción aparecen como valles que apuntan hacia abajo, lo que los hace más fáciles de identificar.</li>
+<li><strong>Primera derivada:</strong> elimina un desplazamiento constante (aditivo) de la línea base y muestra la pendiente local del espectro.</li>
+<li><strong>Segunda derivada:</strong> elimina tanto el desplazamiento constante como una pendiente lineal de la línea base; los máximos de absorción aparecen como bandas negativas, lo que ayuda a separar rasgos solapados <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
 </ul>
-<h2>Directrices para la selección de parámetros</h2>
-<p>Establecer los parámetros correctos es crucial para evitar un suavizado insuficiente (reteniendo el ruido) o un suavizado excesivo (destruyendo la resolución máxima real). La siguiente tabla describe las recomendaciones estándar basadas en la resolución del espectrómetro:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Conjunto de parámetros</th>
-<th>Tamaño de ventana ($w$)</th>
-<th>Orden polinomial ($k$)</th>
-<th>Aplicación recomendada</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Suavizado suave</strong></td>
-<td>5 o 7 puntos</td>
-<td>2 (cuadrático)</td>
-<td>Fase gaseosa de alta resolución NIR, sistemas silenciosos</td>
-</tr>
-<tr>
-<td><strong>Corrección de referencia estándar</strong></td>
-<td>15 puntos</td>
-<td>2 (cuadrática, primera derivada)</td>
-<td>Procesos químicos líquidos típicos, humedad en polvos.</td>
-</tr>
-<tr>
-<td><strong>Separación profunda</strong></td>
-<td>25 puntos</td>
-<td>3 (cúbico, segunda derivada)</td>
-<td>Sólidos muy heterogéneos (harinas forrajeras, cultivos forrajeros)</td>
-</tr>
-</tbody>
-</table>
-<h2>Implementando SG en cali<span class="calix-x">X</span> Suite</h2>
-<p>En el <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x">X</span>software de suite</a> canalización de preprocesamiento, el algoritmo SG se aplica automáticamente durante la validación del modelo AutoML. Los usuarios pueden configurar el tamaño de la ventana y las órdenes derivadas en el editor de preprocesamiento, observando la actualización del error de validación cruzada (RMSECV) en tiempo real a medida que se prueban diferentes configuraciones. Este circuito de retroalimentación interactivo garantiza que usted elija los parámetros de preprocesamiento matemático que maximicen la precisión del modelo y la transferibilidad de unidad a unidad.</p>
+<p>La derivación amplifica el ruido de alta frecuencia, razón por la cual la derivada se calcula junto con el suavizado en un solo paso y por la cual importa el ancho de ventana. Luo et al. muestran que el contraste y la resolución obtenibles con un derivador de Savitzky-Golay dependen de la relación entre la anchura del rasgo y la longitud del filtro, y que los filtros largos no conservan bien los detalles pequeños de la derivada <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
+<h2>Elección del ancho de ventana y del grado del polinomio</h2>
+<p>No existe un ajuste universal. Zimmermann y Kohler, trabajando con modelos PLS sobre datos infrarrojos simulados y medidos, encontraron que la ventana óptima depende del componente que se cuantifica, que el nivel de ruido espectral ofrece una orientación aproximada sobre el ancho de ventana y que tanto la ventana como el grado del polinomio deben optimizarse para cada aplicación en lugar de copiarse de un valor por defecto <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Un procedimiento práctico consiste, por tanto, en tratar el ancho de ventana, el grado del polinomio y el orden de la derivada como hiperparámetros del modelo, comparar los ajustes candidatos por su error de validación cruzada y comprobar que la derivada elegida no borra las bandas estrechas de las que depende el modelo <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Téngase en cuenta que, para el suavizado y para las derivadas de orden par, un polinomio cuadrático y uno cúbico dan pesos de Savitzky-Golay idénticos, por lo que un ajuste «cúbico» no aporta nada frente a «cuadrático» para una segunda derivada <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Savitzky-Golay en cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h2>
+<p>En el <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">paquete cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> los filtros de suavizado y derivada de Savitzky-Golay se configuran en el paso de preprocesamiento del desarrollo del modelo, donde se fijan el ancho de ventana, el grado del polinomio y el orden de la derivada y se comparan los ajustes candidatos por su error de validación cruzada, siguiendo el enfoque descrito por Zimmermann y Kohler <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
 <div class="blog-post-references">
 <h3>Referencias</h3>
 <ul>
-<li>Savitzky, A. y Golay, MJE (1964). "Suavizado y diferenciación de datos mediante procedimientos simplificados de mínimos cuadrados".<em>Química analítica</em>, 36(8), 1627-1639.</li>
-<li>"Selección de longitud de onda y filtrado de ruido en espectros NIR utilizando derivadas polinomiales".<em>Quimiometría y sistemas inteligentes de laboratorio</em>, 2019.</li>
-<li>"Protocolos de corrección de referencia para espectrómetros de procesos industriales"<em>Reseñas de espectroscopia aplicada</em>, 2021.</li>
+<li id="ref-1">[1] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-2">[2] Barnes, R.J., Dhanoa, M.S., Lister, S.J. (1989). Standard Normal Variate Transformation and De-trending of Near-Infrared Diffuse Reflectance Spectra. <em>Applied Spectroscopy</em>, 43(5), 772&ndash;777. <a href="https://doi.org/10.1366/0003702894202201" target="_blank" rel="noopener">doi:10.1366/0003702894202201</a></li>
+<li id="ref-3">[3] Savitzky, A., Golay, M.J.E. (1964). Smoothing and Differentiation of Data by Simplified Least Squares Procedures. <em>Analytical Chemistry</em>, 36(8), 1627&ndash;1639. <a href="https://doi.org/10.1021/ac60214a047" target="_blank" rel="noopener">doi:10.1021/ac60214a047</a></li>
+<li id="ref-4">[4] Steinier, J., Termonia, Y., Deltour, J. (1972). Smoothing and differentiation of data by simplified least square procedure. <em>Analytical Chemistry</em>, 44(11), 1906&ndash;1909. <a href="https://doi.org/10.1021/ac60319a045" target="_blank" rel="noopener">doi:10.1021/ac60319a045</a></li>
+<li id="ref-5">[5] Madden, H.H. (1978). Comments on the Savitzky-Golay convolution method for least-squares-fit smoothing and differentiation of digital data. <em>Analytical Chemistry</em>, 50(9), 1383&ndash;1386. <a href="https://doi.org/10.1021/ac50031a048" target="_blank" rel="noopener">doi:10.1021/ac50031a048</a></li>
+<li id="ref-6">[6] Gorry, P.A. (1990). General least-squares smoothing and differentiation by the convolution (Savitzky-Golay) method. <em>Analytical Chemistry</em>, 62(6), 570&ndash;573. <a href="https://doi.org/10.1021/ac00205a007" target="_blank" rel="noopener">doi:10.1021/ac00205a007</a></li>
+<li id="ref-7">[7] Schafer, R.W. (2011). What Is a Savitzky-Golay Filter? [Lecture Notes]. <em>IEEE Signal Processing Magazine</em>, 28(4), 111&ndash;117. <a href="https://doi.org/10.1109/MSP.2011.941097" target="_blank" rel="noopener">doi:10.1109/MSP.2011.941097</a></li>
+<li id="ref-8">[8] Zimmermann, B., Kohler, A. (2013). Optimizing Savitzky-Golay Parameters for Improving Spectral Resolution and Quantification in Infrared Spectroscopy. <em>Applied Spectroscopy</em>, 67(8), 892&ndash;902. <a href="https://doi.org/10.1366/12-06723" target="_blank" rel="noopener">doi:10.1366/12-06723</a></li>
+<li id="ref-9">[9] Luo, J., Ying, K., He, P., Bai, J. (2005). Properties of Savitzky&ndash;Golay digital differentiators. <em>Digital Signal Processing</em>, 15(2), 122&ndash;136. <a href="https://doi.org/10.1016/j.dsp.2004.09.008" target="_blank" rel="noopener">doi:10.1016/j.dsp.2004.09.008</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Descargar Informe Técnico Completo</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Acceda al documento técnico completo y sin editar con fórmulas espectroscópicas completas, conjuntos de datos de calibración y parámetros de instrumentación.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Evalúe esta aplicación para su proceso</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Nuestro equipo de aplicaciones puede explicar el método, compartir la bibliografía de referencia y organizar un estudio de viabilidad con sus propias muestras.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contáctenos</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,20 +268,20 @@
 <div class="card" onclick="window.location.href='blog-blend-uniformity-pharma.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Verificación de la uniformidad de la mezcla en mezclas farmacéuticas activas" decoding="async" loading="lazy" src="../images/blog_pharma_blending.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ESTUDIO DE CASO</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTÍCULO</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-blend-uniformity-pharma.html" style="color: var(--accent-black); text-decoration: none;">Verificación de la uniformidad de la mezcla en mezclas farmacéuticas activas</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Cómo una planta que cumple con FDA utiliza valores RSD dinámicos para verificar la homogeneidad del polvo seco sin detener los mezcladores de contenedores.</p>
-<a class="btn-text" href="blog-blend-uniformity-pharma.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer estudio de caso</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Por qué la uniformidad de mezcla es un atributo en proceso regulado, qué puede y qué no puede decirle el muestreo con sonda, y qué muestra la literatura sobre la monitorización NIR en línea del mezclado de polvos como herramienta PAT.</p>
+<a class="btn-text" href="blog-blend-uniformity-pharma.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer el artículo</a>
 </div>
 </div>
 <!-- MEMS Durability Card -->
 <div class="card" onclick="window.location.href='blog-mems-durability-industrial.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="MEMS Durabilidad mecánica del accionamiento por peine en entornos industriales" decoding="async" loading="lazy" src="../images/blog_mems_durability.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">LIBRO BLANCO</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTÍCULO</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-mems-durability-industrial.html" style="color: var(--accent-black); text-decoration: none;">MEMS Durabilidad mecánica del accionamiento por peine en entornos industriales</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Documenta las pruebas de estrés del actuador tipo peine a escala de chip de silicio y los límites de resistencia a impactos de USTECH para instalaciones de producción en línea.</p>
-<a class="btn-text" href="blog-mems-durability-industrial.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer el documento técnico</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Lo que dice la literatura sobre fiabilidad acerca de los resortes de silicio y los actuadores de peine sometidos a choque, vibración, ciclos térmicos y fatiga, y lo que especifican realmente los métodos de ensayo ambiental militares e IEC.</p>
+<a class="btn-text" href="blog-mems-durability-industrial.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leer el artículo</a>
 </div>
 </div>
 </div>
@@ -366,6 +339,6 @@
 <p>Diseñado para la precisión científica e industrial.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

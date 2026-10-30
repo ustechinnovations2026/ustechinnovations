@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="从原始光谱到成分值，化学计量学 PLS 模型如何将 NIR 数据转化为准确、可操作的测量结果。" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="以通俗语言说明 PLS 定标如何将 NIR 光谱转换为组成数值：潜变量、因子数、验证统计量，以及参考方法所设定的极限。" name="description"/>
 <meta content="PLS 回归 NIR、化学计量学校准、偏最小二乘光谱、NIR 校准模型、RMSEP 验证" name="keywords"/>
 <title>NIR 校准如何工作：PLS 解释 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-pls-calibration-explained.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pls-calibration-explained.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pls-calibration-explained.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "NIR 校准如何工作：PLS 解释",
-  "description": "从原始光谱到成分值 - 化学计量学 PLS 模型如何将 NIR 数据转化为准确、可操作的测量结果。",
+  "description": "以通俗语言说明 PLS 定标如何将 NIR 光谱转换为组成数值：潜变量、因子数、验证统计量，以及参考方法所设定的极限。",
   "url": "https://www.ustechinnovations.com/zh/blog-pls-calibration-explained.html",
   "datePublished": "2026-06-25",
-  "dateModified": "2026-06-25",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="NIR 校准如何工作：PLS 解释 | USTECH Innovations" property="og:title"/>
-<meta content="从原始光谱到成分值，化学计量学 PLS 模型如何将 NIR 数据转化为准确、可操作的测量结果。" property="og:description"/>
+<meta content="以通俗语言说明 PLS 定标如何将 NIR 光谱转换为组成数值：潜变量、因子数、验证统计量，以及参考方法所设定的极限。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-pls-calibration-explained.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-calibration-explained.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="NIR 校准如何工作：PLS 解释 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="NIR 校准如何工作：PLS 解释 | USTECH Innovations" name="twitter:title"/>
-<meta content="从原始光谱到成分值，化学计量学 PLS 模型如何将 NIR 数据转化为准确、可操作的测量结果。" name="twitter:description"/>
+<meta content="以通俗语言说明 PLS 定标如何将 NIR 光谱转换为组成数值：潜变量、因子数、验证统计量，以及参考方法所设定的极限。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-pls-calibration-explained.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,67 +218,59 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="PLS Regression Chemometrics Visualization" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_explained.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Article — June 25, 2026 — 2 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年6月25日 — 5 分钟阅读</span>
 <h1 class="blog-post-title">NIR 校准如何工作：PLS 解释</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">从原始光谱到成分值——化学计量模型如何将 NIR 数据转化为准确、可操作的测量结果。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">以通俗语言解释偏最小二乘（PLS）回归如何将近红外光谱转换为组成数值&mdash;&mdash;该方法为何是多元的、什么是潜变量、应使用多少个因子、定标如何验证，以及参考方法为何限制了可证明的结果&mdash;&mdash;依据化学计量学文献和相关标准。</p>
 </div>
 <div class="blog-post-content">
-<h2>频谱与构图之间的桥梁</h2>
-<p>FT-NIR 光谱仪测量吸收光谱——每个波长吸收了多少红外光。光谱不会直接告诉您脂肪或蛋白质的含量；它是原始的物理测量。一个<strong>化学计量学校准模型</strong>从光谱中提取成分需要将光谱特征映射到成分值的数学函数。</p>
-<blockquote>“校准模型是光谱仪看到的（光吸收）和您需要知道的（蛋白质、脂肪或水分等成分值）之间的数学桥梁。”</blockquote>
-<h2>PLS 回归 — 行业标准</h2>
-<p>偏最小二乘 (PLS) 回归是最广泛使用的 NIR 校准化学计量方法。 PLS 找到光谱变量的线性组合 -<strong>潜在变量</strong>— 同时解释光谱数据和参考成分值的最大方差。</p>
-<p>与简单的线性回归不同，PLS 处理 NIR 光谱数据的高度相关性，并且可以同时对来自多个组件的复杂、重叠的吸收进行建模。这就是为什么它已成为两者的黄金标准<a href="industry-food-feed.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">食品和饲料</a>, <a href="industry-dairy.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">奶制品</a>， 和<a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">化学和制药</a>应用程序。</p>
-<h2>校准开发流程</h2>
-<div style="overflow-x: auto;">
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-<thead><tr style="background: var(--accent-black); color: #fff;">
-<th style="padding: 0.75rem 1rem; text-align: center; width: 60px;">步</th>
-<th style="padding: 0.75rem 1rem; text-align: left;">描述</th>
-</tr></thead>
-<tbody>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">1</td><td style="padding: 0.75rem 1rem;">收集涵盖生产中预期的全部成分范围的代表性样品</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">2</td><td style="padding: 0.75rem 1rem;">使用经过验证的参考方法（凯氏定氮法、索氏提取法、卡尔费休法等）分析每个样品</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">3</td><td style="padding: 0.75rem 1rem;">使用以下方法从相同样品中收集 NIR 光谱<a href="product-proline-2550.html" style="color: var(--accent-gold);">ProLine2550</a></td></tr>
-<tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.02);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">4</td><td style="padding: 0.75rem 1rem;">构建 PLS 模型<a href="product-calix.html" style="color: var(--accent-gold);">cali<span class="calix-x" style="color: #38b6ff !important;">X</span>光谱套房</a>化学计量学软件</td></tr>
-<tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">5</td><td style="padding: 0.75rem 1rem;">在独立样本集上验证模型 - 计算 RMSEP</td></tr>
-<tr><td style="padding: 0.75rem 1rem; text-align: center; font-weight: bold; color: var(--accent-gold);">6</td><td style="padding: 0.75rem 1rem;">质量体系或监管文件的文件验证</td></tr>
-</tbody>
-</table>
-</div>
-<h2>什么是良好的校准</h2>
-<ul style="list-style: none; padding: 0;">
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>代表性抽样</strong>— 涵盖您生产中的所有成分变化</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>高质量参考数据</strong>— 准确、精确、可追溯至经过验证的方法</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>足够的样本数</strong>— 每个矩阵通常有 80–200 个以上</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>良好的光谱多样性</strong>— 不同的颗粒大小、温度、湿度水平</li>
-<li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>独立验证集</strong>— 切勿对校准样品进行验证</li>
-<li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;"><span style="color: var(--accent-gold); font-weight: bold; font-size: 1.2rem;">✓</span> <strong>目标 RMSEP</strong>：蛋白质&lt;0.12%（配合饲料），脂肪&lt;0.06%（全脂奶）</li>
+<h2>光谱为何需要定标</h2>
+<p>近红外光谱仪记录许多波长处的吸光度，但没有哪一个波长专属于蛋白质、脂肪或水分：这些测量是非选择性的，关于某一组分的信息分散在众多通道中。多元定标是一类通过同时组合许多通道、从此类非选择性数据中提取定量信息的方法，它还能够将异常样品标记为离群值<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。ASTM E1655 规定了近红外（约 780 至 2500 nm）和中红外区域红外光谱仪多元定标的规程，包括验证定标性能的准则<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。本指南不借助公式，说明偏最小二乘（PLS）回归&mdash;&mdash;标准定标著作的核心方法<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>&mdash;&mdash;如何在<a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">食品与饲料行业</a>等应用中发挥作用，以及如何评价其性能。</p>
+<h2>PLS 做了什么：潜变量</h2>
+<p>直观的做法&mdash;&mdash;对每个波长进行普通多元线性回归&mdash;&mdash;行不通，因为光谱中的变量远多于定标样品数，而且相邻波长之间高度相关。Geladi 和 Kowalski 的教程阐述了常规回归方法的这些不足，并将 PLS 作为解决途径加以介绍<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。Wold 等将 PLS 回归描述为一种线性模型，它在将光谱矩阵 X 与参考值 Y 相关联的同时，也对 X 内部的结构进行建模，并将其实用性归因于能够处理大量含噪声、共线甚至不完整的变量<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</p>
+<p>实际上，PLS 将每条光谱压缩为少数几个潜变量（也称因子或成分）上的得分。每个潜变量都是全部波长的加权组合，其选取原则是描述同时与参考值相关的系统性光谱变异；随后由这几个得分而不是数百个原始吸光度来预测组成<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。Haaland 和 Thomas 阐明了 PLS 与经典最小二乘、逆最小二乘及主成分回归之间的关系，并指出可从该算法的中间步骤读取具有化学可解释性的光谱信息，且比主成分回归更为直接<a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</p>
+<h2>需要多少个因子？</h2>
+<p>每增加一个因子，模型对自身定标样品的拟合就更紧密一些，但超过某一点后，多出的因子描述的是噪声和样品特有的细节，而非化学信息。Gowen 等总结了其后果：潜变量过少导致欠拟合，过多导致过拟合，二者都会使模型在未来样品上表现不佳；过拟合的一个公认迹象是回归向量噪声大、出现尖锐振荡的峰<a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。因此，因子数应依据未参与模型拟合的样品上的预测误差来选择，采用交叉验证或独立测试集，并结合对回归系数的检查<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。Haaland 和 Thomas 早已描述了选择最优因子数以限制对定标数据过拟合的程序<a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</p>
+<h2>定标、验证与误差统计量</h2>
+<p>通常报告三种均方根误差<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。RMSEC 是定标样品自身的误差，总是偏于乐观。RMSECV 来自交叉验证，即每个样品（或样品段）由不含该样品所建的模型进行预测。RMSEP 是在一组未参与建模的独立验证样品上的误差，是对常规使用中性能的最佳估计。ISO 12099 是饲料和谷物 NIR 分析的指南，其中分别设有关于定标与初始验证以及性能测量统计量的条款，包括偏差、预测标准误差（SEP）和斜率<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。Westad 和 Marini 提醒，只有当样品中不存在系统性结构时，将一个数据集随机拆分为定标部分和测试部分才是合理的；当验证涵盖重复性、再现性、仪器及原料变异时，误差数值和因子数都可能发生变化<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。由此得出三点实际结论：</p>
+<ul>
+<li><strong>用真正的新样品进行验证。</strong>测试样品应来自与定标集不同的批次、季节或供应商，使验证能反映分析仪在使用中将遇到的变异<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</li>
+<li><strong>不要超出定标范围。</strong>定标程序界定了预测有效的范围；超出该范围或被标记为光谱离群的样品，不应作为正常结果报告<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。</li>
+<li><strong>不要凭单一指标评判模型。</strong>RPD（参考值标准偏差除以预测误差）等汇总比值被广泛使用，但 Esbensen 等批评将其盲目当作衡量定标质量的万能指标<a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。</li>
 </ul>
-<blockquote>“校准模型的质量取决于参考数据的质量。投资于准确、可追溯的参考方法来构建可靠的 NIR 预测。”</blockquote>
-<p>有关在实践中构建校准的分步操作教程，请参阅我们的指南<a href="blog-pls-regression-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中的 PLS 回归</a>。一旦您的模型得到验证，<a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem</a>部署它们进行实时在线测量。</p>
+<h2>参考方法设定了下限</h2>
+<p>定标是以实验室参考方法的数值进行训练和检验的，而这些数值本身带有误差。Faber 和 Kowalski 指出，以实测参考值估算的预测误差是一种表观误差，系统性地大于真实预测误差，因为参考测量的随机误差是任何模型都无法预测的，却被错误地计为定标的不足<a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。这种关系比&ldquo;NIR 永远不可能优于参考方法&rdquo;这一说法更为微妙：DiFoggio 将该说法列为关于 NIR 分析的常见误解之一，并给出了反例<a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。其实际含义是：所报告的 RMSEP 无法令人信服地低于参考实验室的重复性，因此了解这一重复性是解读任何验证结果的一部分<a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。</p>
+<h2>USTECH 的定标做法</h2>
+<p><a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> 等 USTECH 分析仪的 PLS 模型在化学计量学软件 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 中开发，并通过 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 部署到生产过程。光谱预处理见<a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC 与 SNV</a>和<a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay 滤波</a>两篇指南，软件工作流程见<a href="blog-pls-regression-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中的 PLS 回归</a>。验证遵循上述原则，采用独立样品以及 ISO 12099 和 ASTM E1655 所定义的统计量<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。某一参数能否达到工艺所需的准确度，需通过使用贵方样品和参考分析的可行性研究来确定。</p>
+<div class="blog-post-references">
+<h3>参考文献</h3>
+<ul>
+<li id="ref-1">[1] Martens, H., N&aelig;s, T. (1989). <em>Multivariate Calibration.</em> John Wiley &amp; Sons, Chichester (paperback edition 1992, ISBN 978-0-471-93047-1). <a href="https://www.wiley.com/en-us/Multivariate+Calibration-p-9780471930471" target="_blank" rel="noopener">wiley.com</a></li>
+<li id="ref-2">[2] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-3">[3] N&aelig;s, T., Isaksson, T., Fearn, T., Davies, T. (2017). <em>A User-Friendly Guide to Multivariate Calibration and Classification</em>, 2nd edition. IM Publications Open, Chichester. <a href="https://doi.org/10.1255/978-1-906715-25-0" target="_blank" rel="noopener">doi:10.1255/978-1-906715-25-0</a></li>
+<li id="ref-4">[4] Geladi, P., Kowalski, B.R. (1986). Partial least-squares regression: a tutorial. <em>Analytica Chimica Acta</em>, 185, 1&ndash;17. <a href="https://doi.org/10.1016/0003-2670(86)80028-9" target="_blank" rel="noopener">doi:10.1016/0003-2670(86)80028-9</a></li>
+<li id="ref-5">[5] Wold, S., Sj&ouml;str&ouml;m, M., Eriksson, L. (2001). PLS-regression: a basic tool of chemometrics. <em>Chemometrics and Intelligent Laboratory Systems</em>, 58(2), 109&ndash;130. <a href="https://doi.org/10.1016/S0169-7439(01)00155-1" target="_blank" rel="noopener">doi:10.1016/S0169-7439(01)00155-1</a></li>
+<li id="ref-6">[6] Haaland, D.M., Thomas, E.V. (1988). Partial least-squares methods for spectral analyses. 1. Relation to other quantitative calibration methods and the extraction of qualitative information. <em>Analytical Chemistry</em>, 60(11), 1193&ndash;1202. <a href="https://doi.org/10.1021/ac00162a020" target="_blank" rel="noopener">doi:10.1021/ac00162a020</a></li>
+<li id="ref-7">[7] Gowen, A.A., Downey, G., Esquerre, C., O&rsquo;Donnell, C.P. (2011). Preventing over-fitting in PLS calibration models of near-infrared (NIR) spectroscopy data using regression coefficients. <em>Journal of Chemometrics</em>, 25(7), 375&ndash;381. <a href="https://doi.org/10.1002/cem.1349" target="_blank" rel="noopener">doi:10.1002/cem.1349</a></li>
+<li id="ref-8">[8] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-9">[9] Westad, F., Marini, F. (2015). Validation of chemometric models &ndash; A tutorial. <em>Analytica Chimica Acta</em>, 893, 14&ndash;24. <a href="https://doi.org/10.1016/j.aca.2015.06.056" target="_blank" rel="noopener">doi:10.1016/j.aca.2015.06.056</a></li>
+<li id="ref-10">[10] Esbensen, K.H., Geladi, P., Larsen, A. (2014). The RPD myth&hellip; <em>NIR news</em>, 25(5), 24&ndash;28. <a href="https://doi.org/10.1255/nirn.1462" target="_blank" rel="noopener">doi:10.1255/nirn.1462</a></li>
+<li id="ref-11">[11] Faber, K., Kowalski, B.R. (1997). Improved prediction error estimates for multivariate calibration by correcting for the measurement error in the reference values. <em>Applied Spectroscopy</em>, 51(5), 660&ndash;665. <a href="https://doi.org/10.1366/0003702971941061" target="_blank" rel="noopener">doi:10.1366/0003702971941061</a></li>
+<li id="ref-12">[12] DiFoggio, R. (1995). Examination of some misconceptions about near-infrared analysis. <em>Applied Spectroscopy</em>, 49(1), 67&ndash;75. <a href="https://doi.org/10.1366/0003702953963247" target="_blank" rel="noopener">doi:10.1366/0003702953963247</a></li>
+</ul>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含完整的光谱公式、流程图和 ROI 计算。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
 </div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">阅读下一步</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="PLS Regression in cali<span class="calix-x">X</span>" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指导</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件 PLS 回归简介</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">使用 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML 平台构建校准模型的分步教程。</p><a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读教程</a></div></div>
-<div class="card" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="什么是 NIR 光谱？" decoding="async" loading="lazy" src="../images/blog_what_is_nir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">文章</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-what-is-nir-spectroscopy.html" style="color: var(--accent-black); text-decoration: none;">什么是 NIR 光谱？</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">最通用的无损分析技术的简明语言指南。</p><a class="btn-text" href="blog-what-is-nir-spectroscopy.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读文章</a></div></div>
+<div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="PLS Regression in caliX" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件 PLS 回归简介</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。</p><a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a></div></div>
+<div class="card" onclick="window.location.href='blog-what-is-nir-spectroscopy.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;"><img alt="什么是 NIR 光谱？" decoding="async" loading="lazy" src="../images/blog_what_is_nir.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/><div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;"><span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span><h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-what-is-nir-spectroscopy.html" style="color: var(--accent-black); text-decoration: none;">什么是 NIR 光谱？</a></h4><p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">近红外光谱入门：什么是 NIR 光，它在何处被发现，倍频和合频谱带揭示了什么，为什么定标必不可少，以及该技术的局限在哪里。</p><a class="btn-text" href="blog-what-is-nir-spectroscopy.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a></div></div>
 </div>
 </div>
 </article>
@@ -327,6 +326,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

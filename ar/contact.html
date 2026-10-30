@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 <meta name="description" content="تحدث إلى مهندس تطبيقات USTECH: اطلب عرض أسعار، أو احجز عرضًا توضيحيًا أو تحليلاً مجانياً لعينة، واستخدم حاسبة العائد على الاستثمار لتقدير مدخراتك السنوية.">
 <title>اتصل بـ USTECH | طلب عرض توضيحي أو تحليل عينة NIR</title>
-<link rel="stylesheet" href="../index.css?v=1.1.2">
+<link rel="stylesheet" href="../index.css?v=1.1.3">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
 "logo": "https://www.ustechinnovations.com/images/logo.svg",
-"description": "Manufacturer of inline FT-NIR spectroscopy systems, chemometrics software and calibration models for food, feed, dairy and chemical processing.",
+"description": "الشركة المصنعة لأنظمة التحليل الطيفي المضمنة FT-NIR وبرامج القياس الكيميائي ونماذج المعايرة للأغذية والأعلاف ومنتجات الألبان والمعالجة الكيميائية.",
 "foundingDate": "2023",
 "address": {
 "@type": "PostalAddress",
@@ -37,7 +38,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "ar",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -253,7 +254,7 @@
 <div class="form-group sales-field">
 <label for="form-budget">الجدول الزمني للتنفيذ / الميزانية</label>
 <select id="form-budget" name="budget" class="form-input">
-<option value="Immediate (< 1 month)">فوري (< 1 month)</option>
+<option value="Immediate (< 1 month)">فوري (أقل من شهر)</option>
 <option value="Q1-Q2 (1-6 months)">1 - 6 أشهر</option>
 <option value="Budgetary / Exploratory">التخطيط الميزاني / الاستكشافي</option>
 </select>
@@ -541,7 +542,7 @@
             <p>مصمم للدقة العلمية والصناعية.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 <script>
 // اتصال Page ROI Calculator (mirrors homepage logic with c- prefixed IDs)
 (function() {
@@ -622,6 +623,7 @@ let paybackMonths = (equipmentCost / annualSavings) * 12;
 if (paybackMonths < 1.0) paybackMonths = 1.0;
 valPayback.textContent = paybackMonths.toFixed(1) + ' Months';
 valYield.textContent = qualityYield.toFixed(1) + '%';
+}
 updateRoi();
 })();
 // Automatically open Privacy Policy Modal if query parameter showPrivacy=1 is present

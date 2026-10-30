@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Case study on instant raw material validation at warehouse receiving using caliX classification models.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why GMP expects an identity test on every container of starting material, what the EMA and the pharmacopoeias require of a qualitative NIR method, and how spectral libraries and through-container measurement are built and validated.">
 <meta name="keywords" content="raw material identification NIR, pharmaceutical warehouse QC, incoming material verification, NIR identity testing">
 <title>Incoming Raw Material Identification in Pharmaceutical Warehouses | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-pharma-raw-material-id.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-pharma-raw-material-id.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-pharma-raw-material-id.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Incoming Raw Material Identification in Pharmaceutical Warehouses",
-"description": "Case study on instant raw material validation at warehouse receiving using caliX classification models.",
+"description": "Why GMP expects an identity test on every container of starting material, what the EMA and the pharmacopoeias require of a qualitative NIR method, and how spectral libraries and through-container measurement are built and validated.",
 "url": "https://www.ustechinnovations.com/blog-pharma-raw-material-id.html",
 "datePublished": "2026-01-18",
-"dateModified": "2026-01-18",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Incoming Raw Material Identification in Pharmaceutical Warehouses | USTECH Innovations">
-    <meta property="og:description" content="Case study on instant raw material validation at warehouse receiving using caliX classification models.">
+    <meta property="og:description" content="Why GMP expects an identity test on every container of starting material, what the EMA and the pharmacopoeias require of a qualitative NIR method, and how spectral libraries and through-container measurement are built and validated.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-pharma-raw-material-id.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-pharma-raw-material-id.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Incoming Raw Material Identification in Pharmaceutical Warehouses | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Incoming Raw Material Identification in Pharmaceutical Warehouses | USTECH Innovations">
-    <meta name="twitter:description" content="Case study on instant raw material validation at warehouse receiving using caliX classification models.">
+    <meta name="twitter:description" content="Why GMP expects an identity test on every container of starting material, what the EMA and the pharmacopoeias require of a qualitative NIR method, and how spectral libraries and through-container measurement are built and validated.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-pharma-raw-material-id.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,45 +217,58 @@ Espa&#241;ol
 </a>
 <img src="images/blog_pharma_blending.webp?v=1.0.5" alt="Incoming Raw Material Identification in Pharmaceutical Warehouses" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">CASE STUDY &mdash; January 18, 2026 &mdash; 1 min read</span>
+<span class="blog-post-meta">Article &mdash; January 18, 2026 &mdash; 6 min read</span>
 <h1 class="blog-post-title">Incoming Raw Material Identification in Pharmaceutical Warehouses</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Verify 100% of incoming raw material bags at dock doors to eliminate chemical contamination risks.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why EU and US GMP expect an identity test on every incoming container of starting material, what the pharmacopoeias and the EMA require of a qualitative near-infrared method, and what the published literature shows about spectral libraries, grades, suppliers and measurement through the packaging.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Regulatory Demand for 100% Raw Material ID</h2>
-<p>GMP regulations mandate that pharmaceutical companies verify the identity of every single container of incoming active ingredients and excipients. Traditional laboratory testing requires opening bags, collecting samples, and waiting for HPLC validation, creating high labor costs and contamination risks.</p>
-<h2>Instant Dock Door Scans</h2>
-<p>Using USTECH handheld spectrometers and cali<span class="calix-x" style="color: #38b6ff !important;">X</span> PCA classification models, operators scan chemical powder bags directly through transparent packaging at warehouse dock doors. The system validates the material identity against a database of verified chemical profiles instantly.</p>
+<h2>Why every container is tested</h2>
+<p>In the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical industry</a> the identity of an incoming starting material is a GMP requirement, not a quality preference. EU GMP Annex 8 states that the identity of a complete batch of starting materials can normally only be ensured if individual samples are taken from all the containers and an identity test is performed on each sample; sampling only a proportion of the containers is permissible only where a validated procedure gives assurance that no single container has been incorrectly labelled, and the annex considers such validation improbable for materials bought through brokers of unknown origin or intended for parenteral products <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. US GMP is phrased per component rather than per container: 21 CFR 211.84(d)(1) requires at least one test to verify the identity of each component of a drug product, and a supplier's certificate of analysis may replace the manufacturer's other tests only if the manufacturer performs at least one specific identity test and validates the supplier's results at appropriate intervals <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. For active substances, ICH Q7 requires at least one test to verify the identity of each batch of material, with full analyses on at least three batches before in-house testing is reduced <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>The consequence for the warehouse is a sampling and testing workload that grows with the number of containers, and a laboratory identity test that opens every container and holds the lot in quarantine until the result is back. Raw material identification and qualification is, for that reason, one of the longest-established pharmaceutical applications of near-infrared (NIR) spectroscopy, which needs no sample preparation and returns a result at the point of receipt <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>What the pharmacopoeias and the EMA require of a qualitative NIR method</h2>
+<p>NIR spectroscopy is a compendial technique. Ph. Eur. general chapter 2.2.40 describes it for identification and qualification, including the direct comparison of a substance's spectrum with reference spectra <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, and USP &lt;856&gt; sets the qualification, validation and verification requirements for NIR instruments and procedures <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. The detailed expectations for a qualitative method are in the EMA guideline on the use of NIRS by the pharmaceutical industry (EMEA/CHMP/CVMP/QWP/17760/2009 Rev2), which distinguishes identification &mdash; confirming identity only &mdash; from qualification, which also distinguishes grades of the same substance such as particle size or polymorphic form <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Under that guideline an identification compares the sample spectrum with the spectra of several samples of several batches of the substances held in a spectral reference library, with justified match/no-match acceptance criteria; for materials identified or qualified on receipt, samples from all relevant suppliers must be included in the library; and the procedure must be validated at least for specificity and robustness <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Specificity means that independent batches of library substances must pass while relevant name and structure analogues, different grades, anhydrous and hydrated forms, polymorphs and material from other vendors must be rejected; robustness covers temperature, humidity, sample position, sample vials and, where applicable, different packaging materials <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. After approval, maintenance of the spectral library is treated as a change within the scope of the procedure, subject to GMP rather than to a regulatory variation <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>How spectral libraries are built</h2>
+<p>The library approach was set out by Blanco and Romero, who built a library of NIR spectra for 125 raw materials using the correlation coefficient as the discriminating criterion and resolved compounds with very similar spectra through cascading sub-libraries built with chemometric methods of higher discriminating power <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Candolfi et al. applied SIMCA to ten excipients with at least 15 samples per class drawn from different batches and, in some cases, different suppliers; at the 95 % and 99 % confidence levels, on raw, SNV-corrected and second-derivative spectra, no sample was assigned to a wrong class, although rejection rates of genuine samples varied with the pre-processing <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. In a companion study the same group compared 32 combinations of pre-processing (none, offset correction, de-trending, SNV, MSC, derivatives) and classification method (Mahalanobis distance, SIMCA, wavelength distance, potential functions), building the models on spectra measured in 1994 and testing them on spectra collected from 1994 to 1997; for their data the wavelength distance method with de-trending performed best <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. The point that transfers to any warehouse is that a library must contain the variability it will meet &mdash; batches, suppliers, grades, instrument drift over years &mdash; before it can be expected to accept genuine material and reject everything else, which is exactly what the EMA guideline asks the validation set to demonstrate <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Measuring through the container</h2>
+<p>Because NIR radiation passes through glass and many polymers, identity can be confirmed without opening the container. Ulmschneider and P&eacute;nigault identified active-substance intermediates through their polyethylene primary packaging with a fibre-optic diffuse-reflectance probe placed against the packaged surface, refining the criteria with principal component and cluster analysis and testing the method on a validation set separate from the calibration set <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Sample presentation is not neutral, however: Yoon, Jee and Moffat showed that cup diameter, sample thickness, cup or vial material and packing method distort NIR spectra enough to move correlation-coefficient and maximum-distance identification results past typical thresholds and cause misidentifications, while standard soda-glass and neutral-glass vials proved suitable for all but the most exacting applications <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. This is why the EMA guideline lists vials and packaging materials among the robustness variables to be tested and documented <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Through-container measurement keeps the material sealed and removes the sampling step; it does not remove the obligation to validate the packaging in use as part of the method <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>A receiving workflow</h2>
+<p>In practice the NIR identity check sits between goods-in and release: each container is measured, the spectrum is compared with the library, and only a no-match or an uncertain result goes to the laboratory for the compendial identity test. Three decisions determine whether such a workflow stands up to inspection:</p>
+<ul>
+<li><strong>Define the scope per material.</strong> Decide whether identity alone is required or qualification by grade, polymorph or supplier; the EMA guideline expects grade-level discrimination to be validated as specificity with challenges from different grades, polymorphs and vendors <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+<li><strong>Keep the library under change control.</strong> A new supplier, grade or packaging format requires additions to the library and re-validation; the guideline treats library maintenance as a GMP change within the procedure's scope <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>, and the long-term test of Candolfi et al. shows why models built on one year's spectra must be checked against later ones <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</li>
+<li><strong>Write down the fallback.</strong> Where NIR is used to test every container, the sampling plan should state what happens on a no-match &mdash; quarantine and the reference identity test &mdash; so that the GMP identity requirement is met by NIR and the reference method together <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+</ul>
+<h2>How USTECH approaches this</h2>
+<p>The <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">USTECH MasterLine</a> is a benchtop/at-line FT-NIR analyzer for solid and liquid samples, and the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics suite provides spectral-library identification, PCA, PLS-DA and Mahalanobis-distance classification, and the SNV, de-trending and derivative pre-processing used in the studies above <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Which materials can be identified through their packaging, how grades and suppliers separate, and which acceptance thresholds hold up against the analogues met at goods-in are established in a feasibility study with your own samples.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>European Pharmacopoeia 2.2.40 - Near-Infrared Spectroscopy.</li>
-<li>"Implementing 100% Receiving Dock Raw Material Verification using Handheld MEMS Spectrometers," <em>Journal of Pharmaceutical Innovation</em>, 2023.</li>
+<li id="ref-1">[1] European Commission. <em>EudraLex Volume 4 &mdash; EU Guidelines to Good Manufacturing Practice, Annex 8: Sampling of Starting and Packaging Materials.</em> Directorate-General for Health and Food Safety. <a href="https://health.ec.europa.eu/document/download/22d03c04-8512-4336-89dd-556771fca388_en?filename=anx08_en.pdf" target="_blank" rel="noopener">health.ec.europa.eu/.../anx08_en.pdf</a></li>
+<li id="ref-2">[2] 21 CFR &sect; 211.84. <em>Testing and approval or rejection of components, drug product containers, and closures.</em> Code of Federal Regulations, Title 21, Part 211, Subpart E. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-E/section-211.84" target="_blank" rel="noopener">ecfr.gov/current/title-21/.../section-211.84</a></li>
+<li id="ref-3">[3] ICH (2000). <em>Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients Q7</em>, Section 7.3 Sampling and Testing of Incoming Production Materials. ICH Harmonised Tripartite Guideline, Step 4, November 2000. <a href="https://database.ich.org/sites/default/files/Q7%20Guideline.pdf" target="_blank" rel="noopener">database.ich.org/sites/default/files/Q7 Guideline.pdf</a></li>
+<li id="ref-4">[4] Reich, G. (2005). Near-infrared spectroscopy and imaging: Basic principles and pharmaceutical applications. <em>Advanced Drug Delivery Reviews</em>, 57(8), 1109&ndash;1143. <a href="https://doi.org/10.1016/j.addr.2005.01.020" target="_blank" rel="noopener">doi:10.1016/j.addr.2005.01.020</a></li>
+<li id="ref-5">[5] European Pharmacopoeia, general chapter 2.2.40. <em>Near-infrared spectroscopy.</em> EDQM, Council of Europe, Strasbourg. <a href="https://pheur.edqm.eu/" target="_blank" rel="noopener">pheur.edqm.eu</a></li>
+<li id="ref-6">[6] USP General Chapter &lt;856&gt;. <em>Near-Infrared Spectroscopy.</em> United States Pharmacopeia &ndash; National Formulary, Rockville. <a href="https://doi.usp.org/USPNF/USPNF_M8189_03_01.html" target="_blank" rel="noopener">doi.usp.org/USPNF/USPNF_M8189_03_01.html</a></li>
+<li id="ref-7">[7] European Medicines Agency (2014). <em>Guideline on the use of near infrared spectroscopy by the pharmaceutical industry and the data requirements for new submissions and variations.</em> EMEA/CHMP/CVMP/QWP/17760/2009 Rev2, 27 January 2014. <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-and-data-requirements-new-submissions-and-variations_en.pdf" target="_blank" rel="noopener">ema.europa.eu/.../guideline-use-near-infrared-spectroscopy-pharmaceutical-industry-..._en.pdf</a></li>
+<li id="ref-8">[8] Blanco, M., Romero, M.A. (2001). Near-infrared libraries in the pharmaceutical industry: a solution for identity confirmation. <em>The Analyst</em>, 126(12), 2212&ndash;2217. <a href="https://doi.org/10.1039/b105012p" target="_blank" rel="noopener">doi:10.1039/b105012p</a></li>
+<li id="ref-9">[9] Candolfi, A., De Maesschalck, R., Massart, D.L., Hailey, P.A., Harrington, A.C.E. (1999). Identification of pharmaceutical excipients using NIR spectroscopy and SIMCA. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 19(6), 923&ndash;935. <a href="https://doi.org/10.1016/S0731-7085(98)00234-9" target="_blank" rel="noopener">doi:10.1016/S0731-7085(98)00234-9</a></li>
+<li id="ref-10">[10] Candolfi, A., De Maesschalck, R., Jouan-Rimbaud, D., Hailey, P.A., Massart, D.L. (1999). The influence of data pre-processing in the pattern recognition of excipients near-infrared spectra. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 21(1), 115&ndash;132. <a href="https://doi.org/10.1016/S0731-7085(99)00125-9" target="_blank" rel="noopener">doi:10.1016/S0731-7085(99)00125-9</a></li>
+<li id="ref-11">[11] Ulmschneider, M., P&eacute;nigault, E. (2000). Direct identification of key intermediates in containers using Fourier-transform near-infrared spectroscopy through the protective polyethylene primary packaging. <em>Analusis</em>, 28(2), 136&ndash;140. <a href="https://doi.org/10.1051/analusis:2000106" target="_blank" rel="noopener">doi:10.1051/analusis:2000106</a></li>
+<li id="ref-12">[12] Yoon, W.L., Jee, R.D., Moffat, A.C. (1998). Optimisation of sample presentation for the near-infrared spectra of pharmaceutical excipients. <em>The Analyst</em>, 123(5), 1029&ndash;1034. <a href="https://doi.org/10.1039/a800358k" target="_blank" rel="noopener">doi:10.1039/a800358k</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -285,7 +305,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -304,6 +323,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

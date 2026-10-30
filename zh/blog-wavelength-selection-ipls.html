@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations 指南 - NIR 光谱模型的波长选择和特征工程" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="为何将 NIR 定标限定在选定波长上可能有益，iPLS、遗传算法、UVE、CARS、VIP 和刀切法如何选择波长，以及为何必须对选择结果进行独立验证。" name="description"/>
 <meta content="波长选择NIR、iPLS特征工程、光谱变量选择、NIR模型优化" name="keywords"/>
 <title>NIR 光谱模型的波长选择和特征工程 | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/zh/blog-wavelength-selection-ipls.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-wavelength-selection-ipls.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-wavelength-selection-ipls.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "zh",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "NIR 光谱模型的波长选择和特征工程",
-  "description": "USTECH Innovations 指南 - NIR 光谱模型的波长选择和特征工程。",
+  "description": "为何将 NIR 定标限定在选定波长上可能有益，iPLS、遗传算法、UVE、CARS、VIP 和刀切法如何选择波长，以及为何必须对选择结果进行独立验证。",
   "url": "https://www.ustechinnovations.com/zh/blog-wavelength-selection-ipls.html",
   "datePublished": "2026-06-11",
-  "dateModified": "2026-06-11",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="NIR 光谱模型的波长选择和特征工程 | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations 指南 - NIR 光谱模型的波长选择和特征工程" property="og:description"/>
+<meta content="为何将 NIR 定标限定在选定波长上可能有益，iPLS、遗传算法、UVE、CARS、VIP 和刀切法如何选择波长，以及为何必须对选择结果进行独立验证。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-wavelength-selection-ipls.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-wavelength-selection-ipls.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="NIR 光谱模型的波长选择和特征工程 | USTECH Innovations" property="og:image:alt"/>
 <meta content="zh_CN" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="NIR 光谱模型的波长选择和特征工程 | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations 指南 - NIR 光谱模型的波长选择和特征工程" name="twitter:description"/>
+<meta content="为何将 NIR 定标限定在选定波长上可能有益，iPLS、遗传算法、UVE、CARS、VIP 和刀切法如何选择波长，以及为何必须对选择结果进行独立验证。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-wavelength-selection-ipls.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,92 +218,55 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← 返回所有博客与技术文章</a>
 <img alt="Spectroscopic wavelength selection algorithm display" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_wavelength_selection.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 11, 2026 — 4 分钟阅读</span>
+<span class="blog-post-meta">指南 — 2026年6月11日 — 4 分钟阅读</span>
 <h1 class="blog-post-title">NIR 光谱模型的波长选择和特征工程</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">如何在 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台中实现间隔 PLS (iPLS) 和遗传算法，以去除噪声、隔离化学吸收带并增强模型的可移植性。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">为何将近红外定标限定在选定的波长或区间上可以使其更准确、更易于解释，主要选择方法如何运作，以及为何必须对选择本身进行验证&mdash;&mdash;依据各方法的原始论文和已发表的综述。</p>
 </div>
 <div class="blog-post-content">
-<h2>为什么要限制波长范围？</h2>
-<p>现代过程光谱仪（如 <strong>ProLine2550</strong>）收集整个近红外范围（1,350 至 2,550 nm）的数据，产生数百个高度相关的波长变量。虽然在整个谱上拟合偏最小二乘 (PLS) 回归模型是标准方法，但它很少是最稳健的方法。全光谱包括目标分析物的零化学信息的区域，例如背景噪声、传感器滚降或使检测器饱和的强吸水带。</p>
-<p>使用不必要的波长构建校准会增加过度拟合的风险，使模型容易受到环境温度变化的影响，并且需要更多的潜在变量 (LV)，这会降低仪器之间的校准可转移性。</p>
-<blockquote>“选择最佳波长是多元特征工程的一种形式。通过消除噪声主导的波段，我们创建了一种更简单、更稳健的校准，可以推广到不同的光谱仪。”</blockquote>
-<h2>间隔 PLS (iPLS)：系统网格选择</h2>
-<p><strong>间隔 PLS (iPLS)</strong> 是一种系统算法，它将完整的预处理光谱划分为一组更小的、不重叠的波长间隔（通常为 10 到 40 个间隔）。该算法为每个单独的区间构建局部 PLS 模型，并计算交叉验证的均方根误差 (RMSECV)。</p>
-<p>在乳品接收码头集成高通量传输池 RMSECV 光谱仪可确保原奶质量并防止门口欺诈。通过在一分钟内检查交货情况，加工商可以保护其散装筒仓、遵守安全法规并执行严格的原奶标准。</p>
-<h2>遗传算法：进化选择</h2>
-<p>当目标化学品的吸收带分布在多个区域时，基于区间的网格搜索是不够的。 <strong>遗传算法 (GA)</strong> 使用进化搜索策略来寻找最佳频带：</p>
+<h2>为何要选择波长</h2>
+<p>近红外光谱在数百个等间隔波长处记录，而在<a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">食品与饲料</a>及流程工业中，可用于定标的参考样品数量通常要少得多。Zou Xiaobo 等在综述中指出，如此大量的光谱变量常使因变量的预测不可靠，因此人们在识别携带有用信息的变量或剔除以噪声为主的变量的方法上投入了大量努力<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。偏最小二乘（PLS）回归能够处理大量相关变量，但以噪声或无关吸收物为主的区域仍会进入模型。将其剔除可以提高预测能力，并更容易看清模型依赖光谱的哪些部分；但选择步骤也会带来新的过拟合途径，这正是 Andersen 和 Bro 在其教程中着重讨论如何在实践中运用变量选择并避免最常见陷阱的原因<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。</p>
+<h2>区间方法：iPLS</h2>
+<p>区间偏最小二乘（iPLS）由 N&oslash;rgaard 等提出，它将光谱划分为若干区间，在每个区间上建立局部 PLS 模型，并以图形方式将各局部模型与全光谱模型进行比较<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。在一个包含 60 个啤酒样品、与原麦汁浸出物浓度相关联的 NIR 数据集上，最佳 iPLS 模型将全光谱模型的预测误差降低到四分之一，作者强调图形输出有助于解释模型背后的化学体系<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。由于 iPLS 保留的是连续的波长块而非孤立的点，所选区域与吸收谱带的形状相吻合；在同一研究中，所选区间涵盖了前向逐步选择法以及另外两种选择方法所找到的变量<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。</p>
+<h2>搜索与排序方法</h2>
+<p>另有几类方法也很常用；Zou Xiaobo 等以及 Andersen 和 Bro 的综述对其有更详细的介绍<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>。</p>
 <ul>
-<li><strong>染色体：</strong>波长以二进制字符串表示（1 表示选择，0 表示排除）。</li>
-<li><strong>初始人口：</strong>创建随机波长组合的起始池。</li>
-<li><strong>健身功能：</strong>每个组合都会构建一个 PLS 模型。适应度是根据最小化 RMSECV 和最小化潜在变量的数量来评估的。</li>
-<li><strong>育种与突变：</strong>将表现最好的组合配对以产生后代，并引入随机突变以防止局部最小值陷阱。</li>
+<li><strong>遗传算法（GA-PLS）：</strong>将候选波长子集编码为二进制字符串，通过选择、交叉和变异进行进化，以交叉验证的 PLS 误差作为适应度准则。Leardi 表明，经过适当改进后，GA-PLS 选出的变量往往构成界限清晰的光谱区域，而非散布于整个光谱的单个变量，所得模型的预测能力优于全光谱模型<a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>。</li>
+<li><strong>无信息变量消除（UVE）：</strong>Centner 等在数据中加入人工噪声变量，并依据 PLS 回归系数剔除所有重要性不高于噪声变量的实验变量<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</li>
+<li><strong>竞争性自适应重加权采样（CARS）：</strong>Li 等在多次重复的蒙特卡罗（Monte Carlo）子采样中，按 PLS 回归系数的绝对值对波长进行排序，逐步缩减变量集，并保留交叉验证误差最低的子集<a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>。</li>
+<li><strong>变量投影重要性（VIP）：</strong>一种概括每个变量对 PLS 模型贡献的得分。Chong 和 Jun 在含相关预测变量的模拟中将结合 VIP 的 PLS 与 lasso 和逐步回归进行了比较，并讨论了 VIP 阈值应如何选取<a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>。</li>
+<li><strong>刀切法（jackknife）显著性检验：</strong>Westad 和 Martens 利用交叉验证的子模型检验每个回归系数的显著性，仅保留显著变量；在啤酒的 NIR 光谱上，该方法的表现与所测试的其他选择方法相当或更优，且对交叉验证方案具有稳健性<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</li>
 </ul>
-<p>这个过程重复 50 到 100 代，输出高度优化的稀疏波长选择。</p>
-<h2>波长选择的影响</h2>
-<p>选择最佳波长带可显着提高校准性能，如本多元醇羟值 (OHV) 校准研究所示：</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>型号配置</th>
-<th>有效波长 (nm)</th>
-<th>潜在变量 (LV)</th>
-<th>验证错误 (RMSEP)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>全局 PLS（全范围）</td>
-<td>1350 – 2550 nm（全波长）</td>
-<td>10 个LV</td>
-<td>± 2.45 毫克 KOH/克</td>
-</tr>
-<tr>
-<td><strong>iPLS 已选择</strong></td>
-<td>1680 – 1740 &amp; 2200 – 2260 纳米</td>
-<td><strong>5 个LV</strong></td>
-<td><strong>≤1.12毫克KOH/克</strong></td>
-</tr>
-<tr>
-<td><strong>GA 已选择</strong></td>
-<td>C-H/O-H 区域中的选定谱带</td>
-<td><strong>4 个LV</strong></td>
-<td><strong>≤1.05毫克KOH/克</strong></td>
-</tr>
-</tbody>
-</table>
-<h2>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件中的波长优化</h2>
-<p>在 <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件</strong> 中优化您的模型：</p>
-<ol>
-<li>打开校准模型并导航至“功能选择”菜单。</li>
-<li>选择“Interval PLS”来运行网格搜索，或选择“Genetic Algorithm”来进行进化优化。</li>
-<li>设置目标潜在变量限制以防止过度拟合（例如，最多 5 个 LV）。</li>
-<li>运行优化器。完成后，单击“应用选择”并在部署之前验证简化的校准。</li>
-</ol>
-<h2>结论</h2>
-<p>使用 iPLS 和遗传算法进行波段选择将化学计量学模型的构建从黑盒回归转变为有针对性的特征工程。通过隔离关键的分子泛音带，工程师可以压缩校准复杂性、防止温度漂移并构建在多个光谱仪之间无缝传输的模型。</p>
+<h2>过度选择的风险</h2>
+<p>每种选择方法都要在数量极其庞大的可能子集中进行搜索，比较的子集越多，其中某一子集偶然拟合定标数据的可能性就越大。Jouan-Rimbaud 等在 NIR 数据中加入随机变量对此进行了检验，发现即使采用了严谨的验证程序，遗传算法仍可能选中无关变量；对 GA 子集再施以前向选择可减轻这一影响<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。其实际后果是，用于选择变量的误差并不是对未来性能的真实估计。因此，Fern&aacute;ndez Pierna 等在其后向选择方法中以独立测试集上的预测均方根误差作为准则，并报告所选模型在使用更少变量的同时，改进了或至少保持了全光谱 PLS 的预测性能<a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。从这些文献中可以得出三项预防措施<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>：</p>
+<ul>
+<li><strong>将测试集置于选择循环之外。</strong>用于选择波长或区间的样品，不得同时用于评判最终模型。</li>
+<li><strong>与全光谱模型进行比较。</strong>只有当选择能提高独立样品上的预测效果，或以更简单、更易解释的模型达到同等效果时，才值得保留。</li>
+<li><strong>核对化学依据。</strong>若所选区域无法与被测物或基质的吸收谱带相联系，就值得怀疑，尤其是在定标集较小的情况下。</li>
+</ul>
+<h2>USTECH 的波长选择做法</h2>
+<p>在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件</a>中，借助 PLS 回归、光谱预处理和模型验证工具，在未参与选择的样品上将受限波长范围与全光谱模型进行比较，正如上述文献所建议的<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>。对于特定产品和分析仪，受限范围是否合理由验证结果而非选择方法本身决定，并需按照 ISO 12099，通过使用贵方样品和参考分析的可行性研究来确定<a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。</p>
 <div class="blog-post-references">
-<h3>参考</h3>
+<h3>参考文献</h3>
 <ul>
-<li>ISO 12099 -<em>近红外光谱测定应用指南</em>.</li>
-<li>Nørgaard, L. 等人，“区间偏最小二乘回归 (iPLS)：波长选择工具”<em>应用光谱学</em>，2000。</li>
-<li>Leardi, R.，“遗传算法在近红外光谱中波长选择的应用”，<em>化学计量学杂志</em>，2001。</li>
+<li id="ref-1">[1] Xiaobo, Z., Jiewen, Z., Povey, M.J.W., Holmes, M., Hanpin, M. (2010). Variables selection methods in near-infrared spectroscopy. <em>Analytica Chimica Acta</em>, 667(1&ndash;2), 14&ndash;32. <a href="https://doi.org/10.1016/j.aca.2010.03.048" target="_blank" rel="noopener">doi:10.1016/j.aca.2010.03.048</a></li>
+<li id="ref-2">[2] Andersen, C.M., Bro, R. (2010). Variable selection in regression &mdash; a tutorial. <em>Journal of Chemometrics</em>, 24(11&ndash;12), 728&ndash;737. <a href="https://doi.org/10.1002/cem.1360" target="_blank" rel="noopener">doi:10.1002/cem.1360</a></li>
+<li id="ref-3">[3] N&oslash;rgaard, L., Saudland, A., Wagner, J., Nielsen, J.P., Munck, L., Engelsen, S.B. (2000). Interval Partial Least-Squares Regression (iPLS): A Comparative Chemometric Study with an Example from Near-Infrared Spectroscopy. <em>Applied Spectroscopy</em>, 54(3), 413&ndash;419. <a href="https://doi.org/10.1366/0003702001949500" target="_blank" rel="noopener">doi:10.1366/0003702001949500</a></li>
+<li id="ref-4">[4] Leardi, R. (2000). Application of genetic algorithm&ndash;PLS for feature selection in spectral data sets. <em>Journal of Chemometrics</em>, 14(5&ndash;6), 643&ndash;655. <a href="https://doi.org/10.1002/1099-128X(200009/12)14:5/6%3C643::AID-CEM621%3E3.0.CO;2-E" target="_blank" rel="noopener">doi:10.1002/1099-128X(200009/12)14:5/6&lt;643::AID-CEM621&gt;3.0.CO;2-E</a></li>
+<li id="ref-5">[5] Centner, V., Massart, D.L., de Noord, O.E., de Jong, S., Vandeginste, B.M., Sterna, C. (1996). Elimination of Uninformative Variables for Multivariate Calibration. <em>Analytical Chemistry</em>, 68(21), 3851&ndash;3858. <a href="https://doi.org/10.1021/ac960321m" target="_blank" rel="noopener">doi:10.1021/ac960321m</a></li>
+<li id="ref-6">[6] Li, H., Liang, Y., Xu, Q., Cao, D. (2009). Key wavelengths screening using competitive adaptive reweighted sampling method for multivariate calibration. <em>Analytica Chimica Acta</em>, 648(1), 77&ndash;84. <a href="https://doi.org/10.1016/j.aca.2009.06.046" target="_blank" rel="noopener">doi:10.1016/j.aca.2009.06.046</a></li>
+<li id="ref-7">[7] Chong, I.-G., Jun, C.-H. (2005). Performance of some variable selection methods when multicollinearity is present. <em>Chemometrics and Intelligent Laboratory Systems</em>, 78(1&ndash;2), 103&ndash;112. <a href="https://doi.org/10.1016/j.chemolab.2004.12.011" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2004.12.011</a></li>
+<li id="ref-8">[8] Westad, F., Martens, H. (2000). Variable Selection in near Infrared Spectroscopy Based on Significance Testing in Partial Least Squares Regression. <em>Journal of Near Infrared Spectroscopy</em>, 8(2), 117&ndash;124. <a href="https://doi.org/10.1255/jnirs.271" target="_blank" rel="noopener">doi:10.1255/jnirs.271</a></li>
+<li id="ref-9">[9] Jouan-Rimbaud, D., Massart, D.L., de Noord, O.E. (1996). Random correlation in variable selection for multivariate calibration with a genetic algorithm. <em>Chemometrics and Intelligent Laboratory Systems</em>, 35(2), 213&ndash;220. <a href="https://doi.org/10.1016/S0169-7439(96)00062-7" target="_blank" rel="noopener">doi:10.1016/S0169-7439(96)00062-7</a></li>
+<li id="ref-10">[10] Fern&aacute;ndez Pierna, J.A., Abbas, O., Baeten, V., Dardenne, P. (2009). A Backward Variable Selection method for PLS regression (BVSPLS). <em>Analytica Chimica Acta</em>, 642(1&ndash;2), 89&ndash;93. <a href="https://doi.org/10.1016/j.aca.2008.12.002" target="_blank" rel="noopener">doi:10.1016/j.aca.2008.12.002</a></li>
+<li id="ref-11">[11] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">下载完整技术报告</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">访问完整的、未经编辑的技术论文，其中包含用于在 Python 中运行 iPLS 和遗传算法的代码脚本，以及完整的光谱校准数据集。</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>我同意接收技术 PDF 并订阅 USTECH Innovations 更新，符合<a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">隐私政策</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">针对您的工艺评估此应用</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">我们的应用团队可以讲解方法、提供相关参考文献，并使用您自己的样品安排可行性研究。</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">联系我们</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -306,20 +276,20 @@
 <div class="card" onclick="window.location.href='blog-savitzky-golay-filtering.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="了解预处理中的 Savitzky-Golay 过滤" decoding="async" loading="lazy" src="../images/blog_spectral_math.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指导</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">了解预处理中的 Savitzky-Golay 过滤</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">关于 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 中谱预处理数学、平滑参数选择和导数配置的教育指南。</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Savitzky-Golay 滤波对光谱究竟做了什么，导数为何能消除基线，窗口宽度和多项式阶数应如何选择，并附原始文献与后续文献。</p>
 <a class="btn-text" href="blog-savitzky-golay-filtering.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a>
 </div>
 </div>
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="cali<span class="calix-x">X</span> 套件中的 PLS 回归简介" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="caliX 套件中的 PLS 回归简介" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指导</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">指南</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件 PLS 回归简介</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">分步教程解释了如何使用 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台从参考湿化学值编译校准模型。</p>
-<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读教程</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">从实践者角度逐步讲解 PLS 定标：如何划分数据，如何通过验证选择预处理和潜变量数，应解读哪些诊断指标，以及如何让模型在生产中持续有效。</p>
+<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">阅读指南</a>
 </div>
 </div>
 </div>
@@ -377,6 +347,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

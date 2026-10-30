@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Case study on optimizing dryer heat loops to keep corn gluten meal moisture at exactly 10.5%.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why the gluten feed dryer is one of the largest energy users in a corn wet mill, what over-drying and under-drying cost, and how on-line NIR moisture measurement can close the dryer control loop.">
 <meta name="keywords" content="corn gluten feed dryer, moisture control NIR, real-time dryer monitoring, feed drying optimization">
 <title>Real-Time Moisture Control in Corn Gluten Feed Dryers | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-corn-gluten-dryer.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-corn-gluten-dryer.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-corn-gluten-dryer.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Real-Time Moisture Control in Corn Gluten Feed Dryers",
-"description": "Case study on optimizing dryer heat loops to keep corn gluten meal moisture at exactly 10.5%.",
+"description": "Why the gluten feed dryer is one of the largest energy users in a corn wet mill, what over-drying and under-drying cost, and how on-line NIR moisture measurement can close the dryer control loop.",
 "url": "https://www.ustechinnovations.com/blog-corn-gluten-dryer.html",
 "datePublished": "2026-04-28",
-"dateModified": "2026-04-28",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Real-Time Moisture Control in Corn Gluten Feed Dryers | USTECH Innovations">
-    <meta property="og:description" content="Case study on optimizing dryer heat loops to keep corn gluten meal moisture at exactly 10.5%.">
+    <meta property="og:description" content="Why the gluten feed dryer is one of the largest energy users in a corn wet mill, what over-drying and under-drying cost, and how on-line NIR moisture measurement can close the dryer control loop.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-corn-gluten-dryer.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-corn-gluten-dryer.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Real-Time Moisture Control in Corn Gluten Feed Dryers | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Real-Time Moisture Control in Corn Gluten Feed Dryers | USTECH Innovations">
-    <meta name="twitter:description" content="Case study on optimizing dryer heat loops to keep corn gluten meal moisture at exactly 10.5%.">
+    <meta name="twitter:description" content="Why the gluten feed dryer is one of the largest energy users in a corn wet mill, what over-drying and under-drying cost, and how on-line NIR moisture measurement can close the dryer control loop.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-corn-gluten-dryer.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,46 +217,59 @@ Espa&#241;ol
 </a>
 <img src="images/blog_starch_milling.webp?v=1.0.5" alt="Real-Time Moisture Control in Corn Gluten Feed Dryers" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">CASE STUDY &mdash; April 28, 2026 &mdash; 2 min read</span>
+<span class="blog-post-meta">Article &mdash; April 28, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Real-Time Moisture Control in Corn Gluten Feed Dryers</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Continuous moisture standardization to reduce thermal drying energy costs and stabilize protein content.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why the gluten feed dryer is one of the largest energy consumers in a corn wet mill, what over-drying and under-drying cost in energy and product quality, and what the published literature says about measuring moisture on-line with near-infrared spectroscopy and using it to control a dryer.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Challenge of Corn Gluten Meal Drying</h2>
-<p>Corn gluten meal (CGM) and corn gluten feed (CGF) are valuable high-protein co-products of corn wet milling. Drying these sticky, moisture-rich meals in rotary or flash dryers is highly energy-intensive. Over-drying burns the protein content and wastes expensive steam; under-drying risks rapid product spoilage during storage. Keeping moisture at exactly 10.5% is the optimal operational window.</p>
-<h2>Inline Moisture Sensing</h2>
-<p>A corn milling facility integrated a USTECH ProLine17ES sensor at the exit of the rotary steam tube dryer. The sensor measures moisture and protein simultaneously. The moisture feedback loop was connected to the dryer steam pressure control loop, automatically adjusting dryer temperature based on the incoming wet crop load fluctuations.</p>
-<h2>Results</h2>
-<p>With live steam regulation, moisture variability dropped by 65%. Over-drying was eliminated, resulting in a 4.5% reduction in total gas energy consumption. The dryer return on investment was achieved in 4.8 months.</p>
+<h2>Why dryer moisture matters in a wet mill</h2>
+<p>Corn wet milling separates the kernel into starch, germ, fibre and gluten; fibre, steep liquor and gluten are sold into the <a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">feed industry</a> as corn gluten feed and corn gluten meal <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Corn gluten feed is worth about the same as, or less than, the incoming corn, so its margin depends on what it costs to make <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Dewatering, evaporation and drying dominate the energy use of a wet mill, and energy is its second largest operating cost after the corn itself <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. The gluten feed dryer therefore sits between the fuel bill and the moisture specification of a co-product sold by weight.</p>
+<h2>What is being dried</h2>
+<p>The fibre is dewatered mechanically to roughly 65&ndash;75 % moisture in a screen centrifuge and about ten percentage points further in a screw press; steep liquor is then added and the mixture is dried to corn gluten feed, most commonly in a direct-fired, co-current rotary dryer, or in steam-tube dryers where steam is cheaper <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. The dryer feed is not constant: in a 22-week dairy trial, nutrient concentrations of delivered wet and dry corn gluten feed varied throughout, and the authors recommended sampling every new delivery <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Water removal is a recognised cost problem of corn co-products in general <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<p>Both directions of error have a price. Wet corn gluten feed stored without spoilage only at 6 &deg;C; at 17 or 26.5 &deg;C a preservative was needed to hold it for two to three weeks <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>, which is why the product is dried before shipping <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. In the other direction, heat damages protein: in distillers dried grains with solubles heat-treated at 130 &deg;C, the standardised ileal digestibility of lysine in pigs fell from about 67 % to 52&ndash;55 % <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Corn gluten feed is a different co-product, but it is dried in the same class of equipment, and the ENERGY STAR guide notes that rotary dryers can scorch the product <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>Energy, over-drying and the control problem</h2>
+<p>In the ENERGY STAR energy balance for a modern 100,000 bushel per day plant, the gluten feed dryer is listed at 25,419 Btu per bushel of primary energy out of 115,777 for the whole plant, roughly 22 % <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Every point of moisture removed below the target is water evaporated for nothing and product weight lost at the scale. The guide's remedy is explicit: monitoring outlet temperature and moisture and controlling dryer feed conditions and temperature may save energy and narrow the range of product dryness, and model predictive control was already being applied to dryers in corn wet milling <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Over-drying is a generic rotary-dryer problem: an intelligent controller on a cut-tobacco rotary dryer, designed to hold outlet moisture at its optimum, reduced over-dried product compared with regulatory control <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. The loop is only as good as its measurement, however: a fuzzy controller on a fertiliser rotary dryer cut biomass fuel use by 9 % by holding exhaust-gas temperature at its optimum, but the plant had no on-line moisture instrument, so temperature stood in for the variable that actually mattered <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Measuring moisture: reference method and NIR</h2>
+<p>The reference method for moisture in feed materials is the oven-drying loss method of ISO 6496, a laboratory procedure that reports hours after sampling, long after the dryer conditions have changed <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Near-infrared spectrometry is the rapid alternative, and ISO 12099 gives the guidelines for calibrating, validating and monitoring NIR instruments on animal feeding stuffs <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. For corn co-products, a 2025 study with 30 PLS models on 1,437 reference samples including DDGS reported moisture models generally above a ratio of performance to deviation of 3 on held-out data, while noting that material heterogeneity co-determined performance <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</p>
+<p>Moving the measurement to the dryer outlet has its own literature. Green et al., monitoring fluid bed dryers by in-line NIR at three scales, showed that process heterogeneity plays a major role in apparent prediction accuracy and that the method with the lowest apparent error is not always the best choice for control <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Bogomolov et al. found that turbulent material movement past the probe produces intensity fluctuations that look spectrally like scatter, so conventional scatter correction also removes moisture information; averaging spectra over time brought the in-line root-mean-square error to about 0.1 % moisture, while probe fouling had only a minor effect <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. These are pharmaceutical results, but the mechanisms &mdash; a moving, heterogeneous solid in front of a probe and sparse, delayed reference values &mdash; apply to a co-product dryer too.</p>
+<h2>Putting an NIR analyzer on a dryer</h2>
+<ul>
+<li><strong>Sample where the product is representative.</strong> Apparent accuracy depends on how the material is presented to the probe <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>, so the measuring point must see a well-mixed stream, and calibration reference samples must be taken there at the same time.</li>
+<li><strong>Calibrate on the plant's own material and keep validating.</strong> Corn gluten feed composition shifts between deliveries <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>; the calibration population must span those shifts and be checked against ISO 6496 results <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a> as ISO 12099 describes <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</li>
+<li><strong>Treat the NIR value as the controlled variable, not a display.</strong> The documented energy benefit comes from controlling the dryer on outlet moisture <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>; a controller acting only on exhaust temperature is using a proxy <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
+</ul>
+<h2>How USTECH approaches it</h2>
+<p>At the dryer outlet USTECH uses the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> and <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> inline NIR analyzers, rugged IP65 units with an InGaAs array and a sapphire window, with <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passing the moisture value to the PLC or SCADA dryer loop. Calibrations are built in <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> against ISO 6496 reference values <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a> following ISO 12099 <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>, with the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> at-line analyzer for the feed-house laboratory. Whether a given dryer, product and sampling point reach the accuracy the plant needs is established in a feasibility study with your own samples and reference analyses.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>"Energy Optimization in Corn Milling Co-Product Dryers via Real-Time Spectroscopic Control," <em>Biomass & Bioenergy Journal</em>, 2024.</li>
+<li id="ref-1">[1] Rausch, K.D., Hummel, D., Johnson, L.A., May, J.B. (2019). Wet milling: The basis for corn biorefineries. In: <em>Corn: Chemistry and Technology</em>, 3rd ed., pp. 501&ndash;535. Elsevier. <a href="https://doi.org/10.1016/B978-0-12-811971-6.00018-8" target="_blank" rel="noopener">doi:10.1016/B978-0-12-811971-6.00018-8</a></li>
+<li id="ref-2">[2] Galitsky, C., Worrell, E., Ruth, M. (2003). <em>Energy efficiency improvement and cost saving opportunities for the corn wet milling industry: An ENERGY STAR guide for energy and plant managers.</em> Report LBNL-52307, Lawrence Berkeley National Laboratory. <a href="https://doi.org/10.2172/816536" target="_blank" rel="noopener">doi:10.2172/816536</a></li>
+<li id="ref-3">[3] Bernard, J.K., Delost, R.C., Mueller, F.J., Miller, J.K., Miller, W.M. (1991). Effect of wet or dry corn gluten feed on nutrient digestibility and milk yield and composition. <em>Journal of Dairy Science</em>, 74(11), 3913&ndash;3919. <a href="https://doi.org/10.3168/jds.S0022-0302(91)78584-6" target="_blank" rel="noopener">doi:10.3168/jds.S0022-0302(91)78584-6</a></li>
+<li id="ref-4">[4] Rausch, K.D., Belyea, R.L. (2006). The future of coproducts from corn processing. <em>Applied Biochemistry and Biotechnology</em>, 128(1), 47&ndash;86. <a href="https://doi.org/10.1385/ABAB:128:1:047" target="_blank" rel="noopener">doi:10.1385/ABAB:128:1:047</a></li>
+<li id="ref-5">[5] Droppo, T.E., Macleod, G.K., Grieve, D.G. (1985). Composition and storage characteristics of wet corn gluten feed. <em>Canadian Journal of Animal Science</em>, 65(1), 265&ndash;268. <a href="https://doi.org/10.4141/cjas85-032" target="_blank" rel="noopener">doi:10.4141/cjas85-032</a></li>
+<li id="ref-6">[6] Almeida, F.N., Htoo, J.K., Thomson, J., Stein, H.H. (2013). Amino acid digestibility of heat damaged distillers dried grains with solubles fed to pigs. <em>Journal of Animal Science and Biotechnology</em>, 4, 44. <a href="https://doi.org/10.1186/2049-1891-4-44" target="_blank" rel="noopener">doi:10.1186/2049-1891-4-44</a></li>
+<li id="ref-7">[7] Pang, S., Jia, J., Ding, X., Yu, S., Liu, Y. (2021). Intelligent control in the application of a rotary dryer for reduction in the over-drying of cut tobacco. <em>Applied Sciences</em>, 11(17), 8205. <a href="https://doi.org/10.3390/app11178205" target="_blank" rel="noopener">doi:10.3390/app11178205</a></li>
+<li id="ref-8">[8] Pereira J&uacute;nior, M., da Silva, M.T., Guimar&atilde;es, F.G., Euz&eacute;bio, T.A.M. (2022). Energy savings in a rotary dryer due to a fuzzy multivariable control application. <em>Drying Technology</em>, 40(6), 1196&ndash;1209. <a href="https://doi.org/10.1080/07373937.2020.1861459" target="_blank" rel="noopener">doi:10.1080/07373937.2020.1861459</a></li>
+<li id="ref-9">[9] ISO 6496:1999. <em>Animal feeding stuffs &mdash; Determination of moisture and other volatile matter content.</em> ISO, Geneva. <a href="https://www.iso.org/standard/12871.html" target="_blank" rel="noopener">iso.org/standard/12871.html</a></li>
+<li id="ref-10">[10] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-11">[11] Simmler, M., Ishizaki, K., Mulloni, A., Abbate, R., Juste, A., Sroka, A. (2025). Enabling precision feeding: A novel micro-NIRS system for rapid on-site analysis of the nutritional composition of poultry feed and feed ingredients. <em>Smart Agricultural Technology</em>, 12, 101220. <a href="https://doi.org/10.1016/j.atech.2025.101220" target="_blank" rel="noopener">doi:10.1016/j.atech.2025.101220</a></li>
+<li id="ref-12">[12] Green, R.L., Thurau, G., Pixley, N.C., Mateos, A., Reed, R.A., Higgins, J.P. (2005). In-line monitoring of moisture content in fluid bed dryers using near-IR spectroscopy with consideration of sampling effects on method accuracy. <em>Analytical Chemistry</em>, 77(14), 4515&ndash;4522. <a href="https://doi.org/10.1021/ac050272q" target="_blank" rel="noopener">doi:10.1021/ac050272q</a></li>
+<li id="ref-13">[13] Bogomolov, A., Mannhardt, J., Heinzerling, O. (2018). Accuracy improvement of in-line near-infrared spectroscopic moisture monitoring in a fluidized bed drying process. <em>Frontiers in Chemistry</em>, 6, 388. <a href="https://doi.org/10.3389/fchem.2018.00388" target="_blank" rel="noopener">doi:10.3389/fchem.2018.00388</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -286,7 +306,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -305,6 +324,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

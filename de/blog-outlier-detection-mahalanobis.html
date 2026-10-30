@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="USTECH Innovations Leitfaden – Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T²" name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Wie Mahalanobis-Distanz, Hotellings T-Quadrat, Leverage und Q-Residuen einem Prozessanalysator sagen, ob ein Spektrum zu seiner Kalibrierung gehört, wie ihre Grenzwerte festgelegt werden und warum eine Statistik in der Software mehrere Namen trägt." name="description"/>
 <meta content="Chemometrie zur Erkennung von Ausreißern, Mahalanobis-Distanz NIR, Hotelling-T-Quadrat, spektrale Ausreißeranalyse" name="keywords"/>
 <title>Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T² | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-outlier-detection-mahalanobis.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "de",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "de",
   "headline": "Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T²",
-  "description": "USTECH Innovations Leitfaden – Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T².",
+  "description": "Wie Mahalanobis-Distanz, Hotellings T-Quadrat, Leverage und Q-Residuen einem Prozessanalysator sagen, ob ein Spektrum zu seiner Kalibrierung gehört, wie ihre Grenzwerte festgelegt werden und warum eine Statistik in der Software mehrere Namen trägt.",
   "url": "https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html",
   "datePublished": "2026-06-11",
-  "dateModified": "2026-06-11",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T² | USTECH Innovations" property="og:title"/>
-<meta content="USTECH Innovations Leitfaden – Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T²" property="og:description"/>
+<meta content="Wie Mahalanobis-Distanz, Hotellings T-Quadrat, Leverage und Q-Residuen einem Prozessanalysator sagen, ob ein Spektrum zu seiner Kalibrierung gehört, wie ihre Grenzwerte festgelegt werden und warum eine Statistik in der Software mehrere Namen trägt." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/de/blog-outlier-detection-mahalanobis.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T² | USTECH Innovations" property="og:image:alt"/>
 <meta content="de_DE" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T² | USTECH Innovations" name="twitter:title"/>
-<meta content="USTECH Innovations Leitfaden – Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T²" name="twitter:description"/>
+<meta content="Wie Mahalanobis-Distanz, Hotellings T-Quadrat, Leverage und Q-Residuen einem Prozessanalysator sagen, ob ein Spektrum zu seiner Kalibrierung gehört, wie ihre Grenzwerte festgelegt werden und warum eine Statistik in der Software mehrere Namen trägt." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-outlier-detection-mahalanobis.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,83 +218,52 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Zurück zu Allen Blogs und Publikationen</a>
 <img alt="Outlier detection statistical plot on screen" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_outlier_detection.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — June 11, 2026 — 4 Min. Lesezeit</span>
+<span class="blog-post-meta">Leitfaden — 11. Juni 2026 — 5 Min. Lesezeit</span>
 <h1 class="blog-post-title">Chemometrische Ausreißererkennung: Mahalanobis-Distanz vs. Hotellings T²</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Ein analytischer Leitfaden, der die multivariate Mathematik detailliert beschreibt, die in der cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite zur Identifizierung von Spektralanomalien, Instrumentenabweichungen und nicht spezifikationsgerechten Rohstoffen verwendet wird.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Wie Mahalanobis-Distanz, Hotellings T&sup2;, Leverage und Q-Residuen einem Prozess-NIR-Analysator sagen, ob ein Spektrum zu der Kalibrierung gehört, die er gerade anwenden will, wie die Grenzwerte dieser Statistiken hergeleitet werden und warum dieselbe Größe in verschiedener Software unter verschiedenen Namen und Skalen erscheint &mdash; mit den statistischen Originalarbeiten und den einschlägigen ASTM-Praktiken.</p>
 </div>
 <div class="blog-post-content">
-<h2>Die Rolle der Ausreißererkennung in der Spektroskopie</h2>
-<p>Beim Einsatz quantitativer Kalibrierungsmodelle (erstellt über partielle kleinste Quadrate oder PLS-Regression) in einer aktiven Produktionslinie geht das System davon aus, dass die gescannten Proben der Kalibrierungsdatenbank ähnlich sind. Wenn eine Probe gescannt wird, die eine unerwartete Verunreinigung enthält, eine extreme Temperaturschwankung aufweist oder eine völlig andere Rohstoffmatrix aufweist, gibt das Modell eine Vorhersage aus. Diese Vorhersage wird jedoch mathematisch ungültig sein.</p>
-<p>Um zu verhindern, dass schlechte Vorhersagen fehlerhafte Daten in Ihr SCADA-System schreiben, müssen Prozessspektrometer vor der Ausgabe von Vorhersagen bewerten, ob jedes gescannte Spektrum ein „multivariater Ausreißer“ ist. Dies wird erreicht, indem das Probenspektrum in den mehrdimensionalen Raum des Kalibrierungsmodells projiziert und statistische Abstandsgrenzen berechnet werden.</p>
-<blockquote>„Die Ausreißererkennung fungiert als Immunsystem eines Prozessanalysators. Sie gewährleistet, dass Vorhersagen nur dann ausgegeben werden, wenn die Probe mit dem Kalibrierungsraum übereinstimmt.“</blockquote>
-<h2>Mahalanobis-Distanz: Messung der Kovarianz</h2>
-<p>Der einfache euklidische Abstand misst den geradlinigen Abstand zwischen einem Probenspektrum und dem Kalibrierungsmittel. Der euklidische Abstand versagt jedoch in der Chemometrie, da er die starke Korrelation (Kovarianz) zwischen benachbarten Wellenlängen in NIR-Spektren ignoriert.</p>
-<p><strong>Mahalanobis-Distanz (MD)</strong> löst dieses Problem, indem die Distanz anhand der Kovarianzmatrix des Kalibrierungsdatensatzes skaliert wird. Tatsächlich berücksichtigt MD die Richtung der Varianz, indem es Variationen in Richtungen mit hoher normaler Kalibrierungsvarianz weniger Gewicht zuweist und Abweichungen in Richtungen, in denen die Kalibrierungsdaten eng gebunden sind, ein hohes Gewicht zuweist.</p>
-<h2>Hotellings T²: Vertrauensschwellen</h2>
-<p>Während die Mahalanobis-Entfernung einen Rohentfernungswert liefert, benötigen wir einen statistisch fundierten Schwellenwert, um Ausreißer zu kennzeichnen. <strong>Hotellings T²</strong> normalisiert die Mahalanobis-Distanz in einem Hauptkomponenten-Projektionsraum (PC) und berechnet einen multivariaten Score. Da T² einer F-Verteilung folgt, können wir formale statistische Konfidenzgrenzen festlegen (typischerweise 95 % oder 99 %):</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Mahalanobis-Distanz (MD)</th>
-<th>Hotellings T²</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Mathematischer Schwerpunkt</strong></td>
-<td>Misst die verallgemeinerte Entfernung im rohen oder kovarianzskalierten Wellenlängenraum.</td>
-<td>Misst die Bewertungsdistanz innerhalb des Hauptkomponentenraums (PC-Bewertungen).</td>
-</tr>
-<tr>
-<td><strong>Kovarianzskalierung</strong></td>
-<td>Skaliert nach der Kovarianzmatrix der gesamten Wellenlänge.</td>
-<td>Skaliert nach der Varianz der einzelnen PC-Ergebnisse.</td>
-</tr>
-<tr>
-<td><strong>Schwellenwert</strong></td>
-<td>Heuristische oder Chi-Quadrat-Verteilung ($\chi^2$).</td>
-<td>Konfidenzintervalle der strengen F-Verteilung ($1-\alpha$, wobei $\alpha = 0,05$ oder $0,01$).</td>
-</tr>
-<tr>
-<td><strong>Bester Anwendungsfall</strong></td>
-<td>Melden Sie fehlerhafte Rohstoffe, Abweichungen bei der Instrumentierung oder Hardwarefehler.</td>
-<td>Validieren der Klassenmitgliedschaft und Markieren von Beispielen außerhalb des Modellbereichs.</td>
-</tr>
-</tbody>
-</table>
-<h2>Ausreißergrenzen in der cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite festlegen</h2>
-<p>Um Ausreißergrenzen in Ihre Kalibrierungen zu implementieren, befolgen Sie diese Schritte in <strong>cali<span class="calix-x">X</span>Suite</strong>:</p>
-<ol>
-<li><strong>Kompilieren Sie die PCA/PLS-Ergebnisse:</strong>Öffnen Sie Ihre Kalibrierungsdatei und berechnen Sie die Hauptkomponentenlastvektoren.</li>
-<li><strong>Konfidenzintervall festlegen:</strong>Navigieren Sie zur Registerkarte „Ausreißer“ und wählen Sie „Hotelling T²“. Wählen Sie einen Konfidenzschwellenwert von 99 % ($\alpha = 0,01 $) für kritische Kontrollpunkte oder 95 % ($\alpha = 0,05 $) für die Routineüberwachung.</li>
-<li><strong>ProChem-Alarme aktivieren:</strong>Synchronisieren Sie das Modell mit dem Prozessspektrometer. Ordnen Sie in <strong>ProChem</strong> die Ausgabe des Ausreißer-Flags Ihrem PLC-Register zu, um die letzte gültige Vorhersage zu speichern, wenn ein Ausreißer ausgelöst wird.</li>
-</ol>
-<h2>Abschluss</h2>
-<p>Durch den Einsatz einer robusten Ausreißererkennung mithilfe von Mahalanobis Distance und Hotellings T² wird die Integrität des Prozessanalysators sichergestellt. Durch die Identifizierung und Isolierung anomaler Spektren können Hersteller Kalibrierungsfehler verhindern und automatisierte Prozessschleifen sichern.</p>
-<div class="blog-post-references">
-<h3>Referenzen</h3>
+<h2>Warum jede Vorhersage eine Gültigkeitsprüfung braucht</h2>
+<p>Eine multivariate Kalibrierung, ob sie auf einem Inline-Analysator in der <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemischen und pharmazeutischen Industrie</a> oder auf einem Tischgerät in einem Mischfutterwerk läuft, ist ein empirisches Modell der Proben, mit denen sie trainiert wurde, und Martens und N&aelig;s zählen die automatische Ausreißererkennung zu dem, was eine solche Kalibrierung leisten muss <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. ASTM E1655 hält fest, dass die Kalibrierverfahren den Bereich festlegen, in dem Messungen gültig sind, und behandelt den Umgang mit Ausreißern als Bestandteil einer normgerechten Kalibrierung <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Für den Routinebetrieb ist ASTM D6122 eindeutig: Die Anwendbarkeit eines Modells auf eine Probe darf nicht vorausgesetzt werden, die Ausreißererkennung weist nach, dass die Kalibrierung auf das gemessene Spektrum anwendbar ist, und ist das Spektrum ein Ausreißer, ist das Analysatorergebnis ungültig, wobei die Prüfung nicht angibt, ob Probe, Modell oder Gerät die Ursache ist <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<h2>Mahalanobis-Distanz: eine Distanz, die die Kovarianz berücksichtigt</h2>
+<p>Die 1936 von Mahalanobis eingeführte verallgemeinerte Distanz misst, wie weit ein Punkt vom Zentrum einer Population entfernt liegt, in Einheiten der eigenen Varianz und Kovarianz dieser Population <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Das Tutorial von De Maesschalck, Jouan-Rimbaud und Massart erklärt, warum das für Spektren wichtig ist: Benachbarte Wellenlängen sind stark korreliert, sodass eine euklidische Distanz eine normale Änderung entlang der Hauptrichtung der spektralen Variation genauso behandelt wie eine gleich große Änderung in einer Richtung, die der Kalibrierdatensatz nie gezeigt hat, während die Mahalanobis-Distanz jede Richtung mit ihrer Varianz skaliert <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Da sich die Kovarianzmatrix eines NIR-Datensatzes über alle Wellenlängen nicht zuverlässig invertieren lässt, wird die Distanz im Score-Raum der Hauptkomponenten oder der PLS berechnet, auf den Komponenten, die das Modell tatsächlich verwendet; diesen Fall behandelt das Tutorial neben dem ursprünglichen Variablenraum <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<h2>Hotellings T&sup2;, Leverage und GH: eine Größe auf mehreren Skalen</h2>
+<p>Hotelling verallgemeinerte 1931 das Student-Verhältnis auf mehrere korrelierte Variablen; sein T&sup2; ist ein mit der inversen Kovarianzmatrix gewichteter Abweichungsvektor, also die quadrierte Mahalanobis-Distanz unter anderem Namen <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Garrido-Varo, Garc&iacute;a-Olmo und Fearn zeigen, dass die quadrierte Mahalanobis-Distanz D&sup2;, Hotellings T&sup2;, die Leverage <em>L</em> in The Unscrambler und die GH-Distanz in WinISI über D&sup2; = T&sup2; &asymp; <em>L</em>&middot;<em>n</em> &asymp; GH&middot;<em>k</em> zusammenhängen, wobei <em>n</em> und <em>k</em> die Anzahl der Proben und Variablen in den Daten sind, die die Distanz definieren; ein ohne diese Umrechnung zwischen Programmen übernommener Grenzwert ist daher um einen datenabhängigen Faktor falsch <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Die GH-Skala stammt von Shenk und Westerhaus, die eine standardisierte Distanz von 3,0 vom Populationsmittelwert als Grenze für den Ausschluss spektraler Ausreißer verwendeten, während in ihrer Studie eine minimale Nachbarschaftsdistanz von 0,6 zwischen Proben einen angemessenen Kalibrierdatensatz ergab <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>Q-Residuen: was das Modell nicht erklärt hat</h2>
+<p>Eine Distanz im Score-Raum fragt nur, ob die Probe entlang der dem Modell bekannten Richtungen extrem ist. Ein Spektrum kann innerhalb dieser Grenzen liegen und dennoch Strukturen enthalten, die das Modell nie gesehen hat, etwa eine Bande einer Verunreinigung oder ein Geräteartefakt. Jackson und Mudholkar begegneten dem mit Tests auf die Residuen eines Hauptkomponentenmodells, also die Differenz zwischen einer Beobachtung und ihrer Rekonstruktion aus weniger als allen Komponenten, für einen einzelnen Beobachtungsvektor und für eine Gruppe, mit der Ausreißererkennung in der Qualitätskontrolle als vorgesehener Anwendung <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Die Summe der quadrierten Residuen ist die Q-Statistik oder der quadrierte Vorhersagefehler (SPE); Jacksons Buch behandelt Q und T&sup2; gemeinsam <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Nomikos und MacGregor bauten multivariate Regelkarten auf beiden Statistiken auf, mit Kontrollgrenzen, die aus der historischen Referenzverteilung früherer erfolgreicher Chargen entwickelt wurden <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Beide ergänzen sich: Eine von T&sup2; markierte Probe ist in einer Richtung ungewöhnlich, die die Kalibrierung aufspannt, eine von Q markierte Probe liegt außerhalb der Modellebene, und nur Letzteres deckt einen neuen Störstoff auf <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>.</p>
+<h2>Festlegen der Grenzwerte: F, Beta und Chi-Quadrat</h2>
+<p>Die Grenzwerte für T&sup2; hängen davon ab, ob die geprüfte Probe zu den Daten gehörte, die die Distanz definiert haben. Tracy, Young und Mason weisen darauf hin, dass die üblicherweise verwendeten genäherten F- und Chi-Quadrat-Grenzen konservativ sind, wenn in der Anlaufphase nur Einzelbeobachtungen vorliegen, und leiten für diesen Fall eine exakte Grenze auf Basis der Betaverteilung her <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. In einem Kalibrierprojekt ist das der Unterschied zwischen der Prüfung der Kalibrierproben selbst und der Beurteilung eines neuen Prozessspektrums gegenüber einem eingefrorenen Modell, für die die F-basierte Grenze gilt <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Für Q liefert die von Jackson und Mudholkar hergeleitete Näherungsverteilung eine Grenze bei einem gewählten Signifikanzniveau <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Eine weitere Gefahr betrifft die Kalibrierphase: Rousseeuw und van Zomeren zeigen, dass der klassische Mittelwert und die klassische Kovarianz selbst von den Ausreißern verzerrt werden, die sie aufspüren sollen, sodass mehrere Ausreißer einander maskieren, und schlagen Distanzen auf Grundlage robuster Schätzungen von Lage und Kovarianz vor <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Daraus folgen drei Punkte:</p>
 <ul>
-<li>ASTM E1655 -<em>Standardpraktiken für die multivariate quantitative Infrarotanalyse</em>.</li>
-<li>Hotelling, H., „The Generalization of Student's Ratio“,<em>Annalen der mathematischen Statistik</em>, 1931.</li>
-<li>Martens, H. und Næs, T.,<em>Multivariate Kalibrierung</em>, John Wiley &amp; Sons, 1989.</li>
+<li><strong>Bereinigen Sie den Kalibrierdatensatz mit der richtigen Grenze:</strong> der betabasierten T&sup2;-Grenze oder einer robusten Distanz, da die F-Näherung in dieser Phase konservativ ist und eine klassische Kovarianz durch mehrere Ausreißer maskiert werden kann <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a><a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>.</li>
+<li><strong>Verwenden Sie T&sup2; und Q in der Routinevorhersage gemeinsam,</strong> ergänzt um den optionalen Nächster-Nachbar-Test, den D6122 empfiehlt, wenn die Kalibrierspektren stark gruppiert sind <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
+<li><strong>Halten Sie fest, auf welche Statistik und Skala sich ein Grenzwert bezieht,</strong> denn GH, Leverage und T&sup2; unterscheiden sich um Faktoren von <em>n</em> und <em>k</em> <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+</ul>
+<h2>Ausreißerstatistiken in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> und ProChem</h2>
+<p>Die <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>-Suite führt Hotellings T&sup2; und Q-Residuen, die PLS-Leverage und die Mahalanobis-Distanz unter ihren Verfahren zur Ausreißererkennung und bietet GH/NH-Grenzwerte zur Bereinigung eines Kalibrierdatensatzes; <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> führt die exportierten Modelle auf USTECH-Analysatoren aus und verbindet sie mit PLC- oder SCADA-Systemen mit Dashboards und Alarmen, sodass ein Spektrum außerhalb des Kalibrierraums markiert wird, statt stillschweigend in einen Wert umgerechnet zu werden. Welche Grenzwerte zu einem bestimmten Produkt und Gerät passen, wird in einer Machbarkeitsstudie mit Ihren eigenen Proben ermittelt.</p>
+<div class="blog-post-references">
+<h3>Quellen</h3>
+<ul>
+<li id="ref-1">[1] Martens, H., N&aelig;s, T. (1989). <em>Multivariate Calibration.</em> John Wiley &amp; Sons, Chichester. <a href="https://www.wiley.com/en-us/Multivariate+Calibration-p-9780471930471" target="_blank" rel="noopener">wiley.com/en-us/Multivariate+Calibration-p-9780471930471</a></li>
+<li id="ref-2">[2] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-3">[3] ASTM D6122-25. <em>Standard Practice for Validation of the Performance of Multivariate Online, At-Line, Field and Laboratory Infrared Spectrophotometer, and Raman Spectrometer Based Analyzer Systems.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6122-25.html" target="_blank" rel="noopener">store.astm.org/d6122-25.html</a></li>
+<li id="ref-4">[4] Mahalanobis, P.C. (2018). Reprint of: Mahalanobis, P.C. (1936) &ldquo;On the generalised distance in statistics.&rdquo; <em>Sankhya A</em>, 80(S1), 1&ndash;7; originally <em>Proceedings of the National Institute of Sciences of India</em>, 2(1), 49&ndash;55. <a href="https://doi.org/10.1007/s13171-019-00164-5" target="_blank" rel="noopener">doi:10.1007/s13171-019-00164-5</a></li>
+<li id="ref-5">[5] De Maesschalck, R., Jouan-Rimbaud, D., Massart, D.L. (2000). The Mahalanobis distance. <em>Chemometrics and Intelligent Laboratory Systems</em>, 50(1), 1&ndash;18. <a href="https://doi.org/10.1016/S0169-7439(99)00047-7" target="_blank" rel="noopener">doi:10.1016/S0169-7439(99)00047-7</a></li>
+<li id="ref-6">[6] Hotelling, H. (1931). The generalization of Student&rsquo;s ratio. <em>The Annals of Mathematical Statistics</em>, 2(3), 360&ndash;378. <a href="https://doi.org/10.1214/aoms/1177732979" target="_blank" rel="noopener">doi:10.1214/aoms/1177732979</a></li>
+<li id="ref-7">[7] Garrido-Varo, A., Garc&iacute;a-Olmo, J., Fearn, T. (2019). A note on Mahalanobis and related distance measures in WinISI and The Unscrambler. <em>Journal of Near Infrared Spectroscopy</em>, 27(4), 253&ndash;258. <a href="https://doi.org/10.1177/0967033519848296" target="_blank" rel="noopener">doi:10.1177/0967033519848296</a></li>
+<li id="ref-8">[8] Shenk, J.S., Westerhaus, M.O. (1991). Population definition, sample selection, and calibration procedures for near infrared reflectance spectroscopy. <em>Crop Science</em>, 31(2), 469&ndash;474. <a href="https://doi.org/10.2135/cropsci1991.0011183X003100020049x" target="_blank" rel="noopener">doi:10.2135/cropsci1991.0011183X003100020049x</a></li>
+<li id="ref-9">[9] Jackson, J.E., Mudholkar, G.S. (1979). Control procedures for residuals associated with principal component analysis. <em>Technometrics</em>, 21(3), 341&ndash;349. <a href="https://doi.org/10.1080/00401706.1979.10489779" target="_blank" rel="noopener">doi:10.1080/00401706.1979.10489779</a></li>
+<li id="ref-10">[10] Jackson, J.E. (1991). <em>A User&rsquo;s Guide to Principal Components.</em> John Wiley &amp; Sons, New York. <a href="https://doi.org/10.1002/0471725331" target="_blank" rel="noopener">doi:10.1002/0471725331</a></li>
+<li id="ref-11">[11] Nomikos, P., MacGregor, J.F. (1995). Multivariate SPC charts for monitoring batch processes. <em>Technometrics</em>, 37(1), 41&ndash;59. <a href="https://doi.org/10.1080/00401706.1995.10485888" target="_blank" rel="noopener">doi:10.1080/00401706.1995.10485888</a></li>
+<li id="ref-12">[12] Tracy, N.D., Young, J.C., Mason, R.L. (1992). Multivariate control charts for individual observations. <em>Journal of Quality Technology</em>, 24(2), 88&ndash;95. <a href="https://doi.org/10.1080/00224065.1992.12015232" target="_blank" rel="noopener">doi:10.1080/00224065.1992.12015232</a></li>
+<li id="ref-13">[13] Rousseeuw, P.J., van Zomeren, B.C. (1990). Unmasking multivariate outliers and leverage points. <em>Journal of the American Statistical Association</em>, 85(411), 633&ndash;639. <a href="https://doi.org/10.1080/01621459.1990.10474920" target="_blank" rel="noopener">doi:10.1080/01621459.1990.10474920</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Laden Sie den vollständigen technischen Bericht herunter</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Greifen Sie auf das vollständige, unbearbeitete Fachpapier mit mathematischen Ableitungen der Mahalanobis-Distanz, Kovarianzformeln und Hotelling-F-Verteilungsmatrizen zu.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Ich bin damit einverstanden, das technische PDF zu erhalten und USTECH Innovations-Updates zu abonnieren, die den Anforderungen entsprechen <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">Datenschutzrichtlinie</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Bewerten Sie diese Anwendung für Ihren Prozess</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Unser Applikationsteam erläutert die Methode, stellt die zugrunde liegende Literatur bereit und organisiert eine Machbarkeitsstudie mit Ihren eigenen Proben.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Kontakt aufnehmen</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -295,21 +271,21 @@
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- PLS Regression Card -->
 <div class="card" onclick="window.location.href='blog-pls-regression-calix.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img alt="Einführung in die PLS-Regression in der cali<span class="calix-x">X</span> Suite" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
+<img alt="Einführung in die PLS-Regression in der caliX Suite" decoding="async" loading="lazy" src="../images/blog_pls_regression.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">FÜHRUNG</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">LEITFADEN</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Einführung in die PLS-Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Eine Schritt-für-Schritt-Anleitung, die erklärt, wie man mithilfe der cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Plattform Kalibrierungsmodelle anhand von Referenzwerten der Nasschemie erstellt.</p>
-<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Lesen Sie das Tutorial</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Ein praxisnaher Gang durch eine PLS-Kalibrierung: wie die Daten aufgeteilt, wie Vorbehandlung und Anzahl latenter Variablen per Validierung gewählt werden, welche Diagnosen zu lesen sind und wie das Modell in der Produktion am Leben gehalten wird.</p>
+<a class="btn-text" href="blog-pls-regression-calix.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leitfaden lesen</a>
 </div>
 </div>
 <!-- PCA Classification Card -->
 <div class="card" onclick="window.location.href='blog-pca-classification-models.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img alt="Entwicklung robuster chemometrischer Klassifizierungsmodelle über PCA" decoding="async" loading="lazy" src="../images/blog_pca_chemometrics.webp?v=1.0.5" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);"/>
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">FÜHRUNG</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">LEITFADEN</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pca-classification-models.html" style="color: var(--accent-black); text-decoration: none;">Entwicklung robuster chemometrischer Klassifizierungsmodelle über PCA</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Eine schrittweise Methodik zur Erläuterung der Hauptkomponentenanalyse zur qualitativen Identifizierung von Rohstoffen.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Wie aus PCA-Scores, -Loadings und -Residuen ein Klassifizierungsmodell wird, woher die Hotelling- und Q-Grenzen stammen, warum sich Klassenmodellierung von PLS-DA unterscheidet und wie Behörden die Validierung eines qualitativen NIR-Modells erwarten.</p>
 <a class="btn-text" href="blog-pca-classification-models.html" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Leitfaden lesen</a>
 </div>
 </div>
@@ -368,6 +344,6 @@
 <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

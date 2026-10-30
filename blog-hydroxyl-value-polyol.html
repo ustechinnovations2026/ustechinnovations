@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations White Paper - Real-Time Hydroxyl Value Monitoring in Polyol Production.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.">
 <meta name="keywords" content="hydroxyl value NIR, polyol production monitoring, real-time OH value, chemical process analytics">
 <title>Real-Time Hydroxyl Value Monitoring in Polyol Production | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-hydroxyl-value-polyol.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-hydroxyl-value-polyol.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-hydroxyl-value-polyol.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Real-Time Hydroxyl Value Monitoring in Polyol Production",
-"description": "USTECH Innovations White Paper - Real-Time Hydroxyl Value Monitoring in Polyol Production.",
+"description": "Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.",
 "url": "https://www.ustechinnovations.com/blog-hydroxyl-value-polyol.html",
 "datePublished": "2026-06-01",
-"dateModified": "2026-06-01",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Real-Time Hydroxyl Value Monitoring in Polyol Production | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations White Paper - Real-Time Hydroxyl Value Monitoring in Polyol Production.">
+    <meta property="og:description" content="Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-hydroxyl-value-polyol.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-hydroxyl-value-polyol.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Real-Time Hydroxyl Value Monitoring in Polyol Production | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Real-Time Hydroxyl Value Monitoring in Polyol Production | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations White Paper - Real-Time Hydroxyl Value Monitoring in Polyol Production.">
+    <meta name="twitter:description" content="Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-hydroxyl-value-polyol.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,83 +217,53 @@ Espa&#241;ol
 </a>
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Polyol Chemical Reactor Processing" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">White Paper &mdash; June 01, 2026 &mdash; 3 min read</span>
+<span class="blog-post-meta">Article &mdash; June 1, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Real-Time Hydroxyl Value Monitoring in Polyol Production</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How online FT-NIR spectroscopy replaces wet chemical titrations to deliver continuous end-point determination during polymerization.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why the hydroxyl number is the end-point variable in polyether and polyester polyol production, what the titration reference methods and the two NIR standards require, what the published NIR hydroxyl-value work shows, and why reactor temperature is the first thing an inline calibration has to deal with &mdash; with the standards and literature behind each point.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Importance of Hydroxyl Value (OHV)</h2>
-<p>Hydroxyl value (OHV) is the critical quality attribute (CQA) governing the synthesis of polyols&mdash;the primary raw materials used in polyurethane foams, coatings, adhesives, and sealants. OHV represents the concentration of hydroxyl groups available for reaction with isocyanates. In batch polymerization inside <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical reactors</a>, hitting the exact OHV target is necessary to guarantee correct molecular weight distributions and physical properties in downstream polyurethane synthesis.</p>
-<blockquote>
-"Traditional end-point determination relies on manual sampling and manual ASTM D4274 titrations, which take 45 to 60 minutes. During this time, the reaction continues, leading to out-of-spec batches and significant cycle delays."
-</blockquote>
-<h2>Spectroscopic Solution</h2>
-<p>Near-infrared spectroscopy is highly sensitive to the first overtone of O-H stretching vibrations. By inserting a high-temperature transflectance probe directly into the polyol reactor loop, the spectrometer scans the chemical mix in real-time. Because of the extreme temperature shifts during polymerization, calibration models built in the <strong>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</strong> utilize temperature compensation and Multiplicative Scatter Correction (MSC) to isolate chemical changes from thermal variations.</p>
-<h2>Key Analytical Parameters</h2>
-<p>The ProLine2550 inline system (driven by the <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem edge controller</a>) tracks reactor endpoints by mapping the spectral response to the reference chemical values:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Calibration Range</th>
-<th>Prediction Accuracy (RMSEP)</th>
-<th>Reference Method</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Hydroxyl Value (OHV)</strong></td>
-<td>15 &ndash; 300 mg KOH/g</td>
-<td><strong>&plusmn;0.75 mg KOH/g</strong></td>
-<td>ASTM D4274 (Titration)</td>
-</tr>
-<tr>
-<td><strong>Acid Value (AV)</strong></td>
-<td>0.01 &ndash; 2.0 mg KOH/g</td>
-<td><strong>&plusmn;0.05 mg KOH/g</strong></td>
-<td>ASTM D4662 (Titration)</td>
-</tr>
-<tr>
-<td><strong>Water Content</strong></td>
-<td>0.01 &le; 1.0%</td>
-<td><strong>&plusmn;0.02%</strong></td>
-<td>Karl Fischer (Coulometric)</td>
-</tr>
-</tbody>
-</table>
-<h2>B2B ROI Drivers</h2>
+<h2>Why the hydroxyl number is the end-point variable</h2>
+<p>Polyether and polyester polyols are, with the isocyanates, the main building blocks of polyurethanes, and in the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical industry</a> the property that defines a polyol grade is its hydroxyl number. ASTM D4274 and ISO 14900 both state the reason: hydroxyl-number data are needed to formulate polyurethane systems, because the isocyanate stoichiometry is set against the hydroxyl content of the polyol <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Polyether polyols are built by ring-opening polymerisation of propylene oxide and/or ethylene oxide onto a polyfunctional starter, so the hydroxyl number falls as the chains grow and the batch is complete when it reaches the grade specification; the chemistry and technology of oligo-polyol fabrication are covered in Ionescu's monograph <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. The end point is therefore an analytical decision, and the question is how quickly it can be made.</p>
+<h2>The reference methods and what they involve</h2>
+<p>The reference determinations are esterification&ndash;titration procedures. ASTM D4274 contains five test methods in which the hydroxyl groups are esterified with acetic anhydride, phthalic anhydride or imidazole-catalysed phthalic anhydride or pyromellitic dianhydride and the excess reagent is back-titrated, with methods assigned to polyester, polyether, polymer and amine-initiated polyols <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. ISO 14900:2023 specifies two methods, A mainly for readily esterified polyether polyols and sterically hindered polyols such as sugar-based ones, B for polyether, polymer and amine-initiated polyols, which may give low results for sterically hindered polyols <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. A third route, ASTM E1899, reacts the hydroxyl groups with <em>p</em>-toluenesulfonyl isocyanate and titrates potentiometrically; it covers hydroxyl numbers from 0.5 to 367, suits temperature-sensitive materials and polymer polyols, and is recommended for neutral refined products, in-process samples with acidic species requiring validation of the interference <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<p>All three are batch laboratory procedures: a sample is drawn, reacted and titrated; Cho et al. describe the conventional wet analysis as taking 1&ndash;3 hours and using large amounts of reagent <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. In a reactor that is still alkoxylating or condensing, the result describes where the batch was when the sample was taken, not where it is now.</p>
+<h2>NIR hydroxyl-number determination is standardised</h2>
+<p>Near-infrared determination of the hydroxyl number of polyols has its own standards. ASTM D6342 and its equivalent ISO 15063 describe the calibration techniques, the selection of calibration materials, data collection and treatment, and the criteria for building, evaluating and validating the model, and both state that the method is suitable for research, quality control, specification testing and process control <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Two conditions in D6342 matter for an inline installation: a calibration is generally valid only for the instrument on which it was built, and results are valid only within the hydroxyl-number range and chemical composition of the calibration set, with outlier detection following ASTM E1655, the general practice for multivariate infrared calibration <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<h2>What the published NIR work shows</h2>
+<p>Yamamoto et al. reported the simultaneous NIR determination of hydroxyl value, ethylene oxide content and primary hydroxyl content of polyether polyols, three specification parameters of an EO-tipped polyol from one spectrum <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Cho et al. measured the hydroxyl number of polyols in a disposable glass vial, reduced the noise introduced by the narrow aperture with a wavelet transform, and built a partial least squares model whose predictions agreed with the wet analysis <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Closest to the reactor, Boh&oacute;rquez et al. followed the hydroxylation of epoxidised high-oleic palm oil to a natural-oil polyol at 65&ndash;95 &deg;C by measuring hydroxyl value and oxirane oxygen content by NIR absorbance, and fitted the reaction kinetics to those data <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. None of these is an in-reactor measurement during alkoxylation, so the end-point application has to be validated on the plant's own reactor.</p>
+<h2>Temperature: the first obstacle in a reactor loop</h2>
+<p>A polyol reactor loop is hot, and its temperature is not constant across a batch. W&uuml;lfert et al. showed on short-wave NIR spectra of ethanol/water/2-propanol mixtures measured at several temperatures that temperature changes the shape of the spectra non-linearly; local PLS models built at one temperature were best at that temperature but could not be rescued by knowing the temperature of a new sample, whereas global models with the temperature variation in the calibration set gave considerably lower prediction errors at the cost of sensitivity, and the authors concluded that temperature should be modelled explicitly <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Their test system was a mixture of alcohols and water, so a hydroxyl-number calibration on a hot polyol is exactly the kind of model they describe <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Hageman et al. reviewed the methods since proposed for temperature-robust calibration <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Pre-processing such as scatter correction and derivatives, reviewed by Rinnan et al., removes baseline and path-length effects but not a temperature effect <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Three practical consequences follow:</p>
 <ul>
-<li><strong>Elimination of Batch Over-Processing:</strong> Operators receive instant alerts when the hydroxyl value reaches the target range, enabling immediate reactor cooling and termination.</li>
-<li><strong>Increased Throughput:</strong> Cycle times are shortened by an average of 40 minutes per batch, translating to higher production capacities.</li>
-<li><strong>Reagent Elimination:</strong> Eliminates hazardous chemical reagents (like phthalic anhydride and pyridine) used in laboratory titration workflows.</li>
+<li><strong>Span the loop temperature in the calibration set, or thermostat the measurement point.</strong> A model built at one temperature will not predict correctly at another <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
+<li><strong>Stay inside the validated range.</strong> The model is valid only within the range and composition of its calibration set, and predictions flagged as outliers by the E1655 procedures should not drive the end-point decision <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
+<li><strong>Match the reference method to the polyol.</strong> The NIR model cannot be better than the titrations it is trained on; use the method D4274 or ISO 14900 assigns to the polyol type, and validate the interference of acidic species in in-process samples as E1899 requires <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</li>
 </ul>
-<h2>Conclusion</h2>
-<p>By moving from manual sampling to inline MEMS FT-NIR monitoring, chemical polyol producers can eliminate reaction lag times, stabilize batch uniformity, and achieve rapid payback through higher reactor throughput and reduced reagent costs.</p>
+<h2>How USTECH approaches it</h2>
+<p>The <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">USTECH ProLine2550</a> process FT-NIR analyzer is the inline instrument for reactors and pipelines carrying liquids such as polyols; the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> suite provides the pre-processing and PLS tools with which a hydroxyl-number model is built from a calibration set spanning the loop temperature, following ASTM D6342, ISO 15063 and E1655 <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>; and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passes the predicted hydroxyl number to the PLC or SCADA as the end-point signal, with alarms and setpoints. Which hydroxyl-number range and temperature window a model holds for a given polyol grade is established in a feasibility study with your own samples and reference titrations.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>ASTM D4274 - Standard Test Methods for Testing Polyurethane Raw Materials: Determination of Hydroxyl Numbers of Polyols.</li>
-<li>"Inline FT-NIR Spectroscopy for Real-Time End-point Detection in Polyurethane Polymerization," <em>Chemical Engineering Journal</em>, 2021.</li>
-<li>"Temperature Compensation Modeling in NIR Calibration for Hot Reactor Loops," <em>Journal of Chemometrics</em>, 2023.</li>
+<li id="ref-1">[1] ASTM D4274-23. <em>Standard Test Methods for Testing Polyurethane Raw Materials: Determination of Hydroxyl Numbers of Polyols.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d4274-23.html" target="_blank" rel="noopener">store.astm.org/d4274-23.html</a></li>
+<li id="ref-2">[2] ISO 14900:2023. <em>Plastics &mdash; Polyols for use in the production of polyurethane &mdash; Determination of hydroxyl number.</em> ISO, Geneva. <a href="https://www.iso.org/standard/85615.html" target="_blank" rel="noopener">iso.org/standard/85615.html</a></li>
+<li id="ref-3">[3] Ionescu, M. (2019). <em>Polyols for Polyurethanes: Chemistry and Technology</em>, 3rd ed., Vol. 1. De Gruyter, Berlin. <a href="https://doi.org/10.1515/9783110644104" target="_blank" rel="noopener">doi:10.1515/9783110644104</a></li>
+<li id="ref-4">[4] ASTM E1899-23. <em>Standard Test Method for Hydroxyl Groups Using Reaction with p-Toluenesulfonyl Isocyanate (TSI) and Potentiometric Titration with Tetrabutylammonium Hydroxide.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1899-23.html" target="_blank" rel="noopener">store.astm.org/e1899-23.html</a></li>
+<li id="ref-5">[5] Cho, S., Chung, H., Lee, Y. (2005). Simple and fast near-infrared spectroscopic analysis of hydroxyl number of polyol using a disposable glass vial. <em>Microchemical Journal</em>, 80(2), 189&ndash;193. <a href="https://doi.org/10.1016/j.microc.2004.07.013" target="_blank" rel="noopener">doi:10.1016/j.microc.2004.07.013</a></li>
+<li id="ref-6">[6] ASTM D6342-22. <em>Standard Practice for Polyurethane Raw Materials: Determining Hydroxyl Number of Polyols by Near Infrared (NIR) Spectroscopy.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/d6342-22.html" target="_blank" rel="noopener">store.astm.org/d6342-22.html</a></li>
+<li id="ref-7">[7] ISO 15063:2011. <em>Plastics &mdash; Polyols for use in the production of polyurethanes &mdash; Determination of hydroxyl number by NIR spectroscopy.</em> ISO, Geneva. <a href="https://www.iso.org/standard/52878.html" target="_blank" rel="noopener">iso.org/standard/52878.html</a></li>
+<li id="ref-8">[8] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
+<li id="ref-9">[9] Yamamoto, K., Kakita, R., Suzuki, C., Meno, M., Nozawa, Y. (2003). Simultaneous Determination of Hydroxyl Value, Ethylene Oxide Content, and Primary Hydroxyl Content for Polyetherpolyol by Means of Near-Infrared Spectroscopy. <em>Applied Spectroscopy</em>, 57(3), 353&ndash;355. <a href="https://doi.org/10.1366/000370203321558290" target="_blank" rel="noopener">doi:10.1366/000370203321558290</a></li>
+<li id="ref-10">[10] Boh&oacute;rquez, W.F., Orjuela, A., Solarte, S.A., Garc&iacute;a-N&uacute;&ntilde;ez, J.A. (2023). Natural Oil Polyol from High-Oleic Palm Oil &mdash; Reaction Kinetics and Monitoring Using Near-Infrared Spectroscopy. <em>Industrial &amp; Engineering Chemistry Research</em>, 62(26), 10024&ndash;10039. <a href="https://doi.org/10.1021/acs.iecr.3c01040" target="_blank" rel="noopener">doi:10.1021/acs.iecr.3c01040</a></li>
+<li id="ref-11">[11] W&uuml;lfert, F., Kok, W.Th., Smilde, A.K. (1998). Influence of Temperature on Vibrational Spectra and Consequences for the Predictive Ability of Multivariate Models. <em>Analytical Chemistry</em>, 70(9), 1761&ndash;1767. <a href="https://doi.org/10.1021/ac9709920" target="_blank" rel="noopener">doi:10.1021/ac9709920</a></li>
+<li id="ref-12">[12] Hageman, J.A., Westerhuis, J.A., Smilde, A.K. (2005). Temperature Robust Multivariate Calibration: An Overview of Methods for Dealing with Temperature Influences on near Infrared Spectra. <em>Journal of Near Infrared Spectroscopy</em>, 13(2), 53&ndash;62. <a href="https://doi.org/10.1255/jnirs.457" target="_blank" rel="noopener">doi:10.1255/jnirs.457</a></li>
+<li id="ref-13">[13] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -296,10 +273,10 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="card" onclick="window.location.href='blog-moisture-milk-powder.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_milk_powder.webp?v=1.0.5" alt="Standardizing Moisture in Milk Powder Spray Drying" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-moisture-milk-powder.html" style="color: var(--accent-black); text-decoration: none;">Standardizing Moisture in Milk Powder Spray Drying</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">How dairy plants use inline exit moisture standardizers to prevent spray dryer clogging and optimize powder yield.</p>
-<a href="blog-moisture-milk-powder.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Case Study</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why the outlet moisture of a milk-powder spray dryer decides stickiness, caking, shelf life and yield, which variables the operator can move, and how an inline NIR moisture value feeds the control loop.</p>
+<a href="blog-moisture-milk-powder.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- Savitzky Golay Card -->
@@ -308,7 +285,7 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-black); text-decoration: none;">Understanding Savitzky-Golay Filtering in Preprocessing</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A deep dive explaining smoothing algorithms and derivative math for spectral dataset alignment in cali<span class="calix-x" style="color: #38b6ff !important;">X</span>.</p>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">What the Savitzky-Golay filter actually does to a spectrum, why derivatives remove baselines, and how window length and polynomial order should be chosen, with the original and follow-up literature.</p>
 <a href="blog-savitzky-golay-filtering.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
@@ -348,7 +325,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -367,6 +343,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

@@ -4,10 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Tutorial que compara las matemáticas de corrección de dispersión para variaciones de la trayectoria de la luz en la reflectancia NIR." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Qué hacen la corrección multiplicativa de la dispersión y la transformación de variable normal estándar a un espectro NIR de reflectancia difusa, cómo se relacionan ambas y cuándo conviene cada una." name="description"/>
 <meta content="MSC preprocesamiento NIR, SNV corrección espectral, corrección de dispersión multiplicativa, preprocesamiento espectral NIR" name="keywords"/>
 <title>Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar | USTECH Innovations</title>
-<link href="../index.css?v=1.1.2" rel="stylesheet"/>
+<link href="../index.css?v=1.1.3" rel="stylesheet"/>
 <link href="https://www.ustechinnovations.com/es/blog-msc-snv-preprocessing.html" rel="canonical"/>
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html" />
@@ -22,7 +23,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "Organization", "legalName": "USTECH Innovations LLC",
       "@id": "https://www.ustechinnovations.com/#org",
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
       ]
     },
     {
-      "@type": "WebSite",
+      "@type": "WebSite", "inLanguage": "es",
       "@id": "https://www.ustechinnovations.com/#website",
       "url": "https://www.ustechinnovations.com/",
       "name": "USTECH Innovations",
@@ -60,14 +61,14 @@
 <!-- BlogPosting Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "BlogPosting", "inLanguage": "es",
   "headline": "Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar",
-  "description": "Tutorial que compara las matemáticas de corrección de dispersión para variaciones de la trayectoria de la luz en la reflectancia NIR.",
+  "description": "Qué hacen la corrección multiplicativa de la dispersión y la transformación de variable normal estándar a un espectro NIR de reflectancia difusa, cómo se relacionan ambas y cuándo conviene cada una.",
   "url": "https://www.ustechinnovations.com/es/blog-msc-snv-preprocessing.html",
   "datePublished": "2026-06-02",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-10-27",
   "author": {
-    "@type": "Organization",
+    "@type": "Organization", "legalName": "USTECH Innovations LLC",
     "name": "USTECH Innovations",
     "@id": "https://www.ustechinnovations.com/#org"
   },
@@ -114,16 +115,22 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar | USTECH Innovations" property="og:title"/>
-<meta content="Tutorial que compara las matemáticas de corrección de dispersión para variaciones de la trayectoria de la luz en la reflectancia NIR." property="og:description"/>
+<meta content="Qué hacen la corrección multiplicativa de la dispersión y la transformación de variable normal estándar a un espectro NIR de reflectancia difusa, cómo se relacionan ambas y cuándo conviene cada una." property="og:description"/>
 <meta content="https://www.ustechinnovations.com/es/blog-msc-snv-preprocessing.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-msc-snv-preprocessing.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar | USTECH Innovations" property="og:image:alt"/>
 <meta content="es_ES" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="tr_TR" property="og:locale:alternate"/>
+<meta content="fr_FR" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="ar_SA" property="og:locale:alternate"/>
+<meta content="zh_CN" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar | USTECH Innovations" name="twitter:title"/>
-<meta content="Tutorial que compara las matemáticas de corrección de dispersión para variaciones de la trayectoria de la luz en la reflectancia NIR." name="twitter:description"/>
+<meta content="Qué hacen la corrección multiplicativa de la dispersión y la transformación de variable normal estándar a un espectro NIR de reflectancia difusa, cómo se relacionan ambas y cuándo conviene cada una." name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-msc-snv-preprocessing.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -211,42 +218,57 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Volver a Todos los Blogs y Publicaciones</a>
 <img alt="Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_spectral_math.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">GUIDE — June 02, 2026 — 1 min de lectura</span>
+<span class="blog-post-meta">Guía — 2 de junio de 2026 — 5 min de lectura</span>
 <h1 class="blog-post-title">Corrección de dispersión multiplicativa y preprocesamiento variable normal estándar</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Descubra cómo los algoritmos SNV y MSC eliminan el empaquetamiento físico de las muestras y las variaciones del tamaño de las partículas.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Qué hacen realmente la corrección multiplicativa de la dispersión (MSC) y la transformación de variable normal estándar (SNV) a un espectro de infrarrojo cercano, cómo se relacionan matemáticamente, en qué se diferencian en la práctica y qué puede salir mal &mdash; a partir de los artículos originales y de la literatura posterior.</p>
 </div>
 <div class="blog-post-content">
-<h2>Por qué el preprocesamiento es esencial en la espectroscopia de reflectancia</h2>
-<p>En la espectroscopia de reflectancia NIR, factores físicos como la densidad de la muestra, el tamaño del grano y la distancia de la sonda crean compensaciones de la línea base. Estas compensaciones enmascaran los picos de absorción química. MSC y SNV son algoritmos matemáticos diseñados para aislar la absorción química de la dispersión física de la luz.</p>
-<h2>Comparando SNV y MSC</h2>
-<p>SNV procesa cada espectro individualmente, estandarizando la variación. MSC hace una regresión de cada espectro contra un espectro promedio de referencia. Ambos métodos están disponibles en cali<span class="calix-x" style="color: #38b6ff !important;">X</span>suite. Este tutorial explica las ventajas de cada método.</p>
+<h2>Por qué la corrección de dispersión va primero</h2>
+<p>Los espectros NIR de reflectancia difusa de polvos, granos y harinas de la <a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">industria alimentaria y de piensos</a> contienen, además de la señal de absorción química, efectos físicos que cambian de una muestra a otra. Barnes et al. describen los efectos multiplicativos combinados del tamaño de partícula y de la dispersión de la luz como el principal obstáculo para interpretar estos espectros, y señalan que el tamaño de partícula explica la mayor parte de la varianza espectral, mientras que la composición química aporta comparativamente poco <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Rinnan et al. dividen los métodos habituales de preprocesamiento NIR en correcciones de dispersión (MSC, SNV, normalización) y derivadas espectrales, y comparan sus efectos sobre datos reales <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. Esta guía trata la primera familia; las derivadas se tratan en la <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">guía de Savitzky-Golay</a>.</p>
+<h2>Corrección multiplicativa de la dispersión (MSC)</h2>
+<p>La MSC fue introducida por Geladi, MacDougall y Martens en 1985, para espectros NIR de reflectancia de carne, como un método multilongitud de onda que separa la absorción química de la dispersión física, modelada esta como una componente aditiva más una multiplicativa <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Cada espectro <em>x<sub>i</sub></em> se regresa, sobre todas las longitudes de onda, frente a un espectro de referencia <em>x<sub>ref</sub></em>: <em>x<sub>i</sub></em> &asymp; <em>a<sub>i</sub></em> + <em>b<sub>i</sub></em>&middot;<em>x<sub>ref</sub></em>; el espectro corregido es (<em>x<sub>i</sub></em> &minus; <em>a<sub>i</sub></em>)/<em>b<sub>i</sub></em>. En la práctica, la referencia es el espectro medio del conjunto de calibración, razón por la cual Dhanoa et al. califican la MSC de transformación dependiente del conjunto <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. En el estudio sobre carne, la MSC combinada con una transformación linealizante como log(1/R) corregido o Kubelka-Munk inversa dio las mejores predicciones de grasa y modelos de calibración más sencillos <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Isaksson y N&aelig;s ensayaron después la MSC en cinco productos alimentarios con regresión por componentes principales para proteína, grasa, agua e hidratos de carbono, y comprobaron que reducía el error de predicción en todas las regresiones, entre un 7 % y un 68 % respecto a los espectros de absorbancia sin corregir <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<p>La dependencia del conjunto tiene una consecuencia práctica: el espectro de referencia forma parte del modelo de calibración, debe aplicarse sin cambios a cada espectro nuevo, y un cambio de referencia tras recalibrar con una nueva población modifica todos los espectros corregidos <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<h2>Variable normal estándar (SNV) y eliminación de tendencia</h2>
+<p>Barnes, Dhanoa y Lister propusieron la SNV en 1989 como una transformación aplicada a cada espectro por separado: se resta la media propia del espectro sobre todas las longitudes de onda y el resultado se divide por su propia desviación estándar, lo que elimina los efectos multiplicativos de la dispersión y del tamaño de partícula sin referencia a ninguna otra muestra <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. En el mismo artículo introdujeron la eliminación de tendencia (de-trending), en la que se ajusta un polinomio de segundo grado en la longitud de onda al espectro corregido por SNV y se resta para eliminar el desplazamiento y la curvatura de la línea base que describen como habituales en muestras en polvo o densamente empaquetadas; presentan el resultado como una alternativa a los espectros derivados, cuyas formas consideran más difíciles de interpretar <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Como la SNV utiliza solo el espectro que se corrige, es independiente del conjunto: no hay que elegir, almacenar ni transferir ninguna referencia.</p>
+<h2>Cómo se relacionan la MSC y la SNV, y en qué se diferencian</h2>
+<p>Dhanoa et al. demostraron que las transformaciones MSC (dependiente del conjunto) y SNV (independiente del conjunto) de un espectro están relacionadas linealmente, como predice la teoría; la relación solo requiere la media y la desviación estándar del espectro medio del conjunto y el coeficiente de correlación entre el espectro individual y esa media, y es a través de estas tres magnitudes como la dependencia del conjunto entra en la MSC <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Concluyen que ambas son vías alternativas para reducir los efectos del tamaño de partícula y que son interconvertibles <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Con un conjunto de calibración homogéneo, ambas suelen dar espectros y modelos similares, por lo que a menudo se tratan como intercambiables.</p>
+<p>Sin embargo, no son idénticas. Fearn et al. examinaron la geometría de ambas transformaciones en el espacio espectral y describieron dos comportamientos distintos: la SNV puede inducir estructuras curvas en los gráficos de puntuaciones de los espectros tratados, mientras que la MSC tiende a producir valores atípicos; ambos efectos se ilustraron con datos de una cámara de imagen NIR y se explicaron geométricamente <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Una banda curva en un gráfico de puntuaciones de PCA tras la SNV, o unas pocas muestras extremas tras la MSC, pueden ser por tanto un artefacto del preprocesamiento y no una característica química, y deben comprobarse antes de interpretarse o de usarse para rechazar muestras <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Un segundo escollo es común a ambas: suponen que la señal química es una parte pequeña del espectro y que los efectos físicos son iguales en todas las longitudes de onda. Cuando el analito domina la variación espectral, la corrección puede eliminar parte de su señal; Martens, Nielsen y Engelsen encontraron exactamente esto con la MSC estándar en espectros de transmisión de mezclas en polvo de gluten de trigo y almidón, donde eliminaba demasiada información del analito <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>MSC extendida</h2>
+<p>La corrección multiplicativa de la señal extendida (EMSC) fue propuesta por Martens y Stark en 1991 para incorporar conocimiento previo al preprocesamiento: elimina los efectos de la longitud de trayectoria no controlada y de la dispersión de la luz, y su complemento, la sustracción de interferencias espectrales, elimina interferentes conocidos; ambas se demostraron con tolueno en mezclas de benceno&ndash;xileno con efectos de dispersión simulados y considerables <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Martens, Nielsen y Engelsen ampliaron después el modelo para corregir conjuntamente los efectos de dispersión aditivos, multiplicativos y dependientes de la longitud de onda; tras la EMSC, sus espectros de polvos de gluten&ndash;almidón se comportaban en gran medida como espectros de disoluciones transparentes y seguían la ley de Beer <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. La EMSC es el método a considerar cuando la MSC o la SNV simples distorsionan visiblemente las bandas del analito, o cuando se sabe que el efecto de dispersión varía con la longitud de onda.</p>
+<h2>Cómo elegir en la práctica</h2>
+<p>No existe una única elección correcta; la literatura respalda un procedimiento breve más que una opción por defecto:</p>
+<ul>
+<li><strong>Decida con el modelo, no a ojo.</strong> Trate la MSC, la SNV, la SNV con eliminación de tendencia y la EMSC como pasos candidatos, combine cada uno con el ajuste de derivada que esté considerando y compárelos por el error de validación cruzada, como hacen Rinnan et al. con los métodos habituales <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</li>
+<li><strong>Conserve la referencia junto con el modelo.</strong> Un espectro de referencia de MSC debe aplicarse sin cambios en el momento de la predicción; si es probable que la población de calibración cambie, la SNV evita por completo la dependencia del conjunto <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</li>
+<li><strong>Inspeccione las puntuaciones tras la corrección.</strong> Las estructuras curvas tras la SNV y los nuevos valores atípicos tras la MSC son comportamientos conocidos de las transformaciones, no necesariamente de las muestras <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>; si el analito domina el espectro, considere la EMSC <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+</ul>
+<h2>Corrección de dispersión en cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h2>
+<p>En la <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">suite cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>, la MSC, la SNV, la eliminación de tendencia y los filtros de derivada se configuran en el paso de preprocesamiento del desarrollo del modelo, donde las combinaciones candidatas se comparan por validación cruzada antes de fijar un modelo PLS y de almacenar el espectro de referencia de MSC junto con el modelo. El mismo flujo de trabajo sirve para los espectros del analizador at-line <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> para granos e ingredientes de piensos y del analizador en línea <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>, donde el tamaño de partícula y el empaquetamiento varían con el proceso. Qué corrección conviene a un material determinado se decide en un estudio de viabilidad con sus propias muestras.</p>
 <div class="blog-post-references">
 <h3>Referencias</h3>
 <ul>
-<li>"Una revisión de los algoritmos de preprocesamiento de corrección de dispersión para modelos de calibración del infrarrojo cercano"<em>Quimiometría y sistemas inteligentes de laboratorio</em>, 2023.</li>
+<li id="ref-1">[1] Barnes, R.J., Dhanoa, M.S., Lister, S.J. (1989). Standard Normal Variate Transformation and De-trending of Near-Infrared Diffuse Reflectance Spectra. <em>Applied Spectroscopy</em>, 43(5), 772&ndash;777. <a href="https://doi.org/10.1366/0003702894202201" target="_blank" rel="noopener">doi:10.1366/0003702894202201</a></li>
+<li id="ref-2">[2] Geladi, P., MacDougall, D., Martens, H. (1985). Linearization and Scatter-Correction for Near-Infrared Reflectance Spectra of Meat. <em>Applied Spectroscopy</em>, 39(3), 491&ndash;500. <a href="https://doi.org/10.1366/0003702854248656" target="_blank" rel="noopener">doi:10.1366/0003702854248656</a></li>
+<li id="ref-3">[3] Rinnan, &Aring;., van den Berg, F., Engelsen, S.B. (2009). Review of the most common pre-processing techniques for near-infrared spectra. <em>TrAC Trends in Analytical Chemistry</em>, 28(10), 1201&ndash;1222. <a href="https://doi.org/10.1016/j.trac.2009.07.007" target="_blank" rel="noopener">doi:10.1016/j.trac.2009.07.007</a></li>
+<li id="ref-4">[4] Dhanoa, M.S., Lister, S.J., Sanderson, R., Barnes, R.J. (1994). The Link between Multiplicative Scatter Correction (MSC) and Standard Normal Variate (SNV) Transformations of NIR Spectra. <em>Journal of Near Infrared Spectroscopy</em>, 2(1), 43&ndash;47. <a href="https://doi.org/10.1255/jnirs.30" target="_blank" rel="noopener">doi:10.1255/jnirs.30</a></li>
+<li id="ref-5">[5] Isaksson, T., N&aelig;s, T. (1988). The Effect of Multiplicative Scatter Correction (MSC) and Linearity Improvement in NIR Spectroscopy. <em>Applied Spectroscopy</em>, 42(7), 1273&ndash;1284. <a href="https://doi.org/10.1366/0003702884429869" target="_blank" rel="noopener">doi:10.1366/0003702884429869</a></li>
+<li id="ref-6">[6] Fearn, T., Riccioli, C., Garrido-Varo, A., Guerrero-Ginel, J.E. (2009). On the geometry of SNV and MSC. <em>Chemometrics and Intelligent Laboratory Systems</em>, 96(1), 22&ndash;26. <a href="https://doi.org/10.1016/j.chemolab.2008.11.006" target="_blank" rel="noopener">doi:10.1016/j.chemolab.2008.11.006</a></li>
+<li id="ref-7">[7] Martens, H., Nielsen, J.P., Engelsen, S.B. (2003). Light Scattering and Light Absorbance Separated by Extended Multiplicative Signal Correction. Application to Near-Infrared Transmission Analysis of Powder Mixtures. <em>Analytical Chemistry</em>, 75(3), 394&ndash;404. <a href="https://doi.org/10.1021/ac020194w" target="_blank" rel="noopener">doi:10.1021/ac020194w</a></li>
+<li id="ref-8">[8] Martens, H., Stark, E. (1991). Extended multiplicative signal correction and spectral interference subtraction: new preprocessing methods for near infrared spectroscopy. <em>Journal of Pharmaceutical and Biomedical Analysis</em>, 9(8), 625&ndash;635. <a href="https://doi.org/10.1016/0731-7085(91)80188-F" target="_blank" rel="noopener">doi:10.1016/0731-7085(91)80188-F</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img alt="USTECH Innovations Logo" decoding="async" fetchpriority="high" src="../images/logo.svg?v=1.0.5" style="height: 110px; width: auto; display: block;"/></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Descargar Informe Técnico Completo</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Acceda al documento técnico completo y sin editar con fórmulas espectroscópicas completas, conjuntos de datos de calibración y parámetros de instrumentación.</p>
-<form data-z="1" onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input placeholder="Enter your business email" required="" style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;" type="email"/>
-<button class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;" type="submit">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input required="" style="margin-top: 0.2rem;" type="checkbox"/>
-<span>Acepto recibir el PDF técnico y suscribirme a las actualizaciones USTECH Innovations, que cumplen con el <a href="contact.html?showPrivacy=1" style="text-decoration: underline; color: var(--accent-gold);" target="_blank">política de privacidad</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('../images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="../images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Evalúe esta aplicación para su proceso</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Nuestro equipo de aplicaciones puede explicar el método, compartir la bibliografía de referencia y organizar un estudio de viabilidad con sus propias muestras.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contáctenos</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Leer siguiente</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.9 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.11 -->
 </div>
 </div>
 </article>
@@ -302,6 +324,6 @@
 <p>Diseñado para la precisión científica e industrial.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.9"></script>
+<script src="../app.js?v=1.0.11"></script>
 </body>
 </html>

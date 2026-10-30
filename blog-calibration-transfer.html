@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations White Paper - Calibration Transfer Feasibility on MEMS Spectrometers.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family.">
 <meta name="keywords" content="calibration transfer NIR, MEMS spectrometer calibration, chemometric model transfer, NIR instrument standardization">
-<title>Calibration Transfer Feasibility on MEMS Spectrometers | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<title>Calibration Transfer Between NIR Spectrometers: Methods and Feasibility | USTECH Innovations</title>
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-calibration-transfer.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-calibration-transfer.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-calibration-transfer.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,21 +63,21 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
-"headline": "Calibration Transfer Feasibility on MEMS Spectrometers",
-"description": "USTECH Innovations White Paper - Calibration Transfer Feasibility on MEMS Spectrometers.",
+"@type": "BlogPosting", "inLanguage": "en",
+"headline": "Calibration Transfer Between NIR Spectrometers: Methods and Feasibility",
+"description": "Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family.",
 "url": "https://www.ustechinnovations.com/blog-calibration-transfer.html",
 "datePublished": "2026-02-18",
-"dateModified": "2026-02-18",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
 "publisher": {
 "@id": "https://www.ustechinnovations.com/#org"
 },
-"image": "https://www.ustechinnovations.com/images/blog_mems_sensor.webp"
+"image": "https://www.ustechinnovations.com/images/blog_nir_vs_ftnir.webp"
 }
 </script>
 <!-- BreadcrumbList Schema -->
@@ -118,17 +119,23 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
-    <meta property="og:title" content="Calibration Transfer Feasibility on MEMS Spectrometers | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations White Paper - Calibration Transfer Feasibility on MEMS Spectrometers.">
+    <meta property="og:title" content="Calibration Transfer Between NIR Spectrometers: Methods and Feasibility | USTECH Innovations">
+    <meta property="og:description" content="Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-calibration-transfer.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-calibration-transfer.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Calibration Transfer Feasibility on MEMS Spectrometers | USTECH Innovations">
+    <meta property="og:image:alt" content="Calibration Transfer Between NIR Spectrometers: Methods and Feasibility | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Calibration Transfer Feasibility on MEMS Spectrometers | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations White Paper - Calibration Transfer Feasibility on MEMS Spectrometers.">
+    <meta name="twitter:title" content="Calibration Transfer Between NIR Spectrometers: Methods and Feasibility | USTECH Innovations">
+    <meta name="twitter:description" content="Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-calibration-transfer.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -208,88 +215,56 @@ Espa&#241;ol
 <a href="knowledge-blogs.html" class="blog-back-link">
 &mdash; Back to Blogs & Publications
 </a>
-<img src="images/blog_mems_sensor.webp?v=1.0.5" alt="MEMS Spectrometer Chip Technology" class="blog-post-banner" fetchpriority="high" decoding="async">
+<img src="images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="Calibration Transfer Between NIR Spectrometers: Methods and Feasibility" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">White Paper &mdash; February 18, 2026 &mdash; 4 min read</span>
-<h1 class="blog-post-title">Calibration Transfer Feasibility on MEMS Spectrometers</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why semiconductor photolithography solves the historic bottleneck of transferring chemometric models between NIR instruments.</p>
+<span class="blog-post-meta">Guide &mdash; February 18, 2026 &mdash; 5 min read</span>
+<h1 class="blog-post-title">Calibration Transfer Between NIR Spectrometers: Methods and Feasibility</h1>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why a calibration built on one near-infrared spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how the feasibility of a transfer is assessed for a given instrument family &mdash; benchtop, inline or compact &mdash; on the basis of published studies and the relevant ASTM practices.</p>
 </div>
 <div class="blog-post-content">
-<p>In industrial process analytics, developing a robust chemometric calibration model is a significant investment. Using tools like the <a href="product-calix.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Spectral Suite</a>, users can easily configure parameter regressions. It requires collecting hundreds of physical samples, scanning them across variable conditions, and running expensive laboratory reference tests (like Kjeldahl for protein or Soxhlet for fat) to train PLS regression models. Historically, the biggest frustration for quality assurance managers has been <strong>calibration transfer</strong>: the process of taking a model built on a "master" instrument and attempting to run it on secondary instruments deployed across other production lines and integrated into <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical processes</a> or factories.</p>
-<blockquote>
-"In traditional benchtop FT-NIR spectrometers, minor unit-to-unit optical differences in hand-aligned Michelson interferometers alter the spectral response, forcing chemometricians to rebuild models or calculate complex standardization matrices."
-</blockquote>
-<h2>The Root of the Transfer Problem</h2>
-<p>Traditional Fourier Transform Near-Infrared (FT-NIR) systems rely on macroscopic moving mirrors. These mirrors must move with nanometer-scale precision relative to one another. Despite strict quality controls, minor variances in optical alignment, optical component coatings, and light source focal profiles lead to minute spectral shifts between two identical instruments from the same production line. Consequently, a model built to predict protein content on Line A might show a systematic bias of 0.5% when run on Line B, rendering it useless without tedious standardization (e.g., Piecewise Direct Standardization or PDS).</p>
-<h2>How Silicon MEMS Redefines Manufacturing</h2>
-<p>Micro-Electro-Mechanical Systems (MEMS) technology bypasses human assembly and mechanical tolerances entirely by utilizing semiconductor fabrication processes. Rather than mounting mirrors, beamsplitters, and actuators individually on a chassis, the entire optical engine is etched directly onto a single silicon wafer in a cleanroom environment using photolithography.</p>
-<p>Because the etching masks are accurate to the sub-micron scale, unit-to-unit optical differences are minimized to near-zero levels. The optical path length, collimation angles, and beam split characteristics are practically identical across thousands of chips from the same silicon run. This brings a massive benefit to industrial clients: <strong>true calibration portability</strong>.</p>
-<h3>Comparative Spectral Match Metric</h3>
-<p>To evaluate unit-to-unit similarity, USTECH engineers ran matching experiments scanning standardized reference standards (99% pure polytetrafluoroethylene and rare earth oxides) across ten production-line ProLine2550 MEMS spectrometers. The results demonstrate near-perfect alignment:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Metric</th>
-<th>Traditional Laboratory FT-NIR</th>
-<th>Diode Array Dispersive</th>
-<th>USTECH MEMS FT-NIR</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Wavelength Accuracy</strong></td>
-<td>&plusmn;0.05 nm</td>
-<td>&plusmn;0.50 nm</td>
-<td><strong>&plusmn;0.02 nm</strong></td>
-</tr>
-<tr>
-<td><strong>Unit-to-Unit RMS Noise Difference</strong></td>
-<td>&lt; 150 &micro;AU</td>
-<td>&lt; 500 &micro;AU</td>
-<td><strong>&lt; 80 &micro;AU</strong></td>
-</tr>
-<tr>
-<td><strong>Average Transfer Error (Without correction)</strong></td>
-<td>0.28% bias</td>
-<td>0.65% bias (requires rebuild)</td>
-<td><strong>&lt; 0.04% bias</strong></td>
-</tr>
-</tbody>
-</table>
-<h2>Real-World B2B Impact</h2>
-<p>For large-scale food processors or pharmaceutical corporations, this technology yields immediate cost savings:</p>
+<h2>Why calibration transfer is a problem</h2>
+<p>A multivariate calibration for a process NIR analyzer in the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical industry</a>, or in food and feed, is a large investment in samples, reference analyses and modelling, so the natural wish is to build the model once and run it on every instrument. Workman defines calibration transfer as the chemometric techniques used to apply one spectral database, and the model built on it, to two or more instruments with statistically retained accuracy and precision, and notes that obtaining identical results from several instruments with one calibration still eludes technologists <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Transfer is not straightforward even between nominally identical instruments, because of wavelength shifts and differences in absorbance response between units <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>, so a model developed on one spectrometer often cannot be used directly with spectra measured on another <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. The transfer uncertainty has several ingredients: instrument reproducibility and repeatability, the reference values, the multivariate mathematics and the repeatability of sample presentation <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</p>
+<h2>Three families of methods</h2>
+<p>Fearn classifies the approaches under three headings: making robust calibrations, adjusting calibrations and adjusting spectra <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. Calibrations are made more transferable by spectral pre-treatments that reduce between-instrument variability and by pooling data from several instruments; they can be adjusted with slope and bias corrections estimated from a modest number of samples with known reference values; and under the third heading come methods such as piecewise direct standardisation and the patented procedure of Shenk and Westerhaus, which use spectra of samples measured on both instruments to match the response of the secondary instrument to the master <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<p>The idea predates the chemometric names. In 1985 Shenk, Westerhaus and Templeton transferred calibration equations from one master scanning monochromator to six others using 60 sealed samples; the between-instrument standard errors of difference for forage constituents were smaller than those among laboratories for the chemical analyses, and satisfactory transfer was obtained with as few as 10 samples <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Their 1991 procedure for monochromators of the same model aligned the wavelength scale with a polystyrene standard and adjusted baselines with a sealed concentrate sample, and a repeatability file of spectra from different instruments and temperatures added to a modified PLS regression reduced the between-instrument error on test samples measured between 19 and 29.5 &deg;C <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Wang, Veltkamp and Kowalski described direct standardisation (DS) and piecewise direct standardisation (PDS), in which a transfer set measured on both instruments yields a transformation that maps secondary spectra onto the master response, PDS using a small window of neighbouring wavelengths at a time <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<h2>What instrument comparisons show</h2>
+<p>The best method depends on the instruments and the application. Igne and Hurburgh compared DS, PDS, robust standardisation, slope-and-bias or bias-only correction of the predictions, and pre-treatment alone for whole-soybean models between two Foss Infratec and two Bruins OmegAnalyzerG units: models were transferable within and between brands with precision similar to or better than individual calibration, the optical methods that modify secondary spectra performed significantly worse than the others, and pre-processing with or without a simple correction of the predictions was enough to remove the absorbance differences and wavelength shifts <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. Greensill et al., transferring a soluble-solids model between four diode-array spectrometers of the same model, found that a modified wavelet transform performed significantly better than six other standardisation techniques and on a par with model updating <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Hoffmann et al. used PDS, with only a few samples measured on both spectrometer types, to transfer data sets from two laboratory FT-NIR spectrometers to the format of a miniaturised handheld instrument despite large differences in spectral range and resolution <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
+<p>Two readings follow for compact and inline spectrometers. Four units of the same diode-array model still needed standardisation before a model could be shared <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>, so similarity of design does not by itself make a model portable. Where unit-to-unit differences are small, the lighter routes &mdash; pre-treatment, pooled calibration data and slope-and-bias correction <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a> &mdash; may suffice, but that has to be shown for each instrument family by measurement, not inferred from the optical architecture.</p>
+<h2>Transfer without standard samples</h2>
+<p>Standard-based methods need the same physical samples measured on both instruments, which is difficult when the instruments are far apart or when chemically stable standards are not available <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Mishra et al. review the recent techniques, including standard-free concepts, and conclude that approaches not relying on standard-sample measurements hold promise for making models sharable between similar devices <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. One example is domain-invariant PLS, which adds a regulariser that aligns the source and target distributions in the latent-variable space and can use partially labelled or unlabelled target data; Nikzad-Langerodi et al. demonstrated it on two NIR data sets <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</p>
+<h2>Assessing feasibility for an instrument family</h2>
+<p>Because the outcome depends on the instruments, the product and the method, transfer feasibility is a measured property rather than a specification. Three steps recur in the studies above:</p>
 <ul>
-<li><strong>Rapid Deployment:</strong> Develop a master calibration database for your grain or pharmaceutical blend in your central laboratory once. Push the model via the cloud to twenty factories instantly.</li>
-<li><strong>No Local Standardizations Needed:</strong> Local operators do not need to scan local reference standards or perform mathematical corrections. The ProLine2550 devices, managed by the <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem software suite</a>, accept the master calibration drop-in.</li>
-<li><strong>Drastic Lab Cost Reduction:</strong> Eliminates the need to send hundreds of calibration check samples to third-party wet labs for local alignment verification.</li>
+<li><strong>Check the instruments first.</strong> Wavelength shifts and absorbance-response differences are the root of the problem <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. ASTM E1866 gives procedures for developing spectrophotometer performance tests, including for on-line process spectrophotometers, with univariate level zero and level one and multivariate level A and level B tests <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</li>
+<li><strong>Compare transfer routes on real data.</strong> Measure a transfer set on both instruments and compare pre-treatment alone, slope-and-bias correction and a spectral standardisation such as PDS <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>; where several units exist, pooling their spectra into the calibration set or a repeatability file is an alternative to correcting each one <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</li>
+<li><strong>Validate the transferred model as a new model.</strong> ASTM E1655 sets out practices for multivariate infrared and near-infrared quantitative analysis and criteria for validating calibration performance, assuming the spectrometer operates within the manufacturer's specifications <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>; the transferred model is validated on the secondary instrument with reference-analysed samples, because reference values and sample presentation contribute to the uncertainty as much as the optics do <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</li>
 </ul>
-<h2>Conclusion</h2>
-<p>Silicon MEMS technology transitions spectroscopy from a delicate scientific laboratory art to a repeatable, robust, semiconductor-scale utility. By resolving the unit-to-unit calibration transfer problem at the physical hardware level, USTECH enables seamless process control scaling for industrial operators worldwide.</p>
+<h2>How USTECH approaches calibration transfer</h2>
+<p>USTECH calibrations are developed in the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics suite and run on the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> inline FT-NIR analyzer, the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> and <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> inline NIR analyzers and the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> at-line analyzer. When a model built on one unit is to be used on another, USTECH treats it as a transfer project: the secondary instrument's performance is checked <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>, a transfer set is measured on both units, the lighter and heavier routes are compared <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>, and the transferred model is validated against reference values on the secondary unit <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Which route a given model needs is established in a feasibility study with your own samples.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>ASTM E1866 - Standard Guide for Establishing Spectrophotometer Performance Tests and Measurements.</li>
-<li>"Feasibility of Wavelength Calibration Transfer between MEMS-based NIR Spectrometers," <em>Journal of Near Infrared Spectroscopy</em>, 2024.</li>
-<li>"Chemometric Model Portability and Standardization Protocols in Industrial Plants," <em>Analytica Chimica Acta</em>, 2023.</li>
+<li id="ref-1">[1] Workman, J.J. Jr. (2018). A review of calibration transfer practices and instrument differences in spectroscopy. <em>Applied Spectroscopy</em>, 72(3), 340&ndash;365. <a href="https://doi.org/10.1177/0003702817736064" target="_blank" rel="noopener">doi:10.1177/0003702817736064</a></li>
+<li id="ref-2">[2] Fearn, T. (2001). Standardisation and calibration transfer for near infrared instruments: a review. <em>Journal of Near Infrared Spectroscopy</em>, 9(4), 229&ndash;244. <a href="https://doi.org/10.1255/jnirs.309" target="_blank" rel="noopener">doi:10.1255/jnirs.309</a></li>
+<li id="ref-3">[3] Feudale, R.N., Woody, N.A., Tan, H., Myles, A.J., Brown, S.D., Ferr&eacute;, J. (2002). Transfer of multivariate calibration models: a review. <em>Chemometrics and Intelligent Laboratory Systems</em>, 64(2), 181&ndash;192. <a href="https://doi.org/10.1016/S0169-7439(02)00085-0" target="_blank" rel="noopener">doi:10.1016/S0169-7439(02)00085-0</a></li>
+<li id="ref-4">[4] Shenk, J.S., Westerhaus, M.O., Templeton, W.C. Jr. (1985). Calibration transfer between near infrared reflectance spectrophotometers. <em>Crop Science</em>, 25(1), 159&ndash;161. <a href="https://doi.org/10.2135/cropsci1985.0011183X002500010038x" target="_blank" rel="noopener">doi:10.2135/cropsci1985.0011183X002500010038x</a></li>
+<li id="ref-5">[5] Shenk, J.S., Westerhaus, M.O. (1991). New standardization and calibration procedures for NIRS analytical systems. <em>Crop Science</em>, 31(6), 1694&ndash;1696. <a href="https://doi.org/10.2135/cropsci1991.0011183X003100060064x" target="_blank" rel="noopener">doi:10.2135/cropsci1991.0011183X003100060064x</a></li>
+<li id="ref-6">[6] Wang, Y., Veltkamp, D.J., Kowalski, B.R. (1991). Multivariate instrument standardization. <em>Analytical Chemistry</em>, 63(23), 2750&ndash;2756. <a href="https://doi.org/10.1021/ac00023a016" target="_blank" rel="noopener">doi:10.1021/ac00023a016</a></li>
+<li id="ref-7">[7] Igne, B., Hurburgh, C.R. Jr. (2008). Standardisation of near infrared spectrometers: evaluation of some common techniques for intra- and inter-brand calibration transfer. <em>Journal of Near Infrared Spectroscopy</em>, 16(6), 539&ndash;550. <a href="https://doi.org/10.1255/jnirs.819" target="_blank" rel="noopener">doi:10.1255/jnirs.819</a></li>
+<li id="ref-8">[8] Greensill, C.V., Wolfs, P.J., Spiegelman, C.H., Walsh, K.B. (2001). Calibration transfer between PDA-based NIR spectrometers in the NIR assessment of melon soluble solids content. <em>Applied Spectroscopy</em>, 55(5), 647&ndash;653. <a href="https://doi.org/10.1366/0003702011952280" target="_blank" rel="noopener">doi:10.1366/0003702011952280</a></li>
+<li id="ref-9">[9] Hoffmann, U., Pfeifer, F., Hsuing, C., Siesler, H.W. (2016). Spectra transfer between a Fourier transform near-infrared laboratory and a miniaturized handheld near-infrared spectrometer. <em>Applied Spectroscopy</em>, 70(5), 852&ndash;860. <a href="https://doi.org/10.1177/0003702816638284" target="_blank" rel="noopener">doi:10.1177/0003702816638284</a></li>
+<li id="ref-10">[10] Mishra, P., Nikzad-Langerodi, R., Marini, F., Roger, J.M., Biancolillo, A., Rutledge, D.N., Lohumi, S. (2021). Are standard sample measurements still needed to transfer multivariate calibration models between near-infrared spectrometers? The answer is not always. <em>TrAC Trends in Analytical Chemistry</em>, 143, 116331. <a href="https://doi.org/10.1016/j.trac.2021.116331" target="_blank" rel="noopener">doi:10.1016/j.trac.2021.116331</a></li>
+<li id="ref-11">[11] Nikzad-Langerodi, R., Zellinger, W., Lughofer, E., Saminger-Platz, S. (2018). Domain-invariant partial-least-squares regression. <em>Analytical Chemistry</em>, 90(11), 6693&ndash;6701. <a href="https://doi.org/10.1021/acs.analchem.8b00498" target="_blank" rel="noopener">doi:10.1021/acs.analchem.8b00498</a></li>
+<li id="ref-12">[12] ASTM E1866-97(2021). <em>Standard Guide for Establishing Spectrophotometer Performance Tests.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1866-97r21.html" target="_blank" rel="noopener">store.astm.org/e1866-97r21.html</a></li>
+<li id="ref-13">[13] ASTM E1655-17(2024). <em>Standard Practices for Infrared Multivariate Quantitative Analysis.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e1655-17r24.html" target="_blank" rel="noopener">store.astm.org/e1655-17r24.html</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_6023f026bd7f3.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -299,10 +274,10 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="card" onclick="window.location.href='blog-cattle-feed-waste.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_cattle_feed.webp?v=1.0.5" alt="Reducing Ingredient Waste in Cattle Feed Production" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">CASE STUDY</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-cattle-feed-waste.html" style="color: var(--accent-black); text-decoration: none;">Reducing Ingredient Waste in Cattle Feed Production</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A statistical study demonstrating a 1.2% average product yield improvement by deploying inline NIR sensors.</p>
-<a href="blog-cattle-feed-waste.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Case Study</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.</p>
+<a href="blog-cattle-feed-waste.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 <!-- PLS Regression Card -->
@@ -311,8 +286,8 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A step-by-step tutorial explaining how to compile calibration models using the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML platform.</p>
-<a href="blog-pls-regression-calix.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Tutorial</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A practitioner's walk through a PLS calibration: how the data are split, how the pre-processing and the number of latent variables are chosen by validation, which diagnostics to read, and how the model is kept alive in production.</p>
+<a href="blog-pls-regression-calix.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
 </div>
@@ -351,7 +326,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -370,6 +344,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

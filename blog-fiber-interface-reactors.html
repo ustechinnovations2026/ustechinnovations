@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations White Paper - Optical Fiber Interface Designs for Corrosive Chemical Reactors.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice.">
 <meta name="keywords" content="optical fiber NIR, corrosive reactor probe, chemical reactor NIR, fiber optic spectroscopy">
 <title>Optical Fiber Interface Designs for Chemical Reactors | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-fiber-interface-reactors.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-fiber-interface-reactors.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-fiber-interface-reactors.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Optical Fiber Interface Designs for Corrosive Chemical Reactors",
-"description": "USTECH Innovations White Paper - Optical Fiber Interface Designs for Corrosive Chemical Reactors.",
+"description": "How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice.",
 "url": "https://www.ustechinnovations.com/blog-fiber-interface-reactors.html",
 "datePublished": "2026-06-09",
-"dateModified": "2026-06-09",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Optical Fiber Interface Designs for Chemical Reactors | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations White Paper - Optical Fiber Interface Designs for Corrosive Chemical Reactors.">
+    <meta property="og:description" content="How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-fiber-interface-reactors.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-fiber-interface-reactors.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Optical Fiber Interface Designs for Chemical Reactors | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Optical Fiber Interface Designs for Chemical Reactors | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations White Paper - Optical Fiber Interface Designs for Corrosive Chemical Reactors.">
+    <meta name="twitter:description" content="How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-fiber-interface-reactors.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,82 +217,55 @@ Espa&#241;ol
 </a>
 <img src="images/blog_fiber_reactors.webp?v=1.0.5" alt="Chemical Reactor Spectroscopy Probe Mechanics" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">White Paper &mdash; June 09, 2026 &mdash; 4 min read</span>
+<span class="blog-post-meta">Guide &mdash; June 9, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Optical Fiber Interface Designs for Corrosive Chemical Reactors</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How advanced metallurgy, sapphire crystal optics, and gold-jacketed fiber cables combine to allow continuous spectroscopy inside aggressive high-temperature chemical reactions.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How the sampling geometry, the fibre-optic link, the window material, the wetted alloy and the seal decide what a near-infrared spectrometer actually sees inside a corrosive or high-temperature reactor &mdash; with the materials data and spectroscopy literature behind each choice.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Challenge of In-Situ Process Probing</h2>
-<p>Deploying inline near-infrared (NIR) spectroscopy to track chemical reactions in real-time requires inserting optical probes directly into the reactor environment. Unlike laboratory measurements where samples are held in glass cuvettes under ambient conditions, <a href="industry-chemical-pharma.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical processing</a> reactors present extreme challenges: temperatures exceeding 250&deg;C, pressures up to 100 bar, organic solvents, aggressive acids/bases, and abrasive slurries.</p>
-<p>If the process interface fails, it can cause toxic chemical leaks, process shutdowns, or catastrophic pressure loss. Therefore, designing a robust process interface is as critical to inline spectroscopy as the spectrometer's interferometer engine itself. Optimizing these processes is a core focus of the <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem software suite</a>, which controls dosing valves and logs blend uniformity. Optimizing these processes is a core focus of the <a href="product-prochem.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">ProChem software suite</a>, which controls dosing valves and logs blend uniformity.</p>
-<blockquote>
-"A spectroscopic model is only as good as the light reaching the sensor. Surviving aggressive process loops requires material selections that resist physical wear and chemical attack."
-</blockquote>
-<h2>Optics: The Power of Sapphire Crystals</h2>
-<p>Standard optical glass or quartz windows dissolve or corrode rapidly in hot alkaline solutions or hydrofluoric acid loops. To protect internal lens assemblies, USTECH utilizes <strong>single-crystal sapphire windows</strong> in all reactor probes. Sapphire offers outstanding physical and optical properties:</p>
+<h2>Why the interface decides what the spectrometer sees</h2>
+<p>Near-infrared spectroscopy earns its place in the <a href="industry-chemical-pharma.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">chemical and pharmaceutical industry</a> largely because the measurement point can be separated from the instrument: Reich lists the separation of sample position and spectrometer by fibre-optic probes among the technique's main advantages <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>. Inside a reactor the price of that convenience is a wetted interface that must tolerate the medium, its temperature and its pressure while keeping a stable optical path. The calibration sees only the light that returns through that interface, which is why the standard texts treat sample presentation as part of the instrument <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
+<h2>Transmission, transflectance or ATR</h2>
+<p>Three geometries cover most liquid-phase reactor work. A transmission probe passes the light once across a gap between two windows; a transflectance probe returns it with a mirror so that it crosses the gap twice and the probe becomes a single insertion with the fibres at one end; attenuated total reflectance (ATR) guides the light inside a high-index crystal and senses only the sample layer in contact with it. Fahrenfort described the ATR principle: radiation arriving from the dense medium above the critical angle is totally reflected except where the sample absorbs, giving a high-contrast spectrum that resembles a transmission spectrum <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>. ASTM E573 collects the theory, influencing parameters and practical guidelines for internal reflection measurements <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</p>
+<p>Because ATR senses only the layer at the crystal surface, it suits strongly absorbing, viscous or particle-laden media where a transmission gap would foul, whereas the weaker overtone and combination bands of the NIR region are usually measured in transmission or transflectance with a gap matched to the absorbance of the bands used <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Crystal material matters as much as geometry: Kemsley et al. built a sapphire ATR crystal into a stainless-steel fibre-optic probe because the usual ATR crystals lack food-contact approval, choosing sapphire for being hard, inert and non-toxic <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</p>
+<h2>The fibre link: hydroxyl and hydrogen</h2>
+<p>Silica fibre carries the light between analyzer and probe, and its own absorption is part of the measurement. Humbach et al. report that bound hydroxyl (SiOH) in silica produces a fundamental band at about 2.7 &micro;m and that its overtone and combination bands, including the one at 1.38 &micro;m, govern the OH-related transmission of a fibre <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Fibre grade (low-OH for the long-wavelength region) and fibre length therefore set how much of the usable range survives the round trip, since the fibre's OH bands overlap the water and combination bands used by many calibrations <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>.</p>
+<p>Hydrogen is the second mechanism. Stone's review covers overtone absorption by molecular hydrogen, formation of OH groups, the common sources of hydrogen in fibre and cable materials, and the countermeasures against hydrogen intrusion <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>. In a hydrogenation reactor or a hydrogen-rich plant atmosphere, hermetically coated fibre and the cable materials around it are part of the optical design <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</p>
+<h2>Windows and wetted alloys</h2>
+<p>Sapphire (single-crystal Al<sub>2</sub>O<sub>3</sub>) is the usual window for reactor probes; its mechanical, chemical and optical properties are compiled by Dobrovinskaya et al. <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Gryvnak and Burch found that the absorption coefficient of sapphire increases at most wavelengths between 0.56 and 6 &micro;m as the temperature rises, and that the refractive index below 4 &micro;m also rises with temperature <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. Window transmission and optical path are thus not strictly temperature-independent, one argument for collecting the background spectrum with the probe at process temperature <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</p>
+<p>Shaft and window seat must be matched to the chemistry. Haynes' data for HASTELLOY C-276, a nickel-chromium-molybdenum alloy, show a large improvement over 316L and 254SMO stainless steels in hydrochloric acid above about 5 %, resistance to oxidising and non-oxidising acids, and high resistance to chloride-induced pitting, crevice attack and stress-corrosion cracking <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. The same datasheet notes that weld metal corrodes faster than wrought material and that field tests are encouraged before industrial use <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. The limits are real: in Haynes' saturated wet-chlorine test, C-276 coupons in the liquid phase at 80 &deg;C suffered severe weld-metal corrosion and intergranular attack, whereas C-22 showed no localised attack <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. A probe is welded and often carries a different alloy at the window seat, so the wetted-materials list belongs in the application review, not in a catalogue default <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</p>
+<h2>Sealing, pressure and conformity</h2>
+<p>The window-to-metal joint is where optical and mechanical design meet: elastomer seals allow window exchange but have temperature and chemical limits, and a soldered or brazed joint extends the range at the cost of thermal-stress management. Ockenfels et al. bonded a sapphire window by active soldering to a metal flange through two C-shaped rings of different metals that mitigate thermal stress, and operated a cell with two such viewports between 20 and 450 &deg;C at pressures up to 330 bar without measurable leakage <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. In the European Union, pressure equipment and assemblies with a maximum allowable pressure above 0.5 bar fall under Directive 2014/68/EU, so whether an inserted probe counts as a pressure accessory of the vessel, and what rating and documentation it needs, is a conformity question rather than a brochure claim <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Three practice points follow:</p>
 <ul>
-<li><strong>Chemical Inertness:</strong> Resistant to almost all acids, alkalis, and organic solvents, even at temperatures up to 1000&deg;C.</li>
-<li><strong>Mechanical Hardness:</strong> Rated at 9 on the Mohs hardness scale (second only to diamond), sapphire resists scratching from high-speed catalyst particles and crystalline slurries.</li>
-<li><strong>Broad Transmission:</strong> High optical transmittance across the entire near-infrared wavelength range (1000 to 2600 nm) with zero scattering.</li>
+<li><strong>Choose the geometry from the medium.</strong> Clear or moderately scattering liquids: transmission or transflectance; fouling, viscous or strongly absorbing media: ATR, accepting that only the surface layer is sensed <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>.</li>
+<li><strong>Specify the fibre, not just the probe.</strong> Low-OH fibre, the shortest run the layout allows, and hermetically coated fibre where hydrogen is present <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
+<li><strong>Reference and validate on the installed probe.</strong> Background spectra at process temperature and a calibration built through the actual window, fibre and gap, because window absorption and fibre loss are part of the measured spectrum <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a><a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
 </ul>
-<h2>Metallurgy and Sealing Technology</h2>
-<p>The probe body must survive the same chemical environment as the reactor vessel. USTECH fabricates process probe sleeves using corrosion-resistant superalloys matched to the chemistry of the reactor:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Alloy Grade</th>
-<th>Corrosion Resistance Profile</th>
-<th>Recommended Application</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Stainless Steel 316L</strong></td>
-<td>Standard organic solvents, mild acids, dairy/food wash chemicals</td>
-<td>General petrochemical loops, food processing, biodiesel synthesis</td>
-</tr>
-<tr>
-<td><strong>Hastelloy C276</strong></td>
-<td>High resistance to wet chlorine gas, hypochlorites, and strong mineral acids (hydrochloric, sulfuric)</td>
-<td>Chlorination reactors, acid esterifications, organic synthesis loops</td>
-</tr>
-<tr>
-<td><strong>Titanium Grade 2</strong></td>
-<td>Excellent resistance to salt water, nitric acid, and oxidizing environments</td>
-<td>Marine applications, nitric acid processing, chlorine dioxide reactors</td>
-</tr>
-</tbody>
-</table>
-<p>To seal the sapphire window into the metal tip, USTECH uses a proprietary <strong>brazing technique</strong> that seals the sapphire to the metal using gold-nickel alloys, or employs high-temperature <strong>Kalrez elastomer seals</strong> with metal-to-metal backings. This prevents leaks at pressures up to 150 bar, even under thermal cycling.</p>
-<h2>Thermal Protection: Metal-Clad Fiber Optic Cables</h2>
-<p>Light must travel from the spectrometer on the plant wall to the probe in the reactor and back. Standard polymer-jacketed silica fibers degrade under heat and are vulnerable to hydrogen darkening. USTECH uses <strong>gold-jacketed silica fibers</strong> protected by stainless steel flexible conduits. The metallic gold coating prevents moisture and hydrogen gas from diffusing into the silica core, ensuring low signal attenuation and a long lifetime in high-temperature reactor environments.</p>
-<h2>Conclusion</h2>
-<p>By pairing high-transmission sapphire windows with Hastelloy metallurgy and metal-clad fiber cables, USTECH's process interfaces allow FT-NIR spectroscopy to operate directly inside aggressive reaction environments. This robust design gives operators real-time chemical data from the heart of the reactor without compromising safety or process integrity.</p>
+<h2>How USTECH approaches this</h2>
+<p>The <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> process FT-NIR analyzer is specified for inline use on reactors, pipelines and blenders with liquids, slurries and simple solid flows, and the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> places an InGaAs-array NIR sensor behind an O-ring-sealed sapphire window in a 316 stainless-steel housing. Interface geometry, wetted alloy and seal are chosen from the medium, temperature and pressure of the process; the calibration is then built in <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> on spectra collected through the installed interface and connected to the control system through <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>. The starting point is a feasibility study with your own samples under your own process conditions.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>"Optical Fiber Sensors for High-Temperature and High-Pressure Process Monitoring in Chemical Reactors," <em>Applied Optics</em>, 2020.</li>
-<li>"Hastelloy and Sapphire Crystal Construction in Industrial Process Spectroscopy Probes," <em>Chemical Engineering Progress</em>, 2022.</li>
-<li>"Mechanical Sealing and Brazing Techniques for Optically Coupled Chemical Reactors," <em>Industrial & Engineering Chemistry Research</em>, 2019.</li>
+<li id="ref-1">[1] Reich, G. (2005). Near-infrared spectroscopy and imaging: Basic principles and pharmaceutical applications. <em>Advanced Drug Delivery Reviews</em>, 57(8), 1109&ndash;1143. <a href="https://doi.org/10.1016/j.addr.2005.01.020" target="_blank" rel="noopener">doi:10.1016/j.addr.2005.01.020</a></li>
+<li id="ref-2">[2] Siesler, H.W., Ozaki, Y., Kawata, S., Heise, H.M. (eds) (2002). <em>Near-Infrared Spectroscopy: Principles, Instruments, Applications.</em> Wiley-VCH, Weinheim. <a href="https://doi.org/10.1002/9783527612666" target="_blank" rel="noopener">doi:10.1002/9783527612666</a></li>
+<li id="ref-3">[3] Fahrenfort, J. (1961). Attenuated total reflection: A new principle for the production of useful infra-red reflection spectra of organic compounds. <em>Spectrochimica Acta</em>, 17(7), 698&ndash;709. <a href="https://doi.org/10.1016/0371-1951(61)80136-7" target="_blank" rel="noopener">doi:10.1016/0371-1951(61)80136-7</a></li>
+<li id="ref-4">[4] ASTM E573-01(2021). <em>Standard Practices for Internal Reflection Spectroscopy.</em> ASTM International, West Conshohocken, PA. <a href="https://store.astm.org/e0573-01r21.html" target="_blank" rel="noopener">store.astm.org/e0573-01r21.html</a></li>
+<li id="ref-5">[5] Kemsley, E.K., Wilson, R.H., Poulter, G., Day, L.L. (1993). Quantitative analysis of sugar solutions using a novel fiber-optic-based sapphire ATR accessory. <em>Applied Spectroscopy</em>, 47(10), 1651&ndash;1654. <a href="https://doi.org/10.1366/0003702934334598" target="_blank" rel="noopener">doi:10.1366/0003702934334598</a></li>
+<li id="ref-6">[6] Humbach, O., Fabian, H., Grzesik, U., Haken, U., Heitmann, W. (1996). Analysis of OH absorption bands in synthetic silica. <em>Journal of Non-Crystalline Solids</em>, 203, 19&ndash;26. <a href="https://doi.org/10.1016/0022-3093(96)00329-8" target="_blank" rel="noopener">doi:10.1016/0022-3093(96)00329-8</a></li>
+<li id="ref-7">[7] Stone, J. (1987). Interactions of hydrogen and deuterium with silica optical fibers: A review. <em>Journal of Lightwave Technology</em>, 5(5), 712&ndash;733. <a href="https://doi.org/10.1109/JLT.1987.1075562" target="_blank" rel="noopener">doi:10.1109/JLT.1987.1075562</a></li>
+<li id="ref-8">[8] Dobrovinskaya, E.R., Lytvynov, L.A., Pishchik, V. (2009). <em>Sapphire: Material, Manufacturing, Applications.</em> Springer, New York. <a href="https://doi.org/10.1007/978-0-387-85695-7" target="_blank" rel="noopener">doi:10.1007/978-0-387-85695-7</a></li>
+<li id="ref-9">[9] Gryvnak, D.A., Burch, D.E. (1965). Optical and infrared properties of Al<sub>2</sub>O<sub>3</sub> at elevated temperatures. <em>Journal of the Optical Society of America</em>, 55(6), 625. <a href="https://doi.org/10.1364/JOSA.55.000625" target="_blank" rel="noopener">doi:10.1364/JOSA.55.000625</a></li>
+<li id="ref-10">[10] Haynes International. <em>HASTELLOY&reg; C-276 alloy &mdash; datasheet</em> (principal features, nominal composition, corrosion data). Kokomo, IN. <a href="https://haynesintl.com/en/datasheet/hastelloy-c-276-alloy/" target="_blank" rel="noopener">haynesintl.com/en/datasheet/hastelloy-c-276-alloy</a></li>
+<li id="ref-11">[11] Haynes International. <em>HASTELLOY&reg; C-22&reg; and C-276 alloys in saturated wet chlorine</em> (corrosion test note). Kokomo, IN. <a href="https://haynesintl.com/en/?p=6884" target="_blank" rel="noopener">haynesintl.com/en/?p=6884</a></li>
+<li id="ref-12">[12] Ockenfels, T., Vewinger, F., Weitz, M. (2021). Sapphire optical viewport for high pressure and temperature applications. <em>Review of Scientific Instruments</em>, 92(6). <a href="https://doi.org/10.1063/5.0047609" target="_blank" rel="noopener">doi:10.1063/5.0047609</a></li>
+<li id="ref-13">[13] Directive 2014/68/EU of the European Parliament and of the Council of 15 May 2014 on the harmonisation of the laws of the Member States relating to the making available on the market of pressure equipment (recast). <em>Official Journal of the European Union</em>, L 189, 27.6.2014, p. 164&ndash;259. <a href="https://eur-lex.europa.eu/eli/dir/2014/68/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/dir/2014/68/oj</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_62271644ee5c6.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -293,11 +273,11 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- OPC UA Card -->
 <div class="card" onclick="window.location.href='blog-opc-ua-dosing-valves.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img src="images/blog_opc_ua_plc.webp?v=1.0.5" alt="Standardizing OPC UA Integrations for Closed-Loop Dosing Valves" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<img src="images/blog_opc_ua_plc.webp?v=1.0.5" alt="Closing the Dosing Loop on Analyzer Results with OPC UA" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-opc-ua-dosing-valves.html" style="color: var(--accent-black); text-decoration: none;">Standardizing OPC UA Integrations for Closed-Loop Dosing Valves</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Learn how to map process tags to feed spectrometer predictions directly into PLC feedback control loops.</p>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-opc-ua-dosing-valves.html" style="color: var(--accent-black); text-decoration: none;">Closing the Dosing Loop on Analyzer Results with OPC UA</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point.</p>
 <a href="blog-opc-ua-dosing-valves.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
@@ -305,10 +285,10 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="card" onclick="window.location.href='blog-hydroxyl-value-polyol.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
 <img src="images/blog_polyol_reactors.webp?v=1.0.5" alt="Real-Time Hydroxyl Value Monitoring in Polyol Production" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER</span>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">ARTICLE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-hydroxyl-value-polyol.html" style="color: var(--accent-black); text-decoration: none;">Real-Time Hydroxyl Value Monitoring in Polyol Production</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">How online FT-NIR spectroscopy replaces wet chemical titrations to deliver continuous end-point determination during polymerization.</p>
-<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read White Paper</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration.</p>
+<a href="blog-hydroxyl-value-polyol.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Article</a>
 </div>
 </div>
 </div>
@@ -347,7 +327,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -366,6 +345,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>

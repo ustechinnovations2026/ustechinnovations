@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="USTECH Innovations Case Study - Reducing Ingredient Waste in Cattle Feed Production.">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.">
 <meta name="keywords" content="cattle feed waste reduction, feed mill NIR, inline feed analysis, ingredient yield optimization">
 <title>Reducing Ingredient Waste in Cattle Feed Production | USTECH Innovations</title>
-<link rel="stylesheet" href="index.css?v=1.1.2">
+<link rel="stylesheet" href="index.css?v=1.1.3">
 <link rel="canonical" href="https://www.ustechinnovations.com/blog-cattle-feed-waste.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.ustechinnovations.com/blog-cattle-feed-waste.html" />
 <link rel="alternate" hreflang="en" href="https://www.ustechinnovations.com/blog-cattle-feed-waste.html" />
@@ -22,7 +23,7 @@
 "@context": "https://schema.org",
 "@graph": [
 {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "@id": "https://www.ustechinnovations.com/#org",
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
@@ -47,7 +48,7 @@
 ]
 },
 {
-"@type": "WebSite",
+"@type": "WebSite", "inLanguage": "en",
 "@id": "https://www.ustechinnovations.com/#website",
 "url": "https://www.ustechinnovations.com/",
 "name": "USTECH Innovations",
@@ -62,14 +63,14 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "BlogPosting",
+"@type": "BlogPosting", "inLanguage": "en",
 "headline": "Reducing Ingredient Waste in Cattle Feed Production",
-"description": "USTECH Innovations Case Study - Reducing Ingredient Waste in Cattle Feed Production.",
+"description": "Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.",
 "url": "https://www.ustechinnovations.com/blog-cattle-feed-waste.html",
 "datePublished": "2026-03-05",
-"dateModified": "2026-03-05",
+"dateModified": "2026-10-27",
 "author": {
-"@type": "Organization",
+"@type": "Organization", "legalName": "USTECH Innovations LLC",
 "name": "USTECH Innovations",
 "@id": "https://www.ustechinnovations.com/#org"
 },
@@ -119,16 +120,22 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Reducing Ingredient Waste in Cattle Feed Production | USTECH Innovations">
-    <meta property="og:description" content="USTECH Innovations Case Study - Reducing Ingredient Waste in Cattle Feed Production.">
+    <meta property="og:description" content="Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-cattle-feed-waste.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-cattle-feed-waste.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Reducing Ingredient Waste in Cattle Feed Production | USTECH Innovations">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Reducing Ingredient Waste in Cattle Feed Production | USTECH Innovations">
-    <meta name="twitter:description" content="USTECH Innovations Case Study - Reducing Ingredient Waste in Cattle Feed Production.">
+    <meta name="twitter:description" content="Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-cattle-feed-waste.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -210,92 +217,53 @@ Espa&#241;ol
 </a>
 <img src="images/blog_cattle_feed.webp?v=1.0.5" alt="Cattle Feed Production and Mixing" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">Case Study &mdash; March 05, 2026 &mdash; 4 min read</span>
+<span class="blog-post-meta">Article &mdash; March 5, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Reducing Ingredient Waste in Cattle Feed Production</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">How a commercial feed mill achieved a 1.2% raw material yield optimization using inline NIR sensors over mixer exits.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Why cattle feed rations are over-formulated against ingredient variability, what published studies show about the sources of that variability and what near-infrared spectroscopy can measure, and how an NIR step at intake and at the mixer fits into a feed mill's routine.</p>
 </div>
 <div class="blog-post-content">
-<h2>The Challenge of Feed Formulation Safeguards</h2>
-<p>Commercial cattle feed formulation is a highly competitive B2B industry, representing a critical sector within <a href="industry-food-feed.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;">food and feed processing</a>. Feed mills must guarantee strict macronutrient levels&mdash;principally crude protein, fat, and moisture&mdash;to comply with regulatory labels and customer nutritional requirements. However, raw crop inputs (like soybean meal, corn, and barley) display massive nutrient variances depending on the batch, source, and storage conditions.</p>
-<p>To avoid violating minimum protein regulations, mills traditionally over-formulate, adding an extra 1.0% to 1.5% of expensive protein concentrates (such as soybean meal) as a safety margin. This "safety giveaway" is a major margin drain, adding hundreds of thousands of dollars in annual raw material costs.</p>
-<blockquote>
-"By relying on manual, retrospective lab tests that take 2-4 hours to complete, feed mills cannot adjust mixers in real-time, forcing them to systematically over-formulate raw ingredients."
-</blockquote>
-<h2>The Inline NIR Solution</h2>
-<p>A midwestern cattle feed mill producing 150,000 tons of compound feed annually partnered with USTECH Innovations to integrate real-time process analytics. We installed the <a href="product-masterline.html" style="color: var(--accent-gold); text-decoration: underline; font-weight: 500;"><strong>USTECH MasterLine</strong></a> directly over the mixer discharge chute, measuring moisture, fat, protein, and starch levels continuously as the feed left the mixer.</p>
-<p>The sensor scanned the falling feed every 5 seconds, sending spectral data to the <strong>ProChem Process Control Software</strong>, which was integrated directly into the mill's SCADA system via OPC UA. This enabled the mill's automation system to dynamically adjust dosing valves for moisture and liquid fat, and alert operators immediately if protein levels shifted from the target window.</p>
-<h2>Key Findings & Economic Results</h2>
-<p>After a six-month continuous trial, data validation against laboratory Kjeldahl and oven drying reference methods showed outstanding performance:</p>
-<table class="doc-table" style="margin-top: 1.5rem;">
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Target Value</th>
-<th>Pre-NIR Variation (SD)</th>
-<th>Post-NIR Variation (SD)</th>
-<th>Total Margin Change</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Crude Protein</strong></td>
-<td>16.50%</td>
-<td>&plusmn;0.85%</td>
-<td><strong>&plusmn;0.18%</strong></td>
-<td>Giveaway reduced by 1.10%</td>
-</tr>
-<tr>
-<td><strong>Moisture</strong></td>
-<td>12.50%</td>
-<td>&plusmn;0.90%</td>
-<td><strong>&plusmn;0.15%</strong></td>
-<td>Moisture yield increased by 0.95%</td>
-</tr>
-<tr>
-<td><strong>Crude Fat</strong></td>
-<td>4.00%</td>
-<td>&plusmn;0.45%</td>
-<td><strong>&plusmn;0.10%</strong></td>
-<td>Optimal fat usage achieved</td>
-</tr>
-</tbody>
-</table>
-<h3>Financial Return on Investment (ROI)</h3>
-<p>By stabilizing moisture control and reducing the systematic protein giveaway from 17.5% down to 16.6% (much closer to the legal minimum of 16.50%), the mill achieved direct savings:</p>
+<h2>Why feed is over-formulated</h2>
+<p>Rations for dairy and beef cattle are formulated on a nutrient basis: the National Academies requirement systems express what the animal needs as crude protein, fibre fractions, starch and energy, and ingredients are chosen to supply those nutrients at least cost <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>. In the <a href="industry-food-feed.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">feed industry</a> the declared constituents of a compound feed are also subject to official control, with the reference procedures &mdash; oven drying for moisture, Kjeldahl for crude protein, among others &mdash; laid down in Annex III of Commission Regulation (EC) No 152/2009 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>.</p>
+<p>The ingredients, however, are not what the formulation table says. Buckmaster and Muller applied uncertainty analysis to total mixed rations and found that uncertainty in the nutrient concentrations of the ingredients was the largest contributor to the overall uncertainty of the delivered diet, with forage dry matter and the amounts of nutrient-dense ingredients also contributing substantially <a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. A formulator who must not fall below a declared minimum, and who does not know today's protein content of the soybean meal in the bin, adds a safety margin of the expensive ingredient. That margin is the &ldquo;giveaway&rdquo;: protein, fat or energy paid for but not required, and it is the quantity that measurement at the plant is meant to shrink.</p>
+<h2>Where the variability comes from</h2>
+<p>St-Pierre and Weiss partitioned the variance of nutrient composition data from commercial dairy farms into farm, day-to-day, sampling and analytical components and found that sampling alone accounted for 30 to 81 % of the within-farm variance of silages, depending on nutrient and silage type, and that sampling plus analytical variance made up roughly 40 to 70 % of the within-farm variance of total mixed rations <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Their conclusion was that data from a single sample are not highly reliable <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. For a mill this means that one laboratory result per ingredient lot is a weak basis for a formulation decision: part of what looks like a change in the ingredient is sampling noise. Reducing giveaway therefore needs more measurements rather than a single more precise one, and results that arrive before the ingredient is dosed rather than after the batch has shipped.</p>
+<h2>What NIR measures in feed ingredients and mixed feed</h2>
+<p>Near-infrared spectroscopy has been applied to feed composition for half a century. Norris et al. recorded reflectance spectra of 87 ground forage samples and, using up to nine wavelengths, obtained a correlation coefficient of 0.99 for crude protein and predicted an independent half of the sample set within a standard error of &plusmn;0.95 % for crude protein <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>. Givens and Deaville reviewed the following two decades of NIRS in animal nutrition, covering forages and non-forage feeds <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>, and ISO 12099 now gives guidelines for applying NIR to animal feeding stuffs and cereals, including validation against the reference methods <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
+<p>Simmler et al. built 30 PLS models on 1,437 reference samples of poultry feed, maize, wheat, soybean and DDGS and found that most protein, fat and moisture models reached a hold-out RPD above 3, while most fibre, water-soluble carbohydrate and ash models exceeded 2, with the heterogeneity of the material co-determining the result <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. The study concerned poultry feed, but the ingredients overlap with ruminant concentrates, and the ranking is consistent with the physics: protein, fat and water have strong near-infrared absorptions, whereas fibre and ash are predicted indirectly and less precisely.</p>
+<h2>NIR at intake and at the mixer</h2>
+<p>Two measurement points address giveaway directly. At intake, each delivery of a protein meal, grain or co-product is scanned before it enters the bin, so that the formulation runs on the measured composition of the lot rather than on a table value. At the mixer, the discharged feed is checked against the formulated target. Fern&aacute;ndez-Ahumada et al. applied NIR equations developed for intact finished compound feeds to samples taken at the mixing stage and found predictions very similar to those for the final product (crude protein 15.65 % at the mixer against 15.87 % in the final product; crude fibre 7.69 % against 8.02 %), concluding that NIR is viable at this stage because corrections can still be made before the batch is finished <a href="#ref-10" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[10]</a>. Moving a calibration to a process instrument is a separate task: the same group showed that spectral standardisation between a laboratory and a diode-array process instrument considerably reduced the standard error of prediction, but acceptable accuracy required the final model to contain spectra from both instruments <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</p>
+<p>One nuance should be kept in view. Mixer uniformity is conventionally tested with a tracer and expressed as a coefficient of variation across samples from one batch; Clark et al. found that crude protein is a poor tracer because many ingredients contribute protein, and only synthetic amino acid markers reached a coefficient of variation below 10 % in their trials <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Rubio et al. compared in-line NIR with tracer methods in broiler feed and found that the coefficient of variation depended on both mixing time and method <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. An NIR protein reading at the mixer exit is therefore a check on macro-composition and dosing, not a substitute for a tracer test of micro-ingredient distribution. Three practices follow:</p>
 <ul>
-<li><strong>Annual Soy Meal Savings:</strong> $84,000 (reduced soy usage by 240 tons).</li>
-<li><strong>Moisture Yield Optimization:</strong> $58,000 (safely keeping moisture closer to the 12.50% upper limit without risking mold growth).</li>
-<li><strong>Reduced Batch Rejections:</strong> $22,000 (elimination of out-of-spec batches that required re-milling or selling at a loss).</li>
-<li><strong>Total Annualized Benefit:</strong> <strong>$164,000</strong></li>
+<li><strong>Measure each ingredient lot, not each ingredient.</strong> Sampling is a major variance component <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>; several sub-samples per delivery, formulated on their mean, let the safety margin be narrowed with numbers to justify it.</li>
+<li><strong>Keep the reference methods in the loop.</strong> NIR calibrations are built on, and periodically checked against, the Regulation 152/2009 procedures <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a> as ISO 12099 describes <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</li>
+<li><strong>Validate the process calibration on the process instrument.</strong> Laboratory models do not transfer unchanged to an inline sensor <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</li>
 </ul>
-<p>With an initial installation cost of $78,000 for the ProLine17ES sensor and ProChem software suite, the facility achieved <strong>full investment payback in just 5.7 months</strong>.</p>
-<h2>Conclusion</h2>
-<p>This case study proves that real-time inline spectroscopy is no longer a luxury. In modern feed production, where raw material margins are thin, moving from retrospective laboratory checks to continuous, closed-loop inline feedback is the fastest path to process optimization, quality safety, and immediate margin protection.</p>
+<h2>Where USTECH fits</h2>
+<p>At intake and final control the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">USTECH MasterLine</a> at-line analyzer is used for raw materials, animal feed and forage. At the mixer discharge the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> and <a href="product-proline-17ecs.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17ECS</a> inline NIR analyzers mount on chutes and conveyors, and <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> passes their results to the PLC or SCADA system for dashboards, alarms and setpoint adjustment. Calibrations are developed and maintained in the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> chemometrics suite, with the validation against reference analyses that ISO 12099 calls for <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. How far the safety margin on a given ration can be narrowed depends on the ingredients, reference data and sampling scheme at that plant, and is established in a feasibility study with your own samples.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
-<li>ISO 12099 - Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</li>
-<li>"Precision Feeding in Ruminants: Economic Impacts of Feed Formulation Control," <em>Dairy Science Review</em>, 2023.</li>
-<li>"Real-Time Process Analytics for Mixing Uniformity in Animal Feed Mill Operations," <em>Journal of Agricultural Engineering Research</em>, 2022.</li>
+<li id="ref-1">[1] National Academies of Sciences, Engineering, and Medicine (2021). <em>Nutrient Requirements of Dairy Cattle: Eighth Revised Edition.</em> The National Academies Press, Washington, DC. <a href="https://doi.org/10.17226/25806" target="_blank" rel="noopener">doi:10.17226/25806</a></li>
+<li id="ref-2">[2] National Academies of Sciences, Engineering, and Medicine (2016). <em>Nutrient Requirements of Beef Cattle: Eighth Revised Edition.</em> The National Academies Press, Washington, DC. <a href="https://doi.org/10.17226/19014" target="_blank" rel="noopener">doi:10.17226/19014</a></li>
+<li id="ref-3">[3] Commission Regulation (EC) No 152/2009 of 27 January 2009 laying down the methods of sampling and analysis for the official control of feed, Annex III (methods of analysis to control the composition of feed materials and compound feed). <em>Official Journal of the European Union</em>, L 54, 26.2.2009 (as amended). <a href="https://eur-lex.europa.eu/eli/reg/2009/152/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2009/152/oj</a></li>
+<li id="ref-4">[4] Buckmaster, D.R., Muller, L.D. (1994). Uncertainty in nutritive measures of mixed livestock rations. <em>Journal of Dairy Science</em>, 77(12), 3716&ndash;3724. <a href="https://doi.org/10.3168/jds.S0022-0302(94)77316-1" target="_blank" rel="noopener">doi:10.3168/jds.S0022-0302(94)77316-1</a></li>
+<li id="ref-5">[5] St-Pierre, N.R., Weiss, W.P. (2015). Partitioning variation in nutrient composition data of common feeds and mixed diets on commercial dairy farms. <em>Journal of Dairy Science</em>, 98(7), 5004&ndash;5015. <a href="https://doi.org/10.3168/jds.2015-9431" target="_blank" rel="noopener">doi:10.3168/jds.2015-9431</a></li>
+<li id="ref-6">[6] Norris, K.H., Barnes, R.F., Moore, J.E., Shenk, J.S. (1976). Predicting forage quality by infrared reflectance spectroscopy. <em>Journal of Animal Science</em>, 43(4), 889&ndash;897. <a href="https://doi.org/10.2527/jas1976.434889x" target="_blank" rel="noopener">doi:10.2527/jas1976.434889x</a></li>
+<li id="ref-7">[7] Givens, D.I., Deaville, E.R. (1999). The current and future role of near infrared reflectance spectroscopy in animal nutrition: a review. <em>Australian Journal of Agricultural Research</em>, 50(7), 1131&ndash;1145. <a href="https://doi.org/10.1071/AR98014" target="_blank" rel="noopener">doi:10.1071/AR98014</a></li>
+<li id="ref-8">[8] ISO 12099:2017. <em>Animal feeding stuffs, cereals and milled cereal products &mdash; Guidelines for the application of near infrared spectrometry.</em> ISO, Geneva. <a href="https://www.iso.org/standard/67352.html" target="_blank" rel="noopener">iso.org/standard/67352.html</a></li>
+<li id="ref-9">[9] Simmler, M., Ishizaki, K., Mulloni, A., Abbate, R., Juste, A., Sroka, A. (2025). Enabling precision feeding: A novel micro-NIRS system for rapid on-site analysis of the nutritional composition of poultry feed and feed ingredients. <em>Smart Agricultural Technology</em>, 12, 101220. <a href="https://doi.org/10.1016/j.atech.2025.101220" target="_blank" rel="noopener">doi:10.1016/j.atech.2025.101220</a></li>
+<li id="ref-10">[10] Fern&aacute;ndez-Ahumada, E., Guerrero-Ginel, J.E., P&eacute;rez-Mar&iacute;n, D., Garrido-Varo, A. (2008). Near infrared spectroscopy for control of the compound-feed manufacturing process: mixing stage. <em>Journal of Near Infrared Spectroscopy</em>, 16(3), 285&ndash;290. <a href="https://doi.org/10.1255/jnirs.789" target="_blank" rel="noopener">doi:10.1255/jnirs.789</a></li>
+<li id="ref-11">[11] Fern&aacute;ndez-Ahumada, E., Garrido-Varo, A., Guerrero, J.E., P&eacute;rez-Mar&iacute;n, D., Fearn, T. (2008). Taking NIR calibrations of feed compounds from the laboratory to the process: calibration transfer between predispersive and postdispersive instruments. <em>Journal of Agricultural and Food Chemistry</em>, 56(21), 10135&ndash;10141. <a href="https://doi.org/10.1021/jf801881n" target="_blank" rel="noopener">doi:10.1021/jf801881n</a></li>
+<li id="ref-12">[12] Clark, P.M., Behnke, K.C., Poole, D.R. (2007). Effects of marker selection and mix time on the coefficient of variation (mix uniformity) of broiler feed. <em>Journal of Applied Poultry Research</em>, 16(3), 464&ndash;470. <a href="https://doi.org/10.1093/japr/16.3.464" target="_blank" rel="noopener">doi:10.1093/japr/16.3.464</a></li>
+<li id="ref-13">[13] Rubio, A.A., Conrad, S., Juzaitis-Boelter, C., Wishon, C.R., Fahrenholz, A.C. (2023). The impact of marker selection, in-line near-infrared spectroscopy (NIR), and feed mix time on the coefficient of variation (mix uniformity), body weight uniformity and broiler growth performance during the starter, grower, and finisher periods. <em>Poultry Science</em>, 102(12), 103109. <a href="https://doi.org/10.1016/j.psj.2023.103109" target="_blank" rel="noopener">doi:10.1016/j.psj.2023.103109</a></li>
 </ul>
 </div>
 </div>
-<!-- Lead Capture Form for Technical Report -->
-<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: linear-gradient(135deg, #12141d 0%, #1a1d2e 100%); padding: 0.5rem 1rem; border-radius: 12px;"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" fetchpriority="high" decoding="async"></div>
-<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Download Full Technical Report</h3>
-<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-Access the complete, unedited technical paper with full spectroscopic formulas, calibration datasets, and instrumentation parameters.
-</p>
-<form onsubmit="event.preventDefault(); const email = this.querySelector('input[type=email]').value; if(email) { alert('Thank you! The full technical report PDF has been sent to ' + email + '. Opening download link now...'); window.open('https://files.cdn-files-a.com/uploads/2258173/normal_622710f8b0482.pdf', '_blank'); this.reset(); }" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; align-items: center;" data-z="1">
-<div style="display: flex; width: 100%; gap: 0.5rem; flex-wrap: wrap;">
-<input type="email" placeholder="Enter your business email" required style="flex: 1; min-width: 240px; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.95rem;">
-<button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">Download Report</button>
-</div>
-<label style="position: relative; z-index: 1; display: flex; gap: 0.5rem; align-items: flex-start; text-align: left; font-size: 0.8rem; color: rgba(255,255,255,0.7); cursor: pointer;">
-<input type="checkbox" required style="margin-top: 0.2rem;">
-<span>I agree to receive the technical PDF and subscribe to USTECH Innovations updates, compliant with the <a href="contact.html?showPrivacy=1" target="_blank" style="text-decoration: underline; color: var(--accent-gold);">Privacy Policy</a>.</span>
-</label>
-</form>
+<!-- Contact CTA (form kaldirildi 23.10.2026) -->
+<div class="lead-capture-card" style="margin-top: 4rem; position: relative; overflow: hidden; background: url('images/report-bg.webp?v=1.0.5') center/cover no-repeat; border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-sm);"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 11, 16, 0.82); z-index: 0;"></div><div style="position: relative; z-index: 1; margin-bottom: 1.25rem; display: inline-block; background: #ffffff; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);"><img src="images/logo.svg?v=1.0.5" alt="USTECH Innovations Logo" style="height: 110px; width: auto; display: block;" loading="lazy" decoding="async"></div>
+<h3 style="position: relative; z-index: 1; font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.5px;">Discuss this application for your process</h3>
+<p style="position: relative; z-index: 1; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Our application team can walk through the method, share the supporting literature and arrange a feasibility study with your own samples.</p>
+<a href="contact.html" class="btn btn-primary" style="position: relative; z-index: 1; display: inline-block; padding: 0.75rem 1.5rem; font-size: 0.95rem;">Contact Us</a>
 </div>
 <!-- Read Next Section -->
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
@@ -303,12 +271,12 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="grid grid-2" style="gap: 1.5rem;">
 <!-- Calibration Transfer Card -->
 <div class="card" onclick="window.location.href='blog-calibration-transfer.html';" style="cursor: pointer; padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-<img src="images/blog_mems_sensor.webp?v=1.0.5" alt="Calibration Transfer Feasibility on MEMS Spectrometers" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
+<img src="images/blog_nir_vs_ftnir.webp?v=1.0.5" alt="Calibration Transfer Between NIR Spectrometers: Methods and Feasibility" style="width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid var(--border-color);" loading="lazy" decoding="async">
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">WHITE PAPER</span>
-<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">Calibration Transfer Feasibility on MEMS Spectrometers</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Discusses how silicon photolithography enables direct calibration portability without unit standardization.</p>
-<a href="blog-calibration-transfer.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read White Paper</a>
+<span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
+<h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-calibration-transfer.html" style="color: var(--accent-black); text-decoration: none;">Calibration Transfer Between NIR Spectrometers: Methods and Feasibility</a></h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family.</p>
+<a href="blog-calibration-transfer.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
 <!-- PLS Regression Card -->
@@ -317,8 +285,8 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
 <span style="font-size: 0.75rem; font-weight: bold; color: var(--accent-grey); margin-bottom: 0.5rem; display: block;">GUIDE</span>
 <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; line-height: 1.3; margin-top: 0;"><a href="blog-pls-regression-calix.html" style="color: var(--accent-black); text-decoration: none;">Introduction to PLS Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite</a></h4>
-<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A step-by-step tutorial explaining how to compile calibration models using the cali<span class="calix-x" style="color: #38b6ff !important;">X</span> AutoML platform.</p>
-<a href="blog-pls-regression-calix.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Tutorial</a>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.5;">A practitioner's walk through a PLS calibration: how the data are split, how the pre-processing and the number of latent variables are chosen by validation, which diagnostics to read, and how the model is kept alive in production.</p>
+<a href="blog-pls-regression-calix.html" class="btn-text" style="font-size: 0.85rem; align-self: flex-start; margin-top: auto;">Read Guide</a>
 </div>
 </div>
 </div>
@@ -357,7 +325,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <div class="footer-links-col">
 <h4>Contact Us</h4>
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">600 Park Offices Dr Ste 300, Durham, NC 27713</p>
-
 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Email: info@ustechinnovations.com</p>
 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on:</p>
 <div class="footer-socials" style="display: flex; gap: 0.75rem; margin-top: 0; ">
@@ -376,6 +343,6 @@ Access the complete, unedited technical paper with full spectroscopic formulas, 
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.9"></script>
+<script src="app.js?v=1.0.11"></script>
 </body>
 </html>
