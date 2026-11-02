@@ -8027,20 +8027,20 @@ div.hero-metrics-grid,
 /* Yazilim kartlarinda sag ust kose seridi -> ilgili yazilimin indirme bolumu (30.10.2026) */
 .download-ribbon {
     position: absolute;
-    top: 58px;
-    right: -72px;
+    top: 56px;
+    right: -84px;
     width: 320px;
     transform: rotate(45deg);
     z-index: 3;
     background: var(--accent-black);
     color: #ffffff;
     text-align: center;
-    font-size: 0.68rem;
+    font-size: 0.74rem;
     font-weight: 700;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
     line-height: 1.2;
-    padding: 7px 0;
+    padding: 12px 0;
     text-decoration: none;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
     transition: background-color 0.25s ease, color 0.25s ease;
@@ -8050,8 +8050,28 @@ div.hero-metrics-grid,
     background: var(--accent-gold);
     color: #111111;
 }
+.product-detail-info {
+    position: relative;
+    overflow: hidden;
+    padding-top: 7.5rem;
+}
+html[lang="fr"] .download-ribbon,
+html[lang="de"] .download-ribbon {
+    font-size: 0.68rem;
+    letter-spacing: 0;
+}
 [dir="rtl"] .download-ribbon {
     right: auto;
-    left: -72px;
+    left: -84px;
     transform: rotate(-45deg);
+}
+
+/* 02.11.2026: urun ust bolumundeki dugmeler (Teknik Ozellikler / Teklif / Brosur) telefonda sikismasin */
+@media (max-width: 768px) {
+    div:not(.product-action-cta):has(> a.btn-brochure) {
+        flex-wrap: wrap;
+    }
+    div:not(.product-action-cta):has(> a.btn-brochure) > a {
+        flex: 1 1 auto;
+    }
 }
