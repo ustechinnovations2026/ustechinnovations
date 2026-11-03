@@ -540,33 +540,33 @@ var SEARCH_I18N = {
   "faq.html": {
     "tr": {
       "t": "NIR ve FT-NIR SSS: Cihaz, Yazılım, Kalibrasyon",
-      "s": "NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 29 soru-yanıt.",
-      "k": "nir ve ft-nir sss cihaz yazılım kalibrasyon nir doğruluğu cihaz donanımı plc scada entegrasyonu kalibrasyon aktarımı bakım ve yatırım getirisi üzerine ustech uygulama ekibinden 29 soru-yanıt sss sık sorulan sorular soru cevap garanti bakım"
+      "s": "NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 28 soru-yanıt.",
+      "k": "nir ve ft-nir sss cihaz yazılım kalibrasyon nir doğruluğu cihaz donanımı plc scada entegrasyonu kalibrasyon aktarımı bakım ve yatırım getirisi üzerine ustech uygulama ekibinden 28 soru-yanıt sss sık sorulan sorular soru cevap garanti bakım"
     },
     "fr": {
       "t": "FAQ NIR et FT-NIR : appareils, logiciel, étalonnage",
-      "s": "29 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
-      "k": "faq nir et ft-nir appareils logiciel étalonnage 29 réponses de l équipe applications ustech sur la précision nir le matériel l intégration plc scada le transfert d étalonnage la maintenance et le roi faq questions fréquentes garantie entretien"
+      "s": "28 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
+      "k": "faq nir et ft-nir appareils logiciel étalonnage 28 réponses de l équipe applications ustech sur la précision nir le matériel l intégration plc scada le transfert d étalonnage la maintenance et le roi faq questions fréquentes garantie entretien"
     },
     "de": {
       "t": "NIR- und FT-NIR-FAQ: Geräte, Software, Kalibrierung",
-      "s": "29 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.",
-      "k": "nir- und ft-nir-faq geräte software kalibrierung 29 antworten des ustech-anwendungsteams zu nir-genauigkeit hardware sps scada-integration kalibrierungsübertragung wartung und roi faq häufige fragen garantie wartung"
+      "s": "28 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.",
+      "k": "nir- und ft-nir-faq geräte software kalibrierung 28 antworten des ustech-anwendungsteams zu nir-genauigkeit hardware sps scada-integration kalibrierungsübertragung wartung und roi faq häufige fragen garantie wartung"
     },
     "es": {
       "t": "Preguntas frecuentes sobre NIR y FT-NIR",
-      "s": "29 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
-      "k": "preguntas frecuentes sobre nir y ft-nir 29 respuestas del equipo de aplicaciones de ustech sobre precisión nir hardware integración plc scada transferencia de calibración mantenimiento y roi preguntas frecuentes garantía mantenimiento"
+      "s": "28 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
+      "k": "preguntas frecuentes sobre nir y ft-nir 28 respuestas del equipo de aplicaciones de ustech sobre precisión nir hardware integración plc scada transferencia de calibración mantenimiento y roi preguntas frecuentes garantía mantenimiento"
     },
     "ar": {
       "t": "أسئلة شائعة حول NIR وFT-NIR: الأجهزة والبرامج والمعايرة",
-      "s": "29 إجابة من فريق تطبيقات USTECH حول دقة NIR وعتاد أجهزة التحليل وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار.",
-      "k": "أسئلة شائعة حول nir وft-nir الأجهزة والبرامج والمعايرة 29 إجابة من فريق تطبيقات ustech حول دقة nir وعتاد أجهزة التحليل وتكامل plc scada ونقل المعايرة والصيانة وعائد الاستثمار الأسئلة الشائعة ضمان صيانة"
+      "s": "28 إجابة من فريق تطبيقات USTECH حول دقة NIR وعتاد أجهزة التحليل وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار.",
+      "k": "أسئلة شائعة حول nir وft-nir الأجهزة والبرامج والمعايرة 28 إجابة من فريق تطبيقات ustech حول دقة nir وعتاد أجهزة التحليل وتكامل plc scada ونقل المعايرة والصيانة وعائد الاستثمار الأسئلة الشائعة ضمان صيانة"
     },
     "zh": {
       "t": "NIR 与 FT-NIR 常见问题：设备、软件与定标",
-      "s": "USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 29 个解答。",
-      "k": "nir 与 ft-nir 常见问题 设备 软件与定标 ustech 应用团队关于 nir 精度 分析仪硬件 plc scada 集成 定标转移 维护和投资回报的 29 个解答 常见问题 问答 质保 维护"
+      "s": "USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 28 个解答。",
+      "k": "nir 与 ft-nir 常见问题 设备 软件与定标 ustech 应用团队关于 nir 精度 分析仪硬件 plc scada 集成 定标转移 维护和投资回报的 28 个解答 常见问题 问答 质保 维护"
     }
   },
   "industries.html": {
