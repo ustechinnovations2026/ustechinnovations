@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="28 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.">
+<meta name="description" content="27 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.">
 <title>FAQ NIR et FT-NIR : appareils, logiciel, étalonnage | USTECH</title>
 <link rel="stylesheet" href="../index.css?v=1.1.6">
 <style>
@@ -131,7 +131,7 @@ border-left: none !important;
 "name": "Comment la précision du NIR se compare-t-elle aux méthodes traditionnelles de chimie humide ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "NIR est une méthode analytique secondaire, ce qui signifie qu'elle est calibrée par rapport aux méthodes de référence primaires du laboratoire (telles que la chimie humide). Une fois calibré, il atteint une répétabilité et une précision extrêmement proches des méthodes de référence, avec l'avantage d'être infiniment plus rapide (secondes contre heures), éliminant les erreurs de l'opérateur humain et ne nécessitant aucun consommable ni réactif dangereux."
+"text": "La NIR est une méthode d'analyse secondaire : elle est étalonnée par rapport à des méthodes de référence primaires de laboratoire (comme la chimie par voie humide). Un étalonnage bien construit peut approcher l'exactitude de la méthode de référence ; l'écart dépend de la gamme d'échantillons et de la qualité des données de référence. Les résultats sont obtenus en quelques secondes au lieu de plusieurs heures, sans réactifs."
 }
 },
 {
@@ -139,7 +139,7 @@ border-left: none !important;
 "name": "Quelle est la différence entre le NIR basé sur des filtres, le réseau de diodes NIR et le FT-NIR ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Les systèmes basés sur des filtres ne mesurent que quelques longueurs d'onde spécifiques, ce qui limite leur flexibilité. Les systèmes à réseau de diodes mesurent plusieurs longueurs d'onde mais ont une résolution spectrale inférieure.  Le FT-NIR utilise un interféromètre pour scanner l'ensemble du spectre proche infrarouge en continu à une résolution extrêmement élevée, offrant une précision supérieure, une meilleure stabilité d'étalonnage et la capacité de détecter des traces de constituants."
+"text": "Les systèmes à filtres ne mesurent que quelques longueurs d'onde sélectionnées, ce qui limite leur flexibilité. Les systèmes à barrette de diodes enregistrent toute la gamme en une fois, sans pièces mobiles, ce qui les rend rapides et robustes en production. Les instruments FT-NIR utilisent un interféromètre et offrent une haute résolution spectrale et une grande exactitude en longueur d'onde. Le choix de la technologie dépend de l'application."
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "Comment fonctionne l'analyseur d'amidon endommagé USTECH StarchQC ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "L'analyseur d'amidon endommagé USTECH StarchQC utilise une technique ampérométrique pour mesurer la cinétique de dégradation de l'amidon. En exposant un petit échantillon de farine à des enzymes spécifiques, l'analyseur mesure le taux de réaction électrochimique à mesure que l'amidon endommagé est décomposé, donnant ainsi un pourcentage d'amidon endommagé très précis en quelques minutes."
+"text": "Le StarchQC d'USTECH utilise une méthode ampérométrique fondée sur l'absorption d'iode. Un échantillon de farine de 1 000 mg est analysé en un cycle de 8 minutes ; le taux d'amidon endommagé est exprimé en AI %, NDS, UCDC, AACC et Farrand et imprimé sur l'imprimante intégrée. Les résultats sont fortement corrélés aux méthodes de référence enzymatiques."
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "Les spectromètres USTECH peuvent-ils être intégrés aux systèmes PLC ou SCADA de notre usine ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Oui, absolument. Notre suite logicielle ProChem est conçue en tenant compte des protocoles de communication industriels. Il prend en charge nativement OPC UA, Modbus TCP et les sorties analogiques/numériques directes (4-20 mA) pour communiquer les résultats directement aux systèmes PLC (tels que Siemens, Allen-Bradley) ou aux plates-formes SCADA en 1 530 secondes."
+"text": "Oui. ProChem envoie les résultats à l'automate de l'usine via une interface Ethernet, et le ProLine2550 propose en outre des sorties Modbus TCP et 4–20 mA, ainsi qu'OPC UA et PROFINET sur le modèle Advanced. Les détails d'intégration avec votre système de contrôle sont définis lors de la planification du projet."
 }
 },
 {
@@ -219,15 +219,15 @@ border-left: none !important;
 "name": "Comment le ProChem gère-t-il le contrôle en boucle fermée des paramètres du processus ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "ProChem calcule les valeurs de concentration chimique en temps réel et les envoie au SCADA/PLC de l'usine. Le PLC compare ces valeurs aux points de consigne (par exemple, humidité cible) et module les vannes de contrôle (par exemple, vapeur ou pulvérisation d'eau) à l'aide de boucles PID.  Le ProChem comprend également des limites de sécurité intégrées pour ignorer les lectures pendant les phases de démarrage/arrêt du processus."
+"text": "ProChem calcule les valeurs de concentration chimique en temps réel et les envoie au SCADA/PLC de l'usine. Le PLC compare ces valeurs aux points de consigne (par exemple, humidité cible) et module les vannes de contrôle (par exemple, vapeur ou pulvérisation d'eau) à l'aide de boucles PID."
 }
 },
 {
 "@type": "Question",
-"name": "La suite logicielle caliX est-elle conforme à la norme FDA 21 CFR Part 11 ?",
+"name": "Les logiciels USTECH prennent-ils en charge les exigences de la FDA 21 CFR Part 11 ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Oui. La caliX Suite prend en charge le suivi complet des signatures électroniques, les niveaux d'autorisation sécurisés pour les rôles multi-utilisateurs, la journalisation complète de toutes les modifications d'étalonnage et la validation de l'exportation des données brutes. Elle est entièrement conforme aux normes strictes de documentation et d'intégrité exigées par 21 CFR Part 11 et GMP Annex 11."
+"text": "ProChem offre l'authentification des utilisateurs, l'accès par rôles, une piste d'audit et des signatures électroniques, qui aident à satisfaire des exigences d'intégrité des données telles que la 21 CFR Part 11 et l'annexe 11 des BPF de l'UE. La conformité elle-même est établie par la validation du système complet sur votre site ; contactez-nous pour connaître la documentation disponible pour votre projet."
 }
 },
 {
@@ -235,23 +235,15 @@ border-left: none !important;
 "name": "Le logiciel USTECH peut-il fonctionner hors ligne si le réseau de notre usine tombe en panne ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Oui. Bien que le tableau de bord cloud caliX gère les étalonnages et les diagnostics de flotte de manière centralisée, toute la logique de mesure locale, les calculs optiques et les interfaces de communication PLC s'exécutent localement sur le PC dédié de l'instrument. Si Internet ou le réseau interne tombe en panne, le système continue de fonctionner hors ligne sans aucune perte de données ni interruption de processus."
+"text": "Oui. La mesure, la prédiction et la communication avec l'automate s'exécutent localement sur le PC relié à l'analyseur ; une coupure du réseau de l'usine ou d'Internet n'interrompt donc pas les mesures. Le PC peut également rester entièrement isolé d'Internet si votre politique de sécurité l'exige."
 }
 },
 {
 "@type": "Question",
-"name": "Comment la cybersécurité est-elle gérée pour les appareils caliX connectés au cloud ?",
+"name": "ProChem peut-il produire des tableaux de bord et des rapports qualité PDF ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Toutes les communications de données entre le PC de l'instrument local et le cloud caliX sont entièrement cryptées à l'aide de TLS 1.3. L'agent client local établit uniquement des connexions sortantes ; aucun port entrant n'est jamais ouvert sur le réseau de l'usine. De plus, le PC local peut être complètement isolé d'Internet si les politiques de sécurité de l'entreprise interdisent la connectivité cloud."
-}
-},
-{
-"@type": "Question",
-"name": "Puis-je créer automatiquement des tableaux de bord personnalisés et des rapports de qualité PDF ?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Oui.  ProChem dispose d'un moteur de modèle de rapport flexible. Vous pouvez configurer le logiciel pour générer des certificats d'analyse (COA) PDF automatisés à la fin de chaque lot de production. Ces rapports peuvent inclure des résumés statistiques, des avertissements de valeurs aberrantes et des graphiques, et peuvent être automatiquement envoyés par courrier électronique aux responsables de l'assurance qualité ou stockés sur un lecteur réseau local."
+"text": "Oui. ProChem affiche les résultats sur des tableaux de bord en direct et exporte les données d'analyse en un clic vers des rapports PDF ou Excel modifiables, pour l'archivage, les audits et le partage entre équipes."
 }
 },
 {
@@ -267,7 +259,7 @@ border-left: none !important;
 "name": "Comment le USTECH prend-il en charge la maintenance et les mises à jour du modèle d'étalonnage ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH offre un support complet. Grâce à la caliX Suite, les utilisateurs peuvent charger de nouvelles données de référence pour mettre à jour automatiquement les modèles de régression. Nous proposons également une assistance chimiométrique à distance, où nos spécialistes se connectent en toute sécurité pour examiner les performances du modèle, exécuter des tests de validation et optimiser les étalonnages à distance."
+"text": "USTECH offre un support complet. Grâce à la caliX Suite, les utilisateurs peuvent ajouter de nouvelles données de référence et mettre à jour leurs modèles d'étalonnage. Nous proposons également un support chimiométrique à distance : nos spécialistes se connectent de manière sécurisée pour examiner les performances des modèles, effectuer des tests de validation et optimiser les étalonnages."
 }
 },
 {
@@ -275,7 +267,7 @@ border-left: none !important;
 "name": "Qu'est-ce qu'une « valeur aberrante » et comment le système la gère-t-il lors de l'analyse ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Une valeur aberrante est un échantillon dont la signature spectrale s'écarte considérablement de l'ensemble de données d'étalonnage (en raison de matériaux étrangers, de changements de densité extrêmes ou de paramètres en dehors de la plage du modèle). Notre logiciel calcule la distance Mahalanobis pour chaque scan. Si un échantillon est signalé comme valeur aberrante, le système alerte l'opérateur et ignore la lecture pour éviter que de fausses données n'affectent les boucles de contrôle du PLC."
+"text": "Une valeur aberrante est un échantillon dont la signature spectrale s'écarte nettement du jeu de données d'étalonnage (corps étrangers, variations extrêmes de densité ou paramètres hors du domaine du modèle). Notre logiciel contrôle les échantillons à l'aide d'indicateurs tels que la distance de Mahalanobis, le T² de Hotelling et les résidus Q, afin que les mesures signalées puissent être examinées avant d'être utilisées pour des décisions de procédé."
 }
 },
 {
@@ -291,7 +283,7 @@ border-left: none !important;
 "name": "Les étalonnages développés sur des spectromètres tiers plus anciens peuvent-ils être transférés vers USTECH ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Oui. Nos chimiométriciens possèdent une vaste expérience dans le transfert de bases de données d'étalonnage d'anciens monochromateurs à balayage ou d'instruments à réseau de photodiodes (par exemple, FOSS, Bruker, Thermo) vers des appareils USTECH NIR. Nous utilisons des algorithmes de normalisation mathématique pour correspondre au profil spectral et économiser des années de travail d'analyse de référence."
+"text": "Souvent, oui. Les bases d'étalonnage d'autres instruments peuvent être transférées par des méthodes de standardisation mathématique, à condition qu'un jeu d'échantillons de transfert soit mesuré sur les deux instruments. La faisabilité dépend des gammes de longueurs d'onde et des données disponibles ; nous évaluons donc chaque cas avec vous."
 }
 },
 {
@@ -299,15 +291,15 @@ border-left: none !important;
 "name": "Quels algorithmes de modélisation la caliX Suite prend-elle en charge ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "La caliX Suite prend en charge une large gamme d'outils de modélisation chimiométrique. Pour l'analyse quantitative, elle prend en charge PLS (moindres carrés partiels), MLR (régression linéaire multiple) et les modèles avancés d'apprentissage automatique. Pour la classification qualitative, elle prend en charge PCA (Analyse en composantes principales), SIMCA (Soft Independent Modeling of Class Analogy) et SVM (Support Vector Machines)."
+"text": "Pour les modèles quantitatifs, la suite caliX propose la PLS (standard et robuste), la PCR, Ridge, Lasso, ElasticNet et la régression robuste de Huber, avec une recherche AutoML qui explore automatiquement les paramètres des modèles. Pour l'exploration des données et le repérage des valeurs aberrantes, elle fournit l'ACP ainsi que le T² de Hotelling, les résidus Q et la distance de Mahalanobis."
 }
 },
 {
 "@type": "Question",
-"name": "Quelle est la période de retour sur investissement (ROI) typique pour les systèmes en ligne USTECH ?",
+"name": "Quel retour sur investissement peut-on attendre des systèmes en ligne USTECH ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "La plupart des usines de transformation industrielle obtiennent un retour sur investissement complet dans un délai de 6 à 12 mois. Les économies sont réalisées grâce à la réduction des pertes de matières premières (gestion des tolérances en boucle fermée), à ​​l'élimination des lots hors spécifications, à la réduction des coûts de main-d'œuvre en laboratoire et à la réduction de la consommation d'énergie grâce aux processus de séchage et de mélange optimisés."
+"text": "Le délai de retour sur investissement dépend du débit de votre usine, du coût des matières premières et de l'utilisation faite des mesures ; nous ne donnons donc pas de chiffre général. Les économies proviennent généralement de la réduction des surdosages de matières premières, de la diminution des lots hors spécifications, d'une charge de laboratoire allégée et de l'optimisation du séchage et du mélange. Vous pouvez estimer votre cas avec le calculateur de ROI de notre page d'accueil ou en discuter avec notre équipe."
 }
 },
 {
@@ -328,18 +320,18 @@ border-left: none !important;
 },
 {
 "@type": "Question",
-"name": "USTECH propose-t-il une formation aux opérateurs d'usine et au personnel de laboratoire ?",
+"name": "Comment la formation des opérateurs et du personnel de laboratoire est-elle organisée ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Oui. Chaque installation d’instrument comprend une formation complète sur site. Nous couvrons le fonctionnement de base du système, la préparation des échantillons, la navigation dans l'interface logicielle et le dépannage de maintenance de routine. Nous proposons également une formation avancée en chimiométrie pour les responsables QA qui souhaitent développer et maintenir leurs propres étalonnages."
+"text": "Les besoins de formation sont définis avec vous pour chaque projet. Contactez notre équipe pour discuter des options de formation pour les opérateurs, le personnel de laboratoire et les équipes qualité."
 }
 },
 {
 "@type": "Question",
-"name": "Quelle est la durée d'installation typique d'un capteur de pipeline en ligne ?",
+"name": "Comment se déroule l'installation d'un capteur en ligne sur conduite ?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "L'installation typique d'un capteur de pipeline prend 1 à 2 jours d'installation physique et de configuration du capteur. Nous nous coordonnons avec vos équipes d'ingénierie pour monter la bride du capteur pendant les fenêtres de maintenance programmées, suivies des connexions électriques, de la validation de la communication PLC et de la vérification de l'étalonnage."
+"text": "La durée d'installation dépend du point de montage et de l'infrastructure de votre usine. Nous nous coordonnons avec votre équipe technique pour monter le capteur pendant un arrêt de maintenance planifié, puis réaliser les raccordements électriques, les contrôles de communication avec l'automate et la vérification de l'étalonnage."
 }
 }
 ]
@@ -382,7 +374,7 @@ border-left: none !important;
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="FAQ NIR et FT-NIR : appareils, logiciel, étalonnage | USTECH">
-    <meta property="og:description" content="28 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.">
+    <meta property="og:description" content="27 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.">
     <meta property="og:url" content="https://www.ustechinnovations.com/fr/faq.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <meta property="og:image:width" content="1200">
@@ -397,7 +389,7 @@ border-left: none !important;
     <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FAQ NIR et FT-NIR : appareils, logiciel, étalonnage | USTECH">
-    <meta name="twitter:description" content="28 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.">
+    <meta name="twitter:description" content="27 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <link rel="manifest" href="../site.webmanifest">
 </head>
@@ -525,7 +517,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>NIR est une méthode analytique secondaire, ce qui signifie qu'elle est calibrée par rapport aux méthodes de référence primaires du laboratoire (telles que la chimie humide). Une fois calibré, il atteint une répétabilité et une précision extrêmement proches des méthodes de référence, avec l'avantage d'être infiniment plus rapide (secondes contre heures), éliminant les erreurs de l'opérateur humain et ne nécessitant aucun consommable ni réactif dangereux.</p>
+<p>La NIR est une méthode d'analyse secondaire : elle est étalonnée par rapport à des méthodes de référence primaires de laboratoire (comme la chimie par voie humide). Un étalonnage bien construit peut approcher l'exactitude de la méthode de référence ; l'écart dépend de la gamme d'échantillons et de la qualité des données de référence. Les résultats sont obtenus en quelques secondes au lieu de plusieurs heures, sans réactifs.</p>
 </div>
 </div>
 <!-- FAQ 3 -->
@@ -535,7 +527,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Les systèmes basés sur des filtres ne mesurent que quelques longueurs d'onde spécifiques, ce qui limite leur flexibilité. Les systèmes à réseau de diodes mesurent plusieurs longueurs d'onde mais ont une résolution spectrale inférieure.  Le FT-NIR utilise un interféromètre pour scanner l'ensemble du spectre proche infrarouge en continu à une résolution extrêmement élevée, offrant une précision supérieure, une meilleure stabilité d'étalonnage et la capacité de détecter des traces de constituants.</p>
+<p>Les systèmes à filtres ne mesurent que quelques longueurs d'onde sélectionnées, ce qui limite leur flexibilité. Les systèmes à barrette de diodes enregistrent toute la gamme en une fois, sans pièces mobiles, ce qui les rend rapides et robustes en production. Les instruments FT-NIR utilisent un interféromètre et offrent une haute résolution spectrale et une grande exactitude en longueur d'onde. Le choix de la technologie dépend de l'application.</p>
 </div>
 </div>
 <!-- FAQ 5 -->
@@ -591,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>L'analyseur d'amidon endommagé USTECH StarchQC utilise une technique ampérométrique pour mesurer la cinétique de dégradation de l'amidon. En exposant un petit échantillon de farine à des enzymes spécifiques, l'analyseur mesure le taux de réaction électrochimique à mesure que l'amidon endommagé est décomposé, donnant ainsi un pourcentage d'amidon endommagé très précis en quelques minutes.</p>
+<p>Le StarchQC d'USTECH utilise une méthode ampérométrique fondée sur l'absorption d'iode. Un échantillon de farine de 1 000 mg est analysé en un cycle de 8 minutes ; le taux d'amidon endommagé est exprimé en AI %, NDS, UCDC, AACC et Farrand et imprimé sur l'imprimante intégrée. Les résultats sont fortement corrélés aux méthodes de référence enzymatiques.</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -637,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Oui, absolument. Notre suite logicielle ProChem est conçue en tenant compte des protocoles de communication industriels. Il prend en charge nativement OPC UA, Modbus TCP et les sorties analogiques/numériques directes (4-20 mA) pour communiquer les résultats directement aux systèmes PLC (tels que Siemens, Allen-Bradley) ou aux plates-formes SCADA en 1 530 secondes.</p>
+<p>Oui. ProChem envoie les résultats à l'automate de l'usine via une interface Ethernet, et le ProLine2550 propose en outre des sorties Modbus TCP et 4–20 mA, ainsi qu'OPC UA et PROFINET sur le modèle Advanced. Les détails d'intégration avec votre système de contrôle sont définis lors de la planification du projet.</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -647,17 +639,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>ProChem calcule les valeurs de concentration chimique en temps réel et les envoie au SCADA/PLC de l'usine. Le PLC compare ces valeurs aux points de consigne (par exemple, humidité cible) et module les vannes de contrôle (par exemple, vapeur ou pulvérisation d'eau) à l'aide de boucles PID.  Le ProChem comprend également des limites de sécurité intégrées pour ignorer les lectures pendant les phases de démarrage/arrêt du processus.</p>
+<p>ProChem calcule les valeurs de concentration chimique en temps réel et les envoie au SCADA/PLC de l'usine. Le PLC compare ces valeurs aux points de consigne (par exemple, humidité cible) et module les vannes de contrôle (par exemple, vapeur ou pulvérisation d'eau) à l'aide de boucles PID.</p>
 </div>
 </div>
 <!-- FAQ 17 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>La suite logicielle cali<span class="calix-x" style="color: #38b6ff !important;">X</span> est-elle conforme à la norme FDA 21 CFR Part 11 ?</span>
+<span>Les logiciels USTECH prennent-ils en charge les exigences de la FDA 21 CFR Part 11 ?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Oui. La cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite prend en charge le suivi complet des signatures électroniques, les niveaux d'autorisation sécurisés pour les rôles multi-utilisateurs, la journalisation complète de toutes les modifications d'étalonnage et la validation de l'exportation des données brutes. Elle est entièrement conforme aux normes strictes de documentation et d'intégrité exigées par 21 CFR Part 11 et GMP Annex 11.</p>
+<p>ProChem offre l'authentification des utilisateurs, l'accès par rôles, une piste d'audit et des signatures électroniques, qui aident à satisfaire des exigences d'intégrité des données telles que la 21 CFR Part 11 et l'annexe 11 des BPF de l'UE. La conformité elle-même est établie par la validation du système complet sur votre site ; contactez-nous pour connaître la documentation disponible pour votre projet.</p>
 </div>
 </div>
 <!-- FAQ 18 -->
@@ -667,27 +659,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Oui. Bien que le tableau de bord cloud cali<span class="calix-x" style="color: #38b6ff !important;">X</span> gère les étalonnages et les diagnostics de flotte de manière centralisée, toute la logique de mesure locale, les calculs optiques et les interfaces de communication PLC s'exécutent localement sur le PC dédié de l'instrument. Si Internet ou le réseau interne tombe en panne, le système continue de fonctionner hors ligne sans aucune perte de données ni interruption de processus.</p>
-</div>
-</div>
-<!-- FAQ 19 -->
-<div class="faq-item">
-<button class="faq-question">
-<span>Comment la cybersécurité est-elle gérée pour les appareils cali<span class="calix-x" style="color: #38b6ff !important;">X</span> connectés au cloud ?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Toutes les communications de données entre le PC de l'instrument local et le cloud cali<span class="calix-x" style="color: #38b6ff !important;">X</span> sont entièrement cryptées à l'aide de TLS 1.3. L'agent client local établit uniquement des connexions sortantes ; aucun port entrant n'est jamais ouvert sur le réseau de l'usine. De plus, le PC local peut être complètement isolé d'Internet si les politiques de sécurité de l'entreprise interdisent la connectivité cloud.</p>
+<p>Oui. La mesure, la prédiction et la communication avec l'automate s'exécutent localement sur le PC relié à l'analyseur ; une coupure du réseau de l'usine ou d'Internet n'interrompt donc pas les mesures. Le PC peut également rester entièrement isolé d'Internet si votre politique de sécurité l'exige.</p>
 </div>
 </div>
 <!-- FAQ 20 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Puis-je créer automatiquement des tableaux de bord personnalisés et des rapports de qualité PDF ?</span>
+<span>ProChem peut-il produire des tableaux de bord et des rapports qualité PDF ?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Oui.  ProChem dispose d'un moteur de modèle de rapport flexible. Vous pouvez configurer le logiciel pour générer des certificats d'analyse (COA) PDF automatisés à la fin de chaque lot de production. Ces rapports peuvent inclure des résumés statistiques, des avertissements de valeurs aberrantes et des graphiques, et peuvent être automatiquement envoyés par courrier électronique aux responsables de l'assurance qualité ou stockés sur un lecteur réseau local.</p>
+<p>Oui. ProChem affiche les résultats sur des tableaux de bord en direct et exporte les données d'analyse en un clic vers des rapports PDF ou Excel modifiables, pour l'archivage, les audits et le partage entre équipes.</p>
 </div>
 </div>
 </div>
@@ -713,7 +695,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH offre un support complet. Grâce à la cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, les utilisateurs peuvent charger de nouvelles données de référence pour mettre à jour automatiquement les modèles de régression. Nous proposons également une assistance chimiométrique à distance, où nos spécialistes se connectent en toute sécurité pour examiner les performances du modèle, exécuter des tests de validation et optimiser les étalonnages à distance.</p>
+<p>USTECH offre un support complet. Grâce à la cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, les utilisateurs peuvent ajouter de nouvelles données de référence et mettre à jour leurs modèles d'étalonnage. Nous proposons également un support chimiométrique à distance : nos spécialistes se connectent de manière sécurisée pour examiner les performances des modèles, effectuer des tests de validation et optimiser les étalonnages.</p>
 </div>
 </div>
 <!-- FAQ 23 -->
@@ -723,7 +705,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Une valeur aberrante est un échantillon dont la signature spectrale s'écarte considérablement de l'ensemble de données d'étalonnage (en raison de matériaux étrangers, de changements de densité extrêmes ou de paramètres en dehors de la plage du modèle). Notre logiciel calcule la distance Mahalanobis pour chaque scan. Si un échantillon est signalé comme valeur aberrante, le système alerte l'opérateur et ignore la lecture pour éviter que de fausses données n'affectent les boucles de contrôle du PLC.</p>
+<p>Une valeur aberrante est un échantillon dont la signature spectrale s'écarte nettement du jeu de données d'étalonnage (corps étrangers, variations extrêmes de densité ou paramètres hors du domaine du modèle). Notre logiciel contrôle les échantillons à l'aide d'indicateurs tels que la distance de Mahalanobis, le T² de Hotelling et les résidus Q, afin que les mesures signalées puissent être examinées avant d'être utilisées pour des décisions de procédé.</p>
 </div>
 </div>
 <!-- FAQ 24 -->
@@ -743,7 +725,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Oui. Nos chimiométriciens possèdent une vaste expérience dans le transfert de bases de données d'étalonnage d'anciens monochromateurs à balayage ou d'instruments à réseau de photodiodes (par exemple, FOSS, Bruker, Thermo) vers des appareils USTECH NIR. Nous utilisons des algorithmes de normalisation mathématique pour correspondre au profil spectral et économiser des années de travail d'analyse de référence.</p>
+<p>Souvent, oui. Les bases d'étalonnage d'autres instruments peuvent être transférées par des méthodes de standardisation mathématique, à condition qu'un jeu d'échantillons de transfert soit mesuré sur les deux instruments. La faisabilité dépend des gammes de longueurs d'onde et des données disponibles ; nous évaluons donc chaque cas avec vous.</p>
 </div>
 </div>
 <!-- FAQ 26 -->
@@ -753,7 +735,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>La cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite prend en charge une large gamme d'outils de modélisation chimiométrique. Pour l'analyse quantitative, elle prend en charge PLS (moindres carrés partiels), MLR (régression linéaire multiple) et les modèles avancés d'apprentissage automatique. Pour la classification qualitative, elle prend en charge PCA (Analyse en composantes principales), SIMCA (Soft Independent Modeling of Class Analogy) et SVM (Support Vector Machines).</p>
+<p>Pour les modèles quantitatifs, la suite cali<span class="calix-x" style="color: #38b6ff !important;">X</span> propose la PLS (standard et robuste), la PCR, Ridge, Lasso, ElasticNet et la régression robuste de Huber, avec une recherche AutoML qui explore automatiquement les paramètres des modèles. Pour l'exploration des données et le repérage des valeurs aberrantes, elle fournit l'ACP ainsi que le T² de Hotelling, les résidus Q et la distance de Mahalanobis.</p>
 </div>
 </div>
 </div>
@@ -765,11 +747,11 @@ border-left: none !important;
 <!-- FAQ 27 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Quelle est la période de retour sur investissement (ROI) typique pour les systèmes en ligne USTECH ?</span>
+<span>Quel retour sur investissement peut-on attendre des systèmes en ligne USTECH ?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>La plupart des usines de transformation industrielle obtiennent un retour sur investissement complet dans un délai de 6 à 12 mois. Les économies sont réalisées grâce à la réduction des pertes de matières premières (gestion des tolérances en boucle fermée), à ​​l'élimination des lots hors spécifications, à la réduction des coûts de main-d'œuvre en laboratoire et à la réduction de la consommation d'énergie grâce aux processus de séchage et de mélange optimisés.</p>
+<p>Le délai de retour sur investissement dépend du débit de votre usine, du coût des matières premières et de l'utilisation faite des mesures ; nous ne donnons donc pas de chiffre général. Les économies proviennent généralement de la réduction des surdosages de matières premières, de la diminution des lots hors spécifications, d'une charge de laboratoire allégée et de l'optimisation du séchage et du mélange. Vous pouvez estimer votre cas avec le calculateur de ROI de notre page d'accueil ou en discuter avec notre équipe.</p>
 </div>
 </div>
 <!-- FAQ 28 -->
@@ -795,21 +777,21 @@ border-left: none !important;
 <!-- FAQ 30 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>USTECH propose-t-il une formation aux opérateurs d'usine et au personnel de laboratoire ?</span>
+<span>Comment la formation des opérateurs et du personnel de laboratoire est-elle organisée ?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Oui. Chaque installation d’instrument comprend une formation complète sur site. Nous couvrons le fonctionnement de base du système, la préparation des échantillons, la navigation dans l'interface logicielle et le dépannage de maintenance de routine. Nous proposons également une formation avancée en chimiométrie pour les responsables QA qui souhaitent développer et maintenir leurs propres étalonnages.</p>
+<p>Les besoins de formation sont définis avec vous pour chaque projet. Contactez notre équipe pour discuter des options de formation pour les opérateurs, le personnel de laboratoire et les équipes qualité.</p>
 </div>
 </div>
 <!-- FAQ 31 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Quelle est la durée d'installation typique d'un capteur de pipeline en ligne ?</span>
+<span>Comment se déroule l'installation d'un capteur en ligne sur conduite ?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>L'installation typique d'un capteur de pipeline prend 1 à 2 jours d'installation physique et de configuration du capteur. Nous nous coordonnons avec vos équipes d'ingénierie pour monter la bride du capteur pendant les fenêtres de maintenance programmées, suivies des connexions électriques, de la validation de la communication PLC et de la vérification de l'étalonnage.</p>
+<p>La durée d'installation dépend du point de montage et de l'infrastructure de votre usine. Nous nous coordonnons avec votre équipe technique pour monter le capteur pendant un arrêt de maintenance planifié, puis réaliser les raccordements électriques, les contrôles de communication avec l'automate et la vérification de l'étalonnage.</p>
 </div>
 </div>
 </div>
@@ -901,7 +883,7 @@ border-left: none !important;
             <p>Conçu pour la précision scientifique et industrielle.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

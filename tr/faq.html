@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 28 soru-yanıt.">
+<meta name="description" content="NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 27 soru-yanıt.">
 <title>NIR ve FT-NIR SSS: Cihaz, Yazılım, Kalibrasyon | USTECH</title>
 <link rel="stylesheet" href="../index.css?v=1.1.6">
 <style>
@@ -131,7 +131,7 @@ border-left: none !important;
 "name": "NIR doğruluğu geleneksel yaş kimya yöntemleriyle nasıl karşılaştırılır?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "NIR ikincil bir analitik yöntemdir, yani birincil laboratuvar referans yöntemlerine (yaş kimya gibi) göre kalibre edilir. Kalibre edildikten sonra, referans yöntemlerine son derece yakın tekrarlanabilirlik ve doğruluk elde eder; üstelik sonsuz derecede daha hızlı olma (saatlere kıyasla saniyeler), insan operatör hatasını ortadan kaldırma ve sarf malzemesi veya tehlikeli reaktif gerektirmeme avantajına sahiptir."
+"text": "NIR ikincil bir analiz yöntemidir: birincil laboratuvar referans yöntemlerine (örneğin yaş kimya) karşı kalibre edilir. İyi kurulmuş bir kalibrasyon referans yöntemin doğruluğuna yaklaşabilir; ne kadar yaklaşacağı numune aralığına ve referans verilerin kalitesine bağlıdır. Sonuçlar saatler yerine saniyeler içinde alınır ve reaktif gerekmez."
 }
 },
 {
@@ -139,7 +139,7 @@ border-left: none !important;
 "name": "Filtre tabanlı NIR, Diyot Dizisi NIR ve FT-NIR arasındaki fark nedir?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Filtre tabanlı sistemler yalnızca birkaç spesifik dalga boyunu ölçerek esnekliklerini sınırlar. Diyot Dizisi sistemleri birden fazla dalga boyunu ölçer ancak spektral çözünürlükleri daha düşüktür. FT-NIR, tüm yakın kızılötesi spektrumunu son derece yüksek çözünürlükte sürekli olarak taramak için bir interferometre kullanır; bu da üstün doğruluk, daha iyi kalibrasyon kararlılığı ve eser bileşenleri algılama yeteneği sağlar."
+"text": "Filtre tabanlı sistemler yalnızca birkaç seçili dalga boyunu ölçer, bu da esnekliklerini sınırlar. Diyot dizili sistemler hareketli parça olmadan tüm aralığı tek seferde kaydeder; bu da onları üretim ortamında hızlı ve dayanıklı kılar. FT-NIR cihazları interferometre kullanır ve yüksek spektral çözünürlük ile dalga boyu doğruluğu sunar. Hangi tasarımın en uygun olduğu uygulamaya bağlıdır."
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "USTECH StarchQC Hasarlı Nişasta analizörü nasıl çalışır?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH StarchQC Hasarlı Nişasta analizörü, nişasta bozunma kinetiğini ölçmek için amperometrik bir teknik kullanır. Küçük bir un numunesini spesifik enzimlere maruz bırakarak analizör, hasarlı nişasta parçalanırken elektrokimyasal reaksiyon hızını ölçer ve dakikalar içinde son derece doğru bir hasarlı nişasta yüzdesi verir."
+"text": "USTECH StarchQC, iyot absorpsiyonuna dayalı amperometrik bir yöntem kullanır. 1.000 mg un numunesi 8 dakikalık bir çevrimde analiz edilir; hasarlı nişasta sonucu AI %, NDS, UCDC, AACC ve Farrand birimlerinde verilir ve dahili yazıcıdan yazdırılır. Sonuçlar enzim tabanlı referans yöntemlerle güçlü korelasyon gösterir."
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "USTECH spektrometreleri tesisimizin PLC veya SCADA sistemlerine entegre edilebilir mi?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Evet, kesinlikle. ProChem yazılım süitimiz endüstriyel iletişim protokolleri göz önünde bulundurularak tasarlanmıştır. Sonuçları 15-30 saniye içinde doğrudan PLC sistemlerine (Siemens, Allen-Bradley gibi) veya SCADA platformlarına iletmek için OPC-UA, Modbus TCP ve doğrudan analog/dijital çıkışları (4-20 mA) doğal olarak destekler."
+"text": "Evet. ProChem sonuçları Ethernet tabanlı bir arayüz üzerinden tesis PLC'sine gönderir; ProLine2550 ayrıca Modbus TCP ve 4–20 mA çıkışları, Advanced modelde ise OPC UA ve PROFINET sunar. Kontrol sisteminize özel entegrasyon ayrıntıları proje planlaması sırasında belirlenir."
 }
 },
 {
@@ -219,15 +219,15 @@ border-left: none !important;
 "name": "ProChem proses parametrelerinin kapalı döngü kontrolünü nasıl yönetir?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "ProChem, gerçek zamanlı kimyasal konsantrasyon değerlerini hesaplar ve bunları tesis SCADA/PLC'sine gönderir. PLC, bu değerleri ayar noktalarıyla (örn. hedef nem) karşılaştırır ve PID döngülerini kullanarak kontrol valflerini (örn. buhar veya su spreyi) modüle eder. ProChem ayrıca prosesin başlatma/durdurma aşamalarında okumaları yok saymak için yerleşik güvenlik sınırları içerir."
+"text": "ProChem, gerçek zamanlı kimyasal konsantrasyon değerlerini hesaplar ve bunları tesis SCADA/PLC'sine gönderir. PLC, bu değerleri ayar noktalarıyla (örn. hedef nem) karşılaştırır ve PID döngülerini kullanarak kontrol valflerini (örn. buhar veya su spreyi) modüle eder."
 }
 },
 {
 "@type": "Question",
-"name": "caliX yazılım süiti FDA 21 CFR Bölüm 11 ile uyumlu mu?",
+"name": "USTECH yazılımı FDA 21 CFR Part 11 gerekliliklerini destekliyor mu?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Evet. caliX Suite, tam elektronik imza izlemeyi, güvenli çok kullanıcılı rol izni seviyelerini, tüm kalibrasyon değişikliklerinin eksiksiz denetim izi günlüğünü ve ham veri dışa aktarım doğrulamasını destekler. 21 CFR Bölüm 11 ve GMP Ek 11 tarafından zorunlu kılınan katı belgeleme ve bütünlük standartlarına tam olarak uygundur."
+"text": "ProChem; kullanıcı kimlik doğrulama, rol bazlı erişim, denetim izi ve elektronik imza sunar. Bunlar 21 CFR Part 11 ve AB GMP Annex 11 gibi veri bütünlüğü gerekliliklerini destekler. Uyumluluk ise tesisinizdeki sistemin bütün olarak doğrulanmasıyla sağlanır; projeniz için mevcut belgeler hakkında lütfen bizimle iletişime geçin."
 }
 },
 {
@@ -235,23 +235,15 @@ border-left: none !important;
 "name": "Tesis ağımız kesilirse USTECH yazılımı çevrimdışı çalışabilir mi?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Evet. caliX bulut panosu kalibrasyonları ve filo teşhislerini merkezi olarak yönetirken, tüm yerel ölçüm mantığı, optik hesaplamalar ve PLC iletişim arayüzleri cihazın özel bilgisayarında yerel olarak çalışır. İnternet veya dahili ağ kesilirse, sistem herhangi bir veri kaybı veya proses kesintisi olmadan çevrimdışı çalışmaya devam eder."
+"text": "Evet. Ölçüm, tahmin ve PLC haberleşmesi analizöre bağlı bilgisayarda yerel olarak çalışır; bu nedenle tesis ağı veya internet bağlantısı kesildiğinde ölçümler durmaz. Güvenlik politikanız gerektiriyorsa bilgisayar internetten tamamen yalıtılmış olarak da çalıştırılabilir."
 }
 },
 {
 "@type": "Question",
-"name": "Buluta bağlı caliX cihazlarında siber güvenlik nasıl yönetilir?",
+"name": "ProChem izleme panelleri ve PDF kalite raporları oluşturabilir mi?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Yerel cihaz bilgisayarı ile caliX Bulut arasındaki tüm veri iletişimi TLS 1.3 ile tamamen şifrelenir. Yerel istemci aracısı yalnızca giden bağlantılar kurar; tesis ağında hiçbir zaman gelen bağlantı noktası açılmaz. Ayrıca, kurumsal güvenlik politikaları bulut bağlantısını yasaklıyorsa, yerel bilgisayar internetten tamamen izole edilebilir."
-}
-},
-{
-"@type": "Question",
-"name": "Otomatik olarak özel panolar ve PDF kalite raporları oluşturabilir miyim?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Evet. ProChem esnek bir raporlama şablon motoruna sahiptir. Yazılımı, her üretim partisinin sonunda otomatik PDF analiz sertifikaları (COA'lar) oluşturacak şekilde yapılandırabilirsiniz. Bu raporlar istatistiksel özetleri, aykırı değer uyarılarını ve grafikleri içerebilir ve KG yöneticilerine otomatik olarak e-postayla gönderilebilir veya yerel bir ağ sürücüsünde saklanabilir."
+"text": "Evet. ProChem sonuçları canlı izleme panellerinde gösterir ve analiz verilerini arşivleme, denetim ve ekipler arası paylaşım için tek tıkla PDF veya düzenlenebilir Excel raporlarına aktarır."
 }
 },
 {
@@ -267,7 +259,7 @@ border-left: none !important;
 "name": "USTECH kalibrasyon modeli bakımını ve güncellemelerini nasıl destekler?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH kapsamlı destek sunar. caliX Suite üzerinden kullanıcılar, regresyon modellerini otomatik olarak güncellemek için yeni referans verileri yükleyebilir. Ayrıca, uzmanlarımızın model performansını gözden geçirmek, doğrulama testleri yapmak ve kalibrasyonları uzaktan optimize etmek için güvenli bir şekilde bağlandığı uzaktan kemometri desteği de sunuyoruz."
+"text": "USTECH kapsamlı destek sunar. caliX Suite üzerinden kullanıcılar yeni referans verileri ekleyip kalibrasyon modellerini güncelleyebilir. Ayrıca uzmanlarımızın güvenli bağlantıyla model performansını incelediği, doğrulama testleri yürüttüğü ve kalibrasyonları iyileştirdiği uzaktan kemometri desteği sunuyoruz."
 }
 },
 {
@@ -275,7 +267,7 @@ border-left: none !important;
 "name": "\"Aykırı değer\" nedir ve sistem analiz sırasında bunu nasıl ele alır?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Aykırı değer, spektral imzası kalibrasyon veri setinden (yabancı maddeler, aşırı yoğunluk değişiklikleri veya modelin aralığı dışındaki parametreler nedeniyle) önemli ölçüde sapan bir numunedir. Yazılımımız her tarama için Mahalanobis Mesafesini hesaplar. Bir numune aykırı değer olarak işaretlenirse, sistem operatörü uyarır ve yanlış verilerin PLC kontrol döngülerini etkilemesini önlemek için okumayı yok sayar."
+"text": "Aykırı değer, spektral imzası kalibrasyon veri setinden belirgin şekilde sapan bir numunedir (yabancı madde, aşırı yoğunluk değişimi veya modelin aralığı dışındaki parametreler nedeniyle). Yazılımımız numuneleri Mahalanobis uzaklığı, Hotelling T² ve Q artıkları gibi ölçütlerle kontrol eder; böylece işaretlenen ölçümler proses kararlarında kullanılmadan önce incelenebilir."
 }
 },
 {
@@ -291,7 +283,7 @@ border-left: none !important;
 "name": "Eski üçüncü taraf spektrometrelerde geliştirilen kalibrasyonlar USTECH'e aktarılabilir mi?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Evet. Kemometricilerimiz, kalibrasyon veri tabanlarını eski taramalı monokromatörlerden veya fotodiyot dizilimli cihazlardan (örn. FOSS, Bruker, Thermo) USTECH NIR cihazlarına aktarma konusunda kapsamlı deneyime sahiptir. Spektral profili eşleştirmek ve yıllarca süren referans analiz işinden tasarruf etmek için matematiksel standardizasyon algoritmaları kullanıyoruz."
+"text": "Çoğu durumda evet. Diğer cihazlardaki kalibrasyon veritabanları, bir grup transfer numunesi her iki cihazda da ölçülmek koşuluyla matematiksel standardizasyon yöntemleriyle aktarılabilir. Uygulanabilirlik dalga boyu aralıklarına ve mevcut verilere bağlı olduğundan her durumu sizinle birlikte değerlendiririz."
 }
 },
 {
@@ -299,15 +291,15 @@ border-left: none !important;
 "name": "caliX Suite hangi modelleme algoritmalarını destekler?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "caliX Suite, çok çeşitli kemometrik modelleme araçlarını destekler. Kantitatif analiz için PLS (Kısmi En Küçük Kareler), MLR (Çoklu Doğrusal Regresyon) ve gelişmiş Makine Öğrenimi modellerini destekler. Kalitatif sınıflandırma için PCA (Temel Bileşen Analizi), SIMCA (Sınıf Analojisinin Yumuşak Bağımsız Modellemesi) ve SVM'yi (Destek Vektör Makineleri) destekler."
+"text": "Kantitatif modeller için caliX Suite; PLS (standart ve dayanıklı), PCR, Ridge, Lasso, ElasticNet ve dayanıklı Huber regresyonu sunar, AutoML araması da model ayarlarını otomatik olarak tarar. Veri keşfi ve aykırı değer taraması için Hotelling T², Q artıkları ve Mahalanobis uzaklığıyla birlikte PCA sağlar."
 }
 },
 {
 "@type": "Question",
-"name": "USTECH hat içi sistemleri için tipik Yatırım Getirisi (ROI) süresi nedir?",
+"name": "USTECH hat içi sistemlerinden nasıl bir yatırım getirisi bekleyebiliriz?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Çoğu endüstriyel işleme tesisi 6 ila 12 ay içinde tam Yatırım Getirisi elde eder. Tasarruflar; azaltılmış hammadde israfı (kapalı döngü tolerans yönetimi), spesifikasyon dışı partilerin ortadan kaldırılması, daha düşük laboratuvar işgücü maliyetleri ve optimize edilmiş kurutma ve karıştırma proseslerinden kaynaklanan daha düşük enerji kullanımı yoluyla gerçekleştirilir."
+"text": "Geri ödeme süresi tesisinizin kapasitesine, hammadde maliyetlerine ve ölçümlerin nasıl kullanıldığına bağlıdır; bu nedenle genel bir rakam vermiyoruz. Tasarruflar genellikle hammadde fazlasının azalmasından, spesifikasyon dışı partilerin azalmasından, laboratuvar iş yükünün düşmesinden ve kurutma ile karıştırmanın optimize edilmesinden gelir. Kendi durumunuzu ana sayfamızdaki ROI hesaplayıcıyla tahmin edebilir veya ekibimizle görüşebilirsiniz."
 }
 },
 {
@@ -328,18 +320,18 @@ border-left: none !important;
 },
 {
 "@type": "Question",
-"name": "USTECH tesis operatörleri ve laboratuvar personeli için eğitim sunuyor mu?",
+"name": "Operatör ve laboratuvar personeli eğitimi nasıl planlanır?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Evet. Her enstrüman kurulumu kapsamlı yerinde eğitim içerir. Temel sistem çalışmasını, numune hazırlamayı, yazılım arayüzünde gezinmeyi ve rutin bakım sorunlarını gidermeyi kapsıyoruz. Ayrıca, kendi kalibrasyonlarını geliştirmek ve sürdürmek isteyen KG yöneticileri için gelişmiş kemometri eğitimi sunuyoruz."
+"text": "Eğitim ihtiyaçları her proje için sizinle birlikte belirlenir. Operatörler, laboratuvar personeli ve kalite ekipleri için eğitim seçeneklerini görüşmek üzere lütfen ekibimizle iletişime geçin."
 }
 },
 {
 "@type": "Question",
-"name": "Hat içi bir boru hattı sensörü için tipik kurulum süresi nedir?",
+"name": "Hat içi boru sensörünün kurulumu nasıl yapılır?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Tipik bir boru hattı sensörü kurulumu, fiziksel montaj ve sensör yapılandırması için 1 ila 2 gün sürer. Sensör flanşını planlanmış bakım pencereleri sırasında monte etmek için mühendislik ekiplerinizle koordine oluyoruz, ardından elektrik bağlantıları, PLC iletişim doğrulaması ve kalibrasyon doğrulaması geliyor."
+"text": "Kurulum süresi montaj noktasına ve tesisinizin altyapısına bağlıdır. Sensörü planlı bir bakım aralığında monte etmek için mühendislik ekibinizle koordineli çalışırız; ardından elektrik bağlantıları, PLC haberleşme kontrolleri ve kalibrasyon doğrulaması yapılır."
 }
 }
 ]
@@ -382,7 +374,7 @@ border-left: none !important;
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="NIR ve FT-NIR SSS: Cihaz, Yazılım, Kalibrasyon | USTECH">
-    <meta property="og:description" content="NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 28 soru-yanıt.">
+    <meta property="og:description" content="NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 27 soru-yanıt.">
     <meta property="og:url" content="https://www.ustechinnovations.com/tr/faq.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <meta property="og:image:width" content="1200">
@@ -397,7 +389,7 @@ border-left: none !important;
     <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NIR ve FT-NIR SSS: Cihaz, Yazılım, Kalibrasyon | USTECH">
-    <meta name="twitter:description" content="NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 28 soru-yanıt.">
+    <meta name="twitter:description" content="NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 27 soru-yanıt.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <link rel="manifest" href="../site.webmanifest">
 </head>
@@ -525,7 +517,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>NIR ikincil bir analitik yöntemdir, yani birincil laboratuvar referans yöntemlerine (yaş kimya gibi) göre kalibre edilir. Kalibre edildikten sonra, referans yöntemlerine son derece yakın tekrarlanabilirlik ve doğruluk elde eder; üstelik sonsuz derecede daha hızlı olma (saatlere kıyasla saniyeler), insan operatör hatasını ortadan kaldırma ve sarf malzemesi veya tehlikeli reaktif gerektirmeme avantajına sahiptir.</p>
+<p>NIR ikincil bir analiz yöntemidir: birincil laboratuvar referans yöntemlerine (örneğin yaş kimya) karşı kalibre edilir. İyi kurulmuş bir kalibrasyon referans yöntemin doğruluğuna yaklaşabilir; ne kadar yaklaşacağı numune aralığına ve referans verilerin kalitesine bağlıdır. Sonuçlar saatler yerine saniyeler içinde alınır ve reaktif gerekmez.</p>
 </div>
 </div>
 <!-- FAQ 3 -->
@@ -535,7 +527,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Filtre tabanlı sistemler yalnızca birkaç spesifik dalga boyunu ölçerek esnekliklerini sınırlar. Diyot Dizisi sistemleri birden fazla dalga boyunu ölçer ancak spektral çözünürlükleri daha düşüktür. FT-NIR, tüm yakın kızılötesi spektrumunu son derece yüksek çözünürlükte sürekli olarak taramak için bir interferometre kullanır; bu da üstün doğruluk, daha iyi kalibrasyon kararlılığı ve eser bileşenleri algılama yeteneği sağlar.</p>
+<p>Filtre tabanlı sistemler yalnızca birkaç seçili dalga boyunu ölçer, bu da esnekliklerini sınırlar. Diyot dizili sistemler hareketli parça olmadan tüm aralığı tek seferde kaydeder; bu da onları üretim ortamında hızlı ve dayanıklı kılar. FT-NIR cihazları interferometre kullanır ve yüksek spektral çözünürlük ile dalga boyu doğruluğu sunar. Hangi tasarımın en uygun olduğu uygulamaya bağlıdır.</p>
 </div>
 </div>
 <!-- FAQ 5 -->
@@ -591,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH StarchQC Hasarlı Nişasta analizörü, nişasta bozunma kinetiğini ölçmek için amperometrik bir teknik kullanır. Küçük bir un numunesini spesifik enzimlere maruz bırakarak analizör, hasarlı nişasta parçalanırken elektrokimyasal reaksiyon hızını ölçer ve dakikalar içinde son derece doğru bir hasarlı nişasta yüzdesi verir.</p>
+<p>USTECH StarchQC, iyot absorpsiyonuna dayalı amperometrik bir yöntem kullanır. 1.000 mg un numunesi 8 dakikalık bir çevrimde analiz edilir; hasarlı nişasta sonucu AI %, NDS, UCDC, AACC ve Farrand birimlerinde verilir ve dahili yazıcıdan yazdırılır. Sonuçlar enzim tabanlı referans yöntemlerle güçlü korelasyon gösterir.</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -637,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Evet, kesinlikle. ProChem yazılım süitimiz endüstriyel iletişim protokolleri göz önünde bulundurularak tasarlanmıştır. Sonuçları 15-30 saniye içinde doğrudan PLC sistemlerine (Siemens, Allen-Bradley gibi) veya SCADA platformlarına iletmek için OPC-UA, Modbus TCP ve doğrudan analog/dijital çıkışları (4-20 mA) doğal olarak destekler.</p>
+<p>Evet. ProChem sonuçları Ethernet tabanlı bir arayüz üzerinden tesis PLC'sine gönderir; ProLine2550 ayrıca Modbus TCP ve 4–20 mA çıkışları, Advanced modelde ise OPC UA ve PROFINET sunar. Kontrol sisteminize özel entegrasyon ayrıntıları proje planlaması sırasında belirlenir.</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -647,17 +639,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>ProChem, gerçek zamanlı kimyasal konsantrasyon değerlerini hesaplar ve bunları tesis SCADA/PLC'sine gönderir. PLC, bu değerleri ayar noktalarıyla (örn. hedef nem) karşılaştırır ve PID döngülerini kullanarak kontrol valflerini (örn. buhar veya su spreyi) modüle eder. ProChem ayrıca prosesin başlatma/durdurma aşamalarında okumaları yok saymak için yerleşik güvenlik sınırları içerir.</p>
+<p>ProChem, gerçek zamanlı kimyasal konsantrasyon değerlerini hesaplar ve bunları tesis SCADA/PLC'sine gönderir. PLC, bu değerleri ayar noktalarıyla (örn. hedef nem) karşılaştırır ve PID döngülerini kullanarak kontrol valflerini (örn. buhar veya su spreyi) modüle eder.</p>
 </div>
 </div>
 <!-- FAQ 17 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>caliX yazılım süiti FDA 21 CFR Bölüm 11 ile uyumlu mu?</span>
+<span>USTECH yazılımı FDA 21 CFR Part 11 gerekliliklerini destekliyor mu?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Evet. caliX Suite, tam elektronik imza izlemeyi, güvenli çok kullanıcılı rol izni seviyelerini, tüm kalibrasyon değişikliklerinin eksiksiz denetim izi günlüğünü ve ham veri dışa aktarım doğrulamasını destekler. 21 CFR Bölüm 11 ve GMP Ek 11 tarafından zorunlu kılınan katı belgeleme ve bütünlük standartlarına tam olarak uygundur.</p>
+<p>ProChem; kullanıcı kimlik doğrulama, rol bazlı erişim, denetim izi ve elektronik imza sunar. Bunlar 21 CFR Part 11 ve AB GMP Annex 11 gibi veri bütünlüğü gerekliliklerini destekler. Uyumluluk ise tesisinizdeki sistemin bütün olarak doğrulanmasıyla sağlanır; projeniz için mevcut belgeler hakkında lütfen bizimle iletişime geçin.</p>
 </div>
 </div>
 <!-- FAQ 18 -->
@@ -667,27 +659,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Evet. caliX bulut panosu kalibrasyonları ve filo teşhislerini merkezi olarak yönetirken, tüm yerel ölçüm mantığı, optik hesaplamalar ve PLC iletişim arayüzleri cihazın özel bilgisayarında yerel olarak çalışır. İnternet veya dahili ağ kesilirse, sistem herhangi bir veri kaybı veya proses kesintisi olmadan çevrimdışı çalışmaya devam eder.</p>
-</div>
-</div>
-<!-- FAQ 19 -->
-<div class="faq-item">
-<button class="faq-question">
-<span>Buluta bağlı cali<span class="calix-x" style="color: #38b6ff !important;">X</span> cihazlarında siber güvenlik nasıl yönetilir?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Yerel cihaz bilgisayarı ile cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Bulut arasındaki tüm veri iletişimi TLS 1.3 ile tamamen şifrelenir. Yerel istemci aracısı yalnızca giden bağlantılar kurar; tesis ağında hiçbir zaman gelen bağlantı noktası açılmaz. Ayrıca, kurumsal güvenlik politikaları bulut bağlantısını yasaklıyorsa, yerel bilgisayar internetten tamamen izole edilebilir.</p>
+<p>Evet. Ölçüm, tahmin ve PLC haberleşmesi analizöre bağlı bilgisayarda yerel olarak çalışır; bu nedenle tesis ağı veya internet bağlantısı kesildiğinde ölçümler durmaz. Güvenlik politikanız gerektiriyorsa bilgisayar internetten tamamen yalıtılmış olarak da çalıştırılabilir.</p>
 </div>
 </div>
 <!-- FAQ 20 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Otomatik olarak özel panolar ve PDF kalite raporları oluşturabilir miyim?</span>
+<span>ProChem izleme panelleri ve PDF kalite raporları oluşturabilir mi?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Evet. ProChem esnek bir raporlama şablon motoruna sahiptir. Yazılımı, her üretim partisinin sonunda otomatik PDF analiz sertifikaları (COA'lar) oluşturacak şekilde yapılandırabilirsiniz. Bu raporlar istatistiksel özetleri, aykırı değer uyarılarını ve grafikleri içerebilir ve KG yöneticilerine otomatik olarak e-postayla gönderilebilir veya yerel bir ağ sürücüsünde saklanabilir.</p>
+<p>Evet. ProChem sonuçları canlı izleme panellerinde gösterir ve analiz verilerini arşivleme, denetim ve ekipler arası paylaşım için tek tıkla PDF veya düzenlenebilir Excel raporlarına aktarır.</p>
 </div>
 </div>
 </div>
@@ -713,7 +695,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH kapsamlı destek sunar. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite üzerinden kullanıcılar, regresyon modellerini otomatik olarak güncellemek için yeni referans verileri yükleyebilir. Ayrıca, uzmanlarımızın model performansını gözden geçirmek, doğrulama testleri yapmak ve kalibrasyonları uzaktan optimize etmek için güvenli bir şekilde bağlandığı uzaktan kemometri desteği de sunuyoruz.</p>
+<p>USTECH kapsamlı destek sunar. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite üzerinden kullanıcılar yeni referans verileri ekleyip kalibrasyon modellerini güncelleyebilir. Ayrıca uzmanlarımızın güvenli bağlantıyla model performansını incelediği, doğrulama testleri yürüttüğü ve kalibrasyonları iyileştirdiği uzaktan kemometri desteği sunuyoruz.</p>
 </div>
 </div>
 <!-- FAQ 23 -->
@@ -723,7 +705,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Aykırı değer, spektral imzası kalibrasyon veri setinden (yabancı maddeler, aşırı yoğunluk değişiklikleri veya modelin aralığı dışındaki parametreler nedeniyle) önemli ölçüde sapan bir numunedir. Yazılımımız her tarama için Mahalanobis Mesafesini hesaplar. Bir numune aykırı değer olarak işaretlenirse, sistem operatörü uyarır ve yanlış verilerin PLC kontrol döngülerini etkilemesini önlemek için okumayı yok sayar.</p>
+<p>Aykırı değer, spektral imzası kalibrasyon veri setinden belirgin şekilde sapan bir numunedir (yabancı madde, aşırı yoğunluk değişimi veya modelin aralığı dışındaki parametreler nedeniyle). Yazılımımız numuneleri Mahalanobis uzaklığı, Hotelling T² ve Q artıkları gibi ölçütlerle kontrol eder; böylece işaretlenen ölçümler proses kararlarında kullanılmadan önce incelenebilir.</p>
 </div>
 </div>
 <!-- FAQ 24 -->
@@ -743,7 +725,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Evet. Kemometricilerimiz, kalibrasyon veri tabanlarını eski taramalı monokromatörlerden veya fotodiyot dizilimli cihazlardan (örn. FOSS, Bruker, Thermo) USTECH NIR cihazlarına aktarma konusunda kapsamlı deneyime sahiptir. Spektral profili eşleştirmek ve yıllarca süren referans analiz işinden tasarruf etmek için matematiksel standardizasyon algoritmaları kullanıyoruz.</p>
+<p>Çoğu durumda evet. Diğer cihazlardaki kalibrasyon veritabanları, bir grup transfer numunesi her iki cihazda da ölçülmek koşuluyla matematiksel standardizasyon yöntemleriyle aktarılabilir. Uygulanabilirlik dalga boyu aralıklarına ve mevcut verilere bağlı olduğundan her durumu sizinle birlikte değerlendiririz.</p>
 </div>
 </div>
 <!-- FAQ 26 -->
@@ -753,7 +735,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>caliX Suite, çok çeşitli kemometrik modelleme araçlarını destekler. Kantitatif analiz için PLS (Kısmi En Küçük Kareler), MLR (Çoklu Doğrusal Regresyon) ve gelişmiş Makine Öğrenimi modellerini destekler. Kalitatif sınıflandırma için PCA (Temel Bileşen Analizi), SIMCA (Sınıf Analojisinin Yumuşak Bağımsız Modellemesi) ve SVM'yi (Destek Vektör Makineleri) destekler.</p>
+<p>Kantitatif modeller için cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite; PLS (standart ve dayanıklı), PCR, Ridge, Lasso, ElasticNet ve dayanıklı Huber regresyonu sunar, AutoML araması da model ayarlarını otomatik olarak tarar. Veri keşfi ve aykırı değer taraması için Hotelling T², Q artıkları ve Mahalanobis uzaklığıyla birlikte PCA sağlar.</p>
 </div>
 </div>
 </div>
@@ -765,11 +747,11 @@ border-left: none !important;
 <!-- FAQ 27 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>USTECH hat içi sistemleri için tipik Yatırım Getirisi (ROI) süresi nedir?</span>
+<span>USTECH hat içi sistemlerinden nasıl bir yatırım getirisi bekleyebiliriz?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Çoğu endüstriyel işleme tesisi 6 ila 12 ay içinde tam Yatırım Getirisi elde eder. Tasarruflar; azaltılmış hammadde israfı (kapalı döngü tolerans yönetimi), spesifikasyon dışı partilerin ortadan kaldırılması, daha düşük laboratuvar işgücü maliyetleri ve optimize edilmiş kurutma ve karıştırma proseslerinden kaynaklanan daha düşük enerji kullanımı yoluyla gerçekleştirilir.</p>
+<p>Geri ödeme süresi tesisinizin kapasitesine, hammadde maliyetlerine ve ölçümlerin nasıl kullanıldığına bağlıdır; bu nedenle genel bir rakam vermiyoruz. Tasarruflar genellikle hammadde fazlasının azalmasından, spesifikasyon dışı partilerin azalmasından, laboratuvar iş yükünün düşmesinden ve kurutma ile karıştırmanın optimize edilmesinden gelir. Kendi durumunuzu ana sayfamızdaki ROI hesaplayıcıyla tahmin edebilir veya ekibimizle görüşebilirsiniz.</p>
 </div>
 </div>
 <!-- FAQ 28 -->
@@ -795,21 +777,21 @@ border-left: none !important;
 <!-- FAQ 30 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>USTECH tesis operatörleri ve laboratuvar personeli için eğitim sunuyor mu?</span>
+<span>Operatör ve laboratuvar personeli eğitimi nasıl planlanır?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Evet. Her enstrüman kurulumu kapsamlı yerinde eğitim içerir. Temel sistem çalışmasını, numune hazırlamayı, yazılım arayüzünde gezinmeyi ve rutin bakım sorunlarını gidermeyi kapsıyoruz. Ayrıca, kendi kalibrasyonlarını geliştirmek ve sürdürmek isteyen KG yöneticileri için gelişmiş kemometri eğitimi sunuyoruz.</p>
+<p>Eğitim ihtiyaçları her proje için sizinle birlikte belirlenir. Operatörler, laboratuvar personeli ve kalite ekipleri için eğitim seçeneklerini görüşmek üzere lütfen ekibimizle iletişime geçin.</p>
 </div>
 </div>
 <!-- FAQ 31 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Hat içi bir boru hattı sensörü için tipik kurulum süresi nedir?</span>
+<span>Hat içi boru sensörünün kurulumu nasıl yapılır?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Tipik bir boru hattı sensörü kurulumu, fiziksel montaj ve sensör yapılandırması için 1 ila 2 gün sürer. Sensör flanşını planlanmış bakım pencereleri sırasında monte etmek için mühendislik ekiplerinizle koordine oluyoruz, ardından elektrik bağlantıları, PLC iletişim doğrulaması ve kalibrasyon doğrulaması geliyor.</p>
+<p>Kurulum süresi montaj noktasına ve tesisinizin altyapısına bağlıdır. Sensörü planlı bir bakım aralığında monte etmek için mühendislik ekibinizle koordineli çalışırız; ardından elektrik bağlantıları, PLC haberleşme kontrolleri ve kalibrasyon doğrulaması yapılır.</p>
 </div>
 </div>
 </div>
@@ -901,7 +883,7 @@ border-left: none !important;
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

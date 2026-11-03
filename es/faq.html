@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="28 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.">
+<meta name="description" content="27 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.">
 <title>Preguntas frecuentes sobre NIR y FT-NIR | USTECH</title>
 <link rel="stylesheet" href="../index.css?v=1.1.6">
 <style>
@@ -131,7 +131,7 @@ border-left: none !important;
 "name": "¿Cómo se compara la precisión de NIR con los métodos tradicionales de química húmeda?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "NIR es un método analítico secundario, lo que significa que está calibrado con respecto a métodos primarios de referencia de laboratorio (como la química húmeda). Una vez calibrado, logra una repetibilidad y una precisión extremadamente cercanas a los métodos de referencia, con la ventaja de ser infinitamente más rápido (segundos frente a horas), eliminar el error del operador humano y no requerir consumibles ni reactivos peligrosos."
+"text": "El NIR es un método analítico secundario: se calibra frente a métodos de referencia primarios de laboratorio (como la química húmeda). Una calibración bien construida puede acercarse a la exactitud del método de referencia; cuánto se acerque depende del rango de muestras y de la calidad de los datos de referencia. Los resultados se obtienen en segundos en lugar de horas y sin reactivos."
 }
 },
 {
@@ -139,7 +139,7 @@ border-left: none !important;
 "name": "¿Cuál es la diferencia entre NIR basado en filtro, Diode Array NIR y FT-NIR?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Los sistemas basados ​​en filtros miden sólo unas pocas longitudes de onda específicas, lo que limita su flexibilidad. Los sistemas Diode Array miden múltiples longitudes de onda pero tienen una resolución espectral más baja. FT-NIR utiliza un interferómetro para escanear todo el espectro del infrarrojo cercano de forma continua con una resolución extremadamente alta, lo que proporciona una precisión superior, una mejor estabilidad de calibración y la capacidad de detectar trazas de componentes."
+"text": "Los sistemas basados en filtros miden solo unas pocas longitudes de onda seleccionadas, lo que limita su flexibilidad. Los sistemas de matriz de diodos registran todo el rango a la vez y sin piezas móviles, lo que los hace rápidos y robustos en entornos de producción. Los instrumentos FT-NIR utilizan un interferómetro y ofrecen alta resolución espectral y exactitud de longitud de onda. El diseño más adecuado depende de la aplicación."
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "¿Cómo funciona el analizador de Almidón Dañado USTECH StarchQC?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "El analizador de almidón dañado USTECH StarchQC utiliza una técnica amperométrica para medir la cinética de degradación del almidón. Al exponer una pequeña muestra de harina a enzimas específicas, el analizador mide la velocidad de reacción electroquímica a medida que se descompone el almidón dañado, lo que proporciona un porcentaje de almidón dañado de alta precisión en minutos."
+"text": "El StarchQC de USTECH utiliza un método amperométrico basado en la absorción de yodo. Una muestra de 1.000 mg de harina se analiza en un ciclo de 8 minutos y el resultado de almidón dañado se expresa en AI %, NDS, UCDC, AACC y Farrand y se imprime en la impresora integrada. Los resultados se correlacionan estrechamente con los métodos de referencia enzimáticos."
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "¿Se pueden integrar los espectrómetros USTECH con los sistemas PLC o SCADA de nuestra planta?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí, absolutamente. Nuestro paquete de software ProChem está diseñado teniendo en cuenta los protocolos de comunicación industrial. Admite de forma nativa OPC UA, Modbus TCP y salidas analógicas/digitales directas (4-20 mA) para comunicar los resultados directamente a sistemas PLC (como Siemens, Allen-Bradley) o plataformas SCADA en 1530 segundos."
+"text": "Sí. ProChem envía los resultados al PLC de la planta mediante una interfaz Ethernet, y el ProLine2550 ofrece además salidas Modbus TCP y 4–20 mA, con OPC UA y PROFINET en el modelo Advanced. Los detalles de integración con su sistema de control se acuerdan durante la planificación del proyecto."
 }
 },
 {
@@ -219,15 +219,15 @@ border-left: none !important;
 "name": "¿Cómo maneja ProChem el control de bucle cerrado de los parámetros del proceso?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "ProChem calcula los valores de concentración química en tiempo real y los envía al SCADA/PLC de la planta. El PLC compara estos valores con los puntos de ajuste (p. ej., humedad objetivo) y modula las válvulas de control (p. ej., vapor o rociado de agua) utilizando bucles PID. ProChem también incluye límites de seguridad integrados para ignorar las lecturas durante las fases de inicio/parada del proceso."
+"text": "ProChem calcula los valores de concentración química en tiempo real y los envía al SCADA/PLC de la planta. El PLC compara estos valores con los puntos de ajuste (p. ej. , humedad objetivo) y modula las válvulas de control (p. ej. , vapor o rociado de agua) utilizando bucles PID."
 }
 },
 {
 "@type": "Question",
-"name": "¿La suite de software caliX cumple con la norma FDA 21 CFR Parte 11?",
+"name": "¿El software de USTECH es compatible con los requisitos de FDA 21 CFR Part 11?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí. La caliX Suite admite seguimiento completo de firmas electrónicas, niveles seguros de permisos de roles multiusuario, registro completo de seguimiento de auditoría de todas las modificaciones de calibración y validación de exportación de datos sin procesar. Cumple plenamente con los estrictos estándares de documentación e integridad exigidos por 21 CFR Parte 11 y el Anexo 11 de GMP."
+"text": "ProChem ofrece autenticación de usuarios, acceso basado en roles, pista de auditoría y firmas electrónicas, que ayudan a cumplir requisitos de integridad de datos como 21 CFR Part 11 y el Anexo 11 de las GMP de la UE. El cumplimiento en sí se establece validando el sistema completo en su planta; póngase en contacto con nosotros para conocer la documentación disponible para su proyecto."
 }
 },
 {
@@ -235,23 +235,15 @@ border-left: none !important;
 "name": "¿Puede el software USTECH ejecutarse sin conexión si la red de nuestra planta se cae?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí. Aunque el panel en la nube de caliX gestiona las calibraciones y los diagnósticos de flotas de forma centralizada, toda la lógica de medición local, los cálculos ópticos y las interfaces de comunicación PLC se ejecutan localmente en la PC dedicada del instrumento. Si Internet o la red interna se caen, el sistema continúa funcionando sin conexión sin pérdida de datos ni interrupción del proceso."
+"text": "Sí. La medición, la predicción y la comunicación con el PLC se ejecutan localmente en el PC conectado al analizador, por lo que una caída de la red de la planta o de internet no detiene las mediciones. El PC también puede mantenerse totalmente aislado de internet si su política de seguridad lo exige."
 }
 },
 {
 "@type": "Question",
-"name": "¿Cómo se gestiona la ciberseguridad de los dispositivos caliX conectados a la nube?",
+"name": "¿Puede ProChem generar paneles e informes de calidad en PDF?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Toda la comunicación de datos entre la PC del instrumento local y la nube de caliX está completamente cifrada mediante TLS 1.3. El agente del cliente local solo establece conexiones salientes; nunca se abren puertos de entrada en la red de la planta. Además, la PC local puede quedar completamente aislada de Internet si las políticas de seguridad corporativas prohíben la conectividad a la nube."
-}
-},
-{
-"@type": "Question",
-"name": "¿Puedo crear paneles personalizados e informes de calidad en PDF automáticamente?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Sí. ProChem presenta un motor de plantillas de informes flexible. Puede configurar el software para generar certificados de análisis (COA) en PDF automatizados al final de cada lote de producción. Estos informes pueden incluir resúmenes estadísticos, advertencias de valores atípicos y gráficos, y pueden enviarse automáticamente por correo electrónico a los gerentes de control de calidad o almacenarse en una unidad de red local."
+"text": "Sí. ProChem muestra los resultados en paneles en tiempo real y exporta los datos de análisis con un solo clic a informes PDF o Excel editables para archivo, auditorías y uso compartido entre equipos."
 }
 },
 {
@@ -267,7 +259,7 @@ border-left: none !important;
 "name": "¿Cómo apoya USTECH el mantenimiento y las actualizaciones del modelo de calibración?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH ofrece soporte integral. A través de la caliX Suite, los usuarios pueden cargar nuevos datos de referencia para actualizar automáticamente los modelos de regresión. También ofrecemos soporte quimiométrico remoto, donde nuestros especialistas expertos se conectan de forma segura para revisar el rendimiento del modelo, ejecutar pruebas de validación y optimizar las calibraciones de forma remota."
+"text": "USTECH ofrece soporte integral. A través de la caliX Suite, los usuarios pueden añadir nuevos datos de referencia y actualizar sus modelos de calibración. También ofrecemos soporte quimiométrico remoto: nuestros especialistas se conectan de forma segura para revisar el rendimiento de los modelos, realizar pruebas de validación y optimizar las calibraciones."
 }
 },
 {
@@ -275,7 +267,7 @@ border-left: none !important;
 "name": "¿Qué es un \"valor atípico\" y cómo lo maneja el sistema durante el análisis?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Un valor atípico es una muestra cuya firma espectral se desvía significativamente del conjunto de datos de calibración (debido a materiales extraños, cambios extremos de densidad o parámetros fuera del rango del modelo). Nuestro software calcula la distancia de Mahalanobis para cada escaneo. Si una muestra se marca como atípica, el sistema alerta al operador e ignora la lectura para evitar que datos falsos afecten los bucles de control del PLC."
+"text": "Un valor atípico es una muestra cuya firma espectral se desvía significativamente del conjunto de calibración (por materiales extraños, cambios extremos de densidad o parámetros fuera del rango del modelo). Nuestro software comprueba las muestras con métricas como la distancia de Mahalanobis, la T² de Hotelling y los residuos Q, para que las lecturas marcadas puedan revisarse antes de utilizarse en decisiones de proceso."
 }
 },
 {
@@ -291,7 +283,7 @@ border-left: none !important;
 "name": "¿Se pueden transferir las calibraciones desarrolladas en espectrómetros de terceros más antiguos a USTECH?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí. Nuestros quimiometristas tienen amplia experiencia en la transferencia de bases de datos de calibración de monocromadores de escaneo o instrumentos de matriz de fotodiodos más antiguos (por ejemplo, FOSS, Bruker, Thermo) a dispositivos USTECH NIR. Utilizamos algoritmos de estandarización matemática para igualar el perfil espectral y ahorrar años de trabajo de análisis de referencia."
+"text": "A menudo, sí. Las bases de calibración de otros instrumentos pueden transferirse con métodos de estandarización matemática, siempre que se mida un conjunto de muestras de transferencia en ambos instrumentos. La viabilidad depende de los rangos de longitud de onda y de los datos disponibles, por lo que evaluamos cada caso con usted."
 }
 },
 {
@@ -299,15 +291,15 @@ border-left: none !important;
 "name": "¿Qué algoritmos de modelado admite la caliX Suite?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "La caliX Suite admite una amplia gama de herramientas de modelado quimiométrico. Para análisis cuantitativo, admite PLS (mínimos cuadrados parciales), MLR (regresión lineal múltiple) y modelos avanzados de aprendizaje automático. Para la clasificación cualitativa, admite PCA (Análisis de componentes principales), SIMCA (Modelado suave independiente de analogía de clases) y SVM (Máquinas de vectores de soporte)."
+"text": "Para modelos cuantitativos, la suite caliX ofrece PLS (estándar y robusto), PCR, Ridge, Lasso, ElasticNet y regresión robusta de Huber, con una búsqueda AutoML que recorre automáticamente los ajustes del modelo. Para la exploración de datos y la detección de valores atípicos, proporciona PCA junto con la T² de Hotelling, los residuos Q y la distancia de Mahalanobis."
 }
 },
 {
 "@type": "Question",
-"name": "¿Cuál es el período típico de retorno de la inversión (ROI) para los sistemas en línea USTECH?",
+"name": "¿Qué retorno de la inversión podemos esperar de los sistemas en línea de USTECH?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "La mayoría de las plantas de procesamiento industrial logran un retorno de la inversión total en un plazo de 6 a 12 meses. Los ahorros se obtienen mediante la reducción del desperdicio de materia prima (gestión de tolerancia de circuito cerrado), la eliminación de lotes fuera de especificación, menores costos de mano de obra de laboratorio y un menor uso de energía gracias a los procesos optimizados de secado y mezclado."
+"text": "El plazo de amortización depende del caudal de su planta, del coste de las materias primas y del uso que se haga de las mediciones, por lo que no damos una cifra general. El ahorro suele proceder de la reducción del exceso de materias primas, de menos lotes fuera de especificación, de una menor carga de laboratorio y de la optimización del secado y el mezclado. Puede estimar su caso con la calculadora de ROI de nuestra página de inicio o comentarlo con nuestro equipo."
 }
 },
 {
@@ -328,18 +320,18 @@ border-left: none !important;
 },
 {
 "@type": "Question",
-"name": "¿USTECH ofrece capacitación para operadores de planta y personal de laboratorio?",
+"name": "¿Cómo se organiza la formación de operadores y personal de laboratorio?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí. Cada instalación de instrumentos incluye capacitación integral en el sitio. Cubrimos el funcionamiento básico del sistema, la preparación de muestras, la navegación por la interfaz del software y la resolución de problemas de mantenimiento de rutina. También ofrecemos capacitación en quimiometría avanzada para gerentes de control de calidad que desean desarrollar y mantener sus propias calibraciones."
+"text": "Las necesidades de formación se acuerdan con usted en cada proyecto. Póngase en contacto con nuestro equipo para hablar de las opciones de formación para operadores, personal de laboratorio y equipos de calidad."
 }
 },
 {
 "@type": "Question",
-"name": "¿Cuál es el tiempo típico de instalación de un sensor de tubería en línea?",
+"name": "¿Cómo se instala un sensor en línea en una tubería?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Una instalación típica de un sensor de tubería requiere de 1 a 2 días de ajuste físico y configuración del sensor. Coordinamos con sus equipos de ingeniería para montar la brida del sensor durante los períodos de mantenimiento programados, seguido de las conexiones eléctricas, la validación de la comunicación PLC y la verificación de la calibración."
+"text": "El tiempo de instalación depende del punto de montaje y de la infraestructura de su planta. Nos coordinamos con su equipo de ingeniería para montar el sensor durante una parada de mantenimiento planificada y, después, realizar las conexiones eléctricas, las comprobaciones de comunicación con el PLC y la verificación de la calibración."
 }
 }
 ]
@@ -382,7 +374,7 @@ border-left: none !important;
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="Preguntas frecuentes sobre NIR y FT-NIR | USTECH">
-    <meta property="og:description" content="28 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.">
+    <meta property="og:description" content="27 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.">
     <meta property="og:url" content="https://www.ustechinnovations.com/es/faq.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <meta property="og:image:width" content="1200">
@@ -397,7 +389,7 @@ border-left: none !important;
     <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Preguntas frecuentes sobre NIR y FT-NIR | USTECH">
-    <meta name="twitter:description" content="28 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.">
+    <meta name="twitter:description" content="27 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <link rel="manifest" href="../site.webmanifest">
 </head>
@@ -525,7 +517,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>NIR es un método analítico secundario, lo que significa que está calibrado con respecto a métodos primarios de referencia de laboratorio (como la química húmeda). Una vez calibrado, logra una repetibilidad y una precisión extremadamente cercanas a los métodos de referencia, con la ventaja de ser infinitamente más rápido (segundos frente a horas), eliminar el error del operador humano y no requerir consumibles ni reactivos peligrosos.</p>
+<p>El NIR es un método analítico secundario: se calibra frente a métodos de referencia primarios de laboratorio (como la química húmeda). Una calibración bien construida puede acercarse a la exactitud del método de referencia; cuánto se acerque depende del rango de muestras y de la calidad de los datos de referencia. Los resultados se obtienen en segundos en lugar de horas y sin reactivos.</p>
 </div>
 </div>
 <!-- FAQ 3 -->
@@ -535,7 +527,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Los sistemas basados ​​en filtros miden sólo unas pocas longitudes de onda específicas, lo que limita su flexibilidad. Los sistemas Diode Array miden múltiples longitudes de onda pero tienen una resolución espectral más baja. FT-NIR utiliza un interferómetro para escanear todo el espectro del infrarrojo cercano de forma continua con una resolución extremadamente alta, lo que proporciona una precisión superior, una mejor estabilidad de calibración y la capacidad de detectar trazas de componentes.</p>
+<p>Los sistemas basados en filtros miden solo unas pocas longitudes de onda seleccionadas, lo que limita su flexibilidad. Los sistemas de matriz de diodos registran todo el rango a la vez y sin piezas móviles, lo que los hace rápidos y robustos en entornos de producción. Los instrumentos FT-NIR utilizan un interferómetro y ofrecen alta resolución espectral y exactitud de longitud de onda. El diseño más adecuado depende de la aplicación.</p>
 </div>
 </div>
 <!-- FAQ 5 -->
@@ -591,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>El analizador de almidón dañado USTECH StarchQC utiliza una técnica amperométrica para medir la cinética de degradación del almidón. Al exponer una pequeña muestra de harina a enzimas específicas, el analizador mide la velocidad de reacción electroquímica a medida que se descompone el almidón dañado, lo que proporciona un porcentaje de almidón dañado de alta precisión en minutos.</p>
+<p>El StarchQC de USTECH utiliza un método amperométrico basado en la absorción de yodo. Una muestra de 1.000 mg de harina se analiza en un ciclo de 8 minutos y el resultado de almidón dañado se expresa en AI %, NDS, UCDC, AACC y Farrand y se imprime en la impresora integrada. Los resultados se correlacionan estrechamente con los métodos de referencia enzimáticos.</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -637,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí, absolutamente. Nuestro paquete de software ProChem está diseñado teniendo en cuenta los protocolos de comunicación industrial. Admite de forma nativa OPC UA, Modbus TCP y salidas analógicas/digitales directas (4-20 mA) para comunicar los resultados directamente a sistemas PLC (como Siemens, Allen-Bradley) o plataformas SCADA en 1530 segundos.</p>
+<p>Sí. ProChem envía los resultados al PLC de la planta mediante una interfaz Ethernet, y el ProLine2550 ofrece además salidas Modbus TCP y 4–20 mA, con OPC UA y PROFINET en el modelo Advanced. Los detalles de integración con su sistema de control se acuerdan durante la planificación del proyecto.</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -647,17 +639,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>ProChem calcula los valores de concentración química en tiempo real y los envía al SCADA/PLC de la planta. El PLC compara estos valores con los puntos de ajuste (p. ej., humedad objetivo) y modula las válvulas de control (p. ej., vapor o rociado de agua) utilizando bucles PID. ProChem también incluye límites de seguridad integrados para ignorar las lecturas durante las fases de inicio/parada del proceso.</p>
+<p>ProChem calcula los valores de concentración química en tiempo real y los envía al SCADA/PLC de la planta. El PLC compara estos valores con los puntos de ajuste (p. ej. , humedad objetivo) y modula las válvulas de control (p. ej. , vapor o rociado de agua) utilizando bucles PID.</p>
 </div>
 </div>
 <!-- FAQ 17 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>¿La suite de software cali<span class="calix-x" style="color: #38b6ff !important;">X</span> cumple con la norma FDA 21 CFR Parte 11?</span>
+<span>¿El software de USTECH es compatible con los requisitos de FDA 21 CFR Part 11?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. La cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite admite seguimiento completo de firmas electrónicas, niveles seguros de permisos de roles multiusuario, registro completo de seguimiento de auditoría de todas las modificaciones de calibración y validación de exportación de datos sin procesar. Cumple plenamente con los estrictos estándares de documentación e integridad exigidos por 21 CFR Parte 11 y el Anexo 11 de GMP.</p>
+<p>ProChem ofrece autenticación de usuarios, acceso basado en roles, pista de auditoría y firmas electrónicas, que ayudan a cumplir requisitos de integridad de datos como 21 CFR Part 11 y el Anexo 11 de las GMP de la UE. El cumplimiento en sí se establece validando el sistema completo en su planta; póngase en contacto con nosotros para conocer la documentación disponible para su proyecto.</p>
 </div>
 </div>
 <!-- FAQ 18 -->
@@ -667,27 +659,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. Aunque el panel en la nube de cali<span class="calix-x" style="color: #38b6ff !important;">X</span> gestiona las calibraciones y los diagnósticos de flotas de forma centralizada, toda la lógica de medición local, los cálculos ópticos y las interfaces de comunicación PLC se ejecutan localmente en la PC dedicada del instrumento. Si Internet o la red interna se caen, el sistema continúa funcionando sin conexión sin pérdida de datos ni interrupción del proceso.</p>
-</div>
-</div>
-<!-- FAQ 19 -->
-<div class="faq-item">
-<button class="faq-question">
-<span>¿Cómo se gestiona la ciberseguridad de los dispositivos cali<span class="calix-x" style="color: #38b6ff !important;">X</span> conectados a la nube?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Toda la comunicación de datos entre la PC del instrumento local y la nube de cali<span class="calix-x" style="color: #38b6ff !important;">X</span> está completamente cifrada mediante TLS 1.3. El agente del cliente local solo establece conexiones salientes; nunca se abren puertos de entrada en la red de la planta. Además, la PC local puede quedar completamente aislada de Internet si las políticas de seguridad corporativas prohíben la conectividad a la nube.</p>
+<p>Sí. La medición, la predicción y la comunicación con el PLC se ejecutan localmente en el PC conectado al analizador, por lo que una caída de la red de la planta o de internet no detiene las mediciones. El PC también puede mantenerse totalmente aislado de internet si su política de seguridad lo exige.</p>
 </div>
 </div>
 <!-- FAQ 20 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>¿Puedo crear paneles personalizados e informes de calidad en PDF automáticamente?</span>
+<span>¿Puede ProChem generar paneles e informes de calidad en PDF?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. ProChem presenta un motor de plantillas de informes flexible. Puede configurar el software para generar certificados de análisis (COA) en PDF automatizados al final de cada lote de producción. Estos informes pueden incluir resúmenes estadísticos, advertencias de valores atípicos y gráficos, y pueden enviarse automáticamente por correo electrónico a los gerentes de control de calidad o almacenarse en una unidad de red local.</p>
+<p>Sí. ProChem muestra los resultados en paneles en tiempo real y exporta los datos de análisis con un solo clic a informes PDF o Excel editables para archivo, auditorías y uso compartido entre equipos.</p>
 </div>
 </div>
 </div>
@@ -713,7 +695,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH ofrece soporte integral. A través de la cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, los usuarios pueden cargar nuevos datos de referencia para actualizar automáticamente los modelos de regresión. También ofrecemos soporte quimiométrico remoto, donde nuestros especialistas expertos se conectan de forma segura para revisar el rendimiento del modelo, ejecutar pruebas de validación y optimizar las calibraciones de forma remota.</p>
+<p>USTECH ofrece soporte integral. A través de la cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite, los usuarios pueden añadir nuevos datos de referencia y actualizar sus modelos de calibración. También ofrecemos soporte quimiométrico remoto: nuestros especialistas se conectan de forma segura para revisar el rendimiento de los modelos, realizar pruebas de validación y optimizar las calibraciones.</p>
 </div>
 </div>
 <!-- FAQ 23 -->
@@ -723,7 +705,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Un valor atípico es una muestra cuya firma espectral se desvía significativamente del conjunto de datos de calibración (debido a materiales extraños, cambios extremos de densidad o parámetros fuera del rango del modelo). Nuestro software calcula la distancia de Mahalanobis para cada escaneo. Si una muestra se marca como atípica, el sistema alerta al operador e ignora la lectura para evitar que datos falsos afecten los bucles de control del PLC.</p>
+<p>Un valor atípico es una muestra cuya firma espectral se desvía significativamente del conjunto de calibración (por materiales extraños, cambios extremos de densidad o parámetros fuera del rango del modelo). Nuestro software comprueba las muestras con métricas como la distancia de Mahalanobis, la T² de Hotelling y los residuos Q, para que las lecturas marcadas puedan revisarse antes de utilizarse en decisiones de proceso.</p>
 </div>
 </div>
 <!-- FAQ 24 -->
@@ -743,7 +725,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. Nuestros quimiometristas tienen amplia experiencia en la transferencia de bases de datos de calibración de monocromadores de escaneo o instrumentos de matriz de fotodiodos más antiguos (por ejemplo, FOSS, Bruker, Thermo) a dispositivos USTECH NIR. Utilizamos algoritmos de estandarización matemática para igualar el perfil espectral y ahorrar años de trabajo de análisis de referencia.</p>
+<p>A menudo, sí. Las bases de calibración de otros instrumentos pueden transferirse con métodos de estandarización matemática, siempre que se mida un conjunto de muestras de transferencia en ambos instrumentos. La viabilidad depende de los rangos de longitud de onda y de los datos disponibles, por lo que evaluamos cada caso con usted.</p>
 </div>
 </div>
 <!-- FAQ 26 -->
@@ -753,7 +735,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>La cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite admite una amplia gama de herramientas de modelado quimiométrico. Para análisis cuantitativo, admite PLS (mínimos cuadrados parciales), MLR (regresión lineal múltiple) y modelos avanzados de aprendizaje automático. Para la clasificación cualitativa, admite PCA (Análisis de componentes principales), SIMCA (Modelado suave independiente de analogía de clases) y SVM (Máquinas de vectores de soporte).</p>
+<p>Para modelos cuantitativos, la suite cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ofrece PLS (estándar y robusto), PCR, Ridge, Lasso, ElasticNet y regresión robusta de Huber, con una búsqueda AutoML que recorre automáticamente los ajustes del modelo. Para la exploración de datos y la detección de valores atípicos, proporciona PCA junto con la T² de Hotelling, los residuos Q y la distancia de Mahalanobis.</p>
 </div>
 </div>
 </div>
@@ -765,11 +747,11 @@ border-left: none !important;
 <!-- FAQ 27 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>¿Cuál es el período típico de retorno de la inversión (ROI) para los sistemas en línea USTECH?</span>
+<span>¿Qué retorno de la inversión podemos esperar de los sistemas en línea de USTECH?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>La mayoría de las plantas de procesamiento industrial logran un retorno de la inversión total en un plazo de 6 a 12 meses. Los ahorros se obtienen mediante la reducción del desperdicio de materia prima (gestión de tolerancia de circuito cerrado), la eliminación de lotes fuera de especificación, menores costos de mano de obra de laboratorio y un menor uso de energía gracias a los procesos optimizados de secado y mezclado.</p>
+<p>El plazo de amortización depende del caudal de su planta, del coste de las materias primas y del uso que se haga de las mediciones, por lo que no damos una cifra general. El ahorro suele proceder de la reducción del exceso de materias primas, de menos lotes fuera de especificación, de una menor carga de laboratorio y de la optimización del secado y el mezclado. Puede estimar su caso con la calculadora de ROI de nuestra página de inicio o comentarlo con nuestro equipo.</p>
 </div>
 </div>
 <!-- FAQ 28 -->
@@ -795,21 +777,21 @@ border-left: none !important;
 <!-- FAQ 30 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>¿USTECH ofrece capacitación para operadores de planta y personal de laboratorio?</span>
+<span>¿Cómo se organiza la formación de operadores y personal de laboratorio?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. Cada instalación de instrumentos incluye capacitación integral en el sitio. Cubrimos el funcionamiento básico del sistema, la preparación de muestras, la navegación por la interfaz del software y la resolución de problemas de mantenimiento de rutina. También ofrecemos capacitación en quimiometría avanzada para gerentes de control de calidad que desean desarrollar y mantener sus propias calibraciones.</p>
+<p>Las necesidades de formación se acuerdan con usted en cada proyecto. Póngase en contacto con nuestro equipo para hablar de las opciones de formación para operadores, personal de laboratorio y equipos de calidad.</p>
 </div>
 </div>
 <!-- FAQ 31 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>¿Cuál es el tiempo típico de instalación de un sensor de tubería en línea?</span>
+<span>¿Cómo se instala un sensor en línea en una tubería?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Una instalación típica de un sensor de tubería requiere de 1 a 2 días de ajuste físico y configuración del sensor. Coordinamos con sus equipos de ingeniería para montar la brida del sensor durante los períodos de mantenimiento programados, seguido de las conexiones eléctricas, la validación de la comunicación PLC y la verificación de la calibración.</p>
+<p>El tiempo de instalación depende del punto de montaje y de la infraestructura de su planta. Nos coordinamos con su equipo de ingeniería para montar el sensor durante una parada de mantenimiento planificada y, después, realizar las conexiones eléctricas, las comprobaciones de comunicación con el PLC y la verificación de la calibración.</p>
 </div>
 </div>
 </div>
@@ -901,7 +883,7 @@ border-left: none !important;
             <p>Diseñado para la precisión científica e industrial.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

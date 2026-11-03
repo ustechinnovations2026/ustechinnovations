@@ -211,7 +211,7 @@
 <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
 <div>
 <strong style="color: var(--accent-gold-text);">工业级设计：</strong>
-<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">坚固耐用的分析仪，专为振动、灰尘、温度波动和 CIP 清洗等恶劣工厂环境设计。</p>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">专为严苛工厂环境设计的坚固分析仪——耐振动、粉尘和温度变化。</p>
 </div>
 <div>
 <strong style="color: var(--accent-gold-text);">两个光谱范围：</strong>
@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem 过程输出</h4>
 </div>
-<p>预测值（蛋白质、水分、脂肪等）通过 ProChem 经由 OPC UA、Modbus 或模拟输出传输至您的 PLC/SCADA 系统，以进行实时闭环过程控制。</p>
+<p>预测值（蛋白质、水分、脂肪等）通过 ProChem 传送至您的 PLC/SCADA 系统，用于实时过程控制。</p>
 </div>
 </div>
 </div>
@@ -318,7 +318,7 @@
 </tr>
 <tr>
 <td class="feature-name">过程集成</td>
-<td class="ustech-highlight"><strong>原生</strong>。ProChem 通过 OPC UA、Modbus、4–20 mA 以及 REST API 直接连接到 PLC/SCADA。</td>
+<td class="ustech-highlight"><strong>原生</strong>。ProChem 通过基于以太网的接口直接连接 PLC/SCADA。</td>
 <td><strong>有限的</strong>。通常需要自定义中间件或第三方 OPC 服务器才能与 PLC 连接。</td>
 <td><strong>基本的</strong>。通常限于模拟输出或专有协议。</td>
 </tr>
@@ -480,8 +480,8 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem 是什么？</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 是直接运行于生产线级别的边缘计算软件平台。它接收在 caliX 中构建的定标模型 并将其实时应用于 USTECH 分析仪输入的扫描光谱。然后通过工业通信协议将预测的化学成分值传送到工厂的 PLC/SCADA 系统。</p>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 专为在苛刻工业环境中全天候 24/7 无人值守操作而设计。它负责仪器健康监控、自动参考扫描、带有双灯切换的灯泡故障检测以及光谱质量验证——所有这些都无需操作员干预。</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">无论您的生产设施使用的是西门子 (Siemens)、艾伦-布拉德利 (Allen-Bradley)、施耐德 (Schneider) 还是 ABB 自动化基础设施，ProChem 都能通过行业标准协议（OPC UA、Modbus TCP/RTU、4–20 mA 模拟输出、REST API）原生通信，将测量数据精确传送到您的控制逻辑需要的地方。</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 专为在严苛工业环境中 24/7 无人值守运行而设计。它负责仪器健康监测、自动参比扫描和光谱质量验证，无需操作人员干预。</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem 通过基于以太网的接口与工厂 PLC 通信，将测量数据准确送达控制逻辑所需之处；ProLine2550 还可根据型号提供 Modbus TCP、OPC UA、PROFINET 和 4–20 mA 输出。</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem 核心功能</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -504,7 +504,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">自动健康监测</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">持续自诊断，包括灯光强度跟踪、参考扫描验证、光谱噪声监测和自动双灯故障切换。</p>
+<p style="color: rgba(255,255,255,0.85);">持续自诊断，包括灯强度跟踪、参比扫描验证和光谱噪声监测。</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -518,7 +518,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">用户访问控制</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">具备审计日志记录的多级用户管理（操作员、主管、管理员）。制药应用符合 21 CFR Part 11 的电子记录标准。</p>
+<p style="color: rgba(255,255,255,0.85);">多级用户管理（操作员、主管、管理员），具备审计日志和电子签名，适用于制药应用。</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -618,6 +618,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>专为严苛的科学与工业精度而设计。</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 </body>
 </html>

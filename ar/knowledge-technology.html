@@ -212,7 +212,7 @@
 <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
 <div>
 <strong style="color: var(--accent-gold-text);">تصميم من الدرجة الصناعية:</strong>
-<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">أجهزة تحليل متينة مصممة لبيئات المصانع القاسية — الاهتزازات، الغبار، درجة الحرارة، والتنظيف المكاني (CIP).</p>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">أجهزة تحليل متينة مصممة لبيئات المصانع القاسية: الاهتزازات والغبار ودرجات الحرارة.</p>
 </div>
 <div>
 <strong style="color: var(--accent-gold-text);">نطاقان طيفيان:</strong>
@@ -271,7 +271,7 @@
 <div class="tech-step-num">05</div>
 <h4>مخرجات عملية ProChem</h4>
 </div>
-<p>يتم إرسال القيم المتوقعة (البروتين، الرطوبة، الدهون، إلخ) عبر ProChem إلى نظام PLC/SCADA الخاص بك من خلال OPC UA أو Modbus أو المخرجات التناظرية للتحكم الفوري في العملية.</p>
+<p>تُنقل القيم المتنبأ بها (البروتين والرطوبة والدهون وغيرها) عبر ProChem إلى نظام PLC/SCADA لديكم للتحكم الفوري في العمليات.</p>
 </div>
 </div>
 </div>
@@ -319,7 +319,7 @@
 </tr>
 <tr>
 <td class="feature-name">تكامل العمليات</td>
-<td class="ustech-highlight"><strong>أصلي</strong>. يتصل ProChem مباشرة بـ PLC/SCADA عبر OPC UA و Modbus و 4-20 مللي أمبير و REST API.</td>
+<td class="ustech-highlight"><strong>أصلي</strong>. يتصل ProChem مباشرة بـ PLC/SCADA عبر واجهة قائمة على Ethernet.</td>
 <td><strong>محدود</strong>. يتطلب عادةً برمجيات وسيطة مخصصة أو خوادم OPC من جهات خارجية للاتصال بـ PLC.</td>
 <td><strong>أساسي</strong>. يقتصر عادةً على المخرجات التناظرية أو البروتوكولات الاحتكارية.</td>
 </tr>
@@ -481,8 +481,8 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ما هو ProChem؟</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem هي منصة برمجيات الحوسبة الطرفية التي تعمل مباشرة على مستوى خط الإنتاج. تتلقى نماذج المعايرة المبنية في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ويطبقها في الوقت الفعلي على المسوحات الطيفية الواردة من أجهزة تحليل USTECH. ثم يتم توصيل قيم التركيب الكيميائي المتوقعة لأنظمة PLC/SCADA في المصنع من خلال بروتوكولات الاتصال الصناعية.</p>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">تم تصميم ProChem للتشغيل على مدار الساعة طوال أيام الأسبوع بدون إشراف في البيئات الصناعية الصعبة. يدير مراقبة صحة الجهاز، والمسح المرجعي التلقائي، واكتشاف فشل المصباح مع التبديل المزدوج للمصباح، والتحقق من جودة الطيف — كل ذلك دون الحاجة لتدخل المشغل.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">سواء كانت منشأة الإنتاج لديك تستخدم البنية التحتية للأتمتة من Siemens أو Allen-Bradley أو Schneider أو ABB، فإن ProChem يتصل بشكل أصلي عبر بروتوكولات الصناعة القياسية (OPC UA و Modbus TCP/RTU والتناظري 4-20 مللي أمبير و REST API) لتوصيل بيانات القياس بدقة حيثما تحتاج إليها منطق التحكم لديك.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">صُمم ProChem للعمل على مدار الساعة دون إشراف في البيئات الصناعية الصعبة. فهو يدير مراقبة حالة الجهاز والمسح المرجعي التلقائي والتحقق من جودة الأطياف، دون الحاجة إلى تدخل المشغل.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">يتواصل ProChem مع وحدات PLC في المصنع عبر واجهة قائمة على Ethernet لإيصال بيانات القياس إلى حيث يحتاجها منطق التحكم لديكم تماماً؛ كما يوفر ProLine2550 حسب الطراز مخرجات Modbus TCP وOPC UA وPROFINET و4–20 مللي أمبير.</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">الميزات الأساسية لـ ProChem</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -505,7 +505,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">المراقبة التلقائية لصحة الجهاز</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">تشخيص ذاتي مستمر يشمل تتبع شدة المصباح، والتحقق من المسح المرجعي، ومراقبة الضوضاء الطيفية، والتبديل التلقائي للمصباح المزدوج.</p>
+<p style="color: rgba(255,255,255,0.85);">تشخيص ذاتي مستمر يشمل تتبع شدة المصباح والتحقق من المسح المرجعي ومراقبة الضوضاء الطيفية.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -519,7 +519,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">التحكم في وصول المستخدم</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">إدارة المستخدمين متعددة المستويات (عامل، مشرف، مسؤول) مع تسجيل التدقيق. سجلات إلكترونية متوافقة مع 21 CFR Part 11 للتطبيقات الصيدلانية.</p>
+<p style="color: rgba(255,255,255,0.85);">إدارة مستخدمين متعددة المستويات (مشغل، مشرف، مسؤول) مع سجل تدقيق وتوقيعات إلكترونية للتطبيقات الدوائية.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -619,6 +619,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>مصمم للدقة العلمية والصناعية.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 </body>
 </html>

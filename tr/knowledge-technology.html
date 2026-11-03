@@ -211,7 +211,7 @@
 <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
 <div>
 <strong style="color: var(--accent-gold-text);">Endüstriyel Sınıf Tasarım:</strong>
-<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Titreşim, toz, sıcaklık ve CIP temizliği gibi zorlu fabrika ortamları için tasarlanmış dayanıklı analizörler.</p>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Zorlu fabrika ortamları için tasarlanmış dayanıklı analizörler: titreşim, toz ve sıcaklık.</p>
 </div>
 <div>
 <strong style="color: var(--accent-gold-text);">İki Spektral Aralık:</strong>
@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem Proses Çıktısı</h4>
 </div>
-<p>Tahmin edilen değerler (protein, nem, yağ vb.), gerçek zamanlı proses kontrolü için ProChem aracılığıyla OPC UA, Modbus veya analog çıkışlar aracılığıyla PLC/SCADA sisteminize iletilir.</p>
+<p>Tahmin edilen değerler (protein, nem, yağ vb.) gerçek zamanlı proses kontrolü için ProChem aracılığıyla PLC/SCADA sisteminize iletilir.</p>
 </div>
 </div>
 </div>
@@ -318,7 +318,7 @@
 </tr>
 <tr>
 <td class="feature-name">Proses Entegrasyonu</td>
-<td class="ustech-highlight"><strong>Yerel</strong>. ProChem, OPC UA, Modbus, 4–20 mA ve REST API aracılığıyla doğrudan PLC/SCADA'ya bağlanır.</td>
+<td class="ustech-highlight"><strong>Yerel</strong>. ProChem, Ethernet tabanlı bir arayüz üzerinden doğrudan PLC/SCADA'ya bağlanır.</td>
 <td><strong>Sınırlı</strong>. Tipik olarak PLC bağlantısı için özel ara yazılım veya üçüncü taraf OPC sunucuları gerektirir.</td>
 <td><strong>Temel</strong>. Genellikle analog çıkış veya tescilli protokollerle sınırlıdır.</td>
 </tr>
@@ -480,8 +480,8 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem Nedir?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, doğrudan üretim hattı seviyesinde çalışan uç bilişim (edge-computing) yazılım platformudur. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ve bunları gerçek zamanlı olarak USTECH analizörlerinden gelen spektral taramalara uygular. Tahmin edilen kimyasal bileşim değerleri daha sonra endüstriyel iletişim protokolleri aracılığıyla fabrika PLC/SCADA sistemlerine iletilir.</p>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem zorlu endüstriyel ortamlarda 7/24 gözetimsiz çalışma için tasarlanmıştır. Cihaz sağlığı izlemeyi, otomatik referans taramayı, çift lamba değiştirmeyle lamba arızası tespitini ve spektral kalite doğrulamayı yönetir; üstelik bunların tümünü operatör müdahalesine gerek kalmadan yapar.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">Üretim tesisiniz ister Siemens, Allen-Bradley, Schneider veya ABB otomasyon altyapısını kullanıyor olsun, ProChem, ölçüm verilerini tam olarak kontrol mantığınızın ihtiyaç duyduğu yere iletmek için endüstri standardı protokoller (OPC UA, Modbus TCP/RTU, 4–20 mA analog, REST API) aracılığıyla yerel olarak iletişim kurar.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, zorlu endüstriyel ortamlarda 7/24 gözetimsiz çalışmak üzere tasarlanmıştır. Cihaz sağlığı izleme, otomatik referans taraması ve spektral kalite doğrulamasını operatör müdahalesi gerektirmeden yönetir.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem, ölçüm verisini kontrol mantığınızın ihtiyaç duyduğu yere ulaştırmak için tesis PLC'leriyle Ethernet tabanlı bir arayüz üzerinden haberleşir; ProLine2550 ise modele göre Modbus TCP, OPC UA, PROFINET ve 4–20 mA çıkışları da sunar.</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem Temel Özellikleri</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -504,7 +504,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">Otomatik Sağlık İzleme</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Lamba yoğunluğu takibi, referans tarama doğrulaması, spektral gürültü izleme ve otomatik çift lamba yük devretme dahil olmak üzere sürekli kendi kendine teşhis.</p>
+<p style="color: rgba(255,255,255,0.85);">Lamba yoğunluğu takibi, referans tarama doğrulaması ve spektral gürültü izlemesini içeren sürekli öz tanılama.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -518,7 +518,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">Kullanıcı Erişim Kontrolü</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Denetim günlüğü ile çok düzeyli kullanıcı yönetimi (Operatör, Süpervizör, Yönetici). Farmasötik uygulamalar için 21 CFR Part 11 uyumlu elektronik kayıtlar.</p>
+<p style="color: rgba(255,255,255,0.85);">İlaç uygulamaları için denetim kaydı ve elektronik imza destekli çok seviyeli kullanıcı yönetimi (Operatör, Süpervizör, Yönetici).</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -618,6 +618,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 </body>
 </html>

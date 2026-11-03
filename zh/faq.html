@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 28 个解答。">
+<meta name="description" content="USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 27 个解答。">
 <title>NIR 与 FT-NIR 常见问题：设备、软件与定标 | USTECH</title>
 <link rel="stylesheet" href="../index.css?v=1.1.6">
 <style>
@@ -131,7 +131,7 @@ border-left: none !important;
 "name": "NIR 的准确性与传统的湿化学方法相比如何？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "NIR 是一种二级分析方法，这意味着它是根据主要实验室参考方法（如湿化学）进行定标的。定标后，它的重复性和准确性非常接近参考方法，其优点是速度无限快（几秒对比几小时），消除了人为操作错误，并且不需要消耗品或危险试剂。"
+"text": "NIR 是一种二级分析方法：它需要以实验室一级参考方法（如湿化学法）为基准进行定标。构建良好的定标可以接近参考方法的准确度；接近程度取决于样品范围和参考数据的质量。结果只需数秒而非数小时，且无需任何试剂。"
 }
 },
 {
@@ -139,7 +139,7 @@ border-left: none !important;
 "name": "基于滤光片的 NIR、二极管阵列 NIR 和 FT-NIR 之间有什么区别？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "基于滤光片的系统仅测量几个特定波长，限制了其灵活性。二极管阵列系统测量多个波长，但光谱分辨率较低。FT-NIR 使用干涉仪以极高的分辨率连续扫描整个近红外光谱，提供卓越的精度、更好的定标稳定性和检测微量成分的能力。"
+"text": "滤光片型系统只测量少数选定波长，灵活性有限。二极管阵列系统无运动部件，可一次记录整个波段，因此在生产环境中快速且坚固耐用。FT-NIR 仪器采用干涉仪，具有较高的光谱分辨率和波长准确度。哪种设计最合适取决于具体应用。"
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "USTECH StarchQC 损伤淀粉分析仪如何工作？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH StarchQC 损伤淀粉分析仪利用电流法测量淀粉降解动力学。通过将少量面粉样本暴露于特定酶中，该分析仪在破损淀粉被分解时测量电化学反应速率，从而在几分钟内提供高精度的破损淀粉百分比。"
+"text": "USTECH StarchQC 采用基于碘吸收的电流法。1,000 mg 面粉样品在 8 分钟周期内完成分析，破损淀粉结果以 AI %、NDS、UCDC、AACC 和 Farrand 单位给出，并由内置打印机打印。结果与基于酶法的参考方法高度相关。"
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "USTECH 光谱仪可以与我们工厂的 PLC 或 SCADA 系统集成吗？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "是的，绝对可以。我们的 ProChem 软件套件在设计时考虑了工业通信协议。它原生支持 OPC UA、Modbus TCP 和直接模拟/数字输出 (4-20 mA)，可在 15 至 30 秒内将结果直接传递给 PLC 系统（如西门子、Allen-Bradley）或 SCADA 平台。"
+"text": "可以。ProChem 通过基于以太网的接口将结果发送至工厂 PLC；ProLine2550 另外提供 Modbus TCP 和 4–20 mA 输出，Advanced 型号还支持 OPC UA 和 PROFINET。与您控制系统的具体集成细节将在项目规划阶段确定。"
 }
 },
 {
@@ -219,15 +219,15 @@ border-left: none !important;
 "name": "ProChem 如何处理过程参数的闭环控制？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "ProChem 计算实时化学浓度值并将其发送至工厂 SCADA/PLC。PLC 将这些值与设定值（例如目标水分）进行比较，并使用 PID 回路调节控制阀（例如蒸汽或喷水）。ProChem 还包括内置的安全边界，以忽略过程启动/停止阶段的读数。"
+"text": "ProChem 计算实时化学浓度值并将其发送至工厂 SCADA/PLC。PLC 将这些值与设定值（例如目标水分）进行比较，并使用 PID 回路调节控制阀（例如蒸汽或喷水）。"
 }
 },
 {
 "@type": "Question",
-"name": "caliX 软件套件符合 FDA 21 CFR Part 11 吗？",
+"name": "USTECH 软件是否支持 FDA 21 CFR Part 11 要求？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "是的。caliX Suite 支持完整的电子签名跟踪、安全的多用户角色权限级别、所有定标修改的完整审计跟踪日志记录以及原始数据导出验证。它完全符合 21 CFR Part 11 和 GMP Annex 11 强制规定的严格文档和完整性标准。"
+"text": "ProChem 提供用户身份验证、基于角色的访问控制、审计追踪和电子签名，有助于满足 21 CFR Part 11 和欧盟 GMP 附录 11 等数据完整性要求。合规本身需通过对您现场的完整系统进行验证来确立；如需了解适用于您项目的文档，请联系我们。"
 }
 },
 {
@@ -235,23 +235,15 @@ border-left: none !important;
 "name": "如果工厂网络中断，USTECH 软件可以离线运行吗？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "是的。虽然 caliX 云仪表板集中管理定标和仪器群诊断，但所有本地测量逻辑、光学计算和 PLC 通信接口都在仪器的专用 PC 上本地运行。如果互联网或内部网络断开，系统将在没有任何数据丢失或过程被中断的情况下继续离线运行。"
+"text": "可以。测量、预测和 PLC 通信均在连接分析仪的电脑上本地运行，因此工厂网络或互联网中断不会使测量停止。如果您的安全策略有要求，该电脑也可以完全与互联网隔离运行。"
 }
 },
 {
 "@type": "Question",
-"name": "对于连接云的 caliX 设备，如何处理网络安全？",
+"name": "ProChem 能否生成看板和 PDF 质量报告？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "本地仪器 PC 与 caliX 云之间的所有数据通信都使用 TLS 1.3 进行了完全加密。本地客户端代理仅建立出站连接；在工厂网络上从不打开任何入站端口。此外，如果企业安全策略禁止云连接，本地 PC 可以与互联网完全气隙隔离。"
-}
-},
-{
-"@type": "Question",
-"name": "我能自动创建自定义仪表板和 PDF 质量报告吗？",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "是的。ProChem 具有灵活的报告模板引擎。您可以配置该软件在每个生产批次结束时自动生成 PDF 分析证书 (COA)。这些报告可以包含统计摘要、异常样本警告和图表，并且可以自动发送给 QA 经理或存储在本地网络驱动器上。"
+"text": "可以。ProChem 在实时看板上显示结果，并可一键将分析数据导出为 PDF 或可编辑的 Excel 报告，便于归档、审计和团队间共享。"
 }
 },
 {
@@ -267,7 +259,7 @@ border-left: none !important;
 "name": "USTECH 如何支持定标模型的维护和更新？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH 提供全面的支持。通过 caliX Suite，用户可以上传新的参考数据以自动更新回归模型。我们还提供远程化学计量学支持，我们的专家可安全连接以检查模型性能、运行验证测试并远程优化定标模型。"
+"text": "USTECH 提供全面的支持。通过 caliX 套件，用户可以添加新的参考数据并更新定标模型。我们还提供远程化学计量学支持，我们的专家可通过安全连接查看模型性能、运行验证测试并优化定标。"
 }
 },
 {
@@ -275,7 +267,7 @@ border-left: none !important;
 "name": "什么是“异常样本”，系统在分析期间如何处理它？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "异常样本是指其光谱特征明显偏离定标数据集的样本（由于异物、极端密度变化或超出模型范围的参数）。我们的软件计算每次扫描的马氏距离。如果样本被标记为异常样本，系统会提醒操作员并忽略该读数，以防止错误数据影响 PLC 控制回路。"
+"text": "异常值是指光谱特征明显偏离定标数据集的样品（原因可能是异物、密度剧烈变化或参数超出模型范围）。我们的软件使用马氏距离、Hotelling T² 和 Q 残差等指标检查样品，使被标记的读数在用于工艺决策之前能够得到复核。"
 }
 },
 {
@@ -291,7 +283,7 @@ border-left: none !important;
 "name": "在较旧的第三方光谱仪上开发的定标模型可以转移到 USTECH 吗？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "是的。我们的化学计量学家在将定标数据库从旧的扫描单色仪或光电二极管阵列仪器（例如 FOSS、Bruker、Thermo）转移到 USTECH NIR 设备方面拥有丰富的经验。我们利用数学标准化算法来匹配光谱轮廓，并节省数年的参考分析工作。"
+"text": "多数情况下可以。只要在两台仪器上测量一组转移样品，就可以使用数学标准化方法转移其他仪器的定标数据库。可行性取决于波长范围和现有数据，因此我们会与您共同评估每个案例。"
 }
 },
 {
@@ -299,15 +291,15 @@ border-left: none !important;
 "name": "caliX Suite 支持哪些建模算法？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "caliX Suite 支持各种化学计量学建模工具。对于定量分析，它支持 PLS（偏最小二乘法）、MLR（多元线性回归）和高级机器学习模型。对于定性分类，它支持 PCA（主成分分析）、SIMCA（类比软独立建模）和 SVM（支持向量机）。"
+"text": "在定量模型方面，caliX 套件提供 PLS（标准和稳健）、PCR、Ridge、Lasso、ElasticNet 和稳健 Huber 回归，并通过 AutoML 搜索自动遍历模型设置。在数据探索和异常值筛查方面，它提供 PCA 以及 Hotelling T²、Q 残差和马氏距离。"
 }
 },
 {
 "@type": "Question",
-"name": "USTECH 在线系统的典型投资回报率 (ROI) 周期是多长？",
+"name": "USTECH 在线系统能带来怎样的投资回报？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "大多数工业加工厂在 6 到 12 个月内即可实现全部投资回报。节省主要是通过减少原材料过度损耗（闭环公差管理）、消除不合格批次、降低实验室劳动力成本，以及通过优化干燥和混合过程来减少能源消耗来实现的。"
+"text": "投资回收期取决于工厂产能、原料成本以及测量结果的使用方式，因此我们不提供笼统的数字。节省通常来自减少原料过量、减少不合格批次、降低实验室工作量以及优化干燥和混合过程。您可以使用我们首页上的投资回报计算器估算自己的情况，或与我们的团队讨论。"
 }
 },
 {
@@ -328,18 +320,18 @@ border-left: none !important;
 },
 {
 "@type": "Question",
-"name": "USTECH 是否为工厂操作员和实验室人员提供培训？",
+"name": "操作人员和实验室人员的培训如何安排？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "是的。每台仪器的安装都包括全面的现场培训。我们涵盖基本的系统操作、样品准备、软件界面导航和日常维护故障排除。我们还为希望开发和维护自己的定标的质量保证经理提供高级化学计量学培训。"
+"text": "培训需求将针对每个项目与您共同确定。如需了解面向操作人员、实验室人员和质量团队的培训选项，请联系我们的团队。"
 }
 },
 {
 "@type": "Question",
-"name": "在线管道传感器的典型安装时间是多长？",
+"name": "在线管道传感器如何安装？",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "典型的管道传感器安装需要 1 到 2 天的物理安装和传感器配置。我们在预定的维护窗口期间与您的工程团队协调安装传感器法兰，然后进行电气连接、PLC 通信验证和定标验证。"
+"text": "安装时间取决于安装位置和工厂基础设施。我们会与您的工程团队协调，在计划的维护窗口期间安装传感器，随后进行电气连接、PLC 通信检查和定标验证。"
 }
 }
 ]
@@ -382,7 +374,7 @@ border-left: none !important;
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="NIR 与 FT-NIR 常见问题：设备、软件与定标 | USTECH">
-    <meta property="og:description" content="USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 28 个解答。">
+    <meta property="og:description" content="USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 27 个解答。">
     <meta property="og:url" content="https://www.ustechinnovations.com/zh/faq.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <meta property="og:image:width" content="1200">
@@ -397,7 +389,7 @@ border-left: none !important;
     <meta property="og:locale:alternate" content="ar_SA">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NIR 与 FT-NIR 常见问题：设备、软件与定标 | USTECH">
-    <meta name="twitter:description" content="USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 28 个解答。">
+    <meta name="twitter:description" content="USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 27 个解答。">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <link rel="manifest" href="../site.webmanifest">
 </head>
@@ -525,7 +517,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>NIR 是一种二级分析方法，这意味着它是根据主要实验室参考方法（如湿化学）进行定标的。定标后，它的重复性和准确性非常接近参考方法，其优点是速度无限快（几秒对比几小时），消除了人为操作错误，并且不需要消耗品或危险试剂。</p>
+<p>NIR 是一种二级分析方法：它需要以实验室一级参考方法（如湿化学法）为基准进行定标。构建良好的定标可以接近参考方法的准确度；接近程度取决于样品范围和参考数据的质量。结果只需数秒而非数小时，且无需任何试剂。</p>
 </div>
 </div>
 <!-- FAQ 3 -->
@@ -535,7 +527,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>基于滤光片的系统仅测量几个特定波长，限制了其灵活性。二极管阵列系统测量多个波长，但光谱分辨率较低。FT-NIR 使用干涉仪以极高的分辨率连续扫描整个近红外光谱，提供卓越的精度、更好的定标稳定性和检测微量成分的能力。</p>
+<p>滤光片型系统只测量少数选定波长，灵活性有限。二极管阵列系统无运动部件，可一次记录整个波段，因此在生产环境中快速且坚固耐用。FT-NIR 仪器采用干涉仪，具有较高的光谱分辨率和波长准确度。哪种设计最合适取决于具体应用。</p>
 </div>
 </div>
 <!-- FAQ 5 -->
@@ -591,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH StarchQC 损伤淀粉分析仪利用电流法测量淀粉降解动力学。通过将少量面粉样本暴露于特定酶中，该分析仪在破损淀粉被分解时测量电化学反应速率，从而在几分钟内提供高精度的破损淀粉百分比。</p>
+<p>USTECH StarchQC 采用基于碘吸收的电流法。1,000 mg 面粉样品在 8 分钟周期内完成分析，破损淀粉结果以 AI %、NDS、UCDC、AACC 和 Farrand 单位给出，并由内置打印机打印。结果与基于酶法的参考方法高度相关。</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -637,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>是的，绝对可以。我们的 ProChem 软件套件在设计时考虑了工业通信协议。它原生支持 OPC UA、Modbus TCP 和直接模拟/数字输出 (4-20 mA)，可在 15 至 30 秒内将结果直接传递给 PLC 系统（如西门子、Allen-Bradley）或 SCADA 平台。</p>
+<p>可以。ProChem 通过基于以太网的接口将结果发送至工厂 PLC；ProLine2550 另外提供 Modbus TCP 和 4–20 mA 输出，Advanced 型号还支持 OPC UA 和 PROFINET。与您控制系统的具体集成细节将在项目规划阶段确定。</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -647,17 +639,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>ProChem 计算实时化学浓度值并将其发送至工厂 SCADA/PLC。PLC 将这些值与设定值（例如目标水分）进行比较，并使用 PID 回路调节控制阀（例如蒸汽或喷水）。ProChem 还包括内置的安全边界，以忽略过程启动/停止阶段的读数。</p>
+<p>ProChem 计算实时化学浓度值并将其发送至工厂 SCADA/PLC。PLC 将这些值与设定值（例如目标水分）进行比较，并使用 PID 回路调节控制阀（例如蒸汽或喷水）。</p>
 </div>
 </div>
 <!-- FAQ 17 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 软件套件符合 FDA 21 CFR 第 11 部分的要求吗？</span>
+<span>USTECH 软件是否支持 FDA 21 CFR Part 11 要求？</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>是的。cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件支持完整的电子签名跟踪、安全的多用户角色权限级别、对所有定标修改的完整审计跟踪记录以及原始数据导出验证。它完全符合 21 CFR 第 11 部分和 GMP 附录 11 强制执行的严格文档和完整性标准。</p>
+<p>ProChem 提供用户身份验证、基于角色的访问控制、审计追踪和电子签名，有助于满足 21 CFR Part 11 和欧盟 GMP 附录 11 等数据完整性要求。合规本身需通过对您现场的完整系统进行验证来确立；如需了解适用于您项目的文档，请联系我们。</p>
 </div>
 </div>
 <!-- FAQ 18 -->
@@ -667,27 +659,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>是的。虽然 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 云仪表板集中管理定标和设备诊断，所有本地测量逻辑、光学计算和 PLC 通信接口均在仪器专用 PC 上本地运行。如果互联网或内部网络中断，系统将继续离线运行，不会出现任何数据丢失或过程延迟。</p>
-</div>
-</div>
-<!-- FAQ 19 -->
-<div class="faq-item">
-<button class="faq-question">
-<span>云连接的 caliX 如何处理网络安全 设备？</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>本地仪器 PC 和 caliX 之间的所有数据通信 云端采用 TLS 1.3 进行完全加密。本地客户端代理仅建立出站连接；工厂网络上永远不会打开任何入站端口。此外，如果企业安全策略禁止云连接，本地 PC 可以与互联网完全物理隔离。</p>
+<p>可以。测量、预测和 PLC 通信均在连接分析仪的电脑上本地运行，因此工厂网络或互联网中断不会使测量停止。如果您的安全策略有要求，该电脑也可以完全与互联网隔离运行。</p>
 </div>
 </div>
 <!-- FAQ 20 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>我能自动创建自定义仪表板和 PDF 质量报告吗？</span>
+<span>ProChem 能否生成看板和 PDF 质量报告？</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>是的。ProChem 具有灵活的报告模板引擎。您可以配置该软件在每个生产批次结束时自动生成 PDF 分析证书 (COA)。这些报告可以包含统计摘要、异常样本警告和图表，并且可以自动发送给 QA 经理或存储在本地网络驱动器上。</p>
+<p>可以。ProChem 在实时看板上显示结果，并可一键将分析数据导出为 PDF 或可编辑的 Excel 报告，便于归档、审计和团队间共享。</p>
 </div>
 </div>
 </div>
@@ -713,7 +695,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH 提供全面的支持。通过 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件，用户可以上传新的参考数据以自动更新回归模型。我们还提供远程化学计量学支持，我们的专家可安全地连接以查看模型性能、运行验证测试并远程优化定标。</p>
+<p>USTECH 提供全面的支持。通过 cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件，用户可以添加新的参考数据并更新定标模型。我们还提供远程化学计量学支持，我们的专家可通过安全连接查看模型性能、运行验证测试并优化定标。</p>
 </div>
 </div>
 <!-- FAQ 23 -->
@@ -723,7 +705,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>异常样本是指其光谱特征明显偏离定标数据集的样本（由于异物、极端密度变化或超出模型范围的参数）。我们的软件计算每次扫描的马氏距离。如果样本被标记为异常样本，系统会提醒操作员并忽略该读数，以防止错误数据影响 PLC 控制回路。</p>
+<p>异常值是指光谱特征明显偏离定标数据集的样品（原因可能是异物、密度剧烈变化或参数超出模型范围）。我们的软件使用马氏距离、Hotelling T² 和 Q 残差等指标检查样品，使被标记的读数在用于工艺决策之前能够得到复核。</p>
 </div>
 </div>
 <!-- FAQ 24 -->
@@ -743,7 +725,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>是的。我们的化学计量学家在将定标数据库从旧的扫描单色仪或光电二极管阵列仪器（例如 FOSS、Bruker、Thermo）转移到 USTECH NIR 设备方面拥有丰富的经验。我们利用数学标准化算法来匹配光谱轮廓，并节省数年的参考分析工作。</p>
+<p>多数情况下可以。只要在两台仪器上测量一组转移样品，就可以使用数学标准化方法转移其他仪器的定标数据库。可行性取决于波长范围和现有数据，因此我们会与您共同评估每个案例。</p>
 </div>
 </div>
 <!-- FAQ 26 -->
@@ -753,7 +735,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件支持广泛的化学计量学建模工具。对于定量分析，它支持 PLS（偏最小二乘法）、MLR（多元线性回归）和高级机器学习模型。对于定性分类，它支持 PCA（主成分分析）、SIMCA（簇类独立软模式分类）和 SVM（支持向量机）。</p>
+<p>在定量模型方面，cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 套件提供 PLS（标准和稳健）、PCR、Ridge、Lasso、ElasticNet 和稳健 Huber 回归，并通过 AutoML 搜索自动遍历模型设置。在数据探索和异常值筛查方面，它提供 PCA 以及 Hotelling T²、Q 残差和马氏距离。</p>
 </div>
 </div>
 </div>
@@ -765,11 +747,11 @@ border-left: none !important;
 <!-- FAQ 27 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>USTECH 在线系统的典型投资回报率 (ROI) 周期是多长？</span>
+<span>USTECH 在线系统能带来怎样的投资回报？</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>大多数工业加工厂在 6 到 12 个月内即可实现全部投资回报。节省主要是通过减少原材料过度损耗（闭环公差管理）、消除不合格批次、降低实验室劳动力成本，以及通过优化干燥和混合过程来减少能源消耗来实现的。</p>
+<p>投资回收期取决于工厂产能、原料成本以及测量结果的使用方式，因此我们不提供笼统的数字。节省通常来自减少原料过量、减少不合格批次、降低实验室工作量以及优化干燥和混合过程。您可以使用我们首页上的投资回报计算器估算自己的情况，或与我们的团队讨论。</p>
 </div>
 </div>
 <!-- FAQ 28 -->
@@ -795,21 +777,21 @@ border-left: none !important;
 <!-- FAQ 30 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>USTECH 是否为工厂操作员和实验室人员提供培训？</span>
+<span>操作人员和实验室人员的培训如何安排？</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>是的。每台仪器的安装都包括全面的现场培训。我们涵盖基本的系统操作、样品准备、软件界面导航和日常维护故障排除。我们还为希望开发和维护自己的定标的质量保证经理提供高级化学计量学培训。</p>
+<p>培训需求将针对每个项目与您共同确定。如需了解面向操作人员、实验室人员和质量团队的培训选项，请联系我们的团队。</p>
 </div>
 </div>
 <!-- FAQ 31 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>在线管道传感器的典型安装时间是多长？</span>
+<span>在线管道传感器如何安装？</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>典型的管道传感器安装需要 1 到 2 天的物理安装和传感器配置。我们在预定的维护窗口期间与您的工程团队协调安装传感器法兰，然后进行电气连接、PLC 通信验证和定标验证。</p>
+<p>安装时间取决于安装位置和工厂基础设施。我们会与您的工程团队协调，在计划的维护窗口期间安装传感器，随后进行电气连接、PLC 通信检查和定标验证。</p>
 </div>
 </div>
 </div>
@@ -901,7 +883,7 @@ border-left: none !important;
             <p>专为严苛的科学与工业精度而设计。</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

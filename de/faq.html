@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="28 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.">
+<meta name="description" content="27 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.">
 <title>NIR- und FT-NIR-FAQ: Geräte, Software, Kalibrierung | USTECH</title>
 <link rel="stylesheet" href="../index.css?v=1.1.6">
 <style>
@@ -131,7 +131,7 @@ border-left: none !important;
 "name": "Wie ist die NIR-Genauigkeit im Vergleich zu herkömmlichen nasschemischen Methoden?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "NIR ist eine sekundäre Analysemethode, das heißt, sie ist anhand primärer Laborreferenzmethoden (z. B. Nasschemie) kalibriert. Sobald es kalibriert ist, erreicht es eine Wiederholbarkeit und Genauigkeit, die den Referenzmethoden sehr nahe kommt, mit dem Vorteil, dass es unendlich schneller ist (Sekunden vs. Stunden), menschliche Bedienerfehler eliminiert und keine Verbrauchsmaterialien oder gefährlichen Reagenzien benötigt."
+"text": "NIR ist eine sekundäre Analysemethode: Sie wird gegen primäre Laborreferenzmethoden (z. B. nasschemische Verfahren) kalibriert. Eine gut aufgebaute Kalibrierung kann sich der Genauigkeit der Referenzmethode annähern; wie nah, hängt vom Probenbereich und von der Qualität der Referenzdaten ab. Ergebnisse liegen in Sekunden statt Stunden vor, ganz ohne Reagenzien."
 }
 },
 {
@@ -139,7 +139,7 @@ border-left: none !important;
 "name": "Was ist der Unterschied zwischen filterbasiertem NIR, Diodenarray NIR und FT-NIR?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Filterbasierte Systeme messen nur wenige spezifische Wellenlängen, was ihre Flexibilität einschränkt. Diodenarray-Systeme messen mehrere Wellenlängen, haben jedoch eine geringere spektrale Auflösung. FT-NIR verwendet ein Interferometer, um das gesamte Nahinfrarotspektrum kontinuierlich mit extrem hoher Auflösung zu scannen und bietet so eine höhere Genauigkeit, eine bessere Kalibrierungsstabilität und die Möglichkeit, Spurenbestandteile zu erkennen."
+"text": "Filterbasierte Systeme messen nur wenige ausgewählte Wellenlängen, was ihre Flexibilität einschränkt. Diodenarray-Systeme erfassen den gesamten Bereich auf einmal und ohne bewegliche Teile, was sie in der Produktion schnell und robust macht. FT-NIR-Geräte arbeiten mit einem Interferometer und bieten hohe spektrale Auflösung und Wellenlängengenauigkeit. Welche Bauart am besten passt, hängt von der Anwendung ab."
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "Wie funktioniert der USTECH StarchQC-Analysator für beschädigte Stärke?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Der USTECH StarchQC-Analysator für beschädigte Stärke verwendet eine amperometrische Technik, um die Kinetik des Stärkeabbaus zu messen. Indem eine kleine Mehlprobe bestimmten Enzymen ausgesetzt wird, misst das Analysegerät die elektrochemische Reaktionsgeschwindigkeit beim Abbau beschädigter Stärke und liefert so innerhalb von Minuten einen hochpräzisen Prozentsatz beschädigter Stärke."
+"text": "Der USTECH StarchQC arbeitet mit einem amperometrischen Verfahren auf Basis der Iodabsorption. Eine Mehlprobe von 1.000 mg wird in einem 8-minütigen Zyklus analysiert; das Ergebnis zur Stärkeschädigung wird in AI %, NDS, UCDC, AACC und Farrand ausgegeben und über den integrierten Drucker gedruckt. Die Ergebnisse korrelieren stark mit enzymatischen Referenzmethoden."
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "Können USTECH-Spektrometer in die SPS- oder SCADA-Systeme unserer Anlage integriert werden?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Ja, absolut. Unsere Software-Suite ProChem wurde speziell für industrielle Kommunikationsprotokolle entwickelt. Es unterstützt nativ OPC UA, Modbus TCP und direkte analoge/digitale Ausgänge (4–20 mA), um Ergebnisse innerhalb von 1530 Sekunden direkt an SPS-Systeme (wie Siemens, Allen-Bradley) oder SCADA-Plattformen zu übermitteln."
+"text": "Ja. ProChem sendet die Ergebnisse über eine Ethernet-basierte Schnittstelle an die SPS der Anlage; der ProLine2550 bietet zusätzlich Modbus TCP und 4–20-mA-Ausgänge, beim Advanced-Modell auch OPC UA und PROFINET. Die Integrationsdetails für Ihr Leitsystem werden bei der Projektplanung festgelegt."
 }
 },
 {
@@ -219,15 +219,15 @@ border-left: none !important;
 "name": "Wie geht ProChem mit der Regelung von Prozessparametern um?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "ProChem berechnet Echtzeitwerte der chemischen Konzentration und sendet sie an die SCADA/SPS der Anlage. Die SPS vergleicht diese Werte mit den Sollwerten (z. B. Zielfeuchtigkeit) und moduliert Steuerventile (z. B. Dampf oder Wasserspray) mithilfe von PID-Schleifen. ProChem verfügt außerdem über integrierte Sicherheitsgrenzen, um Messwerte während der Start-/Stoppphasen des Prozesses zu ignorieren."
+"text": "ProChem berechnet Echtzeitwerte der chemischen Konzentration und sendet sie an die SCADA/SPS der Anlage. Die SPS vergleicht diese Werte mit den Sollwerten (z. B. Zielfeuchtigkeit) und moduliert Steuerventile (z. B. Dampf oder Wasserspray) mithilfe von PID-Schleifen."
 }
 },
 {
 "@type": "Question",
-"name": "Ist die caliX Software-Suite konform mit FDA 21 CFR Part 11?",
+"name": "Unterstützt die USTECH-Software die Anforderungen von FDA 21 CFR Part 11?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Ja. Die caliX Suite unterstützt die vollständige Verfolgung elektronischer Signaturen, sichere Berechtigungsstufen für Mehrbenutzerrollen, eine vollständige Audit-Trail-Protokollierung aller Kalibrierungsänderungen und die Validierung des Rohdatenexports. Sie entspricht vollständig den strengen Dokumentations- und Integritätsstandards gemäß 21 CFR Part 11 und GMP Annex 11."
+"text": "ProChem bietet Benutzerauthentifizierung, rollenbasierten Zugriff, einen Audit-Trail und elektronische Signaturen und unterstützt damit Anforderungen an die Datenintegrität wie 21 CFR Part 11 und EU-GMP Annex 11. Die Konformität selbst wird durch die Validierung des Gesamtsystems an Ihrem Standort hergestellt; fragen Sie uns nach der für Ihr Projekt verfügbaren Dokumentation."
 }
 },
 {
@@ -235,23 +235,15 @@ border-left: none !important;
 "name": "Kann die USTECH-Software offline laufen, wenn unser Anlagennetzwerk ausfällt?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Ja. Während das caliX Cloud-Dashboard Kalibrierungen und Flottendiagnosen zentral verwaltet, werden die gesamte lokale Messlogik, die optischen Berechnungen und die SPS-Kommunikationsschnittstellen lokal auf dem dedizierten PC des Instruments ausgeführt. Bei einem Ausfall des Internets oder des internen Netzwerks läuft das System offline weiter, ohne dass es zu Datenverlusten oder Prozessunterbrechungen kommt."
+"text": "Ja. Messung, Vorhersage und SPS-Kommunikation laufen lokal auf dem mit dem Analysator verbundenen PC, sodass ein Ausfall des Werksnetzes oder der Internetverbindung die Messungen nicht stoppt. Der PC kann auf Wunsch Ihrer Sicherheitsrichtlinie auch vollständig vom Internet getrennt betrieben werden."
 }
 },
 {
 "@type": "Question",
-"name": "Wie wird die Cybersicherheit bei cloudverbundenen caliX Geräten gehandhabt?",
+"name": "Kann ProChem Dashboards und PDF-Qualitätsberichte erstellen?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Die gesamte Datenkommunikation zwischen dem lokalen Instrumenten-PC und der caliX Cloud ist vollständig mit TLS 1.3 verschlüsselt. Der lokale Client-Agent stellt nur ausgehende Verbindungen her; im Anlagennetzwerk werden niemals eingehende Ports geöffnet. Darüber hinaus kann der lokale PC vollständig vom Internet getrennt werden, wenn die Sicherheitsrichtlinien des Unternehmens eine Cloud-Konnektivität verbieten."
-}
-},
-{
-"@type": "Question",
-"name": "Kann ich automatisch benutzerdefinierte Dashboards und PDF-Qualitätsberichte erstellen?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Ja. ProChem verfügt über eine flexible Berichtsvorlagen-Engine. Sie können die Software so konfigurieren, dass am Ende jeder Produktionscharge automatisierte PDF-Analysezertifikate (COAs) generiert werden. Diese Berichte können statistische Zusammenfassungen, Ausreißerwarnungen und Diagramme enthalten und können automatisch per E-Mail an QA-Manager gesendet oder auf einem lokalen Netzlaufwerk gespeichert werden."
+"text": "Ja. ProChem zeigt Ergebnisse auf Live-Dashboards an und exportiert Analysedaten mit einem Klick als PDF oder bearbeitbare Excel-Berichte für Archivierung, Audits und den Austausch zwischen Teams."
 }
 },
 {
@@ -267,7 +259,7 @@ border-left: none !important;
 "name": "Wie unterstützt USTECH die Wartung und Aktualisierung von Kalibrierungsmodellen?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "USTECH bietet umfassenden Support. Über die caliX Suite können Benutzer neue Referenzdaten hochladen, um Regressionsmodelle automatisch zu aktualisieren. Wir bieten auch Remote-Chemometrie-Support an, bei dem sich unsere Experten sicher verbinden, um die Modellleistung zu überprüfen, Validierungstests durchzuführen und Kalibrierungen aus der Ferne zu optimieren."
+"text": "USTECH bietet umfassenden Support. Über die caliX Suite können Benutzer neue Referenzdaten hinzufügen und ihre Kalibriermodelle aktualisieren. Außerdem bieten wir Chemometrie-Support aus der Ferne: Unsere Spezialisten verbinden sich sicher, um die Modellleistung zu prüfen, Validierungstests durchzuführen und Kalibrierungen zu optimieren."
 }
 },
 {
@@ -275,7 +267,7 @@ border-left: none !important;
 "name": "Was ist ein „Ausreißer“ und wie geht das System damit bei der Analyse um?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Ein Ausreißer ist eine Probe, deren spektrale Signatur erheblich vom Kalibrierungsdatensatz abweicht (aufgrund von Fremdmaterialien, extremen Dichteänderungen oder Parametern außerhalb des Modellbereichs). Unsere Software berechnet die Mahalanobis-Distanz für jeden Scan. Wenn eine Probe als Ausreißer gekennzeichnet wird, warnt das System den Bediener und ignoriert den Messwert, um zu verhindern, dass falsche Daten Auswirkungen auf die SPS-Regelkreise haben."
+"text": "Ein Ausreißer ist eine Probe, deren spektrale Signatur deutlich vom Kalibrierdatensatz abweicht (durch Fremdstoffe, extreme Dichteänderungen oder Parameter außerhalb des Modellbereichs). Unsere Software prüft Proben mit Kennzahlen wie Mahalanobis-Distanz, Hotelling-T² und Q-Residuen, sodass markierte Messwerte geprüft werden können, bevor sie für Prozessentscheidungen genutzt werden."
 }
 },
 {
@@ -291,7 +283,7 @@ border-left: none !important;
 "name": "Können Kalibrierungen, die auf älteren Spektrometern von Drittanbietern entwickelt wurden, auf USTECH übertragen werden?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Ja. Unsere Chemometriker verfügen über umfangreiche Erfahrung in der Übertragung von Kalibrierungsdatenbanken von älteren Rastermonochromatoren oder Photodiodenarray-Instrumenten (z. B. FOSS, Bruker, Thermo) auf USTECH NIR-Geräte. Wir verwenden mathematische Standardisierungsalgorithmen, um das Spektralprofil anzupassen und jahrelange Referenzanalysearbeit zu sparen."
+"text": "Oft ja. Kalibrierdatenbanken anderer Geräte lassen sich mit mathematischen Standardisierungsverfahren übertragen, sofern ein Satz von Transferproben auf beiden Geräten gemessen wird. Die Machbarkeit hängt von den Wellenlängenbereichen und den verfügbaren Daten ab, deshalb prüfen wir jeden Fall gemeinsam mit Ihnen."
 }
 },
 {
@@ -299,15 +291,15 @@ border-left: none !important;
 "name": "Welche Modellierungsalgorithmen unterstützt die caliX Suite?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Die caliX Suite unterstützt eine breite Palette chemometrischer Modellierungswerkzeuge. Für die quantitative Analyse unterstützt sie PLS (Partial Least Squares), MLR (Multiple Linear Regression) und erweiterte Modelle für maschinelles Lernen. Für die qualitative Klassifizierung werden PCA (Hauptkomponentenanalyse), SIMCA (Soft Independent Modeling of Class Analogy) und SVM (Support Vector Machines) unterstützt."
+"text": "Für quantitative Modelle bietet die caliX Suite PLS (Standard und robust), PCR, Ridge, Lasso, ElasticNet und robuste Huber-Regression sowie eine AutoML-Suche, die Modelleinstellungen automatisch durchläuft. Für Datenexploration und Ausreißerprüfung stellt sie PCA zusammen mit Hotelling-T², Q-Residuen und Mahalanobis-Distanz bereit."
 }
 },
 {
 "@type": "Question",
-"name": "Wie hoch ist der typische Return on Investment (ROI)-Zeitraum für USTECH Inline-Systeme?",
+"name": "Welchen Return on Investment können wir von USTECH-Inline-Systemen erwarten?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Die meisten industriellen Verarbeitungsanlagen erzielen innerhalb von 6 bis 12 Monaten einen vollständigen Return on Investment. Einsparungen werden durch eine geringere Rohstoffverschwendung (geschlossenes Toleranzmanagement), die Eliminierung nicht spezifikationsgerechter Chargen, geringere Arbeitskosten im Labor und einen geringeren Energieverbrauch durch optimierte Trocknungs- und Mischprozesse erzielt."
+"text": "Die Amortisationszeit hängt vom Durchsatz Ihrer Anlage, den Rohstoffkosten und der Nutzung der Messwerte ab, daher nennen wir keine pauschale Zahl. Einsparungen entstehen typischerweise durch weniger Rohstoffüberschuss, weniger Chargen außerhalb der Spezifikation, geringeren Laboraufwand sowie optimiertes Trocknen und Mischen. Ihren eigenen Fall können Sie mit dem ROI-Rechner auf unserer Startseite abschätzen oder mit unserem Team besprechen."
 }
 },
 {
@@ -328,18 +320,18 @@ border-left: none !important;
 },
 {
 "@type": "Question",
-"name": "Bietet USTECH Schulungen für Anlagenbetreiber und Laborpersonal an?",
+"name": "Wie wird die Schulung von Bedienern und Laborpersonal organisiert?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Ja. Zu jeder Instrumenteninstallation gehört eine umfassende Vor-Ort-Schulung. Wir decken den grundlegenden Systembetrieb, die Probenvorbereitung, die Navigation der Softwareschnittstelle und die Fehlerbehebung bei routinemäßigen Wartungsarbeiten ab. Wir bieten auch fortgeschrittene Chemometrieschulungen für QS-Manager an, die ihre eigenen Kalibrierungen entwickeln und pflegen möchten."
+"text": "Der Schulungsbedarf wird für jedes Projekt mit Ihnen abgestimmt. Wenden Sie sich an unser Team, um Schulungsoptionen für Bediener, Laborpersonal und QS-Teams zu besprechen."
 }
 },
 {
 "@type": "Question",
-"name": "Was ist die typische Installationszeit für einen Online-Rohrleitungssensor?",
+"name": "Wie läuft die Installation eines Inline-Rohrleitungssensors ab?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Eine typische Installation eines Rohrleitungssensors dauert 1 bis 2 Tage für die physische Montage und Sensorkonfiguration. Wir koordinieren mit Ihren Ingenieurteams die Montage des Sensorflansches während geplanter Wartungsfenster, gefolgt von elektrischen Anschlüssen, Validierung der SPS-Kommunikation und Kalibrierungsüberprüfung."
+"text": "Die Installationsdauer hängt vom Montagepunkt und der Infrastruktur Ihrer Anlage ab. Wir stimmen uns mit Ihrem Engineering-Team ab, um den Sensor in einem geplanten Wartungsfenster zu montieren; anschließend folgen elektrischer Anschluss, Prüfung der SPS-Kommunikation und Verifizierung der Kalibrierung."
 }
 }
 ]
@@ -382,7 +374,7 @@ border-left: none !important;
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="NIR- und FT-NIR-FAQ: Geräte, Software, Kalibrierung | USTECH">
-    <meta property="og:description" content="28 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.">
+    <meta property="og:description" content="27 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.">
     <meta property="og:url" content="https://www.ustechinnovations.com/de/faq.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <meta property="og:image:width" content="1200">
@@ -397,7 +389,7 @@ border-left: none !important;
     <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NIR- und FT-NIR-FAQ: Geräte, Software, Kalibrierung | USTECH">
-    <meta name="twitter:description" content="28 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.">
+    <meta name="twitter:description" content="27 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/faq.jpg">
     <link rel="manifest" href="../site.webmanifest">
 </head>
@@ -525,7 +517,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>NIR ist eine sekundäre Analysemethode, das heißt, sie ist anhand primärer Laborreferenzmethoden (z. B. Nasschemie) kalibriert. Sobald es kalibriert ist, erreicht es eine Wiederholbarkeit und Genauigkeit, die den Referenzmethoden sehr nahe kommt, mit dem Vorteil, dass es unendlich schneller ist (Sekunden vs. Stunden), menschliche Bedienerfehler eliminiert und keine Verbrauchsmaterialien oder gefährlichen Reagenzien benötigt.</p>
+<p>NIR ist eine sekundäre Analysemethode: Sie wird gegen primäre Laborreferenzmethoden (z. B. nasschemische Verfahren) kalibriert. Eine gut aufgebaute Kalibrierung kann sich der Genauigkeit der Referenzmethode annähern; wie nah, hängt vom Probenbereich und von der Qualität der Referenzdaten ab. Ergebnisse liegen in Sekunden statt Stunden vor, ganz ohne Reagenzien.</p>
 </div>
 </div>
 <!-- FAQ 3 -->
@@ -535,7 +527,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Filterbasierte Systeme messen nur wenige spezifische Wellenlängen, was ihre Flexibilität einschränkt. Diodenarray-Systeme messen mehrere Wellenlängen, haben jedoch eine geringere spektrale Auflösung. FT-NIR verwendet ein Interferometer, um das gesamte Nahinfrarotspektrum kontinuierlich mit extrem hoher Auflösung zu scannen und bietet so eine höhere Genauigkeit, eine bessere Kalibrierungsstabilität und die Möglichkeit, Spurenbestandteile zu erkennen.</p>
+<p>Filterbasierte Systeme messen nur wenige ausgewählte Wellenlängen, was ihre Flexibilität einschränkt. Diodenarray-Systeme erfassen den gesamten Bereich auf einmal und ohne bewegliche Teile, was sie in der Produktion schnell und robust macht. FT-NIR-Geräte arbeiten mit einem Interferometer und bieten hohe spektrale Auflösung und Wellenlängengenauigkeit. Welche Bauart am besten passt, hängt von der Anwendung ab.</p>
 </div>
 </div>
 <!-- FAQ 5 -->
@@ -591,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Der USTECH StarchQC-Analysator für beschädigte Stärke verwendet eine amperometrische Technik, um die Kinetik des Stärkeabbaus zu messen. Indem eine kleine Mehlprobe bestimmten Enzymen ausgesetzt wird, misst das Analysegerät die elektrochemische Reaktionsgeschwindigkeit beim Abbau beschädigter Stärke und liefert so innerhalb von Minuten einen hochpräzisen Prozentsatz beschädigter Stärke.</p>
+<p>Der USTECH StarchQC arbeitet mit einem amperometrischen Verfahren auf Basis der Iodabsorption. Eine Mehlprobe von 1.000 mg wird in einem 8-minütigen Zyklus analysiert; das Ergebnis zur Stärkeschädigung wird in AI %, NDS, UCDC, AACC und Farrand ausgegeben und über den integrierten Drucker gedruckt. Die Ergebnisse korrelieren stark mit enzymatischen Referenzmethoden.</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -637,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ja, absolut. Unsere Software-Suite ProChem wurde speziell für industrielle Kommunikationsprotokolle entwickelt. Es unterstützt nativ OPC UA, Modbus TCP und direkte analoge/digitale Ausgänge (4–20 mA), um Ergebnisse innerhalb von 1530 Sekunden direkt an SPS-Systeme (wie Siemens, Allen-Bradley) oder SCADA-Plattformen zu übermitteln.</p>
+<p>Ja. ProChem sendet die Ergebnisse über eine Ethernet-basierte Schnittstelle an die SPS der Anlage; der ProLine2550 bietet zusätzlich Modbus TCP und 4–20-mA-Ausgänge, beim Advanced-Modell auch OPC UA und PROFINET. Die Integrationsdetails für Ihr Leitsystem werden bei der Projektplanung festgelegt.</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -647,17 +639,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>ProChem berechnet Echtzeitwerte der chemischen Konzentration und sendet sie an die SCADA/SPS der Anlage. Die SPS vergleicht diese Werte mit den Sollwerten (z. B. Zielfeuchtigkeit) und moduliert Steuerventile (z. B. Dampf oder Wasserspray) mithilfe von PID-Schleifen. ProChem verfügt außerdem über integrierte Sicherheitsgrenzen, um Messwerte während der Start-/Stoppphasen des Prozesses zu ignorieren.</p>
+<p>ProChem berechnet Echtzeitwerte der chemischen Konzentration und sendet sie an die SCADA/SPS der Anlage. Die SPS vergleicht diese Werte mit den Sollwerten (z. B. Zielfeuchtigkeit) und moduliert Steuerventile (z. B. Dampf oder Wasserspray) mithilfe von PID-Schleifen.</p>
 </div>
 </div>
 <!-- FAQ 17 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Ist die cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Software-Suite konform mit FDA 21 CFR Part 11?</span>
+<span>Unterstützt die USTECH-Software die Anforderungen von FDA 21 CFR Part 11?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ja. Die cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite unterstützt die vollständige Verfolgung elektronischer Signaturen, sichere Berechtigungsstufen für Mehrbenutzerrollen, eine vollständige Audit-Trail-Protokollierung aller Kalibrierungsänderungen und die Validierung des Rohdatenexports. Sie entspricht vollständig den strengen Dokumentations- und Integritätsstandards gemäß 21 CFR Part 11 und GMP Annex 11.</p>
+<p>ProChem bietet Benutzerauthentifizierung, rollenbasierten Zugriff, einen Audit-Trail und elektronische Signaturen und unterstützt damit Anforderungen an die Datenintegrität wie 21 CFR Part 11 und EU-GMP Annex 11. Die Konformität selbst wird durch die Validierung des Gesamtsystems an Ihrem Standort hergestellt; fragen Sie uns nach der für Ihr Projekt verfügbaren Dokumentation.</p>
 </div>
 </div>
 <!-- FAQ 18 -->
@@ -667,27 +659,17 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ja. Während das cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Cloud-Dashboard Kalibrierungen und Flottendiagnosen zentral verwaltet, werden die gesamte lokale Messlogik, die optischen Berechnungen und die SPS-Kommunikationsschnittstellen lokal auf dem dedizierten PC des Instruments ausgeführt. Bei einem Ausfall des Internets oder des internen Netzwerks läuft das System offline weiter, ohne dass es zu Datenverlusten oder Prozessunterbrechungen kommt.</p>
-</div>
-</div>
-<!-- FAQ 19 -->
-<div class="faq-item">
-<button class="faq-question">
-<span>Wie wird die Cybersicherheit bei cloudverbundenen cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Geräten gehandhabt?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Die gesamte Datenkommunikation zwischen dem lokalen Instrumenten-PC und der cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Cloud ist vollständig mit TLS 1.3 verschlüsselt. Der lokale Client-Agent stellt nur ausgehende Verbindungen her; im Anlagennetzwerk werden niemals eingehende Ports geöffnet. Darüber hinaus kann der lokale PC vollständig vom Internet getrennt werden, wenn die Sicherheitsrichtlinien des Unternehmens eine Cloud-Konnektivität verbieten.</p>
+<p>Ja. Messung, Vorhersage und SPS-Kommunikation laufen lokal auf dem mit dem Analysator verbundenen PC, sodass ein Ausfall des Werksnetzes oder der Internetverbindung die Messungen nicht stoppt. Der PC kann auf Wunsch Ihrer Sicherheitsrichtlinie auch vollständig vom Internet getrennt betrieben werden.</p>
 </div>
 </div>
 <!-- FAQ 20 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Kann ich automatisch benutzerdefinierte Dashboards und PDF-Qualitätsberichte erstellen?</span>
+<span>Kann ProChem Dashboards und PDF-Qualitätsberichte erstellen?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ja. ProChem verfügt über eine flexible Berichtsvorlagen-Engine. Sie können die Software so konfigurieren, dass am Ende jeder Produktionscharge automatisierte PDF-Analysezertifikate (COAs) generiert werden. Diese Berichte können statistische Zusammenfassungen, Ausreißerwarnungen und Diagramme enthalten und können automatisch per E-Mail an QA-Manager gesendet oder auf einem lokalen Netzlaufwerk gespeichert werden.</p>
+<p>Ja. ProChem zeigt Ergebnisse auf Live-Dashboards an und exportiert Analysedaten mit einem Klick als PDF oder bearbeitbare Excel-Berichte für Archivierung, Audits und den Austausch zwischen Teams.</p>
 </div>
 </div>
 </div>
@@ -713,7 +695,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>USTECH bietet umfassenden Support. Über die cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite können Benutzer neue Referenzdaten hochladen, um Regressionsmodelle automatisch zu aktualisieren. Wir bieten auch Remote-Chemometrie-Support an, bei dem sich unsere Experten sicher verbinden, um die Modellleistung zu überprüfen, Validierungstests durchzuführen und Kalibrierungen aus der Ferne zu optimieren.</p>
+<p>USTECH bietet umfassenden Support. Über die cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite können Benutzer neue Referenzdaten hinzufügen und ihre Kalibriermodelle aktualisieren. Außerdem bieten wir Chemometrie-Support aus der Ferne: Unsere Spezialisten verbinden sich sicher, um die Modellleistung zu prüfen, Validierungstests durchzuführen und Kalibrierungen zu optimieren.</p>
 </div>
 </div>
 <!-- FAQ 23 -->
@@ -723,7 +705,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ein Ausreißer ist eine Probe, deren spektrale Signatur erheblich vom Kalibrierungsdatensatz abweicht (aufgrund von Fremdmaterialien, extremen Dichteänderungen oder Parametern außerhalb des Modellbereichs). Unsere Software berechnet die Mahalanobis-Distanz für jeden Scan. Wenn eine Probe als Ausreißer gekennzeichnet wird, warnt das System den Bediener und ignoriert den Messwert, um zu verhindern, dass falsche Daten Auswirkungen auf die SPS-Regelkreise haben.</p>
+<p>Ein Ausreißer ist eine Probe, deren spektrale Signatur deutlich vom Kalibrierdatensatz abweicht (durch Fremdstoffe, extreme Dichteänderungen oder Parameter außerhalb des Modellbereichs). Unsere Software prüft Proben mit Kennzahlen wie Mahalanobis-Distanz, Hotelling-T² und Q-Residuen, sodass markierte Messwerte geprüft werden können, bevor sie für Prozessentscheidungen genutzt werden.</p>
 </div>
 </div>
 <!-- FAQ 24 -->
@@ -743,7 +725,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ja. Unsere Chemometriker verfügen über umfangreiche Erfahrung in der Übertragung von Kalibrierungsdatenbanken von älteren Rastermonochromatoren oder Photodiodenarray-Instrumenten (z. B. FOSS, Bruker, Thermo) auf USTECH NIR-Geräte. Wir verwenden mathematische Standardisierungsalgorithmen, um das Spektralprofil anzupassen und jahrelange Referenzanalysearbeit zu sparen.</p>
+<p>Oft ja. Kalibrierdatenbanken anderer Geräte lassen sich mit mathematischen Standardisierungsverfahren übertragen, sofern ein Satz von Transferproben auf beiden Geräten gemessen wird. Die Machbarkeit hängt von den Wellenlängenbereichen und den verfügbaren Daten ab, deshalb prüfen wir jeden Fall gemeinsam mit Ihnen.</p>
 </div>
 </div>
 <!-- FAQ 26 -->
@@ -753,7 +735,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Die cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite unterstützt eine breite Palette chemometrischer Modellierungswerkzeuge. Für die quantitative Analyse unterstützt sie PLS (Partial Least Squares), MLR (Multiple Linear Regression) und erweiterte Modelle für maschinelles Lernen. Für die qualitative Klassifizierung werden PCA (Hauptkomponentenanalyse), SIMCA (Soft Independent Modeling of Class Analogy) und SVM (Support Vector Machines) unterstützt.</p>
+<p>Für quantitative Modelle bietet die cali<span class="calix-x" style="color: #38b6ff !important;">X</span> Suite PLS (Standard und robust), PCR, Ridge, Lasso, ElasticNet und robuste Huber-Regression sowie eine AutoML-Suche, die Modelleinstellungen automatisch durchläuft. Für Datenexploration und Ausreißerprüfung stellt sie PCA zusammen mit Hotelling-T², Q-Residuen und Mahalanobis-Distanz bereit.</p>
 </div>
 </div>
 </div>
@@ -765,11 +747,11 @@ border-left: none !important;
 <!-- FAQ 27 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Wie hoch ist der typische Return on Investment (ROI)-Zeitraum für USTECH Inline-Systeme?</span>
+<span>Welchen Return on Investment können wir von USTECH-Inline-Systemen erwarten?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Die meisten industriellen Verarbeitungsanlagen erzielen innerhalb von 6 bis 12 Monaten einen vollständigen Return on Investment. Einsparungen werden durch eine geringere Rohstoffverschwendung (geschlossenes Toleranzmanagement), die Eliminierung nicht spezifikationsgerechter Chargen, geringere Arbeitskosten im Labor und einen geringeren Energieverbrauch durch optimierte Trocknungs- und Mischprozesse erzielt.</p>
+<p>Die Amortisationszeit hängt vom Durchsatz Ihrer Anlage, den Rohstoffkosten und der Nutzung der Messwerte ab, daher nennen wir keine pauschale Zahl. Einsparungen entstehen typischerweise durch weniger Rohstoffüberschuss, weniger Chargen außerhalb der Spezifikation, geringeren Laboraufwand sowie optimiertes Trocknen und Mischen. Ihren eigenen Fall können Sie mit dem ROI-Rechner auf unserer Startseite abschätzen oder mit unserem Team besprechen.</p>
 </div>
 </div>
 <!-- FAQ 28 -->
@@ -795,21 +777,21 @@ border-left: none !important;
 <!-- FAQ 30 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Bietet USTECH Schulungen für Anlagenbetreiber und Laborpersonal an?</span>
+<span>Wie wird die Schulung von Bedienern und Laborpersonal organisiert?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Ja. Zu jeder Instrumenteninstallation gehört eine umfassende Vor-Ort-Schulung. Wir decken den grundlegenden Systembetrieb, die Probenvorbereitung, die Navigation der Softwareschnittstelle und die Fehlerbehebung bei routinemäßigen Wartungsarbeiten ab. Wir bieten auch fortgeschrittene Chemometrieschulungen für QS-Manager an, die ihre eigenen Kalibrierungen entwickeln und pflegen möchten.</p>
+<p>Der Schulungsbedarf wird für jedes Projekt mit Ihnen abgestimmt. Wenden Sie sich an unser Team, um Schulungsoptionen für Bediener, Laborpersonal und QS-Teams zu besprechen.</p>
 </div>
 </div>
 <!-- FAQ 31 -->
 <div class="faq-item">
 <button class="faq-question">
-<span>Was ist die typische Installationszeit für einen Online-Rohrleitungssensor?</span>
+<span>Wie läuft die Installation eines Inline-Rohrleitungssensors ab?</span>
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Eine typische Installation eines Rohrleitungssensors dauert 1 bis 2 Tage für die physische Montage und Sensorkonfiguration. Wir koordinieren mit Ihren Ingenieurteams die Montage des Sensorflansches während geplanter Wartungsfenster, gefolgt von elektrischen Anschlüssen, Validierung der SPS-Kommunikation und Kalibrierungsüberprüfung.</p>
+<p>Die Installationsdauer hängt vom Montagepunkt und der Infrastruktur Ihrer Anlage ab. Wir stimmen uns mit Ihrem Engineering-Team ab, um den Sensor in einem geplanten Wartungsfenster zu montieren; anschließend folgen elektrischer Anschluss, Prüfung der SPS-Kommunikation und Verifizierung der Kalibrierung.</p>
 </div>
 </div>
 </div>
@@ -901,7 +883,7 @@ border-left: none !important;
             <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

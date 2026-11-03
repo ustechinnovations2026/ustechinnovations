@@ -211,7 +211,7 @@
 <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
 <div>
 <strong style="color: var(--accent-gold-text);">Industrial-Grade Design:</strong>
-<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Rugged analyzers engineered for harsh factory environments &mdash; vibrations, dust, temperature, and CIP cleaning.</p>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Rugged analyzers engineered for harsh factory environments &mdash; vibrations, dust and temperature.</p>
 </div>
 <div>
 <strong style="color: var(--accent-gold-text);">Two Spectral Ranges:</strong>
@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem Process Output</h4>
 </div>
-<p>Predicted values (protein, moisture, fat, etc.) are transmitted via ProChem to your PLC/SCADA system through OPC UA, Modbus, or analog outputs for real-time process control.</p>
+<p>Predicted values (protein, moisture, fat, etc.) are transmitted via ProChem to your PLC/SCADA system for real-time process control.</p>
 </div>
 </div>
 </div>
@@ -318,7 +318,7 @@
 </tr>
 <tr>
 <td class="feature-name">Process Integration</td>
-<td class="ustech-highlight"><strong>Native</strong>. ProChem connects directly to PLC/SCADA via OPC UA, Modbus, 4&ndash;20 mA, and REST API.</td>
+<td class="ustech-highlight"><strong>Native</strong>. ProChem connects directly to PLC/SCADA over an Ethernet-based interface.</td>
 <td><strong>Limited</strong>. Typically requires custom middleware or third-party OPC servers for PLC connectivity.</td>
 <td><strong>Basic</strong>. Usually limited to analog output or proprietary protocols.</td>
 </tr>
@@ -480,8 +480,8 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">What is ProChem?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is the edge-computing software platform that runs directly at the production line level. It receives calibration models built in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> and applies them in real-time to incoming spectral scans from USTECH analyzers. The predicted chemical composition values are then communicated to factory PLC/SCADA systems through industrial communication protocols.</p>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is designed for 24/7 unattended operation in demanding industrial environments. It manages instrument health monitoring, automatic reference scanning, lamp failure detection with dual-lamp switchover, and spectral quality validation &mdash; all without requiring operator intervention.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">Whether your production facility uses Siemens, Allen-Bradley, Schneider, or ABB automation infrastructure, ProChem communicates natively through industry-standard protocols (OPC UA, Modbus TCP/RTU, 4&ndash;20 mA analog, REST API) to deliver measurement data exactly where your control logic needs it.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is designed for 24/7 unattended operation in demanding industrial environments. It manages instrument health monitoring, automatic reference scanning and spectral quality validation &mdash; all without requiring operator intervention.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem communicates with plant PLCs over an Ethernet-based interface to deliver measurement data exactly where your control logic needs it; the ProLine2550 also offers Modbus TCP, OPC UA, PROFINET and 4&ndash;20 mA outputs depending on the model.</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem Core Features</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -504,7 +504,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">Automatic Health Monitoring</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Continuous self-diagnostics including lamp intensity tracking, reference scan validation, spectral noise monitoring, and automatic dual-lamp failover.</p>
+<p style="color: rgba(255,255,255,0.85);">Continuous self-diagnostics including lamp intensity tracking, reference scan validation and spectral noise monitoring.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -518,7 +518,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">User Access Control</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Multi-level user management (Operator, Supervisor, Admin) with audit logging. 21 CFR Part 11 compliant electronic records for pharmaceutical applications.</p>
+<p style="color: rgba(255,255,255,0.85);">Multi-level user management (Operator, Supervisor, Admin) with audit logging and electronic signatures for pharmaceutical applications.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -618,6 +618,6 @@ Learn how our custom calibration methods and NIR & FT-NIR process analyzers can 
             <p>Designed for scientific and industrial precision.</p>
         </div>
     </footer>
-<script src="app.js?v=1.0.16"></script>
+<script src="app.js?v=1.0.17"></script>
 </body>
 </html>

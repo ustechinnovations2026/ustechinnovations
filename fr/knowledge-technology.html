@@ -211,7 +211,7 @@
 <div style="display: grid; gap: 1.25rem; text-align: left; margin-top: 1.5rem;">
 <div>
 <strong style="color: var(--accent-gold-text);">Conception de qualité industrielle :</strong>
-<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Analyseurs robustes conçus pour les environnements d'usine difficiles : vibrations, poussière, température et nettoyage CIP.</p>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Des analyseurs robustes conçus pour les environnements industriels exigeants : vibrations, poussière et température.</p>
 </div>
 <div>
 <strong style="color: var(--accent-gold-text);">Deux gammes spectrales :</strong>
@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>Sortie de processus ProChem</h4>
 </div>
-<p>Les valeurs prédites (protéines, humidité, graisses, etc.) sont transmises via ProChem à votre système PLC/SCADA via OPC UA, Modbus ou des sorties analogiques pour un contrôle de processus en temps réel.</p>
+<p>Les valeurs prédites (protéines, humidité, matières grasses, etc.) sont transmises par ProChem à votre système PLC/SCADA pour le contrôle de procédé en temps réel.</p>
 </div>
 </div>
 </div>
@@ -318,7 +318,7 @@
 </tr>
 <tr>
 <td class="feature-name">Intégration des processus</td>
-<td class="ustech-highlight"><strong>Indigène</strong>.  Le ProChem se connecte directement au PLC/SCADA via OPC UA, Modbus , 4-20 mA et REST API .</td>
+<td class="ustech-highlight"><strong>Natif</strong>. ProChem se connecte directement au PLC/SCADA via une interface Ethernet.</td>
 <td><strong>Limité</strong>. Nécessite généralement un middleware personnalisé ou des serveurs OPC tiers pour la connectivité PLC.</td>
 <td><strong>Basique</strong>. Généralement limité à la sortie analogique ou aux protocoles propriétaires.</td>
 </tr>
@@ -480,8 +480,8 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">Qu'est-ce que ProChem ?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem est la plate-forme logicielle Edge Computing qui s'exécute directement au niveau de la ligne de production. Il reçoit des modèles de calibrage construits en cali<span class="calix-x" style="color: #38b6ff !important;">X</span> et les applique en temps réel aux analyses spectrales entrantes des analyseurs USTECH. Les valeurs prévues de la composition chimique sont ensuite communiquées aux systèmes PLC/SCADA de l'usine via des protocoles de communication industriels.</p>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">Le ProChem est conçu pour un fonctionnement sans surveillance 24h/24 et 7j/7 dans des environnements industriels exigeants. Il gère la surveillance de l'état des instruments, l'analyse automatique des références, la détection des pannes de lampe avec commutation de deux lampes et la validation de la qualité spectrale, le tout sans nécessiter l'intervention d'un opérateur.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">Que votre installation de production utilise une infrastructure d'automatisation Siemens, Allen-Bradley, Schneider ou ABB, le ProChem communique de manière native via des protocoles standard de l'industrie (OPC UA, Modbus TCP/RTU, analogique 4-20 mA, REST API) pour fournir des données de mesure exactement là où votre logique de contrôle en a besoin.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem est conçu pour fonctionner 24 h/24 et 7 j/7 sans surveillance dans des environnements industriels exigeants. Il gère la surveillance de l'état des instruments, les mesures de référence automatiques et la validation de la qualité spectrale, sans intervention de l'opérateur.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem communique avec les automates de l'usine via une interface Ethernet pour fournir les données de mesure exactement là où votre logique de contrôle en a besoin ; le ProLine2550 propose en outre, selon le modèle, des sorties Modbus TCP, OPC UA, PROFINET et 4–20 mA.</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">Caractéristiques principales du ProChem</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -504,7 +504,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
 <h4 style="color: #ffffff;">Surveillance automatique de la santé</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Autodiagnostic continu comprenant le suivi de l'intensité de la lampe, la validation du balayage de référence, la surveillance du bruit spectral et le basculement automatique de la double lampe.</p>
+<p style="color: rgba(255,255,255,0.85);">Autodiagnostic continu : suivi de l'intensité de la lampe, validation des mesures de référence et surveillance du bruit spectral.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_batch.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -518,7 +518,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
 <h4 style="color: #ffffff;">Contrôle d'accès des utilisateurs</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Gestion des utilisateurs à plusieurs niveaux (opérateur, superviseur, administrateur) avec journalisation d'audit. Enregistrements électroniques conformes à la norme 21 CFR Part 11 pour les applications pharmaceutiques.</p>
+<p style="color: rgba(255,255,255,0.85);">Gestion des utilisateurs à plusieurs niveaux (opérateur, superviseur, administrateur) avec journal d'audit et signatures électroniques pour les applications pharmaceutiques.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -618,6 +618,6 @@ Découvrez comment nos méthodes d'étalonnage personnalisées et nos analyseurs
             <p>Conçu pour la précision scientifique et industrielle.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.16"></script>
+<script src="../app.js?v=1.0.17"></script>
 </body>
 </html>
