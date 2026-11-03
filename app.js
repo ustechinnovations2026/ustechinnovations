@@ -444,65 +444,65 @@ var SEARCH_I18N = {
   "index.html": {
     "tr": {
       "t": "Hat İçi NIR ve FT-NIR Proses Analizörleri",
-      "s": "Gıda, yem, süt ve kimya tesisleri için gerçek zamanlı hat içi NIR ve FT-NIR analizi. İsrafı azaltın, her partide spesifikasyonu tutturun, döngüyü kapatın.",
-      "k": "hat i çi nir ve ft-nir proses analizörleri gıda yem süt ve kimya tesisleri için gerçek zamanlı hat içi nir ve ft-nir analizi i srafı azaltın her partide spesifikasyonu tutturun döngüyü kapatın ana sayfa anasayfa ustech"
+      "s": "Gıda, yem, süt ve kimya tesisleri için hat içi ve hat başı NIR ve FT-NIR analizörleri; caliX kemometri ve ProChem yazılımıyla gerçek zamanlı kalite kontrolü.",
+      "k": "hat i çi nir ve ft-nir proses analizörleri gıda yem süt ve kimya tesisleri için hat içi ve hat başı nir ve ft-nir analizörleri calix kemometri ve prochem yazılımıyla gerçek zamanlı kalite kontrolü ana sayfa anasayfa ustech"
     },
     "fr": {
       "t": "Analyseurs de procédés NIR et FT-NIR en ligne",
-      "s": "Analyse NIR et FT-NIR en ligne en temps réel pour l'agroalimentaire, l'alimentation animale, le lait et la chimie. Moins de surdosage, spécifications tenues.",
-      "k": "analyseurs de procédés nir et ft-nir en ligne analyse nir et ft-nir en ligne en temps réel pour l agroalimentaire l alimentation animale le lait et la chimie moins de surdosage spécifications tenues accueil"
+      "s": "Analyseurs NIR et FT-NIR en ligne et at-line, chimiométrie caliX et logiciel ProChem : le contrôle qualité en temps réel pour l'agroalimentaire et la chimie.",
+      "k": "analyseurs de procédés nir et ft-nir en ligne analyseurs nir et ft-nir en ligne et at-line chimiométrie calix et logiciel prochem le contrôle qualité en temps réel pour l agroalimentaire et la chimie accueil"
     },
     "de": {
       "t": "Inline-NIR- und FT-NIR-Prozessanalysatoren",
-      "s": "Echtzeit-Inline-NIR- und FT-NIR-Analyse für Lebensmittel-, Futtermittel-, Molkerei- und Chemiebetriebe. Weniger Überdosierung, Spezifikation in jeder Charge.",
-      "k": "inline-nir- und ft-nir-prozessanalysatoren echtzeit-inline-nir- und ft-nir-analyse für lebensmittel- futtermittel- molkerei- und chemiebetriebe weniger überdosierung spezifikation in jeder charge startseite"
+      "s": "USTECH entwickelt Inline- und At-Line-NIR- und FT-NIR-Analysatoren, caliX-Chemometrie und ProChem für die Echtzeit-QK in Lebensmittel, Futter und Chemie.",
+      "k": "inline-nir- und ft-nir-prozessanalysatoren ustech entwickelt inline- und at-line-nir- und ft-nir-analysatoren calix-chemometrie und prochem für die echtzeit-qk in lebensmittel futter und chemie startseite"
     },
     "es": {
       "t": "Analizadores de procesos NIR y FT-NIR en línea",
-      "s": "Análisis NIR y FT-NIR en línea en tiempo real para plantas de alimentos, piensos, lácteos y química. Menos exceso de dosificación y especificación en cada lote.",
-      "k": "analizadores de procesos nir y ft-nir en línea análisis nir y ft-nir en línea en tiempo real para plantas de alimentos piensos lácteos y química menos exceso de dosificación y especificación en cada lote inicio"
+      "s": "USTECH fabrica analizadores NIR y FT-NIR en línea y at-line, la quimiometría caliX y ProChem para el control de calidad en alimentos, piensos y química.",
+      "k": "analizadores de procesos nir y ft-nir en línea ustech fabrica analizadores nir y ft-nir en línea y at-line la quimiometría calix y prochem para el control de calidad en alimentos piensos y química inicio"
     },
     "ar": {
       "t": "أجهزة تحليل العمليات المضمنة NIR وFT-NIR",
-      "s": "تحليل NIR وFT-NIR المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية. قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل USTECH.",
-      "k": "أجهزة تحليل العمليات المضمنة nir وft-nir تحليل nir وft-nir المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل ustech الرئيسية"
+      "s": "تصنع USTECH أجهزة تحليل NIR وFT-NIR المضمنة وعلى الخط، وبرنامج القياسات الكيميائية caliX وبرنامج ProChem لمراقبة الجودة الفورية في الأغذية والأعلاف والكيماويات.",
+      "k": "أجهزة تحليل العمليات المضمنة nir وft-nir تصنع ustech أجهزة تحليل nir وft-nir المضمنة وعلى الخط، وبرنامج القياسات الكيميائية calix وبرنامج prochem لمراقبة الجودة الفورية في الأغذية والأعلاف والكيماويات الرئيسية"
     },
     "zh": {
       "t": "在线 NIR 和 FT-NIR 过程分析仪",
-      "s": "面向食品、饲料、乳制品和化工工厂的实时在线 NIR 和 FT-NIR 分析。通过 USTECH 分析仪减少过剩、确保每批产品达标并实现闭环过程控制。",
-      "k": "在线 nir 和 ft-nir 过程分析仪 面向食品 饲料 乳制品和化工工厂的实时在线 nir 和 ft-nir 分析 通过 ustech 分析仪减少过剩 确保每批产品达标并实现闭环过程控制 首页 官网 ustech"
+      "s": "USTECH 提供在线和线旁 NIR 与 FT-NIR 分析仪、caliX 化学计量学软件和 ProChem 软件，用于食品、饲料和化工行业的实时质量控制。",
+      "k": "在线 nir 和 ft-nir 过程分析仪 ustech 提供在线和线旁 nir 与 ft-nir 分析仪 calix 化学计量学软件和 prochem 软件 用于食品 饲料和化工行业的实时质量控制 首页 官网 ustech"
     }
   },
   "about.html": {
     "tr": {
-      "t": "USTECH Innovations Hakkında: NIR, FT-NIR ve Kemometri Uzmanları",
-      "s": "USTECH'in arkasındaki ekip: 2023'ten bu yana NIR ve FT-NIR analizörleri, caliX yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri.",
-      "k": "ustech innovations hakkında nir ft-nir ve kemometri uzmanları ustech in arkasındaki ekip 2023 ten bu yana nir ve ft-nir analizörleri calix yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri hakkımızda hakkinda şirket ekip misyon"
+      "t": "Hakkımızda: NIR ve FT-NIR Analizörleri, Kemometri",
+      "s": "2023'te Durham, NC'de kurulan USTECH Innovations LLC; NIR ve FT-NIR proses analizörleri, caliX kemometri yazılımı ve ProChem otomasyonu geliştirir.",
+      "k": "hakkımızda nir ve ft-nir analizörleri kemometri 2023 te durham nc de kurulan ustech innovations llc nir ve ft-nir proses analizörleri calix kemometri yazılımı ve prochem otomasyonu geliştirir hakkımızda hakkinda şirket ekip misyon"
     },
     "fr": {
-      "t": "À propos de USTECH Innovations : experts NIR, FT-NIR et chimiométrie",
-      "s": "L'équipe USTECH : chimiométriciens et automaticiens développant depuis 2023 des analyseurs NIR et FT-NIR, le logiciel caliX et des étalonnages portables.",
-      "k": "à propos de ustech innovations experts nir ft-nir et chimiométrie l équipe ustech chimiométriciens et automaticiens développant depuis 2023 des analyseurs nir et ft-nir le logiciel calix et des étalonnages portables à propos entreprise équipe"
+      "t": "À propos : analyseurs NIR et FT-NIR, chimiométrie",
+      "s": "Fondée en 2023 à Durham (Caroline du Nord), USTECH Innovations LLC développe des analyseurs de procédé NIR et FT-NIR, le logiciel caliX et ProChem.",
+      "k": "à propos analyseurs nir et ft-nir chimiométrie fondée en 2023 à durham caroline du nord ustech innovations llc développe des analyseurs de procédé nir et ft-nir le logiciel calix et prochem à propos entreprise équipe"
     },
     "de": {
-      "t": "Über USTECH Innovations: NIR-, FT-NIR- und Chemometrie-Experten",
-      "s": "Das Team hinter USTECH: Chemometriker und Automatisierer, die seit 2023 NIR- und FT-NIR-Analysatoren, caliX-Software und portable Kalibrierungen entwickeln.",
-      "k": "über ustech innovations nir- ft-nir- und chemometrie-experten das team hinter ustech chemometriker und automatisierer die seit 2023 nir- und ft-nir-analysatoren calix-software und portable kalibrierungen entwickeln über uns unternehmen team"
+      "t": "Über uns: NIR- und FT-NIR-Analysatoren, Chemometrie",
+      "s": "Die 2023 in Durham, NC, gegründete USTECH Innovations LLC entwickelt NIR- und FT-NIR-Prozessanalysatoren, die Chemometrie-Software caliX und ProChem.",
+      "k": "über uns nir- und ft-nir-analysatoren chemometrie die 2023 in durham nc gegründete ustech innovations llc entwickelt nir- und ft-nir-prozessanalysatoren die chemometrie-software calix und prochem über uns unternehmen team"
     },
     "es": {
-      "t": "Acerca de USTECH Innovations: expertos en NIR, FT-NIR y quimiometría",
-      "s": "El equipo de USTECH: quimiometristas e ingenieros de automatización que desarrollan analizadores NIR y FT-NIR, software caliX y calibraciones portátiles desde 2023.",
-      "k": "acerca de ustech innovations expertos en nir ft-nir y quimiometría el equipo de ustech quimiometristas e ingenieros de automatización que desarrollan analizadores nir y ft-nir software calix y calibraciones portátiles desde 2023 sobre nosotros empresa equipo"
+      "t": "Nosotros: analizadores NIR y FT-NIR, quimiometría",
+      "s": "USTECH Innovations LLC, fundada en 2023 en Durham (Carolina del Norte), desarrolla analizadores de proceso NIR y FT-NIR, el software caliX y ProChem.",
+      "k": "nosotros analizadores nir y ft-nir quimiometría ustech innovations llc fundada en 2023 en durham carolina del norte desarrolla analizadores de proceso nir y ft-nir el software calix y prochem sobre nosotros empresa equipo"
     },
     "ar": {
-      "t": "حول USTECH Innovations: خبراء NIR وFT-NIR والكيمياء القياسية",
-      "s": "تعرف على الفريق الذي يقف وراء USTECH: علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل NIR وFT-NIR وبرمجيات caliX والمعايرات المحمولة منذ عام 2023.",
-      "k": "حول ustech innovations خبراء nir وft-nir والكيمياء القياسية تعرف على الفريق الذي يقف وراء ustech علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل nir وft-nir وبرمجيات calix والمعايرات المحمولة منذ عام 2023 من نحن الشركة الفريق"
+      "t": "من نحن: أجهزة تحليل NIR وFT-NIR والقياسات الكيميائية",
+      "s": "تأسست USTECH Innovations LLC عام 2023 في دورهام بولاية كارولاينا الشمالية، وتطوّر أجهزة تحليل العمليات NIR وFT-NIR وبرنامج caliX وأتمتة ProChem.",
+      "k": "من نحن أجهزة تحليل nir وft-nir والقياسات الكيميائية تأسست ustech innovations llc عام 2023 في دورهام بولاية كارولاينا الشمالية، وتطوّر أجهزة تحليل العمليات nir وft-nir وبرنامج calix وأتمتة prochem من نحن الشركة الفريق"
     },
     "zh": {
-      "t": "关于 USTECH Innovations：NIR、FT-NIR 与化学计量学专家",
-      "s": "了解 USTECH 团队：自2023年以来，致力于开发 NIR 和 FT-NIR 分析仪、caliX 软件及便携式校准模型的化学计量学科学家与自动化工程师。",
-      "k": "关于 ustech innovations nir ft-nir 与化学计量学专家 了解 ustech 团队 自2023年以来 致力于开发 nir 和 ft-nir 分析仪 calix 软件及便携式校准模型的化学计量学科学家与自动化工程师 关于我们 公司 团队 愿景"
+      "t": "关于我们：NIR 与 FT-NIR 分析仪及化学计量学",
+      "s": "USTECH Innovations LLC 于 2023 年在北卡罗来纳州达勒姆成立，开发 NIR 与 FT-NIR 过程分析仪、caliX 化学计量学软件和 ProChem 自动化软件。",
+      "k": "关于我们 nir 与 ft-nir 分析仪及化学计量学 ustech innovations llc 于 2023 年在北卡罗来纳州达勒姆成立 开发 nir 与 ft-nir 过程分析仪 calix 化学计量学软件和 prochem 自动化软件 关于我们 公司 团队 愿景"
     }
   },
   "contact.html": {
@@ -539,265 +539,265 @@ var SEARCH_I18N = {
   },
   "faq.html": {
     "tr": {
-      "t": "NIR ve FT-NIR SSS: Cihazlar, Yazılım, Modeller",
-      "s": "USTECH uygulama ekibinden NIR doğruluğu, spektrometre türleri, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve ROI hakkında 30 yanıt.",
-      "k": "nir ve ft-nir sss cihazlar yazılım modeller ustech uygulama ekibinden nir doğruluğu spektrometre türleri plc scada entegrasyonu kalibrasyon aktarımı bakım ve roi hakkında 30 yanıt sss sık sorulan sorular soru cevap garanti bakım"
+      "t": "NIR ve FT-NIR SSS: Cihaz, Yazılım, Kalibrasyon",
+      "s": "NIR doğruluğu, cihaz donanımı, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve yatırım getirisi üzerine USTECH uygulama ekibinden 29 soru-yanıt.",
+      "k": "nir ve ft-nir sss cihaz yazılım kalibrasyon nir doğruluğu cihaz donanımı plc scada entegrasyonu kalibrasyon aktarımı bakım ve yatırım getirisi üzerine ustech uygulama ekibinden 29 soru-yanıt sss sık sorulan sorular soru cevap garanti bakım"
     },
     "fr": {
-      "t": "FAQ NIR et FT-NIR : appareils, logiciels, modèles",
-      "s": "30 réponses sur la précision NIR, les types de spectromètres, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
-      "k": "faq nir et ft-nir appareils logiciels modèles 30 réponses sur la précision nir les types de spectromètres l intégration plc scada le transfert d étalonnage la maintenance et le roi faq questions fréquentes garantie entretien"
+      "t": "FAQ NIR et FT-NIR : appareils, logiciel, étalonnage",
+      "s": "29 réponses de l'équipe applications USTECH sur la précision NIR, le matériel, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
+      "k": "faq nir et ft-nir appareils logiciel étalonnage 29 réponses de l équipe applications ustech sur la précision nir le matériel l intégration plc scada le transfert d étalonnage la maintenance et le roi faq questions fréquentes garantie entretien"
     },
     "de": {
-      "t": "NIR- und FT-NIR-FAQ: Geräte, Software, Modelle",
-      "s": "30 Antworten zu NIR-Genauigkeit, Spektrometertypen, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI – vom Anwendungsteam von USTECH.",
-      "k": "nir- und ft-nir-faq geräte software modelle 30 antworten zu nir-genauigkeit spektrometertypen sps scada-integration kalibrierungsübertragung wartung und roi vom anwendungsteam von ustech faq häufige fragen garantie wartung"
+      "t": "NIR- und FT-NIR-FAQ: Geräte, Software, Kalibrierung",
+      "s": "29 Antworten des USTECH-Anwendungsteams zu NIR-Genauigkeit, Hardware, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI.",
+      "k": "nir- und ft-nir-faq geräte software kalibrierung 29 antworten des ustech-anwendungsteams zu nir-genauigkeit hardware sps scada-integration kalibrierungsübertragung wartung und roi faq häufige fragen garantie wartung"
     },
     "es": {
-      "t": "Preguntas frecuentes NIR y FT-NIR: equipos, software, modelos",
-      "s": "30 respuestas sobre precisión NIR, tipos de espectrómetros, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
-      "k": "preguntas frecuentes nir y ft-nir equipos software modelos 30 respuestas sobre precisión nir tipos de espectrómetros integración plc scada transferencia de calibración mantenimiento y roi preguntas frecuentes garantía mantenimiento"
+      "t": "Preguntas frecuentes sobre NIR y FT-NIR",
+      "s": "29 respuestas del equipo de aplicaciones de USTECH sobre precisión NIR, hardware, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
+      "k": "preguntas frecuentes sobre nir y ft-nir 29 respuestas del equipo de aplicaciones de ustech sobre precisión nir hardware integración plc scada transferencia de calibración mantenimiento y roi preguntas frecuentes garantía mantenimiento"
     },
     "ar": {
-      "t": "الأسئلة الشائعة حول NIR وFT-NIR: الأجهزة، البرامج، النماذج",
-      "s": "30 إجابة حول دقة NIR وأنواع المطيافات وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات USTECH.",
-      "k": "الأسئلة الشائعة حول nir وft-nir الأجهزة، البرامج، النماذج 30 إجابة حول دقة nir وأنواع المطيافات وتكامل plc scada ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات ustech الأسئلة الشائعة ضمان صيانة"
+      "t": "أسئلة شائعة حول NIR وFT-NIR: الأجهزة والبرامج والمعايرة",
+      "s": "29 إجابة من فريق تطبيقات USTECH حول دقة NIR وعتاد أجهزة التحليل وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار.",
+      "k": "أسئلة شائعة حول nir وft-nir الأجهزة والبرامج والمعايرة 29 إجابة من فريق تطبيقات ustech حول دقة nir وعتاد أجهزة التحليل وتكامل plc scada ونقل المعايرة والصيانة وعائد الاستثمار الأسئلة الشائعة ضمان صيانة"
     },
     "zh": {
-      "t": "NIR 和 FT-NIR 常见问题：设备、软件、模型",
-      "s": "USTECH 应用团队关于 NIR 精度、光谱仪类型、PLC/SCADA 集成、定标转移、维护和 ROI 的 30 个解答。",
-      "k": "nir 和 ft-nir 常见问题 设备 软件 模型 ustech 应用团队关于 nir 精度 光谱仪类型 plc scada 集成 定标转移 维护和 roi 的 30 个解答 常见问题 问答 质保 维护"
+      "t": "NIR 与 FT-NIR 常见问题：设备、软件与定标",
+      "s": "USTECH 应用团队关于 NIR 精度、分析仪硬件、PLC/SCADA 集成、定标转移、维护和投资回报的 29 个解答。",
+      "k": "nir 与 ft-nir 常见问题 设备 软件与定标 ustech 应用团队关于 nir 精度 分析仪硬件 plc scada 集成 定标转移 维护和投资回报的 29 个解答 常见问题 问答 质保 维护"
     }
   },
   "industries.html": {
     "tr": {
-      "t": "Sektörlere Göre NIR ve FT-NIR Çözümleri: Gıda, Süt, Kimya",
-      "s": "Gıda ve yem öğütme, süt işleme ve kimya veya ilaç üretiminde hat içi NIR analizinin nasıl kazanç sağladığını görün. Sektöre özel USTECH çözümleri.",
-      "k": "sektörlere göre nir ve ft-nir çözümleri gıda süt kimya gıda ve yem öğütme süt işleme ve kimya veya ilaç üretiminde hat içi nir analizinin nasıl kazanç sağladığını görün sektöre özel ustech çözümleri sektörler sektor endüstri uygulama"
+      "t": "Sektörel NIR ve FT-NIR: Gıda, Yem, Süt, Kimya",
+      "s": "Hat içi NIR analizinin gıda ve yem üretiminde, süt işlemede ve kimya-ilaç üretiminde nasıl kullanıldığını görün. Sektörünüze uygun USTECH çözümleri.",
+      "k": "sektörel nir ve ft-nir gıda yem süt kimya hat içi nir analizinin gıda ve yem üretiminde süt işlemede ve kimya-ilaç üretiminde nasıl kullanıldığını görün sektörünüze uygun ustech çözümleri sektörler sektor endüstri uygulama"
     },
     "fr": {
       "t": "Solutions NIR et FT-NIR par secteur : alimentation, produits laitiers, produits chimiques",
-      "s": "Comment l'analyse NIR en ligne devient rentable en meunerie, alimentation animale, produits laitiers et production chimique ou pharmaceutique.",
-      "k": "solutions nir et ft-nir par secteur alimentation produits laitiers produits chimiques comment l analyse nir en ligne devient rentable en meunerie alimentation animale produits laitiers et production chimique ou pharmaceutique secteurs industries applications"
+      "s": "L'analyse NIR en ligne au service de la meunerie et de l'alimentation animale, de la transformation laitière et de la production chimique et pharmaceutique.",
+      "k": "solutions nir et ft-nir par secteur alimentation produits laitiers produits chimiques l analyse nir en ligne au service de la meunerie et de l alimentation animale de la transformation laitière et de la production chimique et pharmaceutique secteurs industries applications"
     },
     "de": {
       "t": "NIR- und FT-NIR-Lösungen nach Branche: Lebensmittel, Milchprodukte, Chemie",
-      "s": "Wie sich Inline-NIR-Analyse in Lebensmittel- und Futtermittelverarbeitung, Molkerei sowie Chemie- und Pharmaproduktion auszahlt. USTECH-Lösungen.",
-      "k": "nir- und ft-nir-lösungen nach branche lebensmittel milchprodukte chemie wie sich inline-nir-analyse in lebensmittel- und futtermittelverarbeitung molkerei sowie chemie- und pharmaproduktion auszahlt ustech-lösungen branchen industrien anwendungen"
+      "s": "Wie Inline-NIR-Analytik Mühlen und Futtermittelwerke, Molkereien sowie die Chemie- und Pharmaproduktion unterstützt. Entdecken Sie die USTECH-Branchenlösungen.",
+      "k": "nir- und ft-nir-lösungen nach branche lebensmittel milchprodukte chemie wie inline-nir-analytik mühlen und futtermittelwerke molkereien sowie die chemie- und pharmaproduktion unterstützt entdecken sie die ustech-branchenlösungen branchen industrien anwendungen"
     },
     "es": {
       "t": "Soluciones NIR y FT-NIR por industria: alimentaria, láctea, química",
-      "s": "Cómo el análisis NIR en línea resulta rentable en molienda, piensos, lácteos y producción química o farmacéutica. Soluciones USTECH por sector.",
-      "k": "soluciones nir y ft-nir por industria alimentaria láctea química cómo el análisis nir en línea resulta rentable en molienda piensos lácteos y producción química o farmacéutica soluciones ustech por sector sectores industrias aplicaciones"
+      "s": "Descubra cómo el análisis NIR en línea apoya la molienda de alimentos y piensos, el procesado lácteo y la producción química o farmacéutica. Soluciones USTECH.",
+      "k": "soluciones nir y ft-nir por industria alimentaria láctea química descubra cómo el análisis nir en línea apoya la molienda de alimentos y piensos el procesado lácteo y la producción química o farmacéutica soluciones ustech sectores industrias aplicaciones"
     },
     "ar": {
       "t": "حلول NIR وFT-NIR حسب الصناعة: الأغذية، الألبان، الكيماويات",
-      "s": "اكتشف كيف يفيد تحليل NIR المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني. حلول USTECH الخاصة بالصناعة.",
-      "k": "حلول nir وft-nir حسب الصناعة الأغذية، الألبان، الكيماويات اكتشف كيف يفيد تحليل nir المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني حلول ustech الخاصة بالصناعة الصناعات التطبيقات"
+      "s": "اكتشف كيف يدعم التحليل المضمن بتقنية NIR طحن الأغذية والأعلاف ومعالجة الألبان والإنتاج الكيميائي والدوائي. استكشف حلول USTECH القطاعية.",
+      "k": "حلول nir وft-nir حسب الصناعة الأغذية، الألبان، الكيماويات اكتشف كيف يدعم التحليل المضمن بتقنية nir طحن الأغذية والأعلاف ومعالجة الألبان والإنتاج الكيميائي والدوائي استكشف حلول ustech القطاعية الصناعات التطبيقات"
     },
     "zh": {
       "t": "按行业分类的 NIR 和 FT-NIR 解决方案：食品、乳制品、化工",
-      "s": "了解在线 NIR 分析如何在食品与饲料制粉、乳制品加工以及化工或制药生产中带来回报。USTECH 行业特定解决方案。",
-      "k": "按行业分类的 nir 和 ft-nir 解决方案 食品 乳制品 化工 了解在线 nir 分析如何在食品与饲料制粉 乳制品加工以及化工或制药生产中带来回报 ustech 行业特定解决方案 行业应用 工业 解决方案"
+      "s": "了解在线 NIR 分析如何支持食品与饲料加工、乳品加工以及化工和制药生产。探索 USTECH 行业解决方案。",
+      "k": "按行业分类的 nir 和 ft-nir 解决方案 食品 乳制品 化工 了解在线 nir 分析如何支持食品与饲料加工 乳品加工以及化工和制药生产 探索 ustech 行业解决方案 行业应用 工业 解决方案"
     }
   },
   "industry-food-feed.html": {
     "tr": {
-      "t": "Yem Fabrikaları İçin Hat İçi NIR: Protein İsrafını Durdurun",
-      "s": "Alımdan bitmiş yeme kadar gerçek zamanlı NIR protein, nem ve yağ analizi. Formülasyon israfını durdurun ve USTECH ile her partiyi belgeleyin.",
-      "k": "yem fabrikaları i çin hat i çi nir protein i srafını durdurun alımdan bitmiş yeme kadar gerçek zamanlı nir protein nem ve yağ analizi formülasyon israfını durdurun ve ustech ile her partiyi belgeleyin gıda gida yem tahıl un protein nem yağ kül lif nişasta değirmen"
+      "t": "Yem Fabrikaları İçin NIR: Protein Fazlasına Son",
+      "s": "Hammadde kabulünden bitmiş yeme kadar protein, nem ve yağın gerçek zamanlı NIR analizi. Formülü hedefe göre kurun, her partiyi USTECH ile kayıt altına alın.",
+      "k": "yem fabrikaları i çin nir protein fazlasına son hammadde kabulünden bitmiş yeme kadar protein nem ve yağın gerçek zamanlı nir analizi formülü hedefe göre kurun her partiyi ustech ile kayıt altına alın gıda gida yem tahıl un protein nem yağ kül lif nişasta değirmen"
     },
     "fr": {
-      "t": "NIR en ligne pour les usines d'aliments : stop au surdosage de protéines",
-      "s": "Analyse NIR en temps réel des protéines, de l'humidité et des matières grasses, de la réception à l'aliment fini. Chaque lot documenté avec USTECH.",
-      "k": "nir en ligne pour les usines d aliments stop au surdosage de protéines analyse nir en temps réel des protéines de l humidité et des matières grasses de la réception à l aliment fini chaque lot documenté avec ustech alimentation aliments animaux céréales farine protéine humidité"
+      "t": "NIR en ligne pour l'alimentation animale",
+      "s": "Analyse NIR en temps réel des protéines, de l'humidité et des lipides, de la réception à l'aliment fini. Formulez à la cible et documentez chaque lot.",
+      "k": "nir en ligne pour l alimentation animale analyse nir en temps réel des protéines de l humidité et des lipides de la réception à l aliment fini formulez à la cible et documentez chaque lot alimentation aliments animaux céréales farine protéine humidité"
     },
     "de": {
-      "t": "Inline-NIR für Mischfutterwerke: Protein-Überdosierung stoppen",
-      "s": "Echtzeit-NIR-Analyse von Protein, Feuchte und Fett von der Annahme bis zum Fertigfutter. Weniger Rezeptur-Überdosierung, jede Charge dokumentiert.",
-      "k": "inline-nir für mischfutterwerke protein-überdosierung stoppen echtzeit-nir-analyse von protein feuchte und fett von der annahme bis zum fertigfutter weniger rezeptur-überdosierung jede charge dokumentiert lebensmittel futtermittel getreide mehl protein feuchte"
+      "t": "Inline-NIR für Futtermühlen: kein Proteinüberschuss",
+      "s": "Echtzeit-NIR-Analyse von Protein, Feuchte und Fett vom Rohstoffeingang bis zum Fertigfutter. Zielgenau formulieren und jede Charge mit USTECH dokumentieren.",
+      "k": "inline-nir für futtermühlen kein proteinüberschuss echtzeit-nir-analyse von protein feuchte und fett vom rohstoffeingang bis zum fertigfutter zielgenau formulieren und jede charge mit ustech dokumentieren lebensmittel futtermittel getreide mehl protein feuchte"
     },
     "es": {
-      "t": "NIR en Línea para Piensos: Evite Ceder Proteína",
-      "s": "Análisis NIR en tiempo real de proteína, humedad y grasa desde la recepción hasta el pienso terminado. Evite el exceso de formulación con USTECH.",
-      "k": "nir en línea para piensos evite ceder proteína análisis nir en tiempo real de proteína humedad y grasa desde la recepción hasta el pienso terminado evite el exceso de formulación con ustech alimentos piensos granos harina proteína humedad"
+      "t": "NIR para fábricas de piensos: sin exceso de proteína",
+      "s": "Análisis NIR en tiempo real de proteína, humedad y grasa desde la recepción hasta el pienso terminado. Formule al objetivo y documente cada lote con USTECH.",
+      "k": "nir para fábricas de piensos sin exceso de proteína análisis nir en tiempo real de proteína humedad y grasa desde la recepción hasta el pienso terminado formule al objetivo y documente cada lote con ustech alimentos piensos granos harina proteína humedad"
     },
     "ar": {
-      "t": "NIR المدمج لمصانع الأعلاف: أوقف هدر البروتين",
-      "s": "تحليل NIR للبروتين والرطوبة والدهون في الوقت الفعلي من الاستلام إلى العلف النهائي. أوقف هدر التركيب وقم بتوثيق كل دفعة مع USTECH.",
-      "k": "nir المدمج لمصانع الأعلاف أوقف هدر البروتين تحليل nir للبروتين والرطوبة والدهون في الوقت الفعلي من الاستلام إلى العلف النهائي أوقف هدر التركيب وقم بتوثيق كل دفعة مع ustech الأغذية والأعلاف الحبوب الدقيق البروتين الرطوبة"
+      "t": "NIR مضمن لمصانع الأعلاف: أوقف هدر البروتين",
+      "s": "تحليل NIR في الوقت الفعلي للبروتين والرطوبة والدهون من استلام المواد الخام حتى العلف النهائي. ركّب الخلطات وفق الهدف ووثّق كل دفعة مع USTECH.",
+      "k": "nir مضمن لمصانع الأعلاف أوقف هدر البروتين تحليل nir في الوقت الفعلي للبروتين والرطوبة والدهون من استلام المواد الخام حتى العلف النهائي ركّب الخلطات وفق الهدف ووثّق كل دفعة مع ustech الأغذية والأعلاف الحبوب الدقيق البروتين الرطوبة"
     },
     "zh": {
-      "t": "饲料厂在线 NIR：消除蛋白质让利",
-      "s": "从接收到成品饲料期间，实时进行蛋白质、水分和脂肪的近红外光谱(NIR)分析。使用 USTECH 停止配方让利并记录每一个批次。",
-      "k": "饲料厂在线 nir 消除蛋白质让利 从接收到成品饲料期间 实时进行蛋白质 水分和脂肪的近红外光谱 nir 分析 使用 ustech 停止配方让利并记录每一个批次 食品与饲料 谷物 面粉 蛋白质 水分 脂肪 灰分 纤维 淀粉 磨粉"
+      "t": "饲料厂在线 NIR：杜绝蛋白质过量",
+      "s": "从原料接收到成品饲料，实时 NIR 分析蛋白质、水分和脂肪。按目标配方生产，并借助 USTECH 记录每一批次。",
+      "k": "饲料厂在线 nir 杜绝蛋白质过量 从原料接收到成品饲料 实时 nir 分析蛋白质 水分和脂肪 按目标配方生产 并借助 ustech 记录每一批次 食品与饲料 谷物 面粉 蛋白质 水分 脂肪 灰分 纤维 淀粉 磨粉"
     }
   },
   "industry-dairy.html": {
     "tr": {
-      "t": "Süt Endüstrisi için Hat İçi NIR: Yağ Standardizasyonu ve Verim",
-      "s": "Her tankeri derecelendirin, tereyağı yağı israfını bitirin ve süt tesisleri için CIP uyumlu hat içi NIR ile toz nemini kontrol edin.",
-      "k": "süt endüstrisi için hat i çi nir yağ standardizasyonu ve verim her tankeri derecelendirin tereyağı yağı israfını bitirin ve süt tesisleri için cip uyumlu hat içi nir ile toz nemini kontrol edin süt sut peynir tereyağı krema yoğurt süt tozu yağ protein"
+      "t": "Süt Sektörü İçin Hat İçi NIR: Yağ Standardizasyonu",
+      "s": "Süt tesisleri için hat içi NIR: her tankeri bileşimine göre değerlendirin, yağı kapalı döngüyle standardize edin, peynir verimi ve süt tozu nemini yönetin.",
+      "k": "süt sektörü i çin hat i çi nir yağ standardizasyonu süt tesisleri için hat içi nir her tankeri bileşimine göre değerlendirin yağı kapalı döngüyle standardize edin peynir verimi ve süt tozu nemini yönetin süt sut peynir tereyağı krema yoğurt süt tozu yağ protein"
     },
     "fr": {
-      "t": "NIR en ligne pour les produits laitiers : standardisation et rendement des matières grasses",
-      "s": "Classez chaque camion-citerne, supprimez les pertes de matière grasse et maîtrisez l'humidité des poudres avec le NIR en ligne compatible CIP.",
-      "k": "nir en ligne pour les produits laitiers standardisation et rendement des matières grasses classez chaque camion-citerne supprimez les pertes de matière grasse et maîtrisez l humidité des poudres avec le nir en ligne compatible cip produits laitiers lait fromage beurre crème yaourt"
+      "t": "NIR en ligne pour la laiterie : matière grasse",
+      "s": "NIR en ligne pour laiteries : évaluez chaque citerne, standardisez la matière grasse en boucle fermée, améliorez rendement fromager et humidité des poudres.",
+      "k": "nir en ligne pour la laiterie matière grasse nir en ligne pour laiteries évaluez chaque citerne standardisez la matière grasse en boucle fermée améliorez rendement fromager et humidité des poudres produits laitiers lait fromage beurre crème yaourt"
     },
     "de": {
-      "t": "Inline-NIR für die Milchwirtschaft: Fettstandardisierung & Ausbeute",
-      "s": "Jeden Tankwagen bewerten, Butterfett-Überdosierung beenden und Pulverfeuchte regeln – mit CIP-fähigem Inline-NIR für Molkereibetriebe.",
-      "k": "inline-nir für die milchwirtschaft fettstandardisierung ausbeute jeden tankwagen bewerten butterfett-überdosierung beenden und pulverfeuchte regeln mit cip-fähigem inline-nir für molkereibetriebe molkerei milch käse butter sahne joghurt"
+      "t": "Inline-NIR für Molkereien: Fettstandardisierung",
+      "s": "Inline-NIR für Molkereien: jeden Milchtankwagen bewerten, Fett im geschlossenen Regelkreis standardisieren, Käseausbeute steigern, Pulverfeuchte im Ziel halten.",
+      "k": "inline-nir für molkereien fettstandardisierung inline-nir für molkereien jeden milchtankwagen bewerten fett im geschlossenen regelkreis standardisieren käseausbeute steigern pulverfeuchte im ziel halten molkerei milch käse butter sahne joghurt"
     },
     "es": {
-      "t": "NIR en Línea para Lácteos: Grasa y Rendimiento",
-      "s": "Clasifique cada cisterna, elimine el exceso de materia grasa y controle la humedad del polvo con NIR en línea compatible con CIP. Descubra USTECH.",
-      "k": "nir en línea para lácteos grasa y rendimiento clasifique cada cisterna elimine el exceso de materia grasa y controle la humedad del polvo con nir en línea compatible con cip descubra ustech lácteos leche queso mantequilla crema yogur"
+      "t": "NIR en línea para lácteos: estandarización de grasa",
+      "s": "NIR en línea para lácteas: evalúe cada cisterna, estandarice la grasa en lazo cerrado, suba el rendimiento quesero y controle la humedad de la leche en polvo.",
+      "k": "nir en línea para lácteos estandarización de grasa nir en línea para lácteas evalúe cada cisterna estandarice la grasa en lazo cerrado suba el rendimiento quesero y controle la humedad de la leche en polvo lácteos leche queso mantequilla crema yogur"
     },
     "ar": {
-      "t": "NIR المدمج للألبان: توحيد الدهون والإنتاجية",
-      "s": "قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام NIR المدمج المتوافق مع CIP والمصمم لمصانع الألبان. استكشف حلول USTECH.",
-      "k": "nir المدمج للألبان توحيد الدهون والإنتاجية قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام nir المدمج المتوافق مع cip والمصمم لمصانع الألبان استكشف حلول ustech الألبان الحليب الجبن الزبدة الزبادي مسحوق الحليب"
+      "t": "NIR مضمن للألبان: توحيد نسبة الدهن والمردود",
+      "s": "NIR مضمن لمصانع الألبان: تقييم كل صهريج حليب، وتوحيد نسبة الدهن بتحكم مغلق الحلقة، ورفع مردود الخثارة، وضبط رطوبة الحليب المجفف على الهدف.",
+      "k": "nir مضمن للألبان توحيد نسبة الدهن والمردود nir مضمن لمصانع الألبان تقييم كل صهريج حليب، وتوحيد نسبة الدهن بتحكم مغلق الحلقة، ورفع مردود الخثارة، وضبط رطوبة الحليب المجفف على الهدف الألبان الحليب الجبن الزبدة الزبادي مسحوق الحليب"
     },
     "zh": {
-      "t": "乳制品在线 NIR：脂肪标准化与产量",
-      "s": "使用为乳制品工厂打造的兼容 CIP 的在线 NIR 对每辆奶罐车进行分级，终结黄油脂肪让利并控制乳粉水分。探索 USTECH 解决方案。",
-      "k": "乳制品在线 nir 脂肪标准化与产量 使用为乳制品工厂打造的兼容 cip 的在线 nir 对每辆奶罐车进行分级 终结黄油脂肪让利并控制乳粉水分 探索 ustech 解决方案 乳制品 牛奶 奶酪 黄油 稀奶油 酸奶 乳粉 脂肪 蛋白质"
+      "t": "乳品在线 NIR：脂肪标准化与得率",
+      "s": "面向乳品厂的在线 NIR：评估每一辆奶罐车、以闭环控制标准化脂肪、提高凝乳得率，并将奶粉水分保持在目标范围内。",
+      "k": "乳品在线 nir 脂肪标准化与得率 面向乳品厂的在线 nir 评估每一辆奶罐车 以闭环控制标准化脂肪 提高凝乳得率 并将奶粉水分保持在目标范围内 乳制品 牛奶 奶酪 黄油 稀奶油 酸奶 乳粉 脂肪 蛋白质"
     }
   },
   "industry-chemical-pharma.html": {
     "tr": {
-      "t": "Kimya ve İlaç Proses Analitiği (PAT)",
-      "s": "İlaç ve kimya tesisleri için FDA 21 CFR Part 11'e hazır NIR: hammadde kimliği, karışım tekdüzeliği, kurutma uç noktası ve reaksiyon izleme.",
-      "k": "kimya ve i laç proses analitiği pat i laç ve kimya tesisleri için fda 21 cfr part 11 e hazır nir hammadde kimliği karışım tekdüzeliği kurutma uç noktası ve reaksiyon izleme kimya ilaç ilac farma polimer reçine hidroksil karışım"
+      "t": "Kimya ve İlaç İçin NIR Proses Analitiği (PAT)",
+      "s": "Kimya ve ilaç tesisleri için hat içi NIR proses analitik teknolojisi (PAT): hammadde doğrulama, karışım homojenliği ve reaksiyon son noktası takibi.",
+      "k": "kimya ve i laç i çin nir proses analitiği pat kimya ve ilaç tesisleri için hat içi nir proses analitik teknolojisi pat hammadde doğrulama karışım homojenliği ve reaksiyon son noktası takibi kimya ilaç ilac farma polimer reçine hidroksil karışım"
     },
     "fr": {
-      "t": "Analyse des processus chimiques et pharmaceutiques (PAT)",
-      "s": "NIR conforme FDA 21 CFR Part 11 pour la pharma et la chimie : identification des matières premières, uniformité de mélange, point final de séchage.",
-      "k": "analyse des processus chimiques et pharmaceutiques pat nir conforme fda 21 cfr part 11 pour la pharma et la chimie identification des matières premières uniformité de mélange point final de séchage chimie pharmacie pharma polymère résine"
+      "t": "NIR et analyse de procédé chimie-pharma (PAT)",
+      "s": "PAT par NIR en ligne pour la chimie et la pharmacie : vérification des matières premières, homogénéité des mélanges, fin de réaction.",
+      "k": "nir et analyse de procédé chimie-pharma pat pat par nir en ligne pour la chimie et la pharmacie vérification des matières premières homogénéité des mélanges fin de réaction chimie pharmacie pharma polymère résine"
     },
     "de": {
-      "t": "Chemische und pharmazeutische Prozessanalytik (PAT)",
-      "s": "Bereit für FDA 21 CFR Part 11 NIR für Pharma- und Chemieanlagen: Echtzeit-PAT für Rohstoff-ID, Mischungsgleichmäßigkeit, Trocknungsendpunkt und Reaktionen.",
-      "k": "chemische und pharmazeutische prozessanalytik pat bereit für fda 21 cfr part 11 nir für pharma- und chemieanlagen echtzeit-pat für rohstoff-id mischungsgleichmäßigkeit trocknungsendpunkt und reaktionen chemie pharma polymer harz"
+      "t": "NIR für Prozessanalytik in Chemie und Pharma (PAT)",
+      "s": "Inline-NIR als Prozessanalysetechnik (PAT) für Chemie- und Pharmawerke: Rohstoffprüfung, Mischungshomogenität und Erkennung von Reaktionsendpunkten.",
+      "k": "nir für prozessanalytik in chemie und pharma pat inline-nir als prozessanalysetechnik pat für chemie- und pharmawerke rohstoffprüfung mischungshomogenität und erkennung von reaktionsendpunkten chemie pharma polymer harz"
     },
     "es": {
-      "t": "Analítica de Procesos (PAT) para Química y Farma",
-      "s": "NIR listo para FDA 21 CFR Part 11 en plantas químicas y farmacéuticas: PAT en tiempo real para materias primas, uniformidad de mezcla y secado.",
-      "k": "analítica de procesos pat para química y farma nir listo para fda 21 cfr part 11 en plantas químicas y farmacéuticas pat en tiempo real para materias primas uniformidad de mezcla y secado química farmacéutica farma polímero resina"
+      "t": "NIR para procesos químicos y farmacéuticos (PAT)",
+      "s": "PAT con NIR en línea para plantas químicas y farmacéuticas: verificación de materias primas, homogeneidad de mezcla y fin de reacción.",
+      "k": "nir para procesos químicos y farmacéuticos pat pat con nir en línea para plantas químicas y farmacéuticas verificación de materias primas homogeneidad de mezcla y fin de reacción química farmacéutica farma polímero resina"
     },
     "ar": {
-      "t": "تحليلات عمليات الكيماويات والأدوية (PAT)",
-      "s": "NIR الجاهز لـ FDA 21 CFR Part 11 لمصانع الأدوية والكيماويات: PAT في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات.",
-      "k": "تحليلات عمليات الكيماويات والأدوية pat nir الجاهز لـ fda 21 cfr part 11 لمصانع الأدوية والكيماويات pat في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات الكيمياء والصيدلة الأدوية البوليمر الراتنج"
+      "t": "NIR لتحليلات العمليات الكيميائية والدوائية (PAT)",
+      "s": "تقنية تحليل العمليات (PAT) المضمنة بتقنية NIR للمصانع الكيميائية والدوائية: التحقق من المواد الخام وتجانس الخلطات وتحديد نقاط نهاية التفاعل.",
+      "k": "nir لتحليلات العمليات الكيميائية والدوائية pat تقنية تحليل العمليات pat المضمنة بتقنية nir للمصانع الكيميائية والدوائية التحقق من المواد الخام وتجانس الخلطات وتحديد نقاط نهاية التفاعل الكيمياء والصيدلة الأدوية البوليمر الراتنج"
     },
     "zh": {
-      "t": "化工与制药过程分析 (PAT)",
-      "s": "适用于制药和化工厂并符合 FDA 21 CFR Part 11 的 NIR：针对原材料 ID、混合均匀度、干燥终点和反应的实时 PAT。",
-      "k": "化工与制药过程分析 pat 适用于制药和化工厂并符合 fda 21 cfr part 11 的 nir 针对原材料 id 混合均匀度 干燥终点和反应的实时 pat 化工与制药 聚合物 树脂 羟基值 反应监测 结晶 干燥"
+      "t": "用于化工与制药过程分析 (PAT) 的 NIR",
+      "s": "面向化工和制药工厂的在线 NIR 过程分析技术 (PAT)：原料验证、混合均匀度和反应终点监测。",
+      "k": "用于化工与制药过程分析 pat 的 nir 面向化工和制药工厂的在线 nir 过程分析技术 pat 原料验证 混合均匀度和反应终点监测 化工与制药 聚合物 树脂 羟基值 反应监测 结晶 干燥"
     }
   },
   "products.html": {
     "tr": {
-      "t": "NIR ve FT-NIR Analizörleri, Yazılım ve Kalibrasyonlar",
-      "s": "USTECH ürün ailesini keşfedin: ProLine hat içi NIR ve FT-NIR analizörleri, caliX kemometri yazılımı, ProChem otomasyonu ve kullanıma hazır kalibrasyon modelleri.",
-      "k": "nir ve ft-nir analizörleri yazılım ve kalibrasyonlar ustech ürün ailesini keşfedin proline hat içi nir ve ft-nir analizörleri calix kemometri yazılımı prochem otomasyonu ve kullanıma hazır kalibrasyon modelleri ürünler urunler cihaz yazılım kalibrasyon"
+      "t": "NIR ve FT-NIR Analizörleri, Cihazlar ve Yazılım",
+      "s": "USTECH cihaz ve yazılımlarını keşfedin: hat içi ve hat başı NIR ve FT-NIR analizörleri, nişasta hasarı analizörü, laboratuvar değirmeni, caliX ve ProChem.",
+      "k": "nir ve ft-nir analizörleri cihazlar ve yazılım ustech cihaz ve yazılımlarını keşfedin hat içi ve hat başı nir ve ft-nir analizörleri nişasta hasarı analizörü laboratuvar değirmeni calix ve prochem ürünler urunler cihaz yazılım kalibrasyon"
     },
     "fr": {
-      "t": "Analyseurs NIR et FT-NIR, logiciels et étalonnages",
-      "s": "La gamme USTECH : analyseurs en ligne NIR et FT-NIR ProLine, logiciel de chimiométrie caliX, automatisation ProChem et modèles d'étalonnage prêts à l'emploi.",
-      "k": "analyseurs nir et ft-nir logiciels et étalonnages la gamme ustech analyseurs en ligne nir et ft-nir proline logiciel de chimiométrie calix automatisation prochem et modèles d étalonnage prêts à l emploi produits appareils logiciels étalonnage"
+      "t": "Analyseurs NIR et FT-NIR, labo et logiciels",
+      "s": "Appareils et logiciels USTECH : analyseurs NIR et FT-NIR en ligne et at-line, analyseur d'amidon endommagé, broyeur de laboratoire, caliX et ProChem.",
+      "k": "analyseurs nir et ft-nir labo et logiciels appareils et logiciels ustech analyseurs nir et ft-nir en ligne et at-line analyseur d amidon endommagé broyeur de laboratoire calix et prochem produits appareils logiciels étalonnage"
     },
     "de": {
-      "t": "NIR- und FT-NIR-Analysatoren, Software & Kalibrierungen",
-      "s": "Die USTECH-Produktfamilie: ProLine Inline-NIR- und FT-NIR-Analysatoren, caliX Chemometrie-Software, ProChem-Automatisierung und fertige Kalibriermodelle.",
-      "k": "nir- und ft-nir-analysatoren software kalibrierungen die ustech-produktfamilie proline inline-nir- und ft-nir-analysatoren calix chemometrie-software prochem-automatisierung und fertige kalibriermodelle produkte geräte software kalibrierung"
+      "t": "NIR- und FT-NIR-Analysatoren, Laborgeräte, Software",
+      "s": "USTECH-Geräte und -Software: Inline- und At-Line-NIR- und FT-NIR-Analysatoren, Stärkeschädigungs-Analysator, Labormühle, caliX und ProChem.",
+      "k": "nir- und ft-nir-analysatoren laborgeräte software ustech-geräte und -software inline- und at-line-nir- und ft-nir-analysatoren stärkeschädigungs-analysator labormühle calix und prochem produkte geräte software kalibrierung"
     },
     "es": {
-      "t": "Analizadores NIR y FT-NIR, Software y Calibraciones",
-      "s": "Familia de productos USTECH: analizadores NIR y FT-NIR en línea ProLine, software de quimiometría caliX, automatización ProChem y modelos de calibración listos.",
-      "k": "analizadores nir y ft-nir software y calibraciones familia de productos ustech analizadores nir y ft-nir en línea proline software de quimiometría calix automatización prochem y modelos de calibración listos productos dispositivos software calibración"
+      "t": "Analizadores NIR/FT-NIR, equipos de lab y software",
+      "s": "Equipos y software de USTECH: analizadores NIR y FT-NIR en línea y at-line, analizador de almidón dañado, molino de laboratorio, caliX y ProChem.",
+      "k": "analizadores nir ft-nir equipos de lab y software equipos y software de ustech analizadores nir y ft-nir en línea y at-line analizador de almidón dañado molino de laboratorio calix y prochem productos dispositivos software calibración"
     },
     "ar": {
-      "t": "أجهزة تحليل NIR وFT-NIR والبرمجيات والمعايرات",
-      "s": "اكتشف عائلة منتجات USTECH: أجهزة تحليل ProLine NIR وFT-NIR المدمجة، وبرمجيات caliX القياسية الكيميائية، وأتمتة ProChem ونماذج المعايرة الجاهزة.",
-      "k": "أجهزة تحليل nir وft-nir والبرمجيات والمعايرات اكتشف عائلة منتجات ustech أجهزة تحليل proline nir وft-nir المدمجة، وبرمجيات calix القياسية الكيميائية، وأتمتة prochem ونماذج المعايرة الجاهزة المنتجات الأجهزة البرمجيات المعايرة"
+      "t": "أجهزة تحليل NIR وFT-NIR وأجهزة المختبر والبرامج",
+      "s": "اكتشف أجهزة وبرامج USTECH: أجهزة تحليل NIR وFT-NIR المضمنة وعلى الخط، ومحلل تلف النشا، وطاحونة مختبرية، وcaliX وProChem.",
+      "k": "أجهزة تحليل nir وft-nir وأجهزة المختبر والبرامج اكتشف أجهزة وبرامج ustech أجهزة تحليل nir وft-nir المضمنة وعلى الخط، ومحلل تلف النشا، وطاحونة مختبرية، وcalix وprochem المنتجات الأجهزة البرمجيات المعايرة"
     },
     "zh": {
-      "t": "NIR 和 FT-NIR 分析仪、软件及校准模型",
-      "s": "探索 USTECH 产品系列：ProLine 在线 NIR 和 FT-NIR 分析仪、caliX 化学计量学软件、ProChem 自动化系统和现成的校准模型。",
-      "k": "nir 和 ft-nir 分析仪 软件及校准模型 探索 ustech 产品系列 proline 在线 nir 和 ft-nir 分析仪 calix 化学计量学软件 prochem 自动化系统和现成的校准模型 产品中心 硬件设备 软件系统 校准模型"
+      "t": "NIR 与 FT-NIR 分析仪、实验室仪器与软件",
+      "s": "探索 USTECH 设备与软件：在线和线旁 NIR 与 FT-NIR 分析仪、破损淀粉分析仪、实验室磨粉机、caliX 和 ProChem。",
+      "k": "nir 与 ft-nir 分析仪 实验室仪器与软件 探索 ustech 设备与软件 在线和线旁 nir 与 ft-nir 分析仪 破损淀粉分析仪 实验室磨粉机 calix 和 prochem 产品中心 硬件设备 软件系统 校准模型"
     }
   },
   "products-devices.html": {
     "tr": {
-      "t": "Hat İçi ve Hat Başı Kalite Kontrolü için NIR ve FT-NIR Analizör Cihazları",
-      "s": "USTECH NIR donanimini karsilastirin: ProLine17EC ve ProLine17ECS hat ici analizorler, ProLine2550 proses analizoru, MasterLine17EC hat basi kalite kontrol ve Tornado+ numune degirmenleri.",
-      "k": "hat i çi ve hat başı kalite kontrolü için nir ve ft-nir analizör cihazları ustech nir donanimini karsilastirin proline17ec ve proline17ecs hat ici analizorler proline2550 proses analizoru masterline17ec hat basi kalite kontrol ve tornado numune degirmenleri cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı"
+      "t": "NIR ve FT-NIR Analizörleri ve Laboratuvar Cihazları",
+      "s": "USTECH cihazlarını karşılaştırın: ProLine17EC/17ECS hat içi NIR, ProLine2550 FT-NIR, MasterLine17EC hat başı NIR, StarchQC nişasta analizörü, Tornado+ değirmen.",
+      "k": "nir ve ft-nir analizörleri ve laboratuvar cihazları ustech cihazlarını karşılaştırın proline17ec 17ecs hat içi nir proline2550 ft-nir masterline17ec hat başı nir starchqc nişasta analizörü tornado değirmen cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı"
     },
     "fr": {
-      "t": "Appareils d'analyse NIR et FT-NIR pour le contrôle qualité en ligne et at-line",
-      "s": "Comparez le materiel NIR USTECH : analyseurs en ligne ProLine17EC et ProLine17ECS, analyseur de processus ProLine2550, controle qualite at-line MasterLine17EC et broyeurs Tornado+.",
-      "k": "appareils d analyse nir et ft-nir pour le contrôle qualité en ligne et at-line comparez le materiel nir ustech analyseurs en ligne proline17ec et proline17ecs analyseur de processus proline2550 controle qualite at-line masterline17ec et broyeurs tornado appareils analyseur spectromètre capteur matériel"
+      "t": "Analyseurs NIR et FT-NIR et appareils de labo",
+      "s": "Comparez les appareils USTECH : ProLine17EC et 17ECS NIR en ligne, ProLine2550 FT-NIR, MasterLine17EC NIR at-line, analyseur StarchQC, broyeur Tornado+.",
+      "k": "analyseurs nir et ft-nir et appareils de labo comparez les appareils ustech proline17ec et 17ecs nir en ligne proline2550 ft-nir masterline17ec nir at-line analyseur starchqc broyeur tornado appareils analyseur spectromètre capteur matériel"
     },
     "de": {
-      "t": "NIR- und FT-NIR-Analysegeräte für Inline- & At-Line-QC",
-      "s": "Vergleichen Sie USTECH NIR-Hardware: Inline-Analysatoren ProLine17EC und ProLine17ECS, Prozessanalysator ProLine2550, At-Line-QC MasterLine17EC und Tornado+ Probenmuehlen.",
-      "k": "nir- und ft-nir-analysegeräte für inline- at-line-qc vergleichen sie ustech nir-hardware inline-analysatoren proline17ec und proline17ecs prozessanalysator proline2550 at-line-qc masterline17ec und tornado probenmuehlen geräte analysator spektrometer sensor hardware"
+      "t": "NIR- und FT-NIR-Analysatoren und Laborgeräte",
+      "s": "USTECH-Geräte im Vergleich: ProLine17EC und 17ECS Inline-NIR, ProLine2550 FT-NIR, MasterLine17EC At-Line-NIR, StarchQC-Stärkeanalysator, Tornado+-Mühle.",
+      "k": "nir- und ft-nir-analysatoren und laborgeräte ustech-geräte im vergleich proline17ec und 17ecs inline-nir proline2550 ft-nir masterline17ec at-line-nir starchqc-stärkeanalysator tornado -mühle geräte analysator spektrometer sensor hardware"
     },
     "es": {
-      "t": "Analizadores NIR y FT-NIR para Control en Línea y At-Line",
-      "s": "Compare el hardware NIR de USTECH: analizadores en linea ProLine17EC y ProLine17ECS, analizador de procesos ProLine2550, control at-line MasterLine17EC y molinos Tornado+.",
-      "k": "analizadores nir y ft-nir para control en línea y at-line compare el hardware nir de ustech analizadores en linea proline17ec y proline17ecs analizador de procesos proline2550 control at-line masterline17ec y molinos tornado dispositivos analizador espectrómetro sensor hardware"
+      "t": "Analizadores NIR y FT-NIR y equipos de laboratorio",
+      "s": "Compare los equipos USTECH: ProLine17EC y 17ECS NIR en línea, ProLine2550 FT-NIR, MasterLine17EC NIR at-line, analizador StarchQC y molino Tornado+.",
+      "k": "analizadores nir y ft-nir y equipos de laboratorio compare los equipos ustech proline17ec y 17ecs nir en línea proline2550 ft-nir masterline17ec nir at-line analizador starchqc y molino tornado dispositivos analizador espectrómetro sensor hardware"
     },
     "ar": {
-      "t": "أجهزة تحليل NIR وFT-NIR لمراقبة الجودة المدمجة وفي الموقع",
-      "s": "قارن أجهزة USTECH NIR: محللات ProLine17EC و ProLine17ECS المضمنة، محلل العمليات ProLine2550، وحدة MasterLine17EC ومطاحن Tornado+.",
-      "k": "أجهزة تحليل nir وft-nir لمراقبة الجودة المدمجة وفي الموقع قارن أجهزة ustech nir محللات proline17ec و proline17ecs المضمنة، محلل العمليات proline2550، وحدة masterline17ec ومطاحن tornado الأجهزة المحللات أجهزة الطيف المستشعرات"
+      "t": "أجهزة تحليل NIR وFT-NIR وأجهزة المختبر",
+      "s": "قارن أجهزة USTECH: ProLine17EC و17ECS بتقنية NIR المضمنة، وProLine2550 بتقنية FT-NIR، وMasterLine17EC على الخط، ومحلل النشا StarchQC، وطاحونة Tornado+.",
+      "k": "أجهزة تحليل nir وft-nir وأجهزة المختبر قارن أجهزة ustech proline17ec و17ecs بتقنية nir المضمنة، وproline2550 بتقنية ft-nir، وmasterline17ec على الخط، ومحلل النشا starchqc، وطاحونة tornado الأجهزة المحللات أجهزة الطيف المستشعرات"
     },
     "zh": {
-      "t": "用于在线及线旁质控的 NIR 和 FT-NIR 分析仪设备",
-      "s": "比较 USTECH NIR 硬件：ProLine17EC 和 ProLine17ECS 在线分析仪、ProLine2550 过程分析仪、MasterLine17EC 线旁质控以及 Tornado+ 粉碎研磨仪。",
-      "k": "用于在线及线旁质控的 nir 和 ft-nir 分析仪设备 比较 ustech nir 硬件 proline17ec 和 proline17ecs 在线分析仪 proline2550 过程分析仪 masterline17ec 线旁质控以及 tornado 粉碎研磨仪 硬件设备 光谱仪 分析仪 在线近红外 传感器 线旁"
+      "t": "NIR 与 FT-NIR 分析仪及实验室设备",
+      "s": "比较 USTECH 设备：ProLine17EC 和 17ECS 在线 NIR、ProLine2550 FT-NIR、MasterLine17EC 线旁 NIR、StarchQC 破损淀粉分析仪和 Tornado+ 磨粉机。",
+      "k": "nir 与 ft-nir 分析仪及实验室设备 比较 ustech 设备 proline17ec 和 17ecs 在线 nir proline2550 ft-nir masterline17ec 线旁 nir starchqc 破损淀粉分析仪和 tornado 磨粉机 硬件设备 光谱仪 分析仪 在线近红外 传感器 线旁"
     }
   },
   "products-software.html": {
     "tr": {
-      "t": "caliX ve ProChem: Kemometri ve PAT Yazılımı",
-      "s": "caliX AutoML ile dakikalar içinde NIR kalibrasyonları oluşturun ve gerçek kapalı döngü proses kontrolü için sonuçları ProChem ile PLC/SCADA'ya bağlayın.",
-      "k": "calix ve prochem kemometri ve pat yazılımı calix automl ile dakikalar içinde nir kalibrasyonları oluşturun ve gerçek kapalı döngü proses kontrolü için sonuçları prochem ile plc scada ya bağlayın yazılım yazilim kemometri otomasyon"
+      "t": "caliX ve ProChem: Kemometri ve Proses Yazılımı",
+      "s": "caliX AutoML ile NIR kalibrasyon modelleri kurun, ProChem ile hatta çalıştırın: canlı izleme panelleri, PLC/SCADA bağlantısı ve kapalı döngü kontrol.",
+      "k": "calix ve prochem kemometri ve proses yazılımı calix automl ile nir kalibrasyon modelleri kurun prochem ile hatta çalıştırın canlı izleme panelleri plc scada bağlantısı ve kapalı döngü kontrol yazılım yazilim kemometri otomasyon"
     },
     "fr": {
       "t": "caliX & ProChem : Logiciels de chimiométrie et PAT",
-      "s": "Créez des étalonnages NIR en quelques minutes avec caliX AutoML et reliez les résultats au PLC/SCADA via ProChem pour un contrôle en boucle fermée.",
-      "k": "calix prochem logiciels de chimiométrie et pat créez des étalonnages nir en quelques minutes avec calix automl et reliez les résultats au plc scada via prochem pour un contrôle en boucle fermée logiciels chimiométrie automatisatıon"
+      "s": "Créez vos étalonnages NIR avec la chimiométrie AutoML de caliX, puis exploitez-les en ligne avec ProChem : tableaux de bord, liaison PLC/SCADA, boucle fermée.",
+      "k": "calix prochem logiciels de chimiométrie et pat créez vos étalonnages nir avec la chimiométrie automl de calix puis exploitez-les en ligne avec prochem tableaux de bord liaison plc scada boucle fermée logiciels chimiométrie automatisatıon"
     },
     "de": {
       "t": "caliX & ProChem: Chemometrie- und PAT-Software",
-      "s": "Erstellen Sie NIR-Kalibrierungen in Minuten mit caliX AutoML und übertragen Sie Ergebnisse mit ProChem an SPS/SCADA für echte Closed-Loop-Prozesssteuerung.",
-      "k": "calix prochem chemometrie- und pat-software erstellen sie nir-kalibrierungen in minuten mit calix automl und übertragen sie ergebnisse mit prochem an sps scada für echte closed-loop-prozesssteuerung software chemometrie automatisierung"
+      "s": "NIR-Kalibrierungen mit caliX-AutoML erstellen und mit ProChem an der Linie betreiben: Live-Dashboards, SPS/SCADA-Anbindung und geschlossener Regelkreis.",
+      "k": "calix prochem chemometrie- und pat-software nir-kalibrierungen mit calix-automl erstellen und mit prochem an der linie betreiben live-dashboards sps scada-anbindung und geschlossener regelkreis software chemometrie automatisierung"
     },
     "es": {
       "t": "caliX y ProChem: Software de Quimiometría y PAT",
-      "s": "Cree calibraciones NIR en minutos con caliX AutoML y conecte los resultados al PLC/SCADA con ProChem para un control de proceso en lazo cerrado real.",
-      "k": "calix y prochem software de quimiometría y pat cree calibraciones nir en minutos con calix automl y conecte los resultados al plc scada con prochem para un control de proceso en lazo cerrado real software quimiometría automatización"
+      "s": "Cree calibraciones NIR con la quimiometría AutoML de caliX y ejecútelas en la línea con ProChem: paneles en vivo, enlace PLC/SCADA y control en lazo cerrado.",
+      "k": "calix y prochem software de quimiometría y pat cree calibraciones nir con la quimiometría automl de calix y ejecútelas en la línea con prochem paneles en vivo enlace plc scada y control en lazo cerrado software quimiometría automatización"
     },
     "ar": {
       "t": "caliX و ProChem: القياسات الكيميائية وبرمجيات PAT",
-      "s": "أنشئ معايرات NIR في دقائق باستخدام caliX AutoML واربط النتائج بـ PLC/SCADA باستخدام ProChem للتحكم الحقيقي في حلقة العملية المغلقة.",
-      "k": "calix و prochem القياسات الكيميائية وبرمجيات pat أنشئ معايرات nir في دقائق باستخدام calix automl واربط النتائج بـ plc scada باستخدام prochem للتحكم الحقيقي في حلقة العملية المغلقة البرمجيات الكيموميتريكس الأتمتة"
+      "s": "أنشئ معايرات NIR باستخدام AutoML في caliX، ثم شغّلها على خط الإنتاج مع ProChem: لوحات معلومات مباشرة وربط PLC/SCADA وتحكم مغلق الحلقة.",
+      "k": "calix و prochem القياسات الكيميائية وبرمجيات pat أنشئ معايرات nir باستخدام automl في calix، ثم شغّلها على خط الإنتاج مع prochem لوحات معلومات مباشرة وربط plc scada وتحكم مغلق الحلقة البرمجيات الكيموميتريكس الأتمتة"
     },
     "zh": {
       "t": "caliX 与 ProChem：化学计量学与 PAT 软件",
-      "s": "使用 caliX AutoML 在几分钟内建立 NIR 校准模型，并通过 ProChem 将结果连接至 PLC/SCADA 以实现真正的闭环过程控制。",
-      "k": "calix 与 prochem 化学计量学与 pat 软件 使用 calix automl 在几分钟内建立 nir 校准模型 并通过 prochem 将结果连接至 plc scada 以实现真正的闭环过程控制 软件系统 化学计量学 自动化 过程控制"
+      "s": "使用 caliX AutoML 化学计量学建立 NIR 定标，再通过 ProChem 在产线上运行：实时看板、PLC/SCADA 连接和闭环控制。",
+      "k": "calix 与 prochem 化学计量学与 pat 软件 使用 calix automl 化学计量学建立 nir 定标 再通过 prochem 在产线上运行 实时看板 plc scada 连接和闭环控制 软件系统 化学计量学 自动化 过程控制"
     }
   },
   "product-calix.html": {
     "tr": {
       "t": "caliX: AutoML Kemometri ve Kalibrasyon Yazılımı",
-      "s": "Dakikalar içinde NIR kalibrasyon modeli oluşturun ve dağıtın. caliX; PLS, PCA ve AutoML'i sekiz modüllü tek çalışma alanında birleştirir.",
-      "k": "calix automl kemometri ve kalibrasyon yazılımı dakikalar içinde nir kalibrasyon modeli oluşturun ve dağıtın calix pls pca ve automl i sekiz modüllü tek çalışma alanında birleştirir calix kalibrasyon modeli kemometri makine öğrenimi pls pca automl"
+      "s": "NIR kalibrasyon modellerini dakikalar içinde kurun, doğrulayın ve devreye alın. caliX; PLS, PCA ve AutoML'i NIR, FTIR ve Raman verisi için 8 modülde sunar.",
+      "k": "calix automl kemometri ve kalibrasyon yazılımı nir kalibrasyon modellerini dakikalar içinde kurun doğrulayın ve devreye alın calix pls pca ve automl i nir ftir ve raman verisi için 8 modülde sunar calix kalibrasyon modeli kemometri makine öğrenimi pls pca automl"
     },
     "fr": {
       "t": "caliX : AutoML Logiciel de chimiométrie et d'étalonnage",
@@ -859,258 +859,258 @@ var SEARCH_I18N = {
   },
   "product-masterline.html": {
     "tr": {
-      "t": "MasterLine17EC Masaüstü NIR Analizörü: Tahıl ve Yem Kalite Kontrolü",
-      "s": "USTECH MasterLine17EC - Tahıl, yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü NIR analizörü.",
-      "k": "masterline17ec masaüstü nir analizörü tahıl ve yem kalite kontrolü ustech masterline17ec - tahıl yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü nir analizörü masterline masaüstü analizör tahıl yem laboratuvar"
+      "t": "MasterLine17EC Masaüstü NIR Analizörü: Tahıl ve Yem",
+      "s": "MasterLine17EC masaüstü NIR analizörü: tahıl, yem hammaddesi ve kaba yemin hızlı, numuneye zarar vermeden kalite kontrolü; döner numune kabı ve motorlu kapak.",
+      "k": "masterline17ec masaüstü nir analizörü tahıl ve yem masterline17ec masaüstü nir analizörü tahıl yem hammaddesi ve kaba yemin hızlı numuneye zarar vermeden kalite kontrolü döner numune kabı ve motorlu kapak masterline masaüstü analizör tahıl yem laboratuvar"
     },
     "fr": {
-      "t": "Analyseur NIR de paillasse MasterLine17EC pour céréales et aliments",
-      "s": "USTECH MasterLine17EC - Analyseur de paillasse NIR pour le contrôle qualité des céréales, des ingrédients alimentaires et du fourrage.",
-      "k": "analyseur nir de paillasse masterline17ec pour céréales et aliments ustech masterline17ec - analyseur de paillasse nir pour le contrôle qualité des céréales des ingrédients alimentaires et du fourrage masterline paillasse analyseur céréales"
+      "t": "MasterLine17EC : NIR de paillasse pour grains",
+      "s": "MasterLine17EC, NIR de paillasse : contrôle at-line rapide et non destructif des grains, matières premières et fourrages ; coupelle rotative, capot motorisé.",
+      "k": "masterline17ec nir de paillasse pour grains masterline17ec nir de paillasse contrôle at-line rapide et non destructif des grains matières premières et fourrages coupelle rotative capot motorisé masterline paillasse analyseur céréales"
     },
     "de": {
-      "t": "MasterLine17EC Tisch-NIR-Analysator für Getreide- und Futtermittel-QC",
-      "s": "USTECH MasterLine17EC - Tisch-NIR-Analysator für die schnelle, zerstörungsfreie Qualitätskontrolle von Getreide, Futterzutaten und Raufutter.",
-      "k": "masterline17ec tisch-nir-analysator für getreide- und futtermittel-qc ustech masterline17ec - tisch-nir-analysator für die schnelle zerstörungsfreie qualitätskontrolle von getreide futterzutaten und raufutter masterline tischgerät analysator getreide"
+      "t": "MasterLine17EC Tisch-NIR für Getreide und Futter",
+      "s": "MasterLine17EC Tisch-NIR: schnelle, zerstörungsfreie At-Line-QK von Getreide, Futterrohstoffen und Grundfutter, mit Drehprobenbecher und Motordeckel.",
+      "k": "masterline17ec tisch-nir für getreide und futter masterline17ec tisch-nir schnelle zerstörungsfreie at-line-qk von getreide futterrohstoffen und grundfutter mit drehprobenbecher und motordeckel masterline tischgerät analysator getreide"
     },
     "es": {
-      "t": "Analizador NIR de Sobremesa MasterLine17EC",
-      "s": "MasterLine17EC: analizador NIR de sobremesa para control de calidad rápido y no destructivo de granos, piensos y forrajes en menos de 30 segundos.",
-      "k": "analizador nir de sobremesa masterline17ec masterline17ec analizador nir de sobremesa para control de calidad rápido y no destructivo de granos piensos y forrajes en menos de 30 segundos masterline sobremesa analizador granos"
+      "t": "MasterLine17EC NIR de sobremesa: grano y pienso",
+      "s": "MasterLine17EC, NIR de sobremesa: control at-line rápido y no destructivo de grano, materias primas y forraje, con copa giratoria y tapa motorizada.",
+      "k": "masterline17ec nir de sobremesa grano y pienso masterline17ec nir de sobremesa control at-line rápido y no destructivo de grano materias primas y forraje con copa giratoria y tapa motorizada masterline sobremesa analizador granos"
     },
     "ar": {
-      "t": "MasterLine17EC: محلل NIR مكتبي لجودة الحبوب والأعلاف",
-      "s": "USTECH MasterLine17EC - محلل NIR مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف.",
-      "k": "masterline17ec محلل nir مكتبي لجودة الحبوب والأعلاف ustech masterline17ec - محلل nir مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف masterline محلل مكتبي الحبوب الأعلاف"
+      "t": "MasterLine17EC محلل NIR مكتبي: الحبوب والأعلاف",
+      "s": "محلل NIR المكتبي MasterLine17EC: مراقبة جودة سريعة وغير إتلافية على الخط للحبوب ومكونات الأعلاف والأعلاف الخشنة، مع كوب عينة دوّار وغطاء آلي.",
+      "k": "masterline17ec محلل nir مكتبي الحبوب والأعلاف محلل nir المكتبي masterline17ec مراقبة جودة سريعة وغير إتلافية على الخط للحبوب ومكونات الأعلاف والأعلاف الخشنة، مع كوب عينة دوّار وغطاء آلي masterline محلل مكتبي الحبوب الأعلاف"
     },
     "zh": {
       "t": "MasterLine17EC 台式 NIR 分析仪：谷物与饲料质检",
-      "s": "USTECH MasterLine17EC - 用于谷物、饲料成分和饲草质量控制的台式 NIR 分析仪。",
-      "k": "masterline17ec 台式 nir 分析仪 谷物与饲料质检 ustech masterline17ec - 用于谷物 饲料成分和饲草质量控制的台式 nir 分析仪 masterline 台式近红外分析仪 谷物 饲料 实验室"
+      "s": "MasterLine17EC 台式 NIR 分析仪：对谷物、饲料原料和牧草进行快速、无损的线旁质量控制，配有旋转样品杯和电动盖。",
+      "k": "masterline17ec 台式 nir 分析仪 谷物与饲料质检 masterline17ec 台式 nir 分析仪 对谷物 饲料原料和牧草进行快速 无损的线旁质量控制 配有旋转样品杯和电动盖 masterline 台式近红外分析仪 谷物 饲料 实验室"
     }
   },
   "product-proline-17ec.html": {
     "tr": {
-      "t": "ProLine17EC NIR Analizörü",
-      "s": "USTECH ProLine17EC, sürekli, gerçek zamanlı kalite kontrolü için 950–1650 nm InGaAs dizisi, 316 paslanmaz çelik muhafaza ve gıda sınıfı safir pencereye sahip sağlam bir IP65 satır içi NIR spektrometresidir.",
-      "k": "proline17ec nir analizörü ustech proline17ec sürekli gerçek zamanlı kalite kontrolü için 950 1650 nm ingaas dizisi 316 paslanmaz çelik muhafaza ve gıda sınıfı safir pencereye sahip sağlam bir ip65 satır içi nir spektrometresidir proline 17ec hat ici nir analizor sensor boru oluk konveyor safir ip65 paslanmaz celik ingaas surekli olcum kompakt"
+      "t": "ProLine17EC Hat İçi NIR Analizörü: Proses Kontrolü",
+      "s": "ProLine17EC hat içi NIR analizörü: 950-1650 nm InGaAs dizi, safir pencere ve IP65 316 paslanmaz gövde; 2-20 saniyede bir gerçek zamanlı sonuç verir.",
+      "k": "proline17ec hat i çi nir analizörü proses kontrolü proline17ec hat içi nir analizörü 950-1650 nm ingaas dizi safir pencere ve ip65 316 paslanmaz gövde 2-20 saniyede bir gerçek zamanlı sonuç verir proline 17ec hat ici nir analizor sensor boru oluk konveyor safir ip65 paslanmaz celik ingaas surekli olcum kompakt"
     },
     "fr": {
-      "t": "ProLine17EC Analyseur NIR",
-      "s": "Le USTECH ProLine17EC est un spectromètre NIR en ligne IP65 robuste doté d'un réseau InGaAs de 950 à 1 650 nm, d'un boîtier en acier inoxydable 316 et d'une fenêtre en saphir de qualité alimentaire pour un contrôle qualité continu et en temps réel.",
-      "k": "proline17ec analyseur nir le ustech proline17ec est un spectromètre nir en ligne ip65 robuste doté d un réseau ingaas de 950 à 1 650 nm d un boîtier en acier inoxydable 316 et d une fenêtre en saphir de qualité alimentaire pour un contrôle qualité continu et en temps réel proline 17ec analyseur nir en ligne capteur conduite goulotte convoyeur saphir ip65 acier inoxydable ingaas mesure continue compact"
+      "t": "ProLine17EC, analyseur NIR en ligne de procédé",
+      "s": "Analyseur NIR en ligne ProLine17EC : barrette InGaAs 950-1650 nm, fenêtre saphir, boîtier inox 316 IP65 et résultats en temps réel toutes les 2 à 20 secondes.",
+      "k": "proline17ec analyseur nir en ligne de procédé analyseur nir en ligne proline17ec barrette ingaas 950-1650 nm fenêtre saphir boîtier inox 316 ip65 et résultats en temps réel toutes les 2 à 20 secondes proline 17ec analyseur nir en ligne capteur conduite goulotte convoyeur saphir ip65 acier inoxydable ingaas mesure continue compact"
     },
     "de": {
-      "t": "ProLine17EC NIR-Analysator",
-      "s": "Das USTECH ProLine17EC ist ein robustes IP65 Inline-Spektrometer NIR mit einem 950–1650 nm InGaAs-Array, einem 316-Edelstahlgehäuse und einem Saphirfenster in Lebensmittelqualität für kontinuierliche Qualitätskontrolle in Echtzeit.",
-      "k": "proline17ec nir-analysator das ustech proline17ec ist ein robustes ip65 inline-spektrometer nir mit einem 950 1650 nm ingaas-array einem 316-edelstahlgehäuse und einem saphirfenster in lebensmittelqualität für kontinuierliche qualitätskontrolle in echtzeit proline 17ec inline-nir-analysator sensor rohr rutsche foerderband saphir ip65 edelstahl ingaas kontinuierliche messung kompakt"
+      "t": "ProLine17EC Inline-NIR-Analysator für Prozesse",
+      "s": "ProLine17EC Inline-NIR-Analysator: InGaAs-Array 950-1650 nm, Saphirfenster, IP65-Gehäuse aus Edelstahl 316 und Echtzeitergebnisse alle 2 bis 20 Sekunden.",
+      "k": "proline17ec inline-nir-analysator für prozesse proline17ec inline-nir-analysator ingaas-array 950-1650 nm saphirfenster ip65-gehäuse aus edelstahl 316 und echtzeitergebnisse alle 2 bis 20 sekunden proline 17ec inline-nir-analysator sensor rohr rutsche foerderband saphir ip65 edelstahl ingaas kontinuierliche messung kompakt"
     },
     "es": {
-      "t": "ProLine17EC Analizador NIR",
-      "s": "El USTECH ProLine17EC es un espectrómetro en línea IP65 NIR resistente que cuenta con una matriz InGaAs de 950–1650 nm, una carcasa de acero inoxidable 316 y una ventana de zafiro de calidad alimentaria para un control de calidad continuo y en tiempo real.",
-      "k": "proline17ec analizador nir el ustech proline17ec es un espectrómetro en línea ip65 nir resistente que cuenta con una matriz ingaas de 950 1650 nm una carcasa de acero inoxidable 316 y una ventana de zafiro de calidad alimentaria para un control de calidad continuo y en tiempo real proline 17ec analizador nir en linea sensor tuberia canaleta cinta transportadora zafiro ip65 acero inoxidable ingaas medicion continua compacto"
+      "t": "ProLine17EC analizador NIR en línea para procesos",
+      "s": "Analizador NIR en línea ProLine17EC: matriz InGaAs de 950-1650 nm, ventana de zafiro, carcasa inoxidable 316 IP65 y resultados en tiempo real cada 2 a 20 s.",
+      "k": "proline17ec analizador nir en línea para procesos analizador nir en línea proline17ec matriz ingaas de 950-1650 nm ventana de zafiro carcasa inoxidable 316 ip65 y resultados en tiempo real cada 2 a 20 s proline 17ec analizador nir en linea sensor tuberia canaleta cinta transportadora zafiro ip65 acero inoxidable ingaas medicion continua compacto"
     },
     "ar": {
-      "t": "ProLine17EC محلل NIR",
-      "s": "USTECH ProLine17EC عبارة عن مطياف IP65 مضمن NIR يتميز بمصفوفة InGaAs 950-1650 نانومتر، وغطاء من الفولاذ المقاوم للصدأ 316، ونافذة من الياقوت الصالح للطعام للتحكم المستمر في الجودة في الوقت الفعلي.",
-      "k": "proline17ec محلل nir ustech proline17ec عبارة عن مطياف ip65 مضمن nir يتميز بمصفوفة ingaas 950-1650 نانومتر، وغطاء من الفولاذ المقاوم للصدأ 316، ونافذة من الياقوت الصالح للطعام للتحكم المستمر في الجودة في الوقت الفعلي proline 17ec محلل مضمن مستشعر أنبوب حزام ناقل قياس مستمر مدمج"
+      "t": "ProLine17EC محلل NIR مضمن لمراقبة العمليات",
+      "s": "محلل NIR المضمن ProLine17EC: مصفوفة InGaAs بنطاق 950-1650 نانومتر، ونافذة من الياقوت، وهيكل من الفولاذ 316 بتصنيف IP65، ونتائج فورية كل 2 إلى 20 ثانية.",
+      "k": "proline17ec محلل nir مضمن لمراقبة العمليات محلل nir المضمن proline17ec مصفوفة ingaas بنطاق 950-1650 نانومتر، ونافذة من الياقوت، وهيكل من الفولاذ 316 بتصنيف ip65، ونتائج فورية كل 2 إلى 20 ثانية proline 17ec محلل مضمن مستشعر أنبوب حزام ناقل قياس مستمر مدمج"
     },
     "zh": {
-      "t": "ProLine17EC NIR 分析仪",
-      "s": "USTECH ProLine17EC 是一款坚固耐用的 IP65 内联 NIR 光谱仪，具有 950–1650 nm InGaAs 阵列、316 不锈钢外壳和食品级蓝宝石窗口，可实现连续、实时的质量控制。",
-      "k": "proline17ec nir 分析仪 ustech proline17ec 是一款坚固耐用的 ip65 内联 nir 光谱仪 具有 950 1650 nm ingaas 阵列 316 不锈钢外壳和食品级蓝宝石窗口 可实现连续 实时的质量控制 proline 17ec 在线近红外分析仪 传感器 管道 输送带 蓝宝石 不锈钢 连续测量 紧凑"
+      "t": "ProLine17EC 在线 NIR 过程分析仪",
+      "s": "ProLine17EC 在线 NIR 分析仪：950-1650 nm InGaAs 阵列、蓝宝石窗口、IP65 316 不锈钢外壳，每 2 至 20 秒提供实时结果。",
+      "k": "proline17ec 在线 nir 过程分析仪 proline17ec 在线 nir 分析仪 950-1650 nm ingaas 阵列 蓝宝石窗口 ip65 316 不锈钢外壳 每 2 至 20 秒提供实时结果 proline 17ec 在线近红外分析仪 传感器 管道 输送带 蓝宝石 不锈钢 连续测量 紧凑"
     }
   },
   "product-proline-17ecs.html": {
     "tr": {
-      "t": "ProLine17ECS Hat İçi NIR Analizörü",
-      "s": "USTECH ProLine17ECS, zorlu proses hatları için numune başına 2.000 spektrum, 23.000:1 SNR ve çift IP65 paslanmaz çelik muhafaza sağlayan, bölünmüş mimariye sahip bir hat içi NIR analizörüdür.",
-      "k": "proline17ecs hat i çi nir analizörü ustech proline17ecs zorlu proses hatları için numune başına 2 000 spektrum 23 000 1 snr ve çift ip65 paslanmaz çelik muhafaza sağlayan bölünmüş mimariye sahip bir hat içi nir analizörüdür proline 17ecs bolunmus mimari cift govde ayrik prob kafasi kontrol kutusu yuksek hassasiyet hat ici nir analizor safir ip65 paslanmaz celik"
+      "t": "ProLine17ECS Ayrık Gövdeli Hat İçi NIR Analizörü",
+      "s": "ProLine17ECS hat içi NIR analizörü: ayrık prob ve kontrol ünitesi, 23.000:1 sinyal/gürültü, numune başına 2.000 spektrum, safir pencere, IP65 paslanmaz.",
+      "k": "proline17ecs ayrık gövdeli hat i çi nir analizörü proline17ecs hat içi nir analizörü ayrık prob ve kontrol ünitesi 23 000 1 sinyal gürültü numune başına 2 000 spektrum safir pencere ip65 paslanmaz proline 17ecs bolunmus mimari cift govde ayrik prob kafasi kontrol kutusu yuksek hassasiyet hat ici nir analizor safir ip65 paslanmaz celik"
     },
     "fr": {
-      "t": "ProLine17ECS Analyseur NIR en ligne",
-      "s": "Le USTECH ProLine17ECS est un analyseur NIR en ligne à architecture divisée fournissant 2 000 spectres par échantillon, un SNR de 23 000:1 et un double boîtier en acier inoxydable IP65 pour les lignes de processus exigeantes.",
-      "k": "proline17ecs analyseur nir en ligne le ustech proline17ecs est un analyseur nir en ligne à architecture divisée fournissant 2 000 spectres par échantillon un snr de 23 000 1 et un double boîtier en acier inoxydable ip65 pour les lignes de processus exigeantes proline 17ecs architecture divisee double boitier sonde deportee boitier de commande haute sensibilite analyseur nir en ligne saphir ip65 acier inoxydable"
+      "t": "ProLine17ECS, NIR en ligne à deux boîtiers",
+      "s": "Analyseur NIR en ligne ProLine17ECS à sonde et contrôleur séparés : SNR 23 000:1, 2 000 spectres par échantillon, fenêtre saphir et tête inox 316 IP65.",
+      "k": "proline17ecs nir en ligne à deux boîtiers analyseur nir en ligne proline17ecs à sonde et contrôleur séparés snr 23 000 1 2 000 spectres par échantillon fenêtre saphir et tête inox 316 ip65 proline 17ecs architecture divisee double boitier sonde deportee boitier de commande haute sensibilite analyseur nir en ligne saphir ip65 acier inoxydable"
     },
     "de": {
-      "t": "ProLine17ECS NIR-Inline-Analysator",
-      "s": "Der USTECH ProLine17ECS ist ein NIR-Inline-Analysator mit geteilter Architektur, der 2.000 Spektren pro Probe, 23.000:1 SNR und ein duales IP65-Edelstahlgehäuse für anspruchsvolle Prozesslinien liefert.",
-      "k": "proline17ecs nir-inline-analysator der ustech proline17ecs ist ein nir-inline-analysator mit geteilter architektur der 2 000 spektren pro probe 23 000 1 snr und ein duales ip65-edelstahlgehäuse für anspruchsvolle prozesslinien liefert proline 17ecs geteilte architektur zwei gehaeuse abgesetzter messkopf steuergeraet hohe empfindlichkeit inline-nir-analysator saphir ip65 edelstahl"
+      "t": "ProLine17ECS Inline-NIR in Split-Bauweise",
+      "s": "ProLine17ECS Inline-NIR-Analysator mit getrennter Sonde und Steuereinheit: SNR 23.000:1, 2.000 Spektren pro Probe, Saphirfenster, IP65-Kopf aus Edelstahl 316.",
+      "k": "proline17ecs inline-nir in split-bauweise proline17ecs inline-nir-analysator mit getrennter sonde und steuereinheit snr 23 000 1 2 000 spektren pro probe saphirfenster ip65-kopf aus edelstahl 316 proline 17ecs geteilte architektur zwei gehaeuse abgesetzter messkopf steuergeraet hohe empfindlichkeit inline-nir-analysator saphir ip65 edelstahl"
     },
     "es": {
-      "t": "ProLine17ECS Analizador NIR en línea",
-      "s": "El USTECH ProLine17ECS es un analizador NIR en línea de arquitectura dividida que ofrece 2000 espectros por muestra, 23 000:1 SNR y una carcasa doble de acero inoxidable IP65 para líneas de proceso exigentes.",
-      "k": "proline17ecs analizador nir en línea el ustech proline17ecs es un analizador nir en línea de arquitectura dividida que ofrece 2000 espectros por muestra 23 000 1 snr y una carcasa doble de acero inoxidable ip65 para líneas de proceso exigentes proline 17ecs arquitectura dividida doble chasis cabezal de sonda separado caja de control alta sensibilidad analizador nir en linea zafiro ip65 acero inoxidable"
+      "t": "ProLine17ECS NIR en línea de diseño dividido",
+      "s": "Analizador NIR en línea ProLine17ECS con sonda y controlador separados: SNR 23.000:1, 2.000 espectros por muestra, ventana de zafiro y cabezal inox 316 IP65.",
+      "k": "proline17ecs nir en línea de diseño dividido analizador nir en línea proline17ecs con sonda y controlador separados snr 23 000 1 2 000 espectros por muestra ventana de zafiro y cabezal inox 316 ip65 proline 17ecs arquitectura dividida doble chasis cabezal de sonda separado caja de control alta sensibilidad analizador nir en linea zafiro ip65 acero inoxidable"
     },
     "ar": {
-      "t": "ProLine17ECS محلل NIR المضمن",
-      "s": "USTECH ProLine17ECS عبارة عن محلل NIR مضمن ذو بنية مقسمة يوفر 2000 طيف لكل عينة، و23000:1 SNR، ومبيت مزدوج من الفولاذ المقاوم للصدأ IP65 لخطوط المعالجة الصعبة.",
-      "k": "proline17ecs محلل nir المضمن ustech proline17ecs عبارة عن محلل nir مضمن ذو بنية مقسمة يوفر 2000 طيف لكل عينة، و23000 1 snr، ومبيت مزدوج من الفولاذ المقاوم للصدأ ip65 لخطوط المعالجة الصعبة proline 17ecs بنية منفصلة رأس مسبار وحدة تحكم حساسية عالية محلل مضمن"
+      "t": "ProLine17ECS محلل NIR مضمن بتصميم منفصل",
+      "s": "محلل NIR المضمن ProLine17ECS بمسبار ووحدة تحكم منفصلين: نسبة إشارة إلى ضوضاء 23,000:1، و2,000 طيف لكل عينة، ونافذة من الياقوت، ورأس من الفولاذ 316 بتصنيف IP65.",
+      "k": "proline17ecs محلل nir مضمن بتصميم منفصل محلل nir المضمن proline17ecs بمسبار ووحدة تحكم منفصلين نسبة إشارة إلى ضوضاء 23 000 1، و2 000 طيف لكل عينة، ونافذة من الياقوت، ورأس من الفولاذ 316 بتصنيف ip65 proline 17ecs بنية منفصلة رأس مسبار وحدة تحكم حساسية عالية محلل مضمن"
     },
     "zh": {
-      "t": "ProLine17ECS 内联 NIR 分析仪",
-      "s": "USTECH ProLine17ECS 是一款分体式架构内联 NIR 分析仪，每个样品可提供 2,000 个光谱、23,000:1 SNR 和双 IP65 不锈钢外壳，适用于要求苛刻的生产线。",
-      "k": "proline17ecs 内联 nir 分析仪 ustech proline17ecs 是一款分体式架构内联 nir 分析仪 每个样品可提供 2 000 个光谱 23 000 1 snr 和双 ip65 不锈钢外壳 适用于要求苛刻的生产线 proline 17ecs 分体式结构 双机箱 分离式探头 控制器 高灵敏度 在线近红外分析仪 蓝宝石 不锈钢"
+      "t": "ProLine17ECS 分体式在线 NIR 分析仪",
+      "s": "ProLine17ECS 分体式在线 NIR 分析仪，探头与控制器分离：信噪比 23,000:1，每个样品 2,000 条光谱，蓝宝石窗口，IP65 316 不锈钢测量头。",
+      "k": "proline17ecs 分体式在线 nir 分析仪 proline17ecs 分体式在线 nir 分析仪 探头与控制器分离 信噪比 23 000 1 每个样品 2 000 条光谱 蓝宝石窗口 ip65 316 不锈钢测量头 proline 17ecs 分体式结构 双机箱 分离式探头 控制器 高灵敏度 在线近红外分析仪 蓝宝石 不锈钢"
     }
   },
   "product-proline-2550.html": {
     "tr": {
       "t": "ProLine2550 Hat İçi FT-NIR Proses Analizörü",
-      "s": "Boru, karıştırıcı ve reaktörler için IP69K sınıfı hat içi FT-NIR analizörü. Sınırsız parametre, OPC UA ve PROFINET, ProChem ile kapalı döngü kontrol.",
-      "k": "proline2550 hat i çi ft-nir proses analizörü boru karıştırıcı ve reaktörler için ip69k sınıfı hat içi ft-nir analizörü sınırsız parametre opc ua ve profinet prochem ile kapalı döngü kontrol proline 2550 boru reaktör sıvı toz hat içi analizör"
+      "s": "Boru, oluk ve konveyörler için Essential ve Advanced modelli hat içi FT-NIR proses analizörü: IP65/IP69K, Modbus TCP, OPC UA, PROFINET, ProChem uyumu.",
+      "k": "proline2550 hat i çi ft-nir proses analizörü boru oluk ve konveyörler için essential ve advanced modelli hat içi ft-nir proses analizörü ip65 ip69k modbus tcp opc ua profinet prochem uyumu proline 2550 boru reaktör sıvı toz hat içi analizör"
     },
     "fr": {
-      "t": "ProLine2550 Analyseur de processus en ligne FT-NIR",
-      "s": "Analyseur FT-NIR en ligne IP69K pour tuyauteries, mélangeurs et réacteurs. Paramètres illimités, OPC UA et PROFINET, boucle fermée via ProChem.",
-      "k": "proline2550 analyseur de processus en ligne ft-nir analyseur ft-nir en ligne ip69k pour tuyauteries mélangeurs et réacteurs paramètres illimités opc ua et profinet boucle fermée via prochem proline 2550 conduite réacteur liquide"
+      "t": "ProLine2550, analyseur de procédé FT-NIR en ligne",
+      "s": "Analyseur de procédé FT-NIR en ligne ProLine2550, Essential ou Advanced, pour conduites, goulottes et convoyeurs : IP65/IP69K, Modbus TCP, OPC UA et PROFINET.",
+      "k": "proline2550 analyseur de procédé ft-nir en ligne analyseur de procédé ft-nir en ligne proline2550 essential ou advanced pour conduites goulottes et convoyeurs ip65 ip69k modbus tcp opc ua et profinet proline 2550 conduite réacteur liquide"
     },
     "de": {
       "t": "ProLine2550 Inline-FT-NIR-Prozessanalysator",
-      "s": "IP69K-Inline-FT-NIR-Analysator für Rohre, Mischer und Reaktoren. Unbegrenzte Parameter, OPC UA und PROFINET, Regelkreis über ProChem.",
-      "k": "proline2550 inline-ft-nir-prozessanalysator ip69k-inline-ft-nir-analysator für rohre mischer und reaktoren unbegrenzte parameter opc ua und profinet regelkreis über prochem proline 2550 rohr reaktor flüssigkeit"
+      "s": "ProLine2550 Inline-FT-NIR-Prozessanalysator, Essential oder Advanced, für Rohre, Schurren und Förderbänder: IP65/IP69K, Modbus TCP, OPC UA und PROFINET.",
+      "k": "proline2550 inline-ft-nir-prozessanalysator proline2550 inline-ft-nir-prozessanalysator essential oder advanced für rohre schurren und förderbänder ip65 ip69k modbus tcp opc ua und profinet proline 2550 rohr reaktor flüssigkeit"
     },
     "es": {
-      "t": "Analizador de Procesos FT-NIR en Línea ProLine2550",
-      "s": "Analizador FT-NIR en línea IP69K para tuberías, mezcladores y reactores. Parámetros ilimitados, OPC UA y PROFINET, lazo cerrado con ProChem.",
-      "k": "analizador de procesos ft-nir en línea proline2550 analizador ft-nir en línea ip69k para tuberías mezcladores y reactores parámetros ilimitados opc ua y profinet lazo cerrado con prochem proline 2550 tubería reactor líquido"
+      "t": "ProLine2550 analizador de procesos FT-NIR en línea",
+      "s": "Analizador de procesos FT-NIR en línea ProLine2550, Essential o Advanced, para tuberías, rampas y transportadores: IP65/IP69K, Modbus TCP, OPC UA y PROFINET.",
+      "k": "proline2550 analizador de procesos ft-nir en línea analizador de procesos ft-nir en línea proline2550 essential o advanced para tuberías rampas y transportadores ip65 ip69k modbus tcp opc ua y profinet proline 2550 tubería reactor líquido"
     },
     "ar": {
-      "t": "محلل العملية ProLine2550 FT-NIR",
-      "s": "محلل العملية ProLine2550 FT-NIR - مقياس طيف للعمليات الصناعية القوية على خط الإنتاج للخلاطات والمفاعلات وخطوط الأنابيب.",
-      "k": "محلل العملية proline2550 ft-nir محلل العملية proline2550 ft-nir - مقياس طيف للعمليات الصناعية القوية على خط الإنتاج للخلاطات والمفاعلات وخطوط الأنابيب proline 2550 أنبوب مفاعل سائل مسحوق خط الإنتاج"
+      "t": "ProLine2550 محلل عمليات FT-NIR مضمن",
+      "s": "محلل العمليات المضمن ProLine2550 بتقنية FT-NIR، بطرازي Essential وAdvanced، للأنابيب والمزالق والسيور الناقلة: IP65/IP69K وModbus TCP وOPC UA وPROFINET.",
+      "k": "proline2550 محلل عمليات ft-nir مضمن محلل العمليات المضمن proline2550 بتقنية ft-nir، بطرازي essential وadvanced، للأنابيب والمزالق والسيور الناقلة ip65 ip69k وmodbus tcp وopc ua وprofinet proline 2550 أنبوب مفاعل سائل مسحوق خط الإنتاج"
     },
     "zh": {
-      "t": "ProLine2550 过程 FT-NIR 分析仪",
-      "s": "ProLine2550 在线 FT-NIR 分析仪 - 适用于混合器、反应器和管道的坚固工业级在线过程光谱仪。",
-      "k": "proline2550 过程 ft-nir 分析仪 proline2550 在线 ft-nir 分析仪 - 适用于混合器 反应器和管道的坚固工业级在线过程光谱仪 proline 2550 在线过程分析仪 管道 反应釜 液体 粉体"
+      "t": "ProLine2550 在线 FT-NIR 过程分析仪",
+      "s": "ProLine2550 在线 FT-NIR 过程分析仪，提供 Essential 和 Advanced 两种型号，适用于管道、溜槽和输送带：IP65/IP69K、Modbus TCP、OPC UA 和 PROFINET。",
+      "k": "proline2550 在线 ft-nir 过程分析仪 proline2550 在线 ft-nir 过程分析仪 提供 essential 和 advanced 两种型号 适用于管道 溜槽和输送带 ip65 ip69k modbus tcp opc ua 和 profinet proline 2550 在线过程分析仪 管道 反应釜 液体 粉体"
     }
   },
   "product-tornado.html": {
     "tr": {
-      "t": "USTECH Tornado+ Laboratuvar Değirmeni",
-      "s": "USTECH Tornado+ Yüksek Performanslı Laboratuvar Değirmeni - Tahıllar, tohumlar ve yemler için su soğutmalı numune hazırlama değirmeni.",
-      "k": "ustech tornado laboratuvar değirmeni ustech tornado yüksek performanslı laboratuvar değirmeni - tahıllar tohumlar ve yemler için su soğutmalı numune hazırlama değirmeni tornado değirmen öğütme numune hazırlama su soğutmalı"
+      "t": "Tornado+ Su Soğutmalı Laboratuvar Değirmeni",
+      "s": "Tornado+ su soğutmalı laboratuvar değirmeni: 9.000 dev/dk rotor ve değiştirilebilir halka eleklerle tahıl, tohum ve yem numunelerini homojen öğütür.",
+      "k": "tornado su soğutmalı laboratuvar değirmeni tornado su soğutmalı laboratuvar değirmeni 9 000 dev dk rotor ve değiştirilebilir halka eleklerle tahıl tohum ve yem numunelerini homojen öğütür tornado değirmen öğütme numune hazırlama su soğutmalı"
     },
     "fr": {
-      "t": "USTECH Tornado+ Broyeur de laboratoire",
-      "s": "USTECH Tornado+ : broyeur de laboratoire haute performance refroidi à l'eau pour la préparation d'échantillons de céréales, graines et aliments du bétail.",
-      "k": "ustech tornado broyeur de laboratoire ustech tornado broyeur de laboratoire haute performance refroidi à l eau pour la préparation d échantillons de céréales graines et aliments du bétail tornado broyeur broyage préparation échantillon"
+      "t": "Tornado+, broyeur de laboratoire refroidi par eau",
+      "s": "Broyeur de laboratoire Tornado+ refroidi par eau, rotor à 9 000 tr/min et tamis annulaires, pour un broyage rapide et homogène des grains, graines et aliments.",
+      "k": "tornado broyeur de laboratoire refroidi par eau broyeur de laboratoire tornado refroidi par eau rotor à 9 000 tr min et tamis annulaires pour un broyage rapide et homogène des grains graines et aliments tornado broyeur broyage préparation échantillon"
     },
     "de": {
-      "t": "USTECH Tornado+ Labormühle",
-      "s": "USTECH Tornado+ Hochleistungs-Labormühle – Wassergekühlte Probenaufbereitungsmühle für Getreide, Saatgut und Futtermittel.",
-      "k": "ustech tornado labormühle ustech tornado hochleistungs-labormühle wassergekühlte probenaufbereitungsmühle für getreide saatgut und futtermittel tornado mühle mahlen probenvorbereitung"
+      "t": "Tornado+ wassergekühlte Labormühle für Getreide",
+      "s": "Wassergekühlte Labormühle Tornado+ mit 9.000-U/min-Rotor und Ringsieben für schnelles, gleichmäßiges Mahlen von Getreide-, Saat- und Futterproben.",
+      "k": "tornado wassergekühlte labormühle für getreide wassergekühlte labormühle tornado mit 9 000-u min-rotor und ringsieben für schnelles gleichmäßiges mahlen von getreide- saat- und futterproben tornado mühle mahlen probenvorbereitung"
     },
     "es": {
-      "t": "Molino de Laboratorio USTECH Tornado+",
-      "s": "Molino de laboratorio de alto rendimiento USTECH Tornado+: molino de preparación de muestras refrigerado por agua para granos, semillas y piensos.",
-      "k": "molino de laboratorio ustech tornado molino de laboratorio de alto rendimiento ustech tornado molino de preparación de muestras refrigerado por agua para granos semillas y piensos tornado molino molienda preparación de muestras"
+      "t": "Tornado+ molino de laboratorio refrigerado por agua",
+      "s": "Molino de laboratorio Tornado+ refrigerado por agua, con rotor de 9.000 rpm y tamices anulares, para moler rápido y de forma uniforme grano, semillas y pienso.",
+      "k": "tornado molino de laboratorio refrigerado por agua molino de laboratorio tornado refrigerado por agua con rotor de 9 000 rpm y tamices anulares para moler rápido y de forma uniforme grano semillas y pienso tornado molino molienda preparación de muestras"
     },
     "ar": {
-      "t": "طاحونة مختبر USTECH Tornado+",
-      "s": "طاحونة مختبر USTECH Tornado+ عالية الأداء - طاحونة تحضير العينات مبردة بالماء للحبوب والبذور والأعلاف.",
-      "k": "طاحونة مختبر ustech tornado طاحونة مختبر ustech tornado عالية الأداء - طاحونة تحضير العينات مبردة بالماء للحبوب والبذور والأعلاف tornado مطحنة تحضير العينات تبريد مائي"
+      "t": "Tornado+ طاحونة مختبرية مبردة بالماء",
+      "s": "طاحونة Tornado+ المختبرية المبردة بالماء بدوّار 9,000 دورة/دقيقة ومناخل حلقية لطحن سريع ومتجانس لعينات الحبوب والبذور والأعلاف قبل التحليل.",
+      "k": "tornado طاحونة مختبرية مبردة بالماء طاحونة tornado المختبرية المبردة بالماء بدوّار 9 000 دورة دقيقة ومناخل حلقية لطحن سريع ومتجانس لعينات الحبوب والبذور والأعلاف قبل التحليل tornado مطحنة تحضير العينات تبريد مائي"
     },
     "zh": {
-      "t": "USTECH Tornado+ 实验室研磨机",
-      "s": "USTECH Tornado+ 高性能实验室研磨机 - 用于谷物、种子和饲料的水冷样品制备研磨机。",
-      "k": "ustech tornado 实验室研磨机 ustech tornado 高性能实验室研磨机 - 用于谷物 种子和饲料的水冷样品制备研磨机 tornado 旋风磨 样品制备 水冷 研磨"
+      "t": "Tornado+ 水冷实验室磨粉机",
+      "s": "Tornado+ 水冷实验室磨粉机，配备 9,000 rpm 转子和环形筛，可在分析前快速、均匀地研磨谷物、种子和饲料样品。",
+      "k": "tornado 水冷实验室磨粉机 tornado 水冷实验室磨粉机 配备 9 000 rpm 转子和环形筛 可在分析前快速 均匀地研磨谷物 种子和饲料样品 tornado 旋风磨 样品制备 水冷 研磨"
     }
   },
   "knowledge.html": {
     "tr": {
-      "t": "NIR Bilgi Merkezi: Teknoloji ve Kılavuzlar",
-      "s": "NIR spektroskopisini temelden öğrenin: teknoloji açıklamaları, kalibrasyon bilimi ve USTECH mühendislerinin yazdığı teknik incelemeler.",
-      "k": "nir bilgi merkezi teknoloji ve kılavuzlar nir spektroskopisini temelden öğrenin teknoloji açıklamaları kalibrasyon bilimi ve ustech mühendislerinin yazdığı teknik incelemeler bilgi bankası bilgi teknoloji rehber"
+      "t": "NIR Bilgi Merkezi: Teknoloji Rehberi ve Blog",
+      "s": "NIR spektroskopisini temelden öğrenin: teknolojinin çalışma ilkesi, kalibrasyon bilimi ve proses kontrolü ile yatırım getirisi üzerine kaynaklı makaleler.",
+      "k": "nir bilgi merkezi teknoloji rehberi ve blog nir spektroskopisini temelden öğrenin teknolojinin çalışma ilkesi kalibrasyon bilimi ve proses kontrolü ile yatırım getirisi üzerine kaynaklı makaleler bilgi bankası bilgi teknoloji rehber"
     },
     "fr": {
-      "t": "Centre de connaissances NIR : technologie et guides",
-      "s": "Apprenez la spectroscopie NIR de A à Z : explications technologiques, science de l'étalonnage et publications techniques des ingénieurs USTECH.",
-      "k": "centre de connaissances nir technologie et guides apprenez la spectroscopie nir de a à z explications technologiques science de l étalonnage et publications techniques des ingénieurs ustech connaissances technologie guides"
+      "t": "Centre de ressources NIR : guide technique et blog",
+      "s": "Apprenez la spectroscopie NIR depuis les bases : principe de la technologie, science de l'étalonnage et articles sourcés sur le contrôle de procédé et le ROI.",
+      "k": "centre de ressources nir guide technique et blog apprenez la spectroscopie nir depuis les bases principe de la technologie science de l étalonnage et articles sourcés sur le contrôle de procédé et le roi connaissances technologie guides"
     },
     "de": {
-      "t": "NIR-Wissenszentrum: Technologie & Leitfäden",
-      "s": "NIR-Spektroskopie von Grund auf: Technologie-Erklärungen, Kalibrierwissenschaft und technische Fachbeiträge der USTECH-Ingenieure.",
-      "k": "nir-wissenszentrum technologie leitfäden nir-spektroskopie von grund auf technologie-erklärungen kalibrierwissenschaft und technische fachbeiträge der ustech-ingenieure wissen technologie leitfäden"
+      "t": "NIR-Wissensportal: Technologieleitfaden und Blog",
+      "s": "NIR-Spektroskopie von Grund auf: wie die Technologie funktioniert, die Wissenschaft der Kalibrierung und belegte Fachartikel zu Prozesskontrolle und ROI.",
+      "k": "nir-wissensportal technologieleitfaden und blog nir-spektroskopie von grund auf wie die technologie funktioniert die wissenschaft der kalibrierung und belegte fachartikel zu prozesskontrolle und roi wissen technologie leitfäden"
     },
     "es": {
-      "t": "Centro de Conocimiento NIR: Tecnología y Guías",
-      "s": "Aprenda espectroscopía NIR desde los fundamentos: explicaciones tecnológicas, ciencia de calibración y artículos técnicos de los ingenieros USTECH.",
-      "k": "centro de conocimiento nir tecnología y guías aprenda espectroscopía nir desde los fundamentos explicaciones tecnológicas ciencia de calibración y artículos técnicos de los ingenieros ustech conocimiento tecnología guías"
+      "t": "Centro de conocimiento NIR: guía tecnológica y blog",
+      "s": "Aprenda espectroscopia NIR desde cero: cómo funciona la tecnología, la ciencia de la calibración y artículos con referencias sobre control de procesos y ROI.",
+      "k": "centro de conocimiento nir guía tecnológica y blog aprenda espectroscopia nir desde cero cómo funciona la tecnología la ciencia de la calibración y artículos con referencias sobre control de procesos y roi conocimiento tecnología guías"
     },
     "ar": {
-      "t": "مركز المعرفة لتقنية NIR: التكنولوجيا والأدلة",
-      "s": "تعلم التحليل الطيفي بالأشعة تحت الحمراء القريبة (NIR) من الألف إلى الياء: شروحات التكنولوجيا، علم المعايرة وأكثر من 50 مدونة وورقة بيضاء كتبها مهندسو USTECH.",
-      "k": "مركز المعرفة لتقنية nir التكنولوجيا والأدلة تعلم التحليل الطيفي بالأشعة تحت الحمراء القريبة nir من الألف إلى الياء شروحات التكنولوجيا، علم المعايرة وأكثر من 50 مدونة وورقة بيضاء كتبها مهندسو ustech المعرفة التكنولوجيا الأدلة"
+      "t": "مركز معرفة NIR: دليل التقنية والمدونة",
+      "s": "تعلّم مطيافية NIR من الأساس: كيف تعمل التقنية، وعلم المعايرة، ومقالات موثّقة بالمراجع حول التحكم في العمليات وعائد الاستثمار.",
+      "k": "مركز معرفة nir دليل التقنية والمدونة تعلّم مطيافية nir من الأساس كيف تعمل التقنية، وعلم المعايرة، ومقالات موثّقة بالمراجع حول التحكم في العمليات وعائد الاستثمار المعرفة التكنولوجيا الأدلة"
     },
     "zh": {
-      "t": "近红外知识中心：技术与应用指南",
-      "s": "从零开始学习近红外光谱技术：技术讲解、定标科学以及由 USTECH 工程师编写的 50 多篇博客和白皮书。",
-      "k": "近红外知识中心 技术与应用指南 从零开始学习近红外光谱技术 技术讲解 定标科学以及由 ustech 工程师编写的 50 多篇博客和白皮书 知识中心 技术文章 应用指南"
+      "t": "NIR 知识中心：技术指南与博客",
+      "s": "从基础学习 NIR 光谱：技术原理、定标科学，以及有文献依据的过程控制与投资回报文章。",
+      "k": "nir 知识中心 技术指南与博客 从基础学习 nir 光谱 技术原理 定标科学 以及有文献依据的过程控制与投资回报文章 知识中心 技术文章 应用指南"
     }
   },
   "knowledge-technology.html": {
     "tr": {
-      "t": "NIR Teknoloji ve Kalibrasyon Bilimi",
-      "s": "Fotonlardan tahminlere kadar NIR spektroskopisi nasıl çalışır: ölçüm yolu, kalibrasyon bilimi ve caliX + ProChem ekosistemi, USTECH tarafından açıklanmıştır.",
-      "k": "nir teknoloji ve kalibrasyon bilimi fotonlardan tahminlere kadar nir spektroskopisi nasıl çalışır ölçüm yolu kalibrasyon bilimi ve calix prochem ekosistemi ustech tarafından açıklanmıştır teknoloji nir ft-nir spektroskopi teori kalibrasyon bilimi"
+      "t": "NIR Spektroskopisi Nasıl Çalışır? Kalibrasyon",
+      "s": "Işıktan sonuca NIR spektroskopisi: ölçüm yolu, kalibrasyon bilimi ve caliX ile ProChem'in USTECH analizörleriyle birlikte nasıl çalıştığı, sade bir anlatımla.",
+      "k": "nir spektroskopisi nasıl çalışır kalibrasyon işıktan sonuca nir spektroskopisi ölçüm yolu kalibrasyon bilimi ve calix ile prochem in ustech analizörleriyle birlikte nasıl çalıştığı sade bir anlatımla teknoloji nir ft-nir spektroskopi teori kalibrasyon bilimi"
     },
     "fr": {
-      "t": "Technologie NIR et science de l'étalonnage",
-      "s": "Le NIR expliqué, des photons aux prédictions : chemin de mesure, science de l'étalonnage et écosystème caliX + ProChem, par USTECH.",
-      "k": "technologie nir et science de l étalonnage le nir expliqué des photons aux prédictions chemin de mesure science de l étalonnage et écosystème calix prochem par ustech technologie spectroscopie théorie"
+      "t": "Comment fonctionne la spectroscopie NIR ?",
+      "s": "La spectroscopie NIR, de la lumière à la prédiction : chemin de mesure, science de l'étalonnage et rôle de caliX et ProChem avec les analyseurs USTECH.",
+      "k": "comment fonctionne la spectroscopie nir la spectroscopie nir de la lumière à la prédiction chemin de mesure science de l étalonnage et rôle de calix et prochem avec les analyseurs ustech technologie spectroscopie théorie"
     },
     "de": {
-      "t": "NIR-Technologie & Kalibrierwissenschaft",
-      "s": "NIR-Spektroskopie erklärt, von Photonen bis zur Vorhersage: Messpfad, Kalibrierwissenschaft und das caliX-ProChem-Ökosystem von USTECH.",
-      "k": "nir-technologie kalibrierwissenschaft nir-spektroskopie erklärt von photonen bis zur vorhersage messpfad kalibrierwissenschaft und das calix-prochem-ökosystem von ustech technologie spektroskopie theorie"
+      "t": "Wie NIR-Spektroskopie funktioniert: Kalibrierung",
+      "s": "Wie NIR-Spektroskopie funktioniert, vom Licht zur Vorhersage: Messweg, Kalibrierung und das Zusammenspiel von caliX und ProChem mit USTECH-Analysatoren.",
+      "k": "wie nir-spektroskopie funktioniert kalibrierung wie nir-spektroskopie funktioniert vom licht zur vorhersage messweg kalibrierung und das zusammenspiel von calix und prochem mit ustech-analysatoren technologie spektroskopie theorie"
     },
     "es": {
-      "t": "Tecnología NIR y Ciencia de Calibración",
-      "s": "La espectroscopía NIR explicada, de fotones a predicciones: trayectoria de medición, ciencia de calibración y ecosistema caliX + ProChem.",
-      "k": "tecnología nir y ciencia de calibración la espectroscopía nir explicada de fotones a predicciones trayectoria de medición ciencia de calibración y ecosistema calix prochem tecnología espectroscopía teoría"
+      "t": "Cómo funciona la espectroscopia NIR: calibración",
+      "s": "Cómo funciona la espectroscopia NIR, de la luz a la predicción: trayectoria de medida, calibración y cómo caliX y ProChem trabajan con los analizadores USTECH.",
+      "k": "cómo funciona la espectroscopia nir calibración cómo funciona la espectroscopia nir de la luz a la predicción trayectoria de medida calibración y cómo calix y prochem trabajan con los analizadores ustech tecnología espectroscopía teoría"
     },
     "ar": {
-      "t": "تقنية NIR وعلم المعايرة",
-      "s": "كيف يعمل التحليل الطيفي NIR، من الفوتونات إلى التنبؤات: مسار القياس وعلم المعايرة والكيمياء القياسية والنشر الصناعي.",
-      "k": "تقنية nir وعلم المعايرة كيف يعمل التحليل الطيفي nir، من الفوتونات إلى التنبؤات مسار القياس وعلم المعايرة والكيمياء القياسية والنشر الصناعي التكنولوجيا ft-nir التحليل الطيفي mems المعايرة"
+      "t": "كيف تعمل مطيافية NIR: علم المعايرة",
+      "s": "كيف تعمل مطيافية NIR من الضوء إلى التنبؤ: مسار القياس، وعلم المعايرة، وكيف يعمل caliX وProChem مع أجهزة تحليل USTECH.",
+      "k": "كيف تعمل مطيافية nir علم المعايرة كيف تعمل مطيافية nir من الضوء إلى التنبؤ مسار القياس، وعلم المعايرة، وكيف يعمل calix وprochem مع أجهزة تحليل ustech التكنولوجيا ft-nir التحليل الطيفي mems المعايرة"
     },
     "zh": {
-      "t": "近红外技术与校准科学",
-      "s": "NIR 光谱技术的工作原理，从光子到预测：测量路径、定标科学以及由 USTECH 解释的 caliX + ProChem 生态系统。",
-      "k": "近红外技术与校准科学 nir 光谱技术的工作原理 从光子到预测 测量路径 定标科学以及由 ustech 解释的 calix prochem 生态系统 核心技术 ft-nir 近红外光谱原理 mems 定标科学"
+      "t": "NIR 光谱如何工作：定标科学",
+      "s": "NIR 光谱从光到预测的工作原理：测量路径、定标科学，以及 caliX 和 ProChem 如何与 USTECH 分析仪协同工作。",
+      "k": "nir 光谱如何工作 定标科学 nir 光谱从光到预测的工作原理 测量路径 定标科学 以及 calix 和 prochem 如何与 ustech 分析仪协同工作 核心技术 ft-nir 近红外光谱原理 mems 定标科学"
     }
   },
   "knowledge-blogs.html": {
     "tr": {
-      "t": "NIR Spektroskopisi Blogu ve Teknik İncelemeler",
-      "s": "Analitik cihazlar için endüstriyel kullanımlar hakkında bilgi edinin. USTECH uzmanlarından vaka çalışmaları, makaleler ve beyaz kitaplar okuyun.",
-      "k": "nir spektroskopisi blogu ve teknik i ncelemeler analitik cihazlar için endüstriyel kullanımlar hakkında bilgi edinin ustech uzmanlarından vaka çalışmaları makaleler ve beyaz kitaplar okuyun blog makale uygulama notu teknik yazı"
+      "t": "NIR Spektroskopisi Blogu ve Teknik Makaleler",
+      "s": "NIR kalibrasyonu, PLS modelleme, hat içi proses kontrolü ve yatırım getirisi üzerine teknik makaleler: kalite kontrol ve proses mühendisleri için.",
+      "k": "nir spektroskopisi blogu ve teknik makaleler nir kalibrasyonu pls modelleme hat içi proses kontrolü ve yatırım getirisi üzerine teknik makaleler kalite kontrol ve proses mühendisleri için blog makale uygulama notu teknik yazı"
     },
     "fr": {
-      "t": "Blog et livres blancs sur la spectroscopie NIR",
-      "s": "52 articles, livres blancs et guides sur l'étalonnage NIR, la modélisation PLS, le contrôle de processus en ligne et le retour sur investissement - lecture pratique pour les ingénieurs de contrôle qualité et de procédés.",
-      "k": "blog et livres blancs sur la spectroscopie nir 52 articles livres blancs et guides sur l étalonnage nir la modélisation pls le contrôle de processus en ligne et le retour sur investissement - lecture pratique pour les ingénieurs de contrôle qualité et de procédés blog articles notes d application"
+      "t": "Blog de spectroscopie NIR et articles techniques",
+      "s": "Articles techniques sur l'étalonnage NIR, la modélisation PLS, le contrôle de procédé en ligne et le ROI : lecture pratique pour ingénieurs qualité et procédé.",
+      "k": "blog de spectroscopie nir et articles techniques articles techniques sur l étalonnage nir la modélisation pls le contrôle de procédé en ligne et le roi lecture pratique pour ingénieurs qualité et procédé blog articles notes d application"
     },
     "de": {
-      "t": "NIR-Spektroskopie-Blog & Whitepaper",
-      "s": "52 Artikel, Whitepaper und Leitfäden zu NIR-Kalibrierung, PLS-Modellierung, Inline-Prozesskontrolle und ROI – praxisnahe Lektüre für QC- und Prozessingenieure.",
-      "k": "nir-spektroskopie-blog whitepaper 52 artikel whitepaper und leitfäden zu nir-kalibrierung pls-modellierung inline-prozesskontrolle und roi praxisnahe lektüre für qc- und prozessingenieure blog artikel anwendungshinweise"
+      "t": "NIR-Spektroskopie-Blog und Fachartikel",
+      "s": "Fachartikel zu NIR-Kalibrierung, PLS-Modellierung, Inline-Prozesskontrolle und ROI: praxisnahe Lektüre für QK- und Verfahrensingenieure.",
+      "k": "nir-spektroskopie-blog und fachartikel fachartikel zu nir-kalibrierung pls-modellierung inline-prozesskontrolle und roi praxisnahe lektüre für qk- und verfahrensingenieure blog artikel anwendungshinweise"
     },
     "es": {
-      "t": "Blog de Espectroscopía NIR y Artículos Técnicos",
-      "s": "52 artículos, whitepapers y guías sobre calibración NIR, modelado PLS, control de procesos en línea y ROI: lectura práctica para ingenieros de procesos y control de calidad.",
-      "k": "blog de espectroscopía nir y artículos técnicos 52 artículos whitepapers y guías sobre calibración nir modelado pls control de procesos en línea y roi lectura práctica para ingenieros de procesos y control de calidad blog articles notes de aplicación"
+      "t": "Blog de espectroscopia NIR y artículos técnicos",
+      "s": "Artículos técnicos sobre calibración NIR, modelado PLS, control de procesos en línea y ROI: lectura práctica para ingenieros de calidad y de procesos.",
+      "k": "blog de espectroscopia nir y artículos técnicos artículos técnicos sobre calibración nir modelado pls control de procesos en línea y roi lectura práctica para ingenieros de calidad y de procesos blog articles notes de aplicación"
     },
     "ar": {
-      "t": "مدونة التحليل الطيفي بالأشعة تحت الحمراء القريبة والأوراق البيضاء",
-      "s": "52 مقالة وورقة بيضاء ودليلاً حول معايرة NIR ونمذجة PLS والتحكم في العمليات المضمنة وضمان الجودة في الأغذية والألبان والكيماويات.",
-      "k": "مدونة التحليل الطيفي بالأشعة تحت الحمراء القريبة والأوراق البيضاء 52 مقالة وورقة بيضاء ودليلاً حول معايرة nir ونمذجة pls والتحكم في العمليات المضمنة وضمان الجودة في الأغذية والألبان والكيماويات المدونات المقالات الملاحظات الفنية"
+      "t": "مدونة مطيافية NIR ومقالات تقنية",
+      "s": "مقالات وأوراق تقنية حول معايرة NIR ونمذجة PLS والتحكم المضمن في العمليات وعائد الاستثمار: قراءة عملية لمهندسي الجودة والعمليات.",
+      "k": "مدونة مطيافية nir ومقالات تقنية مقالات وأوراق تقنية حول معايرة nir ونمذجة pls والتحكم المضمن في العمليات وعائد الاستثمار قراءة عملية لمهندسي الجودة والعمليات المدونات المقالات الملاحظات الفنية"
     },
     "zh": {
-      "t": "近红外光谱博客与白皮书",
-      "s": "52 篇关于 NIR 定标、PLS 建模、在线闭环过程控制和投资回报率的文章、白皮书和指南——适用于质控和工艺工程师的实用读物。",
-      "k": "近红外光谱博客与白皮书 52 篇关于 nir 定标 pls 建模 在线闭环过程控制和投资回报率的文章 白皮书和指南 适用于质控和工艺工程师的实用读物 技术博客 文章 应用说明 案例研究"
+      "t": "NIR 光谱博客与技术文章",
+      "s": "关于 NIR 定标、PLS 建模、在线过程控制和投资回报的技术文章：面向质量控制和工艺工程师的实用读物。",
+      "k": "nir 光谱博客与技术文章 关于 nir 定标 pls 建模 在线过程控制和投资回报的技术文章 面向质量控制和工艺工程师的实用读物 技术博客 文章 应用说明 案例研究"
     }
   }
 };
