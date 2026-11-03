@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="Echtzeit-NIR-Analyse von Protein, Feuchte und Fett von der Annahme bis zum Fertigfutter. Weniger Rezeptur-Überdosierung, jede Charge dokumentiert.">
 <title>Inline-NIR für Mischfutterwerke: Protein-Überdosierung stoppen | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -246,7 +246,7 @@
 <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">Qualität beginnt nicht an der Labortür – sie beginnt in dem Moment, in dem Rohstoffe Ihr Werk erreichen. USTECH-Lösungen sind darauf ausgelegt, an jedem Entscheidungspunkt in Ihrem Produktionsfluss integriert zu werden und reaktive Tests durch proaktive Prozessintelligenz zu ersetzen.</p>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 1: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/food_feed_receiving.webp?v=1.0.5" alt="Getreidelastwagen beim Entladen an der Annahmegosse mit Silo" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -269,7 +269,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 2: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">02 — Formulierungs- & Mischoptimierung</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Formulieren Sie nach Zielwert, nicht nach Worst-Case-Annahmen.</h2>
@@ -292,7 +292,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 3: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/cattle_feeding.webp?v=1.0.5" alt="Rinder fressen am Trog" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -307,12 +307,12 @@
 <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Überprüfung der Fettbeschichtung</span>
 </div>
 <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
-<strong style="color: var(--text-primary);">Empfohlene Geräte:</strong> <a href="product-proline-17ec.html" class="inline-product-link">ProLine17ES Analysator</a> + <a href="product-prochem.html" class="inline-product-link">ProChem Software</a>
+<strong style="color: var(--text-primary);">Empfohlene Geräte:</strong> <a href="product-proline-17ec.html" class="inline-product-link">ProLine17EC Analysator</a> + <a href="product-prochem.html" class="inline-product-link">ProChem Software</a>
 </div>
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 4: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">04 — Endprodukt-Qualitätssicherung & Compliance</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Mit Sicherheit ausliefern. Lückenlos dokumentieren.</h2>
@@ -398,10 +398,10 @@
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>Branchen</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">Lebensmittel und Futtermittel</a></li>
@@ -409,13 +409,28 @@
                         <li><a href="industry-chemical-pharma.html">Chemie und Pharma</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>Produkte</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">Geräte</a></li>
                         <li><a href="products-software.html">Software</a></li>
                         <li><a href="products-portal.html">Portal</a></li>
                         <li><a href="products-calibration-models.html">Kalibrationsmodelle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>Wissen</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">Technologie</a></li>
+                        <li><a href="knowledge-blogs.html">Blogs</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>Unternehmen</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Über Uns</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -447,6 +462,6 @@
             <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>

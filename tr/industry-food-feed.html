@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="Alımdan bitmiş yeme kadar gerçek zamanlı NIR protein, nem ve yağ analizi. Formülasyon israfını durdurun ve USTECH ile her partiyi belgeleyin.">
 <title>Yem Fabrikaları İçin Hat İçi NIR: Protein İsrafını Durdurun | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -246,7 +246,7 @@
 <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">Kalite laboratuvar kapısında başlamaz — hammaddelerin tesisinize girdiği an başlar. USTECH çözümleri, üretim akışınızdaki her karar noktasına entegre olmak üzere tasarlanmış olup, reaktif testleri proaktif proses zekasıyla değiştirir.</p>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 1: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/food_feed_receiving.webp?v=1.0.5" alt="Silolu alım rampasında tahıl kamyonu boşaltma" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -269,7 +269,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 2: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">02 — Formülasyon ve Karıştırma Optimizasyonu</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">En Kötü Senaryo Varsayımlarına Değil, Hedefe Göre Formüle Edin.</h2>
@@ -292,7 +292,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 3: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/cattle_feeding.webp?v=1.0.5" alt="Yemlikte beslenen sığırlar" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -307,12 +307,12 @@
 <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">Yağ kaplama doğrulaması</span>
 </div>
 <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
-<strong style="color: var(--text-primary);">Önerilen Cihazlar:</strong> <a href="product-proline-17ec.html" class="inline-product-link">ProLine17ES Analizörü</a> + <a href="product-prochem.html" class="inline-product-link">ProChem yazılımı</a>
+<strong style="color: var(--text-primary);">Önerilen Cihazlar:</strong> <a href="product-proline-17ec.html" class="inline-product-link">ProLine17EC Analizörü</a> + <a href="product-prochem.html" class="inline-product-link">ProChem yazılımı</a>
 </div>
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 4: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">04 — Bitmiş Ürün Kalite Güvencesi ve Uygunluk</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Güvenle Sevkiyat Yapın. Her Şeyi Belgeleyin.</h2>
@@ -398,10 +398,10 @@
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>Sektörler</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">Gıda ve Yem</a></li>
@@ -409,13 +409,28 @@
                         <li><a href="industry-chemical-pharma.html">Kimya ve İlaç</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>Ürünler</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">Cihazlar</a></li>
                         <li><a href="products-software.html">Yazılım</a></li>
                         <li><a href="products-portal.html">Portal</a></li>
                         <li><a href="products-calibration-models.html">Kalibrasyon Modelleri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>Bilgi Bankası</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">Teknoloji</a></li>
+                        <li><a href="knowledge-blogs.html">Bloglar</a></li>
+                        <li><a href="faq.html">SSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>Şirket</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
                     </ul>
                 </div>
             </div>
@@ -447,6 +462,6 @@
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>

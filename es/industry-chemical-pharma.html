@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="NIR listo para FDA 21 CFR Part 11 en plantas químicas y farmacéuticas: PAT en tiempo real para materias primas, uniformidad de mezcla y secado.">
 <title>Analítica de Procesos (PAT) para Química y Farma | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -243,7 +243,7 @@ Las directrices GMP (Anexo 11 de la UE, FDA 21 CFR Part 11) exigen pistas de aud
 <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem;">La tecnología analítica de procesos (PAT) ya no es una aspiración regulatoria, es una necesidad operativa. Las soluciones USTECH están diseñadas para incorporar inteligencia analítica en tiempo real directamente en su flujo de trabajo de fabricación, reemplazando los cuellos de botella del laboratorio con mediciones continuas en línea en cada atributo de calidad crítico.</p>
 </div>
 <!-- Stage 1: Image LEFT, Text RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
 <div class="stage-image">
 <img src="../images/pharma_rmid.webp?v=1.0.5" alt="Se escanean los contenedores de materia prima del almacén" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -268,7 +268,7 @@ Los analizadores en línea NIR de USTECH escanean materiales de forma no destruc
 </div>
 </div>
 <!-- Stage 2: Text LEFT, Image RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
 <div class="stage-text">
 <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.5rem;">02 — Monitoreo de la uniformidad de la mezcla</span>
 <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Sepa cuándo su mezcla es homogénea, no solo cuando se acabe el tiempo</h3>
@@ -293,7 +293,7 @@ En mezcladoras fijas, los analizadores NIR en línea de USTECH se montan en una 
 </div>
 </div>
 <!-- Stage 3: Image LEFT, Text RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
 <div class="stage-image">
 <img src="../images/pharma_granulator.webp?v=1.0.5" alt="Secador granulador de lecho fluido con sensor de sonda en línea" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -317,7 +317,7 @@ Las sondas en línea de montaje empotrado USTECH instaladas directamente en el l
 </div>
 </div>
 <!-- Stage 4: Text LEFT, Image RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
 <div class="stage-text">
 <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.5rem;">04 — Monitorización de reacciones y síntesis química</span>
 <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Seguimiento del progreso de la reacción sin extraer muestras</h3>
@@ -406,10 +406,10 @@ Cuéntenos sobre su proceso, volumen de producción y desafío de calidad. Nuest
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>Industrias</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">Alimentos y Piensos</a></li>
@@ -417,13 +417,28 @@ Cuéntenos sobre su proceso, volumen de producción y desafío de calidad. Nuest
                         <li><a href="industry-chemical-pharma.html">Química y Farmacia</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>Productos</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">Dispositivos</a></li>
                         <li><a href="products-software.html">Software</a></li>
                         <li><a href="products-portal.html">Portal</a></li>
                         <li><a href="products-calibration-models.html">Modelos de Calibración</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>Conocimiento</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">Tecnología</a></li>
+                        <li><a href="knowledge-blogs.html">Blogs</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -455,6 +470,6 @@ Cuéntenos sobre su proceso, volumen de producción y desafío de calidad. Nuest
             <p>Diseñado para la precisión científica e industrial.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>

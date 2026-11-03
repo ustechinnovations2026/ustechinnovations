@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="适用于制药和化工厂并符合 FDA 21 CFR Part 11 的 NIR：针对原材料 ID、混合均匀度、干燥终点和反应的实时 PAT。">
 <title>化工与制药过程分析 (PAT) | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -243,7 +243,7 @@ GMP 指南（欧盟附件 11，FDA 21 CFR Part 11）要求完整的审计追踪�
 <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem;">过程分析技术 (PAT) 不再只是一种法规期望——它是操作上的必需。USTECH 解决方案旨在将实时分析智能直接嵌入您的生产工作流程，用每一项关键质量属性的持续在线测量取代实验室造成的瓶颈。</p>
 </div>
 <!-- Stage 1: Image LEFT, Text RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
 <div class="stage-image">
 <img src="../images/pharma_rmid.webp?v=1.0.5" alt="仓库内正在被扫描的原材料容器" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -268,7 +268,7 @@ USTECH 的线旁 NIR 分析仪可进行无损扫描材料——直接透过透�
 </div>
 </div>
 <!-- Stage 2: Text LEFT, Image RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
 <div class="stage-text">
 <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.5rem;">02 — 聚合与聚合物加工</span>
 <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">了解混合物何时变得均匀——而不仅仅是在计时器结束时</h3>
@@ -293,7 +293,7 @@ USTECH 的线旁 NIR 分析仪可进行无损扫描材料——直接透过透�
 </div>
 </div>
 <!-- Stage 3: Image LEFT, Text RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
 <div class="stage-image">
 <img src="../images/pharma_granulator.webp?v=1.0.5" alt="装有在线探头传感器的流化床制粒干燥机" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -317,7 +317,7 @@ USTECH 的线旁 NIR 分析仪可进行无损扫描材料——直接透过透�
 </div>
 </div>
 <!-- Stage 4: Text LEFT, Image RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
 <div class="stage-text">
 <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.5rem;">04 — 溶剂回收与精馏控制</span>
 <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">无需抽取样本即可追踪反应进度</h3>
@@ -406,10 +406,10 @@ cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台包�
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>行业应用</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">食品与饲料</a></li>
@@ -417,13 +417,28 @@ cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台包�
                         <li><a href="industry-chemical-pharma.html">化工与制药</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>产品中心</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">硬件设备</a></li>
                         <li><a href="products-software.html">软件系统</a></li>
                         <li><a href="products-portal.html">云端门户</a></li>
                         <li><a href="products-calibration-models.html">校准模型</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>知识中心</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">核心技术</a></li>
+                        <li><a href="knowledge-blogs.html">技术博客</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>公司</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -455,6 +470,6 @@ cali<span class="calix-x" style="color: #38b6ff !important;">X</span> 平台包�
             <p>专为严苛的科学与工业精度而设计。</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>

@@ -108,10 +108,10 @@ var UI_I18N = {
     spec_text: 'Our NIR spectroscopy experts are ready to help you find the right solution for your process. Reach out through any channel below.',
     spec_call: 'Call Us', spec_email: 'Email', spec_cta: 'Request a Consultation',
     cookie_saved: 'Cookie preferences saved.', cookie_all: 'All cookies accepted.',
-    cta_badge: 'Live Demo & Feasibility',
+    cta_badge: 'Application Consultation',
     cta_title: 'Optimize Your Process with Real-Time NIR',
-    cta_desc: 'Schedule a tailored live demo or send your raw samples for complimentary feasibility testing.',
-    cta_btn: 'Request Live Demo',
+    cta_desc: 'Tell us about your product and process; our application team will get back to you with a suitable solution and a quote.',
+    cta_btn: 'Discuss Your Application',
     form_sales_lbl: "Application Details / Message",
     form_sales_ph: "Tell us about your parameters of interest, samples, or process requirements...",
     form_support_lbl: "Describe the Technical Issue",
@@ -140,10 +140,10 @@ var UI_I18N = {
     spec_text: 'NIR spektroskopi uzmanlarımız prosesiniz için doğru çözümü bulmanıza yardımcı olmaya hazır. Aşağıdaki kanallardan bize ulaşın.',
     spec_call: 'Bizi Arayın', spec_email: 'E-posta', spec_cta: 'Danışmanlık Talep Edin',
     cookie_saved: 'Çerez tercihleri kaydedildi.', cookie_all: 'Tüm çerezler kabul edildi.',
-    cta_badge: 'Canlı Demo & Numune Analizi',
+    cta_badge: 'Uygulama Görüşmesi',
     cta_title: 'Üretiminizi Gerçek Zamanlı NIR ile Güçlendirin',
-    cta_desc: 'Tesisinize özel canlı demo planlayın veya numunelerinizi ücretsiz laboratuvar fizibilite analizi için iletin.',
-    cta_btn: 'Canlı Demo Talep Edin',
+    cta_desc: 'Ürününüzü ve prosesinizi anlatın; uygulama ekibimiz size uygun çözüm ve teklifle dönüş yapsın.',
+    cta_btn: 'Uygulamanızı Görüşelim',
     form_sales_lbl: "Uygulama Detayları / Mesaj",
     form_sales_ph: "İlgilendiğiniz parametreleri, numunelerinizi veya proses gereksinimlerinizi anlatın...",
     form_support_lbl: "Teknik Sorunu Açıklayın",
@@ -172,10 +172,10 @@ var UI_I18N = {
     spec_text: 'Nos experts en spectroscopie NIR sont prêts à vous aider à trouver la solution adaptée à votre procédé. Contactez-nous par le canal de votre choix.',
     spec_call: 'Appelez-nous', spec_email: 'E-mail', spec_cta: 'Demander une consultation',
     cookie_saved: 'Préférences de cookies enregistrées.', cookie_all: 'Tous les cookies acceptés.',
-    cta_badge: 'Démo en direct & Essais',
+    cta_badge: 'Échange sur votre application',
     cta_title: 'Optimisez votre production avec le NIR',
-    cta_desc: 'Planifiez une démo personnalisée ou envoyez vos échantillons pour un essai de faisabilité gratuit.',
-    cta_btn: 'Demander une démo',
+    cta_desc: 'Présentez-nous votre produit et votre procédé : notre équipe applications vous proposera une solution adaptée et un devis.',
+    cta_btn: 'Parlons de votre application',
     form_sales_lbl: "Votre application de mesure / Message",
     form_sales_ph: "Parlez-nous de vos paramètres d'intérêt, de vos échantillons ou des exigences de votre procédé...",
     form_support_lbl: "Décrivez le problème technique",
@@ -204,10 +204,10 @@ var UI_I18N = {
     spec_text: 'Unsere NIR-Spektroskopie-Experten helfen Ihnen gern, die passende Lösung für Ihren Prozess zu finden. Kontaktieren Sie uns über einen der folgenden Kanäle.',
     spec_call: 'Rufen Sie uns an', spec_email: 'E-Mail', spec_cta: 'Beratung anfordern',
     cookie_saved: 'Cookie-Einstellungen gespeichert.', cookie_all: 'Alle Cookies akzeptiert.',
-    cta_badge: 'Live-Demo & Machbarkeit',
+    cta_badge: 'Anwendungsberatung',
     cta_title: 'Optimieren Sie Ihre Produktion mit NIR',
-    cta_desc: 'Vereinbaren Sie eine Live-Demo oder senden Sie Ihre Rohstoffe für einen kostenlosen Machbarkeitstest ein.',
-    cta_btn: 'Live-Demo anfordern',
+    cta_desc: 'Beschreiben Sie uns Ihr Produkt und Ihren Prozess – unser Anwendungsteam meldet sich mit einer passenden Lösung und einem Angebot.',
+    cta_btn: 'Ihre Anwendung besprechen',
     form_sales_lbl: "Ihre Messaufgabe / Nachricht",
     form_sales_ph: "Erzählen Sie uns von den gewünschten Parametern, Ihren Proben oder Ihren Prozessanforderungen ...",
     form_support_lbl: "Beschreiben Sie das technische Problem",
@@ -236,10 +236,10 @@ var UI_I18N = {
     spec_text: 'Nuestros expertos en espectroscopía NIR están listos para ayudarle a encontrar la solución adecuada para su proceso. Contáctenos por cualquiera de estos canales.',
     spec_call: 'Llámenos', spec_email: 'Correo', spec_cta: 'Solicitar consulta',
     cookie_saved: 'Preferencias de cookies guardadas.', cookie_all: 'Todas las cookies aceptadas.',
-    cta_badge: 'Demo en Vivo y Factibilidad',
+    cta_badge: 'Consulta de aplicación',
     cta_title: 'Optimice su producción con NIR',
-    cta_desc: 'Programe una demo personalizada o envíe sus muestras para un ensayo de factibilidad gratuito.',
-    cta_btn: 'Solicitar Demostración',
+    cta_desc: 'Cuéntenos sobre su producto y su proceso; nuestro equipo de aplicaciones le responderá con una solución adecuada y un presupuesto.',
+    cta_btn: 'Hablemos de su aplicación',
     form_sales_lbl: "Su aplicación de medición / Mensaje",
     form_sales_ph: "Cuéntenos qué parámetros le interesan, sus muestras o los requisitos de su proceso...",
     form_support_lbl: "Describa el problema técnico",
@@ -268,10 +268,10 @@ var UI_I18N = {
     spec_text: 'خبراء التحليل الطيفي NIR لدينا مستعدون لمساعدتك في العثور على الحل المناسب لعمليتك. تواصل معنا عبر أي قناة أدناه.',
     spec_call: 'اتصل بنا', spec_email: 'البريد الإلكتروني', spec_cta: 'طلب استشارة',
     cookie_saved: 'تم حفظ تفضيلات ملفات تعريف الارتباط.', cookie_all: 'تم قبول جميع ملفات تعريف الارتباط.',
-    cta_badge: 'عرض حي وتحليل عينات',
+    cta_badge: 'استشارة التطبيق',
     cta_title: 'عزز كفاءة إنتاجك مع تقنية NIR في الوقت الفعلي',
-    cta_desc: 'حدد موعداً لعرض توضيحي مخصص أو أرسل عيناتك لإجراء اختبار مجاني لدراسة الجدوى في المختبر.',
-    cta_btn: 'طلب عرض توضيحي حي',
+    cta_desc: 'أخبرونا عن منتجكم وعمليتكم، وسيعود إليكم فريق التطبيقات لدينا بحل مناسب وعرض سعر.',
+    cta_btn: 'لنناقش تطبيقكم',
     form_sales_lbl: "تفاصيل تطبيق القياس / الرسالة",
     form_sales_ph: "أخبرنا عن المعلمات التي تهمك أو العينات أو متطلبات العملية...",
     form_support_lbl: "صف المشكلة التقنية",
@@ -300,10 +300,10 @@ var UI_I18N = {
     spec_text: '我们的近红外（NIR）光谱专家随时为您提供量身定制的工艺解决方案。请通过以下方式与我们联系。',
     spec_call: '致电我们', spec_email: '发送邮件', spec_cta: '预约技术咨询',
     cookie_saved: 'Cookie 偏好已保存。', cookie_all: '已接受所有 Cookie。',
-    cta_badge: '实时演示与样品可行性测试',
+    cta_badge: '应用咨询',
     cta_title: '借助实时近红外光谱赋能生产工艺',
-    cta_desc: '预约定制化现场演示，或寄送原料样品进行免费实验室可行性分析。',
-    cta_btn: '预约实时演示',
+    cta_desc: '请告诉我们您的产品和工艺，我们的应用团队将为您提供合适的解决方案和报价。',
+    cta_btn: '探讨您的应用需求',
     form_sales_lbl: "测量应用详情 / 留言",
     form_sales_ph: "告诉我们您感兴趣的参数、样品或工艺要求……",
     form_support_lbl: "请描述技术问题",
@@ -507,34 +507,34 @@ var SEARCH_I18N = {
   },
   "contact.html": {
     "tr": {
-      "t": "USTECH İle İletişime Geçin | Demo veya NIR Numune Analizi Talep Edin",
-      "s": "USTECH uygulama mühendisiyle görüşün: teklif isteyin, demo veya ücretsiz numune analizi ayırtın, ROI hesaplayıcıyla yıllık tasarrufunuzu görün.",
-      "k": "ustech i le i letişime geçin demo veya nir numune analizi talep edin ustech uygulama mühendisiyle görüşün teklif isteyin demo veya ücretsiz numune analizi ayırtın roi hesaplayıcıyla yıllık tasarrufunuzu görün iletişim iletisim teklif fiyat demo destek adres telefon"
+      "t": "İletişim: NIR Analizörü Teklifi ve Teknik Destek",
+      "s": "NIR analizörleri, kemometri yazılımı ve kalibrasyonlarla ilgili teklif, teknik destek veya iş ortaklığı talepleriniz için USTECH uygulama uzmanlarına ulaşın.",
+      "k": "i letişim nir analizörü teklifi ve teknik destek nir analizörleri kemometri yazılımı ve kalibrasyonlarla ilgili teklif teknik destek veya iş ortaklığı talepleriniz için ustech uygulama uzmanlarına ulaşın iletişim iletisim teklif fiyat destek adres telefon"
     },
     "fr": {
-      "t": "Contacter USTECH | Demander une démo ou une analyse d'échantillon NIR",
-      "s": "Parlez à un ingénieur d'application USTECH : devis, démonstration ou analyse d'échantillon gratuite, et calculateur de ROI pour vos économies annuelles.",
-      "k": "contacter ustech demander une démo ou une analyse d échantillon nir parlez à un ingénieur d application ustech devis démonstration ou analyse d échantillon gratuite et calculateur de roi pour vos économies annuelles contact devis prix démo support"
+      "t": "Contact : devis d'analyseurs NIR et support",
+      "s": "Contactez les spécialistes applications d'USTECH pour un devis, un support technique ou un partenariat concernant nos analyseurs NIR, logiciels de chimiométrie et calibrations.",
+      "k": "contact devis d analyseurs nir et support contactez les spécialistes applications d ustech pour un devis un support technique ou un partenariat concernant nos analyseurs nir logiciels de chimiométrie et calibrations contact devis prix support"
     },
     "de": {
-      "t": "Kontaktieren Sie USTECH | Fordern Sie eine Demo oder eine NIR-Probenanalyse an",
-      "s": "Sprechen Sie mit einem USTECH-Anwendungstechniker: Angebot, Demo oder kostenlose Musteranalyse und ROI-Rechner für Ihre jährlichen Einsparungen.",
-      "k": "kontaktieren sie ustech fordern sie eine demo oder eine nir-probenanalyse an sprechen sie mit einem ustech-anwendungstechniker angebot demo oder kostenlose musteranalyse und roi-rechner für ihre jährlichen einsparungen kontakt angebot preis demo support"
+      "t": "Kontakt: Angebote für NIR-Analysatoren & Support",
+      "s": "Kontaktieren Sie die Anwendungsspezialisten von USTECH für Angebote, technischen Support oder Partnerschaften zu NIR-Analysatoren, Chemometrie-Software und Kalibrierungen.",
+      "k": "kontakt angebote für nir-analysatoren support kontaktieren sie die anwendungsspezialisten von ustech für angebote technischen support oder partnerschaften zu nir-analysatoren chemometrie-software und kalibrierungen kontakt angebot preis support"
     },
     "es": {
-      "t": "Contacto USTECH | Solicite una demostración o un análisis de muestra NIR",
-      "s": "Hable con un ingeniero de aplicaciones USTECH: cotización, demostración o análisis de muestra gratuito y calculadora de ROI para sus ahorros anuales.",
-      "k": "contacto ustech solicite una demostración o un análisis de muestra nir hable con un ingeniero de aplicaciones ustech cotización demostración o análisis de muestra gratuito y calculadora de roi para sus ahorros anuales contacto cotización precio demo soporte"
+      "t": "Contacto: presupuestos de analizadores NIR y soporte",
+      "s": "Contacte con los especialistas en aplicaciones de USTECH para presupuestos, soporte técnico o colaboraciones sobre analizadores NIR, software quimiométrico y calibraciones.",
+      "k": "contacto presupuestos de analizadores nir y soporte contacte con los especialistas en aplicaciones de ustech para presupuestos soporte técnico o colaboraciones sobre analizadores nir software quimiométrico y calibraciones contacto cotización precio soporte"
     },
     "ar": {
-      "t": "اتصل بـ USTECH | طلب عرض توضيحي أو تحليل عينة NIR",
-      "s": "تحدث إلى مهندس تطبيقات USTECH: اطلب عرض أسعار، أو احجز عرضًا توضيحيًا أو تحليلاً مجانياً لعينة، واستخدم حاسبة العائد على الاستثمار لتقدير مدخراتك السنوية.",
-      "k": "اتصل بـ ustech طلب عرض توضيحي أو تحليل عينة nir تحدث إلى مهندس تطبيقات ustech اطلب عرض أسعار، أو احجز عرضًا توضيحيًا أو تحليلاً مجانياً لعينة، واستخدم حاسبة العائد على الاستثمار لتقدير مدخراتك السنوية اتصل بنا عرض سعر هاتف بريد دعم"
+      "t": "اتصل بنا: عروض أسعار محللات NIR والدعم الفني",
+      "s": "تواصلوا مع أخصائيي التطبيقات في USTECH للحصول على عرض سعر أو دعم فني أو شراكة بشأن محللات NIR وبرامج القياسات الكيميائية والمعايرات.",
+      "k": "اتصل بنا عروض أسعار محللات nir والدعم الفني تواصلوا مع أخصائيي التطبيقات في ustech للحصول على عرض سعر أو دعم فني أو شراكة بشأن محللات nir وبرامج القياسات الكيميائية والمعايرات اتصل بنا عرض سعر هاتف بريد دعم"
     },
     "zh": {
-      "t": "联系 USTECH | 预约演示或近红外光谱样本分析",
-      "s": "联系 USTECH 应用工程师：索取报价、预约演示或免费样本分析，并使用 ROI 计算器评估您的年度节省额。",
-      "k": "联系 ustech 预约演示或近红外光谱样本分析 联系 ustech 应用工程师 索取报价 预约演示或免费样本分析 并使用 roi 计算器评估您的年度节省额 联系我们 报价 演示 支持 电话 邮箱 地址"
+      "t": "联系我们：NIR 分析仪报价与技术支持",
+      "s": "联系 USTECH 应用专家，获取 NIR 分析仪、化学计量学软件和校准模型的报价、技术支持或合作洽谈。",
+      "k": "联系我们 nir 分析仪报价与技术支持 联系 ustech 应用专家 获取 nir 分析仪 化学计量学软件和校准模型的报价 技术支持或合作洽谈 联系我们 报价 支持 电话 邮箱 地址"
     }
   },
   "faq.html": {
@@ -1757,7 +1757,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span>${ui('cookie_ana_d')}</span>
                             </div>
                             <label class="switch">
-                                <input type="checkbox" id="cookie-analytical" checked>
+                                <input type="checkbox" id="cookie-analytical">
                                 <span class="slider round"></span>
                             </label>
                         </div>

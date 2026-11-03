@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="İlaç ve kimya tesisleri için FDA 21 CFR Part 11'e hazır NIR: hammadde kimliği, karışım tekdüzeliği, kurutma uç noktası ve reaksiyon izleme.">
 <title>Kimya ve İlaç Proses Analitiği (PAT) | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -243,7 +243,7 @@ GMP yönergeleri (AB Ek 11, FDA 21 CFR Bölüm 11) eksiksiz denetim izleri ve el
 <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem;">Proses Analitik Teknolojisi (PAT) artık düzenleyici bir hedef değil — operasyonel bir zorunluluktur. USTECH çözümleri, laboratuvar darboğazlarını her kritik kalite özniteliğinde sürekli, hat içi ölçümle değiştirerek, gerçek zamanlı analitik zekayı doğrudan üretim iş akışınıza yerleştirmek üzere tasarlanmıştır.</p>
 </div>
 <!-- Stage 1: Image LEFT, Text RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
 <div class="stage-image">
 <img src="../images/pharma_rmid.webp?v=1.0.5" alt="Depoda taranan hammadde kapları" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -268,7 +268,7 @@ USTECH'in hat başı NIR analizörleri, PCA/SIMCA sınıflandırma algoritmalar�
 </div>
 </div>
 <!-- Stage 2: Text LEFT, Image RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
 <div class="stage-text">
 <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.5rem;">02 — Karışım Tekdüzeliği İzleme</span>
 <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Karışımınızın Ne Zaman Homojen Olduğunu Bilin — Sadece Süre Dolduğunda Değil</h3>
@@ -293,7 +293,7 @@ Sabit gövdeli karıştırıcılarda USTECH'in hat içi NIR analizörleri karı�
 </div>
 </div>
 <!-- Stage 3: Image LEFT, Text RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 4rem;">
 <div class="stage-image">
 <img src="../images/pharma_granulator.webp?v=1.0.5" alt="Hat içi prob sensörlü akışkan yataklı granülatör kurutucu" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -317,7 +317,7 @@ Akışkan yatağa doğrudan monte edilen USTECH sıfır yüzeyli hat içi probla
 </div>
 </div>
 <!-- Stage 4: Text LEFT, Image RIGHT -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 2rem;">
 <div class="stage-text">
 <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.5rem;">04 — Reaksiyon İzleme ve Kimyasal Sentez</span>
 <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">Numune Almadan Reaksiyon İlerlemesini Takip Edin</h3>
@@ -406,10 +406,10 @@ Bize prosesinizden, üretim hacminizden ve kalite zorluklarınızdan bahsedin. U
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>Sektörler</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">Gıda ve Yem</a></li>
@@ -417,13 +417,28 @@ Bize prosesinizden, üretim hacminizden ve kalite zorluklarınızdan bahsedin. U
                         <li><a href="industry-chemical-pharma.html">Kimya ve İlaç</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>Ürünler</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">Cihazlar</a></li>
                         <li><a href="products-software.html">Yazılım</a></li>
                         <li><a href="products-portal.html">Portal</a></li>
                         <li><a href="products-calibration-models.html">Kalibrasyon Modelleri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>Bilgi Bankası</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">Teknoloji</a></li>
+                        <li><a href="knowledge-blogs.html">Bloglar</a></li>
+                        <li><a href="faq.html">SSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>Şirket</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
                     </ul>
                 </div>
             </div>
@@ -455,6 +470,6 @@ Bize prosesinizden, üretim hacminizden ve kalite zorluklarınızdan bahsedin. U
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="从接收到成品饲料期间，实时进行蛋白质、水分和脂肪的近红外光谱(NIR)分析。使用 USTECH 停止配方让利并记录每一个批次。">
 <title>饲料厂在线 NIR：消除蛋白质让利 | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -246,7 +246,7 @@
 <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">质量不是始于实验室门口——而是始于原材料进入您工厂的那一刻。USTECH 解决方案被设计融入您生产流程的每一个决策点，用主动的过程智能取代被动的测试。</p>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 1: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/food_feed_receiving.webp?v=1.0.5" alt="谷物卡车在带料仓的接收区卸货" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -269,7 +269,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 2: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">02 &mdash; 配方与混合优化</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">按目标配方，而非按最坏情况的假设进行配方。</h2>
@@ -292,7 +292,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 3: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/cattle_feeding.webp?v=1.0.5" alt="牛在食槽进食" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -307,12 +307,12 @@
 <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">脂肪涂层验证</span>
 </div>
 <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
-<strong style="color: var(--text-primary);">推荐设备：</strong> <a href="product-proline-17ec.html" class="inline-product-link">ProLine17ES 分析仪</a> + <a href="product-prochem.html" class="inline-product-link">ProChem</a>
+<strong style="color: var(--text-primary);">推荐设备：</strong> <a href="product-proline-17ec.html" class="inline-product-link">ProLine17EC 分析仪</a> + <a href="product-prochem.html" class="inline-product-link">ProChem</a>
 </div>
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 4: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">04 — 成品放行与装袋</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">放心发货。记录一切。</h2>
@@ -398,10 +398,10 @@
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>行业应用</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">食品与饲料</a></li>
@@ -409,13 +409,28 @@
                         <li><a href="industry-chemical-pharma.html">化工与制药</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>产品中心</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">硬件设备</a></li>
                         <li><a href="products-software.html">软件系统</a></li>
                         <li><a href="products-portal.html">云端门户</a></li>
                         <li><a href="products-calibration-models.html">校准模型</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>知识中心</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">核心技术</a></li>
+                        <li><a href="knowledge-blogs.html">技术博客</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>公司</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -447,6 +462,6 @@
             <p>专为严苛的科学与工业精度而设计。</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>

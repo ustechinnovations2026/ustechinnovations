@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="تحليل NIR للبروتين والرطوبة والدهون في الوقت الفعلي من الاستلام إلى العلف النهائي. أوقف هدر التركيب وقم بتوثيق كل دفعة مع USTECH.">
 <title>NIR المدمج لمصانع الأعلاف: أوقف هدر البروتين | USTECH</title>
-<link rel="stylesheet" href="../index.css?v=1.1.5">
+<link rel="stylesheet" href="../index.css?v=1.1.6">
 <!-- Organization + WebSite Schema -->
 <script type="application/ld+json">
 {
@@ -247,7 +247,7 @@
 <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-top: 1rem;">الجودة لا تبدأ عند باب المختبر — بل تبدأ في اللحظة التي تدخل فيها المواد الخام إلى منشأتك. تم تصميم حلول USTECH للتكامل عند كل نقطة اتخاذ قرار في تدفق الإنتاج الخاص بك، واستبدال الاختبار التفاعلي بذكاء العمليات الاستباقي.</p>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 1: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-1" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/food_feed_receiving.webp?v=1.0.5" alt="شاحنة حبوب يتم تفريغها في خليج الاستقبال مع صومعة" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -270,7 +270,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 2: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-2" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">02 &mdash; تحسين التركيبة والخلط</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">صغ الوصفات لتحقيق الهدف، وليس لافتراضات الحالة الأسوأ.</h2>
@@ -293,7 +293,7 @@
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 3: Image LEFT, Text RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
+<div id="stage-3" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem; margin-bottom: 5rem;">
 <div class="stage-image">
 <img src="../images/cattle_feeding.webp?v=1.0.5" alt="ماشية تتغذى في الحوض" style="width: 100%; aspect-ratio: 1.2 / 1; object-fit: cover; object-position: center; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); display: block;" loading="lazy" decoding="async">
 </div>
@@ -308,12 +308,12 @@
 <span style="display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);">التحقق من طلاء الدهون</span>
 </div>
 <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 0.75rem;">
-<strong style="color: var(--text-primary);">الأجهزة الموصى بها:</strong> <a href="product-proline-17ec.html" class="inline-product-link">محلل ProLine17ES</a> + <a href="product-prochem.html" class="inline-product-link">برنامج ProChem</a>
+<strong style="color: var(--text-primary);">الأجهزة الموصى بها:</strong> <a href="product-proline-17ec.html" class="inline-product-link">محلل ProLine17EC</a> + <a href="product-prochem.html" class="inline-product-link">برنامج ProChem</a>
 </div>
 </div>
 </div>
 <!-- &mdash;&mdash;&mdash; Stage 4: Text LEFT, Image RIGHT &mdash;&mdash;&mdash; -->
-<div class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
+<div id="stage-4" class="grid grid-2 value-chain-row" style="align-items: center; gap: 4rem;">
 <div class="stage-text">
 <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent-grey); font-weight: 700; display: block; margin-bottom: 0.75rem;">04 — ضمان جودة المنتج النهائي والامتثال</span>
 <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem; letter-spacing: -0.5px;">اشحن بثقة. وثّق كل شيء.</h2>
@@ -399,10 +399,10 @@
 </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <!-- Left: Industries + Products -->
+        <div class="footer-grid footer-4">
+            <!-- Left: Industries / Products / Knowledge / Company (03.11.2026: 4 sutun) -->
             <div class="footer-left">
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-ind">
                     <h4>الصناعات</h4>
                     <ul class="footer-links">
                         <li><a href="industry-food-feed.html">الأغذية والأعلاف</a></li>
@@ -410,13 +410,28 @@
                         <li><a href="industry-chemical-pharma.html">الكيمياء والصيدلة</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-col">
+                <div class="footer-links-col footer-col-prod">
                     <h4>المنتجات</h4>
                     <ul class="footer-links">
                         <li><a href="products-devices.html">الأجهزة</a></li>
                         <li><a href="products-software.html">البرمجيات</a></li>
                         <li><a href="products-portal.html">البوابة</a></li>
                         <li><a href="products-calibration-models.html">نماذج المعايرة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-know">
+                    <h4>المعرفة</h4>
+                    <ul class="footer-links">
+                        <li><a href="knowledge-technology.html">التكنولوجيا</a></li>
+                        <li><a href="knowledge-blogs.html">المدونات</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col footer-col-comp">
+                    <h4>الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
             </div>
@@ -448,6 +463,6 @@
             <p>مصمم للدقة العلمية والصناعية.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.13"></script>
+<script src="../app.js?v=1.0.14"></script>
 </body>
 </html>
