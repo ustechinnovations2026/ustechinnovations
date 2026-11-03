@@ -2289,12 +2289,12 @@ input:checked + .slider:before {
 }
 
 /* ==========================================================================
-   Products Split Page Layout (2x2 Grid)
+   Products Split Page Layout (3 sutun; Portal 03.11.2026'da cikti)
    ========================================================================== */
 
 .products-split-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     min-height: calc(100vh - 124px);
     width: 100%;
     overflow: hidden;

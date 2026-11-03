@@ -1017,6 +1017,38 @@ var SEARCH_I18N = {
       "k": "tornado 水冷实验室磨粉机 tornado 水冷实验室磨粉机 配备 9 000 rpm 转子和环形筛 可在分析前快速 均匀地研磨谷物 种子和饲料样品 tornado 旋风磨 样品制备 水冷 研磨"
     }
   },
+  "product-starchqc.html": {
+    "tr": {
+      "t": "StarchQC Un Nişasta Hasarı Analizörü: 8 Dakikada",
+      "s": "StarchQC undaki hasarlı nişastayı amperometrik iyot absorpsiyonu yöntemiyle 8 dakikada ölçer; sonucu AI %, NDS, UCDC, AACC ve Farrand birimlerinde yazdırır.",
+      "k": "starchqc un nişasta hasarı analizörü 8 dakikada starchqc undaki hasarlı nişastayı amperometrik iyot absorpsiyonu yöntemiyle 8 dakikada ölçer sonucu ai nds ucdc aacc ve farrand birimlerinde yazdırır starchqc nişasta hasarı hasarlı nişasta un değirmen amperometrik iyot"
+    },
+    "fr": {
+      "t": "StarchQC, analyseur d'amidon endommagé des farines",
+      "s": "StarchQC mesure l'amidon endommagé des farines par absorption ampérométrique d'iode en 8 minutes et imprime les résultats en AI %, NDS, UCDC, AACC et Farrand.",
+      "k": "starchqc analyseur d amidon endommagé des farines starchqc mesure l amidon endommagé des farines par absorption ampérométrique d iode en 8 minutes et imprime les résultats en ai nds ucdc aacc et farrand starchqc amidon endommagé farine meunerie ampérométrique iode"
+    },
+    "de": {
+      "t": "StarchQC Analysator für Stärkeschädigung im Mehl",
+      "s": "StarchQC misst die Stärkeschädigung im Mehl per amperometrischer Iodabsorption in 8 Minuten und druckt die Werte in AI %, NDS, UCDC, AACC und Farrand aus.",
+      "k": "starchqc analysator für stärkeschädigung im mehl starchqc misst die stärkeschädigung im mehl per amperometrischer iodabsorption in 8 minuten und druckt die werte in ai nds ucdc aacc und farrand aus starchqc stärkeschädigung beschädigte stärke mehl mühle amperometrisch iod"
+    },
+    "es": {
+      "t": "StarchQC analizador de almidón dañado en harina",
+      "s": "StarchQC mide el almidón dañado en la harina por absorción amperométrica de yodo en 8 minutos e imprime los resultados en AI %, NDS, UCDC, AACC y Farrand.",
+      "k": "starchqc analizador de almidón dañado en harina starchqc mide el almidón dañado en la harina por absorción amperométrica de yodo en 8 minutos e imprime los resultados en ai nds ucdc aacc y farrand starchqc almidón dañado harina molino amperométrico yodo"
+    },
+    "ar": {
+      "t": "StarchQC محلل تلف النشا في الدقيق: اختبار 8 دقائق",
+      "s": "يقيس StarchQC النشا التالف في الدقيق بطريقة امتصاص اليود الأمبيرومترية خلال 8 دقائق، ويطبع النتائج بوحدات AI % وNDS وUCDC وAACC وFarrand.",
+      "k": "starchqc محلل تلف النشا في الدقيق اختبار 8 دقائق يقيس starchqc النشا التالف في الدقيق بطريقة امتصاص اليود الأمبيرومترية خلال 8 دقائق، ويطبع النتائج بوحدات ai وnds وucdc وaacc وfarrand starchqc النشا التالف الدقيق المطاحن اليود"
+    },
+    "zh": {
+      "t": "StarchQC 面粉破损淀粉分析仪：8 分钟测试",
+      "s": "StarchQC 采用电流法碘吸收原理，8 分钟内测定面粉中的破损淀粉，并以 AI %、NDS、UCDC、AACC 和 Farrand 单位打印结果。",
+      "k": "starchqc 面粉破损淀粉分析仪 8 分钟测试 starchqc 采用电流法碘吸收原理 8 分钟内测定面粉中的破损淀粉 并以 ai nds ucdc aacc 和 farrand 单位打印结果 starchqc 破损淀粉 面粉 磨粉 电流法 碘"
+    }
+  },
   "knowledge.html": {
     "tr": {
       "t": "NIR Bilgi Merkezi: Teknoloji Rehberi ve Blog",
@@ -2564,7 +2596,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const groupTitle = document.createElement('div');
                 groupTitle.className = 'search-result-group-title';
-                groupTitle.innerHTML = `💡 ${ui('suggested_for')} "${query}"`;
+                groupTitle.textContent = `💡 ${ui('suggested_for')} "${query}"`;  // sorgu HTML olarak basilmasin
                 dropdown.appendChild(groupTitle);
 
                 let list = [];
@@ -2581,7 +2613,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 if (list.length === 0) {
-                    dropdown.innerHTML = `<div class="search-no-results">${ui('no_suggestions')} "${query}"</div>`;
+                    dropdown.innerHTML = '<div class="search-no-results"></div>';
+                    dropdown.firstChild.textContent = `${ui('no_suggestions')} "${query}"`;  // sorgu HTML olarak basilmasin
                     dropdownSelectedIndex = -1;
                     return;
                 }
@@ -2887,6 +2920,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    }
+
+    // 15.4. Urun sayfalarindaki "Teklif Isteyin" baglantilari contact.html?product=<kod> tasir;
+    //      03.11.2026'ya kadar bu parametreyi okuyan kod yoktu, form bos aciliyordu.
+    const productSelect = document.getElementById('form-product');
+    if (productSelect) {
+        let productSlug = '';
+        try { productSlug = (new URLSearchParams(window.location.search).get('product') || '').toLowerCase(); } catch (e) {}
+        const PRODUCT_BY_SLUG = {
+            'calix': 'caliX', 'prochem': 'ProChem', 'masterline': 'MasterLine17EC',
+            'proline-17ec': 'ProLine 17EC', 'proline-17ecs': 'ProLine 17ECS',
+            'proline-2550': 'ProLine 2550', 'proline-2550-essential': 'ProLine 2550', 'proline-2550-advanced': 'ProLine 2550',
+            'starchqc': 'StarchQC', 'tornado': 'Tornado+'
+        };
+        const productValue = PRODUCT_BY_SLUG[productSlug];
+        if (productValue && Array.from(productSelect.options).some(o => o.value === productValue)) {
+            productSelect.value = productValue;
+        }
     }
 
     // 15.5. AJAX Form Submission via Web3Forms
