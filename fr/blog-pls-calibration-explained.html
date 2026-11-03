@@ -28,7 +28,7 @@
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
       "logo": "https://www.ustechinnovations.com/images/logo.svg",
-      "description": "Fabricant de systèmes de spectroscopie en ligne FT-NIR, de logiciels de chimiométrie et de modèles d'étalonnage pour l'alimentation humaine et animale, les produits laitiers et la transformation chimique.",
+      "description": "Fabricant d'analyseurs NIR et FT-NIR en ligne et at-line, de logiciels de chimiométrie et de modèles d'étalonnage pour les industries alimentaire, de l'alimentation animale, laitière et chimique.",
       "foundingDate": "2023",
       "address": {
         "@type": "PostalAddress",
@@ -39,7 +39,7 @@
         "addressCountry": "US"
       },
       "contactPoint": {
-        "@type": "ContactPoint",
+        "@type": "ContactPoint", "areaServed": "Worldwide", "availableLanguage": ["English", "Turkish", "French", "German", "Spanish", "Arabic", "Chinese"],
         "email": "info@ustechinnovations.com",
         "contactType": "sales"
       },
@@ -65,7 +65,7 @@
   "headline": "Comment fonctionne l'étalonnage NIR : PLS expliqué",
   "description": "Un guide accessible sur la manière dont un étalonnage PLS transforme des spectres NIR en valeurs de composition : variables latentes, nombre de facteurs, statistiques de validation et limites imposées par la méthode de référence.",
   "url": "https://www.ustechinnovations.com/fr/blog-pls-calibration-explained.html",
-  "datePublished": "2026-06-25",
+  "datePublished": "2026-10-02",
   "dateModified": "2026-10-27",
   "author": {
     "@type": "Organization", "legalName": "USTECH Innovations LLC",
@@ -218,7 +218,7 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Retour à Tous les Blogs et Publications</a>
 <img alt="PLS Regression Chemometrics Visualization" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_explained.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide — 25 juin 2026 — 5 min de lecture</span>
+<span class="blog-post-meta">Guide — 2 octobre 2026 — 5 min de lecture</span>
 <h1 class="blog-post-title">Comment fonctionne l'étalonnage NIR : PLS expliqué</h1>
 <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Une explication accessible de la manière dont la régression des moindres carrés partiels (PLS) transforme des spectres proche infrarouge en valeurs de composition &mdash; pourquoi la méthode est multivariée, ce que sont les variables latentes, combien de facteurs utiliser, comment les étalonnages sont validés et pourquoi la méthode de référence limite ce qui peut être démontré &mdash; d'après la littérature de chimiométrie et les normes applicables.</p>
 </div>
@@ -240,7 +240,7 @@
 <h2>La méthode de référence fixe le plancher</h2>
 <p>Un étalonnage est construit et testé à partir de valeurs issues d'une méthode de référence de laboratoire, et ces valeurs comportent leur propre erreur. Faber et Kowalski soulignent que l'erreur de prédiction estimée par rapport aux valeurs de référence mesurées est une erreur apparente, systématiquement supérieure à l'erreur de prédiction réelle, car l'erreur aléatoire de la mesure de référence ne peut être prédite par aucun modèle et est comptée à tort comme une insuffisance de l'étalonnage <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. La relation est plus subtile que &ldquo;&nbsp;le NIR ne peut jamais être meilleur que la référence&nbsp;&rdquo;&nbsp;: DiFoggio range cette affirmation parmi les idées fausses récurrentes sur l'analyse NIR et donne des contre-exemples <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Concrètement, cela signifie qu'un RMSEP rapporté ne peut pas, de manière convaincante, descendre sous la répétabilité du laboratoire de référence&nbsp;; connaître cette répétabilité fait donc partie de l'interprétation de tout résultat de validation <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</p>
 <h2>L'approche d'USTECH en matière d'étalonnage</h2>
-<p>Les modèles PLS des analyseurs USTECH tels que le <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> et le <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> sont développés dans le logiciel de chimiométrie <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> et déployés sur le procédé via <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>. Le prétraitement spectral est traité dans les guides consacrés à <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC et SNV</a> et au <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">filtrage de Savitzky-Golay</a>, et le flux de travail logiciel dans <a href="blog-pls-regression-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">la régression PLS dans cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>. La validation suit les principes ci-dessus, avec des échantillons indépendants et les statistiques définies dans l'ISO 12099 et l'ASTM E1655 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. La capacité d'un paramètre à atteindre l'exactitude requise par un procédé est établie lors d'une étude de faisabilité réalisée avec vos propres échantillons et analyses de référence.</p>
+<p>Les modèles PLS des analyseurs USTECH tels que le <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> et le <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine17EC</a> sont développés dans le logiciel de chimiométrie <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> et déployés sur le procédé via <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a>. Le prétraitement spectral est traité dans les guides consacrés à <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC et SNV</a> et au <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">filtrage de Savitzky-Golay</a>, et le flux de travail logiciel dans <a href="blog-pls-regression-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">la régression PLS dans cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>. La validation suit les principes ci-dessus, avec des échantillons indépendants et les statistiques définies dans l'ISO 12099 et l'ASTM E1655 <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. La capacité d'un paramètre à atteindre l'exactitude requise par un procédé est établie lors d'une étude de faisabilité réalisée avec vos propres échantillons et analyses de référence.</p>
 <div class="blog-post-references">
 <h3>Références</h3>
 <ul>
@@ -326,6 +326,6 @@
 <p>Conçu pour la précision scientifique et industrielle.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.12"></script>
+<script src="../app.js?v=1.0.13"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
       "logo": "https://www.ustechinnovations.com/images/logo.svg",
-      "description": "Fabricante de sistemas de espectroscopia FT-NIR en línea, software de quimiometría y modelos de calibración para procesamiento de alimentos, piensos, lácteos y productos químicos.",
+      "description": "Fabricante de analizadores NIR y FT-NIR en línea y at-line, software de quimiometría y modelos de calibración para el procesamiento de alimentos, piensos, lácteos y productos químicos.",
       "foundingDate": "2023",
       "address": {
         "@type": "PostalAddress",
@@ -39,7 +39,7 @@
         "addressCountry": "US"
       },
       "contactPoint": {
-        "@type": "ContactPoint",
+        "@type": "ContactPoint", "areaServed": "Worldwide", "availableLanguage": ["English", "Turkish", "French", "German", "Spanish", "Arabic", "Chinese"],
         "email": "info@ustechinnovations.com",
         "contactType": "sales"
       },
@@ -65,7 +65,7 @@
   "headline": "Desarrollo de modelos robustos de clasificación quimiométrica mediante PCA",
   "description": "Cómo las puntuaciones, cargas y residuos del PCA se convierten en un modelo de clasificación, de dónde proceden los límites de Hotelling y Q, por qué el modelado de clases difiere del PLS-DA y cómo esperan los reguladores que se valide un modelo NIR cualitativo.",
   "url": "https://www.ustechinnovations.com/es/blog-pca-classification-models.html",
-  "datePublished": "2026-06-07",
+  "datePublished": "2026-05-21",
   "dateModified": "2026-10-27",
   "author": {
     "@type": "Organization", "legalName": "USTECH Innovations LLC",
@@ -218,7 +218,7 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Volver a Todos los Blogs y Publicaciones</a>
 <img alt="Chemometric Modeling Software PCA Interface" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pca_chemometrics.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Guía — 7 de junio de 2026 — 5 min de lectura</span>
+<span class="blog-post-meta">Guía — 21 de mayo de 2026 — 5 min de lectura</span>
 <h1 class="blog-post-title">Desarrollo de modelos robustos de clasificación quimiométrica mediante PCA</h1>
 <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Cómo un modelo PCA de espectros de referencia se convierte en una regla de clasificación, de dónde proceden los límites de T&sup2; de Hotelling y de residuos Q, cuándo el modelado de clases de tipo SIMCA es la elección correcta en lugar del PLS-DA y cómo se valida la especificidad y la robustez de un modelo NIR cualitativo &mdash; con las fuentes quimiométricas y regulatorias.</p>
 </div>
@@ -241,7 +241,7 @@
 <li><strong>El conjunto externo debe ser externo.</strong> Un conjunto de prueba de los mismos lotes históricos no es una validación independiente; el conjunto de validación debe proceder de lotes diferentes <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>.</li>
 </ul>
 <h2>El enfoque de USTECH para la clasificación</h2>
-<p>En el software de quimiometría <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>, los modelos de clase PCA y los modelos discriminantes basados en PLS se construyen sobre espectros de referencia, y los límites T&sup2; y Q, el número de componentes y el pretratamiento se eligen y documentan como se ha descrito <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Los espectros de la biblioteca se adquieren at-line en el <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> o en línea en el <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>, y <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> transmite el resultado conforme/no conforme a la capa de PLC o SCADA. Si se necesita una biblioteca o una cascada de subbibliotecas, y cuántos lotes por material requiere la especificidad exigida, se establece en un estudio de viabilidad con sus propias muestras.</p>
+<p>En el software de quimiometría <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>, los modelos de clase PCA y los modelos discriminantes basados en PLS se construyen sobre espectros de referencia, y los límites T&sup2; y Q, el número de componentes y el pretratamiento se eligen y documentan como se ha descrito <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-4" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[4]</a>. Los espectros de la biblioteca se adquieren at-line en el <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine17EC</a> o en línea en el <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>, y <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> transmite el resultado conforme/no conforme a la capa de PLC o SCADA. Si se necesita una biblioteca o una cascada de subbibliotecas, y cuántos lotes por material requiere la especificidad exigida, se establece en un estudio de viabilidad con sus propias muestras.</p>
 <div class="blog-post-references">
 <h3>Referencias</h3>
 <ul>
@@ -345,6 +345,6 @@
 <p>Diseñado para la precisión científica e industrial.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.12"></script>
+<script src="../app.js?v=1.0.13"></script>
 </body>
 </html>

@@ -265,7 +265,7 @@ var UI_I18N = {
     cookie_mkt: 'ملفات تعريف الارتباط التسويقية', cookie_mkt_d: 'تُستخدم لتقديم محتوى مستهدف وقياس أداء الإعلانات.',
     cookie_save: 'حفظ الإعدادات', cookie_accept: 'قبول الكل', back_top: 'العودة إلى الأعلى',
     spec_tab: 'تحدث مع خبير متخصص', spec_close: 'إغلاق',
-    spec_text: 'خبراء التحليل الطيفي FT-NIR لدينا مستعدون لمساعدتك في العثور على الحل المناسب لعمليتك. تواصل معنا عبر أي قناة أدناه.',
+    spec_text: 'خبراء التحليل الطيفي NIR لدينا مستعدون لمساعدتك في العثور على الحل المناسب لعمليتك. تواصل معنا عبر أي قناة أدناه.',
     spec_call: 'اتصل بنا', spec_email: 'البريد الإلكتروني', spec_cta: 'طلب استشارة',
     cookie_saved: 'تم حفظ تفضيلات ملفات تعريف الارتباط.', cookie_all: 'تم قبول جميع ملفات تعريف الارتباط.',
     cta_badge: 'عرض حي وتحليل عينات',
@@ -443,66 +443,66 @@ function resolveSiteUrl(url) {
 var SEARCH_I18N = {
   "index.html": {
     "tr": {
-      "t": "Hat İçi FT-NIR Proses Analizörleri ve Kemometri",
-      "s": "Gıda, yem, süt ve kimya tesisleri için gerçek zamanlı hat içi FT-NIR analizi. İsrafı azaltın, her partide spesifikasyonu tutturun, döngüyü kapatın.",
-      "k": "hat i çi ft-nir proses analizörleri ve kemometri gıda yem süt ve kimya tesisleri için gerçek zamanlı hat içi ft-nir analizi i srafı azaltın her partide spesifikasyonu tutturun döngüyü kapatın ana sayfa anasayfa ustech"
+      "t": "Hat İçi NIR ve FT-NIR Proses Analizörleri",
+      "s": "Gıda, yem, süt ve kimya tesisleri için gerçek zamanlı hat içi NIR ve FT-NIR analizi. İsrafı azaltın, her partide spesifikasyonu tutturun, döngüyü kapatın.",
+      "k": "hat i çi nir ve ft-nir proses analizörleri gıda yem süt ve kimya tesisleri için gerçek zamanlı hat içi nir ve ft-nir analizi i srafı azaltın her partide spesifikasyonu tutturun döngüyü kapatın ana sayfa anasayfa ustech"
     },
     "fr": {
-      "t": "Analyseurs de processus et chimiométrie en ligne FT-NIR",
-      "s": "Analyse FT-NIR en ligne en temps réel pour l'agroalimentaire, l'alimentation animale, le lait et la chimie. Moins de surdosage, spécifications tenues.",
-      "k": "analyseurs de processus et chimiométrie en ligne ft-nir analyse ft-nir en ligne en temps réel pour l agroalimentaire l alimentation animale le lait et la chimie moins de surdosage spécifications tenues accueil"
+      "t": "Analyseurs de procédés NIR et FT-NIR en ligne",
+      "s": "Analyse NIR et FT-NIR en ligne en temps réel pour l'agroalimentaire, l'alimentation animale, le lait et la chimie. Moins de surdosage, spécifications tenues.",
+      "k": "analyseurs de procédés nir et ft-nir en ligne analyse nir et ft-nir en ligne en temps réel pour l agroalimentaire l alimentation animale le lait et la chimie moins de surdosage spécifications tenues accueil"
     },
     "de": {
-      "t": "Inline-FT-NIR-Prozessanalysatoren und Chemometrie",
-      "s": "Echtzeit-Inline-FT-NIR-Analyse für Lebensmittel-, Futtermittel-, Molkerei- und Chemiebetriebe. Weniger Überdosierung, Spezifikation in jeder Charge.",
-      "k": "inline-ft-nir-prozessanalysatoren und chemometrie echtzeit-inline-ft-nir-analyse für lebensmittel- futtermittel- molkerei- und chemiebetriebe weniger überdosierung spezifikation in jeder charge startseite"
+      "t": "Inline-NIR- und FT-NIR-Prozessanalysatoren",
+      "s": "Echtzeit-Inline-NIR- und FT-NIR-Analyse für Lebensmittel-, Futtermittel-, Molkerei- und Chemiebetriebe. Weniger Überdosierung, Spezifikation in jeder Charge.",
+      "k": "inline-nir- und ft-nir-prozessanalysatoren echtzeit-inline-nir- und ft-nir-analyse für lebensmittel- futtermittel- molkerei- und chemiebetriebe weniger überdosierung spezifikation in jeder charge startseite"
     },
     "es": {
-      "t": "Analizadores de procesos y quimiometría en línea FT-NIR",
-      "s": "Análisis FT-NIR en línea en tiempo real para plantas de alimentos, piensos, lácteos y química. Menos exceso de dosificación y especificación en cada lote.",
-      "k": "analizadores de procesos y quimiometría en línea ft-nir análisis ft-nir en línea en tiempo real para plantas de alimentos piensos lácteos y química menos exceso de dosificación y especificación en cada lote inicio"
+      "t": "Analizadores de procesos NIR y FT-NIR en línea",
+      "s": "Análisis NIR y FT-NIR en línea en tiempo real para plantas de alimentos, piensos, lácteos y química. Menos exceso de dosificación y especificación en cada lote.",
+      "k": "analizadores de procesos nir y ft-nir en línea análisis nir y ft-nir en línea en tiempo real para plantas de alimentos piensos lácteos y química menos exceso de dosificación y especificación en cada lote inicio"
     },
     "ar": {
-      "t": "أجهزة تحليل عمليات FT-NIR المضمنة والكيمياء القياسية",
-      "s": "تحليل FT-NIR المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية. قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل USTECH.",
-      "k": "أجهزة تحليل عمليات ft-nir المضمنة والكيمياء القياسية تحليل ft-nir المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل ustech الرئيسية"
+      "t": "أجهزة تحليل العمليات المضمنة NIR وFT-NIR",
+      "s": "تحليل NIR وFT-NIR المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية. قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل USTECH.",
+      "k": "أجهزة تحليل العمليات المضمنة nir وft-nir تحليل nir وft-nir المضمن في الوقت الفعلي لمصانع الأغذية والأعلاف والألبان والمواد الكيميائية قم بخفض الهدر وتلبية المواصفات في كل دفعة وإغلاق الحلقة مع أجهزة تحليل ustech الرئيسية"
     },
     "zh": {
-      "t": "在线 FT-NIR 过程分析仪与化学计量学",
-      "s": "面向食品、饲料、乳制品和化工工厂的实时在线 FT-NIR 分析。通过 USTECH 分析仪减少过剩、确保每批产品达标并实现闭环过程控制。",
-      "k": "在线 ft-nir 过程分析仪与化学计量学 面向食品 饲料 乳制品和化工工厂的实时在线 ft-nir 分析 通过 ustech 分析仪减少过剩 确保每批产品达标并实现闭环过程控制 首页 官网 ustech"
+      "t": "在线 NIR 和 FT-NIR 过程分析仪",
+      "s": "面向食品、饲料、乳制品和化工工厂的实时在线 NIR 和 FT-NIR 分析。通过 USTECH 分析仪减少过剩、确保每批产品达标并实现闭环过程控制。",
+      "k": "在线 nir 和 ft-nir 过程分析仪 面向食品 饲料 乳制品和化工工厂的实时在线 nir 和 ft-nir 分析 通过 ustech 分析仪减少过剩 确保每批产品达标并实现闭环过程控制 首页 官网 ustech"
     }
   },
   "about.html": {
     "tr": {
-      "t": "USTECH Innovations Hakkında: FT-NIR ve Kemometri Uzmanları",
-      "s": "USTECH'in arkasındaki ekip: 2023'ten bu yana FT-NIR analizörleri, caliX yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri.",
-      "k": "ustech innovations hakkında ft-nir ve kemometri uzmanları ustech in arkasındaki ekip 2023 ten bu yana ft-nir analizörleri calix yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri hakkımızda hakkinda şirket ekip misyon"
+      "t": "USTECH Innovations Hakkında: NIR, FT-NIR ve Kemometri Uzmanları",
+      "s": "USTECH'in arkasındaki ekip: 2023'ten bu yana NIR ve FT-NIR analizörleri, caliX yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri.",
+      "k": "ustech innovations hakkında nir ft-nir ve kemometri uzmanları ustech in arkasındaki ekip 2023 ten bu yana nir ve ft-nir analizörleri calix yazılımı ve taşınabilir kalibrasyonlar geliştiren kemometri ve otomasyon mühendisleri hakkımızda hakkinda şirket ekip misyon"
     },
     "fr": {
-      "t": "À propos de USTECH Innovations : FT-NIR et experts en chimiométrie",
-      "s": "L'équipe USTECH : chimiométriciens et automaticiens développant depuis 2023 des analyseurs FT-NIR, le logiciel caliX et des étalonnages portables.",
-      "k": "à propos de ustech innovations ft-nir et experts en chimiométrie l équipe ustech chimiométriciens et automaticiens développant depuis 2023 des analyseurs ft-nir le logiciel calix et des étalonnages portables à propos entreprise équipe"
+      "t": "À propos de USTECH Innovations : experts NIR, FT-NIR et chimiométrie",
+      "s": "L'équipe USTECH : chimiométriciens et automaticiens développant depuis 2023 des analyseurs NIR et FT-NIR, le logiciel caliX et des étalonnages portables.",
+      "k": "à propos de ustech innovations experts nir ft-nir et chimiométrie l équipe ustech chimiométriciens et automaticiens développant depuis 2023 des analyseurs nir et ft-nir le logiciel calix et des étalonnages portables à propos entreprise équipe"
     },
     "de": {
-      "t": "Über USTECH Innovations: FT-NIR- und Chemometrie-Experten",
-      "s": "Das Team hinter USTECH: Chemometriker und Automatisierer, die seit 2023 FT-NIR-Analysatoren, caliX-Software und portable Kalibrierungen entwickeln.",
-      "k": "über ustech innovations ft-nir- und chemometrie-experten das team hinter ustech chemometriker und automatisierer die seit 2023 ft-nir-analysatoren calix-software und portable kalibrierungen entwickeln über uns unternehmen team"
+      "t": "Über USTECH Innovations: NIR-, FT-NIR- und Chemometrie-Experten",
+      "s": "Das Team hinter USTECH: Chemometriker und Automatisierer, die seit 2023 NIR- und FT-NIR-Analysatoren, caliX-Software und portable Kalibrierungen entwickeln.",
+      "k": "über ustech innovations nir- ft-nir- und chemometrie-experten das team hinter ustech chemometriker und automatisierer die seit 2023 nir- und ft-nir-analysatoren calix-software und portable kalibrierungen entwickeln über uns unternehmen team"
     },
     "es": {
-      "t": "Acerca de USTECH Innovations: FT-NIR y expertos en quimiometría",
-      "s": "El equipo de USTECH: quimiometristas e ingenieros de automatización que desarrollan analizadores FT-NIR, software caliX y calibraciones portátiles desde 2023.",
-      "k": "acerca de ustech innovations ft-nir y expertos en quimiometría el equipo de ustech quimiometristas e ingenieros de automatización que desarrollan analizadores ft-nir software calix y calibraciones portátiles desde 2023 sobre nosotros empresa equipo"
+      "t": "Acerca de USTECH Innovations: expertos en NIR, FT-NIR y quimiometría",
+      "s": "El equipo de USTECH: quimiometristas e ingenieros de automatización que desarrollan analizadores NIR y FT-NIR, software caliX y calibraciones portátiles desde 2023.",
+      "k": "acerca de ustech innovations expertos en nir ft-nir y quimiometría el equipo de ustech quimiometristas e ingenieros de automatización que desarrollan analizadores nir y ft-nir software calix y calibraciones portátiles desde 2023 sobre nosotros empresa equipo"
     },
     "ar": {
-      "t": "حول USTECH Innovations: خبراء FT-NIR والكيمياء القياسية",
-      "s": "تعرف على الفريق الذي يقف وراء USTECH: علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل FT-NIR وبرمجيات caliX والمعايرات المحمولة منذ عام 2023.",
-      "k": "حول ustech innovations خبراء ft-nir والكيمياء القياسية تعرف على الفريق الذي يقف وراء ustech علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل ft-nir وبرمجيات calix والمعايرات المحمولة منذ عام 2023 من نحن الشركة الفريق"
+      "t": "حول USTECH Innovations: خبراء NIR وFT-NIR والكيمياء القياسية",
+      "s": "تعرف على الفريق الذي يقف وراء USTECH: علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل NIR وFT-NIR وبرمجيات caliX والمعايرات المحمولة منذ عام 2023.",
+      "k": "حول ustech innovations خبراء nir وft-nir والكيمياء القياسية تعرف على الفريق الذي يقف وراء ustech علماء الكيمياء القياسية ومهندسو الأتمتة الذين يبنون أجهزة تحليل nir وft-nir وبرمجيات calix والمعايرات المحمولة منذ عام 2023 من نحن الشركة الفريق"
     },
     "zh": {
-      "t": "关于 USTECH Innovations：FT-NIR 与化学计量学专家",
-      "s": "了解 USTECH 团队：自2023年以来，致力于开发 FT-NIR 分析仪、caliX 软件及便携式校准模型的化学计量学科学家与自动化工程师。",
-      "k": "关于 ustech innovations ft-nir 与化学计量学专家 了解 ustech 团队 自2023年以来 致力于开发 ft-nir 分析仪 calix 软件及便携式校准模型的化学计量学科学家与自动化工程师 关于我们 公司 团队 愿景"
+      "t": "关于 USTECH Innovations：NIR、FT-NIR 与化学计量学专家",
+      "s": "了解 USTECH 团队：自2023年以来，致力于开发 NIR 和 FT-NIR 分析仪、caliX 软件及便携式校准模型的化学计量学科学家与自动化工程师。",
+      "k": "关于 ustech innovations nir ft-nir 与化学计量学专家 了解 ustech 团队 自2023年以来 致力于开发 nir 和 ft-nir 分析仪 calix 软件及便携式校准模型的化学计量学科学家与自动化工程师 关于我们 公司 团队 愿景"
     }
   },
   "contact.html": {
@@ -539,66 +539,66 @@ var SEARCH_I18N = {
   },
   "faq.html": {
     "tr": {
-      "t": "FT-NIR Spektroskopisi SSS: Cihazlar, Yazılım, Modeller",
-      "s": "USTECH uygulama ekibinden FT-NIR doğruluğu, MEMS spektrometreleri, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve ROI hakkında 30 yanıt.",
-      "k": "ft-nir spektroskopisi sss cihazlar yazılım modeller ustech uygulama ekibinden ft-nir doğruluğu mems spektrometreleri plc scada entegrasyonu kalibrasyon aktarımı bakım ve roi hakkında 30 yanıt sss sık sorulan sorular soru cevap garanti bakım"
+      "t": "NIR ve FT-NIR SSS: Cihazlar, Yazılım, Modeller",
+      "s": "USTECH uygulama ekibinden NIR doğruluğu, spektrometre türleri, PLC/SCADA entegrasyonu, kalibrasyon aktarımı, bakım ve ROI hakkında 30 yanıt.",
+      "k": "nir ve ft-nir sss cihazlar yazılım modeller ustech uygulama ekibinden nir doğruluğu spektrometre türleri plc scada entegrasyonu kalibrasyon aktarımı bakım ve roi hakkında 30 yanıt sss sık sorulan sorular soru cevap garanti bakım"
     },
     "fr": {
-      "t": "FAQ sur la spectroscopie FT-NIR : appareils, logiciels, modèles",
-      "s": "30 réponses sur la précision FT-NIR, les spectromètres MEMS, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
-      "k": "faq sur la spectroscopie ft-nir appareils logiciels modèles 30 réponses sur la précision ft-nir les spectromètres mems l intégration plc scada le transfert d étalonnage la maintenance et le roi faq questions fréquentes garantie entretien"
+      "t": "FAQ NIR et FT-NIR : appareils, logiciels, modèles",
+      "s": "30 réponses sur la précision NIR, les types de spectromètres, l'intégration PLC/SCADA, le transfert d'étalonnage, la maintenance et le ROI.",
+      "k": "faq nir et ft-nir appareils logiciels modèles 30 réponses sur la précision nir les types de spectromètres l intégration plc scada le transfert d étalonnage la maintenance et le roi faq questions fréquentes garantie entretien"
     },
     "de": {
-      "t": "FT-NIR Spektroskopie FAQ: Geräte, Software, Modelle",
-      "s": "30 Antworten zu FT-NIR-Genauigkeit, MEMS-Spektrometern, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI – vom Anwendungsteam von USTECH.",
-      "k": "ft-nir spektroskopie faq geräte software modelle 30 antworten zu ft-nir-genauigkeit mems-spektrometern sps scada-integration kalibrierungsübertragung wartung und roi vom anwendungsteam von ustech faq häufige fragen garantie wartung"
+      "t": "NIR- und FT-NIR-FAQ: Geräte, Software, Modelle",
+      "s": "30 Antworten zu NIR-Genauigkeit, Spektrometertypen, SPS/SCADA-Integration, Kalibrierungsübertragung, Wartung und ROI – vom Anwendungsteam von USTECH.",
+      "k": "nir- und ft-nir-faq geräte software modelle 30 antworten zu nir-genauigkeit spektrometertypen sps scada-integration kalibrierungsübertragung wartung und roi vom anwendungsteam von ustech faq häufige fragen garantie wartung"
     },
     "es": {
-      "t": "Preguntas frecuentes sobre espectroscopía FT-NIR: dispositivos, software y modelos",
-      "s": "30 respuestas sobre precisión FT-NIR, espectrómetros MEMS, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
-      "k": "preguntas frecuentes sobre espectroscopía ft-nir dispositivos software y modelos 30 respuestas sobre precisión ft-nir espectrómetros mems integración plc scada transferencia de calibración mantenimiento y roi preguntas frecuentes garantía mantenimiento"
+      "t": "Preguntas frecuentes NIR y FT-NIR: equipos, software, modelos",
+      "s": "30 respuestas sobre precisión NIR, tipos de espectrómetros, integración PLC/SCADA, transferencia de calibración, mantenimiento y ROI.",
+      "k": "preguntas frecuentes nir y ft-nir equipos software modelos 30 respuestas sobre precisión nir tipos de espectrómetros integración plc scada transferencia de calibración mantenimiento y roi preguntas frecuentes garantía mantenimiento"
     },
     "ar": {
-      "t": "الأسئلة الشائعة حول التحليل الطيفي FT-NIR: الأجهزة، البرامج، النماذج",
-      "s": "30 إجابة حول دقة FT-NIR ومقاييس الطيف MEMS وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات USTECH.",
-      "k": "الأسئلة الشائعة حول التحليل الطيفي ft-nir الأجهزة، البرامج، النماذج 30 إجابة حول دقة ft-nir ومقاييس الطيف mems وتكامل plc scada ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات ustech الأسئلة الشائعة ضمان صيانة"
+      "t": "الأسئلة الشائعة حول NIR وFT-NIR: الأجهزة، البرامج، النماذج",
+      "s": "30 إجابة حول دقة NIR وأنواع المطيافات وتكامل PLC/SCADA ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات USTECH.",
+      "k": "الأسئلة الشائعة حول nir وft-nir الأجهزة، البرامج، النماذج 30 إجابة حول دقة nir وأنواع المطيافات وتكامل plc scada ونقل المعايرة والصيانة وعائد الاستثمار - من فريق تطبيقات ustech الأسئلة الشائعة ضمان صيانة"
     },
     "zh": {
-      "t": "FT-NIR 光谱学常见问题：设备、软件、模型",
-      "s": "USTECH 应用团队关于 FT-NIR 精度、MEMS 光谱仪、PLC/SCADA 集成、定标转移、维护和 ROI 的 30 个解答。",
-      "k": "ft-nir 光谱学常见问题 设备 软件 模型 ustech 应用团队关于 ft-nir 精度 mems 光谱仪 plc scada 集成 定标转移 维护和 roi 的 30 个解答 常见问题 问答 质保 维护"
+      "t": "NIR 和 FT-NIR 常见问题：设备、软件、模型",
+      "s": "USTECH 应用团队关于 NIR 精度、光谱仪类型、PLC/SCADA 集成、定标转移、维护和 ROI 的 30 个解答。",
+      "k": "nir 和 ft-nir 常见问题 设备 软件 模型 ustech 应用团队关于 nir 精度 光谱仪类型 plc scada 集成 定标转移 维护和 roi 的 30 个解答 常见问题 问答 质保 维护"
     }
   },
   "industries.html": {
     "tr": {
-      "t": "Sektörlere Göre FT-NIR Çözümleri: Gıda, Süt, Kimya",
-      "s": "Gıda ve yem öğütme, süt işleme ve kimya veya ilaç üretiminde hat içi FT-NIR analizinin nasıl kazanç sağladığını görün. Sektöre özel USTECH çözümleri.",
-      "k": "sektörlere göre ft-nir çözümleri gıda süt kimya gıda ve yem öğütme süt işleme ve kimya veya ilaç üretiminde hat içi ft-nir analizinin nasıl kazanç sağladığını görün sektöre özel ustech çözümleri sektörler sektor endüstri uygulama"
+      "t": "Sektörlere Göre NIR ve FT-NIR Çözümleri: Gıda, Süt, Kimya",
+      "s": "Gıda ve yem öğütme, süt işleme ve kimya veya ilaç üretiminde hat içi NIR analizinin nasıl kazanç sağladığını görün. Sektöre özel USTECH çözümleri.",
+      "k": "sektörlere göre nir ve ft-nir çözümleri gıda süt kimya gıda ve yem öğütme süt işleme ve kimya veya ilaç üretiminde hat içi nir analizinin nasıl kazanç sağladığını görün sektöre özel ustech çözümleri sektörler sektor endüstri uygulama"
     },
     "fr": {
-      "t": "Solutions FT-NIR par secteur : alimentation, produits laitiers, produits chimiques",
-      "s": "Comment l'analyse FT-NIR en ligne devient rentable en meunerie, alimentation animale, produits laitiers et production chimique ou pharmaceutique.",
-      "k": "solutions ft-nir par secteur alimentation produits laitiers produits chimiques comment l analyse ft-nir en ligne devient rentable en meunerie alimentation animale produits laitiers et production chimique ou pharmaceutique secteurs industries applications"
+      "t": "Solutions NIR et FT-NIR par secteur : alimentation, produits laitiers, produits chimiques",
+      "s": "Comment l'analyse NIR en ligne devient rentable en meunerie, alimentation animale, produits laitiers et production chimique ou pharmaceutique.",
+      "k": "solutions nir et ft-nir par secteur alimentation produits laitiers produits chimiques comment l analyse nir en ligne devient rentable en meunerie alimentation animale produits laitiers et production chimique ou pharmaceutique secteurs industries applications"
     },
     "de": {
-      "t": "FT-NIR Lösungen nach Branche: Lebensmittel, Milchprodukte, Chemie",
-      "s": "Wie sich Inline-FT-NIR-Analyse in Lebensmittel- und Futtermittelverarbeitung, Molkerei sowie Chemie- und Pharmaproduktion auszahlt. USTECH-Lösungen.",
-      "k": "ft-nir lösungen nach branche lebensmittel milchprodukte chemie wie sich inline-ft-nir-analyse in lebensmittel- und futtermittelverarbeitung molkerei sowie chemie- und pharmaproduktion auszahlt ustech-lösungen branchen industrien anwendungen"
+      "t": "NIR- und FT-NIR-Lösungen nach Branche: Lebensmittel, Milchprodukte, Chemie",
+      "s": "Wie sich Inline-NIR-Analyse in Lebensmittel- und Futtermittelverarbeitung, Molkerei sowie Chemie- und Pharmaproduktion auszahlt. USTECH-Lösungen.",
+      "k": "nir- und ft-nir-lösungen nach branche lebensmittel milchprodukte chemie wie sich inline-nir-analyse in lebensmittel- und futtermittelverarbeitung molkerei sowie chemie- und pharmaproduktion auszahlt ustech-lösungen branchen industrien anwendungen"
     },
     "es": {
-      "t": "FT-NIR Soluciones por industria: alimentaria, láctea, química",
-      "s": "Cómo el análisis FT-NIR en línea resulta rentable en molienda, piensos, lácteos y producción química o farmacéutica. Soluciones USTECH por sector.",
-      "k": "ft-nir soluciones por industria alimentaria láctea química cómo el análisis ft-nir en línea resulta rentable en molienda piensos lácteos y producción química o farmacéutica soluciones ustech por sector sectores industrias aplicaciones"
+      "t": "Soluciones NIR y FT-NIR por industria: alimentaria, láctea, química",
+      "s": "Cómo el análisis NIR en línea resulta rentable en molienda, piensos, lácteos y producción química o farmacéutica. Soluciones USTECH por sector.",
+      "k": "soluciones nir y ft-nir por industria alimentaria láctea química cómo el análisis nir en línea resulta rentable en molienda piensos lácteos y producción química o farmacéutica soluciones ustech por sector sectores industrias aplicaciones"
     },
     "ar": {
-      "t": "حلول FT-NIR حسب الصناعة: الأغذية، الألبان، الكيماويات",
-      "s": "اكتشف كيف يفيد تحليل FT-NIR المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني. حلول USTECH الخاصة بالصناعة.",
-      "k": "حلول ft-nir حسب الصناعة الأغذية، الألبان، الكيماويات اكتشف كيف يفيد تحليل ft-nir المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني حلول ustech الخاصة بالصناعة الصناعات التطبيقات"
+      "t": "حلول NIR وFT-NIR حسب الصناعة: الأغذية، الألبان، الكيماويات",
+      "s": "اكتشف كيف يفيد تحليل NIR المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني. حلول USTECH الخاصة بالصناعة.",
+      "k": "حلول nir وft-nir حسب الصناعة الأغذية، الألبان، الكيماويات اكتشف كيف يفيد تحليل nir المدمج في طحن الأغذية والأعلاف، ومعالجة الألبان، والإنتاج الكيميائي أو الصيدلاني حلول ustech الخاصة بالصناعة الصناعات التطبيقات"
     },
     "zh": {
-      "t": "按行业分类的 FT-NIR 解决方案：食品、乳制品、化工",
-      "s": "了解在线 FT-NIR 分析如何在食品与饲料制粉、乳制品加工以及化工或制药生产中带来回报。USTECH 行业特定解决方案。",
-      "k": "按行业分类的 ft-nir 解决方案 食品 乳制品 化工 了解在线 ft-nir 分析如何在食品与饲料制粉 乳制品加工以及化工或制药生产中带来回报 ustech 行业特定解决方案 行业应用 工业 解决方案"
+      "t": "按行业分类的 NIR 和 FT-NIR 解决方案：食品、乳制品、化工",
+      "s": "了解在线 NIR 分析如何在食品与饲料制粉、乳制品加工以及化工或制药生产中带来回报。USTECH 行业特定解决方案。",
+      "k": "按行业分类的 nir 和 ft-nir 解决方案 食品 乳制品 化工 了解在线 nir 分析如何在食品与饲料制粉 乳制品加工以及化工或制药生产中带来回报 ustech 行业特定解决方案 行业应用 工业 解决方案"
     }
   },
   "industry-food-feed.html": {
@@ -636,129 +636,129 @@ var SEARCH_I18N = {
   "industry-dairy.html": {
     "tr": {
       "t": "Süt Endüstrisi için Hat İçi NIR: Yağ Standardizasyonu ve Verim",
-      "s": "Her tankeri derecelendirin, tereyağı yağı israfını bitirin ve süt tesisleri için CIP uyumlu hat içi FT-NIR ile toz nemini kontrol edin.",
-      "k": "süt endüstrisi için hat i çi nir yağ standardizasyonu ve verim her tankeri derecelendirin tereyağı yağı israfını bitirin ve süt tesisleri için cip uyumlu hat içi ft-nir ile toz nemini kontrol edin süt sut peynir tereyağı krema yoğurt süt tozu yağ protein"
+      "s": "Her tankeri derecelendirin, tereyağı yağı israfını bitirin ve süt tesisleri için CIP uyumlu hat içi NIR ile toz nemini kontrol edin.",
+      "k": "süt endüstrisi için hat i çi nir yağ standardizasyonu ve verim her tankeri derecelendirin tereyağı yağı israfını bitirin ve süt tesisleri için cip uyumlu hat içi nir ile toz nemini kontrol edin süt sut peynir tereyağı krema yoğurt süt tozu yağ protein"
     },
     "fr": {
       "t": "NIR en ligne pour les produits laitiers : standardisation et rendement des matières grasses",
-      "s": "Classez chaque camion-citerne, supprimez les pertes de matière grasse et maîtrisez l'humidité des poudres avec le FT-NIR en ligne compatible CIP.",
-      "k": "nir en ligne pour les produits laitiers standardisation et rendement des matières grasses classez chaque camion-citerne supprimez les pertes de matière grasse et maîtrisez l humidité des poudres avec le ft-nir en ligne compatible cip produits laitiers lait fromage beurre crème yaourt"
+      "s": "Classez chaque camion-citerne, supprimez les pertes de matière grasse et maîtrisez l'humidité des poudres avec le NIR en ligne compatible CIP.",
+      "k": "nir en ligne pour les produits laitiers standardisation et rendement des matières grasses classez chaque camion-citerne supprimez les pertes de matière grasse et maîtrisez l humidité des poudres avec le nir en ligne compatible cip produits laitiers lait fromage beurre crème yaourt"
     },
     "de": {
       "t": "Inline-NIR für die Milchwirtschaft: Fettstandardisierung & Ausbeute",
-      "s": "Jeden Tankwagen bewerten, Butterfett-Überdosierung beenden und Pulverfeuchte regeln – mit CIP-fähigem Inline-FT-NIR für Molkereibetriebe.",
-      "k": "inline-nir für die milchwirtschaft fettstandardisierung ausbeute jeden tankwagen bewerten butterfett-überdosierung beenden und pulverfeuchte regeln mit cip-fähigem inline-ft-nir für molkereibetriebe molkerei milch käse butter sahne joghurt"
+      "s": "Jeden Tankwagen bewerten, Butterfett-Überdosierung beenden und Pulverfeuchte regeln – mit CIP-fähigem Inline-NIR für Molkereibetriebe.",
+      "k": "inline-nir für die milchwirtschaft fettstandardisierung ausbeute jeden tankwagen bewerten butterfett-überdosierung beenden und pulverfeuchte regeln mit cip-fähigem inline-nir für molkereibetriebe molkerei milch käse butter sahne joghurt"
     },
     "es": {
       "t": "NIR en Línea para Lácteos: Grasa y Rendimiento",
-      "s": "Clasifique cada cisterna, elimine el exceso de materia grasa y controle la humedad del polvo con FT-NIR en línea compatible con CIP. Descubra USTECH.",
-      "k": "nir en línea para lácteos grasa y rendimiento clasifique cada cisterna elimine el exceso de materia grasa y controle la humedad del polvo con ft-nir en línea compatible con cip descubra ustech lácteos leche queso mantequilla crema yogur"
+      "s": "Clasifique cada cisterna, elimine el exceso de materia grasa y controle la humedad del polvo con NIR en línea compatible con CIP. Descubra USTECH.",
+      "k": "nir en línea para lácteos grasa y rendimiento clasifique cada cisterna elimine el exceso de materia grasa y controle la humedad del polvo con nir en línea compatible con cip descubra ustech lácteos leche queso mantequilla crema yogur"
     },
     "ar": {
       "t": "NIR المدمج للألبان: توحيد الدهون والإنتاجية",
-      "s": "قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام FT-NIR المدمج المتوافق مع CIP والمصمم لمصانع الألبان. استكشف حلول USTECH.",
-      "k": "nir المدمج للألبان توحيد الدهون والإنتاجية قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام ft-nir المدمج المتوافق مع cip والمصمم لمصانع الألبان استكشف حلول ustech الألبان الحليب الجبن الزبدة الزبادي مسحوق الحليب"
+      "s": "قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام NIR المدمج المتوافق مع CIP والمصمم لمصانع الألبان. استكشف حلول USTECH.",
+      "k": "nir المدمج للألبان توحيد الدهون والإنتاجية قم بتقييم كل ناقلة، وتخلص من هدر دهون الزبدة، وتحكم في رطوبة المسحوق باستخدام nir المدمج المتوافق مع cip والمصمم لمصانع الألبان استكشف حلول ustech الألبان الحليب الجبن الزبدة الزبادي مسحوق الحليب"
     },
     "zh": {
       "t": "乳制品在线 NIR：脂肪标准化与产量",
-      "s": "使用为乳制品工厂打造的兼容 CIP 的在线 FT-NIR 对每辆奶罐车进行分级，终结黄油脂肪让利并控制乳粉水分。探索 USTECH 解决方案。",
-      "k": "乳制品在线 nir 脂肪标准化与产量 使用为乳制品工厂打造的兼容 cip 的在线 ft-nir 对每辆奶罐车进行分级 终结黄油脂肪让利并控制乳粉水分 探索 ustech 解决方案 乳制品 牛奶 奶酪 黄油 稀奶油 酸奶 乳粉 脂肪 蛋白质"
+      "s": "使用为乳制品工厂打造的兼容 CIP 的在线 NIR 对每辆奶罐车进行分级，终结黄油脂肪让利并控制乳粉水分。探索 USTECH 解决方案。",
+      "k": "乳制品在线 nir 脂肪标准化与产量 使用为乳制品工厂打造的兼容 cip 的在线 nir 对每辆奶罐车进行分级 终结黄油脂肪让利并控制乳粉水分 探索 ustech 解决方案 乳制品 牛奶 奶酪 黄油 稀奶油 酸奶 乳粉 脂肪 蛋白质"
     }
   },
   "industry-chemical-pharma.html": {
     "tr": {
       "t": "Kimya ve İlaç Proses Analitiği (PAT)",
-      "s": "İlaç ve kimya tesisleri için FDA 21 CFR Part 11'e hazır FT-NIR: hammadde kimliği, karışım tekdüzeliği, kurutma uç noktası ve reaksiyon izleme.",
-      "k": "kimya ve i laç proses analitiği pat i laç ve kimya tesisleri için fda 21 cfr part 11 e hazır ft-nir hammadde kimliği karışım tekdüzeliği kurutma uç noktası ve reaksiyon izleme kimya ilaç ilac farma polimer reçine hidroksil karışım"
+      "s": "İlaç ve kimya tesisleri için FDA 21 CFR Part 11'e hazır NIR: hammadde kimliği, karışım tekdüzeliği, kurutma uç noktası ve reaksiyon izleme.",
+      "k": "kimya ve i laç proses analitiği pat i laç ve kimya tesisleri için fda 21 cfr part 11 e hazır nir hammadde kimliği karışım tekdüzeliği kurutma uç noktası ve reaksiyon izleme kimya ilaç ilac farma polimer reçine hidroksil karışım"
     },
     "fr": {
       "t": "Analyse des processus chimiques et pharmaceutiques (PAT)",
-      "s": "FT-NIR conforme FDA 21 CFR Part 11 pour la pharma et la chimie : identification des matières premières, uniformité de mélange, point final de séchage.",
-      "k": "analyse des processus chimiques et pharmaceutiques pat ft-nir conforme fda 21 cfr part 11 pour la pharma et la chimie identification des matières premières uniformité de mélange point final de séchage chimie pharmacie pharma polymère résine"
+      "s": "NIR conforme FDA 21 CFR Part 11 pour la pharma et la chimie : identification des matières premières, uniformité de mélange, point final de séchage.",
+      "k": "analyse des processus chimiques et pharmaceutiques pat nir conforme fda 21 cfr part 11 pour la pharma et la chimie identification des matières premières uniformité de mélange point final de séchage chimie pharmacie pharma polymère résine"
     },
     "de": {
       "t": "Chemische und pharmazeutische Prozessanalytik (PAT)",
-      "s": "Bereit für FDA 21 CFR Part 11 FT-NIR für Pharma- und Chemieanlagen: Echtzeit-PAT für Rohstoff-ID, Mischungsgleichmäßigkeit, Trocknungsendpunkt und Reaktionen.",
-      "k": "chemische und pharmazeutische prozessanalytik pat bereit für fda 21 cfr part 11 ft-nir für pharma- und chemieanlagen echtzeit-pat für rohstoff-id mischungsgleichmäßigkeit trocknungsendpunkt und reaktionen chemie pharma polymer harz"
+      "s": "Bereit für FDA 21 CFR Part 11 NIR für Pharma- und Chemieanlagen: Echtzeit-PAT für Rohstoff-ID, Mischungsgleichmäßigkeit, Trocknungsendpunkt und Reaktionen.",
+      "k": "chemische und pharmazeutische prozessanalytik pat bereit für fda 21 cfr part 11 nir für pharma- und chemieanlagen echtzeit-pat für rohstoff-id mischungsgleichmäßigkeit trocknungsendpunkt und reaktionen chemie pharma polymer harz"
     },
     "es": {
       "t": "Analítica de Procesos (PAT) para Química y Farma",
-      "s": "FT-NIR listo para FDA 21 CFR Part 11 en plantas químicas y farmacéuticas: PAT en tiempo real para materias primas, uniformidad de mezcla y secado.",
-      "k": "analítica de procesos pat para química y farma ft-nir listo para fda 21 cfr part 11 en plantas químicas y farmacéuticas pat en tiempo real para materias primas uniformidad de mezcla y secado química farmacéutica farma polímero resina"
+      "s": "NIR listo para FDA 21 CFR Part 11 en plantas químicas y farmacéuticas: PAT en tiempo real para materias primas, uniformidad de mezcla y secado.",
+      "k": "analítica de procesos pat para química y farma nir listo para fda 21 cfr part 11 en plantas químicas y farmacéuticas pat en tiempo real para materias primas uniformidad de mezcla y secado química farmacéutica farma polímero resina"
     },
     "ar": {
       "t": "تحليلات عمليات الكيماويات والأدوية (PAT)",
-      "s": "FT-NIR الجاهز لـ FDA 21 CFR Part 11 لمصانع الأدوية والكيماويات: PAT في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات.",
-      "k": "تحليلات عمليات الكيماويات والأدوية pat ft-nir الجاهز لـ fda 21 cfr part 11 لمصانع الأدوية والكيماويات pat في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات الكيمياء والصيدلة الأدوية البوليمر الراتنج"
+      "s": "NIR الجاهز لـ FDA 21 CFR Part 11 لمصانع الأدوية والكيماويات: PAT في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات.",
+      "k": "تحليلات عمليات الكيماويات والأدوية pat nir الجاهز لـ fda 21 cfr part 11 لمصانع الأدوية والكيماويات pat في الوقت الفعلي لتحديد المواد الخام، وتجانس المزيج، ونقطة التجفيف النهائية، والتفاعلات الكيمياء والصيدلة الأدوية البوليمر الراتنج"
     },
     "zh": {
       "t": "化工与制药过程分析 (PAT)",
-      "s": "适用于制药和化工厂并符合 FDA 21 CFR Part 11 的 FT-NIR：针对原材料 ID、混合均匀度、干燥终点和反应的实时 PAT。",
-      "k": "化工与制药过程分析 pat 适用于制药和化工厂并符合 fda 21 cfr part 11 的 ft-nir 针对原材料 id 混合均匀度 干燥终点和反应的实时 pat 化工与制药 聚合物 树脂 羟基值 反应监测 结晶 干燥"
+      "s": "适用于制药和化工厂并符合 FDA 21 CFR Part 11 的 NIR：针对原材料 ID、混合均匀度、干燥终点和反应的实时 PAT。",
+      "k": "化工与制药过程分析 pat 适用于制药和化工厂并符合 fda 21 cfr part 11 的 nir 针对原材料 id 混合均匀度 干燥终点和反应的实时 pat 化工与制药 聚合物 树脂 羟基值 反应监测 结晶 干燥"
     }
   },
   "products.html": {
     "tr": {
-      "t": "FT-NIR Analizörleri, Yazılım ve Kalibrasyonlar",
-      "s": "USTECH ürün ailesini keşfedin: ProLine hat içi FT-NIR analizörleri, caliX kemometri yazılımı, ProChem otomasyonu ve kullanıma hazır kalibrasyon modelleri.",
-      "k": "ft-nir analizörleri yazılım ve kalibrasyonlar ustech ürün ailesini keşfedin proline hat içi ft-nir analizörleri calix kemometri yazılımı prochem otomasyonu ve kullanıma hazır kalibrasyon modelleri ürünler urunler cihaz yazılım kalibrasyon"
+      "t": "NIR ve FT-NIR Analizörleri, Yazılım ve Kalibrasyonlar",
+      "s": "USTECH ürün ailesini keşfedin: ProLine hat içi NIR ve FT-NIR analizörleri, caliX kemometri yazılımı, ProChem otomasyonu ve kullanıma hazır kalibrasyon modelleri.",
+      "k": "nir ve ft-nir analizörleri yazılım ve kalibrasyonlar ustech ürün ailesini keşfedin proline hat içi nir ve ft-nir analizörleri calix kemometri yazılımı prochem otomasyonu ve kullanıma hazır kalibrasyon modelleri ürünler urunler cihaz yazılım kalibrasyon"
     },
     "fr": {
-      "t": "Analyseurs FT-NIR, logiciels et étalonnages",
-      "s": "La gamme USTECH : analyseurs en ligne FT-NIR ProLine, logiciel de chimiométrie caliX, automatisation ProChem et modèles d'étalonnage prêts à l'emploi.",
-      "k": "analyseurs ft-nir logiciels et étalonnages la gamme ustech analyseurs en ligne ft-nir proline logiciel de chimiométrie calix automatisation prochem et modèles d étalonnage prêts à l emploi produits appareils logiciels étalonnage"
+      "t": "Analyseurs NIR et FT-NIR, logiciels et étalonnages",
+      "s": "La gamme USTECH : analyseurs en ligne NIR et FT-NIR ProLine, logiciel de chimiométrie caliX, automatisation ProChem et modèles d'étalonnage prêts à l'emploi.",
+      "k": "analyseurs nir et ft-nir logiciels et étalonnages la gamme ustech analyseurs en ligne nir et ft-nir proline logiciel de chimiométrie calix automatisation prochem et modèles d étalonnage prêts à l emploi produits appareils logiciels étalonnage"
     },
     "de": {
-      "t": "FT-NIR-Analysatoren, Software & Kalibrierungen",
-      "s": "Die USTECH-Produktfamilie: ProLine Inline-FT-NIR-Analysatoren, caliX Chemometrie-Software, ProChem-Automatisierung und fertige Kalibriermodelle.",
-      "k": "ft-nir-analysatoren software kalibrierungen die ustech-produktfamilie proline inline-ft-nir-analysatoren calix chemometrie-software prochem-automatisierung und fertige kalibriermodelle produkte geräte software kalibrierung"
+      "t": "NIR- und FT-NIR-Analysatoren, Software & Kalibrierungen",
+      "s": "Die USTECH-Produktfamilie: ProLine Inline-NIR- und FT-NIR-Analysatoren, caliX Chemometrie-Software, ProChem-Automatisierung und fertige Kalibriermodelle.",
+      "k": "nir- und ft-nir-analysatoren software kalibrierungen die ustech-produktfamilie proline inline-nir- und ft-nir-analysatoren calix chemometrie-software prochem-automatisierung und fertige kalibriermodelle produkte geräte software kalibrierung"
     },
     "es": {
-      "t": "Analizadores FT-NIR, Software y Calibraciones",
-      "s": "Familia de productos USTECH: analizadores FT-NIR en línea ProLine, software de quimiometría caliX, automatización ProChem y modelos de calibración listos.",
-      "k": "analizadores ft-nir software y calibraciones familia de productos ustech analizadores ft-nir en línea proline software de quimiometría calix automatización prochem y modelos de calibración listos productos dispositivos software calibración"
+      "t": "Analizadores NIR y FT-NIR, Software y Calibraciones",
+      "s": "Familia de productos USTECH: analizadores NIR y FT-NIR en línea ProLine, software de quimiometría caliX, automatización ProChem y modelos de calibración listos.",
+      "k": "analizadores nir y ft-nir software y calibraciones familia de productos ustech analizadores nir y ft-nir en línea proline software de quimiometría calix automatización prochem y modelos de calibración listos productos dispositivos software calibración"
     },
     "ar": {
-      "t": "أجهزة تحليل FT-NIR والبرمجيات والمعايرات",
-      "s": "اكتشف عائلة منتجات USTECH: أجهزة تحليل ProLine FT-NIR المدمجة، وبرمجيات caliX القياسية الكيميائية، وأتمتة ProChem ونماذج المعايرة الجاهزة.",
-      "k": "أجهزة تحليل ft-nir والبرمجيات والمعايرات اكتشف عائلة منتجات ustech أجهزة تحليل proline ft-nir المدمجة، وبرمجيات calix القياسية الكيميائية، وأتمتة prochem ونماذج المعايرة الجاهزة المنتجات الأجهزة البرمجيات المعايرة"
+      "t": "أجهزة تحليل NIR وFT-NIR والبرمجيات والمعايرات",
+      "s": "اكتشف عائلة منتجات USTECH: أجهزة تحليل ProLine NIR وFT-NIR المدمجة، وبرمجيات caliX القياسية الكيميائية، وأتمتة ProChem ونماذج المعايرة الجاهزة.",
+      "k": "أجهزة تحليل nir وft-nir والبرمجيات والمعايرات اكتشف عائلة منتجات ustech أجهزة تحليل proline nir وft-nir المدمجة، وبرمجيات calix القياسية الكيميائية، وأتمتة prochem ونماذج المعايرة الجاهزة المنتجات الأجهزة البرمجيات المعايرة"
     },
     "zh": {
-      "t": "FT-NIR 分析仪、软件及校准模型",
-      "s": "探索 USTECH 产品系列：ProLine 在线 FT-NIR 分析仪、caliX 化学计量学软件、ProChem 自动化系统和现成的校准模型。",
-      "k": "ft-nir 分析仪 软件及校准模型 探索 ustech 产品系列 proline 在线 ft-nir 分析仪 calix 化学计量学软件 prochem 自动化系统和现成的校准模型 产品中心 硬件设备 软件系统 校准模型"
+      "t": "NIR 和 FT-NIR 分析仪、软件及校准模型",
+      "s": "探索 USTECH 产品系列：ProLine 在线 NIR 和 FT-NIR 分析仪、caliX 化学计量学软件、ProChem 自动化系统和现成的校准模型。",
+      "k": "nir 和 ft-nir 分析仪 软件及校准模型 探索 ustech 产品系列 proline 在线 nir 和 ft-nir 分析仪 calix 化学计量学软件 prochem 自动化系统和现成的校准模型 产品中心 硬件设备 软件系统 校准模型"
     }
   },
   "products-devices.html": {
     "tr": {
-      "t": "Hat İçi ve Hat Başı Kalite Kontrolü için FT-NIR Analizör Cihazları",
-      "s": "USTECH NIR donanimini karsilastirin: ProLine17EC ve ProLine17ECS hat ici analizorler, ProLine2550 proses analizoru, MasterLine hat basi kalite kontrol ve Tornado+ numune degirmenleri.",
-      "k": "hat i çi ve hat başı kalite kontrolü için ft-nir analizör cihazları ustech nir donanimini karsilastirin proline17ec ve proline17ecs hat ici analizorler proline2550 proses analizoru masterline hat basi kalite kontrol ve tornado numune degirmenleri cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı"
+      "t": "Hat İçi ve Hat Başı Kalite Kontrolü için NIR ve FT-NIR Analizör Cihazları",
+      "s": "USTECH NIR donanimini karsilastirin: ProLine17EC ve ProLine17ECS hat ici analizorler, ProLine2550 proses analizoru, MasterLine17EC hat basi kalite kontrol ve Tornado+ numune degirmenleri.",
+      "k": "hat i çi ve hat başı kalite kontrolü için nir ve ft-nir analizör cihazları ustech nir donanimini karsilastirin proline17ec ve proline17ecs hat ici analizorler proline2550 proses analizoru masterline17ec hat basi kalite kontrol ve tornado numune degirmenleri cihazlar cihaz analizör spektrometre sensör donanım hat içi hat başı"
     },
     "fr": {
-      "t": "Appareils d'analyse FT-NIR pour le contrôle qualité en ligne et at-line",
-      "s": "Comparez le materiel NIR USTECH : analyseurs en ligne ProLine17EC et ProLine17ECS, analyseur de processus ProLine2550, controle qualite at-line MasterLine et broyeurs Tornado+.",
-      "k": "appareils d analyse ft-nir pour le contrôle qualité en ligne et at-line comparez le materiel nir ustech analyseurs en ligne proline17ec et proline17ecs analyseur de processus proline2550 controle qualite at-line masterline et broyeurs tornado appareils analyseur spectromètre capteur matériel"
+      "t": "Appareils d'analyse NIR et FT-NIR pour le contrôle qualité en ligne et at-line",
+      "s": "Comparez le materiel NIR USTECH : analyseurs en ligne ProLine17EC et ProLine17ECS, analyseur de processus ProLine2550, controle qualite at-line MasterLine17EC et broyeurs Tornado+.",
+      "k": "appareils d analyse nir et ft-nir pour le contrôle qualité en ligne et at-line comparez le materiel nir ustech analyseurs en ligne proline17ec et proline17ecs analyseur de processus proline2550 controle qualite at-line masterline17ec et broyeurs tornado appareils analyseur spectromètre capteur matériel"
     },
     "de": {
-      "t": "FT-NIR-Analysegeräte für Inline- & At-Line-QC",
-      "s": "Vergleichen Sie USTECH NIR-Hardware: Inline-Analysatoren ProLine17EC und ProLine17ECS, Prozessanalysator ProLine2550, At-Line-QC MasterLine und Tornado+ Probenmuehlen.",
-      "k": "ft-nir-analysegeräte für inline- at-line-qc vergleichen sie ustech nir-hardware inline-analysatoren proline17ec und proline17ecs prozessanalysator proline2550 at-line-qc masterline und tornado probenmuehlen geräte analysator spektrometer sensor hardware"
+      "t": "NIR- und FT-NIR-Analysegeräte für Inline- & At-Line-QC",
+      "s": "Vergleichen Sie USTECH NIR-Hardware: Inline-Analysatoren ProLine17EC und ProLine17ECS, Prozessanalysator ProLine2550, At-Line-QC MasterLine17EC und Tornado+ Probenmuehlen.",
+      "k": "nir- und ft-nir-analysegeräte für inline- at-line-qc vergleichen sie ustech nir-hardware inline-analysatoren proline17ec und proline17ecs prozessanalysator proline2550 at-line-qc masterline17ec und tornado probenmuehlen geräte analysator spektrometer sensor hardware"
     },
     "es": {
-      "t": "Analizadores FT-NIR para Control en Línea y At-Line",
-      "s": "Compare el hardware NIR de USTECH: analizadores en linea ProLine17EC y ProLine17ECS, analizador de procesos ProLine2550, control at-line MasterLine y molinos Tornado+.",
-      "k": "analizadores ft-nir para control en línea y at-line compare el hardware nir de ustech analizadores en linea proline17ec y proline17ecs analizador de procesos proline2550 control at-line masterline y molinos tornado dispositivos analizador espectrómetro sensor hardware"
+      "t": "Analizadores NIR y FT-NIR para Control en Línea y At-Line",
+      "s": "Compare el hardware NIR de USTECH: analizadores en linea ProLine17EC y ProLine17ECS, analizador de procesos ProLine2550, control at-line MasterLine17EC y molinos Tornado+.",
+      "k": "analizadores nir y ft-nir para control en línea y at-line compare el hardware nir de ustech analizadores en linea proline17ec y proline17ecs analizador de procesos proline2550 control at-line masterline17ec y molinos tornado dispositivos analizador espectrómetro sensor hardware"
     },
     "ar": {
-      "t": "أجهزة تحليل FT-NIR لمراقبة الجودة المدمجة وفي الموقع",
-      "s": "قارن أجهزة USTECH NIR: محللات ProLine17EC و ProLine17ECS المضمنة، محلل العمليات ProLine2550، وحدة MasterLine ومطاحن Tornado+.",
-      "k": "أجهزة تحليل ft-nir لمراقبة الجودة المدمجة وفي الموقع قارن أجهزة ustech nir محللات proline17ec و proline17ecs المضمنة، محلل العمليات proline2550، وحدة masterline ومطاحن tornado الأجهزة المحللات أجهزة الطيف المستشعرات"
+      "t": "أجهزة تحليل NIR وFT-NIR لمراقبة الجودة المدمجة وفي الموقع",
+      "s": "قارن أجهزة USTECH NIR: محللات ProLine17EC و ProLine17ECS المضمنة، محلل العمليات ProLine2550، وحدة MasterLine17EC ومطاحن Tornado+.",
+      "k": "أجهزة تحليل nir وft-nir لمراقبة الجودة المدمجة وفي الموقع قارن أجهزة ustech nir محللات proline17ec و proline17ecs المضمنة، محلل العمليات proline2550، وحدة masterline17ec ومطاحن tornado الأجهزة المحللات أجهزة الطيف المستشعرات"
     },
     "zh": {
-      "t": "用于在线及线旁质控的 FT-NIR 分析仪设备",
-      "s": "比较 USTECH NIR 硬件：ProLine17EC 和 ProLine17ECS 在线分析仪、ProLine2550 过程分析仪、MasterLine 线旁质控以及 Tornado+ 粉碎研磨仪。",
-      "k": "用于在线及线旁质控的 ft-nir 分析仪设备 比较 ustech nir 硬件 proline17ec 和 proline17ecs 在线分析仪 proline2550 过程分析仪 masterline 线旁质控以及 tornado 粉碎研磨仪 硬件设备 光谱仪 分析仪 在线近红外 传感器 线旁"
+      "t": "用于在线及线旁质控的 NIR 和 FT-NIR 分析仪设备",
+      "s": "比较 USTECH NIR 硬件：ProLine17EC 和 ProLine17ECS 在线分析仪、ProLine2550 过程分析仪、MasterLine17EC 线旁质控以及 Tornado+ 粉碎研磨仪。",
+      "k": "用于在线及线旁质控的 nir 和 ft-nir 分析仪设备 比较 ustech nir 硬件 proline17ec 和 proline17ecs 在线分析仪 proline2550 过程分析仪 masterline17ec 线旁质控以及 tornado 粉碎研磨仪 硬件设备 光谱仪 分析仪 在线近红外 传感器 线旁"
     }
   },
   "products-software.html": {
@@ -859,34 +859,34 @@ var SEARCH_I18N = {
   },
   "product-masterline.html": {
     "tr": {
-      "t": "MasterLine Masaüstü FT-NIR Analizörü: Tahıl ve Yem Kalite Kontrolü",
-      "s": "USTECH MasterLine - Tahıl, yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü FT-NIR analizörü.",
-      "k": "masterline masaüstü ft-nir analizörü tahıl ve yem kalite kontrolü ustech masterline - tahıl yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü ft-nir analizörü masterline masaüstü analizör tahıl yem laboratuvar"
+      "t": "MasterLine17EC Masaüstü NIR Analizörü: Tahıl ve Yem Kalite Kontrolü",
+      "s": "USTECH MasterLine17EC - Tahıl, yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü NIR analizörü.",
+      "k": "masterline17ec masaüstü nir analizörü tahıl ve yem kalite kontrolü ustech masterline17ec - tahıl yem bileşeni ve kaba yemin hızlı ve tahribatsız kalite kontrolü için 30 saniyenin altında ölçen masaüstü nir analizörü masterline masaüstü analizör tahıl yem laboratuvar"
     },
     "fr": {
-      "t": "Analyseur FT-NIR de paillasse MasterLine pour céréales et aliments",
-      "s": "USTECH MasterLine - Analyseur de paillasse FT-NIR pour le contrôle qualité des céréales, des ingrédients alimentaires et du fourrage.",
-      "k": "analyseur ft-nir de paillasse masterline pour céréales et aliments ustech masterline - analyseur de paillasse ft-nir pour le contrôle qualité des céréales des ingrédients alimentaires et du fourrage masterline paillasse analyseur céréales"
+      "t": "Analyseur NIR de paillasse MasterLine17EC pour céréales et aliments",
+      "s": "USTECH MasterLine17EC - Analyseur de paillasse NIR pour le contrôle qualité des céréales, des ingrédients alimentaires et du fourrage.",
+      "k": "analyseur nir de paillasse masterline17ec pour céréales et aliments ustech masterline17ec - analyseur de paillasse nir pour le contrôle qualité des céréales des ingrédients alimentaires et du fourrage masterline paillasse analyseur céréales"
     },
     "de": {
-      "t": "MasterLine Tisch-FT-NIR-Analysator für Getreide- und Futtermittel-QC",
-      "s": "USTECH MasterLine - Tisch-FT-NIR-Analysator für die schnelle, zerstörungsfreie Qualitätskontrolle von Getreide, Futterzutaten und Raufutter.",
-      "k": "masterline tisch-ft-nir-analysator für getreide- und futtermittel-qc ustech masterline - tisch-ft-nir-analysator für die schnelle zerstörungsfreie qualitätskontrolle von getreide futterzutaten und raufutter masterline tischgerät analysator getreide"
+      "t": "MasterLine17EC Tisch-NIR-Analysator für Getreide- und Futtermittel-QC",
+      "s": "USTECH MasterLine17EC - Tisch-NIR-Analysator für die schnelle, zerstörungsfreie Qualitätskontrolle von Getreide, Futterzutaten und Raufutter.",
+      "k": "masterline17ec tisch-nir-analysator für getreide- und futtermittel-qc ustech masterline17ec - tisch-nir-analysator für die schnelle zerstörungsfreie qualitätskontrolle von getreide futterzutaten und raufutter masterline tischgerät analysator getreide"
     },
     "es": {
-      "t": "Analizador FT-NIR de Sobremesa MasterLine",
-      "s": "MasterLine: analizador FT-NIR de sobremesa para control de calidad rápido y no destructivo de granos, piensos y forrajes en menos de 30 segundos.",
-      "k": "analizador ft-nir de sobremesa masterline masterline analizador ft-nir de sobremesa para control de calidad rápido y no destructivo de granos piensos y forrajes en menos de 30 segundos masterline sobremesa analizador granos"
+      "t": "Analizador NIR de Sobremesa MasterLine17EC",
+      "s": "MasterLine17EC: analizador NIR de sobremesa para control de calidad rápido y no destructivo de granos, piensos y forrajes en menos de 30 segundos.",
+      "k": "analizador nir de sobremesa masterline17ec masterline17ec analizador nir de sobremesa para control de calidad rápido y no destructivo de granos piensos y forrajes en menos de 30 segundos masterline sobremesa analizador granos"
     },
     "ar": {
-      "t": "MasterLine: محلل FT-NIR مكتبي لجودة الحبوب والأعلاف",
-      "s": "USTECH MasterLine - محلل FT-NIR مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف.",
-      "k": "masterline محلل ft-nir مكتبي لجودة الحبوب والأعلاف ustech masterline - محلل ft-nir مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف masterline محلل مكتبي الحبوب الأعلاف"
+      "t": "MasterLine17EC: محلل NIR مكتبي لجودة الحبوب والأعلاف",
+      "s": "USTECH MasterLine17EC - محلل NIR مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف.",
+      "k": "masterline17ec محلل nir مكتبي لجودة الحبوب والأعلاف ustech masterline17ec - محلل nir مكتبي لمراقبة جودة الحبوب ومكونات الأعلاف والأعلاف masterline محلل مكتبي الحبوب الأعلاف"
     },
     "zh": {
-      "t": "MasterLine 台式 FT-NIR 分析仪：谷物与饲料质检",
-      "s": "USTECH MasterLine - 用于谷物、饲料成分和饲草质量控制的台式 FT-NIR 分析仪。",
-      "k": "masterline 台式 ft-nir 分析仪 谷物与饲料质检 ustech masterline - 用于谷物 饲料成分和饲草质量控制的台式 ft-nir 分析仪 masterline 台式近红外分析仪 谷物 饲料 实验室"
+      "t": "MasterLine17EC 台式 NIR 分析仪：谷物与饲料质检",
+      "s": "USTECH MasterLine17EC - 用于谷物、饲料成分和饲草质量控制的台式 NIR 分析仪。",
+      "k": "masterline17ec 台式 nir 分析仪 谷物与饲料质检 ustech masterline17ec - 用于谷物 饲料成分和饲草质量控制的台式 nir 分析仪 masterline 台式近红外分析仪 谷物 饲料 实验室"
     }
   },
   "product-proline-17ec.html": {
@@ -1052,33 +1052,33 @@ var SEARCH_I18N = {
   "knowledge-technology.html": {
     "tr": {
       "t": "NIR Teknoloji ve Kalibrasyon Bilimi",
-      "s": "ProChem, caliX, AutoML ve MEMS FT-NIR cihazlarının üretim tesislerinde gerçek zamanlı kalite kontrolü için nasıl çalıştığını öğrenin.",
-      "k": "nir teknoloji ve kalibrasyon bilimi prochem calix automl ve mems ft-nir cihazlarının üretim tesislerinde gerçek zamanlı kalite kontrolü için nasıl çalıştığını öğrenin teknoloji ft-nir nir spektroskopi mems teori kalibrasyon bilimi"
+      "s": "Fotonlardan tahminlere kadar NIR spektroskopisi nasıl çalışır: ölçüm yolu, kalibrasyon bilimi ve caliX + ProChem ekosistemi, USTECH tarafından açıklanmıştır.",
+      "k": "nir teknoloji ve kalibrasyon bilimi fotonlardan tahminlere kadar nir spektroskopisi nasıl çalışır ölçüm yolu kalibrasyon bilimi ve calix prochem ekosistemi ustech tarafından açıklanmıştır teknoloji nir ft-nir spektroskopi teori kalibrasyon bilimi"
     },
     "fr": {
       "t": "Technologie NIR et science de l'étalonnage",
-      "s": "Le FT-NIR expliqué, des photons aux prédictions : chemin de mesure, science de l'étalonnage et écosystème caliX + ProChem, par USTECH.",
-      "k": "technologie nir et science de l étalonnage le ft-nir expliqué des photons aux prédictions chemin de mesure science de l étalonnage et écosystème calix prochem par ustech technologie spectroscopie théorie"
+      "s": "Le NIR expliqué, des photons aux prédictions : chemin de mesure, science de l'étalonnage et écosystème caliX + ProChem, par USTECH.",
+      "k": "technologie nir et science de l étalonnage le nir expliqué des photons aux prédictions chemin de mesure science de l étalonnage et écosystème calix prochem par ustech technologie spectroscopie théorie"
     },
     "de": {
       "t": "NIR-Technologie & Kalibrierwissenschaft",
-      "s": "FT-NIR-Spektroskopie erklärt, von Photonen bis zur Vorhersage: Messpfad, Kalibrierwissenschaft und das caliX-ProChem-Ökosystem von USTECH.",
-      "k": "nir-technologie kalibrierwissenschaft ft-nir-spektroskopie erklärt von photonen bis zur vorhersage messpfad kalibrierwissenschaft und das calix-prochem-ökosystem von ustech technologie spektroskopie theorie"
+      "s": "NIR-Spektroskopie erklärt, von Photonen bis zur Vorhersage: Messpfad, Kalibrierwissenschaft und das caliX-ProChem-Ökosystem von USTECH.",
+      "k": "nir-technologie kalibrierwissenschaft nir-spektroskopie erklärt von photonen bis zur vorhersage messpfad kalibrierwissenschaft und das calix-prochem-ökosystem von ustech technologie spektroskopie theorie"
     },
     "es": {
       "t": "Tecnología NIR y Ciencia de Calibración",
-      "s": "La espectroscopía FT-NIR explicada, de fotones a predicciones: trayectoria de medición, ciencia de calibración y ecosistema caliX + ProChem.",
-      "k": "tecnología nir y ciencia de calibración la espectroscopía ft-nir explicada de fotones a predicciones trayectoria de medición ciencia de calibración y ecosistema calix prochem tecnología espectroscopía teoría"
+      "s": "La espectroscopía NIR explicada, de fotones a predicciones: trayectoria de medición, ciencia de calibración y ecosistema caliX + ProChem.",
+      "k": "tecnología nir y ciencia de calibración la espectroscopía nir explicada de fotones a predicciones trayectoria de medición ciencia de calibración y ecosistema calix prochem tecnología espectroscopía teoría"
     },
     "ar": {
-      "t": "تقنية FT-NIR وعلم المعايرة",
-      "s": "كيف يعمل التحليل الطيفي FT-NIR، من الفوتونات إلى التنبؤات: مسار القياس وعلم المعايرة والكيمياء القياسية والنشر الصناعي.",
-      "k": "تقنية ft-nir وعلم المعايرة كيف يعمل التحليل الطيفي ft-nir، من الفوتونات إلى التنبؤات مسار القياس وعلم المعايرة والكيمياء القياسية والنشر الصناعي التكنولوجيا ft-nir التحليل الطيفي mems المعايرة"
+      "t": "تقنية NIR وعلم المعايرة",
+      "s": "كيف يعمل التحليل الطيفي NIR، من الفوتونات إلى التنبؤات: مسار القياس وعلم المعايرة والكيمياء القياسية والنشر الصناعي.",
+      "k": "تقنية nir وعلم المعايرة كيف يعمل التحليل الطيفي nir، من الفوتونات إلى التنبؤات مسار القياس وعلم المعايرة والكيمياء القياسية والنشر الصناعي التكنولوجيا ft-nir التحليل الطيفي mems المعايرة"
     },
     "zh": {
       "t": "近红外技术与校准科学",
-      "s": "FT-NIR 光谱技术的工作原理，从光子到预测：测量路径、定标科学以及由 USTECH 解释的 caliX + ProChem 生态系统。",
-      "k": "近红外技术与校准科学 ft-nir 光谱技术的工作原理 从光子到预测 测量路径 定标科学以及由 ustech 解释的 calix prochem 生态系统 核心技术 ft-nir 近红外光谱原理 mems 定标科学"
+      "s": "NIR 光谱技术的工作原理，从光子到预测：测量路径、定标科学以及由 USTECH 解释的 caliX + ProChem 生态系统。",
+      "k": "近红外技术与校准科学 nir 光谱技术的工作原理 从光子到预测 测量路径 定标科学以及由 ustech 解释的 calix prochem 生态系统 核心技术 ft-nir 近红外光谱原理 mems 定标科学"
     }
   },
   "knowledge-blogs.html": {
@@ -1913,8 +1913,8 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "USTECH Innovations | Home",
             url: "index.html",
             category: "General",
-            keywords: "home homepage ft-nir spectroscopy process analytics main welcome index",
-            snippet: "Advanced spectroscopy solutions. Next-generation inline FT-NIR analytical instruments for process control."
+            keywords: "home homepage nir ft-nir spectroscopy process analytics main welcome index",
+            snippet: "Advanced spectroscopy solutions. Next-generation inline NIR and FT-NIR analytical instruments for process control."
             },
             {
             title: "About Us | USTECH Innovations",
@@ -1935,7 +1935,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "faq.html",
             category: "General",
             keywords: "faq support questions calibration service maintenance warranty help",
-            snippet: "Find answers about FT-NIR technology, calibration models, hardware maintenance, and support services."
+            snippet: "Find answers about NIR technology, calibration models, hardware maintenance, and support services."
             },
             {
             title: "Industries Overview",
@@ -1970,14 +1970,14 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "products.html",
             category: "Products",
             keywords: "products overview catalog devices hardware software suites calibrators",
-            snippet: "Overview of USTECH products: high-performance FT-NIR devices and process-control software solutions."
+            snippet: "Overview of USTECH products: high-performance NIR and FT-NIR devices and process-control software solutions."
             },
             {
             title: "Analytical Devices & Hardware",
             url: "products-devices.html",
             category: "Products",
             keywords: "devices hardware proline2550 proline17ec proline17ecs masterline tornado analyzer sensor probes inline at-line",
-            snippet: "Explore our rugged industrial FT-NIR spectrometer systems, fiber-optic probes, and process interfaces."
+            snippet: "Explore our rugged industrial NIR and FT-NIR spectrometer systems, fiber-optic probes, and process interfaces."
             },
             {
             title: "Spectroscopy Software Suite",
@@ -1995,10 +1995,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             /* StarchQC: HOLD_LOCAL -- kullanici karari, yayinlanana kadar arama dizininde yok (18.08.2026) */
             {
-            title: "USTECH MasterLine",
+            title: "USTECH MasterLine17EC",
             url: "product-masterline.html",
             category: "Products",
-            keywords: "USTECH MasterLine grain animal feed moisture protein fat ash fiber at-line cup",
+            keywords: "USTECH MasterLine17EC grain animal feed moisture protein fat ash fiber at-line cup",
             snippet: "Robust at-line analyzer designed for quality control of grains, meals, and finished animal feeds."
             },
             /* ProLine17ES: emekli (07.09.2026), canlidan kaldirildi -> yerine 17EC ve 17ECS */
@@ -2022,7 +2022,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "product-proline-17ecs.html",
             category: "Products",
             keywords: "ProLine17ECS ProLine 17ECS 17ECS split dual-chassis inline NIR analyzer high sensitivity probe head controller junction box InGaAs sapphire IP65 stainless steel",
-            snippet: "Split dual-chassis inline FT-NIR analyzer built for demanding process lines that need maximum sensitivity."
+            snippet: "Split dual-chassis inline NIR analyzer built for demanding process lines that need maximum sensitivity."
             },
             {
             title: "ProLine2550 Inline Process Analyzer",
@@ -2054,11 +2054,11 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "Access USTECH Innovations' knowledge base: learn about spectroscopy physics and read B2B case studies."
             },
             {
-            title: "FT-NIR Technology & Theory",
+            title: "NIR Technology & Theory",
             url: "knowledge-technology.html",
             category: "Knowledge",
-            keywords: "technology ft-nir theory mems interferometer reflectance transmission chemometrics calibration",
-            snippet: "Learn the scientific principles behind FT-NIR spectroscopy, MEMS technology, and chemometrics."
+            keywords: "technology nir ft-nir theory diode-array interferometer reflectance transmission chemometrics calibration",
+            snippet: "Learn the scientific principles behind NIR and FT-NIR spectroscopy, spectrometer design, and chemometrics."
             },
             {
             title: "Blogs & Application Notes",
@@ -2068,11 +2068,11 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "Read the latest industry insights, application case studies, and scientific articles from our experts."
             },
             {
-            title: "Calibration Transfer Feasibility on MEMS Spectrometers",
+            title: "Calibration Transfer Between NIR Spectrometers: Methods and Feasibility",
             url: "blog-calibration-transfer.html",
             category: "Knowledge",
-            keywords: "calibration transfer feasibility mems spectrometers optical bias standard PDS",
-            snippet: "Read our technical white paper detailing how unit-to-unit calibration transferability is solved by MEMS lithography."
+            keywords: "calibration transfer feasibility nir spectrometers bias standardization PDS",
+            snippet: "How calibration transfer between NIR spectrometers works: standardisation and model-adjustment methods, and how feasibility is assessed."
             },
             {
             title: "Reducing Ingredient Waste in Cattle Feed Production",
@@ -2121,7 +2121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "blog-mems-durability-industrial.html",
             category: "Knowledge",
             keywords: "mems comb-drive durability industrial environments shock resistance g-force lifetime vibration",
-            snippet: "White paper documenting the structural stress tolerances and lifetime cycles of USTECH chip-scale combs."
+            snippet: "What the reliability literature says about MEMS comb drives under shock, vibration, temperature cycling and fatigue."
             },
             {
             title: "Developing Robust Chemometric Classification Models via PCA",
@@ -2152,28 +2152,28 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "Industrial automation guide outlining OPC UA tag mappings to feed spectrometer outputs into closed-loop control systems."
             },
             {
-            title: "Rapid Moisture and Protein Analysis in Milk Powder using FT-NIR",
+            title: "Moisture and Protein Analysis in Milk Powder by NIR Spectroscopy",
             url: "blog-milk-powder-analysis.html",
             category: "Knowledge",
             keywords: "rapid moisture protein analysis milk powder spray dryer discharge dairy composition",
-            snippet: "Real-time monitoring of spray dryer discharge parameters using MEMS FT-NIR technology."
+            snippet: "Real-time monitoring of spray dryer discharge parameters using NIR spectroscopy."
             },
             {
             title: "Real-Time Fat Analysis in Ground Beef Processing",
             url: "blog-ground-beef-fat.html",
             category: "Knowledge",
             keywords: "real-time fat analysis ground beef processing inline meat fat moisture measurement",
-            snippet: "Inline measurement of fat and moisture concentration in ground beef lines using at-line and process FT-NIR systems."
+            snippet: "Inline measurement of fat and moisture concentration in ground beef lines using at-line and inline NIR systems."
             },
             {
-            title: "Crude Fiber and Ash Content Determination in Feed Rations using FT-NIR",
+            title: "Crude Fiber and Ash Content Determination in Feed Rations by NIR Spectroscopy",
             url: "blog-feed-fiber-ash.html",
             category: "Knowledge",
             keywords: "crude fiber ash content determination feed rations animal feed plants mill composition",
             snippet: "Controlling crude fiber, ash, and moisture parameters in animal feed plants using inline and at-line near-infrared spectroscopy."
             },
             {
-            title: "Starch Damage and Gluten Verification in Wheat Semolina using FT-NIR",
+            title: "Starch Damage and Gluten Quality in Durum Wheat Semolina",
             url: "blog-semolina-starch-gluten.html",
             category: "Knowledge",
             keywords: "starch damage gluten verification wheat semolina milling quality wet gluten index",
@@ -2184,7 +2184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "blog-polymerization-hydroxyl.html",
             category: "Knowledge",
             keywords: "hydroxyl value monitoring polymerization processes chemical reactors OHV reaction endpoints fiber optic",
-            snippet: "Real-time tracking of hydroxyl value (OHV) and reaction endpoints in chemical reactors using fiber-optic-coupled FT-NIR."
+            snippet: "Real-time tracking of hydroxyl value (OHV) and reaction endpoints in chemical reactors using fiber-optic-coupled NIR."
             },
             {
             title: "Free Fatty Acidity (FFA) Monitoring in Olive Oil Processing",
@@ -2485,7 +2485,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 /* "B2B ROI Calculator" -> contact.html#roi KALDIRILDI (07.09.2026):
                    #roi capasi sitede hic yok ve roi-section app.js madde 4 ile gizli. */
                 { title: "USTECH StarchQC", url: "product-starchqc.html" },
-                { title: "USTECH MasterLine", url: "product-masterline.html" }
+                { title: "USTECH MasterLine17EC", url: "product-masterline.html" }
             ];
 
             const container = document.createElement('div');
@@ -2521,7 +2521,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const curatedSuggestions = {
                 "feed": [
-                    { title: "USTECH MasterLine (Product)", url: "product-masterline.html" },
+                    { title: "USTECH MasterLine17EC (Product)", url: "product-masterline.html" },
                     { title: "Food & Feed Industry Solutions", url: "industry-food-feed.html" },
                     { title: "Blog: Cattle Feed Waste Optimization", url: "blog-cattle-feed-waste.html" },
                     { title: "Blog: NIR Feed Fiber & Ash Analysis", url: "blog-feed-fiber-ash.html" },
@@ -3259,19 +3259,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const BLOG_POSTS = [
             {
             url: "blog-calibration-transfer.html",
-            title: "Calibration Transfer Feasibility on MEMS Spectrometers",
+            title: "Calibration Transfer Between NIR Spectrometers: Methods and Feasibility",
             image: "images/blog_mems_sensor.webp",
             industry: "general-tech",
-            type: "WHITE PAPER",
-            snippet: "How MEMS optical tolerances enable unit-to-unit calibration transferability without adjustments."
+            type: "GUIDE",
+            snippet: "Why a NIR calibration built on one spectrometer rarely runs unchanged on another, which standardisation and model-adjustment methods the literature describes, and how transfer feasibility is assessed for an instrument family."
             },
             {
             url: "blog-cattle-feed-waste.html",
-            title: "Reducing Ingredient Waste in Cattle Feed",
+            title: "Reducing Ingredient Waste in Cattle Feed Production",
             image: "images/blog_cattle_feed.webp",
             industry: "food-feed",
-            type: "CASE STUDY",
-            snippet: "Learn how inline NIR sensors over feed mixer exits improved yield by 1.2%."
+            type: "ARTICLE",
+            snippet: "Why cattle feed is over-formulated against ingredient variability, what the literature says about where that variability comes from, and how NIR at intake and at the mixer narrows the margin."
             },
             {
             url: "blog-pls-regression-calix.html",
@@ -3279,143 +3279,143 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "images/blog_pls_regression.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "A step-by-step tutorial explaining how to compile calibration models from reference wet chemistry."
+            snippet: "A practitioner's walk through a PLS calibration: how the data are split, how the pre-processing and the number of latent variables are chosen by validation, which diagnostics to read, and how the model is kept alive in production."
             },
             {
             url: "blog-hydroxyl-value-polyol.html",
             title: "Real-Time Hydroxyl Value Monitoring in Polyol Production",
             image: "images/blog_polyol_reactors.webp",
             industry: "chemical-pharma",
-            type: "WHITE PAPER",
-            snippet: "Detailed white paper explaining the real-time inline tracking of OHV in chemical polymerization processes."
+            type: "ARTICLE",
+            snippet: "Why the hydroxyl number is the end-point variable in polyol production, what the titration reference methods and the NIR standards require, and why temperature is the main obstacle for an in-reactor calibration."
             },
             {
             url: "blog-moisture-milk-powder.html",
             title: "Standardizing Moisture in Milk Powder Spray Drying",
             image: "images/blog_milk_powder.webp",
             industry: "dairy",
-            type: "CASE STUDY",
-            snippet: "Optimize yields and prevent sticky powder clogs on spray dryer discharges."
+            type: "ARTICLE",
+            snippet: "Why the outlet moisture of a milk-powder spray dryer decides stickiness, caking, shelf life and yield, which variables the operator can move, and how an inline NIR moisture value feeds the control loop."
             },
             {
             url: "blog-savitzky-golay-filtering.html",
-            title: "Understanding Savitzky-Golay Preprocessing",
+            title: "Understanding Savitzky-Golay Filtering in Preprocessing",
             image: "images/blog_spectral_math.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "A mathematical breakdown of smoothing filters, parameters, and derivatives for NIR spectra."
+            snippet: "What the Savitzky-Golay filter actually does to a spectrum, why derivatives remove baselines, and how window length and polynomial order should be chosen, with the original and follow-up literature."
             },
             {
             url: "blog-blend-uniformity-pharma.html",
-            title: "Blend Uniformity Verification in Active Pharmas",
+            title: "Blend Uniformity Verification in Active Pharmaceutical Blending",
             image: "images/blog_pharma_blending.webp",
             industry: "chemical-pharma",
-            type: "CASE STUDY",
-            snippet: "Verify dry powder homogeneity dynamically inside bin blenders without stopping."
+            type: "ARTICLE",
+            snippet: "Why blend uniformity is a regulated in-process attribute, what thief sampling can and cannot tell you, and what the literature shows about in-line NIR monitoring of powder blending as a PAT tool."
             },
             {
             url: "blog-mems-durability-industrial.html",
             title: "MEMS Comb-Drive Mechanical Durability in Industrial Environments",
             image: "images/blog_mems_durability.webp",
             industry: "general-tech",
-            type: "WHITE PAPER",
-            snippet: "Shock resistance, lifetime cycles, and structural stress tolerances of silicon chip-scale combs."
+            type: "ARTICLE",
+            snippet: "What the reliability literature says about silicon springs and comb drives under shock, vibration, temperature cycling and fatigue, and what the military and IEC environmental test methods actually specify."
             },
             {
             url: "blog-pca-classification-models.html",
-            title: "Developing Robust Classification Models via PCA",
+            title: "Developing Robust Chemometric Classification Models via PCA",
             image: "images/blog_pca_chemometrics.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "Methodology explaining Principal Component Selection for raw material identification."
+            snippet: "How PCA scores, loadings and residuals become a classification model, where the Hotelling and Q limits come from, why class-modelling differs from PLS-DA, and how regulators expect a qualitative NIR model to be validated."
             },
             {
             url: "blog-starch-extraction-milling.html",
-            title: "Optimizing Starch Extraction Efficiency in Wet Milling",
+            title: "Optimizing Starch Extraction Efficiency in Wet Corn Milling",
             image: "images/blog_starch_milling.webp",
             industry: "food-feed",
-            type: "CASE STUDY",
-            snippet: "How a processing plant used at-line NIR composition monitoring to maximize corn starch yield."
+            type: "ARTICLE",
+            snippet: "Where starch is lost in a corn wet mill, how separation performance is measured, and what published work says spectroscopy can and cannot monitor in slurry streams."
             },
             {
             url: "blog-fiber-interface-reactors.html",
-            title: "Optical Fiber Interface Designs for Corrosive Reactors",
+            title: "Optical Fiber Interface Designs for Corrosive Chemical Reactors",
             image: "images/blog_fiber_reactors.webp",
             industry: "chemical-pharma",
-            type: "WHITE PAPER",
-            snippet: "Probes using sapphire windows and Hastelloy materials for high pressure and temperature loops."
+            type: "GUIDE",
+            snippet: "How probe geometry, the silica fibre, the sapphire window, the wetted alloy and the seal decide what an NIR spectrometer actually sees inside a corrosive or hot reactor, with the literature behind each choice."
             },
             {
             url: "blog-opc-ua-dosing-valves.html",
-            title: "Standardizing OPC UA Integrations for Closed-Loop Dosing Valves",
+            title: "Closing the Dosing Loop on Analyzer Results with OPC UA",
             image: "images/blog_opc_ua_plc.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "A guide mapping process OPC UA tags directly to spectrometer predictions for automated dosing valves."
+            snippet: "What an analyzer result needs to carry over OPC UA before a PLC may act on it, how dead time and sampling interval shape the PID loop, and where the safety interlocks must sit, with the standards behind each point."
             },
             {
             url: "blog-milk-powder-analysis.html",
-            title: "Rapid Moisture and Protein Analysis in Milk Powder",
+            title: "Moisture and Protein Analysis in Milk Powder by NIR Spectroscopy",
             image: "images/blog_milk_spray_drying.webp",
             industry: "dairy",
-            type: "WHITE PAPER",
-            snippet: "Real-time monitoring of moisture and protein parameters in spray dryer discharge using MEMS FT-NIR technology."
+            type: "ARTICLE",
+            snippet: "How moisture, protein, fat and lactose in milk powder are determined by the reference methods, what published NIR calibrations report for them, and how an at-line or inline NIR step is calibrated and validated."
             },
             {
             url: "blog-ground-beef-fat.html",
             title: "Real-Time Fat Analysis in Ground Beef Processing",
             image: "images/blog_ground_beef.webp",
             industry: "food-feed",
-            type: "WHITE PAPER",
-            snippet: "Inline measurement of fat and moisture concentration in ground beef lines using at-line and process FT-NIR systems."
+            type: "ARTICLE",
+            snippet: "Why fat content is the controlling specification for ground beef, what the reference methods involve, and what peer-reviewed on-line NIR studies at grinder outlets and on conveyors actually report."
             },
             {
             url: "blog-feed-fiber-ash.html",
-            title: "Crude Fiber and Ash Content Determination in Feed Rations",
+            title: "Crude Fiber and Ash Content Determination in Feed Rations by NIR Spectroscopy",
             image: "images/blog_feed_analysis.webp",
             industry: "food-feed",
-            type: "WHITE PAPER",
-            snippet: "Controlling crude fiber, ash, and moisture parameters in animal feed plants using inline FT-NIR."
+            type: "ARTICLE",
+            snippet: "How crude fibre and ash are determined by the reference methods, what published NIR calibrations achieve for them in compound feed, and how an at-line step fits into a mill's quality routine."
             },
             {
             url: "blog-semolina-starch-gluten.html",
-            title: "Starch Damage and Gluten Verification in Wheat Semolina",
+            title: "Starch Damage and Gluten Quality in Durum Wheat Semolina",
             image: "images/blog_semolina_gluten.webp",
             industry: "food-feed",
-            type: "WHITE PAPER",
-            snippet: "Inline quality monitoring of semolina parameters including wet gluten, index, and starch damage."
+            type: "ARTICLE",
+            snippet: "What starch damage, wet gluten and gluten index mean for pasta quality, how the reference methods work, and what published NIR studies can and cannot predict in durum semolina."
             },
             {
             url: "blog-polymerization-hydroxyl.html",
             title: "Hydroxyl Value Monitoring in Polymerization Processes",
             image: "images/blog_hydroxyl_value.webp",
             industry: "chemical-pharma",
-            type: "WHITE PAPER",
-            snippet: "Real-time tracking of hydroxyl value (OHV) in chemical reactors using fiber-optic-coupled FT-NIR."
+            type: "ARTICLE",
+            snippet: "What hydroxyl value and acid value tell you about a step-growth polyester batch, how the titration reference methods work, why the O–H bands make the reaction visible to NIR, and what in-reactor studies have shown."
             },
             {
             url: "blog-olive-oil-acidity.html",
-            title: "FFA Monitoring in Olive Oil Processing",
+            title: "Free Fatty Acidity (FFA) Monitoring in Olive Oil Processing",
             image: "images/blog_olive_oil_acidity.webp",
             industry: "food-feed",
-            type: "WHITE PAPER",
-            snippet: "Simultaneous determination of free fatty acidity, moisture, and peroxide value at decanter discharge."
+            type: "ARTICLE",
+            snippet: "How free acidity and peroxide value define olive oil grades, how they arise before and in the mill, what published NIR calibrations achieve for them, and where a measurement point fits."
             },
             {
             url: "blog-bioreactor-cell-culture.html",
             title: "Bioreactor Feeding Optimization in Mammalian Cell Culture",
             image: "images/blog_bioreactor_cell.webp",
             industry: "chemical-pharma",
-            type: "CASE STUDY",
-            snippet: "Real-time inline monitoring of glucose, lactate, and viable cell density inside bioreactors."
+            type: "ARTICLE",
+            snippet: "Why glucose and lactate control matters in CHO fed-batch culture, why NIR struggles in aqueous culture media, and what the literature shows for in-situ Raman and mid-infrared feed control."
             },
             {
             url: "blog-milk-adulteration-receiving.html",
             title: "Rapid Adulteration Detection in Raw Milk Receiving",
             image: "images/blog_milk_adulteration.webp",
             industry: "dairy",
-            type: "CASE STUDY",
-            snippet: "Screening raw milk tankers for added water, urea, and melamine in seconds."
+            type: "ARTICLE",
+            snippet: "What peer-reviewed studies show infrared spectroscopy can detect in raw milk, and how a screen-then-confirm step fits into a dairy intake line."
             },
             {
             url: "blog-outlier-detection-mahalanobis.html",
@@ -3423,143 +3423,143 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "images/blog_outlier_detection.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "A detailed guide explaining outlier threshold limits for regression and classification calibrations."
+            snippet: "How Mahalanobis distance, Hotelling's T-squared, leverage and Q residuals tell a process analyzer whether a spectrum belongs to its calibration, how their limits are set, and why one statistic carries several names in software."
             },
             {
             url: "blog-wavelength-selection-ipls.html",
-            title: "Wavelength Selection & Feature Engineering for NIR Models",
+            title: "Wavelength Selection & Feature Engineering for NIR Spectral Models",
             image: "images/blog_wavelength_selection.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "How to use Genetic Algorithms and iPLS in the caliX suite to select optimal wavelength bands."
+            snippet: "Why restricting a NIR calibration to selected wavelengths can help, how iPLS, genetic algorithms, UVE, CARS, VIP and jackknifing choose them, and why the selection must be validated independently."
             },
             {
             url: "blog-soybean-crush-yield.html",
             title: "Optimizing Oil and Protein Extraction in Soybean Crush Plants",
             image: "images/blog_feed_analysis.webp",
             industry: "food-feed",
-            type: "CASE STUDY",
-            snippet: "Maximize extraction yield and prevent protein giveaway during commercial oilseed crush operations."
+            type: "ARTICLE",
+            snippet: "How solvent extraction and the desolventiser-toaster set the oil, moisture and protein quality of soybean meal, which reference methods define them, and where NIR measurement fits."
             },
             {
             url: "blog-petfood-extrusion-moisture.html",
             title: "Moisture and Fat Standardization in Pet Food Extrusion",
             image: "images/blog_cattle_feed.webp",
             industry: "food-feed",
-            type: "WHITE PAPER",
-            snippet: "Achieving batch-to-batch consistency and shelf-life protection in commercial kibble production."
+            type: "ARTICLE",
+            snippet: "Why kibble moisture at the dryer exit and fat at the coater decide shelf life and label compliance, and what published NIR studies on extruded pet food actually show."
             },
             {
             url: "blog-corn-gluten-dryer.html",
             title: "Real-Time Moisture Control in Corn Gluten Feed Dryers",
             image: "images/blog_starch_milling.webp",
             industry: "food-feed",
-            type: "CASE STUDY",
-            snippet: "Continuous moisture standardization to reduce thermal drying energy costs and stabilize protein content."
+            type: "ARTICLE",
+            snippet: "Why the gluten feed dryer is one of the largest energy users in a corn wet mill, what over-drying and under-drying cost, and how on-line NIR moisture measurement can close the dryer control loop."
             },
             {
             url: "blog-flour-ash-milling.html",
             title: "Continuous Ash and Protein Monitoring in Wheat Flour Milling",
             image: "images/blog_semolina_gluten.webp",
             industry: "food-feed",
-            type: "GUIDE",
-            snippet: "Ensure absolute flour quality grading and optimize flour extraction margins in dry milling lines."
+            type: "ARTICLE",
+            snippet: "Why ash tracks bran in flour streams, what the incineration and Kjeldahl reference methods involve, what published NIR work shows for ash and protein, and how stream monitoring fits into a mill."
             },
             {
             url: "blog-cheese-yield-prediction.html",
-            title: "Evaluating Cheese Yield Prediction Models Using caliX",
+            title: "Evaluating Cheese Yield Prediction Models",
             image: "images/blog_mems_sensor.webp",
             industry: "dairy",
-            type: "GUIDE",
-            snippet: "Maximize cheese manufacturing yield by predicting vat outcomes using chemometric modelling."
+            type: "ARTICLE",
+            snippet: "How cheese yield is predicted from milk fat and protein, what infrared spectroscopy adds at milk intake and in the vat, and how a yield model is built and validated."
             },
             {
             url: "blog-liquid-milk-standardization.html",
             title: "Optimizing Fat and Protein Standardization in Liquid Milk",
             image: "images/blog_milk_spray_drying.webp",
             industry: "dairy",
-            type: "WHITE PAPER",
-            snippet: "Direct closed-loop dosing valves to hit fat targets with high repeatabilities."
+            type: "ARTICLE",
+            snippet: "How in-line fat standardisation of drinking milk works, where density-based cream control reaches its limits, and what published work shows for in-line NIR measurement of fat and protein."
             },
             {
             url: "blog-whey-permeate-evaporator.html",
             title: "Total Solids Control in Whey Permeate Evaporators",
             image: "images/blog_milk_powder.webp",
             industry: "dairy",
-            type: "CASE STUDY",
-            snippet: "Stabilizing evaporator output density to prevent crystallization and optimize dryer feed rate."
+            type: "ARTICLE",
+            snippet: "Why the solids content leaving a whey or permeate evaporator matters for fouling, lactose crystallisation and drying, and how it can be measured and controlled."
             },
             {
             url: "blog-butter-fat-moisture.html",
             title: "Inline Fat and Moisture Standardization in Continuous Butter Making",
             image: "images/blog_milk_spray_drying.webp",
             industry: "dairy",
-            type: "WHITE PAPER",
-            snippet: "Maximize weight yield and maintain strict legal water limits (16.0% max) in continuous butter churns."
+            type: "ARTICLE",
+            snippet: "What the butter standards fix for fat, water and salt, where a continuous buttermaker sets them, and what published inline-sensor and NIR studies show about controlling them at the line."
             },
             {
             url: "blog-yogurt-fermentation-lactic.html",
             title: "Monitoring Lactic Acid and pH in Yogurt Fermentation",
             image: "images/blog_milk_adulteration.webp",
             industry: "dairy",
-            type: "WHITE PAPER",
-            snippet: "Improve yogurt batch consistency and prevent post-acidification using continuous acidity scans."
+            type: "ARTICLE",
+            snippet: "Why the end-point of yogurt fermentation matters, how pH and titratable acidity are measured, and what in-line NIR studies report about following acidification."
             },
             {
             url: "blog-cheese-moisture-milling.html",
             title: "Moisture and Salt Monitoring in Cheddar Cheese Milling",
             image: "images/blog_mems_sensor.webp",
             industry: "dairy",
-            type: "CASE STUDY",
-            snippet: "Grade cheese curd splits dynamically and optimize salt-to-moisture ratios in real-time."
+            type: "ARTICLE",
+            snippet: "Why the salt-in-moisture ratio fixed at the salting belt governs Cheddar ripening, how moisture and salt are determined by the reference methods, and what published NIR studies show for cheese."
             },
             {
             url: "blog-dairy-receiving-total-solids.html",
             title: "Incoming Milk Fat and Total Solids Grading at Receiving Docks",
             image: "images/blog_milk_adulteration.webp",
             industry: "dairy",
-            type: "GUIDE",
-            snippet: "Grade raw milk tanker deliveries instantly and standardise intake value parameters."
+            type: "ARTICLE",
+            snippet: "Why raw milk is paid for by its fat, protein and solids, how the reference methods and mid-infrared analysers establish those values, and what published NIR studies show for raw-milk composition."
             },
             {
             url: "blog-pharma-granulation-moisture.html",
             title: "Moisture Monitoring in Fluid Bed Granulation",
             image: "images/blog_pharma_blending.webp",
             industry: "chemical-pharma",
-            type: "CASE STUDY",
-            snippet: "Achieve consistent active pharmaceutical powder granulation drying cycles using inline moisture probes."
+            type: "ARTICLE",
+            snippet: "Why residual moisture is the critical attribute of a fluid-bed granulation, what the reference methods measure, what in-line NIR studies have shown, and why sampling, probe fouling and temperature decide whether the method holds up."
             },
             {
             url: "blog-solvent-distillation-purity.html",
             title: "Inline Solvent Purity Monitoring in Chemical Distillation Columns",
             image: "images/blog_fiber_reactors.webp",
             industry: "chemical-pharma",
-            type: "WHITE PAPER",
-            snippet: "Control reflux ratios and optimize distillation energy input via real-time binary fraction analysis."
+            type: "ARTICLE",
+            snippet: "Why distillation columns are usually run on temperature, what near-infrared spectroscopy adds for solvent composition and water content, and how such an analyzer is calibrated and validated."
             },
             {
             url: "blog-packaging-polymer-density.html",
             title: "Density and Crystallinity Grading of Polyethylene Packaging",
             image: "images/blog_polyol_reactors.webp",
             industry: "chemical-pharma",
-            type: "GUIDE",
-            snippet: "Ensure incoming polymer film barrier properties and density grading using rapid reflectance scans."
+            type: "ARTICLE",
+            snippet: "How density and crystallinity of LDPE, LLDPE and HDPE are determined by the reference methods, what the near-infrared spectrum of polyethylene actually encodes, and what published NIR density calibrations have achieved on pellets, film and melt."
             },
             {
             url: "blog-pharma-raw-material-id.html",
             title: "Incoming Raw Material Identification in Pharmaceutical Warehouses",
             image: "images/blog_pharma_blending.webp",
             industry: "chemical-pharma",
-            type: "CASE STUDY",
-            snippet: "Verify 100% of incoming raw material bags at dock doors to eliminate chemical contamination risks."
+            type: "ARTICLE",
+            snippet: "Why GMP expects an identity test on every container of starting material, what the EMA and the pharmacopoeias require of a qualitative NIR method, and how spectral libraries and through-container measurement are built and validated."
             },
             {
             url: "blog-chemical-alkyd-resin.html",
             title: "Acid Value and Viscosity Tracking in Alkyd Resin Cooking",
             image: "images/blog_polyol_reactors.webp",
             industry: "chemical-pharma",
-            type: "WHITE PAPER",
-            snippet: "Predict reaction endpoints and acid values continuously in high-temperature chemical reactors."
+            type: "ARTICLE",
+            snippet: "Why alkyd cooks are followed by acid value and viscosity, what the titration and viscosity reference methods involve, why the gel point makes timing critical, and what published in-line NIR studies show."
             },
             {
             url: "blog-msc-snv-preprocessing.html",
@@ -3567,7 +3567,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "images/blog_spectral_math.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "Learn how SNV and MSC algorithms eliminate physical sample packing and particle size variations."
+            snippet: "What multiplicative scatter correction and the standard normal variate transform do to a diffuse-reflectance NIR spectrum, how the two are related, and when each is the better choice."
             },
             {
             url: "blog-spectrometer-reference-bg.html",
@@ -3575,7 +3575,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "images/blog_mems_durability.webp",
             industry: "general-tech",
             type: "GUIDE",
-            snippet: "Ensure long-term calibration model stability by managing ambient temperature and diode source drift."
+            snippet: "Why a process NIR spectrometer needs reference measurements, which effects make its response drift, and how performance tests and routine checks reveal drift before it reaches the results."
             }
         ];
 

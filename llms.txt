@@ -9,7 +9,7 @@
 - [ProLine17EC](https://www.ustechinnovations.com/product-proline-17ec.html): Inline NIR analyzer, 950-1650 nm InGaAs array, IP65 316 stainless steel housing, sapphire window
 - [ProLine17ECS](https://www.ustechinnovations.com/product-proline-17ecs.html): Inline NIR analyzer with high-speed InGaAs detection and dual-chassis IP65 housing
 - [ProLine2550](https://www.ustechinnovations.com/product-proline-2550.html): Inline FT-NIR process analyzer for blenders, reactors and pipelines
-- [MasterLine](https://www.ustechinnovations.com/product-masterline.html): Benchtop FT-NIR analyzer for grains, feed ingredients and forage
+- [MasterLine17EC](https://www.ustechinnovations.com/product-masterline.html): Benchtop NIR analyzer for grains, feed ingredients and forage
 - [caliX](https://www.ustechinnovations.com/product-calix.html): Chemometrics and calibration software (PLS, PCA, AutoML) for NIR, FTIR and Raman data
 - [ProChem](https://www.ustechinnovations.com/product-prochem.html): Analyzer software linking USTECH analyzers to PLC/SCADA: live dashboards, alarms, setpoint control
 - [StarchQC](https://www.ustechinnovations.com/product-starchqc.html): Damaged-starch analyzer for flour (amperometric method)

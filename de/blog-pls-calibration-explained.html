@@ -28,7 +28,7 @@
       "name": "USTECH Innovations",
       "url": "https://www.ustechinnovations.com/",
       "logo": "https://www.ustechinnovations.com/images/logo.svg",
-      "description": "Hersteller von Inline-FT-NIR-Spektroskopiesystemen, Chemometrie-Software und Kalibrierungsmodellen für die Lebensmittel-, Futtermittel-, Molkerei- und chemische Verarbeitung.",
+      "description": "Hersteller von Inline- und At-Line-Analysatoren (NIR und FT-NIR), Chemometrie-Software und Kalibriermodellen für die Lebensmittel-, Futtermittel-, Molkerei- und Chemieindustrie.",
       "foundingDate": "2023",
       "address": {
         "@type": "PostalAddress",
@@ -39,7 +39,7 @@
         "addressCountry": "US"
       },
       "contactPoint": {
-        "@type": "ContactPoint",
+        "@type": "ContactPoint", "areaServed": "Worldwide", "availableLanguage": ["English", "Turkish", "French", "German", "Spanish", "Arabic", "Chinese"],
         "email": "info@ustechinnovations.com",
         "contactType": "sales"
       },
@@ -65,7 +65,7 @@
   "headline": "So funktioniert die NIR-Kalibrierung: PLS erklärt",
   "description": "Ein verständlicher Leitfaden dazu, wie eine PLS-Kalibrierung NIR-Spektren in Zusammensetzungswerte umwandelt: latente Variablen, die Zahl der Faktoren, Validierungsstatistiken und die Grenzen, die die Referenzmethode setzt.",
   "url": "https://www.ustechinnovations.com/de/blog-pls-calibration-explained.html",
-  "datePublished": "2026-06-25",
+  "datePublished": "2026-10-02",
   "dateModified": "2026-10-27",
   "author": {
     "@type": "Organization", "legalName": "USTECH Innovations LLC",
@@ -218,7 +218,7 @@
 <a class="blog-back-link" href="knowledge-blogs.html">← Zurück zu Allen Blogs und Publikationen</a>
 <img alt="PLS Regression Chemometrics Visualization" class="blog-post-banner" decoding="async" fetchpriority="high" src="../images/blog_pls_explained.webp?v=1.0.5"/>
 <div class="blog-post-header">
-<span class="blog-post-meta">Leitfaden — 25. Juni 2026 — 5 Min. Lesezeit</span>
+<span class="blog-post-meta">Leitfaden — 2. Oktober 2026 — 5 Min. Lesezeit</span>
 <h1 class="blog-post-title">So funktioniert die NIR-Kalibrierung: PLS erklärt</h1>
 <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Eine verständliche Erklärung, wie die Partial-Least-Squares-Regression (PLS) Nahinfrarotspektren in Zusammensetzungswerte umwandelt &mdash; warum die Methode multivariat ist, was latente Variablen sind, wie viele Faktoren man verwendet, wie Kalibrierungen validiert werden und warum die Referenzmethode begrenzt, was sich nachweisen lässt &mdash; auf Grundlage der chemometrischen Fachliteratur und der einschlägigen Normen.</p>
 </div>
@@ -240,7 +240,7 @@
 <h2>Die Referenzmethode setzt die Untergrenze</h2>
 <p>Eine Kalibrierung wird mit Werten einer Labor-Referenzmethode trainiert und geprüft, und diese Werte sind selbst fehlerbehaftet. Faber und Kowalski weisen darauf hin, dass der gegen gemessene Referenzwerte geschätzte Vorhersagefehler ein scheinbarer Fehler ist, der systematisch größer ausfällt als der wahre Vorhersagefehler, weil der Zufallsfehler der Referenzmessung von keinem Modell vorhergesagt werden kann und fälschlich als Unzulänglichkeit der Kalibrierung verbucht wird <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>. Der Zusammenhang ist subtiler als &bdquo;NIR kann nie besser sein als die Referenz&ldquo;: DiFoggio zählt diese Aussage zu den wiederkehrenden Fehlvorstellungen über die NIR-Analyse und nennt Gegenbeispiele <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Praktisch bedeutet dies, dass ein angegebener RMSEP nicht überzeugend unter der Wiederholbarkeit des Referenzlabors liegen kann; die Kenntnis dieser Wiederholbarkeit gehört daher zur Interpretation jedes Validierungsergebnisses <a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a><a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>.</p>
 <h2>Wie USTECH bei der Kalibrierung vorgeht</h2>
-<p>PLS-Modelle für USTECH-Analysatoren wie den <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> und den <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> werden in der Chemometrie-Software <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> entwickelt und über <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> in den Prozess überführt. Die spektrale Vorbehandlung behandeln die Leitfäden zu <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC und SNV</a> und zur <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay-Filterung</a>, den Software-Arbeitsablauf <a href="blog-pls-regression-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">PLS-Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>. Die Validierung folgt den oben genannten Grundsätzen, mit unabhängigen Proben und den in ISO 12099 und ASTM E1655 definierten Statistiken <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Ob ein Parameter die Genauigkeit erreicht, die ein Prozess benötigt, wird in einer Machbarkeitsstudie mit Ihren eigenen Proben und Referenzanalysen ermittelt.</p>
+<p>PLS-Modelle für USTECH-Analysatoren wie den <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> und den <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine17EC</a> werden in der Chemometrie-Software <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> entwickelt und über <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> in den Prozess überführt. Die spektrale Vorbehandlung behandeln die Leitfäden zu <a href="blog-msc-snv-preprocessing.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MSC und SNV</a> und zur <a href="blog-savitzky-golay-filtering.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">Savitzky-Golay-Filterung</a>, den Software-Arbeitsablauf <a href="blog-pls-regression-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">PLS-Regression in cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a>. Die Validierung folgt den oben genannten Grundsätzen, mit unabhängigen Proben und den in ISO 12099 und ASTM E1655 definierten Statistiken <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>. Ob ein Parameter die Genauigkeit erreicht, die ein Prozess benötigt, wird in einer Machbarkeitsstudie mit Ihren eigenen Proben und Referenzanalysen ermittelt.</p>
 <div class="blog-post-references">
 <h3>Quellen</h3>
 <ul>
@@ -326,6 +326,6 @@
 <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.12"></script>
+<script src="../app.js?v=1.0.13"></script>
 </body>
 </html>

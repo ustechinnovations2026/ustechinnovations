@@ -28,7 +28,7 @@
 "name": "USTECH Innovations",
 "url": "https://www.ustechinnovations.com/",
 "logo": "https://www.ustechinnovations.com/images/logo.svg",
-"description": "Manufacturer of inline FT-NIR spectroscopy systems, chemometrics software and calibration models for food, feed, dairy and chemical processing.",
+"description": "Manufacturer of inline and at-line NIR and FT-NIR analyzers, chemometrics software and calibration models for food, feed, dairy and chemical processing.",
 "foundingDate": "2023",
 "address": {
 "@type": "PostalAddress",
@@ -39,7 +39,7 @@
 "addressCountry": "US"
 },
 "contactPoint": {
-"@type": "ContactPoint",
+"@type": "ContactPoint", "areaServed": "Worldwide", "availableLanguage": ["English", "Turkish", "French", "German", "Spanish", "Arabic", "Chinese"],
 "email": "info@ustechinnovations.com",
 "contactType": "sales"
 },
@@ -67,7 +67,7 @@
 "headline": "Multiplicative Scatter Correction and Standard Normal Variate Preprocessing",
 "description": "What multiplicative scatter correction and the standard normal variate transform do to a diffuse-reflectance NIR spectrum, how the two are related, and when each is the better choice.",
 "url": "https://www.ustechinnovations.com/blog-msc-snv-preprocessing.html",
-"datePublished": "2026-06-02",
+"datePublished": "2026-04-23",
 "dateModified": "2026-10-27",
 "author": {
 "@type": "Organization", "legalName": "USTECH Innovations LLC",
@@ -217,7 +217,7 @@ Espa&#241;ol
 </a>
 <img src="images/blog_spectral_math.webp?v=1.0.5" alt="Multiplicative Scatter Correction and Standard Normal Variate Preprocessing" class="blog-post-banner" fetchpriority="high" decoding="async">
 <div class="blog-post-header">
-<span class="blog-post-meta">Guide &mdash; June 2, 2026 &mdash; 5 min read</span>
+<span class="blog-post-meta">Guide &mdash; April 23, 2026 &mdash; 5 min read</span>
 <h1 class="blog-post-title">Multiplicative Scatter Correction and Standard Normal Variate Preprocessing</h1>
 <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">What multiplicative scatter correction (MSC) and the standard normal variate transform (SNV) actually do to a near-infrared spectrum, how the two are mathematically related, where they differ in practice and what can go wrong &mdash; drawn from the original papers and the follow-up literature.</p>
 </div>
@@ -242,7 +242,7 @@ Espa&#241;ol
 <li><strong>Inspect the scores after correction.</strong> Curved structures after SNV and new outliers after MSC are known behaviours of the transforms, not necessarily of the samples <a href="#ref-6" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[6]</a>; if the analyte dominates the spectrum, consider EMSC <a href="#ref-7" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[7]</a>.</li>
 </ul>
 <h2>Scatter correction in cali<span class="calix-x" style="color: #38b6ff !important;">X</span></h2>
-<p>In the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> suite</a> MSC, SNV, de-trending and derivative filters are configured in the pre-processing step of model development, where candidate combinations are compared by cross-validation before a PLS model is fixed and the MSC reference spectrum is stored with the model. The same workflow serves spectra from the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine</a> at-line analyzer for grains and feed ingredients and from the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> inline analyzer, where particle size and packing vary with the process. Which correction suits a given material is settled in a feasibility study with your own samples.</p>
+<p>In the <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span> suite</a> MSC, SNV, de-trending and derivative filters are configured in the pre-processing step of model development, where candidate combinations are compared by cross-validation before a PLS model is fixed and the MSC reference spectrum is stored with the model. The same workflow serves spectra from the <a href="product-masterline.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">MasterLine17EC</a> at-line analyzer for grains and feed ingredients and from the <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> inline analyzer, where particle size and packing vary with the process. Which correction suits a given material is settled in a feasibility study with your own samples.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>
@@ -267,7 +267,7 @@ Espa&#241;ol
 <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 3rem;">
 <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-black);">Read Next</h3>
 <div class="grid grid-2" style="gap: 1.5rem;">
-<!-- Placeholders to be replaced dynamically by app.js?v=1.0.12 -->
+<!-- Placeholders to be replaced dynamically by app.js?v=1.0.13 -->
 </div>
 </div>
 </article>
@@ -322,6 +322,6 @@ Espa&#241;ol
 <p>Designed for scientific and industrial precision.</p>
 </div>
 </footer>
-<script src="app.js?v=1.0.12"></script>
+<script src="app.js?v=1.0.13"></script>
 </body>
 </html>
