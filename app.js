@@ -1154,7 +1154,8 @@ var SEARCH_I18N = {
 // ('G-XXXXXXXXXX') girildiginde bile yukleme yalnizca ziyaretci "Analitik
 // Cerezler"e onay verdikten sonra olur; onay oncesi disariya istek yok.
 // =====================================================================
-var ANALYTICS = { ga4: '' };
+// 04.11.2026: GA4 mulku "ustechinnovations.com", web akisi "USTECH Web Sitesi".
+var ANALYTICS = { ga4: 'G-0KL91MW58P' };
 
 function getCookiePrefs() {
     try {
@@ -1169,9 +1170,29 @@ function getCookiePrefs() {
 function setCookiePrefs(prefs) {
     try { localStorage.setItem('ustech_cookie_prefs', JSON.stringify(prefs)); } catch (e) {}
     if (prefs && prefs.analytical) loadAnalytics();
+    else stopAnalytics();
+}
+// 04.11.2026: onay geri alininca olcum ayni sayfada da durur (GA opt-out bayragi) ve
+// _ga cerezleri silinir; sonraki sayfalarda kod hic yuklenmez (getCookiePrefs).
+function stopAnalytics() {
+    if (!ANALYTICS.ga4) return;
+    window['ga-disable-' + ANALYTICS.ga4] = true;
+    var kok = location.hostname.replace(/^www\./, '');
+    document.cookie.split(';').forEach(function (c) {
+        var ad = c.split('=')[0].trim();
+        if (!/^_ga/.test(ad)) return;
+        ['', '; domain=' + location.hostname, '; domain=.' + kok].forEach(function (d) {
+            document.cookie = ad + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + d;
+        });
+    });
+}
+function trackEvent(name, params) {
+    if (window.__ustechGaLoaded && typeof window.gtag === 'function') window.gtag('event', name, params || {});
 }
 function loadAnalytics() {
-    if (!ANALYTICS.ga4 || window.__ustechGaLoaded) return;
+    if (!ANALYTICS.ga4) return;
+    window['ga-disable-' + ANALYTICS.ga4] = false;
+    if (window.__ustechGaLoaded) return;
     window.__ustechGaLoaded = true;
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
@@ -1185,6 +1206,18 @@ function loadAnalytics() {
 document.addEventListener('DOMContentLoaded', function () {
     var p = getCookiePrefs();
     if (p && p.analytical) loadAnalytics();
+});
+// Yazilim indirmeleri portal.ustechinnovations.com uzerinden, uzantisiz adresle gider;
+// GA4'un otomatik dosya indirme olcumu bunlari yakalamaz -> elle olay.
+document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="portal.ustechinnovations.com/api/update/download"]') : null;
+    if (!a) return;
+    var m = /softwareCode=([^&]+)(?:&distributionCode=([^&]+))?/.exec(a.href);
+    trackEvent('file_download', {
+        file_name: m ? m[1] + (m[2] ? '-' + m[2] : '') : a.href,
+        file_extension: 'exe',
+        link_url: a.href
+    });
 });
 function searchLoc(item) {
     var lang = detectCurrentLang();
@@ -1835,9 +1868,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (a) a.checked = !!p.analytical;
             if (m) m.checked = !!p.marketing;
         })();
-        if (hasCookieConsent) {
-            if (cookieBtn) cookieBtn.style.display = 'none';
-        } else {
+        // 04.11.2026: ayar dugmesi secimden sonra da gorunur kalir -- ziyaretci onayini
+        // verdigi kadar kolay geri alabilmeli (GDPR md. 7/3).
+        if (!hasCookieConsent) {
             // Show modal automatically on first visit after brief delay
             setTimeout(() => {
                 if (!localStorage.getItem('ustech_cookie_consent') && cookieModal) {
@@ -1866,7 +1899,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     marketing: !!(document.getElementById('cookie-marketing') || {}).checked
                 });
                 cookieModal.classList.remove('open');
-                if (cookieBtn) cookieBtn.style.display = 'none';
                 showNotification(ui('cookie_saved'));
             });
         }
@@ -1880,7 +1912,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('ustech_cookie_consent', 'accepted_all');
                 setCookiePrefs({ analytical: true, marketing: true });
                 cookieModal.classList.remove('open');
-                if (cookieBtn) cookieBtn.style.display = 'none';
                 showNotification(ui('cookie_all'));
             });
         }
@@ -2994,6 +3025,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(async (response) => {
                 let res = await response.json();
                 if (response.status === 200) {
+                    trackEvent('generate_lead', { form_type: object.inquiry_type || '', product: object.product_interest || '' });
                     // Success modal trigger
                     const successModal = document.getElementById('contact-success-modal');
                     if (successModal) {
