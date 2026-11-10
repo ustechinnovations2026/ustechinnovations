@@ -1252,17 +1252,16 @@ document.addEventListener('click', function (e) {
     });
 });
 // =====================================================================
-// 18. USTECH Asistani -- DENEME (10.11.2026). Canliya alinana kadar YALNIZ yerel
-// onizlemede (localhost) yuklenir; assistant.js/.css sync_to_github.py HOLD_LOCAL'da.
-// Canliya alirken: asagidaki localhost kosulunu kaldir + HOLD_LOCAL'dan iki dosyayi cikar.
+// 18. USTECH Asistani -- 10.11.2026 canliya alindi (kullanici e-posta denemesini onayladi).
+// assistant.js/.css degisince ASISTAN_SURUM'u artir (onbellek). Yerelde talepler gonderilmez;
+// gercek gonderim denemesi icin adrese ?asistan_gercek=1 eklenir (assistant.js GERCEK_GONDER).
 // =====================================================================
 (function () {
-    if (!/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) return;
     var s = document.currentScript || document.querySelector('script[src*="app.js"]');
     var kok = (s && s.src) ? s.src.replace(/[^\/]*(\?.*)?$/, '') : '/';
     var css = document.createElement('link');
     css.rel = 'stylesheet';
-    var surum = Date.now(); // deneme: her yuklemede taze; canliya alirken sabit surum damgasi
+    var surum = '1.0.0'; // ASISTAN_SURUM
     css.href = kok + 'assistant.css?v=' + surum;
     document.head.appendChild(css);
     var js = document.createElement('script');

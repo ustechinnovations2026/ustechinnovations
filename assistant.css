@@ -1,0 +1,225 @@
+/* USTECH Asistani -- DENEME SURUMU (09-10.11.2026), canliya alinmadi. Bkz. assistant.js */
+.ua {
+    --ua-siyah: #12141d;
+    --ua-koyu: #1e1e1e;
+    --ua-altin: #d5b279;
+    --ua-altin-yazi: #866630;
+    --ua-zemin: #ffffff;
+    --ua-zemin-2: #f6f7f9;
+    --ua-cizgi: #e3e6ea;
+    --ua-yazi: #12141d;
+    --ua-yazi-2: #4a505e;
+    --ua-soluk: #6c757d;
+    font-family: var(--font-sans, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99990; /* cerez onay penceresinin (100000) ALTINDA: ilk ziyarette "Kabul" dugmesini ortmesin */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    color: var(--ua-yazi);
+}
+.ua *, .ua *::before, .ua *::after { box-sizing: border-box; }
+/* Arapca: sitenin cerez ve yukari-cik dugmeleri saga gecer -> asistan sol altta */
+.ua.ua-rtl { right: auto; left: 20px; }
+html[dir="rtl"] body.ua-var .back-to-top-btn { bottom: 20px !important; }
+
+/* Yukari cik dugmesi asistanin ustune tasinir */
+body.ua-var .back-to-top-btn { bottom: 86px !important; }
+/* Katmani (99999) asistandan yuksek: panel acikken (telefonda tam ekran) ustune binmesin */
+html.ua-kilit .back-to-top-btn { display: none !important; }
+/* Tek giris noktasi: asistan varken eski "Bir Uzmanla Gorusun" yan sekmesi ve kaydirma
+   CTA kutusu (ayni sag alt kose) gizlenir. Canliya alinirken kullanici karariyla
+   app.js'ten tamamen kaldirilabilir. */
+body.ua-var .specialist-tab,
+body.ua-var .specialist-panel,
+body.ua-var .specialist-backdrop,
+body.ua-var .ustech-scroll-cta { display: none !important; }
+
+/* ---- Baslatici ---- */
+.ua-baslatici {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 52px;
+    padding: 0 20px 0 8px;
+    border: 1px solid rgba(213, 178, 121, 0.55);
+    border-radius: 999px;
+    background: var(--ua-siyah);
+    color: #fff;
+    font: 600 0.95rem/1 var(--font-title, 'Outfit', sans-serif);
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(18, 20, 29, 0.25);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.ua-baslatici:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(18, 20, 29, 0.32); }
+.ua-baslatici:focus-visible { outline: 3px solid var(--ua-altin); outline-offset: 3px; }
+.ua-baslatici-ikon {
+    width: 38px; height: 38px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--ua-altin); color: var(--ua-siyah);
+}
+.ua-acik .ua-baslatici { padding-right: 8px; }
+.ua-acik .ua-baslatici-yazi { display: none; }
+
+/* ---- Panel ---- */
+.ua-panel {
+    width: 390px;
+    height: min(640px, calc(100vh - 110px));
+    display: flex;
+    flex-direction: column;
+    background: var(--ua-zemin);
+    border: 1px solid var(--ua-cizgi);
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(18, 20, 29, 0.22);
+    overflow: hidden;
+    animation: ua-gir .22s ease-out;
+}
+.ua-panel[hidden] { display: none; }
+@keyframes ua-gir { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .ua-panel { animation: none; } .ua-baslatici { transition: none; } }
+
+.ua-bas {
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 14px 16px 18px;
+    background: var(--ua-siyah); color: #fff;
+    border-bottom: 2px solid var(--ua-altin);
+}
+.ua-logo {
+    flex: 0 0 auto; width: 38px; height: 38px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--ua-altin); color: var(--ua-siyah);
+    font: 800 1.1rem/1 var(--font-title, 'Outfit', sans-serif);
+}
+.ua-bas-yazi { flex: 1 1 auto; min-width: 0; }
+.ua-baslik { margin: 0; font: 700 1.02rem/1.2 var(--font-title, 'Outfit', sans-serif); color: #fff; }
+.ua-alt { margin: 3px 0 0; font-size: 0.76rem; line-height: 1.35; color: #c9ccd3; }
+.ua-bas-dugmeler { display: flex; gap: 4px; }
+.ua-ikon-btn {
+    width: 34px; height: 34px; border: 0; border-radius: 8px;
+    background: transparent; color: #fff; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+}
+.ua-ikon-btn:hover { background: rgba(255, 255, 255, 0.12); }
+.ua-ikon-btn:focus-visible { outline: 2px solid var(--ua-altin); outline-offset: 1px; }
+
+.ua-govde { flex: 1 1 auto; overflow-y: auto; overscroll-behavior: contain; padding: 16px 14px 8px; background: var(--ua-zemin-2); scroll-behavior: smooth; }
+.ua-log { display: flex; flex-direction: column; gap: 10px; }
+
+.ua-mesaj {
+    max-width: 88%;
+    padding: 10px 13px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.ua-bot { align-self: flex-start; background: #fff; border: 1px solid var(--ua-cizgi); border-bottom-left-radius: 4px; color: var(--ua-yazi); }
+.ua-kullanici { align-self: flex-end; background: var(--ua-siyah); color: #fff; border-bottom-right-radius: 4px; }
+.ua-rtl .ua-bot { border-bottom-left-radius: 14px; border-bottom-right-radius: 4px; }
+.ua-rtl .ua-kullanici { border-bottom-right-radius: 14px; border-bottom-left-radius: 4px; }
+.ua-gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.ua-kartlar { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.ua-kart {
+    display: block; padding: 10px 12px;
+    border: 1px solid var(--ua-cizgi); border-radius: 10px;
+    background: var(--ua-zemin-2); color: var(--ua-yazi); text-decoration: none;
+    transition: border-color .15s ease, background .15s ease;
+}
+.ua-kart:hover, .ua-kart:focus-visible { border-color: var(--ua-altin); background: #fff; outline: none; }
+.ua-kart strong { display: block; font: 700 0.88rem/1.3 var(--font-title, 'Outfit', sans-serif); color: var(--ua-yazi); }
+.ua-kart strong::after { content: ' →'; color: var(--ua-altin-yazi); }
+.ua-rtl .ua-kart strong::after { content: ' ←'; }
+.ua-kart span { display: block; margin-top: 3px; font-size: 0.79rem; line-height: 1.45; color: var(--ua-yazi-2); }
+
+.ua-sss { margin-top: 8px; border: 1px solid var(--ua-cizgi); border-radius: 10px; background: var(--ua-zemin-2); }
+.ua-sss summary { cursor: pointer; padding: 9px 12px; font-weight: 600; font-size: 0.86rem; line-height: 1.4; }
+.ua-sss summary:focus-visible { outline: 2px solid var(--ua-altin); outline-offset: -2px; border-radius: 10px; }
+.ua-sss p { margin: 0; padding: 0 12px 11px; font-size: 0.84rem; line-height: 1.55; color: var(--ua-yazi-2); }
+.ua-mesaj > .ua-sss:first-child { margin-top: 0; }
+
+.ua-secenekler { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 0 4px; }
+.ua-secenek {
+    padding: 8px 13px;
+    border: 1px solid var(--ua-siyah); border-radius: 999px;
+    background: #fff; color: var(--ua-siyah);
+    font: 500 0.84rem/1.3 var(--font-sans, sans-serif);
+    text-align: start; cursor: pointer;
+    transition: background .15s ease, color .15s ease;
+}
+.ua-secenek:hover { background: var(--ua-siyah); color: #fff; }
+.ua-secenek:focus-visible { outline: 3px solid var(--ua-altin); outline-offset: 2px; }
+.ua-secenek.ua-ikincil { border-color: var(--ua-cizgi); color: var(--ua-yazi-2); }
+.ua-secenek.ua-ikincil:hover { background: var(--ua-zemin-2); color: var(--ua-yazi); }
+
+/* ---- Form ---- */
+.ua-form { margin-top: 10px; padding: 14px; background: #fff; border: 1px solid var(--ua-cizgi); border-radius: 14px; display: grid; gap: 10px; }
+.ua-etiket { display: grid; gap: 4px; font-size: 0.78rem; font-weight: 600; color: var(--ua-yazi-2); }
+.ua-input {
+    width: 100%; padding: 9px 11px;
+    border: 1px solid #cfd4da; border-radius: 8px;
+    font: 400 0.9rem/1.3 var(--font-sans, sans-serif); color: var(--ua-yazi); background: #fff;
+}
+.ua-input:focus { outline: none; border-color: var(--ua-siyah); box-shadow: 0 0 0 3px rgba(213, 178, 121, 0.35); }
+.ua-onay { display: flex; gap: 8px; align-items: flex-start; font-size: 0.78rem; line-height: 1.45; color: var(--ua-yazi-2); }
+.ua-onay input { margin-top: 2px; width: 16px; height: 16px; flex: 0 0 auto; accent-color: var(--ua-siyah); }
+.ua-onay a, .ua-hata a { color: var(--ua-altin-yazi); text-decoration: underline; }
+.ua-tuzak { position: absolute !important; left: -9999px !important; opacity: 0; }
+.ua-hata { font-size: 0.8rem; color: #a5281b; }
+.ua-hata:empty { display: none; }
+.ua-form-dugmeler { display: flex; gap: 8px; justify-content: flex-end; }
+.ua-btn {
+    padding: 9px 16px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--ua-cizgi); background: #fff; color: var(--ua-yazi);
+    font: 600 0.86rem/1 var(--font-sans, sans-serif);
+}
+.ua-btn-ana { background: var(--ua-siyah); color: #fff; border-color: var(--ua-siyah); }
+.ua-btn-ana:hover { background: #000; }
+.ua-btn:disabled { opacity: 0.6; cursor: default; }
+.ua-btn:focus-visible { outline: 3px solid var(--ua-altin); outline-offset: 2px; }
+
+/* ---- Alt bolum ---- */
+.ua-alt-bolum { padding: 10px 12px 8px; border-top: 1px solid var(--ua-cizgi); background: #fff; }
+.ua-girdi-satir { display: flex; gap: 8px; align-items: flex-end; }
+.ua-girdi {
+    flex: 1 1 auto; resize: none; min-height: 42px; max-height: 110px;
+    padding: 11px 13px; border: 1px solid #cfd4da; border-radius: 12px;
+    font: 400 0.9rem/1.35 var(--font-sans, sans-serif); color: var(--ua-yazi); background: var(--ua-zemin-2);
+}
+.ua-girdi:disabled { opacity: 0.55; cursor: not-allowed; }
+.ua-girdi:focus { outline: none; border-color: var(--ua-siyah); background: #fff; box-shadow: 0 0 0 3px rgba(213, 178, 121, 0.35); }
+.ua-gonder {
+    flex: 0 0 auto; width: 42px; height: 42px; border: 0; border-radius: 12px;
+    background: var(--ua-siyah); color: var(--ua-altin); cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+}
+.ua-rtl .ua-gonder svg { transform: scaleX(-1); }
+.ua-gonder:hover { background: #000; }
+.ua-gonder:focus-visible { outline: 3px solid var(--ua-altin); outline-offset: 2px; }
+.ua-not { margin: 7px 2px 0; font-size: 0.7rem; line-height: 1.35; color: var(--ua-soluk); text-align: center; }
+
+/* ---- Telefon ---- */
+@media (max-width: 600px) {
+    .ua { right: 12px; bottom: 14px; }
+    .ua.ua-rtl { right: auto; left: 12px; }
+    html[dir="rtl"] body.ua-var .back-to-top-btn { bottom: 16px !important; }
+    body.ua-var .back-to-top-btn { bottom: 76px !important; right: 16px !important; }
+    .ua-baslatici { height: 48px; font-size: 0.86rem; padding-right: 16px; }
+    .ua-baslatici-ikon { width: 34px; height: 34px; }
+    .ua.ua-acik, .ua.ua-rtl.ua-acik { left: 0; right: 0; top: 0; bottom: 0; gap: 0; }
+    .ua-acik .ua-baslatici { display: none; }
+    .ua-panel { width: 100%; height: 100%; border-radius: 0; border: 0; }
+    .ua-mesaj { max-width: 92%; }
+    /* iOS Safari 16px altindaki kutuda sayfayi yakinlastirir */
+    .ua-input, .ua-girdi { font-size: 16px; }
+    html.ua-kilit, html.ua-kilit body { overflow: hidden !important; overscroll-behavior: none; }
+}
+@media (max-width: 360px) {
+    .ua-baslatici-yazi { display: none; }
+    .ua-baslatici { padding-right: 8px; }
+}
+@media print { .ua { display: none !important; } }
