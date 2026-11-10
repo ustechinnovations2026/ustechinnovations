@@ -354,7 +354,7 @@ var TRANSLATED_PAGES = {};
  'product-proline.html',
  'product-proline-17ec.html',
  'product-proline-17ecs.html',
- // 'product-trueline-17ec.html',  // Temporarily Hidden
+ 'product-trueline-17ec.html',
  'product-starchqc.html',
  // 'product-proline-17es.html',  // Temporarily Hidden
  'product-proline-2550.html',
@@ -956,33 +956,33 @@ var SEARCH_I18N = {
   "product-proline-2550.html": {
     "tr": {
       "t": "ProLine2550 Hat İçi FT-NIR Proses Analizörü",
-      "s": "Boru, oluk ve konveyörler için Essential ve Advanced modelli hat içi FT-NIR proses analizörü: IP65/IP69K, Modbus TCP, OPC UA, PROFINET, ProChem uyumu.",
-      "k": "proline2550 hat i çi ft-nir proses analizörü boru oluk ve konveyörler için essential ve advanced modelli hat içi ft-nir proses analizörü ip65 ip69k modbus tcp opc ua profinet prochem uyumu proline 2550 boru reaktör sıvı toz hat içi analizör"
+      "s": "Boru, oluk ve konveyörler için Essential ve Advanced modelli hat içi FT-NIR proses analizörü: 1.350–2.550 nm, IP65, Ethernet TCP/IP, ProChem uyumu.",
+      "k": "proline2550 hat i çi ft-nir proses analizörü boru oluk ve konveyörler için essential ve advanced modelli hat içi ft-nir proses analizörü 1 350 2 550 nm ip65 ethernet tcp ip prochem uyumu proline 2550 boru reaktör sıvı toz hat içi analizör"
     },
     "fr": {
       "t": "ProLine2550, analyseur de procédé FT-NIR en ligne",
-      "s": "Analyseur de procédé FT-NIR en ligne ProLine2550, Essential ou Advanced, pour conduites, goulottes et convoyeurs : IP65/IP69K, Modbus TCP, OPC UA et PROFINET.",
-      "k": "proline2550 analyseur de procédé ft-nir en ligne analyseur de procédé ft-nir en ligne proline2550 essential ou advanced pour conduites goulottes et convoyeurs ip65 ip69k modbus tcp opc ua et profinet proline 2550 conduite réacteur liquide"
+      "s": "Analyseur de procédé FT-NIR en ligne ProLine2550, version Essential ou Advanced, pour canalisations, goulottes et convoyeurs : 1 350–2 550 nm, IP65 et Ethernet TCP/IP.",
+      "k": "proline2550 analyseur de procédé ft-nir en ligne analyseur de procédé ft-nir en ligne proline2550 version essential ou advanced pour canalisations goulottes et convoyeurs 1 350 2 550 nm ip65 et ethernet tcp ip proline 2550 conduite réacteur liquide"
     },
     "de": {
       "t": "ProLine2550 Inline-FT-NIR-Prozessanalysator",
-      "s": "ProLine2550 Inline-FT-NIR-Prozessanalysator, Essential oder Advanced, für Rohre, Schurren und Förderbänder: IP65/IP69K, Modbus TCP, OPC UA und PROFINET.",
-      "k": "proline2550 inline-ft-nir-prozessanalysator proline2550 inline-ft-nir-prozessanalysator essential oder advanced für rohre schurren und förderbänder ip65 ip69k modbus tcp opc ua und profinet proline 2550 rohr reaktor flüssigkeit"
+      "s": "ProLine2550 Inline-FT-NIR-Prozessanalysator, Essential oder Advanced, für Rohrleitungen, Schurren und Förderbänder: 1.350–2.550 nm, IP65 und Ethernet TCP/IP.",
+      "k": "proline2550 inline-ft-nir-prozessanalysator proline2550 inline-ft-nir-prozessanalysator essential oder advanced für rohrleitungen schurren und förderbänder 1 350 2 550 nm ip65 und ethernet tcp ip proline 2550 rohr reaktor flüssigkeit"
     },
     "es": {
       "t": "ProLine2550 analizador de procesos FT-NIR en línea",
-      "s": "Analizador de procesos FT-NIR en línea ProLine2550, Essential o Advanced, para tuberías, rampas y transportadores: IP65/IP69K, Modbus TCP, OPC UA y PROFINET.",
-      "k": "proline2550 analizador de procesos ft-nir en línea analizador de procesos ft-nir en línea proline2550 essential o advanced para tuberías rampas y transportadores ip65 ip69k modbus tcp opc ua y profinet proline 2550 tubería reactor líquido"
+      "s": "Analizador de procesos FT-NIR en línea ProLine2550, versión Essential o Advanced, para tuberías, rampas y transportadores: 1350–2550 nm, IP65 y Ethernet TCP/IP.",
+      "k": "proline2550 analizador de procesos ft-nir en línea analizador de procesos ft-nir en línea proline2550 versión essential o advanced para tuberías rampas y transportadores 1350 2550 nm ip65 y ethernet tcp ip proline 2550 tubería reactor líquido"
     },
     "ar": {
       "t": "ProLine2550 محلل عمليات FT-NIR مضمن",
-      "s": "محلل العمليات المضمن ProLine2550 بتقنية FT-NIR، بطرازي Essential وAdvanced، للأنابيب والمزالق والسيور الناقلة: IP65/IP69K وModbus TCP وOPC UA وPROFINET.",
-      "k": "proline2550 محلل عمليات ft-nir مضمن محلل العمليات المضمن proline2550 بتقنية ft-nir، بطرازي essential وadvanced، للأنابيب والمزالق والسيور الناقلة ip65 ip69k وmodbus tcp وopc ua وprofinet proline 2550 أنبوب مفاعل سائل مسحوق خط الإنتاج"
+      "s": "محلل العمليات ProLine2550 المضمّن بتقنية FT-NIR، بطرازي Essential وAdvanced، للأنابيب والمزالق والسيور الناقلة: 1,350–2,550 نانومتر، IP65 وEthernet TCP/IP.",
+      "k": "proline2550 محلل عمليات ft-nir مضمن محلل العمليات proline2550 المضمّن بتقنية ft-nir، بطرازي essential وadvanced، للأنابيب والمزالق والسيور الناقلة 1 350 2 550 نانومتر، ip65 وethernet tcp ip proline 2550 أنبوب مفاعل سائل مسحوق خط الإنتاج"
     },
     "zh": {
       "t": "ProLine2550 在线 FT-NIR 过程分析仪",
-      "s": "ProLine2550 在线 FT-NIR 过程分析仪，提供 Essential 和 Advanced 两种型号，适用于管道、溜槽和输送带：IP65/IP69K、Modbus TCP、OPC UA 和 PROFINET。",
-      "k": "proline2550 在线 ft-nir 过程分析仪 proline2550 在线 ft-nir 过程分析仪 提供 essential 和 advanced 两种型号 适用于管道 溜槽和输送带 ip65 ip69k modbus tcp opc ua 和 profinet proline 2550 在线过程分析仪 管道 反应釜 液体 粉体"
+      "s": "ProLine2550 在线 FT-NIR 过程分析仪，提供 Essential 和 Advanced 两种型号，适用于管道、溜槽和输送带：1,350–2,550 nm，IP65，以太网 TCP/IP。",
+      "k": "proline2550 在线 ft-nir 过程分析仪 proline2550 在线 ft-nir 过程分析仪 提供 essential 和 advanced 两种型号 适用于管道 溜槽和输送带 1 350 2 550 nm ip65 以太网 tcp ip proline 2550 在线过程分析仪 管道 反应釜 液体 粉体"
     }
   },
   "product-tornado.html": {
@@ -1047,6 +1047,38 @@ var SEARCH_I18N = {
       "t": "StarchQC 面粉破损淀粉分析仪：8 分钟测试",
       "s": "StarchQC 采用电流法碘吸收原理，8 分钟内测定面粉中的破损淀粉，并以 AI %、NDS、UCDC、AACC 和 Farrand 单位打印结果。",
       "k": "starchqc 面粉破损淀粉分析仪 8 分钟测试 starchqc 采用电流法碘吸收原理 8 分钟内测定面粉中的破损淀粉 并以 ai nds ucdc aacc 和 farrand 单位打印结果 starchqc 破损淀粉 面粉 磨粉 电流法 碘"
+    }
+  },
+  "product-trueline-17ec.html": {
+    "tr": {
+      "t": "USTECH TrueLine 17EC El Tipi NIR Analizörü",
+      "s": "USTECH TrueLine 17EC, hızlı ve güvenilir el tipi NIR analizini sahaya taşır: 908–1676 nm, 1,4 kg, Bluetooth ve bulut tabanlı portalla çalışan ProChem Mobile uygulaması.",
+      "k": "ustech trueline 17ec el tipi nir analizörü ustech trueline 17ec hızlı ve güvenilir el tipi nir analizini sahaya taşır 908 1676 nm 1 4 kg bluetooth ve bulut tabanlı portalla çalışan prochem mobile uygulaması trueline 17ec el tipi taşınabilir portatif saha nir analizör mobil uygulama bluetooth polimer plastik tekstil yem"
+    },
+    "fr": {
+      "t": "USTECH TrueLine 17EC Analyseur portable NIR",
+      "s": "Le USTECH TrueLine 17EC apporte une analyse NIR portable rapide et fiable sur le terrain : 908–1676 nm, 1,4 kg, Bluetooth et application ProChem Mobile avec portail cloud.",
+      "k": "ustech trueline 17ec analyseur portable nir le ustech trueline 17ec apporte une analyse nir portable rapide et fiable sur le terrain 908 1676 nm 1 4 kg bluetooth et application prochem mobile avec portail cloud trueline 17ec portable terrain analyseur nir application mobile bluetooth polymère plastique textile aliment"
+    },
+    "de": {
+      "t": "USTECH TrueLine 17EC Handheld NIR Analysator",
+      "s": "Der USTECH TrueLine 17EC bringt schnelle, zuverlässige NIR-Analyse als Handgerät ins Feld: 908–1676 nm, 1,4 kg, Bluetooth und ProChem Mobile App mit cloudbasiertem Portal.",
+      "k": "ustech trueline 17ec handheld nir analysator der ustech trueline 17ec bringt schnelle zuverlässige nir-analyse als handgerät ins feld 908 1676 nm 1 4 kg bluetooth und prochem mobile app mit cloudbasiertem portal trueline 17ec handgerät tragbar feld nir analysator mobile app bluetooth polymer kunststoff textil futter"
+    },
+    "es": {
+      "t": "USTECH TrueLine 17EC Analizador portátil NIR",
+      "s": "El USTECH TrueLine 17EC lleva al campo un análisis NIR portátil rápido y fiable: 908–1676 nm, 1,4 kg, Bluetooth y la aplicación ProChem Mobile con portal en la nube.",
+      "k": "ustech trueline 17ec analizador portátil nir el ustech trueline 17ec lleva al campo un análisis nir portátil rápido y fiable 908 1676 nm 1 4 kg bluetooth y la aplicación prochem mobile con portal en la nube trueline 17ec portátil de mano campo analizador nir aplicación móvil bluetooth polímero plástico textil pienso"
+    },
+    "ar": {
+      "t": "USTECH TrueLine 17EC محلل محمول NIR",
+      "s": "يوفر USTECH TrueLine 17EC تحليلاً سريعاً وموثوقاً بالأشعة تحت الحمراء القريبة في الموقع بجهاز محمول باليد: 908–1676 نانومتر، 1.4 كغ، Bluetooth وتطبيق ProChem Mobile مع بوابة سحابية.",
+      "k": "ustech trueline 17ec محلل محمول nir يوفر ustech trueline 17ec تحليلاً سريعاً وموثوقاً بالأشعة تحت الحمراء القريبة في الموقع بجهاز محمول باليد 908 1676 نانومتر، 1 4 كغ، bluetooth وتطبيق prochem mobile مع بوابة سحابية trueline 17ec محمول باليد ميداني محلل تطبيق الهاتف bluetooth بوليمر بلاستيك منسوجات أعلاف"
+    },
+    "zh": {
+      "t": "USTECH TrueLine 17EC 手持式 NIR 分析仪",
+      "s": "USTECH TrueLine 17EC 将快速、可靠的手持式近红外分析带到现场：908–1676 nm，1.4 kg，蓝牙连接，配合 ProChem Mobile 应用和云端门户使用。",
+      "k": "ustech trueline 17ec 手持式 nir 分析仪 ustech trueline 17ec 将快速 可靠的手持式近红外分析带到现场 908 1676 nm 1 4 kg 蓝牙连接 配合 prochem mobile 应用和云端门户使用 trueline 17ec 手持式 便携式 现场 近红外分析仪 移动应用 蓝牙 聚合物 塑料 纺织 饲料"
     }
   },
   "knowledge.html": {
@@ -1219,6 +1251,26 @@ document.addEventListener('click', function (e) {
         link_url: a.href
     });
 });
+// =====================================================================
+// 18. USTECH Asistani -- DENEME (10.11.2026). Canliya alinana kadar YALNIZ yerel
+// onizlemede (localhost) yuklenir; assistant.js/.css sync_to_github.py HOLD_LOCAL'da.
+// Canliya alirken: asagidaki localhost kosulunu kaldir + HOLD_LOCAL'dan iki dosyayi cikar.
+// =====================================================================
+(function () {
+    if (!/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) return;
+    var s = document.currentScript || document.querySelector('script[src*="app.js"]');
+    var kok = (s && s.src) ? s.src.replace(/[^\/]*(\?.*)?$/, '') : '/';
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    var surum = Date.now(); // deneme: her yuklemede taze; canliya alirken sabit surum damgasi
+    css.href = kok + 'assistant.css?v=' + surum;
+    document.head.appendChild(css);
+    var js = document.createElement('script');
+    js.src = kok + 'assistant.js?v=' + surum;
+    js.defer = true;
+    document.head.appendChild(js);
+})();
+
 function searchLoc(item) {
     var lang = detectCurrentLang();
     if (lang === 'en' || !item || !item.url) return null;
@@ -2072,7 +2124,14 @@ document.addEventListener('DOMContentLoaded', () => {
             keywords: "StarchQC damaged starch analyzer flour mill amperometric wet milling extraction at-line nisasta",
             snippet: "Amperometric damaged starch analyzer for flour mills: fast, accurate measurement without wet chemistry."
             },
-            /* TrueLine 17EC: HOLD_LOCAL + UNPUBLISH_FROM_REMOTE -- yayinlanana kadar arama dizininde YOK */
+            /* TrueLine 17EC: 10.11.2026 yayina alindi (brosure gore) */
+            {
+            title: "USTECH TrueLine 17EC Handheld NIR Analyzer",
+            url: "product-trueline-17ec.html",
+            category: "Products",
+            keywords: "TrueLine 17EC TrueLine17EC handheld portable field on-site NIR analyzer mobile app ProChem Mobile Bluetooth cloud portal feed polymer plastic recycling textile chemical",
+            snippet: "Handheld NIR analyzer for on-site measurements with the ProChem Mobile app: 908–1676 nm, 1.4 kg, Bluetooth."
+            },
             {
             title: "ProLine17EC NIR Analyzer",
             url: "product-proline-17ec.html",
@@ -2411,6 +2470,8 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "A detailed guide explaining how to calculate and set outlier threshold limits for regression and classification calibrations."
             }
         ];
+        // 10.11.2026: USTECH Asistani (assistant.js) Ingilizce sayfalarda ayni dizinde arar.
+        window.__ustechSearchDb = searchDb;
 
 
         // 1. Inject Search Toggle Button + Search Overlay Panel
@@ -2963,7 +3024,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'calix': 'caliX', 'prochem': 'ProChem', 'masterline': 'MasterLine17EC',
             'proline-17ec': 'ProLine 17EC', 'proline-17ecs': 'ProLine 17ECS',
             'proline-2550': 'ProLine 2550', 'proline-2550-essential': 'ProLine 2550', 'proline-2550-advanced': 'ProLine 2550',
-            'starchqc': 'StarchQC', 'tornado': 'Tornado+'
+            'starchqc': 'StarchQC', 'tornado': 'Tornado+', 'trueline-17ec': 'TrueLine 17EC'
         };
         const productValue = PRODUCT_BY_SLUG[productSlug];
         if (productValue && Array.from(productSelect.options).some(o => o.value === productValue)) {

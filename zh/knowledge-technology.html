@@ -481,7 +481,7 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem 是什么？</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 是直接运行于生产线级别的边缘计算软件平台。它接收在 caliX 中构建的定标模型 并将其实时应用于 USTECH 分析仪输入的扫描光谱。然后通过工业通信协议将预测的化学成分值传送到工厂的 PLC/SCADA 系统。</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 专为在严苛工业环境中 24/7 无人值守运行而设计。它负责仪器健康监测、自动参比扫描和光谱质量验证，无需操作人员干预。</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">ProChem 通过基于以太网的接口与工厂 PLC 通信，将测量数据准确送达控制逻辑所需之处；ProLine2550 还可根据型号提供 Modbus TCP、OPC UA、PROFINET 和 4–20 mA 输出。</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem 通过基于以太网的接口与工厂 PLC 通信，将测量数据准确送达控制逻辑所需之处；ProLine2550 则通过以太网（TCP/IP）上的 HTTP 接口连接。</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem 核心功能</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -532,7 +532,7 @@ ProChem Process Automation Platform – Deep Dive
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
 <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">典型用例</h4>
-<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">某饲料厂在混合器卸料传送带上安装了 ProLine2550。ProChem 每 3 秒接收一次光谱扫描，使用 caliX 预测蛋白质、水分和脂肪构建的模型，并通过 OPC UA 将值发送到西门子 S7-1500 PLC。PLC 会自动调节原材料配料阀门，以保持蛋白质在目标规格的 ±0.15% 范围内——消除了昂贵的蛋白质浪费，并防止出现不合格批次。</p>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">某饲料厂在混合器卸料传送带上安装了 ProLine2550。ProChem 每 3 秒接收一次光谱扫描，使用 caliX 预测蛋白质、水分和脂肪构建的模型，并通过基于以太网的接口 将值发送到西门子 S7-1500 PLC。PLC 会自动调节原材料配料阀门，以保持蛋白质在目标规格的 ±0.15% 范围内——消除了昂贵的蛋白质浪费，并防止出现不合格批次。</p>
 </div>
 <div style="text-align: center;">
 <a href="product-prochem.html" class="btn btn-primary">查阅完整 ProChem 技术文档</a>
@@ -618,6 +618,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>专为严苛的科学与工业精度而设计。</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.19"></script>
+<script src="../app.js?v=1.0.20"></script>
 </body>
 </html>

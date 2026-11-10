@@ -123,7 +123,7 @@ border-left: none !important;
 "name": "¿La espectroscopia NIR requiere preparación química?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "No. La espectroscopia de infrarrojo cercano es una medición física completamente no destructiva. Se proyecta luz sobre la superficie de la muestra y se analiza su reflejo. No hay absolutamente ningún uso de productos químicos, ni costos de eliminación de desechos ni destrucción de muestras."
+"text": "No. La espectroscopia de infrarrojo cercano es una medición física no destructiva: se dirige luz de infrarrojo cercano a la muestra y se analiza la luz reflejada o transmitida. No se utilizan reactivos químicos, por lo que no se generan residuos químicos y la muestra no se consume."
 }
 },
 {
@@ -155,7 +155,7 @@ border-left: none !important;
 "name": "¿Puede el NIR analizar componentes traza con concentraciones inferiores al 0,1 %?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "La espectroscopia NIR es muy sensible, pero su límite de detección práctico suele ser de alrededor de 0,1 % (1000 ppm) para componentes orgánicos en condiciones estándar. Para concentraciones por debajo de este umbral, la precisión depende en gran medida de la matriz de la muestra y de la precisión del método de referencia principal utilizado para entrenar el modelo de calibración."
+"text": "Por lo general, el NIR es más adecuado para componentes mayoritarios y minoritarios que para componentes traza. Que una concentración baja pueda medirse de forma fiable depende de la matriz de la muestra, del componente y de la precisión del método de referencia utilizado para crear la calibración, por lo que lo evaluamos para cada aplicación."
 }
 },
 {
@@ -163,7 +163,7 @@ border-left: none !important;
 "name": "¿Cómo evita el molino USTECH Tornado+ calentar las muestras?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "El molino USTECH Tornado+ cuenta con una cámara de molienda de doble pared conectada a un circuito continuo de refrigeración por agua líquida. Al moler granos o muestras de alimento con alto contenido de grasa, el líquido refrigerante disipa rápidamente el calor de fricción del motor, manteniendo la cámara fría y evitando la evaporación de la humedad o la fusión de la grasa."
+"text": "El USTECH Tornado+ cuenta con un sistema de refrigeración por agua integrado que mantiene frías las muestras y las herramientas de molienda durante el proceso (suministro de agua de 2 L/min entre 10 y 15 °C). Así se limita el calor generado durante la molienda, que de otro modo podría provocar pérdida de humedad, fundir las grasas o eliminar componentes volátiles en muestras con alto contenido de humedad o grasa."
 }
 },
 {
@@ -171,7 +171,7 @@ border-left: none !important;
 "name": "¿Qué tipos de muestras físicas se pueden analizar utilizando sistemas USTECH?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Nuestros sistemas NIR pueden analizar una amplia variedad de formularios de muestra. Los sólidos, granos y polvos se miden utilizando viales, rotadores de viales o escáneres de placas de Petri. Los líquidos, lodos y pastas se miden utilizando accesorios de transmisión, sondas de fibra de transflexión o celdas de flujo en línea montadas directamente en tuberías."
+"text": "Nuestros sistemas NIR pueden medir muestras sólidas y líquidas. Los sólidos, como cereales, polvos y pellets, pueden medirse molidos o sin moler; el MasterLine17EC analiza la muestra sobre una mesa giratoria para obtener una medición representativa. Los líquidos pueden medirse con sondas para líquidos o con celdas de flujo en línea montadas directamente en las tuberías."
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "¿Cómo funciona el analizador de Almidón Dañado USTECH StarchQC?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "El StarchQC de USTECH utiliza un método amperométrico basado en la absorción de yodo. Una muestra de 1.000 mg de harina se analiza en un ciclo de 8 minutos y el resultado de almidón dañado se expresa en AI %, NDS, UCDC, AACC y Farrand y se imprime en la impresora integrada. Los resultados se correlacionan estrechamente con los métodos de referencia enzimáticos."
+"text": "El StarchQC de USTECH utiliza un método amperométrico basado en la absorción de yodo. Una muestra de 1.000 mg de harina se analiza en un ciclo de 8 minutos y el resultado de almidón dañado se expresa en AI %, NDS, UCDc, AACC y Farrand y se imprime en la impresora integrada. Los resultados se correlacionan estrechamente con los métodos de referencia enzimáticos."
 }
 },
 {
@@ -195,7 +195,7 @@ border-left: none !important;
 "name": "¿Cuál es la longitud del camino óptico necesaria para el análisis de líquidos?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "La longitud óptima del camino depende de la composición química y la fuerza de absorción del líquido. Para líquidos o disolventes a base de agua en la región de transmisión NIR, las longitudes de paso suelen oscilar entre 1 mm y 8 mm. Ofrecemos sondas de transflexión y transmisión ajustables para ajustar fácilmente esta longitud de trayectoria para su matriz de fluido específica."
+"text": "La longitud de trayectoria óptima depende de la composición y de la intensidad de absorción del líquido, por lo que se elige para cada aplicación. Ofrecemos sondas para líquidos y celdas de flujo en línea, y seleccionamos con usted la configuración adecuada para su fluido."
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "¿Se pueden integrar los espectrómetros USTECH con los sistemas PLC o SCADA de nuestra planta?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí. ProChem envía los resultados al PLC de la planta mediante una interfaz Ethernet, y el ProLine2550 ofrece además salidas Modbus TCP y 4–20 mA, con OPC UA y PROFINET en el modelo Advanced. Los detalles de integración con su sistema de control se acuerdan durante la planificación del proyecto."
+"text": "Sí. ProChem envía los resultados al PLC de la planta a través de una interfaz basada en Ethernet, y el ProLine2550 se comunica por Ethernet (TCP/IP) y se conecta a los sistemas PLC de la fábrica mediante su interfaz HTTP. Los detalles de integración con su sistema de control se acuerdan durante la planificación del proyecto."
 }
 },
 {
@@ -235,7 +235,7 @@ border-left: none !important;
 "name": "¿Puede el software USTECH ejecutarse sin conexión si la red de nuestra planta se cae?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Sí. La medición, la predicción y la comunicación con el PLC se ejecutan localmente en el PC conectado al analizador, por lo que una caída de la red de la planta o de internet no detiene las mediciones. El PC también puede mantenerse totalmente aislado de internet si su política de seguridad lo exige."
+"text": "Sí. La medición, la predicción y la comunicación con el PLC se ejecutan localmente en el PC conectado al analizador, por lo que una caída de la red de la planta o de la conexión a Internet no detiene las mediciones. Nuestro software de calibración también puede utilizarse sin conexión a Internet. Si su política de seguridad exige aislar la red, planificamos la instalación con usted."
 }
 },
 {
@@ -275,7 +275,7 @@ border-left: none !important;
 "name": "¿Cuántas muestras de referencia física se necesitan para crear una calibración personalizada?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Para crear un modelo de calibración PLS (mínimos cuadrados parciales) personalizado y robusto desde cero, generalmente recomendamos un mínimo de 50 a 100 puntos de muestra que abarquen todo el rango esperado de valores. Sin embargo, USTECH proporciona bases de datos de calibración global preinstaladas para la mayoría de las aplicaciones de piensos, cereales, lácteos y polímeros, lo que significa que puede empezar a analizar desde el primer día con solo unos pocos puntos de verificación."
+"text": "Una calibración PLS (mínimos cuadrados parciales) personalizada y robusta requiere muestras de referencia que abarquen todo el rango de valores esperado en el uso rutinario; el número necesario depende del producto y del parámetro, y nuestro equipo le asesora para su aplicación. Para muchas aplicaciones también hay calibraciones listas para usar como punto de partida, que se verifican con sus propias muestras."
 }
 },
 {
@@ -315,7 +315,7 @@ border-left: none !important;
 "name": "¿Qué mantenimiento de rutina se requiere para los analizadores y sensores USTECH?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "El mantenimiento de rutina es mínimo. Para los sistemas de mesa, los operadores deben limpiar la ventana de muestra semanalmente y ejecutar un escaneo de referencia estándar utilizando la placa de referencia dorada incorporada. Para los sensores en línea, la principal tarea de mantenimiento es reemplazar la bombilla cada 23 años y verificar los sellos de los limpiaparabrisas durante las paradas anuales de la planta."
+"text": "El mantenimiento rutinario es mínimo. En los equipos de sobremesa, los operadores deben mantener limpia la ventana de muestra y realizar periódicamente un escaneo de referencia con el patrón de referencia Spectralon; la lámpara del MasterLine17EC tiene una vida útil especificada de más de 40.000 horas. En los sensores en línea, la sustitución de la lámpara y la revisión de las juntas del limpiador de ventana suelen planificarse durante las paradas programadas de la planta."
 }
 },
 {
@@ -507,7 +507,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>No. La espectroscopia de infrarrojo cercano es una medición física completamente no destructiva. Se proyecta luz sobre la superficie de la muestra y se analiza su reflejo. No hay absolutamente ningún uso de productos químicos, ni costos de eliminación de desechos ni destrucción de muestras.</p>
+<p>No. La espectroscopia de infrarrojo cercano es una medición física no destructiva: se dirige luz de infrarrojo cercano a la muestra y se analiza la luz reflejada o transmitida. No se utilizan reactivos químicos, por lo que no se generan residuos químicos y la muestra no se consume.</p>
 </div>
 </div>
 <!-- FAQ 2 -->
@@ -547,7 +547,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>La espectroscopia NIR es muy sensible, pero su límite de detección práctico suele ser de alrededor de 0,1 % (1000 ppm) para componentes orgánicos en condiciones estándar. Para concentraciones por debajo de este umbral, la precisión depende en gran medida de la matriz de la muestra y de la precisión del método de referencia principal utilizado para entrenar el modelo de calibración.</p>
+<p>Por lo general, el NIR es más adecuado para componentes mayoritarios y minoritarios que para componentes traza. Que una concentración baja pueda medirse de forma fiable depende de la matriz de la muestra, del componente y de la precisión del método de referencia utilizado para crear la calibración, por lo que lo evaluamos para cada aplicación.</p>
 </div>
 </div>
 </div>
@@ -563,7 +563,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>El molino USTECH Tornado+ cuenta con una cámara de molienda de doble pared conectada a un circuito continuo de refrigeración por agua líquida. Al moler granos o muestras de alimento con alto contenido de grasa, el líquido refrigerante disipa rápidamente el calor de fricción del motor, manteniendo la cámara fría y evitando la evaporación de la humedad o la fusión de la grasa.</p>
+<p>El USTECH Tornado+ cuenta con un sistema de refrigeración por agua integrado que mantiene frías las muestras y las herramientas de molienda durante el proceso (suministro de agua de 2 L/min entre 10 y 15 °C). Así se limita el calor generado durante la molienda, que de otro modo podría provocar pérdida de humedad, fundir las grasas o eliminar componentes volátiles en muestras con alto contenido de humedad o grasa.</p>
 </div>
 </div>
 <!-- FAQ 9 -->
@@ -573,7 +573,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Nuestros sistemas NIR pueden analizar una amplia variedad de formularios de muestra. Los sólidos, granos y polvos se miden utilizando viales, rotadores de viales o escáneres de placas de Petri. Los líquidos, lodos y pastas se miden utilizando accesorios de transmisión, sondas de fibra de transflexión o celdas de flujo en línea montadas directamente en tuberías.</p>
+<p>Nuestros sistemas NIR pueden medir muestras sólidas y líquidas. Los sólidos, como cereales, polvos y pellets, pueden medirse molidos o sin moler; el MasterLine17EC analiza la muestra sobre una mesa giratoria para obtener una medición representativa. Los líquidos pueden medirse con sondas para líquidos o con celdas de flujo en línea montadas directamente en las tuberías.</p>
 </div>
 </div>
 <!-- FAQ 10 -->
@@ -583,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>El StarchQC de USTECH utiliza un método amperométrico basado en la absorción de yodo. Una muestra de 1.000 mg de harina se analiza en un ciclo de 8 minutos y el resultado de almidón dañado se expresa en AI %, NDS, UCDC, AACC y Farrand y se imprime en la impresora integrada. Los resultados se correlacionan estrechamente con los métodos de referencia enzimáticos.</p>
+<p>El StarchQC de USTECH utiliza un método amperométrico basado en la absorción de yodo. Una muestra de 1.000 mg de harina se analiza en un ciclo de 8 minutos y el resultado de almidón dañado se expresa en AI %, NDS, UCDc, AACC y Farrand y se imprime en la impresora integrada. Los resultados se correlacionan estrechamente con los métodos de referencia enzimáticos.</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -603,7 +603,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>La longitud óptima del camino depende de la composición química y la fuerza de absorción del líquido. Para líquidos o disolventes a base de agua en la región de transmisión NIR, las longitudes de paso suelen oscilar entre 1 mm y 8 mm. Ofrecemos sondas de transflexión y transmisión ajustables para ajustar fácilmente esta longitud de trayectoria para su matriz de fluido específica.</p>
+<p>La longitud de trayectoria óptima depende de la composición y de la intensidad de absorción del líquido, por lo que se elige para cada aplicación. Ofrecemos sondas para líquidos y celdas de flujo en línea, y seleccionamos con usted la configuración adecuada para su fluido.</p>
 </div>
 </div>
 <!-- FAQ 14 -->
@@ -629,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. ProChem envía los resultados al PLC de la planta mediante una interfaz Ethernet, y el ProLine2550 ofrece además salidas Modbus TCP y 4–20 mA, con OPC UA y PROFINET en el modelo Advanced. Los detalles de integración con su sistema de control se acuerdan durante la planificación del proyecto.</p>
+<p>Sí. ProChem envía los resultados al PLC de la planta a través de una interfaz basada en Ethernet, y el ProLine2550 se comunica por Ethernet (TCP/IP) y se conecta a los sistemas PLC de la fábrica mediante su interfaz HTTP. Los detalles de integración con su sistema de control se acuerdan durante la planificación del proyecto.</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -659,7 +659,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Sí. La medición, la predicción y la comunicación con el PLC se ejecutan localmente en el PC conectado al analizador, por lo que una caída de la red de la planta o de internet no detiene las mediciones. El PC también puede mantenerse totalmente aislado de internet si su política de seguridad lo exige.</p>
+<p>Sí. La medición, la predicción y la comunicación con el PLC se ejecutan localmente en el PC conectado al analizador, por lo que una caída de la red de la planta o de la conexión a Internet no detiene las mediciones. Nuestro software de calibración también puede utilizarse sin conexión a Internet. Si su política de seguridad exige aislar la red, planificamos la instalación con usted.</p>
 </div>
 </div>
 <!-- FAQ 20 -->
@@ -715,7 +715,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Para crear un modelo de calibración PLS (mínimos cuadrados parciales) personalizado y robusto desde cero, generalmente recomendamos un mínimo de 50 a 100 puntos de muestra que abarquen todo el rango esperado de valores. Sin embargo, USTECH proporciona bases de datos de calibración global preinstaladas para la mayoría de las aplicaciones de piensos, cereales, lácteos y polímeros, lo que significa que puede empezar a analizar desde el primer día con solo unos pocos puntos de verificación.</p>
+<p>Una calibración PLS (mínimos cuadrados parciales) personalizada y robusta requiere muestras de referencia que abarquen todo el rango de valores esperado en el uso rutinario; el número necesario depende del producto y del parámetro, y nuestro equipo le asesora para su aplicación. Para muchas aplicaciones también hay calibraciones listas para usar como punto de partida, que se verifican con sus propias muestras.</p>
 </div>
 </div>
 <!-- FAQ 25 -->
@@ -771,7 +771,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>El mantenimiento de rutina es mínimo. Para los sistemas de mesa, los operadores deben limpiar la ventana de muestra semanalmente y ejecutar un escaneo de referencia estándar utilizando la placa de referencia dorada incorporada. Para los sensores en línea, la principal tarea de mantenimiento es reemplazar la bombilla cada 23 años y verificar los sellos de los limpiaparabrisas durante las paradas anuales de la planta.</p>
+<p>El mantenimiento rutinario es mínimo. En los equipos de sobremesa, los operadores deben mantener limpia la ventana de muestra y realizar periódicamente un escaneo de referencia con el patrón de referencia Spectralon; la lámpara del MasterLine17EC tiene una vida útil especificada de más de 40.000 horas. En los sensores en línea, la sustitución de la lámpara y la revisión de las juntas del limpiador de ventana suelen planificarse durante las paradas programadas de la planta.</p>
 </div>
 </div>
 <!-- FAQ 30 -->
@@ -883,7 +883,7 @@ border-left: none !important;
             <p>Diseñado para la precisión científica e industrial.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.19"></script>
+<script src="../app.js?v=1.0.20"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

@@ -481,7 +481,7 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">What is ProChem?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is the edge-computing software platform that runs directly at the production line level. It receives calibration models built in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> and applies them in real-time to incoming spectral scans from USTECH analyzers. The predicted chemical composition values are then communicated to factory PLC/SCADA systems through industrial communication protocols.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is designed for 24/7 unattended operation in demanding industrial environments. It manages instrument health monitoring, automatic reference scanning and spectral quality validation &mdash; all without requiring operator intervention.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">ProChem communicates with plant PLCs over an Ethernet-based interface to deliver measurement data exactly where your control logic needs it; the ProLine2550 also offers Modbus TCP, OPC UA, PROFINET and 4&ndash;20 mA outputs depending on the model.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem communicates with plant PLCs over an Ethernet-based interface to deliver measurement data exactly where your control logic needs it; the ProLine2550 connects through its HTTP interface over Ethernet (TCP/IP).</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem Core Features</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -532,7 +532,7 @@ ProChem Process Automation Platform – Deep Dive
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
 <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Typical Use Case</h4>
-<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">A feed mill installs a ProLine2550 on the mixer discharge conveyor. ProChem receives spectral scans every 3 seconds, predicts protein, moisture, and fat using cali<span class="calix-x" style="color: #38b6ff !important;">X</span>-built models, and sends the values via OPC UA to the Siemens S7-1500 PLC. The PLC automatically adjusts raw material dosing gates to keep protein within &plusmn;0.15% of the target specification &mdash; eliminating expensive protein give-away and preventing out-of-spec batches.</p>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">A feed mill installs a ProLine2550 on the mixer discharge conveyor. ProChem receives spectral scans every 3 seconds, predicts protein, moisture, and fat using cali<span class="calix-x" style="color: #38b6ff !important;">X</span>-built models, and sends the values over its Ethernet-based interface to the Siemens S7-1500 PLC. The PLC automatically adjusts raw material dosing gates to keep protein within &plusmn;0.15% of the target specification &mdash; eliminating expensive protein give-away and preventing out-of-spec batches.</p>
 </div>
 <div style="text-align: center;">
 <a href="product-prochem.html" class="btn btn-primary">Explore Full ProChem Documentation</a>
@@ -618,6 +618,6 @@ Learn how our custom calibration methods and NIR & FT-NIR process analyzers can 
             <p>Designed for scientific and industrial precision.</p>
         </div>
     </footer>
-<script src="app.js?v=1.0.19"></script>
+<script src="app.js?v=1.0.20"></script>
 </body>
 </html>

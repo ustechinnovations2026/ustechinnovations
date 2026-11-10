@@ -481,7 +481,7 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem Nedir?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, doğrudan üretim hattı seviyesinde çalışan uç bilişim (edge-computing) yazılım platformudur. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ve bunları gerçek zamanlı olarak USTECH analizörlerinden gelen spektral taramalara uygular. Tahmin edilen kimyasal bileşim değerleri daha sonra endüstriyel iletişim protokolleri aracılığıyla fabrika PLC/SCADA sistemlerine iletilir.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, zorlu endüstriyel ortamlarda 7/24 gözetimsiz çalışmak üzere tasarlanmıştır. Cihaz sağlığı izleme, otomatik referans taraması ve spektral kalite doğrulamasını operatör müdahalesi gerektirmeden yönetir.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">ProChem, ölçüm verisini kontrol mantığınızın ihtiyaç duyduğu yere ulaştırmak için tesis PLC'leriyle Ethernet tabanlı bir arayüz üzerinden haberleşir; ProLine2550 ise modele göre Modbus TCP, OPC UA, PROFINET ve 4–20 mA çıkışları da sunar.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem, ölçüm verisini kontrol mantığınızın ihtiyaç duyduğu yere ulaştırmak için tesis PLC'leriyle Ethernet tabanlı bir arayüz üzerinden haberleşir; ProLine2550 ise Ethernet (TCP/IP) üzerinden HTTP arayüzüyle bağlanır.</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem Temel Özellikleri</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -532,7 +532,7 @@ ProChem Process Automation Platform – Deep Dive
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
 <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Tipik Kullanım Senaryosu</h4>
-<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">Bir yem değirmeni, mikser boşaltma konveyörüne bir ProLine2550 takıyor. ProChem her 3 saniyede bir spektral tarama alır ve caliX kullanarak protein, nem ve yağı tahmin eder ile oluşturulan modelleri uygular ve değerleri OPC UA aracılığıyla Siemens S7-1500 PLC'ye gönderir. PLC, proteini hedef spesifikasyonun ±%0,15 aralığında tutmak için hammadde dozaj kapaklarını otomatik olarak ayarlar; böylece maliyetli protein kaybını önler ve spesifikasyon dışı parti üretimini engeller.</p>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">Bir yem değirmeni, mikser boşaltma konveyörüne bir ProLine2550 takıyor. ProChem her 3 saniyede bir spektral tarama alır ve caliX kullanarak protein, nem ve yağı tahmin eder ile oluşturulan modelleri uygular ve değerleri Ethernet tabanlı arayüzü üzerinden Siemens S7-1500 PLC'ye gönderir. PLC, proteini hedef spesifikasyonun ±%0,15 aralığında tutmak için hammadde dozaj kapaklarını otomatik olarak ayarlar; böylece maliyetli protein kaybını önler ve spesifikasyon dışı parti üretimini engeller.</p>
 </div>
 <div style="text-align: center;">
 <a href="product-prochem.html" class="btn btn-primary">Tüm ProChem Belgelerini İnceleyin</a>
@@ -618,6 +618,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.19"></script>
+<script src="../app.js?v=1.0.20"></script>
 </body>
 </html>

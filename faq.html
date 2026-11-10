@@ -123,7 +123,7 @@ border-left: none !important;
 "name": "Does NIR spectroscopy require chemical preparation?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "No. Near-infrared spectroscopy is a completely non-destructive physical measurement. Light is projected onto the sample surface and its reflection is analyzed. There is absolutely no chemical usage, no waste disposal cost, and no sample destruction."
+"text": "No. Near-infrared spectroscopy is a non-destructive physical measurement: near-infrared light is directed at the sample and the reflected or transmitted light is analyzed. No chemical reagents are used, so there is no chemical waste and the sample is not consumed."
 }
 },
 {
@@ -155,7 +155,7 @@ border-left: none !important;
 "name": "Can NIR analyze trace components below 0.1% concentration?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "NIR spectroscopy is highly sensitive, but its practical detection limit is typically around 0.1% (1000 ppm) for organic constituents under standard conditions. For concentrations below this threshold, accuracy depends heavily on the sample matrix and the precision of the primary reference method used to train the calibration model."
+"text": "NIR is generally best suited to major and minor constituents rather than trace components. Whether a low concentration can be measured reliably depends on the sample matrix, the constituent and the precision of the reference method used to build the calibration, so we assess this for each application."
 }
 },
 {
@@ -163,7 +163,7 @@ border-left: none !important;
 "name": "How does the USTECH Tornado+ mill avoid heating samples?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "The USTECH Tornado+ mill features a double-walled grinding chamber connected to a continuous liquid water-cooling loop. When grinding grain or high-fat feed samples, the cooling liquid rapidly dissipates motor friction heat, keeping the chamber cold and preventing moisture evaporation or fat melting."
+"text": "The USTECH Tornado+ has an integrated water-cooling system that keeps the samples and grinding tools cool during grinding (water supply 2 L/min at 10 to 15 °C). This limits the heat generated during grinding, which can otherwise cause moisture loss, melt fats or drive off volatile components in high-moisture and high-fat samples."
 }
 },
 {
@@ -171,7 +171,7 @@ border-left: none !important;
 "name": "What types of physical samples can be analyzed using USTECH systems?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Our NIR systems can analyze a wide variety of sample forms. Solids, grains, and powders are measured using vials, vials rotators, or petri dish scanners. Liquids, slurries, and pastes are measured using transmission accessories, transflection fiber probes, or inline flow cells mounted directly on pipelines."
+"text": "Our NIR systems can measure solid and liquid samples. Solids such as grains, powders and pellets can be measured ground or unground; the MasterLine17EC scans the sample on a rotating sample table for a representative measurement. Liquids can be measured with liquid probes or with inline flow cells mounted directly on pipelines."
 }
 },
 {
@@ -179,7 +179,7 @@ border-left: none !important;
 "name": "How does the USTECH StarchQC Damaged Starch analyzer work?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "The USTECH StarchQC uses an amperometric method based on iodine absorption. A 1,000 mg flour sample is analyzed in an 8-minute cycle, and the damaged starch result is reported in AI %, NDS, UCDC, AACC and Farrand units and printed on the built-in printer. Results correlate strongly with enzyme-based reference methods."
+"text": "The USTECH StarchQC uses an amperometric method based on iodine absorption. A 1,000 mg flour sample is analyzed in an 8-minute cycle, and the damaged starch result is reported in AI %, NDS, UCDc, AACC and Farrand units and printed on the built-in printer. Results correlate strongly with enzyme-based reference methods."
 }
 },
 {
@@ -195,7 +195,7 @@ border-left: none !important;
 "name": "What is the optical path length required for liquid analysis?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "The optimal path length depends on the chemical composition and absorption strength of the liquid. For water-based liquids or solvents in the transmission NIR region, path lengths typically range from 1 mm to 8 mm. We offer adjustable transflection and transmission probes to easily tune this path length for your specific fluid matrix."
+"text": "The optimal path length depends on the composition and absorption strength of the liquid, so it is chosen for each application. We offer liquid probes and inline flow cells and work with you to select the configuration that suits your fluid."
 }
 },
 {
@@ -211,7 +211,7 @@ border-left: none !important;
 "name": "Can USTECH spectrometers be integrated with our plant's PLC or SCADA systems?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Yes. ProChem sends results to the plant PLC over an Ethernet-based interface, and the ProLine2550 additionally offers Modbus TCP and 4–20 mA outputs, with OPC UA and PROFINET on the Advanced model. The integration details for your control system are agreed during project planning."
+"text": "Yes. ProChem sends results to the plant PLC over an Ethernet-based interface, and the ProLine2550 communicates over Ethernet (TCP/IP) and connects to factory PLC systems through its HTTP interface. The integration details for your control system are agreed during project planning."
 }
 },
 {
@@ -235,7 +235,7 @@ border-left: none !important;
 "name": "Can USTECH software run offline if our plant network drops?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Yes. Measurement, prediction and PLC communication run locally on the PC connected to the analyzer, so a drop in the plant network or internet connection does not stop the measurements. The PC can also be kept completely isolated from the internet if your security policy requires it."
+"text": "Yes. Measurement, prediction and PLC communication run locally on the PC connected to the analyzer, so a drop in the plant network or internet connection does not stop the measurements. Our calibration software can also be used without an internet connection. If your security policy requires network isolation, we plan the setup together with you."
 }
 },
 {
@@ -275,7 +275,7 @@ border-left: none !important;
 "name": "How many physical reference samples are needed to build a custom calibration?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "To build a robust custom PLS (Partial Least Squares) calibration model from scratch, we generally recommend a minimum of 50 to 100 sample points spanning the entire expected range of values. However, USTECH provides pre-installed global calibration databases for most feed, grain, dairy, and polymer applications, meaning you can start analyzing on day one with only a few verification points."
+"text": "A robust custom PLS (Partial Least Squares) calibration needs reference samples that span the full range of values expected in routine use; the number required depends on the product and the parameter, and our team advises you on this for your application. For many applications, ready-made calibrations are also available as a starting point and are verified with your own samples."
 }
 },
 {
@@ -315,7 +315,7 @@ border-left: none !important;
 "name": "What routine maintenance is required for USTECH analyzers and sensors?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Routine maintenance is minimal. For benchtop systems, operators should clean the sample window weekly and run a standard reference scan using the built-in gold reference plate. For online sensors, the main maintenance task is replacing the light bulb every 2-3 years and verifying the window wiper seals during annual plant shutdowns."
+"text": "Routine maintenance is minimal. For benchtop systems, operators should keep the sample window clean and regularly run a reference scan against the Spectralon reference standard; the MasterLine17EC lamp has a specified life of more than 40,000 hours. For inline sensors, lamp replacement and a check of the window wiper seals are usually planned during scheduled plant shutdowns."
 }
 },
 {
@@ -507,7 +507,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>No. Near-infrared spectroscopy is a completely non-destructive physical measurement. Light is projected onto the sample surface and its reflection is analyzed. There is absolutely no chemical usage, no waste disposal cost, and no sample destruction.</p>
+<p>No. Near-infrared spectroscopy is a non-destructive physical measurement: near-infrared light is directed at the sample and the reflected or transmitted light is analyzed. No chemical reagents are used, so there is no chemical waste and the sample is not consumed.</p>
 </div>
 </div>
 <!-- FAQ 2 -->
@@ -547,7 +547,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>NIR spectroscopy is highly sensitive, but its practical detection limit is typically around 0.1% (1000 ppm) for organic constituents under standard conditions. For concentrations below this threshold, accuracy depends heavily on the sample matrix and the precision of the primary reference method used to train the calibration model.</p>
+<p>NIR is generally best suited to major and minor constituents rather than trace components. Whether a low concentration can be measured reliably depends on the sample matrix, the constituent and the precision of the reference method used to build the calibration, so we assess this for each application.</p>
 </div>
 </div>
 </div>
@@ -563,7 +563,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>The USTECH Tornado+ mill features a double-walled grinding chamber connected to a continuous liquid water-cooling loop. When grinding grain or high-fat feed samples, the cooling liquid rapidly dissipates motor friction heat, keeping the chamber cold and preventing moisture evaporation or fat melting.</p>
+<p>The USTECH Tornado+ has an integrated water-cooling system that keeps the samples and grinding tools cool during grinding (water supply 2 L/min at 10 to 15 °C). This limits the heat generated during grinding, which can otherwise cause moisture loss, melt fats or drive off volatile components in high-moisture and high-fat samples.</p>
 </div>
 </div>
 <!-- FAQ 9 -->
@@ -573,7 +573,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Our NIR systems can analyze a wide variety of sample forms. Solids, grains, and powders are measured using vials, vials rotators, or petri dish scanners. Liquids, slurries, and pastes are measured using transmission accessories, transflection fiber probes, or inline flow cells mounted directly on pipelines.</p>
+<p>Our NIR systems can measure solid and liquid samples. Solids such as grains, powders and pellets can be measured ground or unground; the MasterLine17EC scans the sample on a rotating sample table for a representative measurement. Liquids can be measured with liquid probes or with inline flow cells mounted directly on pipelines.</p>
 </div>
 </div>
 <!-- FAQ 10 -->
@@ -583,7 +583,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>The USTECH StarchQC uses an amperometric method based on iodine absorption. A 1,000 mg flour sample is analyzed in an 8-minute cycle, and the damaged starch result is reported in AI %, NDS, UCDC, AACC and Farrand units and printed on the built-in printer. Results correlate strongly with enzyme-based reference methods.</p>
+<p>The USTECH StarchQC uses an amperometric method based on iodine absorption. A 1,000 mg flour sample is analyzed in an 8-minute cycle, and the damaged starch result is reported in AI %, NDS, UCDc, AACC and Farrand units and printed on the built-in printer. Results correlate strongly with enzyme-based reference methods.</p>
 </div>
 </div>
 <!-- FAQ 11 -->
@@ -603,7 +603,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>The optimal path length depends on the chemical composition and absorption strength of the liquid. For water-based liquids or solvents in the transmission NIR region, path lengths typically range from 1 mm to 8 mm. We offer adjustable transflection and transmission probes to easily tune this path length for your specific fluid matrix.</p>
+<p>The optimal path length depends on the composition and absorption strength of the liquid, so it is chosen for each application. We offer liquid probes and inline flow cells and work with you to select the configuration that suits your fluid.</p>
 </div>
 </div>
 <!-- FAQ 14 -->
@@ -629,7 +629,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Yes. ProChem sends results to the plant PLC over an Ethernet-based interface, and the ProLine2550 additionally offers Modbus TCP and 4–20 mA outputs, with OPC UA and PROFINET on the Advanced model. The integration details for your control system are agreed during project planning.</p>
+<p>Yes. ProChem sends results to the plant PLC over an Ethernet-based interface, and the ProLine2550 communicates over Ethernet (TCP/IP) and connects to factory PLC systems through its HTTP interface. The integration details for your control system are agreed during project planning.</p>
 </div>
 </div>
 <!-- FAQ 16 -->
@@ -659,7 +659,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Yes. Measurement, prediction and PLC communication run locally on the PC connected to the analyzer, so a drop in the plant network or internet connection does not stop the measurements. The PC can also be kept completely isolated from the internet if your security policy requires it.</p>
+<p>Yes. Measurement, prediction and PLC communication run locally on the PC connected to the analyzer, so a drop in the plant network or internet connection does not stop the measurements. Our calibration software can also be used without an internet connection. If your security policy requires network isolation, we plan the setup together with you.</p>
 </div>
 </div>
 <!-- FAQ 20 -->
@@ -715,7 +715,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>To build a robust custom PLS (Partial Least Squares) calibration model from scratch, we generally recommend a minimum of 50 to 100 sample points spanning the entire expected range of values. However, USTECH provides pre-installed global calibration databases for most feed, grain, dairy, and polymer applications, meaning you can start analyzing on day one with only a few verification points.</p>
+<p>A robust custom PLS (Partial Least Squares) calibration needs reference samples that span the full range of values expected in routine use; the number required depends on the product and the parameter, and our team advises you on this for your application. For many applications, ready-made calibrations are also available as a starting point and are verified with your own samples.</p>
 </div>
 </div>
 <!-- FAQ 25 -->
@@ -771,7 +771,7 @@ border-left: none !important;
 <span class="faq-icon">+</span>
 </button>
 <div class="faq-answer">
-<p>Routine maintenance is minimal. For benchtop systems, operators should clean the sample window weekly and run a standard reference scan using the built-in gold reference plate. For online sensors, the main maintenance task is replacing the light bulb every 23 years and verifying the window wiper seals during annual plant shutdowns.</p>
+<p>Routine maintenance is minimal. For benchtop systems, operators should keep the sample window clean and regularly run a reference scan against the Spectralon reference standard; the MasterLine17EC lamp has a specified life of more than 40,000 hours. For inline sensors, lamp replacement and a check of the window wiper seals are usually planned during scheduled plant shutdowns.</p>
 </div>
 </div>
 <!-- FAQ 30 -->
@@ -883,7 +883,7 @@ border-left: none !important;
             <p>Designed for scientific and industrial precision.</p>
         </div>
     </footer>
-<script src="app.js?v=1.0.19"></script>
+<script src="app.js?v=1.0.20"></script>
 <!-- Scroll-Spy and Navigation JS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {

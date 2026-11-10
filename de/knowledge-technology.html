@@ -481,7 +481,7 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">Was ist ProChem?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem ist die Edge-Computing-Softwareplattform, die direkt auf Ebene der Produktionslinie läuft. Sie empfängt Kalibriermodelle, die in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> und wendet sie in Echtzeit auf eingehende Spektralscans von USTECH-Analysatoren an. Die vorhergesagten chemischen Zusammensetzungswerte werden dann über industrielle Kommunikationsprotokolle an SPS-/SCADA-Systeme der Fabrik übermittelt.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem ist für den unbeaufsichtigten 24/7-Betrieb in anspruchsvollen Industrieumgebungen ausgelegt. Es übernimmt die Überwachung des Gerätezustands, automatische Referenzmessungen und die Validierung der Spektrenqualität – ganz ohne Eingriff des Bedieners.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">ProChem kommuniziert über eine Ethernet-basierte Schnittstelle mit den SPS der Anlage und liefert Messdaten genau dorthin, wo Ihre Steuerungslogik sie benötigt; der ProLine2550 bietet je nach Modell zusätzlich Modbus TCP, OPC UA, PROFINET und 4–20-mA-Ausgänge.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem kommuniziert über eine Ethernet-basierte Schnittstelle mit den SPS der Anlage und liefert die Messdaten genau dorthin, wo Ihre Steuerungslogik sie benötigt; der ProLine2550 wird über seine HTTP-Schnittstelle via Ethernet (TCP/IP) angebunden.</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">ProChem-Kernfunktionen</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -532,7 +532,7 @@ ProChem Process Automation Platform – Deep Dive
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
 <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Typischer Anwendungsfall</h4>
-<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">Ein Futtermittelwerk installiert einen ProLine2550 auf dem Mischeraustragsband. ProChem empfängt alle 3 Sekunden Spektralscans, sagt Protein, Feuchtigkeit und Fett mit caliX voraus erstellte Modelle an und überträgt die Werte über OPC UA an die Siemens S7-1500 SPS. Die SPS passt die Rohstoff-Dosierschieber automatisch an, um den Proteingehalt innerhalb von ±0,15 % der Vorgabe zu halten – wodurch teure Proteinverluste und Fehlchargen verhindert werden.</p>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">Ein Futtermittelwerk installiert einen ProLine2550 auf dem Mischeraustragsband. ProChem empfängt alle 3 Sekunden Spektralscans, sagt Protein, Feuchtigkeit und Fett mit caliX voraus erstellte Modelle an und überträgt die Werte über eine Ethernet-basierte Schnittstelle an die Siemens S7-1500 SPS. Die SPS passt die Rohstoff-Dosierschieber automatisch an, um den Proteingehalt innerhalb von ±0,15 % der Vorgabe zu halten – wodurch teure Proteinverluste und Fehlchargen verhindert werden.</p>
 </div>
 <div style="text-align: center;">
 <a href="product-prochem.html" class="btn btn-primary">Vollständige ProChem-Dokumentation erkunden</a>
@@ -618,6 +618,6 @@ Erfahren Sie, wie sich unsere maßgeschneiderten Kalibriermethoden und NIR- und 
             <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.19"></script>
+<script src="../app.js?v=1.0.20"></script>
 </body>
 </html>

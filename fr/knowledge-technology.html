@@ -481,7 +481,7 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">Qu'est-ce que ProChem ?</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem est la plate-forme logicielle Edge Computing qui s'exécute directement au niveau de la ligne de production. Il reçoit des modèles de calibrage construits en cali<span class="calix-x" style="color: #38b6ff !important;">X</span> et les applique en temps réel aux analyses spectrales entrantes des analyseurs USTECH. Les valeurs prévues de la composition chimique sont ensuite communiquées aux systèmes PLC/SCADA de l'usine via des protocoles de communication industriels.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem est conçu pour fonctionner 24 h/24 et 7 j/7 sans surveillance dans des environnements industriels exigeants. Il gère la surveillance de l'état des instruments, les mesures de référence automatiques et la validation de la qualité spectrale, sans intervention de l'opérateur.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">ProChem communique avec les automates de l'usine via une interface Ethernet pour fournir les données de mesure exactement là où votre logique de contrôle en a besoin ; le ProLine2550 propose en outre, selon le modèle, des sorties Modbus TCP, OPC UA, PROFINET et 4–20 mA.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">ProChem communique avec les automates de l’usine via une interface Ethernet pour fournir les données de mesure exactement là où votre logique de commande en a besoin ; le ProLine2550 se connecte grâce à son interface HTTP sur Ethernet (TCP/IP).</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">Caractéristiques principales du ProChem</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -532,7 +532,7 @@ ProChem Process Automation Platform – Deep Dive
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
 <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Cas d'utilisation typique</h4>
-<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">Une usine d'aliments pour animaux installe un ProLine2550 sur le convoyeur de déchargement du mélangeur.  ProChem reçoit des analyses spectrales toutes les 3 secondes, prédit les protéines, l'humidité et les graisses à l'aide de cali<span class="calix-x" style="color: #38b6ff !important;">X</span> et envoie les valeurs via OPC UA au PLC Siemens S7-1500. Le PLC ajuste automatiquement les vannes de dosage pour maintenir la protéine à ±0,15 % de la spécification cible.</p>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">Une usine d'aliments pour animaux installe un ProLine2550 sur le convoyeur de déchargement du mélangeur.  ProChem reçoit des analyses spectrales toutes les 3 secondes, prédit les protéines, l'humidité et les graisses à l'aide de cali<span class="calix-x" style="color: #38b6ff !important;">X</span> et envoie les valeurs via son interface Ethernet au PLC Siemens S7-1500. Le PLC ajuste automatiquement les vannes de dosage pour maintenir la protéine à ±0,15 % de la spécification cible.</p>
 </div>
 <div style="text-align: center;">
 <a href="product-prochem.html" class="btn btn-primary">Explorez la documentation complète de ProChem</a>
@@ -618,6 +618,6 @@ Découvrez comment nos méthodes d'étalonnage personnalisées et nos analyseurs
             <p>Conçu pour la précision scientifique et industrielle.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.19"></script>
+<script src="../app.js?v=1.0.20"></script>
 </body>
 </html>

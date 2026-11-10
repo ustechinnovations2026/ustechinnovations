@@ -482,7 +482,7 @@ ProChem Process Automation Platform – Deep Dive
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ما هو ProChem؟</h3>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem هي منصة برمجيات الحوسبة الطرفية التي تعمل مباشرة على مستوى خط الإنتاج. تتلقى نماذج المعايرة المبنية في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ويطبقها في الوقت الفعلي على المسوحات الطيفية الواردة من أجهزة تحليل USTECH. ثم يتم توصيل قيم التركيب الكيميائي المتوقعة لأنظمة PLC/SCADA في المصنع من خلال بروتوكولات الاتصال الصناعية.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">صُمم ProChem للعمل على مدار الساعة دون إشراف في البيئات الصناعية الصعبة. فهو يدير مراقبة حالة الجهاز والمسح المرجعي التلقائي والتحقق من جودة الأطياف، دون الحاجة إلى تدخل المشغل.</p>
-<p style="color: var(--text-secondary); line-height: 1.7;">يتواصل ProChem مع وحدات PLC في المصنع عبر واجهة قائمة على Ethernet لإيصال بيانات القياس إلى حيث يحتاجها منطق التحكم لديكم تماماً؛ كما يوفر ProLine2550 حسب الطراز مخرجات Modbus TCP وOPC UA وPROFINET و4–20 مللي أمبير.</p>
+<p style="color: var(--text-secondary); line-height: 1.7;">يتواصل ProChem مع وحدات PLC في المصنع عبر واجهة قائمة على Ethernet لإيصال بيانات القياس إلى حيث يحتاجها منطق التحكم لديكم تماماً؛ ويتصل ProLine2550 من خلال واجهة HTTP على شبكة Ethernet (TCP/IP).</p>
 </div>
 <h3 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: -0.5px; text-align: center;">الميزات الأساسية لـ ProChem</h3>
 <div class="tech-workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
@@ -533,7 +533,7 @@ ProChem Process Automation Platform – Deep Dive
 <!-- Typical Use Case Banner -->
 <div style="background: linear-gradient(135deg, rgba(10, 11, 16, 0.9), rgba(25, 27, 38, 0.95)); border-radius: 12px; padding: 2.5rem; border: 1px solid rgba(255,255,255,0.12); margin-bottom: 3rem;">
 <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-gold-text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">حالة استخدام نموذجية</h4>
-<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">يقوم مصنع أعلاف بتركيب ProLine2550 على ناقل تفريغ الخلاط. يستقبل ProChem مسوحات طيفية كل 3 ثوانٍ، ويتنبأ بالبروتين والرطوبة والدهون باستخدام cali<span class="calix-x" style="color: #38b6ff !important;">X</span>- النماذج المبنية، وترسل القيم عبر OPC UA إلى جهاز PLC من نوع Siemens S7-1500. يقوم جهاز PLC تلقائيًا بضبط بوابات جرعات المواد الخام لإبقاء البروتين ضمن نسبة ±0.15% من المواصفات المستهدفة — مما يقضي على هدر البروتين المكلف ويمنع خروج الدفعات عن المواصفات.</p>
+<p style="font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 0;">يقوم مصنع أعلاف بتركيب ProLine2550 على ناقل تفريغ الخلاط. يستقبل ProChem مسوحات طيفية كل 3 ثوانٍ، ويتنبأ بالبروتين والرطوبة والدهون باستخدام cali<span class="calix-x" style="color: #38b6ff !important;">X</span>- النماذج المبنية، وترسل القيم عبر واجهة قائمة على Ethernet إلى جهاز PLC من نوع Siemens S7-1500. يقوم جهاز PLC تلقائيًا بضبط بوابات جرعات المواد الخام لإبقاء البروتين ضمن نسبة ±0.15% من المواصفات المستهدفة — مما يقضي على هدر البروتين المكلف ويمنع خروج الدفعات عن المواصفات.</p>
 </div>
 <div style="text-align: center;">
 <a href="product-prochem.html" class="btn btn-primary">استكشف توثيق ProChem الكامل</a>
@@ -619,6 +619,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>مصمم للدقة العلمية والصناعية.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.19"></script>
+<script src="../app.js?v=1.0.20"></script>
 </body>
 </html>
