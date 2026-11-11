@@ -33,10 +33,6 @@ html.ua-kilit .back-to-top-btn { display: none !important; }
 /* Tek giris noktasi: asistan varken eski "Bir Uzmanla Gorusun" yan sekmesi ve kaydirma
    CTA kutusu (ayni sag alt kose) gizlenir. Canliya alinirken kullanici karariyla
    app.js'ten tamamen kaldirilabilir. */
-body.ua-var .specialist-tab,
-body.ua-var .specialist-panel,
-body.ua-var .specialist-backdrop,
-body.ua-var .ustech-scroll-cta { display: none !important; }
 
 /* ---- Baslatici ---- */
 .ua-baslatici {

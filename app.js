@@ -93,6 +93,7 @@ var SUPPORTED_LANGS = ['en', 'tr', 'fr', 'de', 'es', 'ar', 'zh'];
 // =====================================================================
 var UI_I18N = {
   en: {
+    skip_link: 'Skip to main content', lang_select: 'Select language', main_nav: 'Main navigation',
     search_ph: 'Search pages, products, blogs...', search_ph_short: 'Search website...',
     close_search: 'Close Search', popular: 'Popular Searches', popular_badge: 'Popular',
     suggested_for: 'Suggested Results for', suggested_badge: 'Suggested',
@@ -125,6 +126,7 @@ var UI_I18N = {
     locale: "en-US"
   },
   tr: {
+    skip_link: 'İçeriğe atla', lang_select: 'Dil seçin', main_nav: 'Ana menü',
     search_ph: 'Sayfa, ürün, blog ara...', search_ph_short: 'Sitede ara...',
     close_search: 'Aramayı kapat', popular: 'Popüler Aramalar', popular_badge: 'Popüler',
     suggested_for: 'Önerilen sonuçlar:', suggested_badge: 'Önerilen',
@@ -157,6 +159,7 @@ var UI_I18N = {
     locale: "tr-TR"
   },
   fr: {
+    skip_link: 'Aller au contenu principal', lang_select: 'Choisir la langue', main_nav: 'Navigation principale',
     search_ph: 'Rechercher pages, produits, blogs...', search_ph_short: 'Rechercher sur le site...',
     close_search: 'Fermer la recherche', popular: 'Recherches populaires', popular_badge: 'Populaire',
     suggested_for: 'Résultats suggérés pour', suggested_badge: 'Suggéré',
@@ -189,6 +192,7 @@ var UI_I18N = {
     locale: "fr-FR"
   },
   de: {
+    skip_link: 'Zum Hauptinhalt springen', lang_select: 'Sprache wählen', main_nav: 'Hauptnavigation',
     search_ph: 'Seiten, Produkte, Blogs durchsuchen...', search_ph_short: 'Website durchsuchen...',
     close_search: 'Suche schließen', popular: 'Beliebte Suchanfragen', popular_badge: 'Beliebt',
     suggested_for: 'Vorgeschlagene Ergebnisse für', suggested_badge: 'Vorschlag',
@@ -221,6 +225,7 @@ var UI_I18N = {
     locale: "de-DE"
   },
   es: {
+    skip_link: 'Saltar al contenido principal', lang_select: 'Seleccionar idioma', main_nav: 'Navegación principal',
     search_ph: 'Buscar páginas, productos, blogs...', search_ph_short: 'Buscar en el sitio...',
     close_search: 'Cerrar búsqueda', popular: 'Búsquedas populares', popular_badge: 'Popular',
     suggested_for: 'Resultados sugeridos para', suggested_badge: 'Sugerido',
@@ -253,6 +258,7 @@ var UI_I18N = {
     locale: "es-ES"
   },
   ar: {
+    skip_link: 'تخطَّ إلى المحتوى الرئيسي', lang_select: 'اختر اللغة', main_nav: 'التنقل الرئيسي',
     search_ph: 'البحث في الصفحات والمنتجات...', search_ph_short: 'البحث في الموقع...',
     close_search: 'إغلاق البحث', popular: 'عمليات البحث الشائعة', popular_badge: 'شائع',
     suggested_for: 'النتائج المقترحة لـ', suggested_badge: 'مقترح',
@@ -285,6 +291,7 @@ var UI_I18N = {
     locale: "ar-u-nu-latn"
   },
   zh: {
+    skip_link: '跳到主要内容', lang_select: '选择语言', main_nav: '主导航',
     search_ph: '搜索页面、产品、技术博客...', search_ph_short: '搜索网站...',
     close_search: '关闭搜索', popular: '热门搜索', popular_badge: '热门',
     suggested_for: '推荐结果：', suggested_badge: '推荐',
@@ -1261,7 +1268,7 @@ document.addEventListener('click', function (e) {
     var kok = (s && s.src) ? s.src.replace(/[^\/]*(\?.*)?$/, '') : '/';
     var css = document.createElement('link');
     css.rel = 'stylesheet';
-    var surum = '1.0.0'; // ASISTAN_SURUM
+    var surum = '1.0.1'; // ASISTAN_SURUM
     css.href = kok + 'assistant.css?v=' + surum;
     document.head.appendChild(css);
     var js = document.createElement('script');
@@ -3883,174 +3890,99 @@ function initLaserAnimation() {
 // Initialize when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', initLaserAnimation);
 
-// =====================================================================
-//  Talk to a Specialist — Floating Side Widget (auto-injected)
-// =====================================================================
-(function() {
-    // Don't inject if already present
-    if (document.querySelector('.specialist-tab')) return;
-
-    // Phone icon SVG
-    const phoneSVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>';
-
-    // Email icon SVG
-    const emailSVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>';
-
-    // Chat/headset icon SVG
-    const headsetSVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>';
-
-    // Tab icon (headset for tab button)
-    const tabIconSVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>';
-
-    // Close icon
-    const closeSVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
-
-    // Create backdrop
-    const backdrop = document.createElement('div');
-    backdrop.className = 'specialist-backdrop';
-    document.body.appendChild(backdrop);
-
-    // Create side tab
-    const tab = document.createElement('button');
-    tab.className = 'specialist-tab';
-    tab.setAttribute('aria-label', ui('spec_tab'));
-    tab.innerHTML = tabIconSVG + ' ' + ui('spec_tab');
-    document.body.appendChild(tab);
-
-    // Create panel
-    const panel = document.createElement('div');
-    panel.className = 'specialist-panel';
-    panel.innerHTML = `
-        <div class="specialist-panel-header">
-            <h4>${ui('spec_tab')}</h4>
-            <button class="specialist-panel-close" aria-label="${ui('spec_close')}">${closeSVG}</button>
-        </div>
-        <div class="specialist-panel-body">
-            <p>${ui('spec_text')}</p>
-
-            <a href="mailto:info@ustechinnovations.com" class="specialist-contact-item">
-                <span class="specialist-contact-icon">${emailSVG}</span>
-                <span>
-                    <span class="specialist-contact-label">${ui('spec_email')}</span>
-                    <span class="specialist-contact-value">info@ustechinnovations.com</span>
-                </span>
-            </a>
-
-            <a href="https://www.linkedin.com/company/ustech-innovations-llc/about/" target="_blank" rel="noopener noreferrer" class="specialist-contact-item">
-                <span class="specialist-contact-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63 1.63-.73 1.63-1.63-.73-1.63-1.63-1.63Z"/></svg>
-                </span>
-                <span>
-                    <span class="specialist-contact-label">LinkedIn</span>
-                    <span class="specialist-contact-value">USTECH Innovations</span>
-                </span>
-            </a>
-
-            <a href="contact.html" class="specialist-panel-cta">
-                ${headsetSVG}&nbsp;&nbsp;${ui('spec_cta')}
-            </a>
-        </div>
-    `;
-    document.body.appendChild(panel);
-
-    // Open / Close logic
-    function openPanel() {
-        panel.classList.add('open');
-        tab.classList.add('hidden');
-        backdrop.classList.add('active');
-    }
-
-    function closePanel() {
-        panel.classList.remove('open');
-        tab.classList.remove('hidden');
-        backdrop.classList.remove('active');
-    }
-
-    tab.addEventListener('click', openPanel);
-    panel.querySelector('.specialist-panel-close').addEventListener('click', closePanel);
-    backdrop.addEventListener('click', closePanel);
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && panel.classList.contains('open')) {
-            closePanel();
-        }
-    });
-})();
+// 11.11.2026: 'Talk to a Specialist' yan sekmesi ve kaydirma CTA'si kaldirildi (USTECH Asistani ayni isi yapiyor).
+// Silinen kod: _arsiv/uzman_sekmesi_20261111.js
 
 // =====================================================================
-//  Global Scroll-Triggered CTA Slide-in Widget (auto-injected)
+// 19. Erisilebilirlik (11.11.2026): icerige atla, menu rolleri, klavyeyle acilir menuler.
+// Calisma zamaninda eklenir; bloglar dahil tum sayfalarda aynidir.
 // =====================================================================
-(function() {
-    function initScrollCTA() {
-        // Don't show on contact page or if user dismissed in this session
-        if (window.location.pathname.indexOf('contact.html') !== -1) return;
-        if (sessionStorage.getItem('ustech_scroll_cta_closed') === '1') return;
-        if (document.querySelector('.ustech-scroll-cta')) return;
-
-        var lang = (typeof detectCurrentLang === 'function') ? detectCurrentLang() : 'en';
-        var contactHref = 'contact.html';
-        if (lang !== 'en' && window.location.pathname.indexOf('/' + lang + '/') === -1) {
-            contactHref = lang + '/contact.html';
+(function () {
+    function kur() {
+        var main = document.querySelector('main') || document.querySelector('.main-content');
+        if (main && !document.querySelector('.skip-link')) {
+            if (!main.id) main.id = 'main-content';
+            main.setAttribute('tabindex', '-1');
+            var atla = document.createElement('a');
+            atla.className = 'skip-link';
+            atla.href = '#' + main.id;
+            atla.textContent = ui('skip_link');
+            atla.addEventListener('click', function (e) {
+                e.preventDefault();
+                main.focus({ preventScroll: true });
+                main.scrollIntoView();
+            });
+            document.body.insertBefore(atla, document.body.firstChild);
         }
 
-        var ctaEl = document.createElement('div');
-        ctaEl.className = 'ustech-scroll-cta';
-        ctaEl.setAttribute('role', 'complementary');
-        ctaEl.setAttribute('aria-label', ui('cta_title'));
+        var nav = document.querySelector('header .nav-container');
+        if (nav) {
+            nav.setAttribute('role', 'navigation');
+            nav.setAttribute('aria-label', ui('main_nav'));
+        }
 
-        ctaEl.innerHTML = `
-            <button class="ustech-scroll-cta-close" aria-label="${ui('spec_close')}">&times;</button>
-            <div class="ustech-scroll-cta-badge">
-                <span class="ustech-scroll-cta-badge-dot"></span>
-                <span>${ui('cta_badge')}</span>
-            </div>
-            <h4 class="ustech-scroll-cta-title">${ui('cta_title')}</h4>
-            <p class="ustech-scroll-cta-desc">${ui('cta_desc')}</p>
-            <a href="${contactHref}" class="ustech-scroll-cta-btn">
-                <span>${ui('cta_btn')}</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </a>
-        `;
+        var dugme = document.querySelector('.nav-toggle');
+        var liste = document.querySelector('.nav-links');
+        if (dugme && liste) {
+            dugme.setAttribute('aria-expanded', 'false');
+            dugme.addEventListener('click', function () {
+                setTimeout(function () {
+                    dugme.setAttribute('aria-expanded', liste.classList.contains('active') ? 'true' : 'false');
+                }, 0);
+            });
+        }
 
-        document.body.appendChild(ctaEl);
-
-        var closeBtn = ctaEl.querySelector('.ustech-scroll-cta-close');
-        var isShown = false;
-
-        function handleScroll() {
-            if (isShown || sessionStorage.getItem('ustech_scroll_cta_closed') === '1') return;
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            if (docHeight <= 0) return;
-            var scrollPct = scrollTop / docHeight;
-
-            // Trigger only when visitor reaches 1/3 (35%) of the page depth
-            if (scrollPct >= 0.35 && scrollTop >= 650) {
-                isShown = true;
-                ctaEl.classList.add('is-visible');
-                window.removeEventListener('scroll', handleScroll);
+        Array.prototype.forEach.call(document.querySelectorAll('.nav-item.has-dropdown'), function (item) {
+            var link = item.querySelector('.nav-link');
+            var menu = item.querySelector('.dropdown-menu');
+            if (!link || !menu) return;
+            var kapaliTut = false;
+            link.setAttribute('aria-haspopup', 'true');
+            link.setAttribute('aria-expanded', 'false');
+            if (link.classList.contains('lang-toggle')) {
+                link.setAttribute('role', 'button');
+                link.setAttribute('aria-label', ui('lang_select'));
             }
-        }
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        // Initial check after 600ms in case user is already scrolled
-        setTimeout(handleScroll, 600);
-
-        closeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            ctaEl.classList.remove('is-visible');
-            ctaEl.classList.add('is-dismissed');
-            sessionStorage.setItem('ustech_scroll_cta_closed', '1');
+            function ac(v) {
+                item.classList.toggle('kb-open', v);
+                link.setAttribute('aria-expanded', v ? 'true' : 'false');
+            }
+            function ogeler() {
+                return Array.prototype.slice.call(menu.querySelectorAll('a'));
+            }
+            item.addEventListener('mouseenter', function () { link.setAttribute('aria-expanded', 'true'); });
+            item.addEventListener('mouseleave', function () {
+                if (!item.classList.contains('kb-open')) link.setAttribute('aria-expanded', 'false');
+            });
+            item.addEventListener('focusin', function () { if (!kapaliTut) ac(true); });
+            item.addEventListener('focusout', function (e) {
+                if (!item.contains(e.relatedTarget)) { kapaliTut = false; ac(false); }
+            });
+            link.addEventListener('click', function () {
+                // mobilde mevcut kod .active sinifini degistirir; durumu ondan oku
+                setTimeout(function () {
+                    if (window.innerWidth <= 768) link.setAttribute('aria-expanded', item.classList.contains('active') ? 'true' : 'false');
+                }, 0);
+            });
+            item.addEventListener('keydown', function (e) {
+                var o = ogeler();
+                var i = o.indexOf(document.activeElement);
+                if (e.key === 'Escape') {
+                    kapaliTut = true;
+                    ac(false);
+                    link.focus();
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    kapaliTut = false;
+                    ac(true);
+                    (o[i + 1] || o[0]).focus();
+                } else if (e.key === 'ArrowUp' && i >= 0) {
+                    e.preventDefault();
+                    (o[i - 1] || link).focus();
+                }
+            });
         });
     }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initScrollCTA);
-    } else {
-        initScrollCTA();
-    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', kur);
+    else kur();
 })();
-
-

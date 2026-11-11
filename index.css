@@ -8363,3 +8363,20 @@ footer .footer-4 .footer-left {
   .hero-device-txt { padding: 0.35rem 0.4rem 0.4rem; }
 }
 /* /hero-mobil */
+
+/* erisilebilirlik (11.11.2026, app.js bolum 19) */
+.skip-link { position: absolute; left: 12px; top: -80px; z-index: 100001; background: #0a0b10; color: #ffffff;
+  padding: 0.65rem 1.1rem; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: top 0.15s ease; }
+.skip-link:focus { top: 12px; outline: 2px solid #38b6ff; outline-offset: 2px; }
+html[dir="rtl"] .skip-link { left: auto; right: 12px; }
+main:focus { outline: none; }
+.nav-link:focus-visible, .dropdown-item:focus-visible, .nav-toggle:focus-visible { outline: 2px solid #38b6ff; outline-offset: 3px; border-radius: 4px; }
+@media (min-width: 769px) {
+  .nav-item.kb-open .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+}
+/* /erisilebilirlik */
+
+/* hero-sub-2 (11.11.2026): cok kisa telefon ekraninda alt basligin ikinci cumlesi gizlenir, cihaz seridi sigar */
+@media (max-width: 768px) and (max-height: 700px) {
+  .laser-hero .hero-sub-2 { display: none; }
+}
