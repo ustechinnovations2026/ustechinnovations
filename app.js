@@ -4035,6 +4035,7 @@ document.addEventListener('DOMContentLoaded', initLaserAnimation);
 (function () {
     function kur() {
         var ogeler = Array.prototype.slice.call(document.querySelectorAll('.ya-galeri-oge[href]'));
+        Array.prototype.forEach.call(document.querySelectorAll('.ya-galeri-serit'), seritKur);
         if (ogeler.length) {
             var kutu = null, resim, sayac, sira = 0, donus = null, x0 = null;
             var OK_SOL = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>';
@@ -4118,6 +4119,49 @@ document.addEventListener('DOMContentLoaded', initLaserAnimation);
         } else {
             Array.prototype.forEach.call(dongu, function (v) { v.setAttribute('controls', ''); });
         }
+    }
+    // galeri seridi: fareyle surukleme + yanlardaki oklar (ana sayfa "Our Solutions" seridi gibi)
+    function seritKur(serit) {
+        var kap = serit.parentNode, basla = null, ilk = 0, surukledi = false;
+        var SOL = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>';
+        var SAG = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+        function adim() { var o = serit.querySelector('.ya-galeri-oge'); return o ? o.offsetWidth + 24 : 460; }
+        function ok(sinif, ad, ic, yon) {
+            var b = document.createElement('button');
+            b.type = 'button'; b.className = 'blog-slider-nav-btn ya-galeri-ok ' + sinif; b.setAttribute('aria-label', ad); b.innerHTML = ic;
+            b.addEventListener('click', function () { serit.scrollLeft += yon * adim(); });
+            kap.appendChild(b);
+            return b;
+        }
+        var once = ok('ya-galeri-ok-once', ui('gal_prev'), SOL, -1);
+        var sonra = ok('ya-galeri-ok-sonra', ui('gal_next'), SAG, 1);
+        function durum() {
+            var en = serit.scrollWidth - serit.clientWidth;
+            once.disabled = serit.scrollLeft <= 5;
+            sonra.disabled = serit.scrollLeft >= en - 5;
+        }
+        serit.addEventListener('scroll', durum, { passive: true });
+        window.addEventListener('resize', durum);
+        setTimeout(durum, 100);
+        serit.addEventListener('mousedown', function (e) {
+            if (e.button !== 0) return;
+            basla = e.pageX; ilk = serit.scrollLeft; surukledi = false;
+            serit.classList.add('ya-surukle');
+        });
+        window.addEventListener('mousemove', function (e) {
+            if (basla === null) return;
+            var dx = e.pageX - basla;
+            if (Math.abs(dx) > 8) surukledi = true;
+            if (surukledi) { e.preventDefault(); serit.scrollLeft = ilk - dx; }
+        });
+        window.addEventListener('mouseup', function () {
+            if (basla === null) return;
+            basla = null; serit.classList.remove('ya-surukle');
+        });
+        // surukleme bitince fotograf acilmasin
+        serit.addEventListener('click', function (e) {
+            if (surukledi) { e.preventDefault(); e.stopPropagation(); surukledi = false; }
+        }, true);
     }
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', kur);
     else kur();

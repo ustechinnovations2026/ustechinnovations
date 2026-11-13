@@ -8514,10 +8514,24 @@ main:focus { outline: none; }
 .ya-alan-bas .ya-onizleme { display: table; margin-left: auto; margin-right: auto; }
 
 /* 1. galeri */
-.ya-galeri { padding-top: 3.25rem; padding-bottom: 3.25rem; border-top: 1px solid var(--border-color); }
-.ya-galeri-izgara { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
-.ya-galeri-oge { position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color);
-  background: #f3f4f6; cursor: zoom-in; }
+section.section.ya-galeri { padding-top: 3.25rem; padding-bottom: 3.25rem; padding-left: 0 !important; padding-right: 0 !important; border-top: 1px solid var(--border-color); }
+/* 13.11.2026: ana sayfadaki "Our Solutions" urun seridi gibi tam genislikte yana kayan serit (surukle / parmak / oklar) */
+.ya-galeri-kap { position: relative; }
+.ya-galeri-serit { width: 100%; overflow-x: auto; cursor: grab; direction: ltr; padding: 0.5rem 4% 1rem 4%; box-sizing: border-box;
+  scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: smooth; overscroll-behavior-x: contain; }
+.ya-galeri-serit::-webkit-scrollbar { display: none; }
+.ya-galeri-serit.ya-surukle { cursor: grabbing; scroll-behavior: auto; }
+.ya-galeri-iz { display: flex; gap: 1.5rem; width: max-content; list-style: none; margin: 0; padding: 0 4% 0 0; }
+.ya-galeri-iz li { flex-shrink: 0; display: flex; }
+.ya-galeri-oge { position: relative; display: block; width: 440px; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color);
+  background: #f3f4f6; cursor: zoom-in; box-shadow: var(--shadow-sm); user-select: none; -webkit-user-drag: none;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease; }
+.ya-galeri-oge:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.ya-galeri-ok { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; }
+.ya-galeri-ok:hover { transform: translateY(calc(-50% - 2px)); }
+.ya-galeri-ok[disabled] { opacity: 0.35; pointer-events: none; }
+.ya-galeri-ok-once { left: 1.25%; }
+.ya-galeri-ok-sonra { right: 1.25%; }
 .ya-galeri-oge img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
 .ya-galeri-oge:hover img, .ya-galeri-oge:focus-visible img { transform: scale(1.04); }
 .ya-galeri-oge:focus-visible { outline: 2px solid #38b6ff; outline-offset: 3px; }
@@ -8591,8 +8605,10 @@ body.ya-isik-acik { overflow: hidden; }
   .ya-video-izgara { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
-  .ya-galeri { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-  .ya-galeri-izgara { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  section.section.ya-galeri { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .ya-galeri-oge { width: 280px; }
+  .ya-galeri-iz { gap: 1rem; }
+  .ya-galeri-ok { display: none; }
   .ya-video-izgara { grid-template-columns: minmax(0, 1fr); }
   .ya-referans-liste { gap: 2.25rem; padding: 0 1.1rem; }
   .ya-referans-liste img { height: 34px; max-width: 130px; }
