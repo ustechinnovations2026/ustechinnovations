@@ -41,6 +41,7 @@ try {
         // 3. Hide "Download ... Brochure/Guide" buttons on industry pages
         document.querySelectorAll('a.btn').forEach(function(btn) {
             var text = btn.textContent.trim().toLowerCase();
+            if (btn.classList.contains('ya-sektor-brosur')) return; // 13.11.2026: sektor brosuru dugmesi (gercek PDF) gizlenmez
             if (text.indexOf('download') === 0 && (
                 text.indexOf('brochure') !== -1 ||
                 text.indexOf('guide') !== -1 ||
