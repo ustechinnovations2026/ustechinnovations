@@ -93,6 +93,7 @@ var SUPPORTED_LANGS = ['en', 'tr', 'fr', 'de', 'es', 'ar', 'zh'];
 // =====================================================================
 var UI_I18N = {
   en: {
+    gal_prev: 'Previous photo', gal_next: 'Next photo', gal_close: 'Close gallery',
     skip_link: 'Skip to main content', lang_select: 'Select language', main_nav: 'Main navigation',
     search_ph: 'Search pages, products, blogs...', search_ph_short: 'Search website...',
     close_search: 'Close Search', popular: 'Popular Searches', popular_badge: 'Popular',
@@ -126,6 +127,7 @@ var UI_I18N = {
     locale: "en-US"
   },
   tr: {
+    gal_prev: 'Önceki fotoğraf', gal_next: 'Sonraki fotoğraf', gal_close: 'Galeriyi kapat',
     skip_link: 'İçeriğe atla', lang_select: 'Dil seçin', main_nav: 'Ana menü',
     search_ph: 'Sayfa, ürün, blog ara...', search_ph_short: 'Sitede ara...',
     close_search: 'Aramayı kapat', popular: 'Popüler Aramalar', popular_badge: 'Popüler',
@@ -159,6 +161,7 @@ var UI_I18N = {
     locale: "tr-TR"
   },
   fr: {
+    gal_prev: 'Photo précédente', gal_next: 'Photo suivante', gal_close: 'Fermer la galerie',
     skip_link: 'Aller au contenu principal', lang_select: 'Choisir la langue', main_nav: 'Navigation principale',
     search_ph: 'Rechercher pages, produits, blogs...', search_ph_short: 'Rechercher sur le site...',
     close_search: 'Fermer la recherche', popular: 'Recherches populaires', popular_badge: 'Populaire',
@@ -192,6 +195,7 @@ var UI_I18N = {
     locale: "fr-FR"
   },
   de: {
+    gal_prev: 'Vorheriges Foto', gal_next: 'Nächstes Foto', gal_close: 'Galerie schließen',
     skip_link: 'Zum Hauptinhalt springen', lang_select: 'Sprache wählen', main_nav: 'Hauptnavigation',
     search_ph: 'Seiten, Produkte, Blogs durchsuchen...', search_ph_short: 'Website durchsuchen...',
     close_search: 'Suche schließen', popular: 'Beliebte Suchanfragen', popular_badge: 'Beliebt',
@@ -225,6 +229,7 @@ var UI_I18N = {
     locale: "de-DE"
   },
   es: {
+    gal_prev: 'Foto anterior', gal_next: 'Foto siguiente', gal_close: 'Cerrar galería',
     skip_link: 'Saltar al contenido principal', lang_select: 'Seleccionar idioma', main_nav: 'Navegación principal',
     search_ph: 'Buscar páginas, productos, blogs...', search_ph_short: 'Buscar en el sitio...',
     close_search: 'Cerrar búsqueda', popular: 'Búsquedas populares', popular_badge: 'Popular',
@@ -258,6 +263,7 @@ var UI_I18N = {
     locale: "es-ES"
   },
   ar: {
+    gal_prev: 'الصورة السابقة', gal_next: 'الصورة التالية', gal_close: 'إغلاق المعرض',
     skip_link: 'تخطَّ إلى المحتوى الرئيسي', lang_select: 'اختر اللغة', main_nav: 'التنقل الرئيسي',
     search_ph: 'البحث في الصفحات والمنتجات...', search_ph_short: 'البحث في الموقع...',
     close_search: 'إغلاق البحث', popular: 'عمليات البحث الشائعة', popular_badge: 'شائع',
@@ -291,6 +297,7 @@ var UI_I18N = {
     locale: "ar-u-nu-latn"
   },
   zh: {
+    gal_prev: '上一张照片', gal_next: '下一张照片', gal_close: '关闭图片库',
     skip_link: '跳到主要内容', lang_select: '选择语言', main_nav: '主导航',
     search_ph: '搜索页面、产品、技术博客...', search_ph_short: '搜索网站...',
     close_search: '关闭搜索', popular: '热门搜索', popular_badge: '热门',
@@ -2975,9 +2982,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const messageLabel = document.getElementById('message-label');
         const messageTextarea = document.getElementById('form-message');
 
+        // 13.11.2026 HATA DUZELTMESI: "Sektor" (industry) zorunlu ama yalniz Satis sekmesinde gorunuyor.
+        // Destek / Genel sekmesinde gizli zorunlu alan yuzunden tarayici gonderimi SESSIZCE durduruyordu.
+        // Artik gizli sekmedeki alanlarin "required" ozelligi kapanir, sekmeye donulunce geri gelir.
+        function zorunluluguAyarla(hedef) {
+            const grup = { sales: '.sales-field', support: '.support-field', general: '.general-field' };
+            Object.keys(grup).forEach(k => {
+                document.querySelectorAll(grup[k] + ' [required], ' + grup[k] + ' [data-zorunlu]').forEach(el => {
+                    el.setAttribute('data-zorunlu', '1');
+                    el.required = (k === hedef);
+                });
+            });
+        }
+        zorunluluguAyarla((formTypeInput && formTypeInput.value) || 'sales');
+
         contactTabs.forEach(btn => {
             btn.addEventListener('click', () => {
                 const target = btn.dataset.tab;
+                zorunluluguAyarla(target);
 
                 // Update active tab buttons styling
                 contactTabs.forEach(b => {
@@ -3076,6 +3098,24 @@ document.addEventListener('DOMContentLoaded', () => {
             const web3FormsAccessKey = "2791c5d7-ecdd-4b3e-90fa-f6e33964a84d"; 
             
             formData.append("access_key", web3FormsAccessKey);
+
+            // 13.11.2026: e-posta konu satiri (kullanici istegi). Gelen kutusunda talep turu,
+            // urun/konu, kisi ve sayfa dili gorunur; Zoho'da konuya gore filtre kurulabilir.
+            // Bicim: "USTECH Web – Sales: ProLine 2550 (Ad, Firma) [TR]"
+            (function () {
+                const g = (k) => String(formData.get(k) || '').trim();
+                const tur = g('inquiry_type') || 'sales';
+                const KAT = { hardware: 'Hardware', software: 'Software', calibration: 'Calibration', maintenance: 'Maintenance', other: 'Other' };
+                const GEN = { distributor: 'Distributor / Partnership', careers: 'Careers', pr: 'Media / PR', other: 'Other' };
+                let konu;
+                if (tur === 'support') konu = 'Support: ' + (KAT[g('support_category')] || 'Other');
+                else if (tur === 'general') konu = 'General: ' + (GEN[g('partner_inquiry_type')] || 'Other');
+                else konu = 'Sales: ' + (g('product_interest') || 'Product not specified');
+                const kisi = [g('name'), g('company')].filter(Boolean).join(', ');
+                const dil = (document.documentElement.lang || 'en').slice(0, 2).toUpperCase();
+                formData.append('subject', 'USTECH Web – ' + konu + (kisi ? ' (' + kisi + ')' : '') + ' [' + dil + ']');
+                formData.append('page_language', dil);
+            })();
 
             // Convert to JSON object for sending
             const object = Object.fromEntries(formData);
@@ -3986,3 +4026,100 @@ document.addEventListener('DOMContentLoaded', initLaserAnimation);
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', kur);
     else kur();
 })();
+
+// YENI-ALANLAR:BAS (i18n/yeni_alanlar_stil.py uretir; elle duzenleme)
+// =====================================================================
+// 20. Yeni alanlar (12.11.2026): urun galerisi buyutme penceresi + kisa video donguleri.
+// Alanlarin HTML'i i18n/yeni_alanlar.py ile uretilir; veri yoksa sayfada hic yer almaz.
+// =====================================================================
+(function () {
+    function kur() {
+        var ogeler = Array.prototype.slice.call(document.querySelectorAll('.ya-galeri-oge[href]'));
+        if (ogeler.length) {
+            var kutu = null, resim, sayac, sira = 0, donus = null, x0 = null;
+            var OK_SOL = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>';
+            var OK_SAG = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>';
+            var CARPI = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>';
+            function dugme(sinif, ad, ic, is) {
+                var b = document.createElement('button');
+                b.type = 'button'; b.className = sinif; b.setAttribute('aria-label', ad); b.innerHTML = ic;
+                b.addEventListener('click', function (e) { e.stopPropagation(); is(); });
+                return b;
+            }
+            function goster(i) {
+                sira = (i + ogeler.length) % ogeler.length;
+                var kucuk = ogeler[sira].querySelector('img');
+                resim.src = ogeler[sira].getAttribute('href');
+                resim.alt = kucuk ? kucuk.alt : '';
+                sayac.textContent = (sira + 1) + ' / ' + ogeler.length;
+            }
+            function kapat() {
+                if (!kutu || kutu.hidden) return;
+                kutu.hidden = true;
+                document.body.classList.remove('ya-isik-acik');
+                if (donus) donus.focus();
+            }
+            function olustur() {
+                kutu = document.createElement('div');
+                kutu.className = 'ya-isik'; kutu.hidden = true;
+                kutu.setAttribute('role', 'dialog'); kutu.setAttribute('aria-modal', 'true');
+                resim = document.createElement('img');
+                sayac = document.createElement('div'); sayac.className = 'ya-isik-sayac';
+                var k = dugme('ya-isik-kapat', ui('gal_close'), CARPI, kapat);
+                kutu.appendChild(resim); kutu.appendChild(sayac); kutu.appendChild(k);
+                if (ogeler.length > 1) {
+                    kutu.appendChild(dugme('ya-isik-once', ui('gal_prev'), OK_SOL, function () { goster(sira - 1); }));
+                    kutu.appendChild(dugme('ya-isik-sonra', ui('gal_next'), OK_SAG, function () { goster(sira + 1); }));
+                }
+                kutu.addEventListener('click', function (e) { if (e.target === kutu) kapat(); });
+                kutu.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') kapat();
+                    else if (e.key === 'ArrowLeft') goster(sira - 1);
+                    else if (e.key === 'ArrowRight') goster(sira + 1);
+                    else if (e.key === 'Tab') {
+                        var d = Array.prototype.slice.call(kutu.querySelectorAll('button'));
+                        var n = d.indexOf(document.activeElement);
+                        e.preventDefault();
+                        d[(n + (e.shiftKey ? -1 : 1) + d.length) % d.length].focus();
+                    }
+                });
+                kutu.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+                kutu.addEventListener('touchend', function (e) {
+                    if (x0 === null) return;
+                    var dx = e.changedTouches[0].clientX - x0; x0 = null;
+                    if (Math.abs(dx) > 45 && ogeler.length > 1) goster(sira + (dx < 0 ? 1 : -1));
+                }, { passive: true });
+                document.body.appendChild(kutu);
+            }
+            ogeler.forEach(function (a, i) {
+                a.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (!kutu) olustur();
+                    donus = a;
+                    goster(i);
+                    kutu.hidden = false;
+                    document.body.classList.add('ya-isik-acik');
+                    kutu.querySelector('.ya-isik-kapat').focus();
+                });
+            });
+        }
+
+        // kisa donguler: gorunur olunca oynar, cikinca durur (GIF yerine; sessiz)
+        var dongu = document.querySelectorAll('video[data-ya-dongu]');
+        if (dongu.length && 'IntersectionObserver' in window &&
+            !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+            var goz = new IntersectionObserver(function (kayit) {
+                kayit.forEach(function (k) {
+                    if (k.isIntersecting) { var p = k.target.play(); if (p && p.catch) p.catch(function () {}); }
+                    else k.target.pause();
+                });
+            }, { threshold: 0.35 });
+            Array.prototype.forEach.call(dongu, function (v) { goz.observe(v); });
+        } else {
+            Array.prototype.forEach.call(dongu, function (v) { v.setAttribute('controls', ''); });
+        }
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', kur);
+    else kur();
+})();
+// YENI-ALANLAR:SON
