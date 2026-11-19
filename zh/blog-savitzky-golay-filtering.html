@@ -231,8 +231,8 @@
 <h2>导数、基线与重叠谱带</h2>
 <p>同一最小二乘拟合还能给出光谱的导数：拟合多项式在窗口中心的一阶和二阶导数同样是以固定权重进行的卷积 <a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>。使用导数是因为它所去除的和所揭示的内容 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>：</p>
 <ul>
-<li><strong>一阶导数：</strong>消除恒定（加性）基线偏移，并显示光谱的局部斜率。</li>
-<li><strong>二阶导数：</strong>同时消除恒定偏移和线性基线斜率；吸收峰极大值表现为负向谱带，有助于分离重叠的谱峰特征 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</li>
+<li>一阶导数可消除恒定（加性）基线偏移，并显示光谱的局部斜率。</li>
+<li>二阶导数可同时消除恒定偏移和线性基线斜率；吸收峰极大值表现为负向谱带，有助于分离重叠的谱峰特征 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a><a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</li>
 </ul>
 <p>求导会放大高频噪声，因此导数与平滑在同一步骤中一起计算，窗口宽度也因此至关重要。Luo 等人表明，Savitzky-Golay 微分器可获得的对比度和分辨率取决于谱峰特征宽度与滤波器长度之比，长滤波器不能很好地保留导数中的细小细节 <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</p>
 <h2>窗口宽度与多项式阶数的选择</h2>

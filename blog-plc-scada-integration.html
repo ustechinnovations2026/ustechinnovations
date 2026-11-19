@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="The integration landscape for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.">
+<meta name="description" content="The integration options for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.">
 <meta name="keywords" content="FT-NIR PLC integration, NIR analyzer SCADA, inline analyzer automation, process NIR Ethernet">
 <title>How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview | USTECH Innovations</title>
 <link rel="stylesheet" href="index.css?v=1.2.1">
@@ -65,7 +65,7 @@
 "@context": "https://schema.org",
 "@type": "BlogPosting", "inLanguage": "en",
 "headline": "How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview",
-"description": "The integration landscape for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.",
+"description": "The integration options for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.",
 "url": "https://www.ustechinnovations.com/blog-plc-scada-integration.html",
 "datePublished": "2026-07-10",
 "dateModified": "2026-10-27",
@@ -120,7 +120,7 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="USTECH Innovations">
     <meta property="og:title" content="How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview | USTECH Innovations">
-    <meta property="og:description" content="The integration landscape for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.">
+    <meta property="og:description" content="The integration options for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.">
     <meta property="og:url" content="https://www.ustechinnovations.com/blog-plc-scada-integration.html">
     <meta property="og:image" content="https://www.ustechinnovations.com/images/og/blog-plc-scada-integration.jpg">
     <meta property="og:image:width" content="1200">
@@ -135,7 +135,7 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview | USTECH Innovations">
-    <meta name="twitter:description" content="The integration landscape for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.">
+    <meta name="twitter:description" content="The integration options for inline NIR results: field protocols from the current loop to OPC UA, the value-status-timestamp record, where latency comes from, and how alarms, historians and cybersecurity are handled.">
     <meta name="twitter:image" content="https://www.ustechinnovations.com/images/og/blog-plc-scada-integration.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
@@ -219,7 +219,7 @@ Espa&#241;ol
 <div class="blog-post-header">
 <span class="blog-post-meta">Guide &mdash; July 10, 2026 &mdash; 4 min read</span>
 <h1 class="blog-post-title">How NIR Analyzers Integrate with PLC and SCADA Systems: A Practical Overview</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Which protocols carry a near-infrared analyzer&rsquo;s results into the plant control system, what a result record must contain before a PLC may act on it, where latency comes from, and how alarms, historians and cybersecurity are handled &mdash; with the governing standards and literature.</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">Which protocols carry a near-infrared analyzer&rsquo;s results into the plant control system, what a result record must contain before a PLC may act on it, where latency comes from, and how alarms, historians and cybersecurity are handled, with the governing standards and literature.</p>
 </div>
 <div class="blog-post-content">
 <h2>Where the analyzer sits in the automation hierarchy</h2>
@@ -233,15 +233,15 @@ Espa&#241;ol
 <h2>Latency: measurement, sampling and publishing</h2>
 <p>Latency is the sum of spectral acquisition, model evaluation and communication. In OPC UA the communication part is set by the sampling interval at which the server checks the source and the publishing interval at which notifications are delivered; the specification notes that an unsynchronised, slower update cycle of the source adds further delay <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>. In Modbus the equivalent is the client&rsquo;s polling period <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>. Analyzer values thus arrive late and at variable intervals; Griesing-Scheiwe et al. show that estimators assuming constant delay and sampling time can become unstable when these vary <a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>. Three practice points follow:</p>
 <ul>
-<li><strong>Align polling or publishing with the analyzer cycle.</strong> Reading faster than the analyzer produces results only re-reads the same value; the source timestamp, not the poll, identifies a new measurement <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
-<li><strong>Transport status with every value.</strong> The PLC should hold its last good value or fall back to a defined mode when the status is Bad or Uncertain, or when the device reports failure <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</li>
-<li><strong>Document scaling, units and data types.</strong> Modbus registers carry none of these, so the interface specification must <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</li>
+<li>Align polling or publishing with the analyzer cycle. Reading faster than the analyzer produces results only re-reads the same value; the source timestamp, not the poll, identifies a new measurement <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>.</li>
+<li>Transport status with every value. The PLC should hold its last good value or fall back to a defined mode when the status is Bad or Uncertain, or when the device reports failure <a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>.</li>
+<li>Document scaling, units and data types. Modbus registers carry none of these, so the interface specification must <a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>.</li>
 </ul>
 <h2>Alarms, historians and cybersecurity</h2>
 <p>IEC 62682 sets out principles for managing process-industry alarm systems, counts the alarm historian and performance metrics as part of the alarm system, and defines its purpose as notifying operators of abnormal conditions that need a response <a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>. Analyzer composition limits should therefore be rationalised with the plant&rsquo;s other alarms, and results should be stored with status and timestamp in the plant historian, consistent with the Level 3 functions of ISA-95 <a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a> and the PAT guidance on batch records <a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>.</p>
 <p>On the network, IEC 62443-3-3 defines system security requirements and security levels, applied through the zones and conduits of the system to set a target level for each asset <a href="#ref-14" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[14]</a>. An analyzer in its own zone, with a conduit carrying only the agreed tags, follows that model; OPC UA supports it with application and user authentication and signed, encrypted messages <a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>.</p>
-<h2>How USTECH approaches integration</h2>
-<p>USTECH&rsquo;s <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> software links USTECH analyzers to the plant&rsquo;s PLC and SCADA for live dashboards, alarms and automatic setpoint control, communicating with PLCs through an Ethernet-based HTTP interface; the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> and <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> supply the measurements and <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> the calibration models. The right status mapping and update interval for a given control system are settled with the plant&rsquo;s automation engineers in a feasibility study with your own samples.</p>
+<h2>Connecting USTECH analyzers to the control system</h2>
+<p>USTECH&rsquo;s <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> software links USTECH analyzers to the plant&rsquo;s PLC and SCADA for live dashboards, alarms and automatic setpoint control, communicating with PLCs through an Ethernet-based HTTP interface; the <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> and <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> supply the measurements and <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> the calibration models. The right status mapping and update interval for a given control system are settled with the plant&rsquo;s automation engineers during a feasibility study run on samples from your own process.</p>
 <div class="blog-post-references">
 <h3>References</h3>
 <ul>

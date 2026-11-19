@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="#ffffff" name="theme-color"/>
-<meta content="在线 NIR 结果的集成全景：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。" name="description"/>
+<meta content="在线 NIR 结果的集成方式：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。" name="description"/>
 <meta content="FT-NIR PLC 集成、NIR 分析仪 SCADA、在线分析仪自动化、过程 NIR 以太网" name="keywords"/>
 <title>近红外分析仪如何与PLC和SCADA系统集成：实用概述 | USTECH Innovations</title>
 <link href="../index.css?v=1.2.1" rel="stylesheet"/>
@@ -63,7 +63,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting", "inLanguage": "zh",
   "headline": "近红外分析仪如何与PLC和SCADA系统集成：实用概述",
-  "description": "在线 NIR 结果的集成全景：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。",
+  "description": "在线 NIR 结果的集成方式：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。",
   "url": "https://www.ustechinnovations.com/zh/blog-plc-scada-integration.html",
   "datePublished": "2026-07-10",
   "dateModified": "2026-10-27",
@@ -115,7 +115,7 @@
 <meta content="article" property="og:type"/>
 <meta content="USTECH Innovations" property="og:site_name"/>
 <meta content="近红外分析仪如何与PLC和SCADA系统集成：实用概述 | USTECH Innovations" property="og:title"/>
-<meta content="在线 NIR 结果的集成全景：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。" property="og:description"/>
+<meta content="在线 NIR 结果的集成方式：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。" property="og:description"/>
 <meta content="https://www.ustechinnovations.com/zh/blog-plc-scada-integration.html" property="og:url"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-plc-scada-integration.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
@@ -130,7 +130,7 @@
 <meta content="ar_SA" property="og:locale:alternate"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="近红外分析仪如何与PLC和SCADA系统集成：实用概述 | USTECH Innovations" name="twitter:title"/>
-<meta content="在线 NIR 结果的集成全景：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。" name="twitter:description"/>
+<meta content="在线 NIR 结果的集成方式：从电流环到 OPC UA 的现场协议、“数值—状态—时间戳”记录、延迟的来源，以及报警、历史数据库和网络安全的处理方式。" name="twitter:description"/>
 <meta content="https://www.ustechinnovations.com/images/og/blog-plc-scada-integration.jpg" name="twitter:image"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
@@ -220,7 +220,7 @@
 <div class="blog-post-header">
 <span class="blog-post-meta">指南 — 2026年7月10日 — 4 分钟阅读</span>
 <h1 class="blog-post-title">近红外分析仪如何与PLC和SCADA系统集成：实用概述</h1>
-<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">哪些协议将近红外分析仪的结果传入工厂控制系统，在 PLC 据以动作之前结果记录必须包含哪些内容，延迟从何而来，以及报警、历史数据库和网络安全如何处理&mdash;&mdash;并附相关标准与文献。</p>
+<p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6;">哪些协议将近红外分析仪的结果传入工厂控制系统，在 PLC 据以动作之前结果记录必须包含哪些内容，延迟从何而来，以及报警、历史数据库和网络安全如何处理，并附相关标准与文献。</p>
 </div>
 <div class="blog-post-content">
 <h2>分析仪在自动化层级中的位置</h2>
@@ -234,15 +234,15 @@
 <h2>延迟：测量、采样与发布</h2>
 <p>延迟是光谱采集、模型计算和通信三者之和。在 OPC UA 中，通信部分由服务器检查数据源的采样间隔和通知下发的发布间隔决定；规范指出，数据源更新周期若不同步且较慢，还会带来额外延迟<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。在 Modbus 中与之对应的是客户端的轮询周期<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。因此，分析仪数值到达较晚且间隔不定；Griesing-Scheiwe 等表明，假定延迟和采样时间恒定的估计器在二者变化时可能失稳<a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。由此得出三点实践要求：</p>
 <ul>
-<li><strong>使轮询或发布与分析仪周期相匹配。</strong>读取速度快于分析仪产生结果的速度，只会重复读取同一数值；标识新测量的是源时间戳，而不是轮询<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</li>
-<li><strong>每个数值都附带状态传输。</strong>当状态为 Bad 或 Uncertain，或设备报告故障时，PLC 应保持上一个有效值或切换到规定的模式<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。</li>
-<li><strong>将标度、单位和数据类型形成文档。</strong>Modbus 寄存器不携带这些信息，因此必须在接口规范中加以规定<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</li>
+<li>使轮询或发布与分析仪周期相匹配。读取速度快于分析仪产生结果的速度，只会重复读取同一数值；标识新测量的是源时间戳，而不是轮询<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a>。</li>
+<li>每个数值都附带状态传输。当状态为 Bad 或 Uncertain，或设备报告故障时，PLC 应保持上一个有效值或切换到规定的模式<a href="#ref-9" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[9]</a><a href="#ref-11" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[11]</a>。</li>
+<li>将标度、单位和数据类型形成文档。Modbus 寄存器不携带这些信息，因此必须在接口规范中加以规定<a href="#ref-5" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[5]</a>。</li>
 </ul>
 <h2>报警、历史数据库与网络安全</h2>
 <p>IEC 62682 规定了流程工业报警系统的管理原则，将报警历史记录和绩效指标纳入报警系统的组成部分，并将其目的定义为向操作人员通报需要响应的异常状况<a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。因此，分析仪的组成限值应与工厂其他报警一并进行合理化，结果应连同状态和时间戳存入工厂历史数据库，这与 ISA-95 第 3 层的功能<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>以及 PAT 指南关于批记录的要求<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>相一致。</p>
 <p>在网络方面，IEC 62443-3-3 定义了系统安全要求和安全等级，并通过系统的区域与管道加以实施，为每项资产设定目标等级<a href="#ref-14" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[14]</a>。将分析仪置于独立区域、仅经由传输约定标签的管道与外界相连，正符合这一模型；OPC UA 以应用程序与用户认证以及签名、加密的消息为其提供支持<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</p>
-<h2>USTECH 的集成做法</h2>
-<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件将 USTECH 分析仪与工厂的 PLC 和 SCADA 相连，实现实时看板、报警和设定值自动控制，并通过基于以太网的 HTTP 接口与 PLC 通信；测量由 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> 提供，定标模型由 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 提供。针对特定控制系统的合适状态映射和更新间隔，将在使用贵方样品的可行性研究中与工厂自动化工程师共同确定。</p>
+<h2>将 USTECH 分析仪接入控制系统</h2>
+<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件将 USTECH 分析仪与工厂的 PLC 和 SCADA 相连，实现实时看板、报警和设定值自动控制，并通过基于以太网的 HTTP 接口与 PLC 通信；测量由 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> 提供，定标模型由 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 提供。针对特定控制系统的合适状态映射和更新间隔，将在用贵方自身工艺样品开展的可行性研究中与工厂自动化工程师共同确定。</p>
 <div class="blog-post-references">
 <h3>参考文献</h3>
 <ul>
