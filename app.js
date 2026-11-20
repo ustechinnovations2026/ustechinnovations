@@ -2187,7 +2187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "knowledge.html",
             category: "Knowledge",
             keywords: "knowledge base overview technology theory blogs articles whitepapers guides",
-            snippet: "Access USTECH Innovations' knowledge base: learn about spectroscopy physics and read B2B case studies."
+            snippet: "Access USTECH Innovations' knowledge base: learn about spectroscopy physics and read articles and guides."
             },
             {
             title: "NIR Technology & Theory",
@@ -2200,8 +2200,8 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Blogs & Application Notes",
             url: "knowledge-blogs.html",
             category: "Knowledge",
-            keywords: "blog articles application notes case studies papers downloads whitepapers news",
-            snippet: "Read the latest industry insights, application case studies, and scientific articles from our experts."
+            keywords: "blog articles guides application notes papers news",
+            snippet: "Read articles and guides on NIR applications, calibration and process integration."
             },
             {
             title: "Calibration Transfer Between NIR Spectrometers: Methods and Feasibility",
@@ -2215,7 +2215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "blog-cattle-feed-waste.html",
             category: "Knowledge",
             keywords: "reducing ingredient waste cattle feed production inline NIR calibration soy protein",
-            snippet: "Read this commercial case study showing how inline NIR sensors optimized animal feed mixing and protein margins."
+            snippet: "Article on how inline NIR sensors can support animal feed mixing and protein control."
             },
             {
             title: "Introduction to PLS Regression in caliX Suite",
@@ -2236,7 +2236,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "blog-moisture-milk-powder.html",
             category: "Knowledge",
             keywords: "moisture milk powder dairy spray dryer exit inline NIR moisture control",
-            snippet: "Case study explaining how inline NIR standardization of milk powder spray dryer exit parameters prevents clogging and maximizes yield."
+            snippet: "Article on inline NIR monitoring of milk powder at the spray dryer exit."
             },
             {
             title: "Understanding Savitzky-Golay Filtering in Preprocessing",
@@ -2250,7 +2250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "blog-blend-uniformity-pharma.html",
             category: "Knowledge",
             keywords: "blend uniformity pharmaceutical blending powder RSD active ingredients pharma bin",
-            snippet: "B2B case study demonstrating real-time relative standard deviation monitoring inside pharmaceutical bin blenders."
+            snippet: "Article on real-time relative standard deviation monitoring in pharmaceutical bin blenders."
             },
             {
             title: "MEMS Comb-Drive Mechanical Durability in Industrial Environments",
@@ -2271,7 +2271,7 @@ document.addEventListener('DOMContentLoaded', () => {
             url: "blog-starch-extraction-milling.html",
             category: "Knowledge",
             keywords: "starch extraction milling wet corn extraction feed centrifuge processing yield",
-            snippet: "Industrial case study of starch yield enhancement and material control in wet-milling exit streams."
+            snippet: "Article on starch yield and material control in wet-milling streams."
             },
             {
             title: "Optical Fiber Interface Designs for Corrosive Chemical Reactors",
