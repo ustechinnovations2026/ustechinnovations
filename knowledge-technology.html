@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem Process Output</h4>
 </div>
-<p>Predicted values (protein, moisture, fat, etc.) are transmitted via ProChem to your PLC/SCADA system for real-time process control.</p>
+<p>Predicted values (protein, moisture, fat, etc.) are transmitted via ProChem to your plant PLC for real-time process control.</p>
 </div>
 </div>
 </div>
@@ -318,13 +318,13 @@
 </tr>
 <tr>
 <td class="feature-name">Process Integration</td>
-<td class="ustech-highlight"><strong>Native</strong>. ProChem connects directly to PLC/SCADA over an Ethernet-based interface.</td>
+<td class="ustech-highlight"><strong>Native</strong>. ProChem connects directly to the plant PLC over an Ethernet-based interface.</td>
 <td><strong>Limited</strong>. Typically requires custom middleware or third-party OPC servers for PLC connectivity.</td>
 <td><strong>Basic</strong>. Usually limited to analog output or proprietary protocols.</td>
 </tr>
 <tr>
 <td class="feature-name">Total Cost of Ownership</td>
-<td class="ustech-highlight"><strong>Optimized</strong>. Competitive hardware pricing, included calibration software, and minimal ongoing service requirements.</td>
+<td class="ustech-highlight"><strong>Optimized</strong>. Competitive hardware pricing, USTECH's own calibration software, and minimal ongoing service requirements.</td>
 <td><strong>Very High</strong>. Expensive hardware plus annual licenses for third-party chemometrics and integration software.</td>
 <td><strong>Moderate</strong>. Lower hardware cost, but limited capabilities require additional investments in software and support.</td>
 </tr>
@@ -479,7 +479,7 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 5rem;">
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">What is ProChem?</h3>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is the edge-computing software platform that runs directly at the production line level. It receives calibration models built in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> and applies them in real-time to incoming spectral scans from USTECH analyzers. The predicted chemical composition values are then communicated to factory PLC/SCADA systems through industrial communication protocols.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is the edge-computing software platform that runs directly at the production line level. It receives calibration models built in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> and applies them in real-time to incoming spectral scans from USTECH analyzers. The predicted chemical composition values are then passed to the factory PLC over an Ethernet-based HTTP interface.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem is designed for 24/7 unattended operation in demanding industrial environments. It manages instrument health monitoring, automatic reference scanning and spectral quality validation &mdash; all without requiring operator intervention.</p>
 <p style="color: var(--text-secondary); line-height: 1.7;">ProChem communicates with plant PLCs over an Ethernet-based interface to deliver measurement data exactly where your control logic needs it; the ProLine2550 connects through its HTTP interface over Ethernet (TCP/IP).</p>
 </div>
@@ -497,7 +497,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Real-Time Trending &amp; Visualization</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Live trend charts for all measured constituents with configurable alarm limits, moving averages, and SPC (Statistical Process Control) overlays.</p>
+<p style="color: rgba(255,255,255,0.85);">Live display of all measured constituents, with results that can be exported as reports.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -523,9 +523,9 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-<h4 style="color: #ffffff;">Remote Access &amp; Monitoring</h4>
+<h4 style="color: #ffffff;">Monitoring &amp; Reports</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Secure remote dashboard access via web browser. Monitor instrument health, review trends, and receive alarm notifications from anywhere.</p>
+<p style="color: rgba(255,255,255,0.85);">Monitor instrument status and review result trends; reports can be exported and shared.</p>
 </div>
 </div>
 </div>
@@ -618,6 +618,6 @@ Learn how our custom calibration methods and NIR & FT-NIR process analyzers can 
             <p>Designed for scientific and industrial precision.</p>
         </div>
     </footer>
-<script src="app.js?v=1.0.27"></script>
+<script src="app.js?v=1.0.28"></script>
 </body>
 </html>

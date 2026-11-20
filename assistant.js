@@ -383,7 +383,7 @@
         calix: { ad: 'caliX', sayfa: 'product-calix.html', form: 'caliX',
             en: 'Build, validate and deploy NIR calibration models in minutes. caliX combines PLS, PCA and AutoML in an eight-module workspace for NIR, FTIR and Raman data.' },
         prochem: { ad: 'ProChem', sayfa: 'product-prochem.html', form: 'ProChem',
-            en: 'Links USTECH analyzers to your PLC and SCADA: live dashboards, alarms and automatic setpoint control that turn NIR results into real-time action.' }
+            en: 'Shows USTECH analyzer results in real time, exports reports and passes results to your plant PLC over an Ethernet-based interface.' }
     };
     var URUN_SIRASI = ['p17ec', 'p17ecs', 'p2550', 'master', 'trueline', 'tornado', 'starch', 'calix', 'prochem'];
     var SEKTORLER = { sec_food: 'industry-food-feed.html', sec_dairy: 'industry-dairy.html', sec_chem: 'industry-chemical-pharma.html' };

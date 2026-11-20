@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem-Prozessausgabe</h4>
 </div>
-<p>Die vorhergesagten Werte (Protein, Feuchte, Fett usw.) werden über ProChem für die Echtzeit-Prozesssteuerung an Ihr SPS-/SCADA-System übertragen.</p>
+<p>Die vorhergesagten Werte (Protein, Feuchte, Fett usw.) werden über ProChem für die Echtzeit-Prozesssteuerung an die SPS Ihrer Anlage übertragen.</p>
 </div>
 </div>
 </div>
@@ -318,13 +318,13 @@
 </tr>
 <tr>
 <td class="feature-name">Prozessintegration</td>
-<td class="ustech-highlight"><strong>Nativ</strong>. ProChem verbindet sich über eine Ethernet-basierte Schnittstelle direkt mit SPS/SCADA.</td>
+<td class="ustech-highlight"><strong>Nativ</strong>. ProChem verbindet sich über eine Ethernet-basierte Schnittstelle direkt mit der SPS der Anlage.</td>
 <td><strong>Begrenzt</strong>. Erfordert typischerweise benutzerdefinierte Middleware oder OPC-Server von Drittanbietern für die SPS-Konnektivität.</td>
 <td><strong>Basis</strong>. Meist auf Analogausgang oder proprietäre Protokolle beschränkt.</td>
 </tr>
 <tr>
 <td class="feature-name">Gesamtbetriebskosten (TCO)</td>
-<td class="ustech-highlight"><strong>Optimiert</strong>. Wettbewerbsfähige Hardwarepreise, inklusive Kalibriersoftware und minimaler laufender Servicebedarf.</td>
+<td class="ustech-highlight"><strong>Optimiert</strong>. Wettbewerbsfähige Hardwarepreise, eigene Kalibriersoftware von USTECH und minimaler laufender Servicebedarf.</td>
 <td><strong>Sehr hoch</strong>. Teure Hardware plus jährliche Lizenzen für Chemometrie- und Integrationssoftware von Drittanbietern.</td>
 <td><strong>Moderat</strong>. Geringere Hardwarekosten, aber begrenzte Fähigkeiten erfordern zusätzliche Investitionen in Software und Support.</td>
 </tr>
@@ -479,7 +479,7 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 5rem;">
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">Was ist ProChem?</h3>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem ist die Edge-Computing-Softwareplattform, die direkt auf Ebene der Produktionslinie läuft. Sie empfängt Kalibriermodelle, die in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> und wendet sie in Echtzeit auf eingehende Spektralscans von USTECH-Analysatoren an. Die vorhergesagten chemischen Zusammensetzungswerte werden dann über industrielle Kommunikationsprotokolle an SPS-/SCADA-Systeme der Fabrik übermittelt.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem ist die Edge-Computing-Softwareplattform, die direkt auf Ebene der Produktionslinie läuft. Sie empfängt Kalibriermodelle, die in cali<span class="calix-x" style="color: #38b6ff !important;">X</span> und wendet sie in Echtzeit auf eingehende Spektralscans von USTECH-Analysatoren an. Die vorhergesagten chemischen Zusammensetzungswerte werden dann über eine Ethernet-basierte HTTP-Schnittstelle an die SPS der Fabrik übergeben.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem ist für den unbeaufsichtigten 24/7-Betrieb in anspruchsvollen Industrieumgebungen ausgelegt. Es übernimmt die Überwachung des Gerätezustands, automatische Referenzmessungen und die Validierung der Spektrenqualität – ganz ohne Eingriff des Bedieners.</p>
 <p style="color: var(--text-secondary); line-height: 1.7;">ProChem kommuniziert über eine Ethernet-basierte Schnittstelle mit den SPS der Anlage und liefert die Messdaten genau dorthin, wo Ihre Steuerungslogik sie benötigt; der ProLine2550 wird über seine HTTP-Schnittstelle via Ethernet (TCP/IP) angebunden.</p>
 </div>
@@ -497,7 +497,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Echtzeit-Trending & Visualisierung</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Live-Trenddiagramme für alle gemessenen Bestandteile mit konfigurierbaren Alarmgrenzen, gleitenden Durchschnitten und SPC-Überlagerungen (statistische Prozesskontrolle).</p>
+<p style="color: rgba(255,255,255,0.85);">Live-Anzeige aller gemessenen Bestandteile; die Ergebnisse lassen sich als Berichte exportieren.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -523,9 +523,9 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-<h4 style="color: #ffffff;">Fernzugriff & Überwachung</h4>
+<h4 style="color: #ffffff;">Überwachung und Berichte</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Sicherer Remote-Dashboard-Zugriff über Webbrowser. Überwachen Sie den Gerätezustand, prüfen Sie Trends und erhalten Sie Alarmbenachrichtigungen von überall.</p>
+<p style="color: rgba(255,255,255,0.85);">Überwachen Sie den Gerätestatus und prüfen Sie Ergebnistrends; Berichte lassen sich exportieren und weitergeben.</p>
 </div>
 </div>
 </div>
@@ -618,6 +618,6 @@ Erfahren Sie, wie sich unsere maßgeschneiderten Kalibriermethoden und NIR- und 
             <p>Entwickelt für wissenschaftliche und industrielle Präzision.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>

@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>Salida de Procesos ProChem</h4>
 </div>
-<p>Los valores predichos (proteína, humedad, grasa, etc.) se transmiten a través de ProChem a su sistema PLC/SCADA para el control de procesos en tiempo real.</p>
+<p>Los valores predichos (proteína, humedad, grasa, etc.) se transmiten a través de ProChem al PLC de su planta para el control de procesos en tiempo real.</p>
 </div>
 </div>
 </div>
@@ -318,13 +318,13 @@
 </tr>
 <tr>
 <td class="feature-name">Integración de Procesos</td>
-<td class="ustech-highlight"><strong>Nativo</strong>. ProChem se conecta directamente a PLC/SCADA mediante una interfaz Ethernet.</td>
+<td class="ustech-highlight"><strong>Nativo</strong>. ProChem se conecta directamente al PLC de la planta mediante una interfaz Ethernet.</td>
 <td><strong>Limitado</strong>. Por lo general, requiere middleware personalizado o servidores OPC de terceros para la conectividad con PLC.</td>
 <td><strong>Básico</strong>. Generalmente limitado a salida analógica o protocolos propietarios.</td>
 </tr>
 <tr>
 <td class="feature-name">Costo Total de Propiedad</td>
-<td class="ustech-highlight"><strong>Optimizado</strong>. Precios competitivos de hardware, software de calibración incluido y requisitos mínimos de servicio continuo.</td>
+<td class="ustech-highlight"><strong>Optimizado</strong>. Precios competitivos de hardware, software de calibración propio de USTECH y requisitos mínimos de servicio continuo.</td>
 <td><strong>Muy Alto</strong>. Hardware costoso más licencias anuales de software quimiométrico y de integración de terceros.</td>
 <td><strong>Moderado</strong>. Menor costo de hardware, pero sus capacidades limitadas requieren inversiones adicionales en software y soporte.</td>
 </tr>
@@ -479,7 +479,7 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 5rem;">
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">¿Qué es ProChem?</h3>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem es la plataforma de software de computación en el borde (edge) que se ejecuta directamente al nivel de la línea de producción. Recibe modelos de calibración creados en cali<span class="calix-x" style="color: #38b6ff !important;">X</span> y los aplica en tiempo real a los escaneos espectrales entrantes de los analizadores USTECH. Los valores de composición química predichos se comunican luego a los sistemas PLC/SCADA de la fábrica mediante protocolos de comunicación industrial.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem es la plataforma de software de computación en el borde (edge) que se ejecuta directamente al nivel de la línea de producción. Recibe modelos de calibración creados en cali<span class="calix-x" style="color: #38b6ff !important;">X</span> y los aplica en tiempo real a los escaneos espectrales entrantes de los analizadores USTECH. Los valores de composición química predichos se envían luego al PLC de la fábrica mediante una interfaz HTTP sobre Ethernet.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem está diseñado para funcionar 24/7 sin supervisión en entornos industriales exigentes. Gestiona la supervisión del estado del instrumento, el escaneo automático de referencia y la validación de la calidad espectral, sin necesidad de intervención del operador.</p>
 <p style="color: var(--text-secondary); line-height: 1.7;">ProChem se comunica con los PLC de la planta a través de una interfaz basada en Ethernet para entregar los datos de medición exactamente donde los necesita su lógica de control; el ProLine2550 se conecta mediante su interfaz HTTP sobre Ethernet (TCP/IP).</p>
 </div>
@@ -497,7 +497,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Tendencias y Visualización en Tiempo Real</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Gráficos de tendencias en vivo para todos los componentes medidos con límites de alarma configurables, medias móviles y superposiciones de SPC (Control Estadístico de Procesos).</p>
+<p style="color: rgba(255,255,255,0.85);">Visualización en vivo de todos los componentes medidos, con resultados exportables como informes.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -523,9 +523,9 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-<h4 style="color: #ffffff;">Acceso y Monitoreo Remoto</h4>
+<h4 style="color: #ffffff;">Supervisión e informes</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Acceso seguro al panel de control remoto mediante navegador web. Monitoree el estado del instrumento, revise tendencias y reciba notificaciones de alarma desde cualquier lugar.</p>
+<p style="color: rgba(255,255,255,0.85);">Supervise el estado del instrumento y revise las tendencias de resultados; los informes se pueden exportar y compartir.</p>
 </div>
 </div>
 </div>
@@ -618,6 +618,6 @@ Descubra cómo nuestros métodos de calibración personalizados y analizadores d
             <p>Diseñado para la precisión científica e industrial.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>

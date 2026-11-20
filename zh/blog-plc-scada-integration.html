@@ -242,7 +242,7 @@
 <p>IEC 62682 规定了流程工业报警系统的管理原则，将报警历史记录和绩效指标纳入报警系统的组成部分，并将其目的定义为向操作人员通报需要响应的异常状况<a href="#ref-13" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[13]</a>。因此，分析仪的组成限值应与工厂其他报警一并进行合理化，结果应连同状态和时间戳存入工厂历史数据库，这与 ISA-95 第 3 层的功能<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>以及 PAT 指南关于批记录的要求<a href="#ref-2" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[2]</a>相一致。</p>
 <p>在网络方面，IEC 62443-3-3 定义了系统安全要求和安全等级，并通过系统的区域与管道加以实施，为每项资产设定目标等级<a href="#ref-14" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[14]</a>。将分析仪置于独立区域、仅经由传输约定标签的管道与外界相连，正符合这一模型；OPC UA 以应用程序与用户认证以及签名、加密的消息为其提供支持<a href="#ref-8" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[8]</a>。</p>
 <h2>将 USTECH 分析仪接入控制系统</h2>
-<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件将 USTECH 分析仪与工厂的 PLC 和 SCADA 相连，实现实时看板、报警和设定值自动控制，并通过基于以太网的 HTTP 接口与 PLC 通信；测量由 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> 提供，定标模型由 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 提供。针对特定控制系统的合适状态映射和更新间隔，将在用贵方自身工艺样品开展的可行性研究中与工厂自动化工程师共同确定。</p>
+<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件实时显示 USTECH 分析仪的测量结果，导出报告，并通过基于以太网的 HTTP 接口将结果传送至工厂 PLC；测量由 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a> 提供，定标模型由 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 提供。针对特定控制系统的合适状态映射和更新间隔，将在用贵方自身工艺样品开展的可行性研究中与工厂自动化工程师共同确定。</p>
 <div class="blog-post-references">
 <h3>参考文献</h3>
 <ul>
@@ -363,6 +363,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>

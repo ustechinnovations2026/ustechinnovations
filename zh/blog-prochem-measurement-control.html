@@ -242,7 +242,7 @@
 <h2>记录：审计追踪与知识</h2>
 <p>链条中的每一步事后都应可以重建。FDA 的数据完整性指南将审计追踪定义为一种安全的、由计算机生成并带有时间戳的电子记录，可据以重建与记录的创建、修改或删除相关的事件过程；该指南强调，数据值脱离其元数据（时间戳、用户、仪器、单位、所用模型）便毫无意义<a href="#ref-12" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[12]</a>。对于由分析仪驱动的回路，这意味着光谱、模型版本、有效性标志、报告值、当时有效的限值以及发送的设定值应一并存储，而不是分散在事后无法关联的不同系统中。ICH Q10 将此类过程数据的系统获取与分析视为知识管理，用以推动持续改进<a href="#ref-3" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[3]</a>；PAT 指南也将在产品生命周期内通过数据收集实现持续学习描述为其框架的组成部分<a href="#ref-1" style="font-size: 0.75em; vertical-align: super; line-height: 0; text-decoration: none; color: var(--accent-gold-text); font-weight: 600; margin-left: 0.1em;">[1]</a>。</p>
 <h2>ProChem 在控制回路中的位置</h2>
-<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件将其 NIR 分析仪（在线型 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>）与工厂 PLC 或 SCADA 系统相连，在实时看板上显示结果，按已配置的限值发出报警，并可根据测量值自动调整设定值；其运行的定标模型在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 中建立。哪些参数可以承载控制动作、有效性检查和限值如何配置、分析仪在控制层级中处于什么位置，均需通过使用贵方样品和贵方工艺的可行性研究来确定。</p>
+<p>USTECH 的 <a href="product-prochem.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProChem</a> 软件接收其 NIR 分析仪（在线型 <a href="product-proline-2550.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine2550</a> 和 <a href="product-proline-17ec.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">ProLine17EC</a>）的结果，实时显示、导出报告，并通过基于以太网的 HTTP 接口将结果传送至工厂 PLC；其运行的定标模型在 <a href="product-calix.html" style="color: var(--accent-gold-text); text-decoration: underline; font-weight: 500;">cali<span class="calix-x" style="color: #38b6ff !important;">X</span></a> 中建立。因此，在上述链条中 ProChem 负责提供结果；限值、报警逻辑以及任何设定值变更都留在工厂的 PLC 或控制系统中。哪些参数可以承载控制动作、有效性检查和限值如何配置、分析仪在控制层级中处于什么位置，均需通过使用贵方样品和贵方工艺的可行性研究来确定。</p>
 <div class="blog-post-references">
 <h3>参考文献</h3>
 <ul>
@@ -343,6 +343,6 @@
 <p>专为严苛的科学与工业精度而设计。</p>
 </div>
 </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>

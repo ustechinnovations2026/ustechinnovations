@@ -779,33 +779,33 @@ var SEARCH_I18N = {
   "products-software.html": {
     "tr": {
       "t": "caliX ve ProChem: Kemometri ve Proses Yazılımı",
-      "s": "caliX AutoML ile NIR kalibrasyon modelleri kurun, ProChem ile hatta çalıştırın: canlı izleme panelleri, PLC/SCADA bağlantısı ve kapalı döngü kontrol.",
-      "k": "calix ve prochem kemometri ve proses yazılımı calix automl ile nir kalibrasyon modelleri kurun prochem ile hatta çalıştırın canlı izleme panelleri plc scada bağlantısı ve kapalı döngü kontrol yazılım yazilim kemometri otomasyon"
+      "s": "caliX AutoML ile NIR kalibrasyon modelleri kurun, ProChem ile hatta çalıştırın: canlı sonuçlar, raporlar ve PLC bağlantısı.",
+      "k": "calix ve prochem kemometri ve proses yazılımı calix automl ile nir kalibrasyon modelleri kurun prochem ile hatta çalıştırın canlı sonuçlar raporlar ve plc bağlantısı yazılım yazilim kemometri otomasyon"
     },
     "fr": {
       "t": "caliX & ProChem : Logiciels de chimiométrie et PAT",
-      "s": "Créez vos étalonnages NIR avec la chimiométrie AutoML de caliX, puis exploitez-les en ligne avec ProChem : tableaux de bord, liaison PLC/SCADA, boucle fermée.",
-      "k": "calix prochem logiciels de chimiométrie et pat créez vos étalonnages nir avec la chimiométrie automl de calix puis exploitez-les en ligne avec prochem tableaux de bord liaison plc scada boucle fermée logiciels chimiométrie automatisatıon"
+      "s": "Créez vos étalonnages NIR avec la chimiométrie AutoML de caliX, puis exploitez-les en ligne avec ProChem : résultats en direct, rapports et liaison PLC.",
+      "k": "calix prochem logiciels de chimiométrie et pat créez vos étalonnages nir avec la chimiométrie automl de calix puis exploitez-les en ligne avec prochem résultats en direct rapports et liaison plc logiciels chimiométrie automatisatıon"
     },
     "de": {
       "t": "caliX & ProChem: Chemometrie- und PAT-Software",
-      "s": "NIR-Kalibrierungen mit caliX-AutoML erstellen und mit ProChem an der Linie betreiben: Live-Dashboards, SPS/SCADA-Anbindung und geschlossener Regelkreis.",
-      "k": "calix prochem chemometrie- und pat-software nir-kalibrierungen mit calix-automl erstellen und mit prochem an der linie betreiben live-dashboards sps scada-anbindung und geschlossener regelkreis software chemometrie automatisierung"
+      "s": "NIR-Kalibrierungen mit caliX-AutoML erstellen und mit ProChem an der Linie betreiben: Live-Ergebnisse, Berichte und SPS-Anbindung.",
+      "k": "calix prochem chemometrie- und pat-software nir-kalibrierungen mit calix-automl erstellen und mit prochem an der linie betreiben live-ergebnisse berichte und sps-anbindung software chemometrie automatisierung"
     },
     "es": {
       "t": "caliX y ProChem: Software de Quimiometría y PAT",
-      "s": "Cree calibraciones NIR con la quimiometría AutoML de caliX y ejecútelas en la línea con ProChem: paneles en vivo, enlace PLC/SCADA y control en lazo cerrado.",
-      "k": "calix y prochem software de quimiometría y pat cree calibraciones nir con la quimiometría automl de calix y ejecútelas en la línea con prochem paneles en vivo enlace plc scada y control en lazo cerrado software quimiometría automatización"
+      "s": "Cree calibraciones NIR con la quimiometría AutoML de caliX y ejecútelas en la línea con ProChem: resultados en vivo, informes y enlace PLC.",
+      "k": "calix y prochem software de quimiometría y pat cree calibraciones nir con la quimiometría automl de calix y ejecútelas en la línea con prochem resultados en vivo informes y enlace plc software quimiometría automatización"
     },
     "ar": {
       "t": "caliX و ProChem: القياسات الكيميائية وبرمجيات PAT",
-      "s": "أنشئ معايرات NIR باستخدام AutoML في caliX، ثم شغّلها على خط الإنتاج مع ProChem: لوحات معلومات مباشرة وربط PLC/SCADA وتحكم مغلق الحلقة.",
-      "k": "calix و prochem القياسات الكيميائية وبرمجيات pat أنشئ معايرات nir باستخدام automl في calix، ثم شغّلها على خط الإنتاج مع prochem لوحات معلومات مباشرة وربط plc scada وتحكم مغلق الحلقة البرمجيات الكيموميتريكس الأتمتة"
+      "s": "أنشئ معايرات NIR باستخدام AutoML في caliX، ثم شغّلها على خط الإنتاج مع ProChem: نتائج مباشرة وتقارير وربط PLC.",
+      "k": "calix و prochem القياسات الكيميائية وبرمجيات pat أنشئ معايرات nir باستخدام automl في calix، ثم شغّلها على خط الإنتاج مع prochem نتائج مباشرة وتقارير وربط plc البرمجيات الكيموميتريكس الأتمتة"
     },
     "zh": {
       "t": "caliX 与 ProChem：化学计量学与 PAT 软件",
-      "s": "使用 caliX AutoML 化学计量学建立 NIR 定标，再通过 ProChem 在产线上运行：实时看板、PLC/SCADA 连接和闭环控制。",
-      "k": "calix 与 prochem 化学计量学与 pat 软件 使用 calix automl 化学计量学建立 nir 定标 再通过 prochem 在产线上运行 实时看板 plc scada 连接和闭环控制 软件系统 化学计量学 自动化 过程控制"
+      "s": "使用 caliX AutoML 化学计量学建立 NIR 定标，再通过 ProChem 在产线上运行：实时结果、报告和 PLC 连接。",
+      "k": "calix 与 prochem 化学计量学与 pat 软件 使用 calix automl 化学计量学建立 nir 定标 再通过 prochem 在产线上运行 实时结果 报告和 plc 连接 软件系统 化学计量学 自动化 过程控制"
     }
   },
   "product-calix.html": {
@@ -843,33 +843,33 @@ var SEARCH_I18N = {
   "product-prochem.html": {
     "tr": {
       "t": "ProChem: Gerçek Zamanlı PAT ve Kapalı Döngü Kontrol",
-      "s": "ProChem, USTECH analizörlerini PLC ve SCADA'ya bağlar: canlı paneller, alarmlar ve NIR sonucunu anında eyleme çeviren otomatik ayar noktası kontrolü.",
-      "k": "prochem gerçek zamanlı pat ve kapalı döngü kontrol prochem ustech analizörlerini plc ve scada ya bağlar canlı paneller alarmlar ve nir sonucunu anında eyleme çeviren otomatik ayar noktası kontrolü prochem proses kontrol plc scada gerçek zamanlı pat"
+      "s": "ProChem, USTECH analizörlerinin sonuçlarını gerçek zamanlı gösterir, rapor olarak dışa aktarır ve Ethernet tabanlı bir arayüz üzerinden tesis PLC'nize iletir.",
+      "k": "prochem gerçek zamanlı pat ve kapalı döngü kontrol prochem ustech analizörlerinin sonuçlarını gerçek zamanlı gösterir rapor olarak dışa aktarır ve ethernet tabanlı bir arayüz üzerinden tesis plc nize iletir prochem proses kontrol plc scada gerçek zamanlı pat"
     },
     "fr": {
       "t": "ProChem : PAT en temps réel et contrôle en boucle fermée",
-      "s": "ProChem relie les analyseurs USTECH à votre automate et SCADA : tableaux de bord, alarmes et régulation automatique des consignes en temps réel.",
-      "k": "prochem pat en temps réel et contrôle en boucle fermée prochem relie les analyseurs ustech à votre automate et scada tableaux de bord alarmes et régulation automatique des consignes en temps réel prochem contrôle de processus plc scada temps réel"
+      "s": "ProChem affiche en temps réel les résultats des analyseurs USTECH, exporte des rapports et transmet les résultats au PLC de votre usine via une interface Ethernet.",
+      "k": "prochem pat en temps réel et contrôle en boucle fermée prochem affiche en temps réel les résultats des analyseurs ustech exporte des rapports et transmet les résultats au plc de votre usine via une interface ethernet prochem contrôle de processus plc scada temps réel"
     },
     "de": {
       "t": "ProChem: Echtzeit-PAT & Closed-Loop-Regelung",
-      "s": "ProChem verbindet USTECH-Analysatoren mit SPS und SCADA: Live-Dashboards, Alarme und automatische Sollwertregelung in Echtzeit.",
-      "k": "prochem echtzeit-pat closed-loop-regelung prochem verbindet ustech-analysatoren mit sps und scada live-dashboards alarme und automatische sollwertregelung in echtzeit prochem prozesssteuerung sps scada echtzeit"
+      "s": "ProChem zeigt die Ergebnisse der USTECH-Analysatoren in Echtzeit an, exportiert Berichte und übergibt die Ergebnisse über eine Ethernet-basierte Schnittstelle an die SPS Ihrer Anlage.",
+      "k": "prochem echtzeit-pat closed-loop-regelung prochem zeigt die ergebnisse der ustech-analysatoren in echtzeit an exportiert berichte und übergibt die ergebnisse über eine ethernet-basierte schnittstelle an die sps ihrer anlage prochem prozesssteuerung sps scada echtzeit"
     },
     "es": {
       "t": "ProChem: PAT en Tiempo Real y Control en Circuito Cerrado",
-      "s": "ProChem conecta los analizadores USTECH con su PLC y SCADA: paneles en vivo, alarmas y control automático de consigna en tiempo real.",
-      "k": "prochem pat en tiempo real y control en circuito cerrado prochem conecta los analizadores ustech con su plc y scada paneles en vivo alarmas y control automático de consigna en tiempo real prochem control de procesos plc scada tiempo real"
+      "s": "ProChem muestra en tiempo real los resultados de los analizadores USTECH, exporta informes y envía los resultados al PLC de su planta mediante una interfaz Ethernet.",
+      "k": "prochem pat en tiempo real y control en circuito cerrado prochem muestra en tiempo real los resultados de los analizadores ustech exporta informes y envía los resultados al plc de su planta mediante una interfaz ethernet prochem control de procesos plc scada tiempo real"
     },
     "ar": {
       "t": "ProChem : PAT في الوقت الفعلي والتحكم في الحلقة المغلقة",
-      "s": "يربط  ProChem  أجهزة  تحليل USTECH بـ PLC و SCADA: لوحات المعلومات المباشرة والإنذارات والتحكم التلقائي في نقطة الضبط التي تحول نتائج NIR إلى إجراء في الوقت الفعلي.",
-      "k": "prochem pat في الوقت الفعلي والتحكم في الحلقة المغلقة يربط prochem أجهزة تحليل ustech بـ plc و scada لوحات المعلومات المباشرة والإنذارات والتحكم التلقائي في نقطة الضبط التي تحول نتائج nir إلى إجراء في الوقت الفعلي prochem التحكم في العمليات plc scada pat"
+      "s": "يعرض ProChem نتائج أجهزة تحليل USTECH في الوقت الفعلي، ويصدّر التقارير، ويرسل النتائج إلى PLC المصنع لديكم عبر واجهة قائمة على Ethernet.",
+      "k": "prochem pat في الوقت الفعلي والتحكم في الحلقة المغلقة يعرض prochem نتائج أجهزة تحليل ustech في الوقت الفعلي، ويصدّر التقارير، ويرسل النتائج إلى plc المصنع لديكم عبر واجهة قائمة على ethernet prochem التحكم في العمليات plc scada pat"
     },
     "zh": {
       "t": "ProChem：实时 PAT 与闭环过程控制",
-      "s": "ProChem 将 USTECH 分析仪连接到您的 PLC 和 SCADA：实时仪表板、警报和自动设定点控制，将 NIR 结果转化为实时操作。",
-      "k": "prochem 实时 pat 与闭环过程控制 prochem 将 ustech 分析仪连接到您的 plc 和 scada 实时仪表板 警报和自动设定点控制 将 nir 结果转化为实时操作 prochem 过程控制 plc scada 实时监测 pat"
+      "s": "ProChem 实时显示 USTECH 分析仪的结果，导出报告，并通过基于以太网的接口将结果传送至您工厂的 PLC。",
+      "k": "prochem 实时 pat 与闭环过程控制 prochem 实时显示 ustech 分析仪的结果 导出报告 并通过基于以太网的接口将结果传送至您工厂的 plc prochem 过程控制 plc scada 实时监测 pat"
     }
   },
   "product-masterline.html": {
@@ -1276,7 +1276,7 @@ document.addEventListener('click', function (e) {
     var kok = (s && s.src) ? s.src.replace(/[^\/]*(\?.*)?$/, '') : '/';
     var css = document.createElement('link');
     css.rel = 'stylesheet';
-    var surum = '1.0.1'; // ASISTAN_SURUM
+    var surum = '1.0.2'; // ASISTAN_SURUM
     css.href = kok + 'assistant.css?v=' + surum;
     document.head.appendChild(css);
     var js = document.createElement('script');

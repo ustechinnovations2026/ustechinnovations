@@ -271,7 +271,7 @@
 <div class="tech-step-num">05</div>
 <h4>مخرجات عملية ProChem</h4>
 </div>
-<p>تُنقل القيم المتنبأ بها (البروتين والرطوبة والدهون وغيرها) عبر ProChem إلى نظام PLC/SCADA لديكم للتحكم الفوري في العمليات.</p>
+<p>تُنقل القيم المتنبأ بها (البروتين والرطوبة والدهون وغيرها) عبر ProChem إلى PLC المصنع لديكم للتحكم الفوري في العمليات.</p>
 </div>
 </div>
 </div>
@@ -319,13 +319,13 @@
 </tr>
 <tr>
 <td class="feature-name">تكامل العمليات</td>
-<td class="ustech-highlight"><strong>أصلي</strong>. يتصل ProChem مباشرة بـ PLC/SCADA عبر واجهة قائمة على Ethernet.</td>
+<td class="ustech-highlight"><strong>أصلي</strong>. يتصل ProChem مباشرة بـ PLC المصنع عبر واجهة قائمة على Ethernet.</td>
 <td><strong>محدود</strong>. يتطلب عادةً برمجيات وسيطة مخصصة أو خوادم OPC من جهات خارجية للاتصال بـ PLC.</td>
 <td><strong>أساسي</strong>. يقتصر عادةً على المخرجات التناظرية أو البروتوكولات الاحتكارية.</td>
 </tr>
 <tr>
 <td class="feature-name">التكلفة الإجمالية للملكية</td>
-<td class="ustech-highlight"><strong>محسن</strong>. أسعار تنافسية للأجهزة، وبرامج معايرة مضمنة، والحد الأدنى من متطلبات الخدمة المستمرة.</td>
+<td class="ustech-highlight"><strong>محسن</strong>. أسعار تنافسية للأجهزة، وبرامج معايرة خاصة بـ USTECH، والحد الأدنى من متطلبات الخدمة المستمرة.</td>
 <td><strong>مرتفع جداً</strong>. أجهزة باهظة الثمن بالإضافة إلى تراخيص سنوية لبرمجيات القياسات الكيميائية والتكامل من جهات خارجية.</td>
 <td><strong>متوسط</strong>. تكلفة أجهزة أقل، ولكن القدرات المحدودة تتطلب استثمارات إضافية في البرامج والدعم.</td>
 </tr>
@@ -480,7 +480,7 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 5rem;">
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ما هو ProChem؟</h3>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem هي منصة برمجيات الحوسبة الطرفية التي تعمل مباشرة على مستوى خط الإنتاج. تتلقى نماذج المعايرة المبنية في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ويطبقها في الوقت الفعلي على المسوحات الطيفية الواردة من أجهزة تحليل USTECH. ثم يتم توصيل قيم التركيب الكيميائي المتوقعة لأنظمة PLC/SCADA في المصنع من خلال بروتوكولات الاتصال الصناعية.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem هي منصة برمجيات الحوسبة الطرفية التي تعمل مباشرة على مستوى خط الإنتاج. تتلقى نماذج المعايرة المبنية في cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ويطبقها في الوقت الفعلي على المسوحات الطيفية الواردة من أجهزة تحليل USTECH. ثم تُرسل قيم التركيب الكيميائي المتوقعة إلى PLC المصنع عبر واجهة HTTP قائمة على Ethernet.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">صُمم ProChem للعمل على مدار الساعة دون إشراف في البيئات الصناعية الصعبة. فهو يدير مراقبة حالة الجهاز والمسح المرجعي التلقائي والتحقق من جودة الأطياف، دون الحاجة إلى تدخل المشغل.</p>
 <p style="color: var(--text-secondary); line-height: 1.7;">يتواصل ProChem مع وحدات PLC في المصنع عبر واجهة قائمة على Ethernet لإيصال بيانات القياس إلى حيث يحتاجها منطق التحكم لديكم تماماً؛ ويتصل ProLine2550 من خلال واجهة HTTP على شبكة Ethernet (TCP/IP).</p>
 </div>
@@ -498,7 +498,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">الاتجاهات الحية والتصور في الوقت الفعلي</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">مخططات اتجاهية حية لجميع المكونات المقاسة مع حدود إنذار قابلة للتكوين، ومتوسطات متحركة، وتراكبات SPC (التحكم الإحصائي في العمليات).</p>
+<p style="color: rgba(255,255,255,0.85);">عرض مباشر لجميع المكونات المقاسة، مع إمكانية تصدير النتائج كتقارير.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -524,9 +524,9 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-<h4 style="color: #ffffff;">الوصول والمراقبة عن بُعد</h4>
+<h4 style="color: #ffffff;">المراقبة والتقارير</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">وصول آمن عن بُعد إلى لوحة المعلومات عبر متصفح الويب. راقب صحة الأجهزة، وراجع الاتجاهات، وتلقي إشعارات الإنذار من أي مكان.</p>
+<p style="color: rgba(255,255,255,0.85);">راقب حالة الجهاز وراجع اتجاهات النتائج؛ ويمكن تصدير التقارير ومشاركتها.</p>
 </div>
 </div>
 </div>
@@ -619,6 +619,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>مصمم للدقة العلمية والصناعية.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>

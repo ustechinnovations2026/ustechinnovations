@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem Proses Çıktısı</h4>
 </div>
-<p>Tahmin edilen değerler (protein, nem, yağ vb.) gerçek zamanlı proses kontrolü için ProChem aracılığıyla PLC/SCADA sisteminize iletilir.</p>
+<p>Tahmin edilen değerler (protein, nem, yağ vb.) gerçek zamanlı proses kontrolü için ProChem aracılığıyla tesis PLC'nize iletilir.</p>
 </div>
 </div>
 </div>
@@ -318,13 +318,13 @@
 </tr>
 <tr>
 <td class="feature-name">Proses Entegrasyonu</td>
-<td class="ustech-highlight"><strong>Yerel</strong>. ProChem, Ethernet tabanlı bir arayüz üzerinden doğrudan PLC/SCADA'ya bağlanır.</td>
+<td class="ustech-highlight"><strong>Yerel</strong>. ProChem, Ethernet tabanlı bir arayüz üzerinden doğrudan tesis PLC'sine bağlanır.</td>
 <td><strong>Sınırlı</strong>. Tipik olarak PLC bağlantısı için özel ara yazılım veya üçüncü taraf OPC sunucuları gerektirir.</td>
 <td><strong>Temel</strong>. Genellikle analog çıkış veya tescilli protokollerle sınırlıdır.</td>
 </tr>
 <tr>
 <td class="feature-name">Toplam Sahip Olma Maliyeti</td>
-<td class="ustech-highlight"><strong>Optimize Edilmiş</strong>. Rekabetçi donanım fiyatlandırması, dahil edilen kalibrasyon yazılımı ve minimum sürekli servis gereksinimleri.</td>
+<td class="ustech-highlight"><strong>Optimize Edilmiş</strong>. Rekabetçi donanım fiyatlandırması, USTECH'in kendi kalibrasyon yazılımı ve minimum sürekli servis gereksinimleri.</td>
 <td><strong>Çok Yüksek</strong>. Pahalı donanım ve ayrıca üçüncü taraf kemometri ve entegrasyon yazılımları için yıllık lisanslar.</td>
 <td><strong>Ilıman</strong>. Daha düşük donanım maliyeti, ancak sınırlı yetenekler yazılım ve destek alanında ek yatırımlar gerektirir.</td>
 </tr>
@@ -479,7 +479,7 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 5rem;">
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem Nedir?</h3>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, doğrudan üretim hattı seviyesinde çalışan uç bilişim (edge-computing) yazılım platformudur. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ve bunları gerçek zamanlı olarak USTECH analizörlerinden gelen spektral taramalara uygular. Tahmin edilen kimyasal bileşim değerleri daha sonra endüstriyel iletişim protokolleri aracılığıyla fabrika PLC/SCADA sistemlerine iletilir.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, doğrudan üretim hattı seviyesinde çalışan uç bilişim (edge-computing) yazılım platformudur. cali<span class="calix-x" style="color: #38b6ff !important;">X</span> ve bunları gerçek zamanlı olarak USTECH analizörlerinden gelen spektral taramalara uygular. Tahmin edilen kimyasal bileşim değerleri daha sonra Ethernet tabanlı HTTP arayüzü üzerinden fabrika PLC'sine iletilir.</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem, zorlu endüstriyel ortamlarda 7/24 gözetimsiz çalışmak üzere tasarlanmıştır. Cihaz sağlığı izleme, otomatik referans taraması ve spektral kalite doğrulamasını operatör müdahalesi gerektirmeden yönetir.</p>
 <p style="color: var(--text-secondary); line-height: 1.7;">ProChem, ölçüm verisini kontrol mantığınızın ihtiyaç duyduğu yere ulaştırmak için tesis PLC'leriyle Ethernet tabanlı bir arayüz üzerinden haberleşir; ProLine2550 ise Ethernet (TCP/IP) üzerinden HTTP arayüzüyle bağlanır.</p>
 </div>
@@ -497,7 +497,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">Gerçek Zamanlı Trendleme ve Görselleştirme</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Yapılandırılabilir alarm limitleri, hareketli ortalamalar ve SPC (İstatistiksel Süreç Kontrolü) katmanları ile ölçülen tüm bileşenler için canlı trend grafikleri.</p>
+<p style="color: rgba(255,255,255,0.85);">Ölçülen tüm bileşenlerin canlı gösterimi; sonuçlar rapor olarak dışa aktarılabilir.</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -523,9 +523,9 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-<h4 style="color: #ffffff;">Uzaktan Erişim ve İzleme</h4>
+<h4 style="color: #ffffff;">İzleme ve Raporlar</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">Web tarayıcısı üzerinden güvenli uzaktan kontrol paneli erişimi. Cihaz sağlığını izleyin, trendleri gözden geçirin ve her yerden alarm bildirimleri alın.</p>
+<p style="color: rgba(255,255,255,0.85);">Cihaz durumunu izleyin ve sonuç trendlerini gözden geçirin; raporlar dışa aktarılıp paylaşılabilir.</p>
 </div>
 </div>
 </div>
@@ -618,6 +618,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>Bilimsel ve endüstriyel hassasiyet için tasarlandı.</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>

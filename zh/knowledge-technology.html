@@ -270,7 +270,7 @@
 <div class="tech-step-num">05</div>
 <h4>ProChem 过程输出</h4>
 </div>
-<p>预测值（蛋白质、水分、脂肪等）通过 ProChem 传送至您的 PLC/SCADA 系统，用于实时过程控制。</p>
+<p>预测值（蛋白质、水分、脂肪等）通过 ProChem 传送至您工厂的 PLC，用于实时过程控制。</p>
 </div>
 </div>
 </div>
@@ -318,13 +318,13 @@
 </tr>
 <tr>
 <td class="feature-name">过程集成</td>
-<td class="ustech-highlight"><strong>原生</strong>。ProChem 通过基于以太网的接口直接连接 PLC/SCADA。</td>
+<td class="ustech-highlight"><strong>原生</strong>。ProChem 通过基于以太网的接口直接连接工厂 PLC。</td>
 <td><strong>有限的</strong>。通常需要自定义中间件或第三方 OPC 服务器才能与 PLC 连接。</td>
 <td><strong>基本的</strong>。通常限于模拟输出或专有协议。</td>
 </tr>
 <tr>
 <td class="feature-name">总体拥有成本</td>
-<td class="ustech-highlight"><strong>经过优化</strong>。极具竞争力的硬件价格，包含定标软件，并且几乎不需要后续维护服务。</td>
+<td class="ustech-highlight"><strong>经过优化</strong>。极具竞争力的硬件价格，USTECH 自有定标软件，并且几乎不需要后续维护服务。</td>
 <td><strong>非常高</strong>。昂贵的硬件加上第三方化学计量学和集成软件的年度许可证。</td>
 <td><strong>中等</strong>。硬件成本较低，但由于功能有限，需要对软件和技术支持进行额外投资。</td>
 </tr>
@@ -479,7 +479,7 @@ ProChem Process Automation Platform – Deep Dive
 <div style="margin-bottom: 5rem;">
 <div style="margin-bottom: 3.5rem;">
 <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; letter-spacing: -0.5px;">ProChem 是什么？</h3>
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 是直接运行于生产线级别的边缘计算软件平台。它接收在 caliX 中构建的定标模型 并将其实时应用于 USTECH 分析仪输入的扫描光谱。然后通过工业通信协议将预测的化学成分值传送到工厂的 PLC/SCADA 系统。</p>
+<p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 是直接运行于生产线级别的边缘计算软件平台。它接收在 caliX 中构建的定标模型 并将其实时应用于 USTECH 分析仪输入的扫描光谱。然后通过基于以太网的 HTTP 接口将预测的化学成分值传送到工厂 PLC。</p>
 <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">ProChem 专为在严苛工业环境中 24/7 无人值守运行而设计。它负责仪器健康监测、自动参比扫描和光谱质量验证，无需操作人员干预。</p>
 <p style="color: var(--text-secondary); line-height: 1.7;">ProChem 通过基于以太网的接口与工厂 PLC 通信，将测量数据准确送达控制逻辑所需之处；ProLine2550 则通过以太网（TCP/IP）上的 HTTP 接口连接。</p>
 </div>
@@ -497,7 +497,7 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
 <h4 style="color: #ffffff;">实时趋势与可视化</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">所有测量成分的实时趋势图，带有可配置的警报限制、移动平均线和 SPC（统计过程控制）覆盖图。</p>
+<p style="color: rgba(255,255,255,0.85);">实时显示所有测量成分，结果可导出为报告。</p>
 </div>
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_health.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
@@ -523,9 +523,9 @@ ProChem Process Automation Platform – Deep Dive
 <div class="tech-step-card" style="background: linear-gradient(180deg, rgba(10, 11, 16, 0.75) 0%, rgba(10, 11, 16, 0.92) 100%), url('../images/cap_remote.webp?v=1.0.5') no-repeat center center; background-size: cover; border-color: rgba(255,255,255,0.15); color: #ffffff;">
 <div class="tech-step-header">
 <div class="tech-step-num" style="color: var(--accent-gold-text);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-<h4 style="color: #ffffff;">远程访问与监控</h4>
+<h4 style="color: #ffffff;">监控与报告</h4>
 </div>
-<p style="color: rgba(255,255,255,0.85);">通过 Web 浏览器安全远程访问仪表板。从任何地方监控仪器健康状况、查看趋势并接收报警通知。</p>
+<p style="color: rgba(255,255,255,0.85);">监控仪器状态并查看结果趋势；报告可导出并共享。</p>
 </div>
 </div>
 </div>
@@ -618,6 +618,6 @@ ProChem Process Automation Platform – Deep Dive
             <p>专为严苛的科学与工业精度而设计。</p>
         </div>
     </footer>
-<script src="../app.js?v=1.0.27"></script>
+<script src="../app.js?v=1.0.28"></script>
 </body>
 </html>
