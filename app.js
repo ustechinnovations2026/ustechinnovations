@@ -390,6 +390,7 @@ var TRANSLATED_PAGES = {};
  'blog-corn-gluten-dryer.html',
  'blog-dairy-receiving-total-solids.html',
  'blog-feed-fiber-ash.html',
+ 'blog-grain-intake-wheat-protein.html',
  'blog-fiber-interface-reactors.html',
  'blog-flour-ash-milling.html',
  'blog-ground-beef-fat.html',
@@ -2302,6 +2303,13 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet: "Inline measurement of fat and moisture concentration in ground beef lines using at-line and inline NIR systems."
             },
             {
+            title: "NIR for Wheat Protein and Moisture at Grain Intake",
+            url: "blog-grain-intake-wheat-protein.html",
+            category: "Knowledge",
+            keywords: "nir for wheat protein and moisture at grain intake how nir measures protein and moisture in whole wheat at grain intake reference methods standards published accuracy limits and a practical workflow",
+            snippet: "How NIR measures protein and moisture in whole wheat at grain intake: reference methods, standards, published accuracy, limits and a practical workflow."
+            },
+            {
             title: "Crude Fiber and Ash Content Determination in Feed Rations by NIR Spectroscopy",
             url: "blog-feed-fiber-ash.html",
             category: "Knowledge",
@@ -3448,6 +3456,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Master blog database
         const BLOG_POSTS = [
+            {
+            url: "blog-grain-intake-wheat-protein.html",
+            title: "NIR for Wheat Protein and Moisture at Grain Intake",
+            image: "images/blog-grain-intake-wheat-protein.webp",
+            industry: "food-feed",
+            type: "ARTICLE",
+            snippet: "Why protein and moisture decide the value of a wheat delivery, which reference methods NIR is calibrated against, what whole-grain studies report, and how to run NIR at the intake."
+            },
             {
             url: "blog-calibration-transfer.html",
             title: "Calibration Transfer Between NIR Spectrometers: Methods and Feasibility",
