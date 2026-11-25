@@ -619,34 +619,34 @@ var SEARCH_I18N = {
   },
   "industry-food-feed.html": {
     "tr": {
-      "t": "Yem Fabrikaları İçin NIR: Protein Fazlasına Son",
+      "t": "Yem Fabrikaları İçin NIR: Daha Verimli Formülasyon",
       "s": "Hammadde kabulünden bitmiş yeme kadar protein, nem ve yağın gerçek zamanlı NIR analizi. Formülü hedefe göre kurun, her partiyi USTECH ile kayıt altına alın.",
-      "k": "yem fabrikaları i çin nir protein fazlasına son hammadde kabulünden bitmiş yeme kadar protein nem ve yağın gerçek zamanlı nir analizi formülü hedefe göre kurun her partiyi ustech ile kayıt altına alın gıda gida yem tahıl un protein nem yağ kül lif nişasta değirmen"
+      "k": "yem fabrikaları i çin nir daha verimli formülasyon hammadde kabulünden bitmiş yeme kadar protein nem ve yağın gerçek zamanlı nir analizi formülü hedefe göre kurun her partiyi ustech ile kayıt altına alın gıda gida yem tahıl un protein nem yağ kül lif nişasta değirmen"
     },
     "fr": {
-      "t": "NIR en ligne pour l'alimentation animale",
+      "t": "NIR en ligne pour l'alimentation animale : formulation optimisée",
       "s": "Analyse NIR en temps réel des protéines, de l'humidité et des lipides, de la réception à l'aliment fini. Formulez à la cible et documentez chaque lot.",
-      "k": "nir en ligne pour l alimentation animale analyse nir en temps réel des protéines de l humidité et des lipides de la réception à l aliment fini formulez à la cible et documentez chaque lot alimentation aliments animaux céréales farine protéine humidité"
+      "k": "nir en ligne pour l alimentation animale formulation optimisée analyse nir en temps réel des protéines de l humidité et des lipides de la réception à l aliment fini formulez à la cible et documentez chaque lot alimentation aliments animaux céréales farine protéine humidité"
     },
     "de": {
-      "t": "Inline-NIR für Futtermühlen: kein Proteinüberschuss",
+      "t": "Inline-NIR für Futtermühlen: Rezepturen optimieren",
       "s": "Echtzeit-NIR-Analyse von Protein, Feuchte und Fett vom Rohstoffeingang bis zum Fertigfutter. Zielgenau formulieren und jede Charge mit USTECH dokumentieren.",
-      "k": "inline-nir für futtermühlen kein proteinüberschuss echtzeit-nir-analyse von protein feuchte und fett vom rohstoffeingang bis zum fertigfutter zielgenau formulieren und jede charge mit ustech dokumentieren lebensmittel futtermittel getreide mehl protein feuchte"
+      "k": "inline-nir für futtermühlen rezepturen optimieren echtzeit-nir-analyse von protein feuchte und fett vom rohstoffeingang bis zum fertigfutter zielgenau formulieren und jede charge mit ustech dokumentieren lebensmittel futtermittel getreide mehl protein feuchte"
     },
     "es": {
-      "t": "NIR para fábricas de piensos: sin exceso de proteína",
+      "t": "NIR para fábricas de piensos: formulación optimizada",
       "s": "Análisis NIR en tiempo real de proteína, humedad y grasa desde la recepción hasta el pienso terminado. Formule al objetivo y documente cada lote con USTECH.",
-      "k": "nir para fábricas de piensos sin exceso de proteína análisis nir en tiempo real de proteína humedad y grasa desde la recepción hasta el pienso terminado formule al objetivo y documente cada lote con ustech alimentos piensos granos harina proteína humedad"
+      "k": "nir para fábricas de piensos formulación optimizada análisis nir en tiempo real de proteína humedad y grasa desde la recepción hasta el pienso terminado formule al objetivo y documente cada lote con ustech alimentos piensos granos harina proteína humedad"
     },
     "ar": {
-      "t": "NIR مضمن لمصانع الأعلاف: أوقف هدر البروتين",
+      "t": "NIR مضمن لمصانع الأعلاف: تحسين التركيبات",
       "s": "تحليل NIR في الوقت الفعلي للبروتين والرطوبة والدهون من استلام المواد الخام حتى العلف النهائي. ركّب الخلطات وفق الهدف ووثّق كل دفعة مع USTECH.",
-      "k": "nir مضمن لمصانع الأعلاف أوقف هدر البروتين تحليل nir في الوقت الفعلي للبروتين والرطوبة والدهون من استلام المواد الخام حتى العلف النهائي ركّب الخلطات وفق الهدف ووثّق كل دفعة مع ustech الأغذية والأعلاف الحبوب الدقيق البروتين الرطوبة"
+      "k": "nir مضمن لمصانع الأعلاف تحسين التركيبات تحليل nir في الوقت الفعلي للبروتين والرطوبة والدهون من استلام المواد الخام حتى العلف النهائي ركّب الخلطات وفق الهدف ووثّق كل دفعة مع ustech الأغذية والأعلاف الحبوب الدقيق البروتين الرطوبة"
     },
     "zh": {
-      "t": "饲料厂在线 NIR：杜绝蛋白质过量",
+      "t": "饲料厂在线 NIR：优化配方",
       "s": "从原料接收到成品饲料，实时 NIR 分析蛋白质、水分和脂肪。按目标配方生产，并借助 USTECH 记录每一批次。",
-      "k": "饲料厂在线 nir 杜绝蛋白质过量 从原料接收到成品饲料 实时 nir 分析蛋白质 水分和脂肪 按目标配方生产 并借助 ustech 记录每一批次 食品与饲料 谷物 面粉 蛋白质 水分 脂肪 灰分 纤维 淀粉 磨粉"
+      "k": "饲料厂在线 nir 优化配方 从原料接收到成品饲料 实时 nir 分析蛋白质 水分和脂肪 按目标配方生产 并借助 ustech 记录每一批次 食品与饲料 谷物 面粉 蛋白质 水分 脂肪 灰分 纤维 淀粉 磨粉"
     }
   },
   "industry-dairy.html": {
@@ -908,33 +908,33 @@ var SEARCH_I18N = {
   "product-proline-17ec.html": {
     "tr": {
       "t": "ProLine17EC Hat İçi NIR Analizörü: Proses Kontrolü",
-      "s": "ProLine17EC hat içi NIR analizörü: 950-1650 nm InGaAs dizi, safir pencere ve IP65 316 paslanmaz gövde; 2-20 saniyede bir gerçek zamanlı sonuç verir.",
-      "k": "proline17ec hat i çi nir analizörü proses kontrolü proline17ec hat içi nir analizörü 950-1650 nm ingaas dizi safir pencere ve ip65 316 paslanmaz gövde 2-20 saniyede bir gerçek zamanlı sonuç verir proline 17ec hat ici nir analizor sensor boru oluk konveyor safir ip65 paslanmaz celik ingaas surekli olcum kompakt"
+      "s": "ProLine17EC hat içi NIR analizörü: 908-1676 nm InGaAs dizi, safir pencere ve IP65 316 paslanmaz gövde; 2-20 saniyede bir gerçek zamanlı sonuç verir.",
+      "k": "proline17ec hat i çi nir analizörü proses kontrolü proline17ec hat içi nir analizörü 908-1676 nm ingaas dizi safir pencere ve ip65 316 paslanmaz gövde 2-20 saniyede bir gerçek zamanlı sonuç verir proline 17ec hat ici nir analizor sensor boru oluk konveyor safir ip65 paslanmaz celik ingaas surekli olcum kompakt"
     },
     "fr": {
       "t": "ProLine17EC, analyseur NIR en ligne de procédé",
-      "s": "Analyseur NIR en ligne ProLine17EC : barrette InGaAs 950-1650 nm, fenêtre saphir, boîtier inox 316 IP65 et résultats en temps réel toutes les 2 à 20 secondes.",
-      "k": "proline17ec analyseur nir en ligne de procédé analyseur nir en ligne proline17ec barrette ingaas 950-1650 nm fenêtre saphir boîtier inox 316 ip65 et résultats en temps réel toutes les 2 à 20 secondes proline 17ec analyseur nir en ligne capteur conduite goulotte convoyeur saphir ip65 acier inoxydable ingaas mesure continue compact"
+      "s": "Analyseur NIR en ligne ProLine17EC : barrette InGaAs 908-1676 nm, fenêtre saphir, boîtier inox 316 IP65 et résultats en temps réel toutes les 2 à 20 secondes.",
+      "k": "proline17ec analyseur nir en ligne de procédé analyseur nir en ligne proline17ec barrette ingaas 908-1676 nm fenêtre saphir boîtier inox 316 ip65 et résultats en temps réel toutes les 2 à 20 secondes proline 17ec analyseur nir en ligne capteur conduite goulotte convoyeur saphir ip65 acier inoxydable ingaas mesure continue compact"
     },
     "de": {
       "t": "ProLine17EC Inline-NIR-Analysator für Prozesse",
-      "s": "ProLine17EC Inline-NIR-Analysator: InGaAs-Array 950-1650 nm, Saphirfenster, IP65-Gehäuse aus Edelstahl 316 und Echtzeitergebnisse alle 2 bis 20 Sekunden.",
-      "k": "proline17ec inline-nir-analysator für prozesse proline17ec inline-nir-analysator ingaas-array 950-1650 nm saphirfenster ip65-gehäuse aus edelstahl 316 und echtzeitergebnisse alle 2 bis 20 sekunden proline 17ec inline-nir-analysator sensor rohr rutsche foerderband saphir ip65 edelstahl ingaas kontinuierliche messung kompakt"
+      "s": "ProLine17EC Inline-NIR-Analysator: InGaAs-Array 908-1676 nm, Saphirfenster, IP65-Gehäuse aus Edelstahl 316 und Echtzeitergebnisse alle 2 bis 20 Sekunden.",
+      "k": "proline17ec inline-nir-analysator für prozesse proline17ec inline-nir-analysator ingaas-array 908-1676 nm saphirfenster ip65-gehäuse aus edelstahl 316 und echtzeitergebnisse alle 2 bis 20 sekunden proline 17ec inline-nir-analysator sensor rohr rutsche foerderband saphir ip65 edelstahl ingaas kontinuierliche messung kompakt"
     },
     "es": {
       "t": "ProLine17EC analizador NIR en línea para procesos",
-      "s": "Analizador NIR en línea ProLine17EC: matriz InGaAs de 950-1650 nm, ventana de zafiro, carcasa inoxidable 316 IP65 y resultados en tiempo real cada 2 a 20 s.",
-      "k": "proline17ec analizador nir en línea para procesos analizador nir en línea proline17ec matriz ingaas de 950-1650 nm ventana de zafiro carcasa inoxidable 316 ip65 y resultados en tiempo real cada 2 a 20 s proline 17ec analizador nir en linea sensor tuberia canaleta cinta transportadora zafiro ip65 acero inoxidable ingaas medicion continua compacto"
+      "s": "Analizador NIR en línea ProLine17EC: matriz InGaAs de 908-1676 nm, ventana de zafiro, carcasa inoxidable 316 IP65 y resultados en tiempo real cada 2 a 20 s.",
+      "k": "proline17ec analizador nir en línea para procesos analizador nir en línea proline17ec matriz ingaas de 908-1676 nm ventana de zafiro carcasa inoxidable 316 ip65 y resultados en tiempo real cada 2 a 20 s proline 17ec analizador nir en linea sensor tuberia canaleta cinta transportadora zafiro ip65 acero inoxidable ingaas medicion continua compacto"
     },
     "ar": {
       "t": "ProLine17EC محلل NIR مضمن لمراقبة العمليات",
-      "s": "محلل NIR المضمن ProLine17EC: مصفوفة InGaAs بنطاق 950-1650 نانومتر، ونافذة من الياقوت، وهيكل من الفولاذ 316 بتصنيف IP65، ونتائج فورية كل 2 إلى 20 ثانية.",
-      "k": "proline17ec محلل nir مضمن لمراقبة العمليات محلل nir المضمن proline17ec مصفوفة ingaas بنطاق 950-1650 نانومتر، ونافذة من الياقوت، وهيكل من الفولاذ 316 بتصنيف ip65، ونتائج فورية كل 2 إلى 20 ثانية proline 17ec محلل مضمن مستشعر أنبوب حزام ناقل قياس مستمر مدمج"
+      "s": "محلل NIR المضمن ProLine17EC: مصفوفة InGaAs بنطاق 908-1676 نانومتر، ونافذة من الياقوت، وهيكل من الفولاذ 316 بتصنيف IP65، ونتائج فورية كل 2 إلى 20 ثانية.",
+      "k": "proline17ec محلل nir مضمن لمراقبة العمليات محلل nir المضمن proline17ec مصفوفة ingaas بنطاق 908-1676 نانومتر، ونافذة من الياقوت، وهيكل من الفولاذ 316 بتصنيف ip65، ونتائج فورية كل 2 إلى 20 ثانية proline 17ec محلل مضمن مستشعر أنبوب حزام ناقل قياس مستمر مدمج"
     },
     "zh": {
       "t": "ProLine17EC 在线 NIR 过程分析仪",
-      "s": "ProLine17EC 在线 NIR 分析仪：950-1650 nm InGaAs 阵列、蓝宝石窗口、IP65 316 不锈钢外壳，每 2 至 20 秒提供实时结果。",
-      "k": "proline17ec 在线 nir 过程分析仪 proline17ec 在线 nir 分析仪 950-1650 nm ingaas 阵列 蓝宝石窗口 ip65 316 不锈钢外壳 每 2 至 20 秒提供实时结果 proline 17ec 在线近红外分析仪 传感器 管道 输送带 蓝宝石 不锈钢 连续测量 紧凑"
+      "s": "ProLine17EC 在线 NIR 分析仪：908-1676 nm InGaAs 阵列、蓝宝石窗口、IP65 316 不锈钢外壳，每 2 至 20 秒提供实时结果。",
+      "k": "proline17ec 在线 nir 过程分析仪 proline17ec 在线 nir 分析仪 908-1676 nm ingaas 阵列 蓝宝石窗口 ip65 316 不锈钢外壳 每 2 至 20 秒提供实时结果 proline 17ec 在线近红外分析仪 传感器 管道 输送带 蓝宝石 不锈钢 连续测量 紧凑"
     }
   },
   "product-proline-17ecs.html": {
